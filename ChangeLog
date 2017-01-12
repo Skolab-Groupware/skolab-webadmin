@@ -1,0 +1,212 @@
+2004-07-09 07:37  stephan
+
+	* php/admin/templates/en/kolab.tpl: Add appropriate email address
+	  as requested
+
+2004-07-08 17:04  bernhard
+
+	* php/admin/templates/en/kolab.tpl: Fixed stupid typo in Codefusion
+	  URL. :(
+
+2004-07-08 13:44  steffen
+
+	* php/admin/include/form.class.php, www/admin/kolabsharedfolder/sf.php:
+	  new permissions "read anon" and "read hidden" + allow special
+	  usernames anyone and anonymous in ACLs
+
+2004-07-07 20:34  martin
+
+	* php/admin/templates/en/kolab.tpl: Martin K.: html syntax and
+	  updated email addresses
+
+2004-07-07 18:51  martin
+
+	* www/admin/distributionlist/list.php: Marrtin K.: little typo
+
+2004-07-07 18:01  bernhard
+
+	* php/admin/templates/en/kolab.tpl: Updated contents for Kolab2.
+	  Added Codefusion as part of the Kolab group.    Credited
+	  Radley for the work on the format, mentioning designed toltec.
+	  Link to the OL plug-in list to be more fair.    Added
+	  Intevation participants and Stephan and Stuart from Codefusion
+		  as they also have CVS write access and actively
+	  contribute.  Some Reformating.
+
+2004-07-07 13:45  steffen
+
+	* configure.ac, php/admin/include/ldap.class.php,
+	  www/admin/kolabsharedfolder/sf.php: fix for issue215
+
+2004-07-01 01:40  steffen
+
+	* configure.ac, kolab-webadmin.spec.in: update build date
+	  automatically
+
+2004-06-30 22:49  steffen
+
+	* php/admin/include/ldap.class.php: use ldap uri for php to support
+	  ldaps
+
+2004-06-28 16:00  steffen
+
+	* kolab-webadmin.spec.in, www/admin/kolabsharedfolder/sf.php: fix for
+	  issues 204 and 205
+
+2004-06-23 12:26  steffen
+
+	* Makefile.am, configure.ac, kolab-webadmin.spec.in: build spec
+	  file with configure
+
+2004-06-21 03:46  steffen
+
+	* configure.ac, www/admin/kolabsharedfolder/index.php,
+	  www/admin/kolabsharedfolder/sf.php: shared folder handling + multiple
+	  bugfixes
+
+2004-06-18 13:25  steffen
+
+	* Makefile.am: Issue183
+
+2004-06-17 11:14  steffen
+
+	* configure.ac: versions
+
+2004-06-17 11:12  steffen
+
+	* php/admin/include/ldap.class.php,
+	  www/admin/distributionlist/list.php, www/admin/user/user.php: fix
+	  for issue191 + "kolabdelegate"
+
+2004-06-15 03:59  steffen
+
+	* configure.ac: version
+
+2004-06-15 03:51  steffen
+
+	* php/admin/include/form.class.php,
+	  php/admin/templates/en/service.tpl, www/admin/style.css,
+	  www/admin/service/index.php: updated version, added list of
+	  kolab-servers to servicepage
+
+2004-06-14 04:13  steffen
+
+	* php/admin/include/form.class.php, www/admin/user/user.php: more
+	  group stuff
+
+2004-06-08 00:29  steffen
+
+	* ChangeLog, Makefile.am, bootstrap, configure.ac,
+	  php/admin/include/mysmarty.php,
+	  php/admin/include/mysmarty.php.in: moved kolab-webadmin to
+	  autotools (credits to Richard Bos)
+
+2004-06-04 12:46  steffen
+
+	* www/admin/: distributionlist/list.php, user/user.php: bugfixes +
+	  availability of dist. lists
+
+2004-06-02 12:11  stuart
+
+	* www/admin/service/service.php: Use alternate control structure
+	  syntax for cleaner PHP/HTML separation.
+
+2004-06-02 11:58  stuart
+
+	* www/admin/service/service.php: Changed short opening tags to the
+	  proper "<?php" opening tags. We should ideally turn off "short
+	  open tag" support in php.ini.
+
+2004-05-28 17:49  steffen
+
+	* php/admin/include/debug.php, www/admin/distributionlist/list.php:
+	  anal nameclash checking + bugfixing for dist lists
+
+2004-05-27 17:59  steffen
+
+	* php/admin/include/debug.php, php/admin/include/ldap.class.php,
+	  www/admin/user/user.php: thorough duplicate mail address checks
+	  for users
+
+2004-05-27 15:24  steffen
+
+	* php/admin/templates/en/service.tpl, www/admin/service/index.php:
+	  quota warn level configurable
+
+2004-05-26 01:12  steffen
+
+	* www/admin/user/user.php: removed a bit of debug output and made
+	  kolabhomeserver readonly when it should be
+
+2004-05-25 05:25  steffen
+
+	* php/admin/include/debug.php: removed debug output
+
+2004-05-24 13:53  steffen
+
+	* php/admin/include/auth.class.php, www/admin/user/user.php:
+	  reasonable default for kolabhomeserver. Check IP address when
+	  authenticating to make it more difficult to hijack a session
+
+2004-05-21 15:03  steffen
+
+	* www/admin/: distributionlist/list.php, user/user.php: bugfixes
+
+2004-05-20 00:26  steffen
+
+	* php/admin/templates/en/vacation.tpl, www/admin/user/user.php:
+	  kolabhomeserver entry + escaping of vacation text + fix for buggy
+	  html-parser in mozilla 1.0
+
+2004-05-19 13:20  steffen
+
+	* php/admin/templates/en/vacation.tpl: typo
+
+2004-05-17 17:24  steffen
+
+	* php/admin/include/Sieve.php, php/admin/include/auth.class.php,
+	  php/admin/include/authenticate.php, php/admin/include/debug.php,
+	  php/admin/include/form.class.php, php/admin/include/headers.php,
+	  php/admin/include/ldap.class.php, php/admin/include/menu.php,
+	  php/admin/include/mysmarty.php,
+	  php/admin/templates/en/addrdeleted.tpl,
+	  php/admin/templates/en/addresslist.tpl,
+	  php/admin/templates/en/addrlistall.tpl,
+	  php/admin/templates/en/admindeleted.tpl,
+	  php/admin/templates/en/adminlistall.tpl,
+	  php/admin/templates/en/createuser.tpl,
+	  php/admin/templates/en/distlistall.tpl,
+	  php/admin/templates/en/erfrakon.tpl,
+	  php/admin/templates/en/formcontainer.tpl,
+	  php/admin/templates/en/forward.tpl,
+	  php/admin/templates/en/intevation.tpl,
+	  php/admin/templates/en/kdab.tpl, php/admin/templates/en/kde.tpl,
+	  php/admin/templates/en/kolab.tpl,
+	  php/admin/templates/en/login.tpl,
+	  php/admin/templates/en/maintainerdeleted.tpl,
+	  php/admin/templates/en/maintainerlistall.tpl,
+	  php/admin/templates/en/page.tpl,
+	  php/admin/templates/en/service.tpl,
+	  php/admin/templates/en/sflistall.tpl,
+	  php/admin/templates/en/userdeleted.tpl,
+	  php/admin/templates/en/userlistall.tpl,
+	  php/admin/templates/en/vacation.tpl,
+	  php/admin/templates/en/welcome.tpl, www/admin/index.php,
+	  www/admin/logout.php, www/admin/style.css,
+	  www/admin/addressbook/addr.php, www/admin/addressbook/index.php,
+	  www/admin/administrator/admin.php,
+	  www/admin/administrator/index.php,
+	  www/admin/distributionlist/index.php,
+	  www/admin/distributionlist/list.php,
+	  www/admin/kolab/erfrakon.php, www/admin/kolab/index.php,
+	  www/admin/kolab/intevation.php, www/admin/kolab/kdab.php,
+	  www/admin/kolab/kde.php, www/admin/maintainer/index.php,
+	  www/admin/maintainer/maintainer.php, www/admin/pics/erfrakon.png,
+	  www/admin/pics/intevation_logo.png, www/admin/pics/kdab.png,
+	  www/admin/pics/kde.jpg, www/admin/pics/kolab_logo.png,
+	  www/admin/service/index.php, www/admin/service/service.php,
+	  www/admin/kolabsharedfolder/index.php, www/admin/kolabsharedfolder/sf.php,
+	  www/admin/user/forward.php, www/admin/user/index.php,
+	  www/admin/user/user.php, www/admin/user/vacation.php: new
+	  webinterface for the kolab server
+
