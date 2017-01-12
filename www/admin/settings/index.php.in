@@ -150,7 +150,9 @@ if( $_REQUEST['submithttpallowunauthfb'] ) {
 
 if( $_REQUEST['submitfreebusypast'] ) {
   $attrs = array();
-  $attrs['kolabFreeBusyPast'] = trim( $_REQUEST['freebusypast'] );
+  $value = trim( $_REQUEST['freebusypast'] );
+  if( $value == '' ) $value = array();
+  $attrs['kolabFreeBusyPast'] = $value;
   if( !($result = ldap_modify($ldap->connection, "k=kolab,".$_SESSION['base_dn'], $attrs)) ) {
 	$errors[] = sprintf(_("LDAP Error: failed to modify kolab configuration object: %s"),
 						ldap_error($ldap->connection));

@@ -22,11 +22,12 @@ do_subst = sed \
 	-e 's,[@]VERSION[@],$(VERSION),g' \
 	-e 's,[@]WITHOPENPKG[@],$(WITHOPENPKG),g' \
 	-e 's,[@]aliases_file[@],$(aliases_file),g' \
+	-e 's,[@]syslog_facility[@],$(syslog_facility),g' \
+	-e 's,[@]directory_mode[@],$(directory_mode),g' \
 	-e 's,[@]amavisd_conffile[@],$(amavisd_conffile),g' \
 	-e 's,[@]amavisd_grp[@],$(amavisd_grp),g' \
 	-e 's,[@]amavisd_home[@],$(amavisd_home),g' \
 	-e 's,[@]amavisd_logfile[@],$(amavisd_logfile),g' \
-	-e 's,[@]amavisd_pkg[@],$(amavisd_pkg),g' \
 	-e 's,[@]amavisd_rusr[@],$(amavisd_rusr),g' \
 	-e 's,[@]amavisd_templatedir[@],$(amavisd_templatedir),g' \
 	-e 's,[@]amavisd_usr[@],$(amavisd_usr),g' \
@@ -49,7 +50,6 @@ do_subst = sed \
 	-e 's,[@]emailserver_mail_owner[@],$(emailserver_mail_owner),g' \
 	-e 's,[@]emailserver_master_usr[@],$(emailserver_master_usr),g' \
 	-e 's,[@]emailserver_musr[@],$(emailserver_musr),g' \
-	-e 's,[@]emailserver_pkg[@],$(emailserver_pkg),g' \
 	-e 's,[@]emailserver_setgid_grp[@],$(emailserver_setgid_grp),g' \
 	-e 's,[@]emailserver_socket[@],$(emailserver_socket),g' \
 	-e 's,[@]emailserver_tables_usr[@],$(emailserver_tables_usr),g' \
@@ -60,6 +60,8 @@ do_subst = sed \
 	-e 's,[@]freebusy_grp[@],$(freebusy_grp),g' \
 	-e 's,[@]freebusy_logdir[@],$(freebusy_logdir),g' \
 	-e 's,[@]freebusy_usr[@],$(freebusy_usr),g' \
+	-e 's,[@]freebusy_log_type[@],$(freebusy_log_type),g' \
+	-e 's,[@]freebusy_log_name[@],$(freebusy_log_name),g' \
 	-e 's,[@]freshclam_logfile[@],$(freshclam_logfile),g' \
 	-e 's,[@]freshclam_pidfile[@],$(freshclam_pidfile),g' \
 	-e 's,[@]fsl_logfile[@],$(fsl_logfile),g' \
@@ -72,13 +74,10 @@ do_subst = sed \
 	-e 's,[@]imap_masterlogfile[@],$(imap_masterlogfile),g' \
 	-e 's,[@]imap_misclogfile[@],$(imap_misclogfile),g' \
 	-e 's,[@]imap_notify_socket[@],$(imap_notify_socket),g' \
-	-e 's,[@]imap_pkg[@],$(imap_pkg),g' \
 	-e 's,[@]imap_sievedir[@],$(imap_sievedir),g' \
 	-e 's,[@]imap_spool[@],$(imap_spool),g' \
 	-e 's,[@]imap_statedir[@],$(imap_statedir),g' \
 	-e 's,[@]imap_usr[@],$(imap_usr),g' \
-	-e 's,[@]kolab_filter_pkg[@],$(kolab_filter_pkg),g' \
-	-e 's,[@]kolab_freebusy_pkg[@],$(kolab_freebusy_pkg),g' \
 	-e 's,[@]kolab_gid[@],$(kolab_gid),g' \
 	-e 's,[@]kolab_grp[@],$(kolab_grp),g' \
 	-e 's,[@]kolab_mailboxuiddb[@],$(kolab_mailboxuiddb),g' \
@@ -89,7 +88,6 @@ do_subst = sed \
 	-e 's,[@]kolab_pidfile[@],$(kolab_pidfile),g' \
 	-e 's,[@]kolab_rcdir[@],$(kolab_rcdir),g' \
 	-e 's,[@]kolab_rgrp[@],$(kolab_rgrp),g' \
-	-e 's,[@]kolab_pkg[@],$(kolab_pkg),g' \
 	-e 's,[@]kolab_pkgs[@],$(kolab_pkgs),g' \
 	-e 's,[@]kolab_rusr[@],$(kolab_rusr),g' \
 	-e 's,[@]kolab_scriptsdir[@],$(kolab_scriptsdir),g' \
@@ -98,8 +96,8 @@ do_subst = sed \
 	-e 's,[@]kolab_smtpdpolicy_conffile_usr[@],$(kolab_smtpdpolicy_conffile_usr),g' \
 	-e 's,[@]kolab_susr[@],$(kolab_susr),g' \
 	-e 's,[@]kolab_usr[@],$(kolab_usr),g' \
-	-e 's,[@]kolab_webadmin_pkg[@],$(kolab_webadmin_pkg),g' \
 	-e 's,[@]kolab_wui[@],$(kolab_wui),g' \
+	-e 's,[@]kolab_quotawarning[@],$(kolab_quotawarning),g' \
 	-e 's,[@]kolabconf_script[@],$(kolabconf_script),g' \
 	-e 's,[@]ldapserver_argsfile[@],$(ldapserver_argsfile),g' \
 	-e 's,[@]ldapserver_confdir[@],$(ldapserver_confdir),g' \
@@ -114,10 +112,7 @@ do_subst = sed \
 	-e 's,[@]ldapserverslurpd_pidfile[@],$(ldapserverslurpd_pidfile),g' \
 	-e 's,[@]ldapserver_statedir[@],$(ldapserver_statedir),g' \
 	-e 's,[@]ldapserver_usr[@],$(ldapserver_usr),g' \
-	-e 's,[@]perl_kolab_pkg[@],$(perl_kolab_pkg),g' \
-	-e 's,[@]perl_kolabconf_pkg[@],$(perl_kolabconf_pkg),g' \
-	-e 's,[@]php_kolab_pkg[@],$(php_kolab_pkg),g' \
-	-e 's,[@]pear_horde_pkg[@],$(pear_horde_pkg),g' \
+	-e 's,[@]pear_horde_pkgs[@],$(pear_horde_pkgs),g' \
 	-e 's,[@]pkgdocdir[@],$(pkgdocdir),g' \
 	-e 's,[@]pki_grp[@],$(pki_grp),g' \
 	-e 's,[@]resmgr_confdir[@],$(resmgr_confdir),g' \
@@ -128,6 +123,8 @@ do_subst = sed \
 	-e 's,[@]resmgr_logdir[@],$(resmgr_logdir),g' \
 	-e 's,[@]resmgr_scriptsdir[@],$(resmgr_scriptsdir),g' \
 	-e 's,[@]resmgr_usr[@],$(resmgr_usr),g' \
+	-e 's,[@]resmgr_log_type[@],$(resmgr_log_type),g' \
+	-e 's,[@]resmgr_log_name[@],$(resmgr_log_name),g' \
 	-e 's,[@]sasl_authdconffile[@],$(sasl_authdconffile),g' \
 	-e 's,[@]sasl_logfile[@],$(sasl_logfile),g' \
 	-e 's,[@]sasl_smtpconffile[@],$(sasl_smtpconffile),g' \
@@ -143,11 +140,13 @@ do_subst = sed \
 	-e 's,[@]webserver_grp[@],$(webserver_grp),g' \
 	-e 's,[@]webserver_musr[@],$(webserver_musr),g' \
 	-e 's,[@]webserver_pidfile[@],$(webserver_pidfile),g' \
-	-e 's,[@]webserver_pkg[@],$(webserver_pkg),g' \
 	-e 's,[@]webserver_runtime_status[@],$(webserver_runtime_status),g' \
 	-e 's,[@]webserver_sessions[@],$(webserver_sessions),g' \
 	-e 's,[@]webserver_sslmutex[@],$(webserver_sslmutex),g' \
 	-e 's,[@]webserver_sslscache[@],$(webserver_sslscache),g' \
 	-e 's,[@]webserver_tmpdir[@],$(webserver_tmpdir),g' \
 	-e 's,[@]webserver_usr[@],$(webserver_usr),g' \
-	-e 's,[@]webserver_web_prefix[@],$(webserver_web_prefix),g'
+	-e 's,[@]webserver_web_prefix[@],$(webserver_web_prefix),g' \
+	-e 's,[@]horde_cookie_path[@],$(horde_cookie_path),g' \
+	-e 's,[@]horde_confdir[@],$(horde_confdir),g' \
+	-e 's,[@]kronolith_confdir[@],$(kronolith_confdir),g'

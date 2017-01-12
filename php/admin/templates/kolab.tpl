@@ -96,4 +96,15 @@
 </ul>
 </div>
 
+<hr>
+<small>
+  <p>
+    This product includes PHP, freely available from
+    http://www.php.net/
+  </p><p>
+    This product includes software developed by the OpenSSL Project
+    for use in the OpenSSL Toolkit (http://www.openssl.org/)
+  </p>
+</small>
+
 </div>

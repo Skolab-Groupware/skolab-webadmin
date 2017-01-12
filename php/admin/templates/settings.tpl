@@ -149,12 +149,21 @@
 {tr msg="Use the Sender header instead of From for the above checks if Sender is present."}
 <br />
 <h4>{tr msg="Action to take for messages that fail the check:"}</h4>
-<input type="radio" name="kolabfilterrejectforgedfrom" value="FALSE" {if $kolabfilterrejectforgedfrom == 'false' }checked="checked"{/if} />
-{tr msg="Reject the message, except if it originates from the outside and the From header matches one of Kolab server's domains. In that case rewrite the From header so the recipient can see the potential forgery."}<br/>
-<input type="radio" name="kolabfilterrejectforgedfrom" value="TRUE" {if $kolabfilterrejectforgedfrom == 'true' }checked="checked"{/if} />
-{tr msg="Always reject the message."}
+<table border="0">
+ <tr>
+  <td valign="top"><input type="radio" name="kolabfilterrejectforgedfrom" value="FALSE" {if $kolabfilterrejectforgedfrom == 'false' }checked="checked"{/if} />
+  </td>
+  <td>{tr msg="Reject the message, except if it originates from the outside and the From header matches one of Kolab server's domains. In that case rewrite the From header so the recipient can see the potential forgery."}<br/>
+  </td>
+ </tr>
+ <tr>
+  <td valign="top"><input type="radio" name="kolabfilterrejectforgedfrom" value="TRUE" {if $kolabfilterrejectforgedfrom == 'true' }checked="checked"{/if} />
+  </td>
+  <td>{tr msg="Always reject the message."}
 {tr msg="Note that enabling this setting will make the server reject any mail with non-matching sender and From header if the sender is an account on this server. This is known to cause trouble for example with mailinglists."}
-<br />
+  </td>
+ </tr>
+</table>
 <div class="align_right"><input type="submit" name="submitkolabfilter" value="{tr msg="Update"}" /></div>
 </div>
 </form>

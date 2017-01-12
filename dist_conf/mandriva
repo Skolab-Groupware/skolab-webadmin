@@ -35,6 +35,7 @@ emailserver_usr=${kolab_usr}
 emailserver_grp=${restricted_kolab_grp}
 emailserver_mail_usr=kolab              # = kolab
 
+syslog_facility=user
 kolab_logdir=/var/log/kolab
 kolab_pidfile=/var/run/kolab/kolab.pid
 kolab_scriptsdir=$(sysconfdir)/kolab
@@ -42,6 +43,7 @@ kolab_scriptsdir=$(sysconfdir)/kolab
 # Kolab web user interface
 kolab_wui=/admin
 
+directory_mode=slurpd
 ldapserver_dir=${localstatedir}/ldap-kolab
 ldapserver_rundir=/var/run/ldap
 ldapserver_schemadir=${datadir}/openldap/schema
@@ -61,8 +63,20 @@ webserver_mime_typesfile=${sysconfdir}/httpd/conf/mime.types
 webserver_usr=apache
 webserver_grp=apache
 
+#webclient
+horde_cookie_path=/client
+horde_confdir=${webserver_document_root}/client/config
+kronolith_confdir=${webserver_document_root}/client/kronolith/config
+
 sysrundir = /var/run
 
 resmgr_scriptsdir=${resmgr_confdir}
 smarty_compiledir=${phplibdir2}/${kolab_php_module_prefix}admin/templates_c
+resmgr_logdir=${localstatedir}/kolab-filter/log
+resmgr_log_type=file
+resmgr_log_name=${resmgr_logdir}/filter.log
+
+freebusy_logdir=${localstatedir}/kolab-freebusy/log
+freebusy_log_type=file
+freebusy_log_name=${freebusy_logdir}/freebusy.log
 

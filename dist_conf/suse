@@ -32,7 +32,6 @@ amavisd_home=${localstatedir}/spool/amavis
 amavisd_rusr=vscan
 amavisd_usr=root
 amavisd_grp=root
-amavisd_pkg=amavisd-new
 
 fsl_logfile=${localstatedir}/log/fsl
 
@@ -64,7 +63,6 @@ emailserver_mail_owner=postfix
 emailserver_setgid_grp=maildrop
 emailserver_default_privs=kolab
 emailserver_master_usr=kolab
-emailserver_pkg=postfix
 emailserver_tables_usr=root
 
 imap_confdir=${sysconfdir}
@@ -78,34 +76,29 @@ imap_spool=${localstatedir}/spool/imap
 imap_sievedir=${localstatedir}/lib/sieve
 imap_lmtp=${imap_statedir}/lmtp
 imap_notify_socket=${imap_statedir}/socket/notify
-imap_pkg=cyrus-imapd-kolab
 
+syslog_facility=user
 kolab_statedir=${localstatedir}/lib/kolab
 kolab_logdir=${localstatedir}/log
 kolab_pidfile=${sysrundir}/kolab.pid
 kolab_mailboxuiddb=${kolab_statedir}/mailbox-uidcache.db
-kolab_pkg=kolab
-kolab_pkgs=spamassassin openldap2 clamav
-kolab_webadmin_pkg=kolab-webadmin
+kolab_pkgs=spamassassin openldap2 clamav amavisd-new postfix kolab apache2 kolab-server kolab-freebusy kolab-filter perl-kolab kolab-format kolab-webadmin kolab-storage
 kolab_smtpdpolicy_conffile_usr=kolab
 kolab_smtpdpolicy_conffile_grp=root
 kolab_scriptsdir=$(datadir)/kolab/scripts
-kolab_filter_pkg=kolab-filter
-kolab_freebusy_pkg=kolab-freebusy
-perl_kolab_pkg=perl-kolab
-perl_kolabconf_pkg=perl-kolab-conf
-php_kolab_pkg=php5-pear-kolab_filter php5-pear-kolab_freebusy
 
 # This variable makes it possible to store all kolab php modules in its own
 # module.  E.g on suse it will be /usr/share/php/kolab instead of just
 # /usr/share/php. This prevents scattering of the kolab php files.
 kolab_php_module_prefix=kolab/
 kolab_php_smarty_prefix=Smarty
-smarty_compiledir=${phplibdir2}/${kolab_php_module_prefix}admin/templates_c
+smarty_compiledir=${localstatedir}/cache/kolab-webadmin
+kolab_quotawarning=${sysconfdir}/kolab/quotawarning.txt
 
 # Kolab web user interface
 kolab_wui=/kolab
 
+directory_mode=syncrepl
 ldapserver_statedir=${localstatedir}/lib/ldap
 ldapserver_dir=${localstatedir}/lib/ldap
 ldapserver_replogfile=${sysrundir}/slapd/replog
@@ -138,7 +131,11 @@ webserver_web_prefix=
 webserver_musr=wwwrun
 webserver_usr=wwwrun
 webserver_grp=www
-webserver_pkg=apache2
+
+#webclient
+horde_cookie_path=/client
+horde_confdir=${webserver_document_root}/client/config
+kronolith_confdir=${webserver_document_root}/client/kronolith/config
 
 phpini_dir=${sysconfdir}/php5/cli
 phplibdir=${datadir}/php5
@@ -147,20 +144,22 @@ phppeardir=${phplibdir}/PEAR
 
 
 # Variable to list all pear related packages (including horde)
-pear_horde_pkg=
+pear_horde_pkgs=
 
 sasl_smtpconffile=${sysconfdir}/sasl2/smtpd.conf
 sasl_authdconffile=${sysconfdir}/saslauthd.conf
 sasl_logfile=${localstatedir}/log/saslauthd.log
 
 resmgr_logdir=${localstatedir}/log/kolab/filter
-resmgr_scriptsdir=${localstatedir}/lib/kolab/kolab-filter
-resmgr_confdir=${resmgr_scriptsdir}
+resmgr_scriptsdir=${bindir}
+resmgr_confdir=${sysconfdir}/kolab/filter
 resmgr_conffile_usr=kolab
 resmgr_conffile_grp=root
 resmgr_filterdir=${localstatedir}/lib/kolab/kolab-filter/tmp
 resmgr_usr=root
-resmgr_grp=root
+resmgr_grp=www
+resmgr_log_type=file
+resmgr_log_name=${resmgr_logdir}/filter.log
 
 fbview_logfile=${localstatedir}/log/kolab/fbview.log
 freebusy_logdir=${localstatedir}/log/kolab/freebusy
@@ -168,6 +167,8 @@ freebusy_confdir=${webserver_document_root}${webserver_web_prefix}/freebusy
 freebusy_cachedir=${localstatedir}/cache/freebusy
 freebusy_usr=wwwrun
 freebusy_grp=root
+freebusy_log_type=file
+freebusy_log_name=${freebusy_logdir}/freebusy.log
 
 graveyard_uidcache=${kolab_statedir}/graveyard-uidcache.db
 graveyard_tscache=${kolab_statedir}/graveyard-tscache.db

@@ -1,10 +1,53 @@
+2009-02-16 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/templates/settings.tpl: improved layout,
+	kolab/issue3404
+
+2009-02-14 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/locale/nl/LC_MESSAGES/messages.po: improved translation
+
+2008-12-12  Thomas Arendsen Hein  <thomas@intevation.de>
+
+	* www/admin/kolab/versions.php.in: Folded @amavisd_pkg@,
+	@emailserver_pkg@, @imap_pkg@, @webserver_pkg@, @kolab_pkg@,
+	@kolab_webadmin_pkg@, @kolab_filter_pkg@, @kolab_freebusy_pkg@,
+	@perl_kolabconf_pkg@, @perl_kolab_pkg@ and @php_kolab_pkg@ into
+	@kolab_pkgs@, and rename @pear_horde_pkg@ to @pear_horde_pkgs@
+	for consistency. List is not yet updated for new package names.
+	Set $kolabversion default to 'unknown' instead of the obsolete
+	value '2.1-official'.
+
+2008-11-11 Mathieu Parent <math.parent@gmail.com>
+
+	* www/admin/settings/index.php.in: opportunity to delete freebusy value
+	  (issue3230)
+
+2008-09-08 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/include/auth.class.php.in: changed the title of login page
+	  from just Login to 'Kolab Groupware login.  For an explanation see
+	  update 2008-07-05 in this ChangeLog below.  See kolab/issue2596.
+	* php/admin/locale/de/LC_MESSAGES/messages.po
+	  php/admin/locale/es/LC_MESSAGES/messages.po
+	  php/admin/locale/fr/LC_MESSAGES/messages.po
+	  php/admin/locale/it/LC_MESSAGES/messages.po
+	  php/admin/locale/nl/LC_MESSAGES/messages.po: updated translation for
+	  the change made the file php/admin/include/auth.class.php.in
+
+
+2008-08-15  Sascha Wilde  <wilde@intevation.de>
+
+	* php/admin/templates/kolab.tpl: Added acknowledgments for PHP and
+	OpenSSL according to their respective licenses.
+
 2008-07-05 Richard Bos <richard@radoeka.nl>
 
-	* php/admin/locale/nl/LC_MESSAGES/messages.po: changed translation to Kolab
-	as that seems to be a much better page title than login.  The concerning page
-	is probably bookmarked and than is a title like Kolab better than just
-	Login.  I guess that the root cause solution would be to change the word Login
-	in the source file....
+	* php/admin/locale/nl/LC_MESSAGES/messages.po: changed translation to
+	  Kolab as that seems to be a much better page title than login.  The
+	  concerning page is probably bookmarked and than is a title like Kolab
+	  better than just Login.  I guess that the root cause solution would
+	  be to change the word Login in the source file....
 
 2008-06-05  Thomas Arendsen Hein <thomas@intevation.de>
 

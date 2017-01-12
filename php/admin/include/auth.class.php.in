@@ -121,7 +121,7 @@ class KolabAuth {
 		$smarty->assign( 'topdir', $topdir );
 		$smarty->assign( 'uid', '' );
 		$smarty->assign( 'group', '' );
-		$smarty->assign( 'page_title', _('Login') );
+		$smarty->assign( 'page_title', _('Kolab Groupware login') );
 		$smarty->assign( 'menuitems', array() );
 		if( $this->error() ) $smarty->assign( 'errors', array( $this->error() ) );
 		$smarty->assign( 'maincontent', 'login.tpl' );

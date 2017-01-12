@@ -37,7 +37,7 @@ $smarty->display('page.tpl');
   mode: php
   indent-tabs-mode: t
   tab-width: 4
-  buffer-file-coding-system: utf-8
+  coding: utf-8
   End:
 */
  ?>

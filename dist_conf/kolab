@@ -35,7 +35,6 @@ amavisd_rusr=${kolab_rusr}
 amavisd_usr=${kolab_musr}
 # @l_rgrp@
 amavisd_grp=${kolab_rgrp}
-amavisd_pkg=amavisd
 
 spamassassin_confdir=${sysconfdir}/spamassassin
 
@@ -74,7 +73,6 @@ emailserver_mail_owner=${kolab_musr}
 emailserver_setgid_grp=${kolab_rgrp}
 emailserver_default_privs=${kolab_usr}
 emailserver_master_usr=${kolab_usr}
-emailserver_pkg=postfix
 emailserver_tables_usr=${kolab_susr}
 
 imap_confdir=${sysconfdir}/imapd
@@ -90,9 +88,8 @@ imap_spool=${imap_statedir}/spool
 imap_sievedir=${imap_statedir}/sieve
 imap_lmtp=${imap_statedir}/lmtp
 imap_notify_socket=${imap_statedir}/socket/notify
-imap_pkg=imapd
 
-
+syslog_facility=user
 kolab_statedir=${localstatedir}/kolab
 kolab_logdir=${kolab_statedir}/log
 kolab_pidfile=${kolab_statedir}/kolab.pid
@@ -103,20 +100,15 @@ kolab_php_module_prefix=
 kolab_scriptsdir=$(sysconfdir)/kolab
 kolab_php_smarty_prefix=Smarty
 smarty_compiledir=${phplibdir2}/${kolab_php_module_prefix}admin/templates_c
+kolab_quotawarning=${sysconfdir}/kolab/quotawarning.txt
 
-kolab_pkg=kolabd
-kolab_pkgs=spamassassin openldap clamav
-kolab_webadmin_pkg=kolab-webadmin
-kolab_filter_pkg=kolab-filter
-kolab_freebusy_pkg=kolab-freebusy
-perl_kolab_pkg=perl-kolab
-perl_kolabconf_pkg=kolabconf
-php_kolab_pkg=php-kolab
-pear_horde_pkg=PEAR-Net_IMAP PEAR-Net_SMTP PEAR-Net_URL PEAR-Mail_Mime PEAR-Log PEAR-Date PEAR-Auth_SASL PEAR-Net_Sieve PEAR-Net_Socket PEAR-Net_LMTP PEAR-HTTP_Request PEAR-Mail horde-framework-kolab horde-turba-kolab horde-nag-kolab horde-kolab-client fbview-kronolith php-channel-horde horde-kolab horde-kronolith-kolab horde-mnemo-kolab horde-passwd-kolab horde-imp-kolab horde-ingo-kolab fbview-horde
+kolab_pkgs=kolabd kolab-fbview kolab-webadmin kolab-webclient perl-kolab php-smarty amavisd apache clamav db imapd openldap openssl php postfix spamassassin sqlite
+pear_horde_pkgs=Kolab_Filter Kolab_Format Kolab_FreeBusy Kolab_Server Kolab_Storage Horde_Argv Horde_Auth Horde_Browser Horde_CLI Horde_Cache Horde_Cipher Horde_DOM Horde_DataTree Horde_Date Horde_Framework Horde_Group Horde_History Horde_LDAP Horde_MIME Horde_NLS Horde_Perms Horde_Secret Horde_Serialize Horde_SessionObjects Horde_Util Horde_iCalendar PEAR-Auth_SASL PEAR-Date PEAR-HTTP_Request PEAR-Horde-Channel PEAR-Log PEAR-Mail PEAR-Mail_mimeDecode PEAR-Net_LMTP PEAR-Net_SMTP PEAR-Net_Socket PEAR-Net_URL PEAR-PHPUnit-Channel PHPUnit
 
 # Kolab web user interface
 kolab_wui=/admin
 
+directory_mode=slurpd
 ldapserver_statedir=${localstatedir}/openldap
 ldapserver_dir=${ldapserver_statedir}/openldap-data
 ldapserver_replogfile=${ldapserver_statedir}/replog
@@ -135,7 +127,7 @@ ldapserver_rgrp=${kolab_rgrp}
 ldapserver_rusr=${kolab_musr}
 
 webserver_document_root=${localstatedir}/kolab/www
-webserver_tmpdir=${localstatedir}/kolab/tmp
+webserver_tmpdir=/tmp
 webserver_cgidir=${webserver_document_root}/cgi-bin
 webserver_sessions=${localstatedir}/kolab/httpd_sessions
 webserver_logdir=${localstatedir}/apache/log
@@ -154,7 +146,11 @@ webserver_web_prefix=
 webserver_musr=${kolab_musr}
 webserver_usr=${kolab_usr}
 webserver_grp=${kolab_grp}
-webserver_pkg=apache
+
+#webclient
+horde_cookie_path=/client
+horde_confdir=${webserver_document_root}/client/config
+kronolith_confdir=${webserver_document_root}/client/kronolith/config
 
 phpini_dir=${sysconfdir}/apache
 phplibdir=${libdir}/php
@@ -168,15 +164,17 @@ sasl_logfile=${localstatedir}/sasl/log/saslauthd.log
 sysrundir=${localstatedir}/run
 
 resmgr_logdir=${localstatedir}/kolab-filter/log
-resmgr_confdir=${localstatedir}/kolab-filter/scripts
+resmgr_confdir=$(sysconfdir)/kolab
 resmgr_conffile_usr=${kolab_musr}
 resmgr_conffile_grp=${kolab_grp}
 resmgr_tmpdir=${localstatedir}/kolab-filter/tmp
-resmgr_scriptsdir=${localstatedir}/kolab-filter/scripts
+resmgr_scriptsdir=${bindir}
 # @l_musr@
 resmgr_usr=${kolab_musr}
 # @l_ngrp@
 resmgr_grp=${kolab_grp}
+resmgr_log_type=file
+resmgr_log_name=${resmgr_logdir}/filter.log
 
 fbview_logfile=${localstatedir}/resmgr/fbview.log
 freebusy_logdir=${localstatedir}/kolab-freebusy/log
@@ -184,6 +182,8 @@ freebusy_confdir=${webserver_document_root}/freebusy
 freebusy_cachedir=${localstatedir}/kolab-freebusy/cache
 freebusy_usr=${kolab_musr}
 freebusy_grp=${kolab_grp}
+freebusy_log_type=file
+freebusy_log_name=${freebusy_logdir}/freebusy.log
 
 graveyard_uidcache=${kolab_statedir}/graveyard-uidcache.db
 graveyard_tscache=${kolab_statedir}/graveyard-tscache.db

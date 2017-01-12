@@ -28,11 +28,10 @@ URL:          http://www.kolab.org/
 Vendor:       Klaraelvdalens Datakonsult AB
 Packager:     Klaraelvdalens Datakonsult AB
 Distribution: OpenPKG
-Class:        JUNK
 Group:        Mail
 License:      GPL
-Version:      2.2.0
-Release:      20080709
+Version:      2.2.1
+Release:      20090304
 
 
 #   list of sources
@@ -43,8 +42,8 @@ Prefix:       %{l_prefix}
 BuildRoot:    %{l_buildroot}
 BuildPreReq:  OpenPKG, openpkg >= 20070603
 PreReq:       OpenPKG, openpkg >= 20070603
-PreReq:       kolabd >= 2.1.99-20070607
-PreReq:       php-smarty >= 2.6.18
+PreReq:       kolabd >= 2.2.1-20081212
+PreReq:       php-smarty >= 2.6.20
 AutoReq:      no
 AutoReqProv:  no
 

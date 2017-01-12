@@ -29,23 +29,12 @@ $menuitems[$sidx]['selected'] = 'selected';
 $kolabversions = shell_exec('
   @RPM@ -q --qf "%{NAME}: %{VERSION}-%{RELEASE}\n" \
     @kolab_pkgs@ \
-    @amavisd_pkg@ \
-    @emailserver_pkg@ \
-    @imap_pkg@ \
-    @webserver_pkg@ \
-    @kolab_pkg@ \
-    @kolab_webadmin_pkg@ \
-    @kolab_filter_pkg@ \
-    @kolab_freebusy_pkg@ \
-    @perl_kolabconf_pkg@ \
-    @perl_kolab_pkg@ \
-    @php_kolab_pkg@ \
     | sort
 ');
 
 $pearhordeversions = shell_exec('
   @RPM@ -q --qf "%{NAME}: %{VERSION}-%{RELEASE}\n" \
-    @pear_horde_pkg@ \
+    @pear_horde_pkgs@ \
     | sort
 ');
 
@@ -60,7 +49,7 @@ if ("@WITHOPENPKG@" == "yes") {
 $kolabversion = '@kolab_version@';
 if( $kolabversion[0] == '@' ) {
   // Unofficial/non-openpkg package
-  $kolabversion = '2.1-official';
+  $kolabversion = 'unknown';
 }
 
 /**** Insert into template and output ***/

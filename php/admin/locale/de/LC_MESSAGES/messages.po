@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-10 12:58+0200\n"
+"POT-Creation-Date: 2008-08-25 18:29+0200\n"
 "PO-Revision-Date: 2008-06-02 17:40+0200\n"
 "Last-Translator: Thomas Arendsen Hein <thomas@intevation.de>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -20,7 +20,7 @@ msgid "The address with DN"
 msgstr "Die Adresse mit DN"
 
 #: tpl_messages.php:3 tpl_messages.php:21 tpl_messages.php:77
-#: tpl_messages.php:130 tpl_messages.php:146 tpl_messages.php:164
+#: tpl_messages.php:130 tpl_messages.php:192 tpl_messages.php:210
 msgid "has been deleted"
 msgstr "wurde gelöscht"
 
@@ -33,29 +33,29 @@ msgid "(only external addresses without a kolab user account)"
 msgstr "(nur externe Adresse ohne Kolab-Benutzerkonto)"
 
 #: tpl_messages.php:6 tpl_messages.php:15 tpl_messages.php:24
-#: tpl_messages.php:80 tpl_messages.php:133 tpl_messages.php:149
-#: tpl_messages.php:172 ../../../www/admin/addressbook/index.php.in:121
+#: tpl_messages.php:80 tpl_messages.php:133 tpl_messages.php:195
+#: tpl_messages.php:218 ../../../www/admin/addressbook/index.php.in:121
 #: ../../../www/admin/user/index.php.in:183
 msgid "Name"
 msgstr "Name"
 
 #: tpl_messages.php:7 tpl_messages.php:16 tpl_messages.php:26
 #: tpl_messages.php:70 tpl_messages.php:82 tpl_messages.php:135
-#: tpl_messages.php:152 tpl_messages.php:175 tpl_messages.php:230
-#: tpl_messages.php:243
+#: tpl_messages.php:175 tpl_messages.php:188 tpl_messages.php:198
+#: tpl_messages.php:221
 msgid "Action"
 msgstr "Aktion"
 
 #: tpl_messages.php:8 tpl_messages.php:18 tpl_messages.php:28
 #: tpl_messages.php:74 tpl_messages.php:84 tpl_messages.php:137
-#: tpl_messages.php:154 tpl_messages.php:177
+#: tpl_messages.php:200 tpl_messages.php:223
 msgid "Modify"
 msgstr "Verändern"
 
 #: tpl_messages.php:9 tpl_messages.php:19 tpl_messages.php:29
 #: tpl_messages.php:75 tpl_messages.php:85 tpl_messages.php:138
-#: tpl_messages.php:155 tpl_messages.php:178 tpl_messages.php:231
-#: tpl_messages.php:244 ../../../www/admin/addressbook/addr.php.in:277
+#: tpl_messages.php:176 tpl_messages.php:189 tpl_messages.php:201
+#: tpl_messages.php:224 ../../../www/admin/addressbook/addr.php.in:277
 #: ../../../www/admin/administrator/admin.php.in:307
 #: ../../../www/admin/distributionlist/list.php.in:300
 #: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:310
@@ -65,19 +65,19 @@ msgstr "Verändern"
 msgid "Delete"
 msgstr "Löschen"
 
-#: tpl_messages.php:11 tpl_messages.php:167 tpl_messages.php:180
+#: tpl_messages.php:11 tpl_messages.php:213 tpl_messages.php:226
 msgid "[ ALL ]"
 msgstr "[ ALLE ]"
 
-#: tpl_messages.php:12 tpl_messages.php:168 tpl_messages.php:181
+#: tpl_messages.php:12 tpl_messages.php:214 tpl_messages.php:227
 msgid "[ OTHER ]"
 msgstr "[ ANDERE ]"
 
-#: tpl_messages.php:13 tpl_messages.php:169 tpl_messages.php:182
+#: tpl_messages.php:13 tpl_messages.php:215 tpl_messages.php:228
 msgid "Filter:"
 msgstr "Filter:"
 
-#: tpl_messages.php:14 tpl_messages.php:170 tpl_messages.php:183
+#: tpl_messages.php:14 tpl_messages.php:216 tpl_messages.php:229
 msgid "Filter"
 msgstr "Filter"
 
@@ -312,10 +312,10 @@ msgstr ""
 msgid "Deliver regular mail to folder"
 msgstr "Normale Nachrichten an den Ordner zustellen"
 
-#: tpl_messages.php:66 tpl_messages.php:93 tpl_messages.php:193
-#: tpl_messages.php:208 tpl_messages.php:212 tpl_messages.php:215
-#: tpl_messages.php:218 tpl_messages.php:221 tpl_messages.php:224
-#: tpl_messages.php:227 tpl_messages.php:240
+#: tpl_messages.php:66 tpl_messages.php:93 tpl_messages.php:153
+#: tpl_messages.php:157 tpl_messages.php:160 tpl_messages.php:163
+#: tpl_messages.php:166 tpl_messages.php:169 tpl_messages.php:172
+#: tpl_messages.php:185 tpl_messages.php:239
 msgid "Update"
 msgstr "Aktualisieren"
 
@@ -697,8 +697,8 @@ msgid "Password:"
 msgstr "Passwort:"
 
 #: tpl_messages.php:128 ../include/auth.class.php.in:124
-msgid "Login"
-msgstr "Anmeldung"
+msgid "Kolab Groupware login"
+msgstr "Kolab Groupware login"
 
 #: tpl_messages.php:129
 msgid "The maintainer with DN"
@@ -737,156 +737,14 @@ msgid "Message:"
 msgstr "Nachricht:"
 
 #: tpl_messages.php:145
-msgid "The shared folder with DN"
-msgstr "Der gemeinsam genutzte Ordner mit DN"
-
-#: tpl_messages.php:147
-msgid "Back to list of shared folders"
-msgstr "Zurück zur Liste der gemeinsam genutzten Ordner"
-
-#: tpl_messages.php:148
-msgid "Shared folders"
-msgstr "Gemeinsam genutzte Ordner"
-
-#: tpl_messages.php:150
-msgid "Server"
-msgstr "Server"
-
-#: tpl_messages.php:151 tpl_messages.php:171
-msgid "Type"
-msgstr "Typ"
-
-#: tpl_messages.php:153
-msgid "Folder deleted, awaiting cleanup..."
-msgstr "Ordner gelöscht, warte auf Aufräumaktion..."
-
-#: tpl_messages.php:156 tpl_messages.php:194
-msgid "Welcome to the Kolab administration interface"
-msgstr "Willkommen zur Kolab-Systemadministration"
-
-#: tpl_messages.php:157
-msgid "NOTE:"
-msgstr "ANMERKUNG:"
-
-#: tpl_messages.php:158
-msgid ""
-"No account is configured to receive mail for administrative addresses. If "
-"you have not yet created an account for this, "
-msgstr ""
-"Es wurde kein Konto zum Empfang von Nachrichten an administrative Adressen "
-"konfiguriert. Wenn Sie hierfür noch kein Konto angelegt haben, "
-
-#: tpl_messages.php:159
-msgid "please do so"
-msgstr "dann tun Sie das bitte jetzt"
-
-#: tpl_messages.php:160
-msgid "and then go"
-msgstr "und richten Sie danach"
-
-#: tpl_messages.php:161
-msgid "here"
-msgstr "hier"
-
-#: tpl_messages.php:162
-msgid "to set up forwarding of mail to administrative email addresses."
-msgstr ""
-"die Weiterleitung von Nachrichten an administrative E-Mail-Adressen ein."
-
-#: tpl_messages.php:163
-msgid "The user with DN"
-msgstr "Der Benutzer mit DN"
-
-#: tpl_messages.php:165
-msgid "Back to list of users"
-msgstr "Zurück zur Liste der Benutzer"
-
-#: tpl_messages.php:166 tpl_messages.php:179
-msgid "Email Users"
-msgstr "E-Mail-Benutzer"
-
-#: tpl_messages.php:173
-msgid "E-mail"
-msgstr "E-Mail"
-
-#: tpl_messages.php:174
-msgid "uid"
-msgstr "uid"
-
-#: tpl_messages.php:176
-msgid "User Deleted, awaiting cleanup..."
-msgstr "Benutzer gelöscht, warte auf Aufräumaktion..."
-
-#: tpl_messages.php:184
-msgid "Vacation Notification"
-msgstr "Benachrichtigungen bei Abwesenheit"
-
-#: tpl_messages.php:185
-msgid ""
-"Activate vacation notification (only one of vacation, forward and delivery "
-"to folder can be active at any time)"
-msgstr ""
-"Benachrichtigungen bei Abwesenheit aktivieren (es kann zu jedem Zeitpunkt "
-"nur entweder ein Abwesenheitsbenachrichtigungs-, Weiterleitungs- oder "
-"Zustellungsordner aktiviert sein)"
-
-#: tpl_messages.php:186
-msgid "Resend notification only after"
-msgstr "Benachrichtigung erst nach"
-
-#: tpl_messages.php:187
-msgid "days"
-msgstr "Tagen erneut senden"
-
-#: tpl_messages.php:188
-msgid "Send responses for these addresses:"
-msgstr "Antworten für diese Adressen schicken:"
-
-#: tpl_messages.php:189
-msgid "(one address per line)"
-msgstr "(Eine Adresse pro Zeile)"
-
-#: tpl_messages.php:190
-msgid "Do not send vacation replies to spam messages"
-msgstr "Keine Abwesenheitsbenachrichtigungen auf Spamnachrichten senden"
-
-#: tpl_messages.php:191
-msgid "Only react to mail coming from domain"
-msgstr "Nur auf Nachrichten reagieren, die aus dieser Domäne kommen"
-
-#: tpl_messages.php:192
-msgid "(leave empty for all domains)"
-msgstr "(freilassen für alle Domänen)"
-
-#: tpl_messages.php:195
-msgid "Kolab2 Groupware Server Version"
-msgstr "Kolab2-Groupware-Server-Version"
-
-#: tpl_messages.php:196
-msgid "Kolab2 Groupware Server Component Versions"
-msgstr "Versionen der Komponenten des Kolab2-Groupware-Server"
-
-#: tpl_messages.php:197
-msgid "PEAR/Horde Versions"
-msgstr ""
-
-#: tpl_messages.php:198
-msgid "Kolab2 Patched OpenPKG Package Versions"
-msgstr "Kolab2-Gepatchte-OpenPKG-Paket-Versionen"
-
-#: tpl_messages.php:199
-msgid "OpenPKG Version"
-msgstr "OpenPKG-Version"
-
-#: tpl_messages.php:200
 msgid "Kolab Server Settings"
 msgstr "Kolab-Server-Einstellungen"
 
-#: tpl_messages.php:201
+#: tpl_messages.php:146
 msgid "Administrative email addresses"
 msgstr "Administrative E-Mail-Adressen"
 
-#: tpl_messages.php:202
+#: tpl_messages.php:147
 msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
@@ -903,64 +761,64 @@ msgstr ""
 "Adressaten diesen Listen hinzufügen oder davon entfernen wie mit jeder "
 "anderen Verteilerliste"
 
-#: tpl_messages.php:203
+#: tpl_messages.php:148
 msgid ""
 "Email address of account that should receive administrative mail for domain "
 msgstr ""
 "E-Mail-Adresse des Kontos, das die administrativen Nachrichten empfangen "
 "soll:"
 
-#: tpl_messages.php:204
+#: tpl_messages.php:149
 msgid "Create Distribution Lists"
 msgstr "Verteilerlisten anlegen"
 
-#: tpl_messages.php:205
+#: tpl_messages.php:150
 msgid "Enable or Disable individual Services"
 msgstr "Einzelne Dienste einschalten oder abschalten"
 
-#: tpl_messages.php:206
+#: tpl_messages.php:151
 msgid "Service"
 msgstr "Dienst"
 
-#: tpl_messages.php:207
+#: tpl_messages.php:152
 msgid "Enabled"
 msgstr "Eingeschaltet"
 
-#: tpl_messages.php:209
+#: tpl_messages.php:154
 msgid "Quota settings"
 msgstr "Plattenplatz-Einstellungen"
 
-#: tpl_messages.php:210
+#: tpl_messages.php:155
 msgid "Warn users when they have used"
 msgstr "Benutzer warnen, wenn der Verbrauch"
 
-#: tpl_messages.php:211
+#: tpl_messages.php:156
 #, php-format
 msgid "% of their quota"
 msgstr "% des zugestandenen Plattenplatzes beträgt"
 
-#: tpl_messages.php:213
+#: tpl_messages.php:158
 msgid "Free/Busy settings"
 msgstr "Frei/Belegt-Einstellungen"
 
-#: tpl_messages.php:214
+#: tpl_messages.php:159
 msgid "Allow unauthenticated downloading of Free/Busy information"
 msgstr ""
 "Unauthentifiziertes Herunterladen von Frei/Belegt-Informationen erlauben"
 
-#: tpl_messages.php:216
+#: tpl_messages.php:161
 msgid "When creating free/busy lists, include data from"
 msgstr "Beim Erzeugen von Frei/Belegt-Listen, Daten aus "
 
-#: tpl_messages.php:217
+#: tpl_messages.php:162
 msgid "days in the past"
 msgstr "vergangenen Tagen verwenden"
 
-#: tpl_messages.php:219
+#: tpl_messages.php:164
 msgid "Privileged Networks"
 msgstr "Privilegierte Netzwerke"
 
-#: tpl_messages.php:220
+#: tpl_messages.php:165
 msgid ""
 "Networks allowed to relay and send mail through unauthenticated SMTP "
 "connections to the Kolab server (comma separated networks in x.x.x.x/y "
@@ -970,11 +828,11 @@ msgstr ""
 "Kolab-Server weiterleiten und damit verschicken dürfen (durch Kommata "
 "getrennte Liste von Netzwerken im Format x.x.x.x/y):"
 
-#: tpl_messages.php:222
+#: tpl_messages.php:167
 msgid "SMTP \"smarthost/relayhost\""
 msgstr "SMTP-\"Smarthost/Relayhost\""
 
-#: tpl_messages.php:223
+#: tpl_messages.php:168
 msgid ""
 "Smarthost (and optional port) to use to send outgoing mail (host.domain."
 "tld). Leave empty for no relayhost."
@@ -983,11 +841,11 @@ msgstr ""
 "verwendet (host.domain.tld). Wenn Sie keinen solchen verwenden wollen, "
 "lassen Sie dieses Feld leer."
 
-#: tpl_messages.php:225
+#: tpl_messages.php:170
 msgid "Accept Internet Mail"
 msgstr "Nachrichten aus dem Internet akzeptieren"
 
-#: tpl_messages.php:226
+#: tpl_messages.php:171
 msgid ""
 "Accept mail from other domains over unauthenticated SMTP. This must be "
 "enabled if you want to use the Kolab Server to receive mail from other "
@@ -1000,30 +858,30 @@ msgstr ""
 "ausgeschaltet ist, werden E-Mails nur von SMTP-Servern in den privilegierten "
 "Netzwerken angenommen."
 
-#: tpl_messages.php:228
+#: tpl_messages.php:173
 #: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:134
 msgid "Domains"
 msgstr "Domänen"
 
-#: tpl_messages.php:229
+#: tpl_messages.php:174
 msgid "Domain"
 msgstr "Domäne"
 
-#: tpl_messages.php:232 tpl_messages.php:245
+#: tpl_messages.php:177 tpl_messages.php:190
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: tpl_messages.php:233
+#: tpl_messages.php:178
 msgid "Mail Filter Settings"
 msgstr "Einstellungen für Nachrichtenfilter"
 
-#: tpl_messages.php:234
+#: tpl_messages.php:179
 msgid "Check messages for mismatching From header and envelope from."
 msgstr ""
 "Nachrichten darauf überprüfen, ob From-Kopfzeile und Umschlag (\"envelope\") "
 "nicht übereinstimmen."
 
-#: tpl_messages.php:235
+#: tpl_messages.php:180
 msgid ""
 "Use the Sender header instead of From for the above checks if Sender is "
 "present."
@@ -1031,11 +889,11 @@ msgstr ""
 "Falls eine Sender-Kopfzeile existiert, diese anstelle der From-Zeile für die "
 "obigen Überprüfungen verwenden."
 
-#: tpl_messages.php:236
+#: tpl_messages.php:181
 msgid "Action to take for messages that fail the check:"
 msgstr "Maßname für Nachrichten, deren Überprüfung fehlschlägt:"
 
-#: tpl_messages.php:237
+#: tpl_messages.php:182
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
 "header matches one of Kolab server's domains. In that case rewrite the From "
@@ -1046,11 +904,11 @@ msgstr ""
 "diesem Fall die From-Kopfzeile umschreiben, damit der Empfänger die mögliche "
 "Fälschung erkennen kann."
 
-#: tpl_messages.php:238
+#: tpl_messages.php:183
 msgid "Always reject the message."
 msgstr "Die Nachricht immer ablehnen."
 
-#: tpl_messages.php:239
+#: tpl_messages.php:184
 msgid ""
 "Note that enabling this setting will make the server reject any mail with "
 "non-matching sender and From header if the sender is an account on this "
@@ -1061,13 +919,155 @@ msgstr ""
 "der Absender über ein Konto auf diesem Server verfügt. Dies kann "
 "beispielsweise bei Nachrichtenlisten zu Problemen führen."
 
-#: tpl_messages.php:241
+#: tpl_messages.php:186
 msgid "Kolab Hostnames (for Master and Slaves)"
 msgstr "Kolab-Rechnernamen (für Master- und Slaveserver)"
 
-#: tpl_messages.php:242
+#: tpl_messages.php:187
 msgid "Host"
 msgstr "Host"
+
+#: tpl_messages.php:191
+msgid "The shared folder with DN"
+msgstr "Der gemeinsam genutzte Ordner mit DN"
+
+#: tpl_messages.php:193
+msgid "Back to list of shared folders"
+msgstr "Zurück zur Liste der gemeinsam genutzten Ordner"
+
+#: tpl_messages.php:194
+msgid "Shared folders"
+msgstr "Gemeinsam genutzte Ordner"
+
+#: tpl_messages.php:196
+msgid "Server"
+msgstr "Server"
+
+#: tpl_messages.php:197 tpl_messages.php:217
+msgid "Type"
+msgstr "Typ"
+
+#: tpl_messages.php:199
+msgid "Folder deleted, awaiting cleanup..."
+msgstr "Ordner gelöscht, warte auf Aufräumaktion..."
+
+#: tpl_messages.php:202 tpl_messages.php:245
+msgid "Welcome to the Kolab administration interface"
+msgstr "Willkommen zur Kolab-Systemadministration"
+
+#: tpl_messages.php:203
+msgid "NOTE:"
+msgstr "ANMERKUNG:"
+
+#: tpl_messages.php:204
+msgid ""
+"No account is configured to receive mail for administrative addresses. If "
+"you have not yet created an account for this, "
+msgstr ""
+"Es wurde kein Konto zum Empfang von Nachrichten an administrative Adressen "
+"konfiguriert. Wenn Sie hierfür noch kein Konto angelegt haben, "
+
+#: tpl_messages.php:205
+msgid "please do so"
+msgstr "dann tun Sie das bitte jetzt"
+
+#: tpl_messages.php:206
+msgid "and then go"
+msgstr "und richten Sie danach"
+
+#: tpl_messages.php:207
+msgid "here"
+msgstr "hier"
+
+#: tpl_messages.php:208
+msgid "to set up forwarding of mail to administrative email addresses."
+msgstr ""
+"die Weiterleitung von Nachrichten an administrative E-Mail-Adressen ein."
+
+#: tpl_messages.php:209
+msgid "The user with DN"
+msgstr "Der Benutzer mit DN"
+
+#: tpl_messages.php:211
+msgid "Back to list of users"
+msgstr "Zurück zur Liste der Benutzer"
+
+#: tpl_messages.php:212 tpl_messages.php:225
+msgid "Email Users"
+msgstr "E-Mail-Benutzer"
+
+#: tpl_messages.php:219
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: tpl_messages.php:220
+msgid "uid"
+msgstr "uid"
+
+#: tpl_messages.php:222
+msgid "User Deleted, awaiting cleanup..."
+msgstr "Benutzer gelöscht, warte auf Aufräumaktion..."
+
+#: tpl_messages.php:230
+msgid "Vacation Notification"
+msgstr "Benachrichtigungen bei Abwesenheit"
+
+#: tpl_messages.php:231
+msgid ""
+"Activate vacation notification (only one of vacation, forward and delivery "
+"to folder can be active at any time)"
+msgstr ""
+"Benachrichtigungen bei Abwesenheit aktivieren (es kann zu jedem Zeitpunkt "
+"nur entweder ein Abwesenheitsbenachrichtigungs-, Weiterleitungs- oder "
+"Zustellungsordner aktiviert sein)"
+
+#: tpl_messages.php:232
+msgid "Resend notification only after"
+msgstr "Benachrichtigung erst nach"
+
+#: tpl_messages.php:233
+msgid "days"
+msgstr "Tagen erneut senden"
+
+#: tpl_messages.php:234
+msgid "Send responses for these addresses:"
+msgstr "Antworten für diese Adressen schicken:"
+
+#: tpl_messages.php:235
+msgid "(one address per line)"
+msgstr "(Eine Adresse pro Zeile)"
+
+#: tpl_messages.php:236
+msgid "Do not send vacation replies to spam messages"
+msgstr "Keine Abwesenheitsbenachrichtigungen auf Spamnachrichten senden"
+
+#: tpl_messages.php:237
+msgid "Only react to mail coming from domain"
+msgstr "Nur auf Nachrichten reagieren, die aus dieser Domäne kommen"
+
+#: tpl_messages.php:238
+msgid "(leave empty for all domains)"
+msgstr "(freilassen für alle Domänen)"
+
+#: tpl_messages.php:240
+msgid "Kolab2 Groupware Server Version"
+msgstr "Kolab2-Groupware-Server-Version"
+
+#: tpl_messages.php:241
+msgid "Kolab2 Groupware Server Component Versions"
+msgstr "Versionen der Komponenten des Kolab2-Groupware-Server"
+
+#: tpl_messages.php:242
+msgid "PEAR/Horde Versions"
+msgstr ""
+
+#: tpl_messages.php:243
+msgid "Kolab2 Patched OpenPKG Package Versions"
+msgstr "Kolab2-Gepatchte-OpenPKG-Paket-Versionen"
+
+#: tpl_messages.php:244
+msgid "OpenPKG Version"
+msgstr "OpenPKG-Version"
 
 #: ../../../www/admin/addressbook/addr.php.in:17
 #: ../../../www/admin/addressbook/index.php.in:23
@@ -1076,10 +1076,10 @@ msgstr "Host"
 #: ../../../www/admin/distributionlist/list.php.in:37
 #: ../../../www/admin/domainmaintainer/index.php.in:33
 #: ../../../www/admin/maintainer/index.php.in:33
+#: ../../../www/admin/settings/index.php.in:13
 #: ../../../www/admin/sharedfolder/index.php.in:22
 #: ../../../www/admin/sharedfolder/sf.php.in:25
 #: ../../../www/admin/user/index.php.in:34
-#: ../../../www/admin/settings/index.php.in:13
 msgid "Error: You don't have Permissions to access this Menu"
 msgstr "Fehler: Sie haben keine Zugriffsrechte auf dieses Menü"
 
@@ -1622,6 +1622,70 @@ msgstr "Fehler: Sie benötigen Administratorrechte, um Benutzer zu löschen"
 msgid "Maintainer Deleted"
 msgstr "Verwalter gelöscht"
 
+#: ../../../www/admin/settings/index.php.in:98
+#, php-format
+msgid "No account found for email address %s"
+msgstr "Für die E-Mail-Adresse %s wurde kein Konto gefunden"
+
+#: ../../../www/admin/settings/index.php.in:107
+#, php-format
+msgid "LDAP Error: Failed to add distribution list %s: %s"
+msgstr "LDAP-Fehler: Konnte die Verteilerliste %s nicht hinzufügen: %s"
+
+#: ../../../www/admin/settings/index.php.in:109
+#, php-format
+msgid "Successfully created distribution list %s"
+msgstr "Verteilerliste %s erfolgreich angelegt"
+
+#: ../../../www/admin/settings/index.php.in:128
+#: ../../../www/admin/settings/index.php.in:137
+#: ../../../www/admin/settings/index.php.in:146
+#: ../../../www/admin/settings/index.php.in:155
+#: ../../../www/admin/settings/index.php.in:165
+#: ../../../www/admin/settings/index.php.in:174
+#: ../../../www/admin/settings/index.php.in:185
+#: ../../../www/admin/settings/index.php.in:199
+#: ../../../www/admin/settings/index.php.in:217
+#: ../../../www/admin/settings/index.php.in:235
+#: ../../../www/admin/settings/index.php.in:252
+#: ../../../www/admin/settings/index.php.in:265
+#, php-format
+msgid "LDAP Error: failed to modify kolab configuration object: %s"
+msgstr "LDAP-Fehler: Konnte das Kolab-Konfigurationsobjekt nicht verändern: %s"
+
+#: ../../../www/admin/settings/index.php.in:223
+#, php-format
+msgid "LDAP Error: Failed to delete domain object %s: %s"
+msgstr "LDAP-Fehler: konnte das Domänen-Objekt %s nicht löschen: %s"
+
+#: ../../../www/admin/settings/index.php.in:273
+msgid "POP3 Service"
+msgstr "POP3-Dienst"
+
+#: ../../../www/admin/settings/index.php.in:274
+msgid "POP3/SSL service (TCP port 995)"
+msgstr "POP3/SSL-Dienst (TCP-Port 995)"
+
+#: ../../../www/admin/settings/index.php.in:275
+msgid "IMAP Service"
+msgstr "IMAP-Dienst"
+
+#: ../../../www/admin/settings/index.php.in:276
+msgid "IMAP/SSL Service (TCP port 993)"
+msgstr "IMAP/SSL-Dienst (TCP-Port 993)"
+
+#: ../../../www/admin/settings/index.php.in:277
+msgid "Sieve service (TCP port 2000)"
+msgstr "Sieve-Dienst (TCP-Port 2000)"
+
+#: ../../../www/admin/settings/index.php.in:278
+msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
+msgstr "Frei/Belegt-Dienst über HTTP (zusätzlich zu HTTPS)"
+
+#: ../../../www/admin/settings/index.php.in:279
+msgid "Amavis Email Scanning (Virus/Spam)"
+msgstr "Amavis-Scannen von E-Mail-Nachrichten (Viren/Spam)"
+
 #: ../../../www/admin/sharedfolder/index.php.in:53
 #, php-format
 msgid "Manage Shared Folders (%d Folders)"
@@ -2044,70 +2108,6 @@ msgstr "-- \r\n"
 msgid "<enter your name and email address here>"
 msgstr "<Geben Sie hier Ihren Namen und Ihre E-Mail-Adresse ein>"
 
-#: ../../../www/admin/settings/index.php.in:98
-#, php-format
-msgid "No account found for email address %s"
-msgstr "Für die E-Mail-Adresse %s wurde kein Konto gefunden"
-
-#: ../../../www/admin/settings/index.php.in:107
-#, php-format
-msgid "LDAP Error: Failed to add distribution list %s: %s"
-msgstr "LDAP-Fehler: Konnte die Verteilerliste %s nicht hinzufügen: %s"
-
-#: ../../../www/admin/settings/index.php.in:109
-#, php-format
-msgid "Successfully created distribution list %s"
-msgstr "Verteilerliste %s erfolgreich angelegt"
-
-#: ../../../www/admin/settings/index.php.in:128
-#: ../../../www/admin/settings/index.php.in:137
-#: ../../../www/admin/settings/index.php.in:146
-#: ../../../www/admin/settings/index.php.in:155
-#: ../../../www/admin/settings/index.php.in:165
-#: ../../../www/admin/settings/index.php.in:174
-#: ../../../www/admin/settings/index.php.in:185
-#: ../../../www/admin/settings/index.php.in:199
-#: ../../../www/admin/settings/index.php.in:217
-#: ../../../www/admin/settings/index.php.in:235
-#: ../../../www/admin/settings/index.php.in:252
-#: ../../../www/admin/settings/index.php.in:265
-#, php-format
-msgid "LDAP Error: failed to modify kolab configuration object: %s"
-msgstr "LDAP-Fehler: Konnte das Kolab-Konfigurationsobjekt nicht verändern: %s"
-
-#: ../../../www/admin/settings/index.php.in:223
-#, php-format
-msgid "LDAP Error: Failed to delete domain object %s: %s"
-msgstr "LDAP-Fehler: konnte das Domänen-Objekt %s nicht löschen: %s"
-
-#: ../../../www/admin/settings/index.php.in:273
-msgid "POP3 Service"
-msgstr "POP3-Dienst"
-
-#: ../../../www/admin/settings/index.php.in:274
-msgid "POP3/SSL service (TCP port 995)"
-msgstr "POP3/SSL-Dienst (TCP-Port 995)"
-
-#: ../../../www/admin/settings/index.php.in:275
-msgid "IMAP Service"
-msgstr "IMAP-Dienst"
-
-#: ../../../www/admin/settings/index.php.in:276
-msgid "IMAP/SSL Service (TCP port 993)"
-msgstr "IMAP/SSL-Dienst (TCP-Port 993)"
-
-#: ../../../www/admin/settings/index.php.in:277
-msgid "Sieve service (TCP port 2000)"
-msgstr "Sieve-Dienst (TCP-Port 2000)"
-
-#: ../../../www/admin/settings/index.php.in:278
-msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
-msgstr "Frei/Belegt-Dienst über HTTP (zusätzlich zu HTTPS)"
-
-#: ../../../www/admin/settings/index.php.in:279
-msgid "Amavis Email Scanning (Virus/Spam)"
-msgstr "Amavis-Scannen von E-Mail-Nachrichten (Viren/Spam)"
-
 #: ../include/auth.class.php.in:40
 msgid "Server error, no ldap object!"
 msgstr "Server-Fehler, kein LDAP-Objekt!"
@@ -2146,9 +2146,11 @@ msgstr "Plattenplatz muss eine ganze Zahl sein"
 
 #: ../include/form.class.php:55
 msgid ""
-"Phone entries may only contain a-z, numbers, spaces and the characters ()-+/.=?:"
+"Phone entries may only contain a-z, numbers, spaces and the characters ()-+/."
+"=?:"
 msgstr ""
-"Telefonnummern dürfen nur a-z, Ziffern, Leerzeichen und die Zeichen ()-+/.=?: enthalten."
+"Telefonnummern dürfen nur a-z, Ziffern, Leerzeichen und die Zeichen ()-+/."
+"=?: enthalten."
 
 #: ../include/form.class.php:118
 msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
@@ -2197,6 +2199,49 @@ msgstr "Obligatorisches Feld "
 #: ../include/form.class.php:396 ../include/form.class.php:399
 msgid " is empty"
 msgstr " ist leer"
+
+#: ../include/ldap.class.php.in:54
+msgid ""
+"Error setting LDAP protocol to v3. Please contact your system administrator"
+msgstr ""
+"Fehler beim Einstellen des LDAP-Protokolls auf v3. Bitte wenden Sie sich an "
+"Ihren Systemverwalter"
+
+#: ../include/ldap.class.php.in:184 ../include/ldap.class.php.in:214
+#: ../include/ldap.class.php.in:244
+#, php-format
+msgid "No such object %s"
+msgstr "Kein Objekt %s vorhanden"
+
+#: ../include/ldap.class.php.in:187 ../include/ldap.class.php.in:217
+#: ../include/ldap.class.php.in:247
+#, php-format
+msgid "LDAP Error searching for DN %s: %s"
+msgstr "LDAP-Fehler beim Suchen nach DN %s: %s"
+
+#: ../include/ldap.class.php.in:200
+#, php-format
+msgid "Error searching for DN for UID=%s"
+msgstr "Fehler beim Suchen nach dem DN für UID=%s"
+
+#: ../include/ldap.class.php.in:230
+#, php-format
+msgid "Error searching for DN for Mail=%s"
+msgstr "Fehler beim Suchen nach dem DN für Mail=%s"
+
+#: ../include/ldap.class.php.in:260
+#, php-format
+msgid "Error searching for DN for alias=%s: %s"
+msgstr "Fehler beim Suchen nach dem DN für Aliasname=%s: %s"
+
+#: ../include/ldap.class.php.in:273
+#, php-format
+msgid "Error searching for DN for mail or alias %s: %s"
+msgstr "Fehler beim Suchen nach dem DN für Mail oder Alias %s: %s"
+
+#: ../include/ldap.class.php.in:336
+msgid "LDAP Error: Can't read maintainers group: "
+msgstr "LDAP-Fehler: Kann die Verwalter-Gruppe nicht lesen"
 
 #: ../include/menu.php:26
 msgid "Users"
@@ -2309,49 +2354,6 @@ msgstr "Passwort ist leer"
 #: ../include/passwd.php:36 ../include/passwd.php:41
 msgid "Passwords dont match"
 msgstr "Passwörter stimmen nicht überein"
-
-#: ../include/ldap.class.php.in:54
-msgid ""
-"Error setting LDAP protocol to v3. Please contact your system administrator"
-msgstr ""
-"Fehler beim Einstellen des LDAP-Protokolls auf v3. Bitte wenden Sie sich an "
-"Ihren Systemverwalter"
-
-#: ../include/ldap.class.php.in:184 ../include/ldap.class.php.in:214
-#: ../include/ldap.class.php.in:244
-#, php-format
-msgid "No such object %s"
-msgstr "Kein Objekt %s vorhanden"
-
-#: ../include/ldap.class.php.in:187 ../include/ldap.class.php.in:217
-#: ../include/ldap.class.php.in:247
-#, php-format
-msgid "LDAP Error searching for DN %s: %s"
-msgstr "LDAP-Fehler beim Suchen nach DN %s: %s"
-
-#: ../include/ldap.class.php.in:200
-#, php-format
-msgid "Error searching for DN for UID=%s"
-msgstr "Fehler beim Suchen nach dem DN für UID=%s"
-
-#: ../include/ldap.class.php.in:230
-#, php-format
-msgid "Error searching for DN for Mail=%s"
-msgstr "Fehler beim Suchen nach dem DN für Mail=%s"
-
-#: ../include/ldap.class.php.in:260
-#, php-format
-msgid "Error searching for DN for alias=%s: %s"
-msgstr "Fehler beim Suchen nach dem DN für Aliasname=%s: %s"
-
-#: ../include/ldap.class.php.in:273
-#, php-format
-msgid "Error searching for DN for mail or alias %s: %s"
-msgstr "Fehler beim Suchen nach dem DN für Mail oder Alias %s: %s"
-
-#: ../include/ldap.class.php.in:336
-msgid "LDAP Error: Can't read maintainers group: "
-msgstr "LDAP-Fehler: Kann die Verwalter-Gruppe nicht lesen"
 
 #~ msgid ""
 #~ "Using legacy services poses a security thread due to leakage of cleartext "
