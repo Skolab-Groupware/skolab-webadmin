@@ -9,12 +9,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <title>{$page_title}</title>
+<link rel="shortcut icon" type="image/png" href="@webserver_web_prefix@/favicon.png" />
 <meta name="robots" content="noindex" />	
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="{$currentlang}" /> 
 <meta name="description" content="Kolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
 <link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/style.css"}" />
+<link rel="stylesheet" type="text/css" media="print" href="{"$topdir/print.css"}" />
 
 <script type="text/javascript">
 <!--
@@ -28,7 +30,7 @@ function changeLanguage(combobox) {ldelim}
 </head>
 <body>
 <div id="topbar">
-	<a href="@webserver_web_prefix@/admin"><div id="toplogo"></div></a>
+	<a href="@kolab_wui@"><span id="toplogo"></span></a>
 	<div id="toptitle">{$page_title}</div>
 </div>
 <div id="topuserinfo">
@@ -41,7 +43,7 @@ function changeLanguage(combobox) {ldelim}
 <select name="lang" class="langcombo" onchange="changeLanguage(this);">
 {section name=id loop=$languages}
 {if $languages[id].code==$currentlang}
-<option value="{$languages[id].code}" selected>{$languages[id].name}</option>
+<option value="{$languages[id].code}" selected="selected">{$languages[id].name}</option>
 {else}
 <option value="{$languages[id].code}">{$languages[id].name}</option>
 {/if}
@@ -103,7 +105,5 @@ function changeLanguage(combobox) {ldelim}
 </div>
 -->
 </div>
-<br/>
-<br/>
 </body>
 </html>

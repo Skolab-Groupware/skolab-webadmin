@@ -21,7 +21,7 @@
 session_start();
 session_destroy();
 session_unset();
-header('Location: @webserver_web_prefix@/admin/');
+header('Location: @kolab_wui@/');
 
 /*
   Local variables:

@@ -1,0 +1,36 @@
+/*
+  Local variables:
+  buffer-file-coding-system: utf-8
+  End:
+*/
+#topbar {
+  height: auto;
+}
+#toplogo {
+  display: none;
+}
+#toptitle {
+  padding: 0; 
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+#topuserinfo {
+  display: none;
+}
+#topmenu {
+  display: none;
+}
+#submenu {
+  display: none;
+}
+#maincontent {
+  margin: 0;
+  padding: 0;
+}
+.contenttext {
+  margin: 0;
+}
+.contenttable th,
+.contenttable td {
+  border: 1px solid black;
+}

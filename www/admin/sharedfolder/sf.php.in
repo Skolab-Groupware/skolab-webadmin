@@ -47,6 +47,7 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
 	else
 	  $form->entries['foldertype']['value'] = '';
   } else $form->entries['foldertype']['value'] = '';
+  $form->entries['foldertype']['attrs'] = 'readonly';
   $form->entries['action']['value'] = 'save';
   //debug("got userquota=$userquota<br/>cn=$cn<br/>");
   $aclcount = 0;
@@ -129,7 +130,8 @@ $entries = array( 'cn' => array( 'name' => _('Folder Name'),
 							 'value' => '' ),
 
 				  'cyrus-userquota' => array( 'name' => _('Quota Limit'),
-										'comment' => _('MBytes (empty for unlimited)') ),
+											  'comment' => _('MBytes (empty for unlimited)'),
+											  'validation' => 'checkquota' ),
 				  'acl_0' => array( 'name' => _('Permission for UID/GID'),
 									'type' => 'aclselect',
 									'user' => 'anyone',

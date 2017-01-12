@@ -59,13 +59,7 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
   else $lastname = $ldap_object['sn'];
   if (is_array($ldap_object['cn'])) $cn = $ldap_object['cn'][0];
   else $cn = $ldap_object['cn'];
-  if ($lastname) {
-    $a = strlen($lastname);
-    if ($cn) {
-      $b = strlen($cn);
-      $firstname = substr($cn, 0, $b - $a);
-    }
-  }
+  $firstname = KolabLDAP::getGivenName($cn, $lastname);
   if (is_array($ldap_object['uid'])) $uid = $ldap_object['uid'][0];
   else $uid = $ldap_object['uid'];
   $form->entries['firstname']['value'] = $firstname;
@@ -160,11 +154,15 @@ $entries = array( 'firstname' => array( 'name' => _('First Name'),
 $entries['action'] = array( 'name' => 'action',
 			    'type' => 'hidden' );
 
+$oc = array('top', 'inetOrgPerson','kolabInetOrgPerson');
+
 if( $dn ) {
   $ldap_object = $ldap->read( $dn );
   if( !$ldap_object ) {
     array_push($errors, sprintf(_("LDAP Error: No such dn: %s: %s"), $dn, ldap_error($ldap->connection)));
   }
+  $oc = $ldap_object['objectClass'];
+  unset($oc['count']);
 }
 
 $form =& new KolabForm( 'maintainer', 'createmaintainer.tpl', $entries );
@@ -172,6 +170,7 @@ $form =& new KolabForm( 'maintainer', 'createmaintainer.tpl', $entries );
 switch( $action ) {
  case 'firstsave':
    debug("adding checkuniquemail to validation");
+   $ldap_object['objectClass'] = array( 'top', 'inetOrgPerson', 'kolabInetOrgPerson');
    $form->entries['uid']['validation'] = 'checkuniquemail';   
  case 'save':
    if( $form->isSubmitted() ) {
@@ -181,7 +180,7 @@ switch( $action ) {
      } else {
        debug("Process...");
        $ldap_object = array();
-       $ldap_object['objectClass'] = array( 'top', 'inetOrgPerson', 'kolabInetOrgPerson');
+       $ldap_object['objectClass'] = $oc;
        $ldap_object['sn'] = trim($_POST['lastname']);
        $ldap_object['cn'] = trim($_POST['firstname']).' '.$ldap_object['sn'];
        if( !empty( $_POST['password_0'] ) ) {
@@ -318,7 +317,7 @@ switch( $action ) {
 						   ldap_error($ldap->connection));
 	 }
 	 if( !$errors ) {
-	   $delete_template['kolabdeleteflag'] = 'TRUE';
+	   $delete_template['kolabDeleteflag'] = 'TRUE';
 	   if( !$ldap->deleteObject($dn)) {
 		 array_push($errors, sprintf(_("LDAP Error: could not mark %s for deletion: %s"), $dn.
 									 ldap_error($ldap->connection)));

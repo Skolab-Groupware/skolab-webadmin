@@ -35,7 +35,6 @@ function extract_ldap_values()
   global $imap;
   global $imaps;
   global $sieve;
-  global $ftp;
   global $http;
   global $httpallowunauthfb;
   global $amavis;
@@ -61,7 +60,6 @@ function extract_ldap_values()
 	$imap = $attrs['cyrus-imap'][0];
 	$imaps = $attrs['cyrus-imaps'][0];
 	$sieve = $attrs['cyrus-sieve'][0];
-	$ftp = $attrs['proftpd-ftp'][0];
 	$http = $attrs['apache-http'][0];
 	$httpallowunauthfb = $attrs['apache-allow-unauthenticated-fb'][0];
 	$amavis = $attrs['postfix-enable-virus-scan'][0];
@@ -123,7 +121,6 @@ if( $_REQUEST['submitservices'] ) {
   if( postvalue( 'imap' ) != $imap )   $attrs['cyrus-imap'] = postvalue( 'imap' );
   if( postvalue( 'imaps' ) != $imaps ) $attrs['cyrus-imaps'] = postvalue( 'imaps' );
   if( postvalue( 'sieve' ) != $sieve ) $attrs['cyrus-sieve'] = postvalue( 'sieve' );
-  if( postvalue( 'ftp' ) != $ftp )     $attrs['proftpd-ftp'] = postvalue( 'ftp' );
   if( postvalue( 'http' ) != $http )    $attrs['apache-http'] = postvalue( 'http' );
   if( postvalue( 'amavis' ) != $amavis )  $attrs['postfix-enable-virus-scan'] = postvalue( 'amavis' );
   
@@ -278,10 +275,7 @@ $entries = array( array( 'service' => 'pop3', 'name'  => _('POP3 Service'), 'ena
 				  array( 'service' => 'imap', 'name'  => _('IMAP Service'), 'enabled' => toboolstr( $imap ) ),
 				  array( 'service' => 'imaps', 'name' => _('IMAP/SSL Service (TCP port 993)'), 'enabled' => toboolstr( $imaps ) ),
 				  array( 'service' => 'sieve', 'name' => _('Sieve service (TCP port 2000)'), 'enabled' => toboolstr( $sieve ) ),
-				  array( 'service' => 'ftp', 
-						 'name'   => _('FTP FreeBusy Service (Legacy, not interoperable with Kolab2 FreeBusy)'), 
-						 'enabled' => toboolstr( $ftp ) ),
-				  array( 'service' => 'http', 'name'  => _('HTTP FreeBusy Service (Legacy)'), 'enabled' => toboolstr( $http ) ),
+				  array( 'service' => 'http', 'name'  => _('FreeBusy Service via HTTP (in addition to HTTPS)'), 'enabled' => toboolstr( $http ) ),
 				  array( 'service' => 'amavis', 'name' => _('Amavis Email Scanning (Virus/Spam)'), 
 						 'enabled' => toboolstr( $amavis ) ) );
 
@@ -316,7 +310,7 @@ $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems', 
 				 array_key_exists('submenu', 
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
-$smarty->assign( 'maincontent', 'service.tpl' );
+$smarty->assign( 'maincontent', 'settings.tpl' );
 
 $systemaliasconf = array();
 

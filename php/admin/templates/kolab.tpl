@@ -10,7 +10,7 @@
 {tr msg="This is the Kolab2 Server. It is Free Software developed by the <a href=\"http://www.kolab.org/\">Kolab Project</a>, with the intention of bringing groupware functionality to Unix/KDE users as well as Windows desktops."}
 </p>
 
-<p>
+<div>
 {tr msg="Kolab builds upon many other Free Software projects, namely:"}
 <ul>
  <li><a href="http://www.ijs.si/software/amavisd/">amavisd-new</a> {tr msg="(Mail Scanner)"}</li>
@@ -19,7 +19,6 @@
  <li><a href="http://asg.web.cmu.edu/cyrus/imapd/">Cyrus</a> {tr msg="(IMAP Server)"}</li>
  <li><a href="http://www.openldap.org/">OpenLDAP</a> {tr msg="(LDAP Server)"}</li>
  <li><a href="http://www.postfix.org/">Postfix</a> {tr msg="(MTA)"}</li>
-<!--  <li><a href="http://www.proftpd.org/">ProFTPD</a> {tr msg="(FTP Server)"}</li> -->
  <li><a href="http://spamassassin.apache.org/">SpamAssasin</a> {tr msg="(SPAM Filter)"}</li>
 
 </ul>
@@ -34,7 +33,7 @@
  <li><a href="http://www.kde.org/">K Desktop Environment (KDE)</a></li>
  <li><a href="http://www.horde.org/">The Horde Project</a></li>
 </ul>
-</p>
+</div>
 
 <p>
 {tr msg="The Kolab project owes a great deal of thanks to the people of the <a href=\"http://www.openpkg.org/\">OpenPKG</a> project. OpenPKG allows Kolab to run on many diverse platforms in a reliable and predictable manner, by providing a common, easy-to-install, cross-platform base on which to build the server."}
@@ -64,18 +63,18 @@
 {tr msg="<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> joined the project soon after the original Kolab1 server was released. Its developers are primarily responsible for an updated engine (which forms the base of the Kolab2 server), the web client, as well as contributing to development of the Kolab2 storage format."}
 </p>
 
-<p>
+<div>
  {tr msg="Other contributors:"}<br/>
 <ul>
 <li> <a href="http://www.konsec.com">Konsec GmbH</a> {tr msg="CSSified the Kolab1 web admin GUI"}</li>
 </ul>
-</p>
+</div>
 
 <p>
 {tr msg="The principal authors of the Kolab client and server software are (in alphabetical order):"}
 </p>
 
-<p>
+<div>
 <ul>
  <li>Stuart Bing&euml;</li>
  <li>Stephan Buys</li>
@@ -85,7 +84,7 @@
  <li>Achim Frank</li>
  <li>Michel Boyer de la Giroday</li>
  <li>Steffen Hansen</li>
- <li>Bernhard Herzog
+ <li>Bernhard Herzog</li>
  <li>Martin Konold</li>
  <li>Marc Mutz</li>
  <li>Bernhard Reiter</li>
@@ -95,6 +94,6 @@
  <li>Karl-Heinz Zimmer</li>
  <li>Romain Pokrzywka</li>
 </ul>
-</p>
+</div>
 
 </div>

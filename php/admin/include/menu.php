@@ -103,9 +103,9 @@ if( $auth->group() == 'admin' ) {
 									'title' => _('Manage Domain Maintainer') );  
 }
 if( $auth->group() == 'admin' ) {
-  $menuitems['service'] = array( 'name' => _('Services'),
-								 'url'  => $topdir.'/service/',
-								 'title' => _('Manage Services') );
+  $menuitems['service'] = array( 'name' => _('Settings'),
+								 'url'  => $topdir.'/settings/',
+								 'title' => _('System Settings') );
 }
 
 $menuitems['about'] = array( 'name' => _('About Kolab'),
@@ -124,7 +124,7 @@ $menuitems['about'] = array( 'name' => _('About Kolab'),
 													   'url'  => 'kde.php' )
 												));
 if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group() == 'domain-maintainer') {
-  $menuitems['about']['submenu'][] = array( 'name' => _('<b>Versions</b>'),
+  $menuitems['about']['submenu'][] = array( 'name' => _('Versions'),
 											'url'  => 'versions.php' );
 }
 

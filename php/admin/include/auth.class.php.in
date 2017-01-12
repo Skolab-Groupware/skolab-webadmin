@@ -104,7 +104,7 @@ class KolabAuth {
 		session_destroy();
 		$this->error_string = false;
 		//$this->gotoLoginPage();
-		Header("Location: @webserver_web_prefix@/admin/");
+		Header("Location: @kolab_wui@/");
 	}
 
 	function handleLogin() {

@@ -1,8 +1,9 @@
 {* Smarty Template *}
-<a href="http://www.klaralvdalens-datakonsult.se/"><IMG SRC="../pics/kdab.png"
-ALT="KDAB" align="middle"
-longdesc="http://www.klaralvdalens-datakonsult.se" border="0"></a>
-
+<div class="align_center">
+ <a href="http://www.klaralvdalens-datakonsult.se/">
+  <img src="../pics/kdab.png" alt="KDAB" longdesc="http://www.klaralvdalens-datakonsult.se" style="border:0px;" />
+ </a>
+</div>
 <div class="contentsimple">
 <p>
 {tr msg="The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by"} <a href="http://www.klaralvdalens-datakonsult.se">Klar&auml;lvdalens Datakonsult AB</a>.
@@ -14,13 +15,13 @@ longdesc="http://www.klaralvdalens-datakonsult.se" border="0"></a>
 {tr msg="The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"}
 </p>
 <p>
-Bo Thorsen<br>
-Michel Boyer de la Giroday<br>
-Steffen Hansen<br>
-Matthias Kalle Dalheimer<br>
-David Faure<br>
-Karl-Heinz Zimmer<br>
-Lutz Rogowski<br>
-Romain Pokrzywka<br>
+Bo Thorsen<br />
+Michel Boyer de la Giroday<br />
+Steffen Hansen<br />
+Matthias Kalle Dalheimer<br />
+David Faure<br />
+Karl-Heinz Zimmer<br />
+Lutz Rogowski<br />
+Romain Pokrzywka<br />
 </p>
 </div>

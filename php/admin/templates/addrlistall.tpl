@@ -7,7 +7,7 @@
 <div class="contenttext">
 <h3>{tr msg="(only external addresses without a kolab user account)"}</h3>
 </div>
-<div align="center">
+<div class="align_center">
 <a href="{$self_url}?alphalimit="> {tr msg="[ ALL ]"} </a>&nbsp;&nbsp;
 <a href="{$self_url}?alphalimit=a"> [ A-F ] </a>&nbsp;&nbsp;
 <a href="{$self_url}?alphalimit=g"> [ G-L ] </a>&nbsp;&nbsp;
@@ -16,11 +16,12 @@
 <a href="{$self_url}?alphalimit=other"> {tr msg="[ OTHER ]"} </a>
 </div>
 <div class="contentform">
-<form name="filterform" method="post">
+<form id="filterform" method="post" action="">
+<div>
 {tr msg="Filter:"} <select name="filterattr">
 {foreach key=value item=name from=$filterattrs}
 {if $value eq $filterattr}
-  <option value="{$value}" selected>{$name|escape:"html"}</option>
+  <option value="{$value}" selected="selected">{$name|escape:"html"}</option>
 {else}
   <option value="{$value}">{$name|escape:"html"}</option>
 {/if}
@@ -29,14 +30,16 @@
 <select name="filtertype">
 {foreach key=value item=name from=$filtertypes}
 {if $value eq $filtertype}
-  <option value="{$value}" selected>{$name|escape:"html"}</option>
+  <option value="{$value}" selected="selected">{$name|escape:"html"}</option>
 {else}
   <option value="{$value}">{$name|escape:"html"}</option>
 {/if}
 {/foreach}
 </select>
 <input type="text" name="filtervalue" value="{$filtervalue|escape:"html"}" />
-<input type="submit" name="filtersubmit" value="{tr msg="Filter"}" /></form>
+<input type="submit" name="filtersubmit" value="{tr msg="Filter"}" />
+</div>
+</form>
 </div>
 
 <table class="contenttable" cellpadding="0" cellspacing="1px">
@@ -49,8 +52,8 @@
 	{if $entries[id].deleted neq "FALSE"}
 	   <td class="actioncell" colspan="2">{tr msg="Entry deleted, awaiting cleanup..."}</td>
 	{else}
-	   <td class="actioncell"><a href="addr.php?action=modify&dn={$entries[id].dn|escape:"url"}">{tr msg="Modify"}</a></td>
-	   <td class="actioncell"><a href="addr.php?action=delete&dn={$entries[id].dn|escape:"url"}">{tr msg="Delete"}</a></td>
+	   <td class="actioncell"><a href="addr.php?action=modify&amp;dn={$entries[id].dn|escape:"url"}">{tr msg="Modify"}</a></td>
+	   <td class="actioncell"><a href="addr.php?action=delete&amp;dn={$entries[id].dn|escape:"url"}">{tr msg="Delete"}</a></td>
 	{/if}
 	</tr>
 {/section}

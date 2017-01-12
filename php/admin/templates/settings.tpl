@@ -13,10 +13,12 @@
 <p>{tr msg="You have not yet set up a receiving account for the administrative email addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. Enter the email address of a kolab account below and press the button to create a distribution list for each of those addresses. Later you can add or remove people from the lists like any other distribution list"}</p>
 {section name=id loop=$systemaliasconf}
 <div class="contentform">
-<form name="systemalias_{$systemaliasconf[id].n}" method="post">
+<form id="systemalias_{$systemaliasconf[id].n}" method="post" action="">
+<div>
 {tr msg="Email address of account that should receive administrative mail for domain "}  {$systemaliasconf[id].domain|escape:html}:
 <input type="text" name="systemaliasmail_{$systemaliasconf[id].n}" size="80"  value="{$systemaliasmail[id]|escape:"html"}" /><br/>
-<div align="right"><input type="submit" name="submitsystemalias_{$systemaliasconf[id].n}" value="{tr msg="Create Distribution Lists"}" /></div>
+<div class="align_right"><input type="submit" name="submitsystemalias_{$systemaliasconf[id].n}" value="{tr msg="Create Distribution Lists"}" /></div>
+</div>
 </form>
 </div>
 {/section}
@@ -25,14 +27,8 @@
 {/if}
 
 <h2>{tr msg="Enable or Disable individual Services"}</h2>
-<div class="contentsimple">
-<p>{tr msg="Using legacy services poses a security thread due to leakage of cleartext passwords, lack of authenticity and privacy."}</p>
-<p>{tr msg="The legacy Freebusy Support (FTP and HTTP) is only required for Outlook2000 clients. Under all other circumstances it is advised to use the server-side freebusy creation feature over secure HTTP instead (this is enabled by default and may not be deactivated)."}</p>
-<p>{tr msg="Further details with regards to security considerations might be available from the <a href=\"http://www.kolab.org\">Kolab Project</a>."}</p>
-</div>
-<h3>{tr msg="Services"}</h3>
-<form name="serviceform" method="post">
-
+<form id="serviceform" method="post" action="">
+<div>
 <table class="contenttable" cellpadding="0" cellspacing="1px">
 	<tr class="contentrow">
 	<th>{tr msg="Service"}</th><th>{tr msg="Enabled"}</th>
@@ -40,67 +36,80 @@
 {section name=id loop=$entries}
 	<tr class="contentrow{cycle values="even,odd"}">
 	   <td class="contentcell">{$entries[id].name|escape:"html"}</td>
-	   <td class="actioncell"><input type="checkbox" name="{$entries[id].service}" {if $entries[id].enabled == 'true' }checked{/if}></td>
+	   <td class="actioncell"><input type="checkbox" name="{$entries[id].service}" {if $entries[id].enabled == 'true' }checked="checked"{/if} /></td>
 	</tr>
 {/section}
 	<tr class="contentrow{cycle values="even,odd"}">
-	   <td class="contentcell"> </td><td class="actioncell"><input type="submit" name="submitservices" value="{tr msg="Update"}"></td>
+	   <td class="contentcell"> </td><td class="actioncell"><input type="submit" name="submitservices" value="{tr msg="Update"}" /></td>
 	</tr>
 </table>
+</div>
 </form>
 <h2>{tr msg="Quota settings"}</h2>
 <div class="contentform">
-<form name="quotawarnform" method="post">
+<form id="quotawarnform" method="post" action="">
+<div>
 <br />
 {tr msg="Warn users when they have used"} <input name="quotawarn" size="3"  value="{$quotawarn|escape:"html"}" /> {tr msg="% of their quota"}<br />
-<div align="right"><input type="submit" name="submitquotawarn" value="{tr msg="Update"}" /></div>
+<div class="align_right"><input type="submit" name="submitquotawarn" value="{tr msg="Update"}" /></div>
+</div>
 </form>
 </div>
 <br />
 <h2>{tr msg="Free/Busy settings"}</h2>
 <div class="contentform">
-<form name="httpallowunauthfbform" method="post">
+<form id="httpallowunauthfbform" method="post" action="">
+<div>
 <br />
-<input type="checkbox" name="httpallowunauthfb" {if $httpallowunauthfb == 'true' }checked{/if} />
+<input type="checkbox" name="httpallowunauthfb" {if $httpallowunauthfb == 'true' }checked="checked"{/if} />
 {tr msg="Allow unauthenticated downloading of Free/Busy information"}
 <br />
-<div align="right"><input type="submit" name="submithttpallowunauthfb" value="{tr msg="Update"}" /></div>
+<div class="align_right"><input type="submit" name="submithttpallowunauthfb" value="{tr msg="Update"}" /></div>
+</div>
 </form>
 </div>
 <br />
 <div class="contentform">
-<form name="freebusypastform" method="post">
+<form id="freebusypastform" method="post" action="">
+<div>
 <br />
 {tr msg="When creating free/busy lists, include data from"} <input name="freebusypast" size="3"  value="{$freebusypast|escape:"html"}" /> {tr msg="days in the past"}<br />
-<div align="right"><input type="submit" name="submitfreebusypast" value="{tr msg="Update"}" /></div>
+<div class="align_right"><input type="submit" name="submitfreebusypast" value="{tr msg="Update"}" /></div>
+</div>
 </form>
 </div>
 <br />
 <h2>{tr msg="Privileged Networks"}</h2>
 <div class="contentform">
-<form name="postfixmynetworksform" method="post">
+<form id="postfixmynetworksform" method="post" action="">
+<div>
 {tr msg="Networks allowed to relay and send mail through unauthenticated SMTP connections to the Kolab server (comma separated networks in x.x.x.x/y format):"}
 <input type="text" name="postfixmynetworks" size="80"  value="{$postfixmynetworks|escape:"html"}" />
-<div align="right"><input type="submit" name="submitpostfixmynetworks" value="{tr msg="Update"}" /></div>
+<div class="align_right"><input type="submit" name="submitpostfixmynetworks" value="{tr msg="Update"}" /></div>
+</div>
 </form>
 </div>
 <br />
 <h2>{tr msg="SMTP \"smarthost/relayhost\""}</h2>
 <div class="contentform">
-<form name="postfixrelayhostform" method="post">
+<form id="postfixrelayhostform" method="post" action="">
+<div>
 {tr msg="Smarthost (and optional port) to use to send outgoing mail (host.domain.tld). Leave empty for no relayhost."}
 <input type="text" name="postfixrelayhost" size="40"  value="{$postfixrelayhost|escape:"html"}" />:
 <input type="text" name="postfixrelayport" size="4" value="{$postfixrelayport|escape:"html"}" /><br/>
-<div align="right"><input type="submit" name="submitpostfixrelayhost" value="{tr msg="Update"}" /></div>
+<div class="align_right"><input type="submit" name="submitpostfixrelayhost" value="{tr msg="Update"}" /></div>
+</div>
 </form>
 </div>
 <br />
 <h2>{tr msg="Accept Internet Mail"}</h2>
 <div class="contentform">
-<form name="postfixallowunauthform" method="post">
-<input type="checkbox" name="postfixallowunauth" {if $postfixallowunauth == 'true' }checked{/if} />
+<form id="postfixallowunauthform" method="post" action="">
+<div>
+<input type="checkbox" name="postfixallowunauth" {if $postfixallowunauth == 'true' }checked="checked"{/if} />
 {tr msg="Accept mail from other domains over unauthenticated SMTP. This must be enabled if you want to use the Kolab Server to receive mail from other internet domains directly. Leave disabled to accept mail only from SMTP gateways that are within the privileged network."}
-<div align="right"><input type="submit" name="submitpostfixallowunauth" value="{tr msg="Update"}" /></div>
+<div class="align_right"><input type="submit" name="submitpostfixallowunauth" value="{tr msg="Update"}" /></div>
+</div>
 </form>
 </div>
 <br />
@@ -110,42 +119,44 @@
 	<th>{tr msg="Domain"}</th><th>{tr msg="Action"}</th>
 	</tr>
 {section name=id loop=$postfixmydestination}
+	<form method="post" action="">
 	<tr class="contentrow{cycle values="even,odd"}">
 	   <td class="contentcell">{$postfixmydestination[id]|escape:"html"}</td>
 	   <td class="actioncell">{strip}
-		<form method="post">
 		<input type="hidden" name="adestination" value="{$postfixmydestination[id]}" />
 		<input type="submit" name="deletedestination" value="{tr msg="Delete"}" />
-		</form>
            {/strip}</td>
 	</tr>
+	</form>
 {/section}
+	<form method="post" action="">
 	<tr class="contentrow{cycle values="even,odd"}">
-	   <form method="post">
 	   <td class="contentcell"> 
 		<input type="text" size="60" name="adestination" />
            </td><td class="actioncell"><input type="submit" name="adddestination" value="{tr msg="Add"}" /></td>
-	   </form>
 	</tr>
+	</form>
 </table>
 <br/>
 <h2>{tr msg="Mail Filter Settings"}</h2>
 <div class="contentform">
-<form name="kolabfilterform" method="post">
-<input type="checkbox" name="kolabfilterverifyfrom" {if $kolabfilterverifyfrom == 'true' }checked{/if} />
+<form id="kolabfilterform" method="post" action="">
+<div>
+<input type="checkbox" name="kolabfilterverifyfrom" {if $kolabfilterverifyfrom == 'true' }checked="checked"{/if} />
 {tr msg="Check messages for mismatching From header and envelope from."}
 <br />
-<input type="checkbox" name="kolabfilterallowsender" {if $kolabfilterallowsender == 'true' }checked{/if} />
+<input type="checkbox" name="kolabfilterallowsender" {if $kolabfilterallowsender == 'true' }checked="checked"{/if} />
 {tr msg="Use the Sender header instead of From for the above checks if Sender is present."}
 <br />
-<h4>Action to take for messages that fail the check:</h4>
-<input type="radio" name="kolabfilterrejectforgedfrom" value="FALSE" {if $kolabfilterrejectforgedfrom == 'false' }checked{/if} />
-{tr msg="Reject the message with the except if it originates from the outside but has a From header that matches the Kolab server's domain. In that case rewrite the From header so the recipient can see the potential forgery."}<br/>
-<input type="radio" name="kolabfilterrejectforgedfrom" value="TRUE" {if $kolabfilterrejectforgedfrom == 'true' }checked{/if} />
+<h4>{tr msg="Action to take for messages that fail the check:"}</h4>
+<input type="radio" name="kolabfilterrejectforgedfrom" value="FALSE" {if $kolabfilterrejectforgedfrom == 'false' }checked="checked"{/if} />
+{tr msg="Reject the message, except if it originates from the outside and the From header matches one of Kolab server's domains. In that case rewrite the From header so the recipient can see the potential forgery."}<br/>
+<input type="radio" name="kolabfilterrejectforgedfrom" value="TRUE" {if $kolabfilterrejectforgedfrom == 'true' }checked="checked"{/if} />
 {tr msg="Always reject the message."}
 {tr msg="Note that enabling this setting will make the server reject any mail with non-matching sender and From header if the sender is an account on this server. This is known to cause trouble for example with mailinglists."}
 <br />
-<div align="right"><input type="submit" name="submitkolabfilter" value="{tr msg="Update"}" /></div>
+<div class="align_right"><input type="submit" name="submitkolabfilter" value="{tr msg="Update"}" /></div>
+</div>
 </form>
 </div>
 <br />
@@ -156,22 +167,21 @@
 	<th>{tr msg="Host"}</th><th>{tr msg="Action"}</th>
 	</tr>
 {section name=id loop=$kolabhost}
+	<form method="post" action="">
 	<tr class="contentrow{cycle values="even,odd"}">
 	   <td class="contentcell">{$kolabhost[id]|escape:"html"}</td>
 	   <td class="actioncell">{strip}
-		<form method="post">
 		<input type="hidden" name="akolabhost" value="{$kolabhost[id]}" />
 		<input type="submit" name="deletekolabhost" value="{tr msg="Delete"}" />
-		</form>
            {/strip}</td>
 	</tr>
+	</form>
 {/section}
+	<form method="post" action="">
 	<tr class="contentrow{cycle values="even,odd"}">
-	   <form method="post">
 	   <td class="contentcell"> 
 		<input type="text" size="60" name="akolabhost" />
            </td><td class="actioncell"><input type="submit" name="addkolabhost" value="{tr msg="Add"}" /></td>
-	   </form>
 	</tr>
+	</form>
 </table>
-</div>

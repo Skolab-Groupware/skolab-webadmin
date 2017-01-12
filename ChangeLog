@@ -1,3 +1,399 @@
+2008-07-05 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/locale/nl/LC_MESSAGES/messages.po: changed translation to Kolab
+	as that seems to be a much better page title than login.  The concerning page
+	is probably bookmarked and than is a title like Kolab better than just
+	Login.  I guess that the root cause solution would be to change the word Login
+	in the source file....
+
+2008-06-05  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* php/admin/templates/settings.tpl: Fix deleting of domains and kolab
+	hosts.
+
+2008-06-02  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* php/admin/include/form.class.php: Fix regular expression which
+	caused kolab/issue2739 (Some characters are not allowed in users
+	fax-/phonenumbers despite the description in the error)
+
+2008-04-03 Richard Bos <richard@radoeka.nl>
+
+	* Added: www/favicon.png
+	* php/admin/templates/page.tpl.in: updated for the changed favicon
+	  (issue2575)
+
+2008-03-30 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/include/mysmarty.php.in: changed $basedir.'templates into
+	  @smarty_compiledir@ (issue2538)
+	* Makefile.am: changed $(phpkolabdir)/templates_c into
+	  $(smarty_compiledir) (issue2538)
+
+2008-03-28 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/templates/systemaliasnagscreen.tpl: 
+	  rename of services to settings makes welcome screen fail
+	  (Fixes issue2569)
+	* Removed: www/admin/pics/kde.jpg: has been replaced by
+	  www/admin/pics/kde.png.
+	* Makefile.am, www/admin/service/index.php.in: reflect name change from
+	  services to settings tab
+	* Removed: php/admin/templates/service.tpl: replaced by
+	* Added: php/admin/templates/settings.tpl
+
+2008-03-14  Sascha Wilde  <wilde@intevation.de>
+
+	* Makefile.am (phpincludesdir): Moved
+	php/admin/include/ldap.class.php to phpincludesdir_DATA
+	(Fixes issue2543).
+	* configure.ac: Removed unneeded AC_CONFIG_SRCDIR line.
+
+2008-03-13  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* php/admin/locale/fr/LC_MESSAGES/messages.po: Updated french
+	translation (kolab/issue2505)
+
+2008-03-07  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* www/admin/administrator/index.php.in,
+	www/admin/domainmaintainer/index.php.in,
+	www/admin/maintainer/index.php.in: Modify LDAP filter to require
+	uid attribute to not return e.g. address book entries.
+	Prevents "PHP Notice: Undefined index: uid".
+
+2008-03-06 Richard Bos <richard@radoeka.nl>
+
+	* kolab/issue2507
+	* php/admin/include/ldap.class.php: removed
+	* php/admin/include/ldap.class.php.in: added
+	* Makefile.am, configure.ac: reflect change in
+	  php/admin/include/ldap.class.php filename
+
+2008-03-04  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* php/admin/include/menu.php: Reverted extra spaces after the main
+	menu entries added on 2008-02-16, because this does not look good.
+
+	* www/admin/user/user.php.in: Fix kolab/issue2329 (Domain Maintainer
+	cannot create users)
+
+2008-02-23 Richard Bos <richard@radoeka.nl>
+
+	* Makefile.am, php/admin/include/menu.php: move the url of the services
+	  page from services to settings.
+
+2008-02-23 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/include/menu.php: Fixed untranslated string Addressbook
+	* Makefile.am, php/admin/include/auth.class.php.in,
+	  php/admin/include/headers.php.in, php/admin/templates/page.tpl.in,
+	  www/admin/logout.php.in, www/admin/addressbook/addr.php.in,
+	  php/admin/locale/de/LC_MESSAGES/messages.po,
+	  php/admin/locale/es/LC_MESSAGES/messages.po,
+	  php/admin/locale/fr/LC_MESSAGES/messages.po,
+	  php/admin/locale/it/LC_MESSAGES/messages.po,
+	  php/admin/locale/nl/LC_MESSAGES/messages.po: changed the hardcoded
+	  path to web user interface (/admin) into a variable: kolab_wui.
+
+2008-02-22 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/templates/kde.tpl: replaced kde.jpg with kde.png
+	* www/admin/pics/kde.png: added
+	* Makefile.am: added kde.png
+
+2008-02-17 Richard Bos <richard@radoeka.nl>
+
+	* www/admin/kolab/versions.php.in: moved an openpkg specific rpm
+	  package into a test that is enabled when run on an openpkg
+	  installation.  This way the page shows up, much faster on native
+	  pkg installations
+
+	* Makefile.am: made it possible to reuse the code that leaves in or
+	  removes code depending on the presence of openpkg.  Introduced
+	  a variable w_or_wo_openpkg (with_or_without_openpkg).
+	* Makefile.am: added a note why the command is needed for the build
+	  of languages files
+	* Makefile.am: prevent configure to complain about not portable
+	  filenames by replacing basename with `echo ... | sed ...`
+
+2008-02-16 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/include/menu.php:
+	  - removed the bold formatting around Versions.
+	  - Added a space after the main menu entries, so the web page formats /
+	    breaks nices when the web browser is made smaller
+	* locale/de/LC_MESSAGES/messages.po, locale/es/LC_MESSAGES/messages.po,
+	  locale/fr/LC_MESSAGES/messages.po, locale/it/LC_MESSAGES/messages.po,
+	  locale/nl/LC_MESSAGES/messages.po: reflect the change
+	  in templates/menu.tpl
+	* www/admin/kolab/versions.php.in: prevent the autoconf variable kolab_pkgs
+	  to be processed by the build tools, it must remain in the comment
+
+2008-02-13 Richard Bos <richard@radoeka.nl>
+
+	* www/admin/kolab/versions.php.in: reflect the change in package
+	  variable name (new suffix _pkg instead of _rpm).  Added the variable
+	  kolab_pkgs, and splitted the name and version in the output
+
+2008-02-11 Richard Bos <richard@radoeka.nl>
+
+	* www/admin/kolab/versions.php.in: reflect the change in removed and new rpms:
+	  @kolab-filter_rpm@
+	  @kolab-freebusy_rpm@
+	  @perl-kolab-conf_rpm@
+	  @php-pear-kolab_filter_rpm@
+	  @php-pear-kolab_freebusy_rpm@
+	* www/admin/kolab/versions.php.in:
+	  the section "Kolab2 Patched OpenPKG Package Versions", should only show in
+	  the openpkg version of kolab.
+
+2008-02-04 Richard Bos <richard@radoeka.nl>
+
+	* php/admin/include/menu.php: Changed 'Services' to 'Settings' and
+	'Manage Services' to 'System Settings'
+	* locale/de/LC_MESSAGES/messages.po, locale/es/LC_MESSAGES/messages.po,
+	locale/fr/LC_MESSAGES/messages.po, locale/it/LC_MESSAGES/messages.po,
+	locale/nl/LC_MESSAGES/messages.po: reflect the change
+	in templates/service.tpl see issue:
+	https://intevation.de/roundup/kolab/issue2437
+
+2008-02-04  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* php/admin/templates/page.tpl.in: Add <link> for favicon.ico.
+
+2008-02-02 Richard Bos <richard@radoeka.nl>
+
+	* templates/service.tpl: rephrased the sentence from:
+	"Reject the message ........"
+	* locale/de/LC_MESSAGES/messages.po, locale/es/LC_MESSAGES/messages.po,
+	locale/fr/LC_MESSAGES/messages.po, locale/it/LC_MESSAGES/messages.po,
+	locale/nl/LC_MESSAGES/messages.po: reflect the change
+	in templates/service.tpl see issue:
+	https://intevation.de/roundup/kolab/issue2439
+
+2008-02-01 Richard Bos <richard@radoeka.nl>
+
+	* templates/service.tpl: corrected sentence from:
+	"Reject the message with the except if" to
+	"Reject the message, except if"
+	* locale/de/LC_MESSAGES/messages.po, locale/es/LC_MESSAGES/messages.po,
+	locale/fr/LC_MESSAGES/messages.po, locale/it/LC_MESSAGES/messages.po,
+	locale/nl/LC_MESSAGES/messages.po: reflect the change
+	in templates/service.tpl
+
+2008-01-22  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* www/admin/addressbook/index.php.in,
+	www/admin/administrator/index.php.in,
+	www/admin/domainmaintainer/index.php.in,
+	www/admin/maintainer/index.php.in,
+	www/admin/sharedfolder/index.php.in,
+	www/admin/user/index.php.in: Adjusted common code to look the same for
+	easier comparison. This fixed some variable initialisations.
+
+2007-12-03  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* www/admin/user/user.php.in: Removed resource password handling
+	which is unused since server 2.1.
+
+	* php/admin/templates/service.tpl: Removed obsolete explanation
+	about enabling legacy services.
+
+2007-11-21  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* www/admin/user/user.php.in: Renamed "Free/Busy future" to
+	"Free/Busy interval" to be consistent with the user inteface.
+
+	* www/admin/user/deliver.php.in, www/admin/user/forward.php.in,
+	www/admin/user/vacation.php.in: Don't use @bindir@ in strings
+	marked for translation.
+
+	* de/LC_MESSAGES/messages.po: Updated German translations.
+
+	* php/admin/templates/service.tpl,
+	php/admin/locale/de/LC_MESSAGES/messages.po,
+	php/admin/locale/es/LC_MESSAGES/messages.po,
+	php/admin/locale/fr/LC_MESSAGES/messages.po,
+	php/admin/locale/it/LC_MESSAGES/messages.po,
+	php/admin/locale/nl/LC_MESSAGES/messages.po: Mark "Action to take for
+	messages that fail the check" for translation and update .po files,
+	including translation for German.
+
+	* php/admin/include/form.class.php: fix kolab/issue1912 (some field
+	descriptions missing in web admin interface)
+
+	* php/admin/include/ldap.class.php,
+	www/admin/addressbook/addr.php.in,
+	www/admin/addressbook/index.php.in,
+	www/admin/administrator/admin.php.in,
+	www/admin/administrator/index.php.in,
+	www/admin/domainmaintainer/domainmaintainer.php.in,
+	www/admin/domainmaintainer/index.php.in,
+	www/admin/maintainer/index.php.in,
+	www/admin/maintainer/maintainer.php.in,
+	www/admin/user/index.php.in,
+	www/admin/user/user.php.in: Fix kolab/issue1711 (extra space after
+	first name when editing users or admins)
+
+2007-11-16  Thomas Arendsen Hein  <thomas@intevation.de>
+
+	* php/admin/locale/de/LC_MESSAGES/messages.po: Updated German
+	translations: Verwalter, Domaenenverwalter.
+
+2007-10-17  Thomas Arendsen Hein  <thomas@intevation.de>
+
+	* php/admin/templates/kolab.tpl, www/admin/service/index.php.in:
+	kolab/issue934 (Remove FTP FreeBusy Service (proftpd))
+
+	* php/admin/locale/de/LC_MESSAGES/messages.po,
+	www/admin/service/index.php.in: Clarify web admin description for
+	HTTP FreeBusy switch (with updated German translation)
+
+2007-08-07  Gunnar Wrobel  <p@rdus.de>
+
+	* php/admin/templates/page.tpl.in: 
+
+	fixed  kolab/issue1611 ([webadmin] page.tpl use no valid XHTML)
+	https://intevation.de/roundup/kolab/issue1611
+
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+
+	fixed  kolab/issue1246 (Permission handling in the webadmin frontend)
+	https://intevation.de/roundup/kolab/issue1246
+
+2007-07-13  Gunnar Wrobel  <p@rdus.de>
+
+	* php/admin/include/ldap.class.php: 
+
+	fixed possible PHP notices.
+
+2007-07-12  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/sharedfolder/sf.php.in: 
+	* www/admin/addressbook/addr.php.in: 
+	* www/admin/user/user.php.in: 
+
+	fixed kolab/issue932 (Illegal values in webadmin cause LDAP errors)
+	https://intevation.de/roundup/kolab/issue932
+
+	Removed code duplications.
+
+2007-07-11  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/sharedfolder/sf.php.in: 
+
+	fixed kolab/issue1694 (Unable to modify the folder type of an already created shared folder)
+	https://intevation.de/roundup/kolab/issue1694
+
+2007-07-10  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/user/user.php.in: 
+
+	fixed kolab/issue1162 (Misplaced title field in webinterface)
+	https://intevation.de/roundup/kolab/issue1162
+
+	* php/admin/include/ldap.class.php:
+
+	fixed kolab/issue1845 (incorrect check mailForDn for ldap results)
+	https://intevation.de/roundup/kolab/issue1845
+
+2007-07-04  Marcus Hüwe  <suse-tux@gmx.de>
+
+	* Makefile.am:
+	
+	exclude the generated *.mo files from a tarball which
+	is created with "make distcheck". Additionally I added a small
+	fix so that "make distcheck" works.
+
+2007-07-03  Thomas Arendsen Hein <thomas@intevation.de>
+
+	* Makefile.am: Include both, .po and .mo files, as the build process
+	is not yet capable of generating .mo files for the binary RPM.
+	See kolab/issue1797 (kolab-webadmin source package missing PO files)
+
+2007-06-21	Marcus Hüwe  <suse-tux@gmx.de>
+
+	* Makefile.am:
+
+	fixed kolab/issue1797 (kolab-webadmin source package missing PO files).
+	Added Makefile dependencies.
+
+	* kolab-webadmin.spec.in:
+
+	Removed "rm -rf $RPM_BUILD_ROOT" from the %install section as this opens
+	a possible race condition (see
+	http://lists.opensuse.org/opensuse-packaging/2007-02/msg00005.html for
+	more information)
+
+2007-05-29  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/domainmaintainer/index.php.in: 
+	* www/admin/maintainer/index.php.in: 
+	* www/admin/maintainer/maintainer.php.in: 
+	* www/admin/administrator/index.php.in: 
+
+	Committed potential fix for kolab/issue1744 by accident. Probably
+	ok, but I still need to test it. Simply typo (kolabDeleteflag).
+	https://www.intevation.de/roundup/kolab/issue1744
+
+2007-05-28  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/user/user.php.in: 
+	* www/admin/maintainer/maintainer.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/administrator/admin.php.in: 
+	* www/admin/addressbook/addr.php.in: 
+
+	Corrected fix for
+	kolab/issue1742 (https://intevation.de/roundup/kolab/issue1742)
+
+2007-05-24  Gunnar Wrobel  <p@rdus.de>
+
+	* Makefile.am (WSKOLAB_FILES): 
+
+	Needed to add print.css to the files that should be installed.
+	kolab/issue1619 (https://intevation.de/roundup/kolab/issue1619)
+
+	* php/admin/templates/login.tpl: 
+
+	Fixed
+	kolab/issue1615 (https://intevation.de/roundup/kolab/issue1615)
+
+	* php/admin/include/form.class.php: 
+	
+	Fixed
+	kolab/issue1610 (https://intevation.de/roundup/kolab/issue1610)
+
+	* php/admin/templates/page.tpl.in: 
+	* www/admin/print.css: 
+	
+	Fixed
+	kolab/issue1619 (https://intevation.de/roundup/kolab/issue1619)
+
+	* php/admin/templates/maintainerlistall.tpl: 
+	* php/admin/templates/domainmaintainerlistall.tpl: 
+	* php/admin/templates/addrlistall.tpl: 
+
+	Fixed
+	kolab/issue1618 (https://intevation.de/roundup/kolab/issue1618)
+
+	* php/admin/include/form.class.php: 
+
+	Fixed
+	kolab/issue1620 (https://intevation.de/roundup/kolab/issue1620)
+
+	* www/admin/user/user.php.in: 
+	* www/admin/maintainer/maintainer.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/administrator/admin.php.in: 
+	* www/admin/addressbook/addr.php.in: 
+
+	Fixed
+	kolab/issue1742 (https://intevation.de/roundup/kolab/issue1742)
+
 2007-05-09  Gunnar Wrobel  <p@rdus.de>
 
 	* php/admin/locale/de/LC_MESSAGES/messages.po: 
@@ -88,7 +484,7 @@
 	
 	Fix for issue1479 (https://intevation.de/roundup/kolab/issue1479).
 
-2007-01-10 Marcus HÃ¼we <suse-tux@gmx.de>
+2007-01-10 Marcus Hüwe <suse-tux@gmx.de>
 	* php/admin/include/form.class.php: added a __toString() method otherwise
 	  it will not work with php 5.2.0 (see issue1558)
 
@@ -101,7 +497,7 @@
 	* php/admin/include/mysmarty.php.in: make the Smarty prefix
 	  configurable, using variable: kolab_php_smarty_prefix
 
-2006-03-22 Marcus HÃ¼we <suse-tux@gmx.de>
+2006-03-22 Marcus Hüwe <suse-tux@gmx.de>
 	Patch committed by Richard Bos
 	* www/admin/user/user.php.in: replaced $kolab_prefix/etc by
 	  @sysconfidir@
@@ -149,7 +545,7 @@
 2006-01-17 Richard Bos <richard@radoeka.nl>
 	* Makefile.am: corrected make rule for php/admin/templates/versions.tpl
 
-2006-01-16 Marcus HÃ¼we <suse-tux@gmx.de>
+2006-01-16 Marcus Hüwe <suse-tux@gmx.de>
 	Patch committed by Richard Bos
 	* www/admin/kolab/versions.php.in: use rpm package name variables for
 	  the software package version query's
@@ -160,13 +556,13 @@
 	* Makefile.am: process php/admin/templates/versions.tpl.in
 	* configure.ac: add --with-openpkg cmdline argument
 
-2006-01-15 Marcus HÃ¼we <suse-tux@gmx.de>
+2006-01-15 Marcus Hüwe <suse-tux@gmx.de>
 	Patch committed by Richard Bos
 	* www/admin/kolab/versions.php: moved to /www/admin/kolab/versions.php.in,
 	  replaced "$kolab_prefix/bin/openpkg" with @RPM@
 	* Makefile.am: make www/admin/kolab/versions.php.in
 
-2006-01-14 Marcus HÃ¼we <suse-tux@gmx.de>
+2006-01-14 Marcus Hüwe <suse-tux@gmx.de>
 	Patch commited by Richard Bos
 	* configure.ac: replaced --enable-dist with --with-dist
 	  Added dist_conf file check.  If dist_conf file specified with
@@ -182,7 +578,7 @@
 	* Makefile.am: add webserver_web_prefix so the involved files
 	  are installed in the right directory.
 
-2005-12-30 Marcus HÃ¼we <suse-tux@gmx.de>
+2005-12-30 Marcus Hüwe <suse-tux@gmx.de>
 	Patch committed by Richard Bos, see issue1049
 	* php/admin/include/auth.class.php: moved to
 	  php/admin/include/auth.class.php.in
@@ -208,7 +604,7 @@
 	* ../Makefile: reflected change in configure.ac, to create only bzipped
 	  tarbals.  Changed 'make dist' into 'make distcheck'
 
-2005-12-16 Marcus HÃ¼we <suse-tux@gmx.de>
+2005-12-16 Marcus Hüwe <suse-tux@gmx.de>
 	* Makefile.am: added dist_ prefix
 
 2005-12-14 Richard Bos <richard@radoeka.nl>

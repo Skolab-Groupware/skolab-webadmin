@@ -66,23 +66,23 @@ function inMaintainerDomain($dn) {
   if ($auth->group() == 'user') {
 	return false;
   }
-  
-  // we have a domain maintainer. Get his domains
-  $domains = $ldap->domainsForMaintainerDn($auth->dn());
 
-  // retrieve the mail for the current dn
-  $mail = $ldap->mailForDn($dn);
+  // we have a domain maintainer.
 
-  $ok = false;
-
-  // Check if the mail is within that domain
-  foreach( $domains as $domain ) {
-        if( endsWith( $mail, '@'.$domain ) ) {
-          $ok = true;
-        }
+  // Before creating new users the DN is empty
+  if (!$dn) {
+	return true;
   }
 
-  return true;
+  // Check if the user's mail is within the domain maintainer's domains
+  $mail = $ldap->mailForDn($dn);
+  $domains = $ldap->domainsForMaintainerDn($auth->dn());
+  foreach( $domains as $domain ) {
+        if( endsWith( $mail, '@'.$domain ) ) {
+          return true;
+        }
+  }
+  return false;
 }
 
 // Check that a uid is unique
@@ -117,23 +117,6 @@ function checkuniquemail( $form, $key, $value ) {
   }
 }
 
-function checkuniquealias( $form, $key, $value ) {
-  global $ldap;
-  global $action;
-  global $dn;
-  $excludedn = false;
-  if( $action == 'save' ) $excludedn = trim($dn);
-  $lst = array_unique( array_filter( array_map( 'trim', preg_split( '/\n/', $value ) ), 'strlen') );
-  $str = '';
-  foreach( $lst as $alias ) {
-	debug( "looking at $alias, exluding $dn" );
-	if( $ldap->countMail( $_SESSION['base_dn'], $alias, $excludedn ) > 0 ) {
-	  $str .= _('Email address ').MySmarty::htmlentities($alias)._(' collision <br />');
-	}
-  }
-  return $str;
-}
-
 function checkuid( $form, $key, $value ) {
   global $ldap;
   global $action;
@@ -144,7 +127,7 @@ function checkuid( $form, $key, $value ) {
   $str = '';
   foreach( $lst as $uid ) {
     if( $ldap->countMail( $_SESSION['base_dn'], $uid, $excludedn ) > 0 ) {
-      $str .= _('UID ').MySmarty::htmlentities($uid)._(' collision <br />');
+      $str .= _('UID ').MySmarty::htmlentities($uid)._(' collides with an address already used for another user, a vCard or a distribution list.<br />');
     }
   }
   return $str;
@@ -178,13 +161,12 @@ function checkpolicy( $form, $key, $value ) {
   return '';
 }
 
-// Due to a cyrus imapd bug we can't currently
-// support quotas over 4095 MB, see issue1262
-function checkquota( $form, $key, $value )
+function checkfreebusyfuture( $form, $key, $value )
 {
 	if( empty($value) ) return ''; // OK
-	else if( $value >= 4096 ) return _('Quota must be smaller than 4096');
-	else if( $value < 0 ) return _('Quota can not be negative');
+	else if( $value < 0 ) return _('Free/Busy interval can not be negative');
+	else if( !is_numeric($value) ) return _('Free/Busy interval must be a number');
+	else if( (int) $value != $value ) return _('Free/Busy interval must be an integer');
 	else return '';
 }
 
@@ -237,13 +219,7 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
   else $sn = $ldap_object['sn'];
   if (is_array($ldap_object['cn'])) $cn = $ldap_object['cn'][0];
   else $cn = $ldap_object['cn'];
-  if ($sn) {
-    $a = strlen($sn);
-    if ($cn) {
-      $b = strlen($cn);
-      $givenname = substr($cn, 0, $b - $a);
-    }
-  }
+  if ($cn && $sn) $givenname = KolabLDAP::getGivenName($cn, $sn);
   if (is_array($ldap_object['mail'])) $mail = $ldap_object['mail'][0];
   else $mail = $ldap_object['mail'];
   if (is_array($ldap_object['uid'])) $uid = $ldap_object['uid'][0];
@@ -441,17 +417,20 @@ $entries = array( 'givenname' => array( 'name' => _('First Name'),
 									 'policies' => array('anyone' => 4),
 									 'validation' => 'checkpolicy',
 									 'comment' => _('For automatic invitation handling') . '<br/>' .
-									 _("NOTE: For regular accounts to use this feature, give the 'calendar' user access to the Calendar folder") ),
-		  'title_0' => array( 'name' => _('Title') ) );
+									 _("NOTE: For regular accounts to use this feature, give the 'calendar' user access to the Calendar folder") ));
+
 $entries['alias'] = array( 'name' => _('Email Aliases'), 
 						   'type' => 'textarea',
 						   'validation' => 'checkuniquealias',
 						   'comment' => _('One address per line') );
+
 $entries['kolabdelegate'] =array( 'name' => _('Email-Delegates'),
 		'type' => 'textarea',
 		'validation' => 'checkdelegate',
 		'comment' => _('Others allowed to send emails with a "from" address of this account.') . '<br/>' .
 			_('One email address per line.') );
+
+$entries['title_0'] = array( 'name' => _('Title') );
 $entries['o_0'] = array( 'name' => _('Organisation') );
 $entries['ou_0'] = array( 'name' => _('Organisational Unit') );
 $entries['roomNumber_0'] = array( 'name' => _('Room Number') );
@@ -460,8 +439,10 @@ $entries['postOfficeBox_0'] = array( 'name' => _('Postbox') );
 $entries['postalCode_0'] = array( 'name' => _('Postal Code') );
 $entries['l_0'] = array( 'name' => _('City') );
 $entries['c_0'] = array( 'name' => _('Country') );
-$entries['telephoneNumber_0'] = array( 'name' => _('Telephone Number') );
-$entries['facsimileTelephoneNumber_0'] = array( 'name' => _('Fax Number') );
+$entries['telephoneNumber_0'] = array( 'name' => _('Telephone Number'),
+						'validation' => 'checkphone' );
+$entries['facsimileTelephoneNumber_0'] = array( 'name' => _('Fax Number'),
+						'validation' => 'checkphone' );
 if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group() == 'domain-maintainer' ) {
   $entries['cyrus-userquota'] = array( 'name' => _('User Quota in MBytes'),
 				       'comment' => _('Leave blank for unlimited'),
@@ -477,15 +458,20 @@ if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group(
   $entries['uid']['attrs'] = 'readonly';
 }
 $entries['kolabFreeBusyFuture_0'] = array( 'name' => _('Free/Busy interval in days'),
-									 'comment' => _('Leave blank for default (60 days)') );
+					   'comment' => _('Leave blank for default (60 days)'),
+					   'validation' => 'checkfreebusyfuture' );
 $entries['action'] = array( 'name' => 'action',
 			    'type' => 'hidden' );
+
+$oc = array('top', 'inetOrgPerson','kolabInetOrgPerson');
 
 if( $dn ) {
   $ldap_object = $ldap->read( $dn );
   if( !$ldap_object ) {
     array_push($errors, sprintf(_("LDAP Error: No such dn: %s: %s"), $dn, ldap_error($ldap->connection)));
   }
+  $oc = $ldap_object['objectClass'];
+  unset($oc['count']);
 }
 
 if( $auth->group() == 'user' ) {
@@ -496,6 +482,7 @@ $form =& new KolabForm( 'user', 'createuser.tpl', $entries );
 switch( $action ) {
  case 'firstsave':
    debug("adding checkuniquemail to validation");
+   $ldap_object['objectClass'] = array('top', 'inetOrgPerson','kolabInetOrgPerson');
    $form->entries['mail']['validation'] = array( $form->entries['mail']['validation'], 'checkuniquemail');
  case 'save':
    if( $form->isSubmitted() ) {
@@ -504,7 +491,7 @@ switch( $action ) {
        $content = $form->outputForm();
      } else {
        $ldap_object = array();
-       $ldap_object['objectClass'] = array('top', 'inetOrgPerson','kolabInetOrgPerson');
+       $ldap_object['objectClass'] = $oc;
        $ldap_object['sn'] = trim($_POST['sn']);
        $ldap_object['cn'] = trim($_POST['givenname']).' '.$ldap_object['sn'];
 	   $ldap_object['givenName'] = trim($_POST['givenname']);
@@ -513,34 +500,6 @@ switch( $action ) {
 		 if( $action == 'save' && $auth->dn() == $dn ) {
 		   // We are editing our own password, let's update the session!
 		   $auth->setPassword($_POST['password_0']);
-		 }
-
-		 /* The code below is disabled for now because we're
-			not going to use that encrypted password anyway.
-			
-			TODO: Clean it up once we're sure we don't want it
-		 */
-		 if( false && isset( $_POST['accttype'] ) && $_POST['accttype'] > 1 ) {
-		   // We have a group or resource, create encrypted pw
-		   $pubkeydata=file_get_contents("@sysconfdir@/kolab/res_pub.pem" );		   
-		   $pkey = openssl_pkey_get_public( $pubkeydata );
-		   if( $pkey === false ) {
-			 $sslerr = "Could not read resource encryption public key file://@sysconfdir@/kolab/res_pub.pem: "; 
-							   
-			 while( $msg = openssl_error_string() )
-			   $sslerr .= $msg.' ';
-			 $errors[] = $sslerr;
-		   } else {
-			 if( !openssl_public_encrypt( $_POST['password_0'], $encpw, $pkey ) ) {
-			   $sslerr = _("Could not encrypt password: ");
-			   while( $msg = openssl_error_string() )
-				 $sslerr .= $msg.' ';
-			   $errors[] = $sslerr;
-			 } else {
-			   $ldap_object['kolabEncryptedPassword'] = base64_encode( $encpw );
-			 }
-			 openssl_free_key( $pkey );
-		   }
 		 }
        }
        $ldap_object['mail'] = trim( strtolower( $_POST['user_mail'] ) ).'@'.trim( strtolower( $_POST['domain_mail'] ) );
@@ -624,11 +583,6 @@ switch( $action ) {
 							'(&(objectClass=kolabGroupOfNames)(!(kolabDeleteFlag=*))(member='.$ldap->escape($dn).'))',
 							array( 'dn', 'mail' ) );
 			 $distlists = $ldap->getEntries();
-			 unset( $distlists['count'] );
-			 foreach( $distlists as $distlist ) {
-				 $dlcn = $distlist['mail'][0];
-				 $errors[] = sprintf(_("Account DN could not be modified, distribution list <a href='@webserver_web_prefix@/admin/distributionlist/list.php?action=modify&dn=%s'>'%s'</a> depends on it. To modify this account, first remove it from the distribution list."), urlencode($distlist['dn']), $dlcn );
-			 }
 
 			 if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
 				 ($entry=ldap_first_entry($ldap->connection,$result)) &&

@@ -1,6 +1,6 @@
 <?php
 /*
- *  Copyright (c) 2004 Klarälvdalens Datakonsult AB
+ *  Copyright (c) 2004-2005 Klarälvdalens Datakonsult AB
  *
  *    Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
  *
@@ -28,8 +28,9 @@ $errors = array();
 /**** Authentication etc. ***/
 $sidx = 'administrator';
 
-if( $auth->group() != 'admin') {
-   array_push($errors, _("Error: You don't have Permissions to access this Menu"));
+if( $auth->group() != 'admin' ) {
+  debug("auth->group=".$auth->group());
+  array_push($errors, _("Error: You don't have Permissions to access this Menu"));
 }
 
 require_once('@kolab_php_module_prefix@admin/include/menu.php');
@@ -46,14 +47,15 @@ if (isset($HTTP_GET_VARS['page'])) $page = $HTTP_GET_VARS['page'];
 else $page = "1";
 
 // Get all entries & dynamically split the letters with growing entries
+$entries = array();
 if( !$errors ) {
   if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
   else $base_dn = 'k=kolab';
 
   $maintainers = $ldap->groupMembers( "cn=internal,$base_dn", 'admin' );
 
-  $filter = "(&(cn=*)(objectclass=inetOrgPerson)(uid=*)(sn=*))";
-  $result = ldap_search($ldap->connection, $base_dn, $filter, array( 'uid', 'sn', 'cn', 'kolabdeleteflag' ));
+  $filter = "(&(cn=*)(objectclass=inetOrgPerson)(!(uid=manager))(sn=*)(uid=*))";
+  $result = ldap_search($ldap->connection, $base_dn, $filter, array( 'uid', 'sn', 'cn', 'kolabDeleteflag' ));
 
   if( $result ) {
 	$count = count($maintainers)-1;
@@ -76,25 +78,21 @@ if( !$errors ) {
 	  while( $entry ) {
 		$attrs = ldap_get_attributes($ldap->connection, $entry);
 		$dn = ldap_get_dn($ldap->connection,$entry);
-		$deleted = array_key_exists('kolabdeleteflag',$attrs)?$attrs['kolabdeleteflag'][0]:"FALSE";
-        $userid = $attrs['uid'][0];
-		if( $userid != 'manager' ) {
-		  $sn = $attrs['sn'][0];
-		  $cn = $attrs['cn'][0];
-		  $a = strlen($sn);
-		  $b = strlen($cn);
-		  $fn = substr($cn, 0, $b - $a);
-		  // skip admins and maintainers
-		  if( array_key_exists( $dn, $maintainers ) ) {
-			$entries[] = array( 'dn' => $dn,
-								'sn' => $sn,
-								'fn' => $fn,
-								'uid' => $userid,
-								'deleted' => $deleted );
-		  }
+		$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
+		$uid = $attrs['uid'][0];
+		$sn = $attrs['sn'][0];
+		$cn = $attrs['cn'][0];
+		$fn = KolabLDAP::getGivenName($cn, $sn);
+		// skip admins and maintainers
+		if( array_key_exists( $dn, $maintainers ) ) {
+		  $entries[] = array( 'dn' => $dn,
+							  'sn' => $sn,
+							  'fn' => $fn,
+							  'uid' => $uid,
+							  'deleted' => $deleted );
 		}
 		$entry = ldap_next_entry( $ldap->connection,$entry );
-	  }	  
+	  }
 	}
   }
 }

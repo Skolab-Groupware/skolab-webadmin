@@ -1,6 +1,6 @@
 <?php
 /*
- *  Copyright (c) 2004 KlarÃ¤lvdalens Datakonsult AB
+ *  Copyright (c) 2004 Klarälvdalens Datakonsult AB
  *
  *    Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
  *
@@ -35,7 +35,7 @@ function undotstuff( $str ) {
 $errors = array();
 if( (@include_once '@kolab_php_module_prefix@admin/include/Sieve.php' ) === false ) {
   $errors[] = _('Net/Sieve.php is missing. Without that, filter settings are not available');
-  $errors[] = _("Suggest your system administrator to run \"@bindir@/pear install http://pear.php.net/get/Net_Sieve\" on the server");
+  $errors[] = _("Suggest your system administrator to run \"pear install http://pear.php.net/get/Net_Sieve\" on the server");
 }
 
 /**** Authentication etc. ***/

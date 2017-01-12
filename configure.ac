@@ -1,8 +1,7 @@
 AC_PREREQ(2.57)
 
-m4_define(_VERSION,2.1.0)
+m4_define(_VERSION,2.2.0)
 AC_INIT([kolab-webadmin],[_VERSION],[kolab-devel@kolab.org])
-AC_CONFIG_SRCDIR(php/admin/include/ldap.class.php)
 AC_CONFIG_AUX_DIR(.)
 
 AM_INIT_AUTOMAKE([gnu] [1.7] [dist-bzip2] [no-dist-gzip])

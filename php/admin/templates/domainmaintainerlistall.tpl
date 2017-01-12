@@ -5,7 +5,7 @@
   End:
 *}
 <div class="contenttext">
-
+<h3>{tr msg="Domain Maintainers"}</h3>
 </div>
 
 <table class="contenttable" cellpadding="0" cellspacing="1px">
@@ -20,8 +20,8 @@
 	{if $entries[id].deleted neq "FALSE"}
 	   <td class="actioncell" colspan="2">{tr msg="Object Deleted, awaiting cleanup..."}</td>
 	{else}
-	   <td class="actioncell"><a href="domainmaintainer.php?action=modify&dn={$entries[id].dn|escape:"url"}">{tr msg="Modify"}</a></td>
-	   <td class="actioncell"><a href="domainmaintainer.php?action=delete&dn={$entries[id].dn|escape:"url"}">{tr msg="Delete"}</a></td>
+	   <td class="actioncell"><a href="domainmaintainer.php?action=modify&amp;dn={$entries[id].dn|escape:"url"}">{tr msg="Modify"}</a></td>
+	   <td class="actioncell"><a href="domainmaintainer.php?action=delete&amp;dn={$entries[id].dn|escape:"url"}">{tr msg="Delete"}</a></td>
 	{/if}
 	</tr>
 {/section}

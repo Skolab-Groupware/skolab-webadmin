@@ -35,9 +35,9 @@ class MySmarty extends Smarty {
 	$this->Smarty();
 	
 	$basedir = "$php_dir/@kolab_php_module_prefix@admin/";
-	$this->template_dir = $basedir.'templates/';
-	$this->compile_dir = $basedir.'templates_c/';
 	$this->config_dir = $basedir.'configs/';
+	$this->template_dir = $basedir.'templates/';
+	$this->compile_dir = '@smarty_compiledir@/';
 	//$this->cache_dir = $basedir.'cache/';
 	// Added for i18n management (Romain 05-03-03)
 	$this->register_function("tr", "translate");
@@ -67,8 +67,8 @@ class MySmarty extends Smarty {
 											 'code' => 'it_IT' ),
 									  array( 'name' => 'Nederlands',
 											 'code' => 'nl_NL' ),
-									//  array( 'name' => 'Español',
-									//		 'code' => 'es_ES' ),
+									  array( 'name' => 'Español',
+											 'code' => 'es_ES' ),
 									  ));
   }
 

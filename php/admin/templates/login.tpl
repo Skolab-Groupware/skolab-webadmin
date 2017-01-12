@@ -9,10 +9,10 @@
 <form method="post">
 <table>
 <tr>
-	<td>{tr msg="Username:"}</td><td><input type="text" name="username"/></td>
+	<td><label for="username">{tr msg="Username:"}</label></td><td><input type="text" name="username" id="username"/></td>
 </tr>
 <tr>
-	<td>{tr msg="Password:"}</td><td><input type="password" name="password"/></td>
+	<td><label for="password">{tr msg="Password:"}</label></td><td><input type="password" name="password" id="password"/></td>
 </tr>
 <tr>
 	<td colspan="2" align="right"><input type="submit" name="login" value="{tr msg="Login"}"/></td>

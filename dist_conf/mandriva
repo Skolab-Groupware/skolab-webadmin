@@ -6,6 +6,7 @@ restricted_kolab_usr=kolab    # kolab-r
 restricted_kolab_grp=kolab    # kolab-r
 
 rcdir=${sysconfdir}/rc
+kolabconf_script=${sbindir}/kolabconf
 
 kolabd_usr=root
 kolab_statedir = ${localstatedir}/kolab
@@ -34,18 +35,12 @@ emailserver_usr=${kolab_usr}
 emailserver_grp=${restricted_kolab_grp}
 emailserver_mail_usr=kolab              # = kolab
 
-ftpserver_scoreboardfile=/var/run/proftpd/proftpd.scoreboard
-ftpserver_logfile=/var/log/proftpd/proftpd.log
-ftpserver_pidfile=/var/run/proftpd.pid
-ftpserver_confdir=${sysconfdir}
-ftpserver_usr=nobody
-ftpserver_grp=nogroup
-ftpserver_uid=65534
-ftpserver_gid=65534
-
 kolab_logdir=/var/log/kolab
 kolab_pidfile=/var/run/kolab/kolab.pid
 kolab_scriptsdir=$(sysconfdir)/kolab
+
+# Kolab web user interface
+kolab_wui=/admin
 
 ldapserver_dir=${localstatedir}/ldap-kolab
 ldapserver_rundir=/var/run/ldap
@@ -69,3 +64,5 @@ webserver_grp=apache
 sysrundir = /var/run
 
 resmgr_scriptsdir=${resmgr_confdir}
+smarty_compiledir=${phplibdir2}/${kolab_php_module_prefix}admin/templates_c
+

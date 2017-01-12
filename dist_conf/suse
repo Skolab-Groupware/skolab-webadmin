@@ -11,7 +11,7 @@ kolab_susr=root
 BASHELL=/bin/bash
 KOLABRC=${sbindir}/kolabsrv
 PERL=${bindir}/perl
-PHP=${bindir}/php
+PHP=${bindir}/php5
 RPM=/bin/rpm
 TAR=/bin/tar
 
@@ -20,9 +20,10 @@ LDAPD=ldap
 
 kolab_rcdir=${sysconfdir}/init.d
 pkgdocdir=${datadir}/doc/packages/kolab
+kolabconf_script=${sbindir}/kolabconf
 
 # perl -V:vendorlib | sed "s/.*'\(.*\)'\;/\1/"
-perllib=${libdir}/perl5/vendor_perl/5.8.7
+perllib=${libdir}/perl5/vendor_perl/5.8.8
 
 amavisd_conffile=${sysconfdir}/amavisd.conf
 amavisd_templatedir=${sysconfdir}/amavisd/templates.d
@@ -31,29 +32,30 @@ amavisd_home=${localstatedir}/spool/amavis
 amavisd_rusr=vscan
 amavisd_usr=root
 amavisd_grp=root
-amavisd_rpm=amavisd-new
+amavisd_pkg=amavisd-new
 
 fsl_logfile=${localstatedir}/log/fsl
 
 sysrundir=${localstatedir}/run
 
 clamav_confdir=${sysconfdir}
-clamav_socket=/var/lib/clamav/clamd-socket
+clamav_socket=${localstatedir}/lib/clamav/clamd-socket
 clamav_logfile=${localstatedir}/log/clamav
-clamav_pidfile=/var/lib/clamav/clamd.pid
-clamav_datadir=/var/lib/clamav
+clamav_pidfile=${localstatedir}/lib/clamav/clamd.pid
+clamav_datadir=${localstatedir}/lib/clamav
 freshclam_logfile=${localstatedir}/log/freshclam.log
-freshclam_pidfile=${sysrundir}/freshclam.pid
+freshclam_pidfile=${localstatedir}/lib/clamav/freshclam.pid
 clamav_rusr=vscan
 clamav_usr=root
 clamav_grp=vscan
 
+spamassassin_confdir=${sysconfdir}/mail/spamassassin
 
 emailscan_usr=root
 emailscan_grp=root
 
 emailserver_confdir=${sysconfdir}/postfix
-emailserver_socket=${libdir}/postfix/lmtp
+emailserver_socket=${libexecdir}/postfix/lmtp
 emailserver_localstatedir=${localstatedir}/spool/postfix
 emailserver_logfile=${localstatedir}/log/postfix.log
 emailserver_usr=root
@@ -62,19 +64,8 @@ emailserver_mail_owner=postfix
 emailserver_setgid_grp=maildrop
 emailserver_default_privs=kolab
 emailserver_master_usr=kolab
-emailserver_rpm=postfix
+emailserver_pkg=postfix
 emailserver_tables_usr=root
-
-ftpserver_scoreboardfile=${localstatedir}/proftpd/score
-ftpserver_logfile=${localstatedir}/log/proftpd.log
-ftpserver_confdir=${sysconfdir}/proftpd
-ftpserver_pidfile=${localstatedir}/proftpd/proftpd.pid
-ftpserver_musr=kolab
-ftpserver_usr=${kolab_usr}
-ftpserver_grp=${kolab_grp}
-# Why hardcoded uid/gid???
-ftpserver_uid=19416
-ftpserver_gid=19416
 
 imap_confdir=${sysconfdir}
 imap_confperm=0640
@@ -87,26 +78,33 @@ imap_spool=${localstatedir}/spool/imap
 imap_sievedir=${localstatedir}/lib/sieve
 imap_lmtp=${imap_statedir}/lmtp
 imap_notify_socket=${imap_statedir}/socket/notify
-imap_rpm=cyrus-imapd
+imap_pkg=cyrus-imapd-kolab
 
 kolab_statedir=${localstatedir}/lib/kolab
 kolab_logdir=${localstatedir}/log
 kolab_pidfile=${sysrundir}/kolab.pid
 kolab_mailboxuiddb=${kolab_statedir}/mailbox-uidcache.db
-kolab_rpm=kolab
-kolab_resource_handlers_rpm=kolab-resource-handlers
-kolab_webadmin_rpm=kolab-webadmin
-perl_kolab_rpm=perl-kolab
+kolab_pkg=kolab
+kolab_pkgs=spamassassin openldap2 clamav
+kolab_webadmin_pkg=kolab-webadmin
 kolab_smtpdpolicy_conffile_usr=kolab
 kolab_smtpdpolicy_conffile_grp=root
 kolab_scriptsdir=$(datadir)/kolab/scripts
+kolab_filter_pkg=kolab-filter
+kolab_freebusy_pkg=kolab-freebusy
+perl_kolab_pkg=perl-kolab
+perl_kolabconf_pkg=perl-kolab-conf
+php_kolab_pkg=php5-pear-kolab_filter php5-pear-kolab_freebusy
 
 # This variable makes it possible to store all kolab php modules in its own
 # module.  E.g on suse it will be /usr/share/php/kolab instead of just
 # /usr/share/php. This prevents scattering of the kolab php files.
 kolab_php_module_prefix=kolab/
-
 kolab_php_smarty_prefix=Smarty
+smarty_compiledir=${phplibdir2}/${kolab_php_module_prefix}admin/templates_c
+
+# Kolab web user interface
+kolab_wui=/kolab
 
 ldapserver_statedir=${localstatedir}/lib/ldap
 ldapserver_dir=${localstatedir}/lib/ldap
@@ -136,38 +134,43 @@ webserver_mime_magicfile=${sysconfdir}/apache2/magic
 webserver_mime_typesfile=${sysconfdir}/apache2/mime.types
 webserver_sslscache=${webserver_logdir}/ssl_scache
 webserver_sslmutex=${webserver_logdir}/ssl_mutex
-webserver_web_prefix=/kolab
+webserver_web_prefix=
 webserver_musr=wwwrun
 webserver_usr=wwwrun
 webserver_grp=www
-webserver_rpm=apache2
+webserver_pkg=apache2
 
-phpini_dir=${sysconfdir}
-phplibdir=${datadir}/php
-phplibdir2=${datadir}/php
+phpini_dir=${sysconfdir}/php5/cli
+phplibdir=${datadir}/php5
+phplibdir2=${datadir}/php5
 phppeardir=${phplibdir}/PEAR
 
-sasl_smtpconffile=${libdir}/sasl2/smtpd.conf
+
+# Variable to list all pear related packages (including horde)
+pear_horde_pkg=
+
+sasl_smtpconffile=${sysconfdir}/sasl2/smtpd.conf
 sasl_authdconffile=${sysconfdir}/saslauthd.conf
 sasl_logfile=${localstatedir}/log/saslauthd.log
 
-resmgr_logfile=${localstatedir}/log/kolab/resmgr.log
-resmgr_confdir=${sysconfdir}/kolab/resmgr
+resmgr_logdir=${localstatedir}/log/kolab/filter
+resmgr_scriptsdir=${localstatedir}/lib/kolab/kolab-filter
+resmgr_confdir=${resmgr_scriptsdir}
 resmgr_conffile_usr=kolab
 resmgr_conffile_grp=root
-resmgr_filterdir=${localstatedir}/lib/kolab/resmgr
-resmgr_scriptsdir=${kolab_scriptsdir}/resmgr
+resmgr_filterdir=${localstatedir}/lib/kolab/kolab-filter/tmp
 resmgr_usr=root
 resmgr_grp=root
 
 fbview_logfile=${localstatedir}/log/kolab/fbview.log
-freebusy_logfile=${localstatedir}/log/kolab/freebusy.log
-freebusy_cachedir=${webserver_document_root}${webserver_web_prefix}/freebusy/cache
+freebusy_logdir=${localstatedir}/log/kolab/freebusy
+freebusy_confdir=${webserver_document_root}${webserver_web_prefix}/freebusy
+freebusy_cachedir=${localstatedir}/cache/freebusy
 freebusy_usr=wwwrun
 freebusy_grp=root
 
-graveyard_uidcache=${localstatedir}/kolab/graveyard_uidcache.db
-graveyard_tscache=${localstatedir}/kolab/graveyard_tscache.db
+graveyard_uidcache=${kolab_statedir}/graveyard-uidcache.db
+graveyard_tscache=${kolab_statedir}/graveyard-tscache.db
 
 backupdir=${localstatedir}/adm/backup/kolab
 
@@ -184,7 +187,7 @@ backupfiles=/etc/amavisd.conf \
 	/etc/freshclam.conf \
 	/etc/openldap/ldap.conf \
 	/etc/openldap/slapd.conf \
-	/etc/php.ini \
+	/etc/php5/cli/php.ini \
 	/etc/postfix/main.cf \
 	/etc/postfix/master.cf \
 	/etc/postfix/transport \
@@ -192,5 +195,5 @@ backupfiles=/etc/amavisd.conf \
 	/etc/saslauthd.conf \
 	/etc/sysconfig/ldap \
 	/etc/sysconfig/saslauthd \
-	/usr/lib/sasl2/smtpd.conf
+	/etc/sasl2/smtpd.conf
 

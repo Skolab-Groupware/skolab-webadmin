@@ -1,0 +1,2421 @@
+# This file is distributed under the same license as Kolab-Webadmin.
+# Copyright (C)
+# Arón Galdón <aron20012004@ya.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab-Webadmin Spanish\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-04-10 12:58+0200\n"
+"PO-Revision-Date: 2007-11-21 14:56+0100\n"
+"Last-Translator: Aron Galdon <aron20012004@ya.com>\n"
+"Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: tpl_messages.php:2
+msgid "The address with DN"
+msgstr "La dirección con DN"
+
+#: tpl_messages.php:3 tpl_messages.php:21 tpl_messages.php:77
+#: tpl_messages.php:130 tpl_messages.php:146 tpl_messages.php:164
+msgid "has been deleted"
+msgstr "ha sido borrado"
+
+#: tpl_messages.php:4
+msgid "Back to list of addresses"
+msgstr "Volver a la lista de direcciones"
+
+#: tpl_messages.php:5 tpl_messages.php:10
+msgid "(only external addresses without a kolab user account)"
+msgstr "(sólo direcciones externas con una cuenta de usuario kolab)"
+
+#: tpl_messages.php:6 tpl_messages.php:15 tpl_messages.php:24
+#: tpl_messages.php:80 tpl_messages.php:133 tpl_messages.php:149
+#: tpl_messages.php:172 ../../../www/admin/addressbook/index.php.in:121
+#: ../../../www/admin/user/index.php.in:183
+msgid "Name"
+msgstr "Nombre"
+
+#: tpl_messages.php:7 tpl_messages.php:16 tpl_messages.php:26
+#: tpl_messages.php:70 tpl_messages.php:82 tpl_messages.php:135
+#: tpl_messages.php:152 tpl_messages.php:175 tpl_messages.php:230
+#: tpl_messages.php:243
+msgid "Action"
+msgstr "Acción"
+
+#: tpl_messages.php:8 tpl_messages.php:18 tpl_messages.php:28
+#: tpl_messages.php:74 tpl_messages.php:84 tpl_messages.php:137
+#: tpl_messages.php:154 tpl_messages.php:177
+msgid "Modify"
+msgstr "Modificar"
+
+#: tpl_messages.php:9 tpl_messages.php:19 tpl_messages.php:29
+#: tpl_messages.php:75 tpl_messages.php:85 tpl_messages.php:138
+#: tpl_messages.php:155 tpl_messages.php:178 tpl_messages.php:231
+#: tpl_messages.php:244 ../../../www/admin/addressbook/addr.php.in:277
+#: ../../../www/admin/administrator/admin.php.in:307
+#: ../../../www/admin/distributionlist/list.php.in:300
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:310
+#: ../../../www/admin/sharedfolder/sf.php.in:310
+#: ../../../www/admin/user/user.php.in:764
+#: ../../../www/admin/user/user.php.in:822
+msgid "Delete"
+msgstr "Borrar"
+
+#: tpl_messages.php:11 tpl_messages.php:167 tpl_messages.php:180
+msgid "[ ALL ]"
+msgstr "[ TODOS ]"
+
+#: tpl_messages.php:12 tpl_messages.php:168 tpl_messages.php:181
+msgid "[ OTHER ]"
+msgstr "[ OTROS ]"
+
+#: tpl_messages.php:13 tpl_messages.php:169 tpl_messages.php:182
+msgid "Filter:"
+msgstr "Filtro:"
+
+#: tpl_messages.php:14 tpl_messages.php:170 tpl_messages.php:183
+msgid "Filter"
+msgstr "Filtro"
+
+#: tpl_messages.php:17
+msgid "Entry deleted, awaiting cleanup..."
+msgstr "Entrada borrada, esperando limpieza..."
+
+#: tpl_messages.php:20
+msgid "The administrator with DN"
+msgstr "El administrador con DN"
+
+#: tpl_messages.php:22
+msgid "Back to list of administrators"
+msgstr "Volver a la lista de administradores"
+
+#: tpl_messages.php:23 ../include/menu.php:70
+msgid "Administrators"
+msgstr "Administradores"
+
+#: tpl_messages.php:25 tpl_messages.php:81 tpl_messages.php:134
+#: ../../../www/admin/user/index.php.in:185
+msgid "UID"
+msgstr "ID Usuario"
+
+#: tpl_messages.php:27 tpl_messages.php:83 tpl_messages.php:136
+msgid "Object Deleted, awaiting cleanup..."
+msgstr "Objeto borrado, esperando limpieza..."
+
+#: tpl_messages.php:30
+msgid ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is a specialist "
+"email solution provider based in Johannesburg, South Africa specialising in "
+"the deployment and support of Kolab."
+msgstr ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> es un proveedor "
+"de soluciones de correo electrónico con base en Johannesburgo, Sudáfrica "
+"especializado en el uso y soporte de Kolab."
+
+#: tpl_messages.php:31
+msgid ""
+"Code Fusion has played, and continues to play, an integral part in "
+"developing and extending the Kolab server; specifically with regards to "
+"enhancing the base Kolab engine, adding in support for Microsoft Active "
+"Directory &reg; as an LDAP backend, as well as extending the <a href="
+"\"http://www.horde.org/\">Horde project</a> to provide a web-based groupware "
+"client for the Kolab server."
+msgstr ""
+"Code Fusion ha sido, y sigue siendo, parte intergral en el desarrollo y "
+"extensión del servidor Kolab; concretamente en la mejora de la base del "
+"motor Kolab, añadiendo soporte para Microsoft Active Directory &reg; como "
+"una integración LDAP, además de extender el <a href=\"http://www.horde.org/"
+"\">proyecto Horde</a> para proporcionar un cliente groupware basado en web "
+"para el servidor Kolab."
+
+#: tpl_messages.php:32
+msgid ""
+"The following people from Code Fusion are involved in the Kolab project (in "
+"alphabetical order):"
+msgstr ""
+"Las siguientes personas de Code Fusion están involucradas en el proyecto "
+"Kolab (en orden alfabético):"
+
+#: tpl_messages.php:33
+msgid "Attribute"
+msgstr "Atributo"
+
+#: tpl_messages.php:34
+msgid "Value"
+msgstr "Valor"
+
+#: tpl_messages.php:35
+msgid "Comment"
+msgstr "Comentario"
+
+#: tpl_messages.php:36 ../../../www/admin/addressbook/addr.php.in:88
+#: ../../../www/admin/administrator/admin.php.in:139
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:114
+#: ../../../www/admin/maintainer/maintainer.php.in:136
+#: ../../../www/admin/user/user.php.in:384
+msgid "First Name"
+msgstr "Nombre"
+
+#: tpl_messages.php:37 tpl_messages.php:39 tpl_messages.php:41
+#: tpl_messages.php:43 ../../../www/admin/addressbook/addr.php.in:90
+#: ../../../www/admin/addressbook/addr.php.in:93
+#: ../../../www/admin/administrator/admin.php.in:133
+#: ../../../www/admin/administrator/admin.php.in:141
+#: ../../../www/admin/administrator/admin.php.in:144
+#: ../../../www/admin/distributionlist/list.php.in:117
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:108
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:116
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:119
+#: ../../../www/admin/maintainer/maintainer.php.in:130
+#: ../../../www/admin/maintainer/maintainer.php.in:138
+#: ../../../www/admin/maintainer/maintainer.php.in:141
+#: ../../../www/admin/sharedfolder/sf.php.in:123
+#: ../../../www/admin/user/user.php.in:376
+#: ../../../www/admin/user/user.php.in:386
+#: ../../../www/admin/user/user.php.in:389
+msgid "Required"
+msgstr "Requerido"
+
+#: tpl_messages.php:38 ../../../www/admin/addressbook/addr.php.in:91
+#: ../../../www/admin/administrator/admin.php.in:142
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:117
+#: ../../../www/admin/maintainer/maintainer.php.in:139
+#: ../../../www/admin/user/user.php.in:387
+msgid "Last Name"
+msgstr "Apellidos"
+
+#: tpl_messages.php:40 ../../../www/admin/administrator/admin.php.in:145
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:120
+#: ../../../www/admin/maintainer/maintainer.php.in:142
+#: ../../../www/admin/user/user.php.in:390
+msgid "Password"
+msgstr "Contraseña"
+
+#: tpl_messages.php:42 ../../../www/admin/administrator/admin.php.in:149
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:124
+#: ../../../www/admin/maintainer/maintainer.php.in:146
+#: ../../../www/admin/user/user.php.in:394
+msgid "Verify Password"
+msgstr "Verificar Contraseña"
+
+#: tpl_messages.php:44 ../../../www/admin/user/user.php.in:398
+msgid "Primary Email Address"
+msgstr "Dirección primario de correo electrónico"
+
+#: tpl_messages.php:45 ../../../www/admin/administrator/admin.php.in:132
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:107
+#: ../../../www/admin/maintainer/maintainer.php.in:129
+#: ../../../www/admin/sharedfolder/sf.php.in:126
+#: ../../../www/admin/user/user.php.in:375
+#: ../../../www/admin/user/user.php.in:377
+msgid "Required, non volatile"
+msgstr "Requerido, no volátil"
+
+#: tpl_messages.php:46 ../../../www/admin/addressbook/addr.php.in:94
+#: ../../../www/admin/user/user.php.in:433
+msgid "Title"
+msgstr "Título"
+
+#: tpl_messages.php:47
+msgid "Email Alias"
+msgstr "Alias de correo electrónico"
+
+#: tpl_messages.php:48 ../../../www/admin/addressbook/addr.php.in:101
+#: ../../../www/admin/user/user.php.in:434
+msgid "Organisation"
+msgstr "Organización"
+
+#: tpl_messages.php:49 ../../../www/admin/addressbook/addr.php.in:102
+#: ../../../www/admin/user/user.php.in:435
+msgid "Organisational Unit"
+msgstr "Unidad organizacional"
+
+#: tpl_messages.php:50 ../../../www/admin/addressbook/addr.php.in:103
+#: ../../../www/admin/user/user.php.in:436
+msgid "Room Number"
+msgstr "Número de habitación"
+
+#: tpl_messages.php:51 ../../../www/admin/addressbook/addr.php.in:104
+#: ../../../www/admin/user/user.php.in:437
+msgid "Street Address"
+msgstr "Calle"
+
+#: tpl_messages.php:52 ../../../www/admin/user/user.php.in:438
+msgid "Postbox"
+msgstr "Buzón postal"
+
+#: tpl_messages.php:53 ../../../www/admin/addressbook/addr.php.in:106
+#: ../../../www/admin/user/user.php.in:439
+msgid "Postal Code"
+msgstr "Código Postal"
+
+#: tpl_messages.php:54 ../../../www/admin/addressbook/addr.php.in:107
+#: ../../../www/admin/user/user.php.in:440
+msgid "City"
+msgstr "Ciudad"
+
+#: tpl_messages.php:55 ../../../www/admin/addressbook/addr.php.in:108
+#: ../../../www/admin/user/user.php.in:441
+msgid "Country"
+msgstr "País"
+
+#: tpl_messages.php:56 ../../../www/admin/addressbook/addr.php.in:109
+#: ../../../www/admin/user/user.php.in:442
+msgid "Telephone Number"
+msgstr "Número de teléfono"
+
+#: tpl_messages.php:57 ../../../www/admin/addressbook/addr.php.in:111
+#: ../../../www/admin/user/user.php.in:444
+msgid "Fax Number"
+msgstr "Número de Fax"
+
+#: tpl_messages.php:58 ../include/menu.php:45
+msgid "Addressbook"
+msgstr "Libreta de Direcciones"
+
+#: tpl_messages.php:59
+msgid "check here to make this users address <br/> visible in the address book"
+msgstr ""
+"Seleccionar aquí para hacer que esta dirección de usuario <br/> sea visible "
+"en la libreta de direcciones"
+
+#: tpl_messages.php:60
+msgid "User Quota in KB"
+msgstr "Cuota de usuario en KB"
+
+#: tpl_messages.php:61 ../../../www/admin/user/user.php.in:448
+msgid "Leave blank for unlimited"
+msgstr "Dejar en blanco para ilimitado"
+
+#: tpl_messages.php:62 ../include/form.class.php:76
+msgid "Submit"
+msgstr "Enviar"
+
+#: tpl_messages.php:63
+msgid "Email Delivery"
+msgstr "Obtención de correo"
+
+#: tpl_messages.php:64
+msgid ""
+"Activate delivery to folder (only one of vacation, forward and delivery to "
+"folder can be active at any time)"
+msgstr ""
+"Activar recepción a carpeta (sólo uno de vacaciones, enviar y recibir a "
+"carpeta pueden ser activados en cualquier momento)"
+
+#: tpl_messages.php:65
+msgid "Deliver regular mail to folder"
+msgstr "Recibir correo regular a carpeta"
+
+#: tpl_messages.php:66 tpl_messages.php:93 tpl_messages.php:193
+#: tpl_messages.php:208 tpl_messages.php:212 tpl_messages.php:215
+#: tpl_messages.php:218 tpl_messages.php:221 tpl_messages.php:224
+#: tpl_messages.php:227 tpl_messages.php:240
+msgid "Update"
+msgstr "Actualizar"
+
+#: tpl_messages.php:67 ../include/menu.php:62
+msgid "Distribution Lists"
+msgstr "Listas de distribución"
+
+#: tpl_messages.php:68
+msgid "Listname"
+msgstr "Nombre de lista"
+
+#: tpl_messages.php:69
+msgid "Visibility"
+msgstr "Visibilidad"
+
+#: tpl_messages.php:71
+msgid "Internal"
+msgstr "Interno"
+
+#: tpl_messages.php:72
+msgid "Public"
+msgstr "Público"
+
+#: tpl_messages.php:73
+msgid "List deleted, awaiting cleanup..."
+msgstr "Lista borrada, esperando limpieza..."
+
+#: tpl_messages.php:76
+msgid "The distribution list with DN"
+msgstr "La lista de distribución con DN"
+
+#: tpl_messages.php:78
+msgid "Back to list of distribution lists"
+msgstr "Volver a la lista de listas de distribución"
+
+#: tpl_messages.php:79 ../include/menu.php:76 ../include/menu.php:93
+#: ../include/menu.php:101
+msgid "Domain Maintainers"
+msgstr "Mantenedores de dominio"
+
+#: tpl_messages.php:86
+msgid ""
+"Kolab's architecture was done by <a href=\"http://www.erfrakon.com"
+"\">erfrakon</a>; the company also designed and implemented the Kolab 1 "
+"Server and did the design and architecture for the Kolab 2 Server while "
+"providing consulting for the implementation of the Kolab 2 server and the "
+"Kolab 2 clients."
+msgstr ""
+"La arquitectura de Kolab fue desarrollada por <a href=\"http://www.erfrakon."
+"com\">erfrakon</a>; la compañía también diseñó e implementó el Servidor "
+"Kolab 1 y realizó el diseño y arquitectura para el Servidor Kolab 2 mientras "
+"proporcionaba consultoría para la implementación del Servidor Kolab 2 y los "
+"clientes Kolab 2."
+
+#: tpl_messages.php:87
+msgid ""
+"<a href=\"http://www.erfrakon.com\">erfrakon</a> is a consulting company "
+"dedicated to opensource software and Linux. The main tasks of erfrakon "
+"within the Kolab project are the principle design and architecure of the "
+"Kolab groupware solution and the creation of the Kolab 1 server."
+msgstr ""
+"<a href=\"http://www.erfrakon.com\">erfrakon</a> es una compañía consultora "
+"dedicada al software de código abierto y Linux. Las principales tareas de "
+"erfrakon dentro del proyecto Kolab son el diseño y arquitectura iniciales de "
+"la solución groupware Kolab y la creación del servidor Kolab 1."
+
+#: tpl_messages.php:88
+msgid "The following people worked on Kolab for erfrakon:"
+msgstr "Las siguientes personas trabajaron en Kolab para erfrakon:"
+
+#: tpl_messages.php:89
+msgid "Email Forwarding"
+msgstr "Envío de correo electrónico"
+
+#: tpl_messages.php:90
+msgid ""
+"Activate email forwarding (only one of vacation, forward and delivery to "
+"folder can be active at any time)"
+msgstr ""
+"Activar envío de correo electrónico (sólo uno de vacaciones, enviar y "
+"recibir a carpeta pueden ser activados en cualquier momento)"
+
+#: tpl_messages.php:91
+msgid "Forward mail to"
+msgstr "Enviar correo a"
+
+#: tpl_messages.php:92
+msgid "Keep copy on server"
+msgstr "Mantener copia en el servidor"
+
+#: tpl_messages.php:94
+msgid ""
+"Intevation GmbH coordinated the Projects: Kroupware and Proko2, which are "
+"the main driving force behind Kolab1&2. In addition to project management "
+"Intevation did most of the quality assurance."
+msgstr ""
+"Intervation GmbH coordinó los proyectos: Kroupware y Proko2, los cuales son "
+"las principales fuerzas conductoras tras Kolab1&2. Además de la "
+"administración del proyecto Intervation realizó la mayor parte de "
+"aseguramiento de calidad."
+
+#: tpl_messages.php:95
+msgid ""
+"Intevation GmbH is a IT-company exclusively focusing on Free Software. Its "
+"business units are strategic consulting, project management and geographic "
+"information systems."
+msgstr ""
+"Intervation GmbH es una compa&ntilde;ía IT exclusivamente enfocada al "
+"Software Libre. Sus unidades de negocio son la consultoría estratégica, la "
+"administración de proyectos y los sistemas de información geográfica."
+
+#: tpl_messages.php:96
+msgid "The following people worked on Kolab for Intevation:"
+msgstr "Las siguientes personas trabajaron en Kolab para Intervation:"
+
+#: tpl_messages.php:97
+msgid ""
+"The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by"
+msgstr ""
+"El cliente KDE Kolab 1 y el cliente KDE Kolab 2 (Kontact) fueron "
+"desarrollados por"
+
+#: tpl_messages.php:98
+msgid ""
+"Klar&auml;lvdalens Datakonsult AB is a consulting company dedicated to "
+"opensource software, Linux, and the <a href=\"http://www.trolltech.com/"
+"products/qt/\">Qt</a> library. The main tasks of KDAB within the Kolab "
+"project are design and implementation of the Kolab KDE clients and the "
+"implementation of the current Kolab 2 server."
+msgstr ""
+"Klar&auml;lvdalens Datakonsult AB es una compañía consultora dedicada a "
+"software de código abierto, Linux y la librería <a href=\"http://www."
+"trolltech.com/products/qt/\">Qt</a>. Las principales tareas de KDAB dentro "
+"del proyecto Kolab son el diseño y la implementación de los clientes KDE "
+"Kolab y la implementación del servidor Kolab 2 actual."
+
+#: tpl_messages.php:99
+msgid ""
+"The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"
+msgstr ""
+"Las siguientes personas trabajaron en Kolab para Klar&auml;lvdalens "
+"Datakonsult AB:"
+
+#: tpl_messages.php:100
+msgid ""
+"<a href=\"http://www.kde.org\">KDE</a> is a powerful <a href=\"http://www."
+"gnu.org/philosophy/free-sw.html\">Free Software</a> graphical desktop "
+"environment for Linux and Unix workstations. It combines ease of use, "
+"contemporary functionality, and outstanding graphical design with the "
+"technological superiority of the Unix operating system."
+msgstr ""
+"<a href=\"http://www.kde.org\">KDE</a> es un potente <a href=\"http://www."
+"gnu.org/philosophy/free-sw.html\">software libre</a> de entorno gráfico de "
+"escritorio para estaciones de trabajo Linux y Unix. Combina la facilidad de "
+"uso, funcionalidad contemporánea y un destacado diseño gráfico con la "
+"superioridad tecnológica del sistema operativo Unix."
+
+#: tpl_messages.php:101
+msgid ""
+"<b>KDE</b> is an Internet project that is truly open in every sense. "
+"Development takes place on the Internet and is discussed on our <a href="
+"\"http://www.kde.org/mailinglists.html\">mailing lists</a>, USENET news "
+"groups, and IRC channels to which we invite and welcome everyone."
+msgstr ""
+"<b>KDE</b> es un proyecto de Internet que es verdaderamente abierto en todos "
+"los sentidos. El desarrollo tiene lugar en Internet y se debate en nuestras "
+"<a href=\"http://www.kde.org/mailinglists.html\">listas de correo de KDE</"
+"a>, grupos de noticias USENET, y canales IRC a los que invitamos y damos la "
+"bienvenida a todos."
+
+#: tpl_messages.php:102
+msgid ""
+"<b>KDE</b> is a mature desktop suite providing a solid basis to an ever "
+"growing number of <a href=\"http://www.kde-apps.org\">applications</a> for "
+"Unix workstations.  KDE has developed a high quality development framework "
+"for Unix, which allows for the rapid and efficient creation of applications."
+msgstr ""
+"<b>KDE</b> es un entorno de escritorio maduro que proporciona una sólida "
+"base a un cada mayor número de <a href=\"http://www.kde-apps.org"
+"\">aplicaciones KDE</a> para estaciones de trabajo Unix. KDE ha desarrollado "
+"un entorno de desarrollo de alta calidad para Unix, el cual permite la "
+"creación rápida y eficiente de aplicaciones."
+
+#: tpl_messages.php:103
+msgid "Kolab2 Groupware Server"
+msgstr "Servidor Groupware Kolab2"
+
+#: tpl_messages.php:104
+msgid ""
+"This is the Kolab2 Server. It is Free Software developed by the <a href="
+"\"http://www.kolab.org/\">Kolab Project</a>, with the intention of bringing "
+"groupware functionality to Unix/KDE users as well as Windows desktops."
+msgstr ""
+"Este es el servidor Kolab2. Es un software libre desarrollado por el <a href="
+"\"http://www.kolab.org/\">proyecto Kolab</a>, con la intención de ofrecer "
+"funcionalidades groupware a los usuarios de Unix/KDE así como a los de "
+"escritorios Windows."
+
+#: tpl_messages.php:105
+msgid "Kolab builds upon many other Free Software projects, namely:"
+msgstr ""
+"Kolab se sustenta en otros muchos proyectos de software libre, a saber:"
+
+#: tpl_messages.php:106
+msgid "(Mail Scanner)"
+msgstr "(Escáner de Correo Electrónico)"
+
+#: tpl_messages.php:107
+msgid "(HTTP Server)"
+msgstr "(Servidor HTTP)"
+
+#: tpl_messages.php:108
+msgid "(Virus Scanner)"
+msgstr "(Escáner de Virus)"
+
+#: tpl_messages.php:109
+msgid "(IMAP Server)"
+msgstr "(Servidor IMAP)"
+
+#: tpl_messages.php:110
+msgid "(LDAP Server)"
+msgstr "(Servidor LDAP)"
+
+#: tpl_messages.php:111
+msgid "(MTA)"
+msgstr ""
+
+#: tpl_messages.php:112
+msgid "(SPAM Filter)"
+msgstr "(Filtro contra el SPAM)"
+
+#: tpl_messages.php:113
+msgid ""
+"The following projects are used in binding the above together, in order to "
+"create the Kolab Server:"
+msgstr ""
+"Los siguientes proyectos son usados para unir los anteriores, con el "
+"objetivo de crear el Servidor Kolab:"
+
+#: tpl_messages.php:114
+msgid "The following projects are used as a base for the Kolab Clients:"
+msgstr ""
+"Los siguientes proyectos son usados como una base para los clientes de Kolab:"
+
+#: tpl_messages.php:115
+msgid ""
+"The Kolab project owes a great deal of thanks to the people of the <a href="
+"\"http://www.openpkg.org/\">OpenPKG</a> project. OpenPKG allows Kolab to run "
+"on many diverse platforms in a reliable and predictable manner, by providing "
+"a common, easy-to-install, cross-platform base on which to build the server."
+msgstr ""
+"El proyecto Kolab le debe muchos agredecimientos a la gente del proyecto <a "
+"href=\"http://www.openpkg.org/\">OpenPKG</a>. OpenPKG permite a Kolab correr "
+"en muy diversas plataformas de una forma fiable y predecible, proporcionando "
+"una base común, fácil de instalar y multiplataforma sobre la que construir "
+"el servidor."
+
+#: tpl_messages.php:116
+msgid ""
+"To use all Kolab2 features you need an interoperable client. The KDE Kolab "
+"Client was the first such client to be developed and is still considered the "
+"reference platform for others to follow. The KDE groupware component Kontact "
+"can act as Kolab2 Client. Many thanks to the <a href=\"http://www.kde.org"
+"\">KDE Project</a> for providing such a powerful base on which to build this "
+"client solution."
+msgstr ""
+"Para usar todas las características de Kolab2 necesitará un cliente "
+"interporable. El cliente KDE Kolab fue el primer cliente de este tipo en ser "
+"desarrollado y todavía es considerado como la plataforma de referencia para "
+"otros que le sigan. El componente groupware KDE Kontact puede actuar como un "
+"cliente Kolab2. Muchas gracias al <a href=\"http://www.kde.org\">proyecto "
+"KDE</a> por proveer tan potente base sobre que la que construir esta "
+"solución cliente."
+
+#: tpl_messages.php:117
+msgid ""
+"Users of Outlook on Microsoft Windows are able to use a proprietary plug-in "
+"to inter-operate with the Kolab server. For Kolab2 the preferred plug-in is "
+"the <a href=\"http://www.toltec.co.za/\">Toltec Plug-in</a> by Radley "
+"Network Technologies CC. Radley has worked closely with the Kolab community "
+"to help develop the Kolab2 storage format."
+msgstr ""
+"Los usuarios de Outlook sobre Microsoft Windows pueden usar un plug-in "
+"propietario para inter-operar con el servidor Kolab. Para Kolab2, el plug-in "
+"preferido es el <a href=\"http://www.toltec.co.za/\">Toltec Plug-in</a> por "
+"Radley Network Technologies CC. Radley ha trabajado cercanamente con la "
+"comunidad Kolab para ayudar a desarrollar el formato de almacenamiento "
+"Kolab2."
+
+#: tpl_messages.php:118
+msgid ""
+"A list of additional Outlook plug-ins that provide interoperability with the "
+"Kolab server is <a href=\"http://www.kolab.org/kolab-plugins.html"
+"\">maintained on the Kolab website</a>."
+msgstr ""
+"Existe una lista de plug-ins adicionales para proporcionar interoperabilidad "
+"a Outlook con el servidor Kolab <a href=\"http://www.kolab.org/kolab-plugins."
+"html\">mantenida en el sitio web de Kolab</a>."
+
+#: tpl_messages.php:119
+msgid ""
+"There is also a <a href=\"http://www.kolab.org/webclient.html\">web-based "
+"client</a> in development which provides full groupware functionality to "
+"mobile users through a web interface. It allows users to access their email, "
+"calendars, tasks, etc. from anywhere in the world, by simply connecting "
+"through a standard web browser. The web client would not have been possible "
+"without the excellent <a href=\"http://www.horde.org/\">Horde project</a> on "
+"which to build."
+msgstr ""
+"También hay un <a href=\"http://www.kolab.org/webclient.html\">cliente "
+"basado en web</a> en desarrollo, el cual proporciona funcionalidad groupware "
+"total a los usuarios móviles a través de un interfaz web. Ésto permite a los "
+"usuarios acceder a sus correos electrónicos, calendarios, tareas, etc. desde "
+"cualquier lugar del mundo, simplemente contectando a través de un navegador "
+"web estándar. El cliente web no hubiera sido posible sin el excelente <a "
+"href=\"http://www.horde.org/\">proyecto Horde</a> sober el que se ha "
+"construido."
+
+#: tpl_messages.php:120
+msgid ""
+"As Kolab is a Free Software project, anyone can help to extend the "
+"functionality of the software. An active community has developed around the "
+"software with many people throughout the world contributing. The project was "
+"originally started in 2002 by a joint-venture of three companies: <a href="
+"\"http://www.erfrakon.com/\">erfrakon</a> (design, architecture and server); "
+"<a href=\"http://www.intevation.de\">Intevation</a> (project management) and "
+"<a href=\"http://www.klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens "
+"Datakonsult</a> (client)."
+msgstr ""
+"Como Kolab es un proyecto de software libre, cualquiera puede ayudar a "
+"extender la funcionalidad del software. Una comunidad activa ha desarrollado "
+"en torno al software con mucha gente de todo el mundo contribuyendo. El "
+"proyecto fue iniciado originalmente en 2002 por una empresa conjunta de tres "
+"compañías: <a href=\"http://www.erfrakon.com/\">erfrakon</a> (diseño, "
+"arquitectura y servidor); <a href=\"http://www.intevation.de\">Intevation</"
+"a> (administración del proyecto) y <a href=\"http://www.klaralvdalens-"
+"datakonsult.se/\">Klar&auml;lvdalens Datakonsult</a> (cliente)."
+
+#: tpl_messages.php:121
+msgid ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> joined the "
+"project soon after the original Kolab1 server was released. Its developers "
+"are primarily responsible for an updated engine (which forms the base of the "
+"Kolab2 server), the web client, as well as contributing to development of "
+"the Kolab2 storage format."
+msgstr ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> se unió pronto "
+"al proyecto después de que el servidor Kolab1 fuera liberado. Sus "
+"desarrolladores son primariamente responsables de un motor actualizado (el "
+"cual forma parte del servidor Kolab2), el cliente web, así como en el "
+"desarrollo del formato de almacenamiento Kolab2."
+
+#: tpl_messages.php:122
+msgid "Other contributors:"
+msgstr "Otras contribuciones:"
+
+#: tpl_messages.php:123
+msgid "CSSified the Kolab1 web admin GUI"
+msgstr "CSSified el GUI de administración web de Kolab1"
+
+#: tpl_messages.php:124
+msgid ""
+"The principal authors of the Kolab client and server software are (in "
+"alphabetical order):"
+msgstr ""
+"Los principales autores del cliente y servidor de Kolab son (en orden "
+"alfabético):"
+
+#: tpl_messages.php:125
+msgid "Enter UID and password to login"
+msgstr "Entrar UID y contraseña para entrar"
+
+#: tpl_messages.php:126
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: tpl_messages.php:127
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: tpl_messages.php:128 ../include/auth.class.php.in:124
+msgid "Login"
+msgstr "Entrada"
+
+#: tpl_messages.php:129
+msgid "The maintainer with DN"
+msgstr "El mantenedor con DN"
+
+#: tpl_messages.php:131
+msgid "Back to list of maintainers"
+msgstr "Volver a la lista de mantenedores"
+
+#: tpl_messages.php:132 ../include/menu.php:82 ../include/menu.php:90
+msgid "Maintainers"
+msgstr "Mantenedores"
+
+#: tpl_messages.php:139
+msgid "User:"
+msgstr "Usuario:"
+
+#: tpl_messages.php:140
+msgid "Role:"
+msgstr "Papel:"
+
+#: tpl_messages.php:141
+msgid "Logout"
+msgstr "Desconectar"
+
+#: tpl_messages.php:142
+msgid "Not logged in"
+msgstr "No está dentro"
+
+#: tpl_messages.php:143
+msgid "Errors:"
+msgstr "Errores:"
+
+#: tpl_messages.php:144
+msgid "Message:"
+msgstr "Mensaje:"
+
+#: tpl_messages.php:145
+msgid "The shared folder with DN"
+msgstr "La carpeta compartida con DN"
+
+#: tpl_messages.php:147
+msgid "Back to list of shared folders"
+msgstr "Volver a la lista de carpetas compartidas"
+
+#: tpl_messages.php:148
+msgid "Shared folders"
+msgstr "Carpetas compartidas"
+
+#: tpl_messages.php:150
+msgid "Server"
+msgstr "Servidor"
+
+#: tpl_messages.php:151 tpl_messages.php:171
+msgid "Type"
+msgstr "Tipo"
+
+#: tpl_messages.php:153
+msgid "Folder deleted, awaiting cleanup..."
+msgstr "Carpeta borrada, esperando limpieza..."
+
+#: tpl_messages.php:156 tpl_messages.php:194
+msgid "Welcome to the Kolab administration interface"
+msgstr "Bienvenida al interfaz de administración de Kolab"
+
+#: tpl_messages.php:157
+msgid "NOTE:"
+msgstr "NOTA:"
+
+#: tpl_messages.php:158
+msgid ""
+"No account is configured to receive mail for administrative addresses. If "
+"you have not yet created an account for this, "
+msgstr ""
+"No hay un cuenta configurada para recibir mensajes de direcciones "
+"administrativas. Si todavía no ha creado una cuenta para ello,"
+
+#: tpl_messages.php:159
+msgid "please do so"
+msgstr "por favor hacer así"
+
+#: tpl_messages.php:160
+msgid "and then go"
+msgstr "y entonces vamos"
+
+#: tpl_messages.php:161
+msgid "here"
+msgstr "aquí"
+
+#: tpl_messages.php:162
+msgid "to set up forwarding of mail to administrative email addresses."
+msgstr "para establecer el envío de correo a las direcciones administrativas."
+
+#: tpl_messages.php:163
+msgid "The user with DN"
+msgstr "El usuario con DN"
+
+#: tpl_messages.php:165
+msgid "Back to list of users"
+msgstr "Volver a la lista de usuarios"
+
+#: tpl_messages.php:166 tpl_messages.php:179
+msgid "Email Users"
+msgstr "Usuario de correo electrónico"
+
+#: tpl_messages.php:173
+msgid "E-mail"
+msgstr "Correo electrónico"
+
+#: tpl_messages.php:174
+msgid "uid"
+msgstr ""
+
+#: tpl_messages.php:176
+msgid "User Deleted, awaiting cleanup..."
+msgstr "Usuario borrado, esperando limpieza..."
+
+#: tpl_messages.php:184
+msgid "Vacation Notification"
+msgstr "Notificación de vacaciones"
+
+#: tpl_messages.php:185
+msgid ""
+"Activate vacation notification (only one of vacation, forward and delivery "
+"to folder can be active at any time)"
+msgstr ""
+"Activar la notificación de vacaciones (sólo una por periodo vacacional, "
+"envío y recepción a carpeta pueden ser activados en cualquier momento)"
+
+#: tpl_messages.php:186
+msgid "Resend notification only after"
+msgstr "Reenviar notificación sólo después"
+
+#: tpl_messages.php:187
+msgid "days"
+msgstr "días"
+
+#: tpl_messages.php:188
+msgid "Send responses for these addresses:"
+msgstr "Enviar respuestas para estas direcciones:"
+
+#: tpl_messages.php:189
+msgid "(one address per line)"
+msgstr "(una dirección por línea)"
+
+#: tpl_messages.php:190
+msgid "Do not send vacation replies to spam messages"
+msgstr "No enviar respuestas de vacaciones a mensajes de correo basura"
+
+#: tpl_messages.php:191
+msgid "Only react to mail coming from domain"
+msgstr "Reaccionar sólo a los mensajes que vengan del dominio"
+
+#: tpl_messages.php:192
+msgid "(leave empty for all domains)"
+msgstr "(dejar vacío para todos los dominios)"
+
+#: tpl_messages.php:195
+msgid "Kolab2 Groupware Server Version"
+msgstr "Servidor Groupware Kolab2 Versión"
+
+#: tpl_messages.php:196
+msgid "Kolab2 Groupware Server Component Versions"
+msgstr "Componentes del Servidor groupware Kolab2 Versiones"
+
+#: tpl_messages.php:197
+msgid "PEAR/Horde Versions"
+msgstr ""
+
+#: tpl_messages.php:198
+msgid "Kolab2 Patched OpenPKG Package Versions"
+msgstr "Paquetes Kolab2 OpenPKG Parcheados Versiones"
+
+#: tpl_messages.php:199
+msgid "OpenPKG Version"
+msgstr "OpenPKG Versión"
+
+#: tpl_messages.php:200
+msgid "Kolab Server Settings"
+msgstr "Ajustes del Servidor Kolab"
+
+#: tpl_messages.php:201
+msgid "Administrative email addresses"
+msgstr "Direcciones de correo electrónico administrativas"
+
+#: tpl_messages.php:202
+msgid ""
+"You have not yet set up a receiving account for the administrative email "
+"addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
+"DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
+"Enter the email address of a kolab account below and press the button to "
+"create a distribution list for each of those addresses. Later you can add or "
+"remove people from the lists like any other distribution list"
+msgstr ""
+"Todavía no ha establecido una cuenta de recepción para las direcciones de "
+"correo administrativo hostmaster@yourdomain.tld, postmaster@yourdomain.tld, "
+"MAILER-DAEMON@yourdomain.tld, abuse@yourdomain.tld y virusalert@yourdomain."
+"tld. Introduzca abajo la dirección de correo de una cuenta Kolab y pulse el "
+"botón para crear una lista de distribución para cada una de esas "
+"direcciones. Más tarde podrá añadir o eliminar gente de las listas como en "
+"cualquier otra lista de distribución"
+
+#: tpl_messages.php:203
+msgid ""
+"Email address of account that should receive administrative mail for domain "
+msgstr ""
+"Dirección de correo electrónico de la cuenta que debe recibir mensajes "
+"administrativos para el dominio"
+
+#: tpl_messages.php:204
+msgid "Create Distribution Lists"
+msgstr "Crear listas de distribución"
+
+#: tpl_messages.php:205
+msgid "Enable or Disable individual Services"
+msgstr "Habilitar o deshabilitar servicios individuales"
+
+#: tpl_messages.php:206
+msgid "Service"
+msgstr "Servicio"
+
+#: tpl_messages.php:207
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: tpl_messages.php:209
+msgid "Quota settings"
+msgstr "Ajustes de cuota"
+
+#: tpl_messages.php:210
+msgid "Warn users when they have used"
+msgstr "Avisar a los usuarios cuando hayan usado"
+
+#: tpl_messages.php:211
+#, php-format
+msgid "% of their quota"
+msgstr "% de su cuota"
+
+#: tpl_messages.php:213
+msgid "Free/Busy settings"
+msgstr "Ajustes de libre/ocupado"
+
+#: tpl_messages.php:214
+msgid "Allow unauthenticated downloading of Free/Busy information"
+msgstr "Permitir descarga sin autentificar de información libre/ocupada"
+
+#: tpl_messages.php:216
+msgid "When creating free/busy lists, include data from"
+msgstr "Cuando se creen listas libres/ocupadas, incluir datos desde"
+
+#: tpl_messages.php:217
+msgid "days in the past"
+msgstr "días en el pasado"
+
+#: tpl_messages.php:219
+msgid "Privileged Networks"
+msgstr "Redes privilegiadas"
+
+#: tpl_messages.php:220
+msgid ""
+"Networks allowed to relay and send mail through unauthenticated SMTP "
+"connections to the Kolab server (comma separated networks in x.x.x.x/y "
+"format):"
+msgstr ""
+"Redes habilitadas para retransmitir y enviar correo a través de conexiones "
+"SMTP sin autentificar al servidor Kolab (redes separadas por comas en "
+"formato x.x.x.x/y):"
+
+#: tpl_messages.php:222
+msgid "SMTP \"smarthost/relayhost\""
+msgstr ""
+
+#: tpl_messages.php:223
+msgid ""
+"Smarthost (and optional port) to use to send outgoing mail (host.domain."
+"tld). Leave empty for no relayhost."
+msgstr ""
+"Smarthost (y puerto opcional) a usar para enviar correo saliente (host."
+"domain.tld). Dejar vacío para no relayhost."
+
+#: tpl_messages.php:225
+msgid "Accept Internet Mail"
+msgstr "Aceptar correo Internet"
+
+#: tpl_messages.php:226
+msgid ""
+"Accept mail from other domains over unauthenticated SMTP. This must be "
+"enabled if you want to use the Kolab Server to receive mail from other "
+"internet domains directly. Leave disabled to accept mail only from SMTP "
+"gateways that are within the privileged network."
+msgstr ""
+"Aceptar correo de otros dominios sobre SMTP sin autentificar. Ésto debe ser "
+"habilitado si quiere usar el servidor Kolab para recibir directamente correo "
+"de otros dominios de Internet. Dejar deshabilitado para aceptar correo sólo "
+"desde puertas de enlace SMTP que se encuentren dentro de las red "
+"privilegiada."
+
+#: tpl_messages.php:228
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:134
+msgid "Domains"
+msgstr "Dominios"
+
+#: tpl_messages.php:229
+msgid "Domain"
+msgstr "Dominio"
+
+#: tpl_messages.php:232 tpl_messages.php:245
+msgid "Add"
+msgstr "Añadir"
+
+#: tpl_messages.php:233
+msgid "Mail Filter Settings"
+msgstr "Ajustes del filtro de correo electrónico"
+
+#: tpl_messages.php:234
+msgid "Check messages for mismatching From header and envelope from."
+msgstr ""
+"Comprobar desajustes en la cabecera From de los mensajes y en el from del "
+"sobre."
+
+#: tpl_messages.php:235
+msgid ""
+"Use the Sender header instead of From for the above checks if Sender is "
+"present."
+msgstr ""
+"Usar la cabecera Sender en lugar de From para los chequeos anteriores si el "
+"remitente está presente."
+
+#: tpl_messages.php:236
+msgid "Action to take for messages that fail the check:"
+msgstr ""
+
+#: tpl_messages.php:237
+msgid ""
+"Reject the message, except if it originates from the outside and the From "
+"header matches one of Kolab server's domains. In that case rewrite the From "
+"header so the recipient can see the potential forgery."
+msgstr ""
+"Rechazar el mensaje salvo que esté originado en exterior pero tenga una "
+"cabecera From que coincida con el dominio del servidor Kolab. En ese caso se "
+"reescribe la cabecera From de modo que el recipiente pueda ver la potencial "
+"falsificación."
+
+#: tpl_messages.php:238
+msgid "Always reject the message."
+msgstr "Rechazar siempre el mensaje."
+
+#: tpl_messages.php:239
+msgid ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
+msgstr ""
+"Tenga en cuenta que habilitando este ajuste hará que el servidor rechace "
+"cualquier correo con cabeceras Sender y From no coincidentes si Sender es "
+"una cuenta de este servidor. Es sabido que puede causar problemas con listas "
+"de correo."
+
+#: tpl_messages.php:241
+msgid "Kolab Hostnames (for Master and Slaves)"
+msgstr "Nombres de host Kolab (para Maestro y Esclavos)"
+
+#: tpl_messages.php:242
+msgid "Host"
+msgstr ""
+
+#: ../../../www/admin/addressbook/addr.php.in:17
+#: ../../../www/admin/addressbook/index.php.in:23
+#: ../../../www/admin/administrator/index.php.in:33
+#: ../../../www/admin/distributionlist/index.php.in:35
+#: ../../../www/admin/distributionlist/list.php.in:37
+#: ../../../www/admin/domainmaintainer/index.php.in:33
+#: ../../../www/admin/maintainer/index.php.in:33
+#: ../../../www/admin/sharedfolder/index.php.in:22
+#: ../../../www/admin/sharedfolder/sf.php.in:25
+#: ../../../www/admin/user/index.php.in:34
+#: ../../../www/admin/settings/index.php.in:13
+msgid "Error: You don't have Permissions to access this Menu"
+msgstr "Error: No tiene permisos para acceder a este Menú"
+
+#: ../../../www/admin/addressbook/addr.php.in:65
+#: ../../../www/admin/user/user.php.in:114
+msgid "User, vCard or distribution list with this email address already exists"
+msgstr ""
+"El usuario, vCard o lista de distribución con esta dirección de correo ya "
+"existe"
+
+#: ../../../www/admin/addressbook/addr.php.in:78
+#: ../../../www/admin/administrator/admin.php.in:121
+#: ../../../www/admin/distributionlist/list.php.in:106
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:96
+#: ../../../www/admin/maintainer/maintainer.php.in:118
+#: ../../../www/admin/sharedfolder/sf.php.in:112
+#: ../../../www/admin/user/user.php.in:349
+msgid "Error: need valid action to proceed"
+msgstr "Error: se necesita una acción válida para proceder"
+
+#: ../../../www/admin/addressbook/addr.php.in:81
+#: ../../../www/admin/administrator/admin.php.in:127
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:102
+#: ../../../www/admin/maintainer/maintainer.php.in:124
+#: ../../../www/admin/user/user.php.in:361
+#: ../../../www/admin/user/user.php.in:364
+#: ../../../www/admin/user/user.php.in:370
+#: ../../../www/admin/user/user.php.in:772
+msgid "Error: You don't have the required Permissions"
+msgstr "Error: No tiene los permisos requeridos"
+
+#: ../../../www/admin/addressbook/addr.php.in:95
+msgid "Primary E-Mail Address"
+msgstr "Dirección primaria de correo electrónico"
+
+#: ../../../www/admin/addressbook/addr.php.in:97
+msgid "E-Mail Aliases"
+msgstr "Alias de correo electrónico"
+
+#: ../../../www/admin/addressbook/addr.php.in:100
+#: ../../../www/admin/user/user.php.in:425
+msgid "One address per line"
+msgstr "Una dirección por línea"
+
+#: ../../../www/admin/addressbook/addr.php.in:105
+msgid "Post Box"
+msgstr "Buzón de correo"
+
+#: ../../../www/admin/addressbook/addr.php.in:121
+#: ../../../www/admin/distributionlist/list.php.in:135
+#: ../../../www/admin/sharedfolder/sf.php.in:148
+#, php-format
+msgid "Error: DN required for %s operation"
+msgstr "Error: se requiere un DN para la operación %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:131
+msgid "Add External Address"
+msgstr "Añadir dirección externa"
+
+#: ../../../www/admin/addressbook/addr.php.in:178
+#, php-format
+msgid ""
+"Addressbook entry DN could not be modified, distribution list <a "
+"href='@kolab_wui@/distributionlist/list.php?action=modify&dn=%s'>'%s'</a> "
+"depends on it. To modify this entry, first remove it from the distribution "
+"list."
+msgstr ""
+"La entrada DN de la libreta de direcciones no puede ser modificada, la lista "
+"de distribución <a href='@kolab_wui@/distributionlist/list.php?"
+"action=modify&dn=%s'>'%s'</a> depende de ella. Para modificar esta entrada, "
+"primero bórrela de la lista de distribución."
+
+#: ../../../www/admin/addressbook/addr.php.in:189
+#: ../../../www/admin/administrator/admin.php.in:216
+#: ../../../www/admin/distributionlist/list.php.in:196
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:200
+#: ../../../www/admin/maintainer/maintainer.php.in:213
+#: ../../../www/admin/sharedfolder/sf.php.in:227
+#: ../../../www/admin/user/user.php.in:617
+#, php-format
+msgid "LDAP Error: could not rename %s to %s: %s"
+msgstr "Error de LDAP: no se pudo renombrar %s a %s: %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:197
+#: ../../../www/admin/administrator/admin.php.in:224
+#: ../../../www/admin/distributionlist/list.php.in:204
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:208
+#: ../../../www/admin/maintainer/maintainer.php.in:221
+#: ../../../www/admin/sharedfolder/sf.php.in:235
+#: ../../../www/admin/user/user.php.in:625
+#, fuzzy, php-format
+msgid "LDAP Error: could not modify %s to %s: %s"
+msgstr "Error de LDAP: no se pudo modificar el objeto %s: %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:203
+#: ../../../www/admin/addressbook/addr.php.in:218
+#: ../../../www/admin/administrator/admin.php.in:230
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:214
+#: ../../../www/admin/maintainer/maintainer.php.in:227
+#: ../../../www/admin/user/user.php.in:631
+#, php-format
+msgid "%s successfully updated"
+msgstr "%s actualizado con éxito"
+
+#: ../../../www/admin/addressbook/addr.php.in:209
+#: ../../../www/admin/administrator/admin.php.in:234
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:226
+#: ../../../www/admin/maintainer/maintainer.php.in:231
+#: ../../../www/admin/sharedfolder/sf.php.in:247
+#, php-format
+msgid "LDAP Error: could not read %s: %s"
+msgstr "Error de LDAP: no se pudo leer %s: %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:215
+#: ../../../www/admin/administrator/admin.php.in:238
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:230
+#: ../../../www/admin/maintainer/maintainer.php.in:235
+#: ../../../www/admin/sharedfolder/sf.php.in:251
+#, php-format
+msgid "LDAP Error: could not modify object %s: %s"
+msgstr "Error de LDAP: no se pudo modificar el objeto %s: %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:227
+#: ../../../www/admin/administrator/admin.php.in:256
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:261
+#: ../../../www/admin/maintainer/maintainer.php.in:257
+#: ../../../www/admin/sharedfolder/sf.php.in:261
+#: ../../../www/admin/user/user.php.in:689
+#, php-format
+msgid "LDAP Error: could not add object %s: %s"
+msgstr "Error de LDAP: no se pudo añadir el objeto %s: %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:230
+#, php-format
+msgid "%s successfully added"
+msgstr "%s añadido con éxito"
+
+#: ../../../www/admin/addressbook/addr.php.in:240
+#: ../../../www/admin/addressbook/addr.php.in:258
+msgid "Modify External Address"
+msgstr "Modificar dirección externa"
+
+#: ../../../www/admin/addressbook/addr.php.in:261
+#: ../../../www/admin/addressbook/addr.php.in:281
+#, php-format
+msgid "Error: No entry with DN %s found"
+msgstr "Error: no se encontró una entrada con DN %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:278
+msgid "Delete External Address"
+msgstr "Borrar dirección externa"
+
+#: ../../../www/admin/addressbook/addr.php.in:295
+#: ../../../www/admin/user/user.php.in:788
+#, php-format
+msgid "Account could not be deleted, distribution list '%s' depends on it."
+msgstr ""
+"La cuenta no pudo ser borrada, la lista de distribución %s depende de ella."
+
+#: ../../../www/admin/addressbook/addr.php.in:302
+#, php-format
+msgid "Addressbook entry removed from distribution list '%s'."
+msgstr ""
+"Entrada de la libreta de direcciones eliminada de la lista de distribución '%"
+"s'."
+
+#: ../../../www/admin/addressbook/addr.php.in:304
+#, php-format
+msgid ""
+"Failure to remove addressbook entry from distribution list '%s', entry will "
+"not be deleted."
+msgstr ""
+"Fallo al borrar la entrada de la libreta de direcciones desde la lista de "
+"distribución '%s', la entrada no será borrada."
+
+#: ../../../www/admin/addressbook/addr.php.in:312
+#, php-format
+msgid "LDAP Error: could not delete %s: %s"
+msgstr "Error de LDAP: no se puede borrar %s: %s"
+
+#: ../../../www/admin/addressbook/addr.php.in:315
+#: ../../../www/admin/distributionlist/list.php.in:312
+#: ../../../www/admin/sharedfolder/sf.php.in:321
+msgid "Entry Deleted"
+msgstr "Entrada borrada"
+
+#: ../../../www/admin/addressbook/addr.php.in:316
+#, php-format
+msgid "Address book entry with DN %s was deleted"
+msgstr "La entrada de la libreta de direcciones con DN %s fue borrada"
+
+#: ../../../www/admin/addressbook/index.php.in:122
+#: ../../../www/admin/user/index.php.in:184
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: ../../../www/admin/addressbook/index.php.in:123
+#: ../../../www/admin/user/index.php.in:186
+msgid "contains"
+msgstr "contiene"
+
+#: ../../../www/admin/addressbook/index.php.in:124
+#: ../../../www/admin/user/index.php.in:187
+msgid "is"
+msgstr "es"
+
+#: ../../../www/admin/addressbook/index.php.in:125
+#: ../../../www/admin/user/index.php.in:188
+msgid "begins with"
+msgstr "comienza por"
+
+#: ../../../www/admin/addressbook/index.php.in:126
+#: ../../../www/admin/user/index.php.in:189
+msgid "ends with"
+msgstr "acaba por"
+
+#: ../../../www/admin/administrator/admin.php.in:52
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:53
+#: ../../../www/admin/maintainer/maintainer.php.in:52
+msgid "Account with this UID already exists"
+msgstr "Ya existe una cuenta con este UID"
+
+#: ../../../www/admin/administrator/admin.php.in:75
+msgid "Manager's password can't be changed from the webgui"
+msgstr "La contraseña del administrador no puede ser cambiada desde el webgui"
+
+#: ../../../www/admin/administrator/admin.php.in:135
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:110
+#: ../../../www/admin/maintainer/maintainer.php.in:132
+msgid "non volatile"
+msgstr "no volátil"
+
+#: ../../../www/admin/administrator/admin.php.in:136
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:111
+#: ../../../www/admin/maintainer/maintainer.php.in:133
+#: ../../../www/admin/user/user.php.in:380
+msgid "Leave blank to keep password unchanged"
+msgstr "Dejar en blanco para no cambiar la contraseña"
+
+#: ../../../www/admin/administrator/admin.php.in:153
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:128
+#: ../../../www/admin/maintainer/maintainer.php.in:150
+msgid "Unique User ID"
+msgstr "ID único de usuario"
+
+#: ../../../www/admin/administrator/admin.php.in:165
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:149
+#: ../../../www/admin/maintainer/maintainer.php.in:162
+#: ../../../www/admin/user/user.php.in:471
+#, php-format
+msgid "LDAP Error: No such dn: %s: %s"
+msgstr "Error de LDAP: No existe el DN: %s: %s"
+
+#: ../../../www/admin/administrator/admin.php.in:243
+#: ../../../www/admin/administrator/admin.php.in:293
+msgid "Modify Administrator"
+msgstr "Modificar administrador"
+
+#: ../../../www/admin/administrator/admin.php.in:244
+#: ../../../www/admin/administrator/admin.php.in:266
+msgid "Administrator "
+msgstr "Administrador "
+
+#: ../../../www/admin/administrator/admin.php.in:244
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:244
+#: ../../../www/admin/maintainer/maintainer.php.in:241
+msgid " successfully modified"
+msgstr " modificado con éxito"
+
+#: ../../../www/admin/administrator/admin.php.in:262
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:265
+#: ../../../www/admin/maintainer/maintainer.php.in:261
+#, php-format
+msgid "LDAP Error: could not add object %s to maintainer group: %s"
+msgstr ""
+"Error de LDAP: no se pudo añadir el objeto %s al grupo de mantenedores: %s"
+
+#: ../../../www/admin/administrator/admin.php.in:266
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:272
+#: ../../../www/admin/maintainer/maintainer.php.in:265
+#: ../../../www/admin/user/user.php.in:723
+msgid " successfully created"
+msgstr " creado con éxito"
+
+#: ../../../www/admin/administrator/admin.php.in:267
+#: ../../../www/admin/administrator/admin.php.in:273
+#: ../../../www/admin/administrator/admin.php.in:284 ../include/menu.php:74
+msgid "Create New Administrator"
+msgstr "Crear nuevo administrador"
+
+#: ../../../www/admin/administrator/admin.php.in:299
+msgid "Delete Administrator"
+msgstr "Borrar administrador"
+
+#: ../../../www/admin/administrator/admin.php.in:311
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:314
+#: ../../../www/admin/maintainer/maintainer.php.in:310
+#: ../../../www/admin/user/user.php.in:769
+msgid "Error: need DN for delete operation"
+msgstr "Error: se necesita un DN para borrar la operación"
+
+#: ../../../www/admin/administrator/admin.php.in:313
+msgid "Error: you need administrative permissions to delete administrators"
+msgstr ""
+"Error: necesita tener permisos administrativos para borrar administradores"
+
+#: ../../../www/admin/administrator/admin.php.in:317
+#, php-format
+msgid "LDAP Error: Could not remove %s from admin group: %s"
+msgstr "Error de LDAP: No se pudo borrar %s del grupo admin: %s"
+
+#: ../../../www/admin/administrator/admin.php.in:322
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:326
+#: ../../../www/admin/maintainer/maintainer.php.in:322
+#, php-format
+msgid "LDAP Error: could not mark %s for deletion: %s"
+msgstr "Error de LDAP: no se pudo marcar %s para borrado: %s"
+
+#: ../../../www/admin/administrator/admin.php.in:328
+msgid "Administrator Deleted"
+msgstr "Administrador borrado"
+
+#: ../../../www/admin/administrator/index.php.in:62
+msgid "Manage Administrators ("
+msgstr "Gestionar administradores ("
+
+#: ../../../www/admin/administrator/index.php.in:62
+msgid " Administrators)"
+msgstr " administradores)"
+
+#: ../../../www/admin/distributionlist/index.php.in:63
+#, php-format
+msgid "Manage Distribution Lists (%d Lists)"
+msgstr "Administrar listas de distribución (%d Listas)"
+
+#: ../../../www/admin/distributionlist/index.php.in:74
+msgid "not yet implemented"
+msgstr "por implementar"
+
+#: ../../../www/admin/distributionlist/list.php.in:46
+msgid "Please add at least one member"
+msgstr "Por favor, añada al menos un miembro"
+
+#: ../../../www/admin/distributionlist/list.php.in:50
+#, php-format
+msgid "No user with email address, UID or alias %s"
+msgstr "No existe el usuario con dirección de correo, UID o alias %s"
+
+#: ../../../www/admin/distributionlist/list.php.in:62
+msgid "User or distribution list with this email address already exists"
+msgstr ""
+"El usuario o lista de distribución con esta dirección de correo ya existe"
+
+#: ../../../www/admin/distributionlist/list.php.in:111
+msgid "List Name"
+msgstr "Nombre de lista"
+
+#: ../../../www/admin/distributionlist/list.php.in:118
+msgid "Members"
+msgstr "Miembros"
+
+#: ../../../www/admin/distributionlist/list.php.in:120
+msgid "One email address per line"
+msgstr "Una dirección de correo por línea"
+
+#: ../../../www/admin/distributionlist/list.php.in:123
+msgid "Hidden"
+msgstr "Escondido"
+
+#: ../../../www/admin/distributionlist/list.php.in:126
+msgid ""
+"Check here to make this distribution list available only to authenticated "
+"users"
+msgstr ""
+"Seleccione aquí para hacer que esta lista de distribución sólo esté "
+"disponible para usuarios autentificados"
+
+#: ../../../www/admin/distributionlist/list.php.in:145
+msgid "Add Distribution List"
+msgstr "Añadir lista de distribución"
+
+#: ../../../www/admin/distributionlist/list.php.in:179
+#, php-format
+msgid "No user with address %s"
+msgstr "No existe el usuario con dirección %s"
+
+#: ../../../www/admin/distributionlist/list.php.in:210
+#: ../../../www/admin/distributionlist/list.php.in:222
+msgid "Distribution List updated"
+msgstr "Lista de distribución actualizada"
+
+#: ../../../www/admin/distributionlist/list.php.in:216
+#: ../../../www/admin/user/user.php.in:637
+#, php-format
+msgid "LDAP Error: Could not read %s: %s"
+msgstr "Error de LDAP: No se pudo leer %s: %s"
+
+#: ../../../www/admin/distributionlist/list.php.in:220
+#: ../../../www/admin/distributionlist/list.php.in:249
+#: ../../../www/admin/user/user.php.in:649
+#: ../../../www/admin/user/user.php.in:662
+#: ../../../www/admin/user/user.php.in:699
+#: ../../../www/admin/user/user.php.in:714
+#, php-format
+msgid "LDAP Error: Could not modify object %s: %s"
+msgstr "Error de LDAP: No se pudo modificar el objeto %s: %s"
+
+#: ../../../www/admin/distributionlist/list.php.in:231
+#, php-format
+msgid "LDAP Error: Could not add object %s: %s"
+msgstr "Error de LDAP: No se pudo añadir el objeto %s: %s"
+
+#: ../../../www/admin/distributionlist/list.php.in:252
+#: ../../../www/admin/user/user.php.in:702
+#, php-format
+msgid "Mid-air collision detected, email address %1$s renamed to %2$s"
+msgstr ""
+"Colisión Mid-air detectada, dirección de correo electrónico %1$s renombrada "
+"a %2$s"
+
+#: ../../../www/admin/distributionlist/list.php.in:260
+#, php-format
+msgid "Distribution List '%s' added"
+msgstr "Añadida lista de distribución '%s'"
+
+#: ../../../www/admin/distributionlist/list.php.in:272
+#: ../../../www/admin/distributionlist/list.php.in:286
+msgid "Modify Distribution List"
+msgstr "Modificar lista de distribución"
+
+#: ../../../www/admin/distributionlist/list.php.in:289
+#: ../../../www/admin/distributionlist/list.php.in:304
+#: ../../../www/admin/sharedfolder/sf.php.in:298
+#: ../../../www/admin/sharedfolder/sf.php.in:314
+#, php-format
+msgid "Error: No results returned for DN '%s'"
+msgstr "Error: No se devolvieron resultados para el DN '%s'"
+
+#: ../../../www/admin/distributionlist/list.php.in:301
+msgid "Delete Distribution List"
+msgstr "Borrar lista de distribución"
+
+#: ../../../www/admin/distributionlist/list.php.in:311
+msgid "Distribution List "
+msgstr "Lista de distribución "
+
+#: ../../../www/admin/distributionlist/list.php.in:311
+msgid " deleted"
+msgstr "Borrada"
+
+#: ../../../www/admin/distributionlist/list.php.in:315
+#, php-format
+msgid "LDAP Error: Could not delete %s: %s"
+msgstr "Error de LDAP: no se pudo borrar %s: %s"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:49
+#, fuzzy
+msgid "Please enter a uid value"
+msgstr "Por favor, introduzca una dirección de correo electrónico"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:137
+msgid "Check domains this domain maintainer should be able to maintain"
+msgstr ""
+"Comprobar los dominios que este mantenedor de dominio debería de poder "
+"mantener"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:243
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:296
+msgid "Modify Domain Maintainer"
+msgstr "Modificar mantenedor de dominio"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:244
+#: ../../../www/admin/maintainer/maintainer.php.in:241
+#: ../../../www/admin/maintainer/maintainer.php.in:265
+msgid "Maintainer "
+msgstr "Mantenedor"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:272
+msgid "Domain maintainer "
+msgstr "Mantenedor del dominio"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:273
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:277
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:287
+#: ../include/menu.php:80 ../include/menu.php:97
+msgid "Create New Domain Maintainer"
+msgstr "Crear nuevo mantenedor de dominio"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:302
+msgid "Delete Domain Maintainer"
+msgstr "Borrar mantenedor de dominio"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:316
+msgid "Error: you need administrative permissions to delete domain maintainers"
+msgstr ""
+"Error: necesita permisos administrativos para borrar el mantenedor de dominio"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:320
+#: ../../../www/admin/maintainer/maintainer.php.in:316
+#, php-format
+msgid "LDAP Error: Could not remove %s from maintainer group: %s"
+msgstr "Error de LDAP: No se pudo borrar %s del grupo de mantenedores: %s"
+
+#: ../../../www/admin/domainmaintainer/domainmaintainer.php.in:332
+msgid "Domain Maintainer Deleted"
+msgstr "Mantenedor de dominio borrado"
+
+#: ../../../www/admin/domainmaintainer/index.php.in:62
+#: ../../../www/admin/maintainer/index.php.in:62
+msgid "Manage Maintainers ("
+msgstr "Administrar mantenedores ("
+
+#: ../../../www/admin/domainmaintainer/index.php.in:62
+#: ../../../www/admin/maintainer/index.php.in:62
+msgid " Maintainers)"
+msgstr " Mantenedores)"
+
+#: ../../../www/admin/maintainer/maintainer.php.in:240
+#: ../../../www/admin/maintainer/maintainer.php.in:292
+msgid "Modify Maintainer"
+msgstr "Modificar mantenedores"
+
+#: ../../../www/admin/maintainer/maintainer.php.in:266
+#: ../../../www/admin/maintainer/maintainer.php.in:272
+#: ../../../www/admin/maintainer/maintainer.php.in:283 ../include/menu.php:86
+msgid "Create New Maintainer"
+msgstr "Crear nuevo mantenedor"
+
+#: ../../../www/admin/maintainer/maintainer.php.in:298
+msgid "Delete Maintainer"
+msgstr "Borrar mantenedor"
+
+#: ../../../www/admin/maintainer/maintainer.php.in:312
+#: ../../../www/admin/user/user.php.in:775
+msgid "Error: you need administrative permissions to delete users"
+msgstr "Error: necesita permisos administrativos para borrar usuarios"
+
+#: ../../../www/admin/maintainer/maintainer.php.in:328
+msgid "Maintainer Deleted"
+msgstr "Mantenedor borrado"
+
+#: ../../../www/admin/sharedfolder/index.php.in:53
+#, php-format
+msgid "Manage Shared Folders (%d Folders)"
+msgstr "Administrar carpetas compartidas (%d Carpetas)"
+
+#: ../../../www/admin/sharedfolder/index.php.in:63
+#: ../include/form.class.php:255
+msgid "Unspecified"
+msgstr "Sin especificar"
+
+#: ../../../www/admin/sharedfolder/index.php.in:64
+#: ../include/form.class.php:255
+msgid "Mails"
+msgstr "Correos"
+
+#: ../../../www/admin/sharedfolder/index.php.in:65
+#: ../include/form.class.php:255
+msgid "Tasks"
+msgstr "Tareas"
+
+#: ../../../www/admin/sharedfolder/index.php.in:66
+#: ../include/form.class.php:256
+msgid "Journals"
+msgstr "Revistas"
+
+#: ../../../www/admin/sharedfolder/index.php.in:67
+#: ../include/form.class.php:256
+msgid "Events"
+msgstr "Eventos"
+
+#: ../../../www/admin/sharedfolder/index.php.in:68
+#: ../include/form.class.php:257
+msgid "Contacts"
+msgstr "Contactos"
+
+#: ../../../www/admin/sharedfolder/index.php.in:69
+#: ../include/form.class.php:257
+msgid "Notes"
+msgstr "Notas"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:60
+#: ../../../www/admin/sharedfolder/sf.php.in:67
+msgid "Permission for UID/email/GID"
+msgstr "Permiso para UID/email/GID"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:101
+#, php-format
+msgid "No UID or GID %s"
+msgstr "Sin UID ni GID %s"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:117
+msgid "Folder Name"
+msgstr "Nombre de carpeta"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:124
+msgid "Folder Location"
+msgstr "Localización de la carpeta"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:126
+#: ../../../www/admin/user/user.php.in:379
+#: ../../../www/admin/user/user.php.in:381
+msgid "Non volatile"
+msgstr "No volátil"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:128
+msgid "Folder Type"
+msgstr "Tipo de carpeta"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:132
+msgid "Quota Limit"
+msgstr "Límite de cuota"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:133
+msgid "MBytes (empty for unlimited)"
+msgstr "MBytes (vacío para ilimitado)"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:135
+msgid "Permission for UID/GID"
+msgstr "Permiso para UID/GID"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:158 ../include/menu.php:58
+msgid "Add Shared Folder"
+msgstr "Añadir carpeta compartida"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:241
+#: ../../../www/admin/sharedfolder/sf.php.in:253
+msgid "Shared folder updated"
+msgstr "Carpeta compartida actualizada"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:263
+#, php-format
+msgid "Shared folder '%s' added"
+msgstr "Carpeta compartida '%s' añadida"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:275
+#: ../../../www/admin/sharedfolder/sf.php.in:295
+msgid "Modify Shared Folder"
+msgstr "Modificar carpeta compartida"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:311
+msgid "Delete Shared Folder"
+msgstr "Borrar carpeta compartida"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:320
+msgid "Shared folder "
+msgstr "Carpeta compartida"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:320
+msgid " marked for deletion"
+msgstr "Marcado para borrado"
+
+#: ../../../www/admin/sharedfolder/sf.php.in:324
+#, php-format
+msgid "LDAP Error: Could not mark %s for deletion: %s"
+msgstr "Error de LDAP: No se pudo marcar %s para borrado: %s"
+
+#: ../../../www/admin/user/deliver.php.in:37
+msgid ""
+"Net/Sieve.php is missing. Without that, filter settings are not available"
+msgstr ""
+"No se encuentra Net/Sieve.php. Si ésto, los ajustes de filtrado no estarán "
+"disponibles"
+
+#: ../../../www/admin/user/deliver.php.in:38
+#: ../../../www/admin/user/forward.php.in:39
+#: ../../../www/admin/user/vacation.php.in:18
+#, fuzzy
+msgid ""
+"Suggest your system administrator to run \"pear install http://pear.php.net/"
+"get/Net_Sieve\" on the server"
+msgstr ""
+"Sugiera a su administrador del sistema que ejecute \"@bindir@/pear install "
+"http://pear.php.net/get/Net_Sieve/\" en el servidor"
+
+#: ../../../www/admin/user/deliver.php.in:66
+#: ../../../www/admin/user/forward.php.in:70
+msgid "Script was:"
+msgstr "Script fue:"
+
+#: ../../../www/admin/user/deliver.php.in:74
+#, php-format
+msgid "Delivery to '%s' successfully activated"
+msgstr "Entrega a '%s' activada con éxito"
+
+#: ../../../www/admin/user/deliver.php.in:75
+#, php-format
+msgid "Delivery to '%s' successfully deactivated"
+msgstr "Entrega a '%s' desactivada con éxito"
+
+#: ../../../www/admin/user/forward.php.in:38
+#: ../../../www/admin/user/vacation.php.in:17
+msgid ""
+"Net/Sieve.php is missing. Without that, vacation settings are not available"
+msgstr ""
+"No se encuentra Net/Sieve.php. Sin ésto, los ajustes de vacaciones no "
+"estarán disponibles"
+
+#: ../../../www/admin/user/forward.php.in:64
+#: ../../../www/admin/user/user.php.in:94
+msgid "Please enter an email address"
+msgstr "Por favor, introduzca una dirección de correo electrónico"
+
+#: ../../../www/admin/user/forward.php.in:78
+#, php-format
+msgid "Forwarding to '%s' successfully activated"
+msgstr "Reenvío a '%s' activado con éxito"
+
+#: ../../../www/admin/user/forward.php.in:79
+#, php-format
+msgid "Forwarding to '%s' successfully deactivated"
+msgstr "Reenvío a '%s' desactivado con éxito"
+
+#: ../../../www/admin/user/index.php.in:122
+#, php-format
+msgid "Manage Email User (%d Users)"
+msgstr "Administrar usuario de correo (%d usuarios)"
+
+#: ../../../www/admin/user/user.php.in:111
+#, php-format
+msgid "Email address %1$s not in domains %2$s"
+msgstr "La dirección de correo %1$s no está en los dominios %2$s"
+
+#: ../../../www/admin/user/user.php.in:130
+msgid "UID "
+msgstr "UID"
+
+#: ../../../www/admin/user/user.php.in:130 ../include/form.class.php:34
+msgid ""
+" collides with an address already used for another user, a vCard or a "
+"distribution list.<br />"
+msgstr ""
+
+#: ../../../www/admin/user/user.php.in:145
+#, php-format
+msgid "Email-Delegate %s does not exist"
+msgstr "Correo-Delegado %s no existe"
+
+#: ../../../www/admin/user/user.php.in:158
+#, php-format
+msgid "Illegal user or group %s"
+msgstr "Usuario o grupo %s inválido"
+
+#: ../../../www/admin/user/user.php.in:167
+#, fuzzy
+msgid "Free/Busy interval can not be negative"
+msgstr "La cuota no puede ser negativa"
+
+#: ../../../www/admin/user/user.php.in:168
+#, fuzzy
+msgid "Free/Busy interval must be a number"
+msgstr "La cuota debe ser menor que 4096"
+
+#: ../../../www/admin/user/user.php.in:169
+#, fuzzy
+msgid "Free/Busy interval must be an integer"
+msgstr "La cuota debe ser menor que 4096"
+
+#: ../../../www/admin/user/user.php.in:403
+msgid "Unique Identity (UID)"
+msgstr "Identidad única (UID)"
+
+#: ../../../www/admin/user/user.php.in:405
+msgid "Optional - Defaults to Primary Email Address"
+msgstr "Opcional - Por defecto es la dirección primaria de correo"
+
+#: ../../../www/admin/user/user.php.in:406
+msgid "Mailbox Home Server"
+msgstr "Servidor Mailbox Home"
+
+#: ../../../www/admin/user/user.php.in:410
+msgid "Account Type"
+msgstr "Tipo de cuenta"
+
+#: ../../../www/admin/user/user.php.in:412
+msgid "User Account"
+msgstr "Cuenta de usuario"
+
+#: ../../../www/admin/user/user.php.in:412
+msgid "Internal User Account"
+msgstr "Cuenta interna de usuario"
+
+#: ../../../www/admin/user/user.php.in:412
+msgid "Group Account"
+msgstr "Cuenta de grupo"
+
+#: ../../../www/admin/user/user.php.in:412
+msgid "Resource Account"
+msgstr "Cuenta de recurso"
+
+#: ../../../www/admin/user/user.php.in:414
+msgid ""
+"NOTE: An internal user is a user that will not be visible in the address book"
+msgstr ""
+"NOTA: Un usuario interno es una usuario que no será visible en la libreta de "
+"direcciones"
+
+#: ../../../www/admin/user/user.php.in:415
+msgid "Invitation Policy"
+msgstr "Política de invitación"
+
+#: ../../../www/admin/user/user.php.in:419
+msgid "For automatic invitation handling"
+msgstr "Para manejo de invitación automáticas"
+
+#: ../../../www/admin/user/user.php.in:420
+msgid ""
+"NOTE: For regular accounts to use this feature, give the 'calendar' user "
+"access to the Calendar folder"
+msgstr ""
+"NOTA: Para que las cuentas regulares usen esta característica, dar acceso al "
+"ususario 'calendar' a la carpeta 'Calendar'"
+
+#: ../../../www/admin/user/user.php.in:422
+msgid "Email Aliases"
+msgstr "Alias de correo"
+
+#: ../../../www/admin/user/user.php.in:427
+msgid "Email-Delegates"
+msgstr "Correo-Delegados"
+
+#: ../../../www/admin/user/user.php.in:430
+msgid "Others allowed to send emails with a \"from\" address of this account."
+msgstr ""
+"Otros autorizados para mandar correos con una dirección \"from\" de esta "
+"cuenta."
+
+#: ../../../www/admin/user/user.php.in:431
+msgid "One email address per line."
+msgstr "Una dirección de correo por línea."
+
+#: ../../../www/admin/user/user.php.in:447
+msgid "User Quota in MBytes"
+msgstr "Cuota de usuario en MBytes"
+
+#: ../../../www/admin/user/user.php.in:460
+msgid "Free/Busy interval in days"
+msgstr "Intervalo libre/ocupado en días"
+
+#: ../../../www/admin/user/user.php.in:461
+msgid "Leave blank for default (60 days)"
+msgstr "Dejar en blanco para usar el valor por defecto (60 días)"
+
+#: ../../../www/admin/user/user.php.in:665
+#: ../../../www/admin/user/user.php.in:717
+#, php-format
+msgid "Mid-air collision detected, alias %1$s renamed to %2$s"
+msgstr "Colisión Mid-air detectada, alias %1$s renombrado a %2$s"
+
+#: ../../../www/admin/user/user.php.in:670
+#: ../../../www/admin/user/user.php.in:750
+msgid "Modify User"
+msgstr "Modificar usuario"
+
+#: ../../../www/admin/user/user.php.in:671
+#, php-format
+msgid "User '%s' successfully modified"
+msgstr "Usuario '%s' modificado con éxito"
+
+#: ../../../www/admin/user/user.php.in:723
+msgid "User "
+msgstr "Usuario"
+
+#: ../../../www/admin/user/user.php.in:724
+#: ../../../www/admin/user/user.php.in:730
+#: ../../../www/admin/user/user.php.in:741 ../include/menu.php:30
+msgid "Create New User"
+msgstr "Crear nuevo usuario"
+
+#: ../../../www/admin/user/user.php.in:756
+#: ../../../www/admin/user/user.php.in:814
+msgid "Delete User"
+msgstr "Borrar usuario"
+
+#: ../../../www/admin/user/user.php.in:795
+#, php-format
+msgid "Account removed from distribution list '%s'."
+msgstr "Cuenta eliminada de la lista de distribución '%s'."
+
+#: ../../../www/admin/user/user.php.in:797
+#, php-format
+msgid ""
+"Failure to remove account from distribution list '%s', account will not be "
+"deleted."
+msgstr ""
+"Fallo al borrar la cuenta de la lista de distribución '%s', la cuenta no "
+"será borrada."
+
+#: ../../../www/admin/user/user.php.in:805
+#, php-format
+msgid "LDAP Error: could not mark '%s' for deletion: %s"
+msgstr "Error de LDAP: no se pudo marcar '%s' para borrado: %s"
+
+#: ../../../www/admin/user/user.php.in:808
+msgid "User Deleted"
+msgstr "Usuario borrado"
+
+#: ../../../www/admin/user/vacation.php.in:43
+msgid "Days must be at least one"
+msgstr "Debe ser al menos un día"
+
+#: ../../../www/admin/user/vacation.php.in:65
+msgid "Vacation message successfully activated"
+msgstr "Mensaje de vacaciones activado con éxito"
+
+#: ../../../www/admin/user/vacation.php.in:66
+msgid "Vacation message successfully deactivated"
+msgstr "Mensaje de vacaciones desactivado con éxito"
+
+#: ../../../www/admin/user/vacation.php.in:87
+#, php-format
+msgid "%x"
+msgstr ""
+
+#: ../../../www/admin/user/vacation.php.in:89
+#, php-format
+msgid "I am out of office until %s.\r\n"
+msgstr "Estaré fuera de la oficina hasta %s.\r\n"
+
+#: ../../../www/admin/user/vacation.php.in:90
+#, php-format
+msgid ""
+"In urgent cases, please contact Mrs. <vacation replacement>\r\n"
+"\r\n"
+msgstr ""
+"En caso de urgencia, contactar con <reemplazo en vacaciones>\r\n"
+"\r\n"
+
+#: ../../../www/admin/user/vacation.php.in:91
+#, php-format
+msgid "email: <email address of vacation replacement>\r\n"
+msgstr ""
+"Dirección de correo electrónico <email address of vacation replacement>\r\n"
+
+#: ../../../www/admin/user/vacation.php.in:92
+#, php-format
+msgid "phone: +49 711 1111 11\r\n"
+msgstr "Teléfono: +49 711 1111 11\r\n"
+
+#: ../../../www/admin/user/vacation.php.in:93
+#, php-format
+msgid ""
+"fax.:  +49 711 1111 12\r\n"
+"\r\n"
+msgstr ""
+
+#: ../../../www/admin/user/vacation.php.in:94
+#, php-format
+msgid "Yours sincerely,\r\n"
+msgstr "Reciba un cordial saludo.\r\n"
+
+#: ../../../www/admin/user/vacation.php.in:95
+#, php-format
+msgid "-- \r\n"
+msgstr ""
+
+#: ../../../www/admin/user/vacation.php.in:96
+#, php-format
+msgid "<enter your name and email address here>"
+msgstr "<introduzca su nombre y dirección de correo electrónico aquí>"
+
+#: ../../../www/admin/settings/index.php.in:98
+#, php-format
+msgid "No account found for email address %s"
+msgstr "No se encontró una cuenta para la dirección de correo %s"
+
+#: ../../../www/admin/settings/index.php.in:107
+#, php-format
+msgid "LDAP Error: Failed to add distribution list %s: %s"
+msgstr "Error de LDAP: No se pudo añadir la lista de distribución %s: %s"
+
+#: ../../../www/admin/settings/index.php.in:109
+#, php-format
+msgid "Successfully created distribution list %s"
+msgstr "Lista de distribución creada con éxito %s"
+
+#: ../../../www/admin/settings/index.php.in:128
+#: ../../../www/admin/settings/index.php.in:137
+#: ../../../www/admin/settings/index.php.in:146
+#: ../../../www/admin/settings/index.php.in:155
+#: ../../../www/admin/settings/index.php.in:165
+#: ../../../www/admin/settings/index.php.in:174
+#: ../../../www/admin/settings/index.php.in:185
+#: ../../../www/admin/settings/index.php.in:199
+#: ../../../www/admin/settings/index.php.in:217
+#: ../../../www/admin/settings/index.php.in:235
+#: ../../../www/admin/settings/index.php.in:252
+#: ../../../www/admin/settings/index.php.in:265
+#, php-format
+msgid "LDAP Error: failed to modify kolab configuration object: %s"
+msgstr ""
+"Error de LDAP: No se pudo modificar la configuración del objeto Kolab: %s"
+
+#: ../../../www/admin/settings/index.php.in:223
+#, php-format
+msgid "LDAP Error: Failed to delete domain object %s: %s"
+msgstr "Error de LDAP: No se pudo borrar el objeto de dominio %s: %s"
+
+#: ../../../www/admin/settings/index.php.in:273
+msgid "POP3 Service"
+msgstr "Servicio POP3"
+
+#: ../../../www/admin/settings/index.php.in:274
+msgid "POP3/SSL service (TCP port 995)"
+msgstr "Servicio POP3/SSL (puerto TCP 995)"
+
+#: ../../../www/admin/settings/index.php.in:275
+msgid "IMAP Service"
+msgstr "Servicio IMAP"
+
+#: ../../../www/admin/settings/index.php.in:276
+msgid "IMAP/SSL Service (TCP port 993)"
+msgstr "Servicio IMAP/SSL (puerto TCP 993)"
+
+#: ../../../www/admin/settings/index.php.in:277
+msgid "Sieve service (TCP port 2000)"
+msgstr "Servicio Sieve (puerto TCP 2000)"
+
+#: ../../../www/admin/settings/index.php.in:278
+msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
+msgstr ""
+
+#: ../../../www/admin/settings/index.php.in:279
+msgid "Amavis Email Scanning (Virus/Spam)"
+msgstr "Escaneo de correo Amavis (Virus/Spam)"
+
+#: ../include/auth.class.php.in:40
+msgid "Server error, no ldap object!"
+msgstr "Error en el servidor: ¡no hay objeto ldap!"
+
+#: ../include/auth.class.php.in:45
+msgid "Could not bind to LDAP server: "
+msgstr "No se pudo enlazar con el servidor LDAP: "
+
+#: ../include/auth.class.php.in:56
+msgid "Could not bind to LDAP server"
+msgstr "No se pudo enlazar con el servidor LDAP"
+
+#: ../include/auth.class.php.in:83 ../include/auth.class.php.in:87
+msgid "Wrong username or password"
+msgstr "Usuario o contraseña incorrectos"
+
+#: ../include/form.class.php:34
+msgid "Email address "
+msgstr "Dirección de correo electrónico"
+
+#: ../include/form.class.php:45
+msgid "Quota must be smaller than 4096"
+msgstr "La cuota debe ser menor que 4096"
+
+#: ../include/form.class.php:46
+msgid "Quota can not be negative"
+msgstr "La cuota no puede ser negativa"
+
+#: ../include/form.class.php:47
+#, fuzzy
+msgid "Quota must be a number"
+msgstr "La cuota debe ser menor que 4096"
+
+#: ../include/form.class.php:48
+#, fuzzy
+msgid "Quota must be an integer"
+msgstr "La cuota debe ser menor que 4096"
+
+#: ../include/form.class.php:55
+msgid ""
+"Phone entries may only contain a-z, numbers and the characters ()-+/.=?:"
+msgstr ""
+
+#: ../include/form.class.php:118
+msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
+msgstr "<tr><th>Atributo</th><th>Valor</th><th>Comentario</th></tr>"
+
+#: ../include/form.class.php:205
+msgid "Yes"
+msgstr "Sí"
+
+#: ../include/form.class.php:205
+msgid "No"
+msgstr ""
+
+#: ../include/form.class.php:323
+msgid "Always accept"
+msgstr "Siempre aceptar"
+
+#: ../include/form.class.php:324
+msgid "Always reject"
+msgstr "Siempre rechazar"
+
+#: ../include/form.class.php:325
+msgid "Reject if conflicts"
+msgstr "Rechazar si hay conflictos"
+
+#: ../include/form.class.php:326
+msgid "Manual if conflicts"
+msgstr "Manual si hay conflictos"
+
+#: ../include/form.class.php:327
+msgid "Manual"
+msgstr ""
+
+#: ../include/form.class.php:333 ../include/form.class.php:339
+msgid "Anyone"
+msgstr "Alguien"
+
+#: ../include/form.class.php:375
+msgid "* Required field."
+msgstr "* Campo requerido."
+
+#: ../include/form.class.php:396 ../include/form.class.php:399
+msgid "Required field "
+msgstr "Campo requerido"
+
+#: ../include/form.class.php:396 ../include/form.class.php:399
+msgid " is empty"
+msgstr "Está vacío "
+
+#: ../include/menu.php:26
+msgid "Users"
+msgstr "Usuarios"
+
+#: ../include/menu.php:28
+msgid "Manage Email Users"
+msgstr "Administrar correos de usuarios"
+
+#: ../include/menu.php:33 ../include/menu.php:35
+msgid "My User Settings"
+msgstr "Mis ajustes de usuario"
+
+#: ../include/menu.php:37
+msgid "Mail Delivery"
+msgstr "Recibir correo"
+
+#: ../include/menu.php:39
+msgid "Forward Email"
+msgstr "Enviar correo electrónico"
+
+#: ../include/menu.php:41
+msgid "Vacation"
+msgstr "Vacaciones"
+
+#: ../include/menu.php:47
+msgid "Manage Address Book"
+msgstr "Administrar libreta de direcciones"
+
+#: ../include/menu.php:49
+msgid "Create New vCard"
+msgstr "Crear nueva vCard"
+
+#: ../include/menu.php:54
+msgid "Shared Folder"
+msgstr "Carpetas compartidas"
+
+#: ../include/menu.php:56
+msgid "Manage Shared Folders"
+msgstr "Administrar carpetas compartidas"
+
+#: ../include/menu.php:64
+msgid "Manage Distribution Lists"
+msgstr "Administrar listas de distribución"
+
+#: ../include/menu.php:66
+msgid "Create New List"
+msgstr "Crear nueva lista"
+
+#: ../include/menu.php:72
+msgid "Manage Administrators"
+msgstr "Administrar administradores"
+
+#: ../include/menu.php:78 ../include/menu.php:95
+msgid "Manage Domain Maintainers"
+msgstr "Administrar mantenedores de dominio"
+
+#: ../include/menu.php:84
+msgid "Manage Maintainers"
+msgstr "Administrar mantenedores"
+
+#: ../include/menu.php:92
+msgid "Manage Maintainer"
+msgstr "Administrar mantenedor"
+
+#: ../include/menu.php:103
+msgid "Manage Domain Maintainer"
+msgstr "Administrar mantenedor de dominio"
+
+#: ../include/menu.php:106
+msgid "Settings"
+msgstr "Servicios"
+
+#: ../include/menu.php:108
+msgid "System Settings"
+msgstr "Administrar servicios"
+
+#: ../include/menu.php:111 ../include/menu.php:113
+msgid "About Kolab"
+msgstr "Sobre Kolab"
+
+#: ../include/menu.php:115
+msgid "Erfrakon"
+msgstr ""
+
+#: ../include/menu.php:117
+msgid "Intevation"
+msgstr ""
+
+#: ../include/menu.php:119
+msgid "Klar&auml;lvdalens Datakonsult"
+msgstr ""
+
+#: ../include/menu.php:121
+msgid "Code Fusion"
+msgstr ""
+
+#: ../include/menu.php:123
+msgid "KDE"
+msgstr ""
+
+#: ../include/menu.php:127
+msgid "Versions"
+msgstr "Versiones"
+
+#: ../include/passwd.php:33
+msgid "Password is empty"
+msgstr "La contraseña está vacía"
+
+#: ../include/passwd.php:36 ../include/passwd.php:41
+msgid "Passwords dont match"
+msgstr "Las contraseñas no coinciden"
+
+#: ../include/ldap.class.php.in:54
+msgid ""
+"Error setting LDAP protocol to v3. Please contact your system administrator"
+msgstr ""
+"Error estableciendo el protocolo LDAP a v3. Por favor, contacte con el "
+"administrador del sistema"
+
+#: ../include/ldap.class.php.in:184 ../include/ldap.class.php.in:214
+#: ../include/ldap.class.php.in:244
+#, php-format
+msgid "No such object %s"
+msgstr "No existe el objeto %s"
+
+#: ../include/ldap.class.php.in:187 ../include/ldap.class.php.in:217
+#: ../include/ldap.class.php.in:247
+#, php-format
+msgid "LDAP Error searching for DN %s: %s"
+msgstr "Error de LDAP buscando el DN %s: %s"
+
+#: ../include/ldap.class.php.in:200
+#, php-format
+msgid "Error searching for DN for UID=%s"
+msgstr "Error buscando el DN para UID=%s"
+
+#: ../include/ldap.class.php.in:230
+#, php-format
+msgid "Error searching for DN for Mail=%s"
+msgstr "Error buscando el DN para Correo=%s"
+
+#: ../include/ldap.class.php.in:260
+#, php-format
+msgid "Error searching for DN for alias=%s: %s"
+msgstr "Error buscando DN para el alias=%s: %s"
+
+#: ../include/ldap.class.php.in:273
+#, php-format
+msgid "Error searching for DN for mail or alias %s: %s"
+msgstr "Error buscando DN para el correo o alias %s: %s"
+
+#: ../include/ldap.class.php.in:336
+msgid "LDAP Error: Can't read maintainers group: "
+msgstr "Error LDAP: No se puede leer el grupo de mantenedores: "
+
+#~ msgid ""
+#~ "Using legacy services poses a security thread due to leakage of cleartext "
+#~ "passwords, lack of authenticity and privacy."
+#~ msgstr ""
+#~ "El uso de servicios heredados plantea un hilo de seguridad debido a la "
+#~ "debilidad de las contraseñas de texto claro, falta de autentificación y "
+#~ "privacidad."
+
+#~ msgid ""
+#~ "The legacy Freebusy Support (FTP and HTTP) is only required for "
+#~ "Outlook2000 clients. Under all other circumstances it is advised to use "
+#~ "the server-side freebusy creation feature over secure HTTP instead (this "
+#~ "is enabled by default and may not be deactivated)."
+#~ msgstr ""
+#~ "El soporte heredado Freebusy (FTP y HTTP) sólo se requiere para los "
+#~ "clientesOutlook2000. Bajo todas las otras circunstancias se recomienda "
+#~ "usar la característica de creación freebusy en el lado del servidor sobre "
+#~ "HTTP seguro en su lugar (esto está habilitado por defecto y no debería de "
+#~ "ser desactivado)."
+
+#~ msgid ""
+#~ "Further details with regards to security considerations might be "
+#~ "available from the <a href=\"http://www.kolab.org\">Kolab Project</a>."
+#~ msgstr ""
+#~ "Más detalles con respecto a las consideraciones de seguridad deben de "
+#~ "estar disponibles desde el <a href=\"http://www.kolab.org\">proyecto "
+#~ "Kolab</a>."
+
+#~ msgid "Could not encrypt password: "
+#~ msgstr "No se puede encriptar la contraseña: "
+
+#~ msgid "(FTP Server)"
+#~ msgstr "(Servidor FTP)"
+
+#~ msgid " collision <br />"
+#~ msgstr "Colisión <br />"
+
+#~ msgid "LDAP Error: could not rename %1$s to %2$s: %3$s"
+#~ msgstr "Error de LDAP: no se puede renombrar %1$s a %2$s: %3$s"
+
+#~ msgid "LDAP Error: could not remove old entry %s: %s"
+#~ msgstr "Error de LDAP: no se puede borrar la entra antigua %s: %s"
+
+#~ msgid "LDAP Error: Could not add new group entry %s: %s"
+#~ msgstr "Error de LDAP: no se puede añadir la entrada de grupo nuevo %s: %s"
+
+#~ msgid "LDAP Error: Could not remove old group entry %s: %s"
+#~ msgstr "Error de LDAP: No se puede borrar la entrada de grupo viejo %s: %s"
+
+#~ msgid "LDAP Error: Could not rename %1$s to %2$s: %3$s"
+#~ msgstr "Error de LDAP: No se pudo renombrar %1$s a %2$s: %3$s"
+
+#~ msgid ""
+#~ "FTP FreeBusy Service (Legacy, not interoperable with Kolab2 FreeBusy)"
+#~ msgstr ""
+#~ "Servicio FTP FreeBusy (heredado, sin interoperabilidad con Kolab2 "
+#~ "FreeBusy)"
+
+#~ msgid "HTTP FreeBusy Service (Legacy)"
+#~ msgstr "Servicio HTTP FreeBusy (heredado)"
+
+#~ msgid ""
+#~ "Account DN could not be modified, distribution list <a href='@kolab_wui@/"
+#~ "distributionlist/list.php?action=modify&dn=%s'>'%s'</a> depends on it. To "
+#~ "modify this account, first remove it from the distribution list."
+#~ msgstr ""
+#~ "La cuenta DN no puede ser modificada, la lista de distribución <a "
+#~ "href='@kolab_wui@/distributionlist/list.php?action=modify&dn=%s'>'%s'</a> "
+#~ "depende de ella. Para modificar esta cuenta, primero borrarla de la lista "
+#~ "de distribución."
+
+#~ msgid "LDAP Error: Could not remove old entry %s,%s: %s"
+#~ msgstr "Error de LDAP: No se pudo borrar la vieja entrada %s, %s: %s"
