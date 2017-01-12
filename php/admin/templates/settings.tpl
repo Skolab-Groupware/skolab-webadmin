@@ -104,13 +104,22 @@
 <br />
 <h2>{tr msg="Accept Internet Mail"}</h2>
 <div class="contentform">
-<form id="postfixallowunauthform" method="post" action="">
-<div>
-<input type="checkbox" name="postfixallowunauth" {if $postfixallowunauth == 'true' }checked="checked"{/if} />
-{tr msg="Accept mail from other domains over unauthenticated SMTP. This must be enabled if you want to use the Kolab Server to receive mail from other internet domains directly. Leave disabled to accept mail only from SMTP gateways that are within the privileged network."}
-<div class="align_right"><input type="submit" name="submitpostfixallowunauth" value="{tr msg="Update"}" /></div>
-</div>
-</form>
+ <form id="postfixallowunauthform" method="post" action="">
+  <div>
+   <table border="0">
+    <tr>
+     <td valign="top"><input type="checkbox" name="postfixallowunauth" {if $postfixallowunauth == 'true' }checked="checked"{/if} />
+     </td>
+     <td>{tr msg="Accept mail from other domains over unauthenticated SMTP. This must be enabled if you want to use the Kolab Server to receive mail from other internet domains directly. Leave disabled to accept mail only from SMTP gateways that are within the privileged network."}
+     </td>
+    </tr>
+    <tr>
+     <td colspan="2" align="right"><input type="submit" name="submitpostfixallowunauth" value="{tr msg="Update"}" />
+     </td>
+    </tr>
+   </table>
+  </div>
+ </form>
 </div>
 <br />
 <h2>{tr msg="Domains"}</h2>

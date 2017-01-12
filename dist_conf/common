@@ -120,6 +120,7 @@ do_subst = sed \
 	-e 's,[@]resmgr_conffile_usr[@],$(resmgr_conffile_usr),g' \
 	-e 's,[@]resmgr_tmpdir[@],$(resmgr_tmpdir),g' \
 	-e 's,[@]resmgr_grp[@],$(resmgr_grp),g' \
+	-e 's,[@]resmgr_localedir[@],$(resmgr_localedir),g' \
 	-e 's,[@]resmgr_logdir[@],$(resmgr_logdir),g' \
 	-e 's,[@]resmgr_scriptsdir[@],$(resmgr_scriptsdir),g' \
 	-e 's,[@]resmgr_usr[@],$(resmgr_usr),g' \

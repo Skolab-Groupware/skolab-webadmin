@@ -96,21 +96,78 @@ class KolabLDAP {
     return $str;
   }
 
-  function dn_escape( $str ) {
-	/*
-	 DN component escaping as described in RFC-2253
-	 */
-	$str = str_replace( '\\', '\\\\', $str );
-	$str = str_replace( ',', '\\,', $str );
-	$str = str_replace( '+', '\\,', $str );
-	$str = str_replace( '<', '\\<', $str );
-	$str = str_replace( '>', '\\>', $str );
-	$str = str_replace( ';', '\\;', $str );
-	if( $str[0] == '#' ) $str = '\\'.$str;
-	// PENDING(steffen): Escape leading/trailing spaces
-	return $str;
+  // Taken from PEAR_Net_LDAP2
+  public function dn_escape($val)
+  {
+	  // Escaping of filter meta characters
+	  $val = str_replace('\\', '\\\\', $val);
+	  $val = str_replace(',',    '\,', $val);
+	  $val = str_replace('+',    '\+', $val);
+	  $val = str_replace('"',    '\"', $val);
+	  $val = str_replace('<',    '\<', $val);
+	  $val = str_replace('>',    '\>', $val);
+	  $val = str_replace(';',    '\;', $val);
+	  $val = str_replace('#',    '\#', $val);
+	  $val = str_replace('=',    '\=', $val);
+
+	  // ASCII < 32 escaping                                                                                                                                        
+	  $val = KolabLDAP::asc2hex32($val);
+
+	  // Convert all leading and trailing spaces to sequences of \20.
+	  if (preg_match('/^(\s*)(.+?)(\s*)$/', $val, $matches)) {
+		$val = $matches[2];
+		for ($i = 0; $i < strlen($matches[1]); $i++) {
+		  $val = '\20'.$val;
+		}
+		for ($i = 0; $i < strlen($matches[3]); $i++) {
+		  $val = $val.'\20';
+		}
+	  }
+
+	  if (null === $val) $val = '\0';  // apply escaped "null" if string is empty
+
+	  return $val;
   }
-  
+
+  // Taken from PEAR_Net_LDAP2
+  public function asc2hex32($string)
+  {
+	for ($i = 0; $i < strlen($string); $i++) {
+	  $char = substr($string, $i, 1);
+	  if (ord($char) < 32) {
+		$hex = dechex(ord($char));
+		if (strlen($hex) == 1) $hex = '0'.$hex;
+		$string = str_replace($char, '\\'.$hex, $string);
+	  }
+	}
+	return $string;
+  }
+
+
+  // Taken from PEAR_Net_LDAP2
+  function unescape_dn_value($val)
+  {
+	  // strip slashes from special chars
+	  $val = str_replace('\\\\', '\\', $val);
+	  $val = str_replace('\,',    ',', $val);
+	  $val = str_replace('\+',    '+', $val);
+	  $val = str_replace('\"',    '"', $val);
+	  $val = str_replace('\<',    '<', $val);
+	  $val = str_replace('\>',    '>', $val);
+	  $val = str_replace('\;',    ';', $val);
+	  $val = str_replace('\#',    '#', $val);
+	  $val = str_replace('\=',    '=', $val);
+
+	  return KolabLDAP::hex2asc($val);
+  }
+
+  // Taken from PEAR_Net_LDAP2
+  function hex2asc($string)
+  {
+	$string = preg_replace("/\\\([0-9A-Fa-f]{2})/e", "''.chr(hexdec('\\1')).''", $string);
+	return $string;
+  }
+
   function bind( $dn = false , $pw = '' ) {
     if( !$dn ) {
       // Default ldap auth
@@ -361,14 +418,14 @@ class KolabLDAP {
                      )
                      (uid='.$this->escape($mail).')
                    )';
-	$res = $this->search( $base, $filter, array( 'dn' ) );
+	$res = $this->search( $this->dn_escape($base), $filter, array( 'dn' ) );
 	$count = 0;
 
 	$entries = ldap_get_entries( $this->connection, $res );
 	if( $excludedn ) {
 	  for ( $i = 0; $i < count( $entries ); $i++ ) {
 		if( is_null( $entries[$i] ) ) continue;
-		if( $entries[$i]['dn'] == $excludedn ) continue;	   
+		if( KolabLDAP::unescape_dn_value($entries[$i]['dn']) == KolabLDAP::unescape_dn_value($excludedn) ) continue;	   
 		debug("found ".$entries[$i]['dn'] );
 		$count++;
 	  } 

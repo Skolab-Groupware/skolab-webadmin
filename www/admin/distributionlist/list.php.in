@@ -184,7 +184,7 @@ if( !$errors ) {
 
 		if ($action == "save") {
 		  if (!$errors) {
-			if (!empty($ldap_object['cn'])) $newdn = "cn=".$ldap_object['cn'].",".$dl_root;
+			if (!empty($ldap_object['cn'])) $newdn = "cn=".$ldap->dn_escape($ldap_object['cn']).",".$dl_root;
 			else $newdn = $dn;
 			if (strcmp($dn,$newdn) != 0) {
 			  if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
@@ -192,7 +192,7 @@ if( !$errors ) {
 				  ($oldattrs=ldap_get_attributes($ldap->connection,$entry))) {
 
 				// Try to rename the object
-				if (!ldap_rename($ldap->connection, $dn, "cn=" . $ldap_object['cn'], $dl_root, true)) {
+				if (!ldap_rename($ldap->connection, $dn, "cn=" . $ldap->dn_escape($ldap_object['cn']), $dl_root, true)) {
 				  array_push($errors, sprintf(_("LDAP Error: could not rename %s to %s: %s"), $dn,
 											  $newdn, ldap_error($ldap->connection)));
 				}
@@ -226,7 +226,7 @@ if( !$errors ) {
 		  // firstsave
 		  if (!$errors) {
 			if( !$ldap_object['member'] ) unset($ldap_object['member']); 
-			$dn = "cn=".$ldap_object['cn'].",".$dl_root;
+			$dn = "cn=".$ldap->dn_escape($ldap_object['cn']).",".$dl_root;
 			if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) {
 			  array_push($errors, sprintf( _("LDAP Error: Could not add object %s: %s"), $dn,
 										   ldap_error($ldap->connection)));
@@ -242,7 +242,7 @@ if( !$errors ) {
 				if( $ldap->countMail( $_SESSION['base_dn'], $ldap_object['cn'].'@'.$domain, $dn ) > 0 ) {
 				  // Ups!!!
 				  $cn = $ldap_object['cn'];
-				  $newcn = md5sum( $dn.$cn );
+				  $newcn = md5( $dn.$cn );
 				  $ldap_object['cn'] = $newcn; 
 				  $ldap_object['dn'] = 'cn='.$ldap->escape($newcn).','.$dl_root;
 				  if (!ldap_rename($ldap->connection, $dn, 'cn='.$ldap->escape($newcn), $dl_root,true)) {

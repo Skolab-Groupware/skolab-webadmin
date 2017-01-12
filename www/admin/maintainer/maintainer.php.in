@@ -194,7 +194,7 @@ switch( $action ) {
 	   
        if ($action == "save") {
 		 if (!$errors) {
-		   if (!empty($ldap_object['cn'])) $newdn = "cn=".$ldap_object['cn'].",cn=internal,".$domain_dn;
+		   if (!empty($ldap_object['cn'])) $newdn = "cn=".$ldap->dn_escape($ldap_object['cn']).",cn=internal,".$domain_dn;
 		   else $newdn = $dn;
 		   if (!$visible && !strstr($newdn,$dn_add)) {
 			 list($cn,$rest) = split(',', $newdn, 2); 
@@ -209,7 +209,7 @@ switch( $action ) {
 				 $ldap_object['userPassword'] = $oldattrs['userPassword'][0];
 
 			   // Try to rename the object
-			   if (!ldap_rename($ldap->connection, $dn, "cn=" . $ldap_object['cn'], "cn=internal,".$domain_dn, true)) {
+			   if (!ldap_rename($ldap->connection, $dn, "cn=" . $ldap->dn_escape($ldap_object['cn']), "cn=internal,".$domain_dn, true)) {
 				 array_push($errors, sprintf(_("LDAP Error: could not rename %s to %s: %s"), $dn,
 											 $newdn, ldap_error($ldap->connection)));
 			   }
@@ -251,7 +251,7 @@ switch( $action ) {
        } else {
 		 // firstsave
 		 if (!$errors) {
-		   $dn = "cn=".$ldap_object['cn'].",cn=internal,".$domain_dn;
+		   $dn = "cn=".$ldap->dn_escape($ldap_object['cn']).",cn=internal,".$domain_dn;
 		   debug("Calling ldap_add with dn=$dn");
 		   if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) 
 			 array_push($errors, sprintf( _("LDAP Error: could not add object %s: %s"), $dn,

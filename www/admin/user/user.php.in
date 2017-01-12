@@ -148,6 +148,59 @@ function checkdelegate( $form, $key, $value ) {
   return '';
 }
 
+function checksmtprecipient ( $form, $key, $value ) {
+  $lst = array_unique( array_filter( array_map( 'trim', preg_split( '/\n/', $value ) ), 'strlen') );
+  $str = '';
+  require_once 'Mail/RFC822.php';
+  foreach( $lst as $SMTPRecipient ) {
+    $trimmed = ltrim($SMTPRecipient, "-."); // potentially every entry is negated with a '-'
+    // $SMTPRecipient is either an 
+    // - email address
+    // - local part of an email address with an @ suffix
+    // - a domain part
+	if (valid_domain($SMTPRecipient)) {
+	  return '';
+	}
+	if (valid_local_part($SMTPRecipient)) {
+      return sprintf(_("Syntax for Recipient %s is invalid"), $SMTPRecipient);
+    }
+    $result = valid_email_address($SMTPRecipient);
+	if (is_a($result, 'PEAR_Error')) {
+	  return $result->getMessage();
+	} else {
+	  return '';
+	}
+  }
+  return '';
+}
+
+
+function valid_email_address($address) {
+// the following addresses are invalid
+// email1..@kolab.org
+// email1.-@kolab.org
+// email1._@kolab.org
+// email1@2sub.kolab.org
+// email1@sub.sub.2sub.kolab.org
+  $check = new Mail_RFC822($address);
+  return $check->parseAddressList(null, null, null, true);
+}
+
+function valid_domain($domain) {
+// the following subdomains are invalid
+// 2sub.kolab.org
+// sub.sub.2sub.kolab.org
+  $check = new Mail_RFC822();
+  return $check->_validateDomain($domain);
+}
+
+function valid_local_part($local_part) {
+  // the local part always has an @ appended
+  $local_part = rtrim($local_part, '@'); 
+  $check = new Mail_RFC822();
+  return $check->_validateLocalPart($local_part);
+}
+
 // Check uid/gid used in invitation policy
 // We're pretty relaxed about what is entered 
 // here and only check some basic syntax
@@ -302,6 +355,15 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
   else $v = "";
   if(array_key_exists('kolabdelegate',$form->entries)) $form->entries['kolabdelegate']['value'] = $v;
 
+  // kolabAllowSMTPRecipient
+  if (is_array($ldap_object['kolabAllowSMTPRecipient'])) {
+	$arr = $ldap_object['kolabAllowSMTPRecipient'];
+	unset( $arr['count'] );
+	$v = join("\n", $arr );
+  }
+  else $v = "";
+  if(array_key_exists('kolabAllowSMTPRecipient',$form->entries)) $form->entries['kolabAllowSMTPRecipient']['value'] = $v;
+
   // kolabhomeserver
   if(array_key_exists('kolabhomeserver',$form->entries)) {
 	  if( is_array($ldap_object['kolabHomeServer']) ) {
@@ -430,6 +492,12 @@ $entries['kolabdelegate'] =array( 'name' => _('Email-Delegates'),
 		'comment' => _('Others allowed to send emails with a "from" address of this account.') . '<br/>' .
 			_('One email address per line.') );
 
+$entries['kolabAllowSMTPRecipient'] =array( 'name' => _('Allowed Recipients'),
+                'type' => 'textarea',
+                'validation' => 'checksmtprecipient',
+                'comment' => _('Restrict allowed recipients of SMTP messages') . '<br/>' .
+                        _('One entry per line.') );
+ 
 $entries['title_0'] = array( 'name' => _('Title') );
 $entries['o_0'] = array( 'name' => _('Organisation') );
 $entries['ou_0'] = array( 'name' => _('Organisational Unit') );
@@ -553,6 +621,11 @@ switch( $action ) {
 												preg_split( '/\n/', $_POST['kolabdelegate'] ) ), 'strlen') );
 	   if( !$ldap_object['kolabDelegate'] && $action == 'firstsave' ) unset($ldap_object['kolabDelegate']);
 
+	   // kolabAllowSMTPRecipient
+	   $ldap_object['kolabAllowSMTPRecipient'] = array_unique( array_filter( array_map( 'trim', 
+												preg_split( '/\n/', $_POST['kolabAllowSMTPRecipient'] ) ), 'strlen') );
+	   if( !$ldap_object['kolabAllowSMTPRecipient'] && $action == 'firstsave' ) unset($ldap_object['kolabAllowSMTPRecipient']);
+
 
        if ($auth->group() == "maintainer" || $auth->group() == "admin") {
 		 // alias
@@ -613,7 +686,7 @@ switch( $action ) {
 
 			   if ( !$errors ) {
 				 // Try to rename the object
-				 if (!ldap_rename($ldap->connection, $dn, "cn=" . $ldap_object['cn'], $domain_dn, true)) {
+				 if (!ldap_rename($ldap->connection, $dn, "cn=" . $ldap->dn_escape($ldap_object['cn']), $domain_dn, true)) {
 				   array_push($errors, sprintf(_("LDAP Error: could not rename %s to %s: %s"), $dn,
 											   $newdn, ldap_error($ldap->connection)));
 				 }
@@ -656,7 +729,7 @@ switch( $action ) {
 			 if( $ldap->countMail( $_SESSION['base_dn'], $alias, $dn ) > 0 ) {
 			   // Ups!!!
 			   $alias = $ldap_object['alias'][$i];
-			   $newalias = md5sum( $dn.$alias ).'@'.substr( $alias, 0, strpos( $alias, '@' ) );
+			   $newalias = md5( $dn.$alias ).'@'.substr( $alias, 0, strpos( $alias, '@' ) );
 			   $ldap_object['alias'][$i] = $newalias;
 			   if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
 				 $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn, 
@@ -693,7 +766,7 @@ switch( $action ) {
 		   if( $ldap->countMail( $_SESSION['base_dn'], $ldap_object['mail'], $dn ) > 0 ) {
 			 // Ups!!!
 			 $mail = $ldap_object['mail'];
-			 $newmail = md5sum( $dn.$mail ).'@'.substr( $mail, 0, strpos( $mail, '@' ) );
+			 $newmail = md5( $dn.$mail ).'@'.substr( $mail, 0, strpos( $mail, '@' ) );
 			 $ldap_object['uid'] = $ldap_object['mail'] = $newmail;
 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
 			   $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn, 
@@ -708,7 +781,7 @@ switch( $action ) {
 			 if( $ldap->countMail( $_SESSION['base_dn'], $alias, $dn ) > 0 ) {
 			   // Ups!!!
 			   $alias = $ldap_object['alias'][$i];
-			   $newalias = md5sum( $dn.$alias ).'@'.substr( $alias, 0, strpos( $alias, '@' ) );
+			   $newalias = md5( $dn.$alias ).'@'.substr( $alias, 0, strpos( $alias, '@' ) );
 			   $ldap_object['alias'][$i] = $newalias;
 			   if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
 				 $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,

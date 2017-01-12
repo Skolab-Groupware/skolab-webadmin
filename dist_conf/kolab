@@ -175,6 +175,7 @@ resmgr_confdir=$(sysconfdir)/kolab
 resmgr_conffile_usr=${kolab_musr}
 resmgr_conffile_grp=${kolab_grp}
 resmgr_tmpdir=${localstatedir}/kolab-filter/tmp
+resmgr_localedir=${libdir}/php/data/Kolab_Filter/locale
 resmgr_scriptsdir=${bindir}
 # @l_musr@
 resmgr_usr=${kolab_musr}

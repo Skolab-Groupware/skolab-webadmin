@@ -1,3 +1,19 @@
+2009-12-07  root  <Gunnar Wrobel <wrobel@pardus.de>>
+
+	* www/admin/user/user.php.in: kolab/issue1340 (RFC: restrict users
+	to sending mail only to internal recipients)
+
+2009-12-03  Gunnar Wrobel  <p@rdus.de>
+
+	* php/admin/include/ldap.class.php.in: 
+	* www/admin/*: 
+
+	 kolab/issue3499 (Kolab web admin does not use LDAP escaping)
+
+2009-11-16 Richard Bos <richard@radoeka.nl>
+	* php/admin/templates/settings.tpl: Use a table to separate the
+	  checkbox and text, for nicer formatting.  kolab/issue3428
+
 2009-05-14  Thomas Arendsen Hein  <thomas@intevation.de>
 
 	* php/admin/locale/fr/LC_MESSAGES/messages.po: Updated french
