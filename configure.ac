@@ -1,6 +1,6 @@
 AC_PREREQ(2.57)
 
-m4_define(_VERSION,2.2.1)
+m4_define(_VERSION,2.2.2)
 AC_INIT([kolab-webadmin],[_VERSION],[kolab-devel@kolab.org])
 AC_CONFIG_AUX_DIR(.)
 

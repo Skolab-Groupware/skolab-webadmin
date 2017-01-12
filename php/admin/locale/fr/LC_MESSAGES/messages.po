@@ -1,15 +1,15 @@
-# translation of messages.po to Français
+# translation of messages.po to
 # This file is distributed under the same license as Kolab-Webadmin.
 # Copyright (C)
 #
-# Benoit Mortier <benoit.mortier@opensides.be>, 2005, 2008.
+# Benoit Mortier <benoit.mortier@opensides.be>, 2005, 2008, 2009.
 # Jean-Michel LACROIX <jm-lacroix@savigny.org>, 2006.
 msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin French\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-08-25 18:29+0200\n"
-"PO-Revision-Date: 2008-04-11 23:11+0200\n"
+"POT-Creation-Date: 2009-05-14 16:03+0200\n"
+"PO-Revision-Date: 2009-04-25 11:45+0200\n"
 "Last-Translator: Benoit Mortier <benoit.mortier@opensides.be>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
 "MIME-Version: 1.0\n"
@@ -78,7 +78,7 @@ msgstr "[ Autres ]"
 
 #: tpl_messages.php:13 tpl_messages.php:215 tpl_messages.php:228
 msgid "Filter:"
-msgstr "Filtre:"
+msgstr "Filtre :"
 
 #: tpl_messages.php:14 tpl_messages.php:216 tpl_messages.php:229
 msgid "Filter"
@@ -382,11 +382,11 @@ msgstr ""
 "<a href=\"http://www.erfrakon.com\">erfrakon</a> est une société de "
 "consultance dédicacée au logiciel libre et a Linux. Les tâches principales "
 "d'erfrakon dans le projet Kolab sont le design et l'architecture du logiciel "
-"de collaboration Kolabet la création du serveur Kolab 1."
+"de collaboration Kolab et la création du serveur Kolab 1."
 
 #: tpl_messages.php:88
 msgid "The following people worked on Kolab for erfrakon:"
-msgstr "Les personnes suivantes on travaillé sur Kolab pour efrakon:"
+msgstr "Les personnes suivantes on travaillé sur Kolab pour efrakon :"
 
 #: tpl_messages.php:89
 msgid "Email Forwarding"
@@ -430,7 +430,7 @@ msgstr ""
 
 #: tpl_messages.php:96
 msgid "The following people worked on Kolab for Intevation:"
-msgstr "Les personnes suivantes on travaillé sur Kolab pour Intevation:"
+msgstr "Les personnes suivantes on travaillé sur Kolab pour Intevation :"
 
 #: tpl_messages.php:97
 msgid ""
@@ -456,7 +456,7 @@ msgid ""
 "The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"
 msgstr ""
 "Les personnes suivantes on travaillé sur Kolab pour Klar&auml;lvdalens "
-"Datakonsult AB:"
+"Datakonsult AB :"
 
 #: tpl_messages.php:100
 msgid ""
@@ -466,12 +466,11 @@ msgid ""
 "contemporary functionality, and outstanding graphical design with the "
 "technological superiority of the Unix operating system."
 msgstr ""
-"<a href=\"http://www.kde.org\">KDE</a> est un puissant environnement "
-"graphique de bureau <a href=\"http://www.gnu.org/philosophy/free-sw.html"
-"\">en Logiciel Libre</a> destiné aux stations de travail Linux et Unix. Il "
-"allie simplicité d'utilisation, fonctionnalités usuelles, une remarquable "
-"interface graphique et la supériorité technologique du système "
-"d'exploitation Unix."
+"<a href=\"http://www.kde.org\">KDE</a> est environnement de travail "
+"performant<a href=\"http://www.gnu.org/philosophy/free-sw.html\">en Logiciel "
+"Libre</a> destiné aux stations de travail Linux et Unix. Il allie simplicité "
+"d'utilisation, fonctionnalités usuelles, une remarquable interface graphique "
+"et la supériorité technologique du système d'exploitation Unix."
 
 #: tpl_messages.php:101
 msgid ""
@@ -509,15 +508,15 @@ msgid ""
 "groupware functionality to Unix/KDE users as well as Windows desktops."
 msgstr ""
 "Ceci est le serveur Kolab2. C'est du logiciel libre développé par  <a ref="
-"\"http://www.kolab.org/\">Le projet Kolab</a>, avec l'intention de procurer "
-"un logiciel de collaboration au utilisateurs de Unix/KDE ainsi qu'au "
-"utilisateurs Microsoft Windows."
+"\"http://www.kolab.org/\">Le projet Kolab</a>, avec l'intention de fournir "
+"un logiciel de messagerie collaborative au utilisateurs de Unix/KDE ainsi "
+"qu'au utilisateurs Microsoft Windows."
 
 #: tpl_messages.php:105
 msgid "Kolab builds upon many other Free Software projects, namely:"
 msgstr ""
 "Kolab est construit sur base d'autres projets logiciels libres "
-"spécifiquement:"
+"spécifiquement :"
 
 #: tpl_messages.php:106
 msgid "(Mail Scanner)"
@@ -529,7 +528,7 @@ msgstr "(Serveur Web)"
 
 #: tpl_messages.php:108
 msgid "(Virus Scanner)"
-msgstr "(Scanner de virus)"
+msgstr "(Scanner antivirus)"
 
 #: tpl_messages.php:109
 msgid "(IMAP Server)"
@@ -551,11 +550,11 @@ msgstr "(Filtre anti-spam)"
 msgid ""
 "The following projects are used in binding the above together, in order to "
 "create the Kolab Server:"
-msgstr "Les projets suivants sont utilisés pour créer le Serveur Kolab:"
+msgstr "Les projets suivants sont utilisés pour créer le Serveur Kolab :"
 
 #: tpl_messages.php:114
 msgid "The following projects are used as a base for the Kolab Clients:"
-msgstr "Les projets suivants sont utilisés comme base pour les clients Kolab:"
+msgstr "Les projets suivants sont utilisés comme base pour les clients Kolab :"
 
 #: tpl_messages.php:115
 msgid ""
@@ -580,7 +579,7 @@ msgid ""
 msgstr ""
 "Pour utiliser tout les fonctionnalités de Kolab2 vous avez besoin d'un "
 "client compatible Kolab 2. Le client Kolab KDE fut le premier client à être "
-"developpé et est toujours considéré comme le client de référence pour les "
+"développé et est toujours considéré comme le client de référence pour les "
 "implémentation de clients sur d'autres plateformes. Le client Kontact sous "
 "Kde peut agir comme un client Kolab2. Un très grand merci au <a href="
 "\"http://www.kde.org\">Projet KDE </a> pour la mise à disposition d'un "
@@ -595,8 +594,8 @@ msgid ""
 "to help develop the Kolab2 storage format."
 msgstr ""
 "Les utilisateurs de Microsoft Outlook sur Microsoft Windows peuvent utiliser "
-"un plug-in propriétaire pour interagir avec le serveur Kolab. Pour Kolab2 le "
-"plug-in préféré est le <a href=\"http://www.toltec.co.za/\">plug-in Toltec</"
+"un plugin propriétaire pour interagir avec le serveur Kolab. Pour Kolab2 le "
+"plugin préféré est le <a href=\"http://www.toltec.co.za/\">plug-in Toltec</"
 "a> écrit par Radley Network Technologies CC. Radley à travaillé de concert "
 "avec la communauté Kolab pour aider au développement du format de stockage "
 "de Kolab2."
@@ -665,7 +664,7 @@ msgstr ""
 
 #: tpl_messages.php:122
 msgid "Other contributors:"
-msgstr "Autres Contributeurs:"
+msgstr "Autres Contributeurs :"
 
 #: tpl_messages.php:123
 msgid "CSSified the Kolab1 web admin GUI"
@@ -678,7 +677,7 @@ msgid ""
 "alphabetical order):"
 msgstr ""
 "Les auteurs principaux des clients Kolab et du serveur sont (en ordre "
-"alphabétique):"
+"alphabétique) :"
 
 #: tpl_messages.php:125
 msgid "Enter UID and password to login"
@@ -686,15 +685,15 @@ msgstr "Entrer le nom de l'utilisateur et le mot de passe pour vous connecter"
 
 #: tpl_messages.php:126
 msgid "Username:"
-msgstr "Nom de l'utilisateur:"
+msgstr "Nom de l'utilisateur :"
 
 #: tpl_messages.php:127
 msgid "Password:"
-msgstr "Mot de passe:"
+msgstr "Mot de passe :"
 
-#: tpl_messages.php:128 ../include/auth.class.php.in:124
-msgid "Kolab Groupware login"
-msgstr "Kolab Groupware login"
+#: tpl_messages.php:128
+msgid "Login"
+msgstr "connexion"
 
 #: tpl_messages.php:129
 msgid "The maintainer with DN"
@@ -710,11 +709,11 @@ msgstr "Mainteneurs"
 
 #: tpl_messages.php:139
 msgid "User:"
-msgstr "Utilisateur:"
+msgstr "Utilisateur :"
 
 #: tpl_messages.php:140
 msgid "Role:"
-msgstr "Rôle:"
+msgstr "Rôle :"
 
 #: tpl_messages.php:141
 msgid "Logout"
@@ -726,11 +725,11 @@ msgstr "Non connecté"
 
 #: tpl_messages.php:143
 msgid "Errors:"
-msgstr "Erreurs:"
+msgstr "Erreurs :"
 
 #: tpl_messages.php:144
 msgid "Message:"
-msgstr "Message:"
+msgstr "Message :"
 
 #: tpl_messages.php:145
 msgid "Kolab Server Settings"
@@ -762,7 +761,7 @@ msgid ""
 "Email address of account that should receive administrative mail for domain "
 msgstr ""
 "Les adresses de messagerie qui doivent recevoir les messages "
-"d'administration:"
+"d'administration :"
 
 #: tpl_messages.php:149
 msgid "Create Distribution Lists"
@@ -824,18 +823,18 @@ msgid ""
 msgstr ""
 "Réseau qui sont autorisés à relayer et envoyer des messages en utilisant du "
 "SMTP non authentifié vers le serveur Kolab (liste de réseaux séparé par des "
-"virgules dans le format x.x.x.x/y ):"
+"virgules dans le format x.x.x.x/y ) :"
 
 #: tpl_messages.php:167
 msgid "SMTP \"smarthost/relayhost\""
-msgstr "serveur de messagerie relais"
+msgstr "SMTP \"serveur relais\""
 
 #: tpl_messages.php:168
 msgid ""
 "Smarthost (and optional port) to use to send outgoing mail (host.domain."
 "tld). Leave empty for no relayhost."
 msgstr ""
-"Serveur relais ( et port éventuel) à utiliser pour envoyer les messages "
+"Serveur relais ( et port éventuel ) à utiliser pour envoyer les messages "
 "sortants (host.domain.tld). Laissez le vide pour si il n'y a pas de serveur "
 "relais."
 
@@ -875,9 +874,7 @@ msgstr "Préférences des filtres de messagerie"
 
 #: tpl_messages.php:179
 msgid "Check messages for mismatching From header and envelope from."
-msgstr ""
-"Vérifie que le champ expéditeur correspond corresponde bien à l'expéditeur "
-"réel."
+msgstr "Vérifie que le champ expéditeur corresponde bien à l'expéditeur réel."
 
 #: tpl_messages.php:180
 msgid ""
@@ -889,7 +886,8 @@ msgstr ""
 
 #: tpl_messages.php:181
 msgid "Action to take for messages that fail the check:"
-msgstr "Action à réaliser pour les messages qui ne passent pas la vérification"
+msgstr ""
+"Action à réaliser pour les messages qui ne passent pas la vérification :"
 
 #: tpl_messages.php:182
 msgid ""
@@ -899,7 +897,7 @@ msgid ""
 msgstr ""
 "Refuse le message sauf s'il vient de l'extérieur et possède une adresse "
 "d'expéditeur qui correspond au domaine de Kolab. Si c'est le cas, l'en-tête "
-"est réécrite pour en informer le destinataire."
+"est récrite pour en informer le destinataire."
 
 #: tpl_messages.php:183
 msgid "Always reject the message."
@@ -954,7 +952,7 @@ msgstr "Bienvenue dans l'interface d'administration de Kolab"
 
 #: tpl_messages.php:203
 msgid "NOTE:"
-msgstr "Note:"
+msgstr "Note :"
 
 #: tpl_messages.php:204
 msgid ""
@@ -1026,7 +1024,7 @@ msgstr "jours"
 
 #: tpl_messages.php:234
 msgid "Send responses for these addresses:"
-msgstr "Envoyer des réponses pour ces adresses:"
+msgstr "Envoyer des réponses pour ces adresses :"
 
 #: tpl_messages.php:235
 msgid "(one address per line)"
@@ -1233,7 +1231,7 @@ msgstr "Effacer l'adresse externe"
 #, php-format
 msgid "Account could not be deleted, distribution list '%s' depends on it."
 msgstr ""
-"Le  compte de messagerie n'a pas pu être effacé, la liste de distribution '%"
+"Le compte de messagerie n'a pas pu être effacé, la liste de distribution '%"
 "s' en dépend. "
 
 #: ../../../www/admin/addressbook/addr.php.in:302
@@ -1329,7 +1327,7 @@ msgstr "ID d'utilisateur unique"
 #: ../../../www/admin/user/user.php.in:471
 #, php-format
 msgid "LDAP Error: No such dn: %s: %s"
-msgstr "Erreur LDAP: pas de dn: %s: %s"
+msgstr "Erreur LDAP: pas de dn : %s: %s"
 
 #: ../../../www/admin/administrator/admin.php.in:243
 #: ../../../www/admin/administrator/admin.php.in:293
@@ -1377,7 +1375,7 @@ msgstr "Effacer l'administrateur"
 #: ../../../www/admin/maintainer/maintainer.php.in:310
 #: ../../../www/admin/user/user.php.in:769
 msgid "Error: need DN for delete operation"
-msgstr "Erreur: dn nécessaire pour une opération d'effacement"
+msgstr "Erreur: DN nécessaire pour une opération d'effacement"
 
 #: ../../../www/admin/administrator/admin.php.in:313
 msgid "Error: you need administrative permissions to delete administrators"
@@ -1640,50 +1638,50 @@ msgstr "Création d'une liste de distribution: %s"
 #: ../../../www/admin/settings/index.php.in:128
 #: ../../../www/admin/settings/index.php.in:137
 #: ../../../www/admin/settings/index.php.in:146
-#: ../../../www/admin/settings/index.php.in:155
-#: ../../../www/admin/settings/index.php.in:165
-#: ../../../www/admin/settings/index.php.in:174
-#: ../../../www/admin/settings/index.php.in:185
-#: ../../../www/admin/settings/index.php.in:199
-#: ../../../www/admin/settings/index.php.in:217
-#: ../../../www/admin/settings/index.php.in:235
-#: ../../../www/admin/settings/index.php.in:252
-#: ../../../www/admin/settings/index.php.in:265
+#: ../../../www/admin/settings/index.php.in:157
+#: ../../../www/admin/settings/index.php.in:167
+#: ../../../www/admin/settings/index.php.in:176
+#: ../../../www/admin/settings/index.php.in:187
+#: ../../../www/admin/settings/index.php.in:201
+#: ../../../www/admin/settings/index.php.in:219
+#: ../../../www/admin/settings/index.php.in:237
+#: ../../../www/admin/settings/index.php.in:254
+#: ../../../www/admin/settings/index.php.in:267
 #, php-format
 msgid "LDAP Error: failed to modify kolab configuration object: %s"
 msgstr ""
 "Erreur LDAP: échec dans la modification de l'objet de configuration kolab: %s"
 
-#: ../../../www/admin/settings/index.php.in:223
+#: ../../../www/admin/settings/index.php.in:225
 #, php-format
 msgid "LDAP Error: Failed to delete domain object %s: %s"
 msgstr "Erreur LDAP: échec lors de l'éffacement de l'objet domaine %s: %s"
 
-#: ../../../www/admin/settings/index.php.in:273
+#: ../../../www/admin/settings/index.php.in:275
 msgid "POP3 Service"
 msgstr "Service POP3"
 
-#: ../../../www/admin/settings/index.php.in:274
+#: ../../../www/admin/settings/index.php.in:276
 msgid "POP3/SSL service (TCP port 995)"
 msgstr "Service POP3/SSL (TCP port 995)"
 
-#: ../../../www/admin/settings/index.php.in:275
+#: ../../../www/admin/settings/index.php.in:277
 msgid "IMAP Service"
 msgstr "Service IMAP"
 
-#: ../../../www/admin/settings/index.php.in:276
+#: ../../../www/admin/settings/index.php.in:278
 msgid "IMAP/SSL Service (TCP port 993)"
 msgstr "Service IMAP/SSL (TCP port 993)"
 
-#: ../../../www/admin/settings/index.php.in:277
+#: ../../../www/admin/settings/index.php.in:279
 msgid "Sieve service (TCP port 2000)"
 msgstr "Service Sieve (TCP port 2000)"
 
-#: ../../../www/admin/settings/index.php.in:278
+#: ../../../www/admin/settings/index.php.in:280
 msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
 msgstr "Service de disponibilité par HTTP (en plus du HTTPS)"
 
-#: ../../../www/admin/settings/index.php.in:279
+#: ../../../www/admin/settings/index.php.in:281
 msgid "Amavis Email Scanning (Virus/Spam)"
 msgstr "Service de vérification de la messagerie Amavis (Virus/Spam)"
 
@@ -1808,7 +1806,7 @@ msgid ""
 "Net/Sieve.php is missing. Without that, filter settings are not available"
 msgstr ""
 "Net/sieve.php est manquant. Sans cela, les préférences des filtres de "
-"messages seront indisponibles"
+"messagerie seront indisponibles"
 
 #: ../../../www/admin/user/deliver.php.in:38
 #: ../../../www/admin/user/forward.php.in:39
@@ -1823,7 +1821,7 @@ msgstr ""
 #: ../../../www/admin/user/deliver.php.in:66
 #: ../../../www/admin/user/forward.php.in:70
 msgid "Script was:"
-msgstr "Le script était:"
+msgstr "Le script était :"
 
 #: ../../../www/admin/user/deliver.php.in:74
 #, php-format
@@ -1861,7 +1859,7 @@ msgstr "Le transfert vers '%s' a été correctement désactivé"
 #: ../../../www/admin/user/index.php.in:122
 #, php-format
 msgid "Manage Email User (%d Users)"
-msgstr "Gérer des utilisateurs de messagerie (%d Utilsateurs)"
+msgstr "Gérer des utilisateurs de messagerie (%d Utilisateurs)"
 
 #: ../../../www/admin/user/user.php.in:111
 #, php-format
@@ -1877,7 +1875,7 @@ msgid ""
 " collides with an address already used for another user, a vCard or a "
 "distribution list.<br />"
 msgstr ""
-" collision avec un adresse de messagerie déja utilisée pour un autre "
+" collision avec un adresse de messagerie déjà utilisée pour un autre "
 "utilisateur, une vCard ou une liste de distribution.<br/>"
 
 #: ../../../www/admin/user/user.php.in:145
@@ -1908,7 +1906,7 @@ msgstr "Identité unique (UID)"
 
 #: ../../../www/admin/user/user.php.in:405
 msgid "Optional - Defaults to Primary Email Address"
-msgstr "Optionnel - Par défault sélectionne l'adresse de messagerie principale"
+msgstr "Optionnel - Par défaut sélectionne l'adresse de messagerie principale"
 
 #: ../../../www/admin/user/user.php.in:406
 msgid "Mailbox Home Server"
@@ -1963,7 +1961,7 @@ msgstr "Alias de messagerie"
 
 #: ../../../www/admin/user/user.php.in:427
 msgid "Email-Delegates"
-msgstr "Delegués"
+msgstr "Délégués"
 
 #: ../../../www/admin/user/user.php.in:430
 msgid "Others allowed to send emails with a \"from\" address of this account."
@@ -2108,11 +2106,11 @@ msgstr "<entrer votre nom et adresse de messagerie ici>"
 
 #: ../include/auth.class.php.in:40
 msgid "Server error, no ldap object!"
-msgstr "Erreur serveur, pas d'objet ldap!"
+msgstr "Erreur serveur, pas d'objet ldap !"
 
 #: ../include/auth.class.php.in:45
 msgid "Could not bind to LDAP server: "
-msgstr "Impossible de se connecter au serveur LDAP: "
+msgstr "Impossible de se connecter au serveur LDAP : "
 
 #: ../include/auth.class.php.in:56
 msgid "Could not bind to LDAP server"
@@ -2121,6 +2119,10 @@ msgstr "Impossible de se connecter au serveur LDAP"
 #: ../include/auth.class.php.in:83 ../include/auth.class.php.in:87
 msgid "Wrong username or password"
 msgstr "Mauvais utilisateur ou mot de passe"
+
+#: ../include/auth.class.php.in:124
+msgid "Kolab Groupware login"
+msgstr "Connexion au serveur Kolab"
 
 #: ../include/form.class.php:34
 msgid "Email address "
@@ -2143,13 +2145,12 @@ msgid "Quota must be an integer"
 msgstr "Le quota doit être un nombre entier"
 
 #: ../include/form.class.php:55
-#, fuzzy
 msgid ""
 "Phone entries may only contain a-z, numbers, spaces and the characters ()-+/."
 "=?:"
 msgstr ""
 "Les numéros de téléphones ne peuvent contenir que les lettres a-z, les "
-"nombres et les carctères ()-+/.=?:"
+"nombres, les espaces et les caractères ()-+/.=?:"
 
 #: ../include/form.class.php:118
 msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
@@ -2240,7 +2241,7 @@ msgstr "Erreur de recherche du DN pour l'attribut mail ou alias %s: %s"
 
 #: ../include/ldap.class.php.in:336
 msgid "LDAP Error: Can't read maintainers group: "
-msgstr "Erreur LDAP: Impossible de lire le groupe des mainteneurs: "
+msgstr "Erreur LDAP: Impossible de lire le groupe des mainteneurs : "
 
 #: ../include/menu.php:26
 msgid "Users"

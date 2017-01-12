@@ -34,8 +34,8 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
   foreach( array( 'title', 'o', 'ou', 'roomNumber', 'street', 'postOfficeBox',
                   'postalCode', 'l', 'c', 'telephoneNumber',
                   'facsimileTelephoneNumber' ) as $attr ) {	
-    if (is_array($ldap_object[strtolower($attr)])) $v = $ldap_object[strtolower($attr)][0];
-    else $v = $ldap_object[strtolower($attr)];
+    if (is_array($ldap_object[$attr])) $v = $ldap_object[$attr][0];
+    else $v = $ldap_object[$attr];
     $form->entries[$attr]['value'] = $v;
   }
   if (is_array($ldap_object['alias'])) {

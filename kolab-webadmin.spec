@@ -30,8 +30,8 @@ Packager:     Klaraelvdalens Datakonsult AB
 Distribution: OpenPKG
 Group:        Mail
 License:      GPL
-Version:      2.2.1
-Release:      20090331
+Version:      2.2.2
+Release:      20090514
 
 
 #   list of sources

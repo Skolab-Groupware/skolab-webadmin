@@ -1,6 +1,15 @@
+2009-05-14  Thomas Arendsen Hein  <thomas@intevation.de>
+
+	* php/admin/locale/fr/LC_MESSAGES/messages.po: Updated french
+	translation (kolab/issue2505)
+
+	* www/admin/addressbook/addr.php.in: Fix kolab/issue3570 (Viewing
+	external addresses fails to display phone numbers and some other
+	values) by removing strtolower for attribute names.
+
 2009-03-07  Mathieu Parent  <math.parent@gmail.com>
 
-    * php/admin/include/ldap.class.php.in: Fix undefined variable $conn
+	* php/admin/include/ldap.class.php.in: Fix undefined variable $conn
 
 2009-02-16 Richard Bos <richard@radoeka.nl>
 
