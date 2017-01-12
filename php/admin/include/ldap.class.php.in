@@ -334,7 +334,7 @@ class KolabLDAP {
     $res = ldap_search( $this->connection, $mybase, $filter, array('member') );
     if( !$res ) {
       array_push($errors, _("LDAP Error: Can't read maintainers group: ")
-				 .ldap_error($conn) );	
+				 .ldap_error($this->connection) );	
       return array();
     }
     $entries = ldap_get_entries( $this->connection, $res );

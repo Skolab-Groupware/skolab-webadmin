@@ -31,7 +31,7 @@ Distribution: OpenPKG
 Group:        Mail
 License:      GPL
 Version:      2.2.1
-Release:      20090304
+Release:      20090331
 
 
 #   list of sources

@@ -17,6 +17,9 @@ kolab_susr=root
 restricted_kolab_usr=kolab
 restricted_kolab_grp=kolab
 
+# Define the deamons that are executed with openpkg rc
+LDAPD=slapd
+
 kolab_rcdir=${sysconfdir}/init.d
 pkgdocdir=${datadir}/doc/kolab
 kolabconf_script=${sbindir}/kolabconf
@@ -130,7 +133,14 @@ webserver_grp=www-data
 #webclient
 horde_cookie_path=/horde3
 horde_confdir=${sysconfdir}/kolab-webclient/horde3
+dimp_confdir=${sysconfdir}/kolab-webclient/dimp1
+imp_confdir=${sysconfdir}/kolab-webclient/imp4
+ingo_confdir=${sysconfdir}/kolab-webclient/ingo1
 kronolith_confdir=${sysconfdir}/kolab-webclient/kronolith2
+mimp_confdir=${sysconfdir}/kolab-webclient/mimp1
+mnemo_confdir=${sysconfdir}/kolab-webclient/mnemo2
+nag_confdir=${sysconfdir}/kolab-webclient/nag2
+turba_confdir=${sysconfdir}/kolab-webclient/turba2
 
 phpini_dir=${sysconfdir}/kolab
 phplibdir=${datadir}/php
@@ -148,12 +158,13 @@ resmgr_confdir=${sysconfdir}/kolab/filter
 resmgr_conffile_usr=kolab
 resmgr_conffile_grp=root
 #resmgr_tmpdir=
+resmgr_locksdir=${kolab_statedir}/filter/locks
+resmgr_localedir=${libdir}/usr/share/php/data/Kolab_Filter/locale
 resmgr_scriptsdir=${bindir}
 resmgr_usr=root
 resmgr_grp=www-data
-resmgr_filterdir=${kolab_statedir}/resmgr/filter
 resmgr_log_type=syslog
-resmgr_log_name=cons, pid
+resmgr_log_name='cons,pid'
 
 fbview_logfile=${localstatedir}/log/fbview.log
 freebusy_logdir=${localstatedir}/log
@@ -162,7 +173,7 @@ freebusy_cachedir=${kolab_statedir}/freebusy-cache
 freebusy_usr=root
 freebusy_grp=www-data
 freebusy_log_type=syslog
-freebusy_log_name=cons, pid
+freebusy_log_name='cons,pid'
 
 graveyard_uidcache=${kolab_statedir}/graveyard_uidcache.db
 graveyard_tscache=${kolab_statedir}/graveyard_tscache.db

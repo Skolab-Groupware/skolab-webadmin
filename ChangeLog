@@ -1,3 +1,7 @@
+2009-03-07  Mathieu Parent  <math.parent@gmail.com>
+
+    * php/admin/include/ldap.class.php.in: Fix undefined variable $conn
+
 2009-02-16 Richard Bos <richard@radoeka.nl>
 
 	* php/admin/templates/settings.tpl: improved layout,

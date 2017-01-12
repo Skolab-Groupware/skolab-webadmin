@@ -150,7 +150,14 @@ webserver_grp=${kolab_grp}
 #webclient
 horde_cookie_path=/client
 horde_confdir=${webserver_document_root}/client/config
+dimp_confdir=${webserver_document_root}/client/dimp/config
+imp_confdir=${webserver_document_root}/client/imp/config
+ingo_confdir=${webserver_document_root}/client/ingo/config
 kronolith_confdir=${webserver_document_root}/client/kronolith/config
+mimp_confdir=${webserver_document_root}/client/mimp/config
+mnemo_confdir=${webserver_document_root}/client/mnemo/config
+nag_confdir=${webserver_document_root}/client/nag/config
+turba_confdir=${webserver_document_root}/client/turba/config
 
 phpini_dir=${sysconfdir}/apache
 phplibdir=${libdir}/php

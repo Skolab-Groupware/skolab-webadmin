@@ -149,4 +149,11 @@ do_subst = sed \
 	-e 's,[@]webserver_web_prefix[@],$(webserver_web_prefix),g' \
 	-e 's,[@]horde_cookie_path[@],$(horde_cookie_path),g' \
 	-e 's,[@]horde_confdir[@],$(horde_confdir),g' \
-	-e 's,[@]kronolith_confdir[@],$(kronolith_confdir),g'
+	-e 's,[@]dimp_confdir[@],$(dimp_confdir),g' \
+	-e 's,[@]imp_confdir[@],$(imp_confdir),g' \
+	-e 's,[@]ingo_confdir[@],$(ingo_confdir),g' \
+	-e 's,[@]kronolith_confdir[@],$(kronolith_confdir),g' \
+	-e 's,[@]mimp_confdir[@],$(mimp_confdir),g' \
+	-e 's,[@]mnemo_confdir[@],$(mnemo_confdir),g' \
+	-e 's,[@]nag_confdir[@],$(nag_confdir),g' \
+	-e 's,[@]turba_confdir[@],$(turba_confdir),g'
