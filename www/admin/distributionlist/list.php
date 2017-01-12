@@ -46,7 +46,7 @@ function checkemaillist( $form, $key, $value ) {
 	foreach( $lst as $a ) {
 	  debug("Trying $a");
 	  ($dn = $ldap->dnForMail($a)) || ($dn = $ldap->dnForUid($a)) || ($dn = $ldap->dnForAlias($a));
-	  if( !$dn ) return _("No user with email address, UID or alias $a");
+	  if( !$dn ) return sprintf(_("No user with email address, UID or alias %s"), $a);
 	}
   }
   return '';
@@ -141,7 +141,7 @@ if( $action == 'modify' || $action == 'delete' ) {
   if( $_REQUEST['dn'] ) {
 	$dn = $_REQUEST['dn'];
   } else {  
-	array_push($errors, _("Error: DN required for $action operation") );
+	array_push($errors, sprintf( _("Error: DN required for %s operation"), $action ) );
   }
 }
 
@@ -185,7 +185,7 @@ if( !$errors ) {
 		  if( $memberdn ) {
 			$ldap_object['member'][] = $memberdn;
 		  } else {
-			$errors[] = _("No user with address $a");
+			$errors[] = sprintf( _("No user with address %s"), $a);
 			break;
 		  }
 		}
@@ -201,18 +201,18 @@ if( !$errors ) {
 				  ($oldattrs=ldap_get_attributes($ldap->connection,$entry))) {
 				if (!ldap_add($ldap->connection,$newdn, $ldap_object) 
 					|| !ldap_delete($ldap->connection,$dn)) {
-				  array_push($errors, _("LDAP Error: Could not rename $dn to $newdn: ")
-							 .ldap_error($ldap->connection));
+				  array_push($errors, sprintf( _("LDAP Error: Could not rename %s to %s: %s"), $dn, $newdn,
+											   ldap_error($ldap->connection)) );
 				} else {
 				  $messages[] = _('Distribution List updated');
 				}
 				$dn = $newdn;
-			  } else array_push($errors, _("LDAP Error: Could not read $dn: ")
-								.ldap_error($ldap->connection));
+			  } else array_push($errors, sprintf( _("LDAP Error: Could not read %s: %s"), $dn,
+												  ldap_error($ldap->connection)) );
 			} else {
 			  if (!ldap_modify($ldap->connection, $dn, $ldap_object))
-				array_push($errors, _("LDAP Error: Could not modify object $dn: ")
-						   .ldap_error($ldap->connection)); 
+				array_push($errors, sprintf( _("LDAP Error: Could not modify object %s: %s"), $dn,
+											 ldap_error($ldap->connection)) ); 
 			  else $messages[] = _('Distribution List updated');
 			}
 		  } 
@@ -222,8 +222,8 @@ if( !$errors ) {
 			if( !$ldap_object['member'] ) unset($ldap_object['member']); 
 			$dn = "cn=".$ldap_object['cn'].",".$dl_root;
 			if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) {
-			  array_push($errors, _("LDAP Error: Could not add object $dn: ")
-						 .ldap_error($ldap->connection));
+			  array_push($errors, sprintf( _("LDAP Error: Could not add object %s: %s"), $dn,
+										   ldap_error($ldap->connection)) );
 			  debug("dn is $dn");
 			  debug_var_dump( $ldap_object );
 			}
@@ -240,17 +240,17 @@ if( !$errors ) {
 				  $ldap_object['cn'] = $newcn; 
 				  $ldap_object['dn'] = 'cn='.$ldap->escape($newcn).','.$dl_root;
 				  if (!ldap_rename($ldap->connection, $dn, 'cn='.$ldap->escape($newcn), $dl_root,true)) {
-					$errors[] = _("LDAP Error: Could not modify object $dn: ")
-					  .ldap_error($ldap->connection);
+					$errors[] = sprintf( _("LDAP Error: Could not modify object %s: %s"), $dn,
+										 ldap_error($ldap->connection) );
 				  }
-				  $error[] = _("Mid-air collision detected, email address $mail renamed to $newmail");
+				  $error[] = sprintf( _("Mid-air collision detected, email address %1\$s was renamed to %2\$s"), $mail, $newmail );
 				  break;
 				}
 			  }
 			}
 		  }
 		  if( !$errors ) {
-			$messages[] = _("Distribution List '$cn' added");
+			$messages[] = sprintf( _("Distribution List '%s' added"), $cn );
 		  }
 		}
 		if ($errors) {
@@ -270,48 +270,42 @@ if( !$errors ) {
 	}
 	break;
   case 'modify':
-	$result = $ldap->search( $dn, '(objectClass=kolabGroupOfNames)' );
-	if( $result ) {
-	  $ldap_object = ldap_get_entries( $ldap->connection, $result );
-	  if( $ldap_object['count'] == 1 ) {
-		fill_form_for_modify( $form, $ldap_object[0] );
-		$form->entries['action']['value'] = 'save';
-		$form->entries['dn'] = array( 'type' => 'hidden', 'value' => $dn );
-		$form->entries['cn']['attrs'] = 'readonly';
-		$heading = _('Modify Distribution List');
-		$content = $form->outputForm();
-	  } else {
-		array_push($errors, _("Error: Multiple results returned for DN '$dn'"));
-	  }
+	$ldap_object = $ldap->read( $dn );
+	if( $ldap_object ) {
+	  fill_form_for_modify( $form, $ldap_object );
+	  $form->entries['action']['value'] = 'save';
+	  $form->entries['dn'] = array( 'type' => 'hidden', 'value' => $dn );
+	  $form->entries['cn']['attrs'] = 'readonly';
+	  $heading = _('Modify Distribution List');
+	  $content = $form->outputForm();
+	} else {
+	  array_push($errors, sprintf( _("Error: No results returned for DN '%s'"), $dn ));
 	}
 	break;
   case 'delete':
-	$result = $ldap->search( $dn, '(objectClass=kolabGroupOfNames)' );
-	if( $result ) {
-	  $ldap_object = ldap_get_entries( $ldap->connection, $result );
-	  if( $ldap_object['count'] == 1 ) {
-		fill_form_for_modify( $form, $ldap_object[0] );
-		$form->entries['action']['value'] = 'kill';
-		foreach( $form->entries as $key => $val ) {
-		  $form->entries[$key]['attrs'] = 'readonly';
-		}
-		$form->submittext = _('Delete');
-		$heading = _('Delete Distribution List'); 
-		$content = $form->outputForm();
-	  } else {
-		array_push($errors, _("Error: Multiple results returned for DN '$dn'"));
+	$ldap_object = $ldap->read( $dn );
+	if( $ldap_object ) {
+	  fill_form_for_modify( $form, $ldap_object );
+	  $form->entries['action']['value'] = 'kill';
+	  foreach( $form->entries as $key => $val ) {
+		$form->entries[$key]['attrs'] = 'readonly';
 	  }
+	  $form->submittext = _('Delete');
+	  $heading = _('Delete Distribution List'); 
+	  $content = $form->outputForm();
+	} else {
+	  array_push($errors, sprintf( _("Error: No results returned for DN '%s'"), $dn) );
 	}
 	break;
   case 'kill':
 	if (!$errors) {
 	  /* Just delete the object and let kolabd clean up */
 	  if( $ldap->deleteGroupOfNames($dn) ) {
-		$messages[] = _('Distribution List ').$_REQUEST['cn']._(' deleted');
+		$messages[] = sprintf( _("Distribution List %s deleted"), $_REQUEST['cn'] );;
 		$heading = _('Entry Deleted');
 		$contenttemplate = 'sfdeleted.tpl';
 	  } else {
-		array_push($errors, _("LDAP Error: could delete $dn: ").ldap_error($link));		
+		array_push($errors, sprintf( _("LDAP Error: could not delete %s: %s"), $dn, ldap_error($link)));
 	  }
 	}
 	break;

@@ -45,7 +45,6 @@ function extract_ldap_values()
   global $postfixmynetworks;
   global $postfixallowunauth;
   global $postfixrelayhost;
-  global $postfixrelayhostmx;
   global $kolabhost;
   global $kolabfilterverifyfrom;
   global $kolabfilterallowsender;
@@ -71,13 +70,8 @@ function extract_ldap_values()
 	$postfixmynetworks = join(', ',$attrs['postfix-mynetworks']);
 	$postfixallowunauth = $attrs['postfix-allow-unauthenticated'][0];
 	$postfixrelayhost = $attrs['postfix-relayhost'][0];
-	if( ereg( '\\[(.+)\\]', $postfixrelayhost, $regs ) ) {
+	if( ereg('\[(.*)\]', $postfixrelayhost, $regs ) ) {
 	  $postfixrelayhost = $regs[1];
-	  $postfixrelayhostmx = 'false';
-	} else if( $postfixrelayhost != '' ) {
-	  $postfixrelayhostmx = 'true';
-	} else {
-	  $postfixrelayhostmx = 'false';
 	}
 	$kolabhost = $attrs['kolabHost'];
 	unset( $kolabhost['count'] );
@@ -98,7 +92,7 @@ if( $_REQUEST['submitsystemalias'] ) {
   $mail = trim($_REQUEST['systemaliasmail']);
   $dn = $ldap->dnForMailOrAlias( $mail );
   if( !$dn ) {
-	$errors[] = _("No account found for email address $mail");
+	$errors[] = sprintf( _("No account found for email address %s"), $mail );
   } else {
 	foreach( array( 'postmaster', 'hostmaster', 'abuse', 'virusalert', 'MAILER-DAEMON' ) as $group ) {
 	  $attrs = array( 'objectClass' => array( 'top', 'kolabGroupOfNames' ),
@@ -106,9 +100,9 @@ if( $_REQUEST['submitsystemalias'] ) {
 					  'mail' => $group.'@'.$postfixmydomain,
 					  'member' => $dn );
 	  if( !ldap_add( $ldap->connection, "cn=$group,".$_SESSION['base_dn'], $attrs ) ) {
-		$errors[] = _("LDAP Error: Failed to add distribution list $group: ").$ldap->error();
+		$errors[] = sprintf( _("LDAP Error: Failed to add distribution list %s: %s"), $group, $ldap->error() );
 	  } else {
-		$messages[] = "Successfully created distribution list $group";
+		$messages[] = sprintf( _("Successfully created distribution list %s"), $group );
 	  }
 	}
   }
@@ -189,13 +183,17 @@ if( $_REQUEST['submitkolabfilter'] ) {
  }
 
 if( $_REQUEST['submitpostfixrelayhost'] ) {
-  $value = trim( $_REQUEST['postfixrelayhost'] );
-  if( $value != '' && !isset( $_REQUEST['postfixrelayhostmx'] ) ) {
-	$value = "[$value]";
+  $host_val = trim( $_REQUEST['postfixrelayhost'] );
+  if( ereg( '(.*):(.*)', $host_val, $regs ) ) {
+	$host_val = '['.$regs[1].']:'.$regs[2];
+  } else if( $host_val ) {
+	$host_val = "[$host_val]";
   }
-  if( $value == '' ) $value = array();
-  $attrs = array();  
-  $attrs['postfix-relayhost'] = $value;
+  if( $host_val == '' ) $host_val = array();
+  if( $port_val == '' ) $port_val = array();
+  $attrs = array();
+  $attrs['postfix-relayhost'] = $host_val;
+  $attrs['postfix-relayport'] = $port_val;
   if( !($result = ldap_modify($ldap->connection, "k=kolab,".$_SESSION['base_dn'], $attrs)) ) {
         $errors[] = _("LDAP Error: failed to modify kolab configuration object: ")
           .ldap_error($ldap->connection);
@@ -263,7 +261,7 @@ $smarty->assign( 'freebusypast', $freebusypast );
 $smarty->assign( 'postfixmynetworks', $postfixmynetworks );
 $smarty->assign( 'postfixallowunauth', toboolstr($postfixallowunauth) );
 $smarty->assign( 'postfixrelayhost', $postfixrelayhost );
-$smarty->assign( 'postfixrelayhostmx', $postfixrelayhostmx );
+$smarty->assign( 'postfixrelayport', $postfixrelayport );
 $smarty->assign( 'kolabfilterverifyfrom', toboolstr($kolabfilterverifyfrom) );
 $smarty->assign( 'kolabfilterallowsender', toboolstr($kolabfilterallowsender) );
 $smarty->assign( 'kolabfilterrejectforgedfrom', toboolstr($kolabfilterrejectforgedfrom) );

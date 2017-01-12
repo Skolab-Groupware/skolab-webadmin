@@ -24,7 +24,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 
 // Remember to keep this list up to date when patching packages!
 $kolabversions = shell_exec("$kolab_prefix/bin/openpkg rpm -q perl-kolab kolabd kolab-resource-handlers kolab-webadmin" );
-$kolabpatchedversions = shell_exec("$kolab_prefix/bin/openpkg rpm -q amavisd apache imapd postfix" );
+$kolabpatchedversions = shell_exec("$kolab_prefix/bin/openpkg rpm -q apache imap imapd openldap php postfix" );
 $openpkgversion = shell_exec("$kolab_prefix/bin/openpkg rpm -q openpkg");
 
 $kolabversion = '@kolab_version@';

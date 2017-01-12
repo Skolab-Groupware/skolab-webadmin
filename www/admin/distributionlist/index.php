@@ -49,7 +49,7 @@ if( !$errors ) {
   $result = ldap_search($ldap->connection, $base_dn, $filter);
   if( $result ) {
 	$count = ldap_count_entries($ldap->connection, $result);
-	$title = _("Manage Distribution Lists ($count Lists)");
+	$title = sprintf( _("Manage Distribution Lists (%d Lists)"), $count );
 	$template = 'distlistall.tpl';
 	ldap_sort($ldap->connection,$result,'cn');
 	$entry = ldap_first_entry($ldap->connection, $result);

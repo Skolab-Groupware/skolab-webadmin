@@ -71,8 +71,8 @@ if( !$errors ) {
 	  }
 
 	  if( !$errors ) {
-		if( $active ) $messages[] = _("Delivery to '$inbox' successfully activated");
-		else $messages[] =  _("Delivery to '$inbox' successfully deactivated");
+		if( $active ) $messages[] = sprintf( _("Delivery to '%s' successfully activated"), $inbox );
+		else $messages[] =  sprintf( _("Delivery to '%s' successfully deactivated"), $inbox );
 	  }	
   }
 

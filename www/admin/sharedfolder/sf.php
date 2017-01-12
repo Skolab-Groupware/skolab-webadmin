@@ -97,7 +97,7 @@ function process_acl( $uid, $perm )
 	  }
 	}
   }
-  $errors[] = _("No UID or GID $uid");
+  $errors[] = sprintf( _("No UID or GID %s"), $uid);
   return false;
 }
 
@@ -138,7 +138,7 @@ if( $action == 'modify' || $action == 'delete' || $action == 'kill' ) {
   if( $_REQUEST['dn'] ) {
 	$dn = $_REQUEST['dn'];
   } else {  
-	array_push($errors, _("Error: DN required for $action operation"));
+	array_push($errors, sprintf( _("Error: DN required for %s operation"), $action ));
   }
 }
 
@@ -212,18 +212,18 @@ if( !$errors ) {
 				  ($oldattrs=ldap_get_attributes($ldap->connection,$entry))) {
 				if (!ldap_add($ldap->connection,$newdn, $ldap_object) 
 					|| !ldap_delete($ldap->connection,$dn)) {
-				  array_push($errors, _("LDAP Error: could not rename $dn to $newdn: ")
-							 .ldap_error($ldap->connection));
+				  array_push($errors, sprintf( _("LDAP Error: could not rename %1\$s to %2\$s: %3\$s"), $dn, $newdn,
+											   ldap_error($ldap->connection)));
 				} else {
 				  $messages[] = _('Shared folder updated');
 				}
 				$dn = $newdn;
-			  } else array_push($errors,_("LDAP Error: could not read $dn: ")
-								.ldap_error($ldap->connection));
+			  } else array_push($errors, sprintf(_("LDAP Error: could not read %s: %s"), $dn,
+												 ldap_error($ldap->connection)));
 			} else {
 			  if (!ldap_modify($ldap->connection, $dn, $ldap_object))
-				array_push($errors, _("LDAP Error: could not modify object $dn: ")
-						   .ldap_error($ldap->connection)); 
+				array_push($errors, sprintf( _("LDAP Error: could not modify object %s: %s"), $dn,
+											 ldap_error($ldap->connection)));
 			  else $messages[] = _('Shared folder updated');
 			}
 		  } 
@@ -232,9 +232,9 @@ if( !$errors ) {
 			$dn = "cn=".$ldap_object['cn'].",".$sf_root;
 			$ldap_object['kolabHomeServer'] = trim($_POST['kolabhomeserver']);
 			if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) 
-			  array_push($errors, _("LDAP Error: could not add object $dn: ")
-						 .ldap_error($ldap->connection));
-			else $messages[] = _("Shared folder '$cn' added");
+			  array_push($errors, sprintf(_("LDAP Error: could not add object %s: %s"), $dn,
+										  ldap_error($ldap->connection)));
+			else $messages[] = sprintf( _("Shared folder '%s' added"), $cn );
 		  }
 		  if ($errors) {
 			//print("<div class=\"maintitle\"> Create New Address Book Entry </div>\n");
@@ -266,7 +266,7 @@ if( !$errors ) {
 	  $heading = _('Modify Shared Folder');
 	  $content = $form->outputForm();
 	} else {
-	  array_push($errors, _("Error: No results returned for DN $dn"));
+	  array_push($errors, sprintf( _("Error: No results returned for DN %s"), $dn ));
 	}
 	break;
   case 'delete':
@@ -281,17 +281,17 @@ if( !$errors ) {
 	  $heading = _('Delete Shared Folder');
 	  $content = $form->outputForm();
 	} else {
-	  array_push($errors, _("Error: No results returned for DN $dn"));
+	  array_push($errors, sprintf( _("Error: No results returned for DN %s"), $dn) );
 	}
 	break;
   case 'kill':
 	if (!$errors) {
 	  if( $ldap->deleteSharedFolder($dn) ) {
-		$messages[] = _('Shared folder ').$_REQUEST['cn']._(' marked for deletion');
+		$messages[] = sprintf( _("Shared folder %s marked for deletion"), $_REQUEST['cn'] );;
 		$heading = _('Entry Deleted');
 		$contenttemplate = 'sfdeleted.tpl';
 	  } else {
-		array_push($errors, _("LDAP Error: Could not mark $dn for deletion: ").ldap_error($link));		
+		array_push($errors, sprintf(_("LDAP Error: Could not mark %s for deletion: %s"), $dn, ldap_error($link)));
 	  }
 	}
 	break;

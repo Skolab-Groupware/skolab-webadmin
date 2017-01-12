@@ -62,7 +62,7 @@ function checkuniquemail( $form, $key, $value ) {
   $domain = trim($kolab['postfix-mydomain'][0]);
   debug("value=$value, domain=$domain");
   if( !endsWith( $value, '@'.$domain ) ) {	
-	return _("Email address $value not in domain $domain");
+	return sprintf( _("Email address %1\$s not in domain %2\$s"), $value, $domain );
   }
 
   if( $ldap->countMail( $_SESSION['base_dn'], $value ) > 0 ) {	
@@ -114,7 +114,7 @@ function checkdelegate( $form, $key, $value ) {
   $str = '';
   foreach( $lst as $delegate ) {
 	if( $ldap->count( $ldap->search( $_SESSION['base_dn'], '(mail='.$ldap->escape($delegate).')' ) ) == 0 ) {
-	  return _("Delegate $delegate does not exist");
+	  return sprintf( _("Delegate %s does not exist"), $delegate );
 	} 
   }
   return '';
@@ -127,7 +127,7 @@ function checkpolicy( $form, $key, $value ) {
   foreach( $value as $v ) {
 	$v = trim($v);
 	if( !empty($v) && !ereg('^([0-9a-zA-Z._@ ]|-)*$', $v ) ) {
-	  return _("Illegal user or group $v");
+	  return sprintf( _("Illegal user or group %s"), $v );
 	}
   }
   return '';
@@ -384,12 +384,12 @@ $entries = array( 'givenname' => array( 'name' => _('First Name'),
 							   'options' => array( _('User Account'), _('Internal User Account'), _('Group Account'), _('Resource Account') ),
 							   'value'   => 0,
 							   'comment' => _('NOTE: An internal user is a user that will not be visible in the address book')),
-		  'kolabinvitationpolicy' => array( 'name' => _('Invitation Policy'),
+		  'kolabinvitationpolicy' => array( 'name' => _("Invitation Policy"),
 									 'type' => 'resourcepolicy',
 									 'policies' => array('anyone' => 4),
 									 'validation' => 'checkpolicy',
-									 'comment' => _('For automatic invitation handling') . '<br/>' .
-									 _('NOTE: For regular accounts to use this feature, give the \'calendar\' user access to the Calendar folder') ),
+									 'comment' => _("For automatic invitation handling") . '<br/>' .
+									 _("NOTE: For regular accounts to use this feature, give the 'calendar' user access to the Calendar folder") ),
 		  'title_0' => array( 'name' => _('Title') ) );
 $entries['alias'] = array( 'name' => _('Email Aliases'), 
 						   'type' => 'textarea',
@@ -430,7 +430,7 @@ $entries['action'] = array( 'name' => 'action',
 if( $dn ) {
   $ldap_object = $ldap->read( $dn );
   if( !$ldap_object ) {
-    array_push($errors, _("LDAP Error: No such dn: $dn: ").ldap_error($ldap->connection));
+    array_push($errors, sprintf(_("LDAP Error: No such dn: %s: %s"), $dn, ldap_error($ldap->connection)) );
   }
 }
 
@@ -466,7 +466,7 @@ switch( $action ) {
 		   $pubkeydata=file_get_contents("$kolab_prefix/etc/kolab/res_pub.pem" );		   
 		   $pkey = openssl_pkey_get_public( $pubkeydata );
 		   if( $pkey === false ) {
-			 $sslerr = _("Could not read resource encryption public key file://$kolab_prefix/etc/kolab/res_pub.pem: ");
+			 $sslerr = sprintf( _("Could not read resource encryption public key file://%s/etc/kolab/res_pub.pem: "), $kolab_prefix);
 			 while( $msg = openssl_error_string() )
 			   $sslerr .= $msg.' ';
 			 $errors[] = $sslerr;
@@ -569,7 +569,7 @@ switch( $action ) {
 				 $dlcn = $distlist['mail'][0];
 				 $errors[] = _("Account DN could not be modified, distribution list <a href='/admin/distributionlist/list.php?action=modify&dn=")
 				   .urlencode($distlist['dn']).
-				   _("'>'$dlcn'</a> depends on it. To modify this account, first remove it from the distribution list.");
+				   sprintf(_("'>'%s'</a> depends on it. To modify this account, first remove it from the distribution list."), $dlcn);
 			 }
 
 			 if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
@@ -599,22 +599,22 @@ switch( $action ) {
 			   unset($explodeddn[0]);
 			   $tmpbasedn = join(",",$explodeddn);			   
 			   if ( !$errors && !ldap_rename($ldap->connection,$dn,$tmprdn,$tmpbasedn,false) ) {
-				 array_push($errors, _("LDAP Error: Could not rename $dn to $tmprdn: ")
-							.ldap_error($ldap->connection));				 
+				 array_push($errors, sprintf( _("LDAP Error: Could not rename %1\$s to %2\$s: %3\$s"), $dn, $tmprdn,
+											  ldap_error($ldap->connection)));
 			   }
 			   if ( !$errors && !ldap_add($ldap->connection,$newdn, $ldap_object) ) {
-				 array_push($errors, _("LDAP Error: Could not rename $dn to $newdn: ")
-							.ldap_error($ldap->connection));
+				 array_push($errors, sprintf( _("LDAP Error: Could not rename %1\$s to %2\$s: %3\$s"), $dn, $newdn,
+											  ldap_error($ldap->connection)));
 			   }
 			   if( !$errors ) {
 				 if( !ldap_delete($ldap->connection,$tmprdn.','.$tmpbasedn)) {
-				   array_push($errors, _("LDAP Error: Could not remove old entry $tmprdn,$tmpbasedn: ")
-							  .ldap_error($ldap->connection));
+				   array_push($errors, sprintf( _("LDAP Error: Could not remove old entry %s,%s: %s"), $tmprdn, $tmpbasedn,
+												ldap_error($ldap->connection)));
 				 }
 			   }
 			   $dn = $newdn;
-			 } else array_push($errors,_("LDAP Error: Could not read $dn: ")
-							   .ldap_error($ldap->connection));
+			 } else array_push($errors,sprintf( _("LDAP Error: Could not read %s: %s"), $dn,
+												ldap_error($ldap->connection)));
 		   } else {
 			 //$ldap_object = fill_up($ldap_object);
 			 if ($auth->group() == "user") {
@@ -626,8 +626,8 @@ switch( $action ) {
 			 }
 			 debug_var_dump($ldap_object);
 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {			   
-			   array_push($errors, _("LDAP Error: Could not modify object $dn: ")
-						  .ldap_error($ldap->connection));
+			   array_push($errors, sprintf( _("LDAP Error: Could not modify object %s: %s"), $dn,
+											ldap_error($ldap->connection)));
 			 }
 		   }
 		   // Check for collisions on alias
@@ -638,14 +638,14 @@ switch( $action ) {
 			   $newalias = md5sum( $dn.$alias ).'@'.substr( $alias, 0, strpos( $alias, '@' ) );
 			   $ldap_object['alias'][$i] = $newalias;
 			   if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
-				 $errors[] = _("LDAP Error: Could not modify object $dn: ").ldap_error($ldap->connection);
+				 $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn, ldap_error($ldap->connection));
 			   }
-			   $error[] = _("Mid-air collision detected, alias $alias renamed to $newalias");
+			   $error[] = sprintf( _("Mid-air collision detected, alias %1\$s renamed to %2\$s"), $alias, $newalias );
 			 }
 		   }
 		 }
 		 $heading = _('Modify User');
-		 if( !$errors ) $messages[] = _("User '$dn' successfully modified");
+		 if( !$errors ) $messages[] = sprintf( _("User '%s' successfully modified"), $dn );
 		 $form->setValues();
 		 $form->entries['mail']['attrs'] = 'readonly';
 		 $form->entries['kolabhomeserver']['attrs'] = 'readonly';
@@ -663,7 +663,7 @@ switch( $action ) {
 		   }
 		   debug("Calling ldap_add with dn=$dn");
 		   if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) 
-			 array_push($errors, _("LDAP Error: could not add object $dn: ").ldap_error($ldap->connection));
+			 array_push($errors, sprintf( _("LDAP Error: could not add object %s: %s"), $dn, ldap_error($ldap->connection)) );
 
 		   // Check for mid-air collisions on mail
 		   if( $ldap->countMail( $_SESSION['base_dn'], $ldap_object['mail'], $dn ) > 0 ) {
@@ -672,9 +672,9 @@ switch( $action ) {
 			 $newmail = md5sum( $dn.$mail ).'@'.substr( $mail, 0, strpos( $mail, '@' ) );
 			 $ldap_object['uid'] = $ldap_object['mail'] = $newmail;
 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
-			   $errors[] = _("LDAP Error: Could not modify object $dn: ").ldap_error($ldap->connection);
+			   $errors[] = sprintf( _("LDAP Error: Could not modify object %s: %s"), $dn, ldap_error($ldap->connection) );
 			 }
-			 $error[] = _("Mid-air collision detected, email address $mail renamed to $newmail");
+			 $error[] = sprintf( _("Mid-air collision detected, alias %1\$s renamed to %2\$s"), $mail, $newmail );
 		   }
 
 		   // Check for collisions on alias
@@ -685,9 +685,9 @@ switch( $action ) {
 			   $newalias = md5sum( $dn.$alias ).'@'.substr( $alias, 0, strpos( $alias, '@' ) );
 			   $ldap_object['alias'][$i] = $newalias;
 			   if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
-				 $errors[] = _("LDAP Error: Could not modify object $dn: ").ldap_error($ldap->connection);
+				 $errors[] = sprintf( _("LDAP Error: Could not modify object %s: %s"), $dn, ldap_error($ldap->connection));
 			   }
-			   $error[] = _("Mid-air collision detected, alias $alias renamed to $newalias");
+			   $error[] = sprintf( _("Mid-air collision detected, alias %1\$s renamed to %2\$s"), $alias, $newalias );
 			 }
 		   }
 
@@ -737,25 +737,37 @@ switch( $action ) {
    $content = $form->outputForm();
    break;
  case 'kill':
-   if (!$dn) array_push($errors, _("Error: need dn for delete operation"));
+   if (!$dn) array_push($errors, _("Error: need DN for delete operation"));
    elseif ($auth->group() != "maintainer" && $auth->group() != "admin") 
      array_push($errors, _("Error: you need administrative permissions to delete users"));
 
    // Check for distribution lists with only this user as member
    $ldap->search( $_SESSION['base_dn'], 
 				  '(&(objectClass=kolabGroupOfNames)(member='.$ldap->escape($dn).'))',
-				  array( 'dn', 'cn', 'member' ) );
+				  array( 'dn', 'cn', 'mail', 'member' ) );
    $distlists = $ldap->getEntries();
+   unset( $distlists['count'] );
    foreach( $distlists as $distlist ) {
+	 $dlmail = $distlist['mail'][0];
+	 if( !$dlmail ) $dlmail = $distlist['cn'][0]; # Compatibility with old stuff
 	 if( $distlist['member']['count'] == 1 ) {
-	   $dlcn = $distlist['cn'][0];
-	   $errors[] = _("Account could not be deleted, distribution list '$dlcn' depends on it.");
+	   $errors[] = sprintf( _("Account could not be deleted, distribution list '%s' depends on it."), $dlmail );
+	 }
+   }
+   if( !$errors ) foreach( $distlists as $distlist ) {
+	 $dlmail = $distlist['mail'][0];
+	 if( !$dlmail ) $dlmail = $distlist['cn'][0]; # Compatibility with old stuff
+	 if( ldap_mod_del( $ldap->connection, $distlist['dn'], array('member' => $dn ) ) ) {
+		 $messages[] = sprintf( _("Account removed from distribution list '%s'."), $dlmail );
+	 } else {
+	   $errors[] = sprintf( _("Failure to remove account from distribution list '%s', account will not be deleted."), $dlmail);
+	   break;
 	 }
    }
 
    if( !$errors ) {
 	 if (!$ldap->deleteObject($dn)) {
-	   array_push($errors, _("LDAP Error: could not mark '$dn' for deletion: ").$ldap->error());
+	   array_push($errors, sprintf( _("LDAP Error: could not mark '%s' for deletion: %s"), $dn, $ldap->error()));
 	 } else {
 	   $heading = _("User Deleted");
 	   $contenttemplate = 'userdeleted.tpl';

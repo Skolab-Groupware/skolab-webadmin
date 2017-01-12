@@ -92,7 +92,7 @@ if( !$errors ) {
 
   if( $result ) {
 	$count = ldap_count_entries($ldap->connection, $result);
-	$title = _("Manage Email User ($count Users)");
+	$title = sprintf( _("Manage Email User (%d Users)"), $count );
 	// if there are more than 2000 entries, split in 26 categories for every letter,
 	// or if more than 50, put in groups, or else just show all.
 	if (false && $count > 2000) {

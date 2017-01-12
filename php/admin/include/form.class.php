@@ -253,7 +253,7 @@ class KolabForm {
 			if( $value['type'] == 'aclselect' ) {
 			  // ignore
 			} else if( strlen( trim($_REQUEST[$key]) ) == 0 ) {
-			  $this->errors[] = _('Required field ').$value['name']._(' is empty');
+			  $this->errors[] = sprintf( _('Required field %s is empty'), $value['name']);
 			}
 		  } else {
 			if( $value['type'] == 'aclselect' ) {

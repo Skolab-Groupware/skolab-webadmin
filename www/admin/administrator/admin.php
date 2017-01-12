@@ -183,7 +183,7 @@ $entries['action'] = array( 'name' => 'action',
 if( $dn ) {
   $ldap_object = $ldap->read( $dn );
   if( !$ldap_object ) {
-    array_push($errors, _("LDAP Error: No such dn: $dn: ").ldap_error($ldap->connection));
+    array_push($errors, _("LDAP Error: No such dn: ").$dn.": ".ldap_error($ldap->connection));
   }
 }
 
@@ -230,10 +230,10 @@ switch( $action ) {
 			   if( empty($ldap_object['userPassword']) )
 				 $ldap_object['userPassword'] = $oldattrs['userPassword'][0];
 			   if (!ldap_add($ldap->connection,$newdn, $ldap_object) )
-				 array_push($errors, _("LDAP Error: could not rename $dn to $newdn: ").ldap_error($ldap->connection));
+				 array_push($errors, sprintf(_("LDAP Error: could not rename %s to %s: "), $dn, $newdn).ldap_error($ldap->connection));
 			   if( !$errors ) {
 				 if( !ldap_delete($ldap->connection,$dn)) {
-				   array_push($errors, _("LDAP Error: could not remove old entry $dn: ").ldap_error($ldap->connection));
+				   array_push($errors, _("LDAP Error: could not remove old entry ").$dn.": ".ldap_error($ldap->connection));
 				 }
 			   }
 			   if( !$errors ) {
@@ -242,22 +242,22 @@ switch( $action ) {
 				 if( !ldap_mod_add( $ldap->connection,
 											   $groupdn,
 											   array( 'member' => $newdn ) ) ) {
-				   $errors[] = _("LDAP Error: Could not add new group entry $newdn: ")
-					 .ldap_error($ldap->connection);
+				   $errors[] = sprintf( _("LDAP Error: Could not add new group entry %s: %s"),$newdn,
+										ldap_error($ldap->connection) );
 				 }
 				 if( !$errors && !ldap_mod_del($ldap->connection,$groupdn,
 									  array( 'member' => $dn ) ) ) {
-				   $errors[] = _("LDAP Error: Could not remove old group entry $dn: ")
-					 .ldap_error($ldap->connection);
+				   $errors[] = sprintf( _("LDAP Error: Could not remove old group entry %s: %s"), $dn,
+										ldap_error($ldap->connection) );
 				 }
 			   }			   
 			   $dn = $newdn;
-			 } else array_push($errors,_("LDAP Error: could not read $dn ")
-							   .ldap_error($ldap->connection));
+			 } else array_push($errors, sprintf( _("LDAP Error: could not read %s: %s"), $dn,
+												 ldap_error($ldap->connection)) );
 		   } else {
 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
-			   array_push($errors, _("LDAP Error: could not modify object $dn ")
-						  .ldap_error($ldap->connection));
+			   array_push($errors, sprintf( _("LDAP Error: could not modify object %s: %s"), $dn,
+											ldap_error($ldap->connection)) );
 			 }
 		   }
 		 }
@@ -274,12 +274,13 @@ switch( $action ) {
 		   debug("Calling ldap_add with dn=$dn");
 		   // Add object to db
 		   if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) 
-			 array_push($errors, _("LDAP Error: could not add object $dn: ").ldap_error($ldap->connection));
+			 array_push($errors, sprintf(_("LDAP Error: could not add object %s: %s"), $dn, ldap_error($ldap->connection)) );
 
 		   // Add object to admin group
 		   if( $dn && !ldap_mod_add($ldap->connection, 'cn=admin,cn=internal,'.$domain_dn, 
 									array( 'member' => $dn ) ) ) {
-			 array_push($errors, _("LDAP Error: could not add object $dn to maintainer group: ").ldap_error($ldap->connection));
+			 array_push($errors, sprintf(_("LDAP Error: could not add object %s to maintainer group: %s"), $dn, 
+										 ldap_error($ldap->connection)) );
 		   }
 		   if( !$errors ) {
 			 $messages[] = _('Administrator ').$ldap_object['dn']._(' successfully created');
@@ -327,18 +328,18 @@ switch( $action ) {
    $content = $form->outputForm();
    break;
  case 'kill':
-   if (!$dn) array_push($errors, _("Error: need dn for delete operation"));
+   if (!$dn) array_push($errors, _("Error: need DN for delete operation"));
    elseif ($auth->group() != "admin") 
      array_push($errors, _("Error: you need administrative permissions to delete administrators"));
    
    if (!$errors) {
 	 if(!ldap_mod_del($ldap->connection, 'cn=admin,cn=internal,'.domain_dn(), array('member' => $dn ) )) {
-	   $errors[] = _("LDAP Error: Could not remove $dn from admin group: ")
-		 .ldap_error($ldap->connection);
+	   $errors[] = sprintf( _("LDAP Error: Could not remove %s from admin group: %s"), $dn,
+							ldap_error($ldap->connection) );
 	 }
 	 if( !$errors ) {
 	   if( !$ldap->deleteObject($dn) ) {
-		 array_push($errors, _("LDAP Error: could not mark $dn for deletion ").ldap_error($ldap->connection));
+		 array_push($errors, sprintf( _("LDAP Error: could not mark %s for deletion: %s"), $dn, ldap_error($ldap->connection)) );
 	   }
 	 }
    }

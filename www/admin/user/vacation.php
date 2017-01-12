@@ -44,7 +44,7 @@ if( !$errors ) {
 	  ($reacttospam?"if header :contains \"X-Spam-Flag\" \"YES\" { keep; stop; }\r\n":"").
 	  "vacation :addresses [ \"".join('", "', $addresses )."\" ] :days ".
 	  $_REQUEST['days']." text:\r\n".
-	  SieveUtils::dotstuff($_REQUEST['text'])."\r\n.\r\n;\r\n\r\n";
+	  SieveUtils::dotstuff(trim($_REQUEST['text']))."\r\n.\r\n;\r\n\r\n";
 	$active = isset($_REQUEST['active']);
 
 	if( PEAR::isError( $res = $sieve->installScript( $scriptname, $script, $active ) ) ) {

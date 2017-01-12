@@ -6,11 +6,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"Report-Msgid-Bugs-To: <vincent@opensides.be>\n"
-"POT-Creation-Date: 2005-06-08 12:24+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-13 01:19+0200\n"
 "PO-Revision-Date: 2005-06-16 19:35+0200\n"
 "Last-Translator: Vincent Seynhaeve <vincent@opensides.be>\n"
-"Language-Team: N�erlandais <vincent@opensides.be>\n"
+"Language-Team: Nerlandais <vincent@opensides.be>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,8 +20,8 @@ msgstr ""
 msgid "The address with DN"
 msgstr "Het adres met DN"
 
-#: tpl_messages.php:3 tpl_messages.php:20 tpl_messages.php:116
-#: tpl_messages.php:185
+#: tpl_messages.php:3 tpl_messages.php:21 tpl_messages.php:117
+#: tpl_messages.php:188
 msgid "has been deleted"
 msgstr "Is verwijderd"
 
@@ -33,77 +33,85 @@ msgstr "Terug naar de lijst van adressen"
 msgid "(only external addresses without a kolab user account)"
 msgstr " (alleen maar externe adressen zonder Kolab gebruikersaccount) "
 
-#: tpl_messages.php:6 tpl_messages.php:15 tpl_messages.php:22
-#: tpl_messages.php:118 tpl_messages.php:173 tpl_messages.php:193
-#: ../../../www/admin/addressbook/index.php:119
+#: tpl_messages.php:6 tpl_messages.php:15 tpl_messages.php:23
+#: tpl_messages.php:119 tpl_messages.php:176 tpl_messages.php:196
+#: ../../../www/admin/addressbook/index.php:121
 #: ../../../www/admin/user/index.php:157
 msgid "Name"
 msgstr "Naam"
 
-#: tpl_messages.php:7 tpl_messages.php:16 tpl_messages.php:24
-#: tpl_messages.php:68 tpl_messages.php:120 tpl_messages.php:169
-#: tpl_messages.php:175 tpl_messages.php:196
+#: tpl_messages.php:7 tpl_messages.php:16 tpl_messages.php:25
+#: tpl_messages.php:69 tpl_messages.php:121 tpl_messages.php:172
+#: tpl_messages.php:178 tpl_messages.php:199
 msgid "Action"
 msgstr "Actie"
 
-#: tpl_messages.php:8 tpl_messages.php:17 tpl_messages.php:26
-#: tpl_messages.php:72 tpl_messages.php:122 tpl_messages.php:177
-#: tpl_messages.php:198
+#: tpl_messages.php:8 tpl_messages.php:18 tpl_messages.php:27
+#: tpl_messages.php:73 tpl_messages.php:123 tpl_messages.php:180
+#: tpl_messages.php:201
 msgid "Modify"
 msgstr "Wijzigen"
 
-#: tpl_messages.php:9 tpl_messages.php:18 tpl_messages.php:27
-#: tpl_messages.php:73 tpl_messages.php:123 tpl_messages.php:170
-#: tpl_messages.php:178 tpl_messages.php:199
-#: ../../../www/admin/addressbook/addr.php:244
-#: ../../../www/admin/administrator/admin.php:326
-#: ../../../www/admin/distributionlist/list.php:298
+#: tpl_messages.php:9 tpl_messages.php:19 tpl_messages.php:28
+#: tpl_messages.php:74 tpl_messages.php:124 tpl_messages.php:173
+#: tpl_messages.php:181 tpl_messages.php:202
+#: ../../../www/admin/addressbook/addr.php:272
+#: ../../../www/admin/administrator/admin.php:327
+#: ../../../www/admin/distributionlist/list.php:293
 #: ../../../www/admin/sharedfolder/sf.php:280
-#: ../../../www/admin/user/user.php:736 ../../../www/admin/user/user.php:774
+#: ../../../www/admin/user/user.php:736 ../../../www/admin/user/user.php:782
 msgid "Delete"
 msgstr "Verwijderen"
 
-#: tpl_messages.php:11 tpl_messages.php:188
+#: tpl_messages.php:11 tpl_messages.php:191
 msgid "[ ALL ]"
 msgstr "[ ALLE ]"
 
-#: tpl_messages.php:12 tpl_messages.php:189
+#: tpl_messages.php:12 tpl_messages.php:192
 msgid "[ OTHER ]"
 msgstr "[ Andere ]"
 
-#: tpl_messages.php:13 tpl_messages.php:190
+#: tpl_messages.php:13 tpl_messages.php:193
 msgid "Filter:"
 msgstr "Filter"
 
-#: tpl_messages.php:14 tpl_messages.php:191
+#: tpl_messages.php:14 tpl_messages.php:194
 msgid "Filter"
 msgstr "Filter"
 
-#: tpl_messages.php:19
+#: tpl_messages.php:17
+#, fuzzy
+msgid "Entry deleted, awaiting cleanup..."
+msgstr "Map verwijderd, wacht op opruiming... "
+
+#: tpl_messages.php:20
 msgid "The administrator with DN"
 msgstr "De beheerder met DN"
 
-#: tpl_messages.php:21
+#: tpl_messages.php:22
 msgid "Back to list of administrators"
 msgstr "Terug naar de lijst van de beheerders"
 
-#: tpl_messages.php:23 tpl_messages.php:119
+#: tpl_messages.php:24 tpl_messages.php:120
 #: ../../../www/admin/user/index.php:159
 msgid "UID"
 msgstr "UID"
 
-#: tpl_messages.php:25 tpl_messages.php:121
+#: tpl_messages.php:26 tpl_messages.php:122
 msgid "Object Deleted, awaiting cleanup..."
 msgstr "Object verwijderd, wacht op opruiming..."
 
-#: tpl_messages.php:28
+#: tpl_messages.php:29
 msgid ""
 "<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is a specialist "
 "email solution provider based in Johannesburg, South Africa specialising in "
 "the deployment and support of Kolab."
-msgstr "<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is een gespecialiseerde provider voor e-mailoplossingen gevestigd in Johannesburg, Zuid Afrika gespecialiseerd in de verspreiding en ondersteuning van Kolab "
+msgstr ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is een "
+"gespecialiseerde provider voor e-mailoplossingen gevestigd in Johannesburg, "
+"Zuid Afrika gespecialiseerd in de verspreiding en ondersteuning van Kolab "
 
-#: tpl_messages.php:29
+#: tpl_messages.php:30
 msgid ""
 "Code Fusion has played, and continues to play, an integral part in "
 "developing and extending the Kolab server; specifically with regards to "
@@ -111,36 +119,44 @@ msgid ""
 "Directory &reg; as an LDAP backend, as well as extending the <a href="
 "\"http://www.horde.org/\">Horde project</a> to provide a web-based groupware "
 "client for the Kolab server."
-msgstr "Code Fusion heeft een rol gespeeld, en blijft die nog spelen in de ontwikkeling en de uitbreiding van de Kolab server; vooral met betrekking tot de verbetering van de basis Kolab engine, door de ondersteuning voor Microsoft Active Directory &reg toe te voegen; als een LDAP backend en door het Horde-project te verbeteren <a href=\"http://www.horde.org/\"> door een web-based groupware client voor de Kolab server te voorzien.."
+msgstr ""
+"Code Fusion heeft een rol gespeeld, en blijft die nog spelen in de "
+"ontwikkeling en de uitbreiding van de Kolab server; vooral met betrekking "
+"tot de verbetering van de basis Kolab engine, door de ondersteuning voor "
+"Microsoft Active Directory &reg toe te voegen; als een LDAP backend en door "
+"het Horde-project te verbeteren <a href=\"http://www.horde.org/\"> door een "
+"web-based groupware client voor de Kolab server te voorzien.."
 
-#: tpl_messages.php:30
+#: tpl_messages.php:31
 msgid ""
 "The following people from Code Fusion are involved in the Kolab project (in "
 "alphabetical order):"
-msgstr "De volgende mensen van Code Fusion zijn betrokken bij het Kolab project (in de alfabetische volgorde):"
+msgstr ""
+"De volgende mensen van Code Fusion zijn betrokken bij het Kolab project (in "
+"de alfabetische volgorde):"
 
-#: tpl_messages.php:31
+#: tpl_messages.php:32
 msgid "Attribute"
 msgstr "Toewijzing"
 
-#: tpl_messages.php:32
+#: tpl_messages.php:33
 msgid "Value"
 msgstr "Waarde"
 
-#: tpl_messages.php:33
+#: tpl_messages.php:34
 msgid "Comment"
 msgstr "Commentaar"
 
-#: tpl_messages.php:34 ../../../www/admin/addressbook/addr.php:89
+#: tpl_messages.php:35 ../../../www/admin/addressbook/addr.php:111
 #: ../../../www/admin/administrator/admin.php:162
 #: ../../../www/admin/maintainer/maintainer.php:155
 #: ../../../www/admin/user/user.php:358
 msgid "First Name"
 msgstr "Voornaam"
 
-#: tpl_messages.php:35 tpl_messages.php:37 tpl_messages.php:39
-#: tpl_messages.php:41 ../../../www/admin/addressbook/addr.php:91
-#: ../../../www/admin/addressbook/addr.php:94
+#: tpl_messages.php:36 tpl_messages.php:38 tpl_messages.php:40
+#: tpl_messages.php:42 ../../../www/admin/addressbook/addr.php:113
+#: ../../../www/admin/addressbook/addr.php:116
 #: ../../../www/admin/administrator/admin.php:156
 #: ../../../www/admin/administrator/admin.php:164
 #: ../../../www/admin/administrator/admin.php:167
@@ -154,222 +170,242 @@ msgstr "Voornaam"
 msgid "Required"
 msgstr "Vereist"
 
-#: tpl_messages.php:36 ../../../www/admin/addressbook/addr.php:92
+#: tpl_messages.php:37 ../../../www/admin/addressbook/addr.php:114
 #: ../../../www/admin/administrator/admin.php:165
 #: ../../../www/admin/maintainer/maintainer.php:158
 #: ../../../www/admin/user/user.php:361
 msgid "Last Name"
 msgstr "Achternaam"
 
-#: tpl_messages.php:38 ../../../www/admin/administrator/admin.php:168
+#: tpl_messages.php:39 ../../../www/admin/administrator/admin.php:168
 #: ../../../www/admin/maintainer/maintainer.php:161
 #: ../../../www/admin/user/user.php:364
 msgid "Password"
 msgstr "Wachtwoord"
 
-#: tpl_messages.php:40 ../../../www/admin/administrator/admin.php:172
+#: tpl_messages.php:41 ../../../www/admin/administrator/admin.php:172
 #: ../../../www/admin/maintainer/maintainer.php:165
 #: ../../../www/admin/user/user.php:368
 msgid "Verify Password"
 msgstr "Wachtwoord controleren"
 
-#: tpl_messages.php:42 ../../../www/admin/user/user.php:372
+#: tpl_messages.php:43 ../../../www/admin/user/user.php:372
 msgid "Primary Email Address"
 msgstr "Primair e-mailadres"
 
-#: tpl_messages.php:43 ../../../www/admin/administrator/admin.php:155
+#: tpl_messages.php:44 ../../../www/admin/administrator/admin.php:155
 #: ../../../www/admin/maintainer/maintainer.php:148
 #: ../../../www/admin/sharedfolder/sf.php:124
 #: ../../../www/admin/user/user.php:349 ../../../www/admin/user/user.php:351
 msgid "Required, non volatile"
 msgstr "Vereist, permanent"
 
-#: tpl_messages.php:44 ../../../www/admin/addressbook/addr.php:95
+#: tpl_messages.php:45 ../../../www/admin/addressbook/addr.php:117
 #: ../../../www/admin/user/user.php:393
 msgid "Title"
 msgstr "Titel"
 
-#: tpl_messages.php:45
+#: tpl_messages.php:46
 msgid "Email Alias"
 msgstr "E-mail Alias"
 
-#: tpl_messages.php:46 ../../../www/admin/addressbook/addr.php:101
+#: tpl_messages.php:47 ../../../www/admin/addressbook/addr.php:124
 #: ../../../www/admin/user/user.php:402
 msgid "Organisation"
 msgstr "Organisatie"
 
-#: tpl_messages.php:47 ../../../www/admin/addressbook/addr.php:102
+#: tpl_messages.php:48 ../../../www/admin/addressbook/addr.php:125
 #: ../../../www/admin/user/user.php:403
 msgid "Organisational Unit"
 msgstr "Organisatorische unit"
 
-#: tpl_messages.php:48 ../../../www/admin/addressbook/addr.php:103
+#: tpl_messages.php:49 ../../../www/admin/addressbook/addr.php:126
 #: ../../../www/admin/user/user.php:404
 msgid "Room Number"
 msgstr "Kantoornummer"
 
-#: tpl_messages.php:49 ../../../www/admin/addressbook/addr.php:104
+#: tpl_messages.php:50 ../../../www/admin/addressbook/addr.php:127
 #: ../../../www/admin/user/user.php:405
 msgid "Street Address"
 msgstr "Straat + Adres"
 
-#: tpl_messages.php:50 ../../../www/admin/user/user.php:406
+#: tpl_messages.php:51 ../../../www/admin/user/user.php:406
 msgid "Postbox"
 msgstr "Nummer"
 
-#: tpl_messages.php:51 ../../../www/admin/addressbook/addr.php:106
+#: tpl_messages.php:52 ../../../www/admin/addressbook/addr.php:129
 #: ../../../www/admin/user/user.php:407
 msgid "Postal Code"
 msgstr "Postcode"
 
-#: tpl_messages.php:52 ../../../www/admin/addressbook/addr.php:107
+#: tpl_messages.php:53 ../../../www/admin/addressbook/addr.php:130
 #: ../../../www/admin/user/user.php:408
 msgid "City"
 msgstr "Stad"
 
-#: tpl_messages.php:53 ../../../www/admin/addressbook/addr.php:108
+#: tpl_messages.php:54 ../../../www/admin/addressbook/addr.php:131
 #: ../../../www/admin/user/user.php:409
 msgid "Country"
 msgstr "Land"
 
-#: tpl_messages.php:54 ../../../www/admin/addressbook/addr.php:109
+#: tpl_messages.php:55 ../../../www/admin/addressbook/addr.php:132
 #: ../../../www/admin/user/user.php:410
 msgid "Telephone Number"
 msgstr "Telefoonnummer"
 
-#: tpl_messages.php:55 ../../../www/admin/addressbook/addr.php:110
+#: tpl_messages.php:56 ../../../www/admin/addressbook/addr.php:133
 #: ../../../www/admin/user/user.php:411
 msgid "Fax Number"
 msgstr "Faxnummer"
 
-#: tpl_messages.php:56 ../include/menu.php:45
+#: tpl_messages.php:57 ../include/menu.php:45
 msgid "Addressbook"
 msgstr "Adresboek"
 
-#: tpl_messages.php:57
-msgid "check here to make this users address <br/> visible in the address book"
-msgstr "hier aankruisen om dit gebruikersadres zichtbaar te maken in het adresboek"
-
 #: tpl_messages.php:58
+msgid "check here to make this users address <br/> visible in the address book"
+msgstr ""
+"hier aankruisen om dit gebruikersadres zichtbaar te maken in het adresboek"
+
+#: tpl_messages.php:59
 msgid "User Quota in KB"
 msgstr "Beschikbare schijfruimte in KB per gebruiker "
 
-#: tpl_messages.php:59 ../../../www/admin/user/user.php:414
+#: tpl_messages.php:60 ../../../www/admin/user/user.php:414
 msgid "Leave blank for unlimited"
 msgstr "Laat leeg indien onbeperkt"
 
-#: tpl_messages.php:60 ../include/form.class.php:40
+#: tpl_messages.php:61 ../include/form.class.php:40
 msgid "Submit"
 msgstr "Verzenden"
 
-#: tpl_messages.php:61
+#: tpl_messages.php:62
 msgid "Email Delivery"
 msgstr "E-mail zending"
 
-#: tpl_messages.php:62
+#: tpl_messages.php:63
 msgid ""
 "Activate delivery to folder (only one of vacation, forward and delivery to "
 "folder can be active at any time)"
-msgstr "Activeer de aflevering naar de map (alleen voor afwezigheidsberichten, doorsturen en afleveren naar map kan later nog geactiveerd worden)"
+msgstr ""
+"Activeer de aflevering naar de map (alleen voor afwezigheidsberichten, "
+"doorsturen en afleveren naar map kan later nog geactiveerd worden)"
 
-#: tpl_messages.php:63
+#: tpl_messages.php:64
 msgid "Deliver regular mail to folder"
 msgstr "Plaats de reguliere mail in map"
 
-#: tpl_messages.php:64 tpl_messages.php:81 tpl_messages.php:142
-#: tpl_messages.php:146 tpl_messages.php:149 tpl_messages.php:152
-#: tpl_messages.php:155 tpl_messages.php:159 tpl_messages.php:162
-#: tpl_messages.php:166 tpl_messages.php:209
+#: tpl_messages.php:65 tpl_messages.php:82 tpl_messages.php:143
+#: tpl_messages.php:147 tpl_messages.php:150 tpl_messages.php:153
+#: tpl_messages.php:156 tpl_messages.php:159 tpl_messages.php:162
+#: tpl_messages.php:169 tpl_messages.php:212
 msgid "Update"
 msgstr "Bijwerken"
 
-#: tpl_messages.php:65 ../include/menu.php:59
+#: tpl_messages.php:66 ../include/menu.php:59
 msgid "Distribution Lists"
 msgstr "Distributielijst"
 
-#: tpl_messages.php:66
+#: tpl_messages.php:67
 msgid "Listname"
 msgstr "Lijstnaam"
 
-#: tpl_messages.php:67
+#: tpl_messages.php:68
 msgid "Visibility"
 msgstr "Zichtbaarheid"
 
-#: tpl_messages.php:69
+#: tpl_messages.php:70
 msgid "Internal"
 msgstr "Intern"
 
-#: tpl_messages.php:70
+#: tpl_messages.php:71
 msgid "Public"
 msgstr "Openbaar"
 
-#: tpl_messages.php:71 tpl_messages.php:176
+#: tpl_messages.php:72 tpl_messages.php:179
 msgid "Folder deleted, awaiting cleanup..."
 msgstr "Map verwijderd, wacht op opruiming... "
 
-#: tpl_messages.php:74
+#: tpl_messages.php:75
 msgid ""
 "Kolab's concept was done by <a href=\"http://www.erfrakon.com\">erfrakon</"
 "a>; the company also designed and implemented the Kolab 1 Server and did the "
 "design and architecture for the Kolab 2 Server while providing consulting "
 "for the implementation of the Kolab 2 server and the Kolab 2 clients."
 msgstr ""
-"De Kolab concept werd gerealiseerd door <a href=\"http://www.erfrakon.com\">erfrakon</"
-"a>; het bedrijf ontwierp en implementeerde de Kolab 1 server en ontwierp en bouwde de kolab 2 server en op het zelfde moment als de consultancy voor de implementatie van de Kolab 2 server and the Kolab 2 clients."
+"De Kolab concept werd gerealiseerd door <a href=\"http://www.erfrakon.com"
+"\">erfrakon</a>; het bedrijf ontwierp en implementeerde de Kolab 1 server en "
+"ontwierp en bouwde de kolab 2 server en op het zelfde moment als de "
+"consultancy voor de implementatie van de Kolab 2 server and the Kolab 2 "
+"clients."
 
-#: tpl_messages.php:75
+#: tpl_messages.php:76
 msgid ""
 "<a href=\"http://www.erfrakon.com\">erfrakon</a> is a consulting company "
 "dedicated to opensource software and Linux. The main tasks of erfrakon "
 "within the Kolab project are the principle design and architecure of the "
 "Kolab groupware solution and the creation of the Kolab 1 server."
-msgstr "<a href=\"http://www.erfrakon.com\">erfrakon< is een consultancy bedrijf gewijd aan opensource software en Linux. De hoofdopdrachten van Efrakon binnen het kolab project zijn het ontwerp en de architectuur van Kolab groupware oplossingen en de creatie van de Kolab 1 server."
+msgstr ""
+"<a href=\"http://www.erfrakon.com\">erfrakon< is een consultancy bedrijf "
+"gewijd aan opensource software en Linux. De hoofdopdrachten van Efrakon "
+"binnen het kolab project zijn het ontwerp en de architectuur van Kolab "
+"groupware oplossingen en de creatie van de Kolab 1 server."
 
-#: tpl_messages.php:76
+#: tpl_messages.php:77
 msgid "The following people worked on Kolab for erfrakon:"
 msgstr "De volgende mensen hebben op Kolab gewerkt voor erfrakon"
 
-#: tpl_messages.php:77
+#: tpl_messages.php:78
 msgid "Email Forwarding"
 msgstr "Verzending van e-mail"
 
-#: tpl_messages.php:78
+#: tpl_messages.php:79
 msgid ""
 "Activate email forwarding (only one of vacation, forward and delivery to "
 "folder can be active at any time)"
-msgstr "Activeer doorsturen e-mail (alleen voor afwezigheidsbericht, doorsturen en afleveren naar map kan later nog geactiveerd worden)"
+msgstr ""
+"Activeer doorsturen e-mail (alleen voor afwezigheidsbericht, doorsturen en "
+"afleveren naar map kan later nog geactiveerd worden)"
 
-#: tpl_messages.php:79
+#: tpl_messages.php:80
 msgid "Forward mail to"
 msgstr "Stuur mail door naar"
 
-#: tpl_messages.php:80
+#: tpl_messages.php:81
 msgid "Keep copy on server"
 msgstr "Bewaar een kopie op de server"
 
-#: tpl_messages.php:82
+#: tpl_messages.php:83
 msgid ""
 "Intevation GmbH coordinated the Projects: Kroupware and Proko2, which are "
 "the main driving force behind Kolab1&2. In addition to project management "
 "Intevation did most of the quality assurance."
-msgstr "Intevation GmbH coördineerde de projecten: Kroupware en Proko2, die de voornaamste drijvende krachten waren achter Kolab1&2. Naast het project management verzorgde Intevation de meeste kwaliteitscontrole."
+msgstr ""
+"Intevation GmbH coördineerde de projecten: Kroupware en Proko2, die de "
+"voornaamste drijvende krachten waren achter Kolab1&2. Naast het project "
+"management verzorgde Intevation de meeste kwaliteitscontrole."
 
-#: tpl_messages.php:83
+#: tpl_messages.php:84
 msgid ""
 "Intevation GmbH is a IT-company exclusively focusing on Free Software. Its "
 "business units are strategic consulting, project management and geographic "
 "information systems."
-msgstr "Intevation GmbH is een IT-bedrijf exclusief gefocust op Free Software. Hun business units zijn strategische consulting, projectmanagement en geografische informatiesystemen."
+msgstr ""
+"Intevation GmbH is een IT-bedrijf exclusief gefocust op Free Software. Hun "
+"business units zijn strategische consulting, projectmanagement en "
+"geografische informatiesystemen."
 
-#: tpl_messages.php:84
+#: tpl_messages.php:85
 msgid "The following people worked on Kolab for Intevation:"
 msgstr "De volgende mensen hebben op Kolab gewerkt voor Intevation:"
 
-#: tpl_messages.php:85
-msgid "The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by"
-msgstr "The Kolab 1 KDE client en de Kolab 2 KDE client (Kontact) werd ontworpen door"
-
 #: tpl_messages.php:86
+msgid ""
+"The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by"
+msgstr ""
+"The Kolab 1 KDE client en de Kolab 2 KDE client (Kontact) werd ontworpen door"
+
+#: tpl_messages.php:87
 msgid ""
 "Klar&auml;lvdalens Datakonsult AB is a consulting company dedicated to "
 "opensource software, Linux, and the <a href=\"http://www.trolltech.com/"
@@ -377,15 +413,20 @@ msgid ""
 "project are design and implementation of the Kolab KDE clients and the "
 "implementation of the current Kolab 2 server."
 msgstr ""
-"Klar&auml;lvdalens Datakonsult AB is een consulting bedrijf gewijd aan opensource software, Linux, en de <a href=\"http://www.trolltech.com/"
-"products/qt/\">Qt</a> bibliotheek. De hoofdopdrachten van KDAB binnen het Kolab "
-"project zijn ontwerp en implementatie van de Kolab KDE clients en de implementatie van de huidige Kolab 2 server."
-
-#: tpl_messages.php:87
-msgid "The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"
-msgstr "De volgende mensen hebben op Kolab gewerkt voor Klar&auml;lvdalens Datakonsult AB:"
+"Klar&auml;lvdalens Datakonsult AB is een consulting bedrijf gewijd aan "
+"opensource software, Linux, en de <a href=\"http://www.trolltech.com/"
+"products/qt/\">Qt</a> bibliotheek. De hoofdopdrachten van KDAB binnen het "
+"Kolab project zijn ontwerp en implementatie van de Kolab KDE clients en de "
+"implementatie van de huidige Kolab 2 server."
 
 #: tpl_messages.php:88
+msgid ""
+"The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"
+msgstr ""
+"De volgende mensen hebben op Kolab gewerkt voor Klar&auml;lvdalens "
+"Datakonsult AB:"
+
+#: tpl_messages.php:89
 msgid ""
 "<a href=\"http://www.kde.org\">KDE</a> is a powerful <a href=\"http://www."
 "gnu.org/philosophy/free-sw.html\">Free Software</a> graphical desktop "
@@ -394,85 +435,100 @@ msgid ""
 "technological superiority of the Unix operating system."
 msgstr ""
 "<a href=\"http://www.kde.org\">KDE</a> is een krachtige <a href=\"http://www."
-"gnu.org/philosophy/free-sw.html\"> Vrije Software </a> grafische bureau omgeving voor Linux en Unix werkstations. Het combineert gebruiksgemak, hedendaagse functionaliteit, een opmerkelijke grafische interface et de grote technologische superioriteit van het Unix besturingssysteem."
+"gnu.org/philosophy/free-sw.html\"> Vrije Software </a> grafische bureau "
+"omgeving voor Linux en Unix werkstations. Het combineert gebruiksgemak, "
+"hedendaagse functionaliteit, een opmerkelijke grafische interface et de "
+"grote technologische superioriteit van het Unix besturingssysteem."
 
-#: tpl_messages.php:89
+#: tpl_messages.php:90
 msgid ""
 "<b>KDE</b> is an Internet project that is truly open in every sense. "
 "Development takes place on the Internet and is discussed on our <a href="
 "\"http://www.kde.org/mailinglists.html\">mailing lists</a>, USENET news "
 "groups, and IRC channels to which we invite and welcome everyone."
 msgstr ""
-"<b>KDE</b> is een internetproject dat waarlijk in elk opzicht open is. "
-"De ontwikkeling vindt plaats op het internet en wordt bediscussieerd op onze <a href="
-"\"http://www.kde.org/mailinglists.html\">discussielijsten</a>,  USENET nieuwsgroepen, en IRC kanalen waarop iedereen uitgenodigd en welkom is."
+"<b>KDE</b> is een internetproject dat waarlijk in elk opzicht open is. De "
+"ontwikkeling vindt plaats op het internet en wordt bediscussieerd op onze <a "
+"href=\"http://www.kde.org/mailinglists.html\">discussielijsten</a>,  USENET "
+"nieuwsgroepen, en IRC kanalen waarop iedereen uitgenodigd en welkom is."
 
-#: tpl_messages.php:90
+#: tpl_messages.php:91
 msgid ""
 "<b>KDE</b> is a mature desktop suite providing a solid basis to an ever "
 "growing number of <a href=\"http://apps.kde.com\">applications</a> for Unix "
 "workstations.  KDE has developed a high quality development framework for "
 "Unix, which allows for the rapid and efficient creation of applications."
-msgstr "<b>KDE</b> is een geëvolueerde desktop suite die een solide basis biedt voor een groeiend aantal <a href=\"http://apps.kde.com\">toepassingen</a> voor Unix werkstations.  KDE heeft voor Unix een ontwikkelingsomgeving van hoge kwaliteit ontwikkeld, die een snelle en efficiënte ontwikkeling van toepassingen toelaat."
+msgstr ""
+"<b>KDE</b> is een geëvolueerde desktop suite die een solide basis biedt voor "
+"een groeiend aantal <a href=\"http://apps.kde.com\">toepassingen</a> voor "
+"Unix werkstations.  KDE heeft voor Unix een ontwikkelingsomgeving van hoge "
+"kwaliteit ontwikkeld, die een snelle en efficiënte ontwikkeling van "
+"toepassingen toelaat."
 
-#: tpl_messages.php:91
+#: tpl_messages.php:92
 msgid "Kolab2 Groupware Server"
 msgstr "Kolab2 Groupware Server"
 
-#: tpl_messages.php:92
+#: tpl_messages.php:93
 msgid ""
 "This is the Kolab2 Server. It is Free Software developed by the <a href="
 "\"http://www.kolab.org/\">Kolab Project</a>, with the intention of bringing "
 "groupware functionality to Unix/KDE users as well as Windows desktops."
 msgstr ""
 "Dit is de Kolab2 Server. Het is Free Software ontworpen door de  <a href="
-"\"http://www.kolab.org/\">Kolab Project</a>, met de bedoeling groupware functionaliteit te brengen voor Unix/KDE gebruikers evenals voor Windows desktops."
+"\"http://www.kolab.org/\">Kolab Project</a>, met de bedoeling groupware "
+"functionaliteit te brengen voor Unix/KDE gebruikers evenals voor Windows "
+"desktops."
 
-#: tpl_messages.php:93
+#: tpl_messages.php:94
 msgid "Kolab builds upon many other Free Software projects, namely:"
 msgstr "Kolab is gebaseerd op verschillende Free Software projecten, namelijk:"
 
-#: tpl_messages.php:94
+#: tpl_messages.php:95
 msgid "(HTTP Server)"
 msgstr "(HTTP Server)"
 
-#: tpl_messages.php:95
+#: tpl_messages.php:96
 msgid "(IMAP Server)"
 msgstr "(IMAP Server)"
 
-#: tpl_messages.php:96
+#: tpl_messages.php:97
 msgid "(LDAP Server)"
 msgstr "(LDAP Server)"
 
-#: tpl_messages.php:97
+#: tpl_messages.php:98
 msgid "(MTA)"
 msgstr "(MTA)"
 
-#: tpl_messages.php:98
+#: tpl_messages.php:99
 msgid "(FTP Server)"
 msgstr "(FTP Server)"
 
-#: tpl_messages.php:99
+#: tpl_messages.php:100
 msgid ""
 "The following projects are used in binding the above together, in order to "
 "create the Kolab Server:"
-msgstr "De volgende projecten worden gebruikt in verbinding met de bovenstaande, om zodoende de Kolab server te creëren:"
+msgstr ""
+"De volgende projecten worden gebruikt in verbinding met de bovenstaande, om "
+"zodoende de Kolab server te creëren:"
 
-#: tpl_messages.php:100
+#: tpl_messages.php:101
 msgid "The following projects are used as a base for the Kolab Clients:"
 msgstr "De volgende projecten worden gebruikt als basis voor de Kolab Clients:"
 
-#: tpl_messages.php:101
+#: tpl_messages.php:102
 msgid ""
 "The Kolab project owes a great deal of thanks to the people of the <a href="
 "\"http://www.openpkg.org/\">OpenPKG</a> project. OpenPKG allows Kolab to run "
 "on many diverse platforms in a reliable and predictable manner, by providing "
 "a common, easy-to-install, cross-platform base on which to build the server."
 msgstr ""
-"Het Kolab-project bedankt in het bijzonder het project <a href="
-"\"http://www.openpkg.org/\">OpenPKG</a>. OpenPKG laat  Kolab toe om op een betrouwbare en voorspelbare manier op verschillende platformen te draaien, door te zorgen voor een gemeenschappelijke basis, een gemakkelijke installatie."
+"Het Kolab-project bedankt in het bijzonder het project <a href=\"http://www."
+"openpkg.org/\">OpenPKG</a>. OpenPKG laat  Kolab toe om op een betrouwbare en "
+"voorspelbare manier op verschillende platformen te draaien, door te zorgen "
+"voor een gemeenschappelijke basis, een gemakkelijke installatie."
 
-#: tpl_messages.php:102
+#: tpl_messages.php:103
 msgid ""
 "To use all Kolab2 features you need an interoperable client. The KDE Kolab "
 "Client was the first such client to be developed and is still considered the "
@@ -481,10 +537,15 @@ msgid ""
 "\">KDE Project</a> for providing such a powerful base on which to build this "
 "client solution."
 msgstr ""
-"Om alle functies van Kolab2 te kunnen gebruiken heb je een client compatible Kolab 2 nodig. De KDE Kolab client was de eerste zo'n client die werd ontwikkeld en wordt nog steeds beschouwd als het referentieplatform voor andere. De KDE groupware component Kontact kan handelen als een Kolab2 client. Onze dankbaarheid gaat uit <a href=\"http://www.kde.org"
-"\">Projet KDE </a> voor het ter beschikking stellen van het krachtige platform waarop de client gebouwd is."
+"Om alle functies van Kolab2 te kunnen gebruiken heb je een client compatible "
+"Kolab 2 nodig. De KDE Kolab client was de eerste zo'n client die werd "
+"ontwikkeld en wordt nog steeds beschouwd als het referentieplatform voor "
+"andere. De KDE groupware component Kontact kan handelen als een Kolab2 "
+"client. Onze dankbaarheid gaat uit <a href=\"http://www.kde.org\">Projet KDE "
+"</a> voor het ter beschikking stellen van het krachtige platform waarop de "
+"client gebouwd is."
 
-#: tpl_messages.php:103
+#: tpl_messages.php:104
 msgid ""
 "Users of Outlook on Microsoft Windows are able to use a proprietary plug-in "
 "to inter-operate with the Kolab server. For Kolab2 the preferred plug-in is "
@@ -492,19 +553,24 @@ msgid ""
 "Network Technologies CC. Radley has worked closely with the Kolab community "
 "to help develop the Kolab2 storage format."
 msgstr ""
-"De gebruikers van Microsoft Outlook onder Microsoft Windows kunnen een eigenaars plug-in gebruiken om onderling te werken  met de Kolab server. Voor Kolab2 is de geprefereede plug-in de <a href=\"http://www.toltec.co.za/\">plug-in Toltec</a> geschreven door Radley "
-"Network Technologies CC. Radley heeft nauw samengewerkt met de Kolab gemeenschap om te helpen bij de ontwikkeling van het opslagformaat van Kolab2."
+"De gebruikers van Microsoft Outlook onder Microsoft Windows kunnen een "
+"eigenaars plug-in gebruiken om onderling te werken  met de Kolab server. "
+"Voor Kolab2 is de geprefereede plug-in de <a href=\"http://www.toltec.co.za/"
+"\">plug-in Toltec</a> geschreven door Radley Network Technologies CC. Radley "
+"heeft nauw samengewerkt met de Kolab gemeenschap om te helpen bij de "
+"ontwikkeling van het opslagformaat van Kolab2."
 
-#: tpl_messages.php:104
+#: tpl_messages.php:105
 msgid ""
 "A list of additional Outlook plug-ins that provide interoperability with the "
 "Kolab server is <a href=\"http://www.kolab.org/kolab-plugins.html"
 "\">maintained on the Kolab website</a>."
 msgstr ""
-"een lijst van bijkomende Outlook plug-ins die voor wisselwerking zorgt met de Kolab server zijn <a href=\"http://www.kolab.org/kolab-plugins.html"
+"een lijst van bijkomende Outlook plug-ins die voor wisselwerking zorgt met "
+"de Kolab server zijn <a href=\"http://www.kolab.org/kolab-plugins.html"
 "\">wordt onderhouden op de Kolab website</a>."
 
-#: tpl_messages.php:105
+#: tpl_messages.php:106
 msgid ""
 "There is also a <a href=\"http://www.kolab.org/webclient.html\">web-based "
 "client</a> in development which provides full groupware functionality to "
@@ -515,9 +581,14 @@ msgid ""
 "which to build."
 msgstr ""
 "Er is ook een <a href=\"http://www.kolab.org/webclient.html\">web-based "
-"client</a> in ontplooiing die een volledig groupware functionaliteid aan mobile gebruikers levert door een web interface. De gebruikers kunnen hun mails, kalenders en taken lezen vanaf iedere plaats in de wereld, gewoon door een simple verbinding via een standard web browser. De web client zou niet mogelijk geweest zijn zonder het prima <a href=\"http://www.horde.org/\">Horde project</a>"
+"client</a> in ontplooiing die een volledig groupware functionaliteid aan "
+"mobile gebruikers levert door een web interface. De gebruikers kunnen hun "
+"mails, kalenders en taken lezen vanaf iedere plaats in de wereld, gewoon "
+"door een simple verbinding via een standard web browser. De web client zou "
+"niet mogelijk geweest zijn zonder het prima <a href=\"http://www.horde.org/"
+"\">Horde project</a>"
 
-#: tpl_messages.php:106
+#: tpl_messages.php:107
 msgid ""
 "As Kolab is a Free Software project, anyone can help to extend the "
 "functionality of the software. An active community has developed around the "
@@ -528,92 +599,102 @@ msgid ""
 "<a href=\"http://www.klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens "
 "Datakonsult</a> (client)."
 msgstr ""
-"Aangezien Kolab een Free Software project is, kan iedereen helpen om de functionaliteit van de software uit te breiden. Een actieve gemeenschap heeft zich ontwikkeld rond de software met verschillende mensen in de hele wereld. Het project werd opgestart in 2002 door een joint venture van drie bedrijven <a href="
-"\"http://www.erfrakon.com/\">erfrakon</a> (design, architectuur en server); "
-"<a href=\"http://www.intevation.de\">Intevation</a> (project management) en "
-"<a href=\"http://www.klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens "
-"Datakonsult</a> (client)."
+"Aangezien Kolab een Free Software project is, kan iedereen helpen om de "
+"functionaliteit van de software uit te breiden. Een actieve gemeenschap "
+"heeft zich ontwikkeld rond de software met verschillende mensen in de hele "
+"wereld. Het project werd opgestart in 2002 door een joint venture van drie "
+"bedrijven <a href=\"http://www.erfrakon.com/\">erfrakon</a> (design, "
+"architectuur en server); <a href=\"http://www.intevation.de\">Intevation</a> "
+"(project management) en <a href=\"http://www.klaralvdalens-datakonsult.se/"
+"\">Klar&auml;lvdalens Datakonsult</a> (client)."
 
-#: tpl_messages.php:107
+#: tpl_messages.php:108
 msgid ""
 "<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> joined the "
 "project soon after the original Kolab1 server was released. Its developers "
 "are primarily responsible for an updated engine (which forms the base of the "
 "Kolab2 server), the web client, as well as contributing to development of "
 "the Kolab2 storage format."
-msgstr "<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> voegde zich bij het project net nadat de Kolab1 server was uitgebracht. Het zijn voornamelijk deze ontwikkelaars die verantwoordelijk zijn voor verbeterde engine (die de basis vormt voor de Kolab2 server), de webclient, evenals voor de bijdrage tot de ontwikkeling van het Kolab2 opslagformaat."
+msgstr ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> voegde zich bij "
+"het project net nadat de Kolab1 server was uitgebracht. Het zijn "
+"voornamelijk deze ontwikkelaars die verantwoordelijk zijn voor verbeterde "
+"engine (die de basis vormt voor de Kolab2 server), de webclient, evenals "
+"voor de bijdrage tot de ontwikkeling van het Kolab2 opslagformaat."
 
-#: tpl_messages.php:108
+#: tpl_messages.php:109
 msgid "Other contributors:"
 msgstr "Andere medewerkers"
 
-#: tpl_messages.php:109
+#: tpl_messages.php:110
 msgid "CSSified the Kolab1 web admin GUI"
 msgstr "CSSified de Kolab1 webbeheerder GUI"
 
-#: tpl_messages.php:110
+#: tpl_messages.php:111
 msgid ""
 "The principal authors of the Kolab client and server software are (in "
 "alphabetical order):"
-msgstr "De voornaamste auteurs van de Kolab client en server software zijn (in alfabetische volgorde):"
+msgstr ""
+"De voornaamste auteurs van de Kolab client en server software zijn (in "
+"alfabetische volgorde):"
 
-#: tpl_messages.php:111
+#: tpl_messages.php:112
 msgid "Enter UID and password to login"
 msgstr "Vul je UID en wachtwoord in om in te loggen"
 
-#: tpl_messages.php:112
+#: tpl_messages.php:113
 msgid "Username:"
 msgstr "Gebruikersnaam"
 
-#: tpl_messages.php:113
+#: tpl_messages.php:114
 msgid "Password:"
 msgstr "Wachtwoord"
 
-#: tpl_messages.php:114 ../include/auth.class.php:123
+#: tpl_messages.php:115 ../include/auth.class.php:123
 msgid "Login"
 msgstr "Login"
 
-#: tpl_messages.php:115
+#: tpl_messages.php:116
 msgid "The maintainer with DN"
 msgstr "de maintainer met DN"
 
-#: tpl_messages.php:117
+#: tpl_messages.php:118
 msgid "Back to list of maintainers"
 msgstr "Terug naar de lijst van de handhavers"
 
-#: tpl_messages.php:124
+#: tpl_messages.php:125
 msgid "User:"
 msgstr "Gebruiker:"
 
-#: tpl_messages.php:125
+#: tpl_messages.php:126
 msgid "Role:"
 msgstr "Rol:"
 
-#: tpl_messages.php:126
+#: tpl_messages.php:127
 msgid "Logout"
 msgstr "Logout"
 
-#: tpl_messages.php:127
+#: tpl_messages.php:128
 msgid "Not logged in"
 msgstr "niet ingelogd"
 
-#: tpl_messages.php:128
+#: tpl_messages.php:129
 msgid "Errors:"
 msgstr "fouten"
 
-#: tpl_messages.php:129
+#: tpl_messages.php:130
 msgid "Message:"
 msgstr "Bericht"
 
-#: tpl_messages.php:130
+#: tpl_messages.php:131
 msgid "Kolab Server Settings"
 msgstr "Kolab Server Instellingen"
 
-#: tpl_messages.php:131
+#: tpl_messages.php:132
 msgid "Administrative email addresses"
 msgstr "Administratief e-mailadres"
 
-#: tpl_messages.php:132
+#: tpl_messages.php:133
 msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
@@ -622,29 +703,33 @@ msgid ""
 "create a distribution list for each of those addresses. Later you can add or "
 "remove people from the lists like any other distribution list"
 msgstr ""
-"U hebt nog geen adres gedefinieerd voor de ontvangst van administratieve e-mailadressen hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
+"U hebt nog geen adres gedefinieerd voor de ontvangst van administratieve e-"
+"mailadressen hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
 "DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
-"Vul hieronder het e-mailadres in van een Kolab account en druk op de knop om een distributielijst te creëren voor elk van deze adressen. Later kunt u nog personen toevoegen of verwijderen van deze lijst zoals op elke andere distributielijst."
+"Vul hieronder het e-mailadres in van een Kolab account en druk op de knop om "
+"een distributielijst te creëren voor elk van deze adressen. Later kunt u nog "
+"personen toevoegen of verwijderen van deze lijst zoals op elke andere "
+"distributielijst."
 
-#: tpl_messages.php:133
+#: tpl_messages.php:134
 msgid "Email address of account that should receive administrative mail:"
 msgstr "E-mailadres van de account die de administratieve mail moet ontvagen:"
 
-#: tpl_messages.php:134
+#: tpl_messages.php:135
 msgid "Create Distribution Lists"
 msgstr "Maak distributielijsten"
 
-#: tpl_messages.php:135
+#: tpl_messages.php:136
 msgid "Enable or Disable individual Services"
 msgstr ""
 
-#: tpl_messages.php:136
+#: tpl_messages.php:137
 msgid ""
 "Using legacy services poses a security thread due to leakage of cleartext "
 "passwords, lack of authenticity and privacy."
 msgstr ""
 
-#: tpl_messages.php:137
+#: tpl_messages.php:138
 msgid ""
 "The legacy Freebusy Support (FTP and HTTP) is only required for Outlook2000 "
 "clients. Under all other circumstances it is advised to use the server-side "
@@ -652,79 +737,80 @@ msgid ""
 "default and may not be deactivated)."
 msgstr ""
 
-#: tpl_messages.php:138
+#: tpl_messages.php:139
 msgid ""
 "Further details with regards to security considerations are available on the "
 "internet at the <a href=\"http://www.kolab.org\">Kolab</a> webserver."
 msgstr ""
 
-#: tpl_messages.php:139 ../include/menu.php:88
+#: tpl_messages.php:140 ../include/menu.php:88
 msgid "Services"
 msgstr "Diensten"
 
-#: tpl_messages.php:140
+#: tpl_messages.php:141
 msgid "Service"
 msgstr "Dienst"
 
-#: tpl_messages.php:141
+#: tpl_messages.php:142
 msgid "Enabled"
 msgstr "ingeschakeld"
 
-#: tpl_messages.php:143
+#: tpl_messages.php:144
 msgid "Quota settings"
 msgstr " instellingen"
 
-#: tpl_messages.php:144
+#: tpl_messages.php:145
 msgid "Warn users when they have used"
 msgstr "Waarschuw de gebruikers wanneer ze gebruikt hebben"
 
-#: tpl_messages.php:145
+#: tpl_messages.php:146
 #, php-format
 msgid "% of their quota"
 msgstr "% van hun quota"
 
-#: tpl_messages.php:147
+#: tpl_messages.php:148
 msgid "Free/Busy settings"
 msgstr "Vrij/bezig instellingen"
 
-#: tpl_messages.php:148
+#: tpl_messages.php:149
 msgid "Allow unauthenticated downloading of Free/Busy information"
 msgstr ""
-"Laat een niet geautentificeerde downloading toe van vrij/bezig informatie "
-" "
+"Laat een niet geautentificeerde downloading toe van vrij/bezig informatie  "
 
-#: tpl_messages.php:150
+#: tpl_messages.php:151
 msgid "When creating free/busy lists, include data from"
 msgstr "Wanneer vrij/bezig lijsten worden gecreëerd, voeg gegevens in van"
 
-#: tpl_messages.php:151
+#: tpl_messages.php:152
 msgid "days in the past"
 msgstr "Vorige dagen"
 
-#: tpl_messages.php:153
+#: tpl_messages.php:154
 msgid "Privileged Networks"
 msgstr "Bevoorrechte netwerken"
 
-#: tpl_messages.php:154
+#: tpl_messages.php:155
 msgid ""
 "Networks allowed to relay and send mail through unauthenticated SMTP "
 "connections to the Kolab server (comma separated networks in x.x.x.x/y "
 "format):"
-msgstr "Netwerken die de toestemming hebben om mail te zenden en door te sturen via een niet geautentificeerde SMTP verbinding met de Kolab server (netwerken gescheiden door komma's in het formaat x.x.x.x/y ):"
+msgstr ""
+"Netwerken die de toestemming hebben om mail te zenden en door te sturen via "
+"een niet geautentificeerde SMTP verbinding met de Kolab server (netwerken "
+"gescheiden door komma's in het formaat x.x.x.x/y ):"
 
-#: tpl_messages.php:156
+#: tpl_messages.php:157
 msgid "SMTP \"smarthost/relayhost\""
 msgstr "SMTP \"smarthost/relayhost\""
 
-#: tpl_messages.php:157
-msgid ""
-"Smarthost to use to send outgoing mail (host.domain.tld). Leave empty for no "
-"relayhost."
-msgstr "Smarthost te gebruiken om uitgaande mail te versturen (host.domain.tld). Leeg laten indien geen relayhost"
-
 #: tpl_messages.php:158
-msgid "Enable MX lookup for relayhost (if in doubt, leave it off)"
-msgstr "Activeer de MX controle voor de relayhost (bij twijfel, leeg laten)"
+#, fuzzy
+msgid ""
+"Smarthost (and optional port) to use to send outgoing mail (host.domain."
+"tld). Leave empty for no relayhost."
+msgstr ""
+"Smarthost te gebruiken om uitgaande mail te versturen (host.domain.tld). "
+"Leeg laten indien geen relayhost"
 
 #: tpl_messages.php:160
 msgid "Accept Internet Mail"
@@ -735,147 +821,180 @@ msgid ""
 "Accept mail from other domains over non-authenticated SMTP. This must be "
 "enabled if you want to use the Kolab server to receive mail from other "
 "internet domains."
-msgstr "Aanvaard mail van ander domeinen via niet geautentificeerde SMTP. Dat moet ingeschakeld zijn wanneer je de Kolab server wil gebruiken om mail te ontvangen via ander internetdomeinen. "
+msgstr ""
+"Aanvaard mail van ander domeinen via niet geautentificeerde SMTP. Dat moet "
+"ingeschakeld zijn wanneer je de Kolab server wil gebruiken om mail te "
+"ontvangen via ander internetdomeinen. "
 
 #: tpl_messages.php:163
 msgid "Mail Filter Settings"
 msgstr "Mail filter instellingen"
 
 #: tpl_messages.php:164
-msgid ""
-"Only allow mail with a trustable From header for accounts on this server. "
-"Note that enabling this setting will make the server reject any mail with "
-"non-matching sender and From header if the sender is an account on this "
-"server. This is known to happen for example with mailinglists."
+msgid "Check messages for mismatching From header and envelope from."
 msgstr ""
-"Laat enkel mail toe met een betrouwbare From header voor accounts op deze server. "
-"Merk op dat het inschakelen van deze instelling ervoor zorgt dat de server alle mail weigert met non-matching afzender en from header als de afzender een account heeft op deze server. Dit gebeurt soms met mailinglijsten."
 
 #: tpl_messages.php:165
-msgid "Use the Sender header instead of From for the above checks if present."
-msgstr "Gebruik de Sender header in plaats van From voor de bovenstaande aankruisingen indien aanwezig."
+#, fuzzy
+msgid ""
+"Use the Sender header instead of From for the above checks if Sender is "
+"present."
+msgstr ""
+"Gebruik de Sender header in plaats van From voor de bovenstaande "
+"aankruisingen indien aanwezig."
+
+#: tpl_messages.php:166
+msgid ""
+"Reject the message with the except if it originates from the outside but has "
+"a From header that matches the Kolab server's domain. In that case rewrite "
+"the From header so the recipient can see the potential forgery."
+msgstr ""
 
 #: tpl_messages.php:167
+#, fuzzy
+msgid "Always reject the message."
+msgstr "Altijd afwijzen"
+
+#: tpl_messages.php:168
+#, fuzzy
+msgid ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
+msgstr ""
+"Laat enkel mail toe met een betrouwbare From header voor accounts op deze "
+"server. Merk op dat het inschakelen van deze instelling ervoor zorgt dat de "
+"server alle mail weigert met non-matching afzender en from header als de "
+"afzender een account heeft op deze server. Dit gebeurt soms met "
+"mailinglijsten."
+
+#: tpl_messages.php:170
 msgid "Kolab Hosts"
 msgstr "Kolab Hosts"
 
-#: tpl_messages.php:168
+#: tpl_messages.php:171
 msgid "Host"
 msgstr "Host"
 
-#: tpl_messages.php:171
+#: tpl_messages.php:174
 msgid "Add"
 msgstr "Toevoegen"
 
-#: tpl_messages.php:172
+#: tpl_messages.php:175
 msgid "Shared folders"
 msgstr "Gedeelde mappen"
 
-#: tpl_messages.php:174
+#: tpl_messages.php:177
 msgid "Server"
 msgstr "Server"
 
-#: tpl_messages.php:179 tpl_messages.php:214
+#: tpl_messages.php:182 tpl_messages.php:217
 msgid "Welcome to the Kolab administration interface"
 msgstr "Welkom op Kolab beheersinterface"
 
-#: tpl_messages.php:180
+#: tpl_messages.php:183
 msgid "NOTE:"
 msgstr "OPMERKING:"
 
-#: tpl_messages.php:181
+#: tpl_messages.php:184
 msgid ""
 "No account is configured to receive mail for administrative addresses. If "
 "you have not yet created an account for this, please do so and then go"
-msgstr "Geen enkel acount is ingesteld om mail te ontvangen voor administratieve adressen. Als je daarvoor nog geen account aangemaakt hebt, gelieve er een aan te maken en ga dan verder"
+msgstr ""
+"Geen enkel acount is ingesteld om mail te ontvangen voor administratieve "
+"adressen. Als je daarvoor nog geen account aangemaakt hebt, gelieve er een "
+"aan te maken en ga dan verder"
 
-#: tpl_messages.php:182
+#: tpl_messages.php:185
 msgid "here"
 msgstr "hier"
 
-#: tpl_messages.php:183
+#: tpl_messages.php:186
 msgid "to set up forwarding of mail to administrative email addresses."
-msgstr "Om het doorsturen van mail naar administratieve e-mailadressen in te stellen."
+msgstr ""
+"Om het doorsturen van mail naar administratieve e-mailadressen in te stellen."
 
-#: tpl_messages.php:184
+#: tpl_messages.php:187
 msgid "The user with DN"
 msgstr "De gebruiker met DN"
 
-#: tpl_messages.php:186
+#: tpl_messages.php:189
 msgid "Back to list of users"
 msgstr "Terug naar de lijst van de gebruikers"
 
-#: tpl_messages.php:187
+#: tpl_messages.php:190
 msgid "Email Users"
 msgstr "Gebruikerse-mail"
 
-#: tpl_messages.php:192
+#: tpl_messages.php:195
 msgid "Type"
 msgstr "Soort"
 
-#: tpl_messages.php:194
+#: tpl_messages.php:197
 msgid "E-mail"
 msgstr "E-mail"
 
-#: tpl_messages.php:195
+#: tpl_messages.php:198
 msgid "uid"
 msgstr "uid"
 
-#: tpl_messages.php:197
+#: tpl_messages.php:200
 msgid "User Deleted, awaiting cleanup..."
 msgstr "Gebruiker verwijderd, wacht op opruiming..."
 
-#: tpl_messages.php:200
+#: tpl_messages.php:203
 msgid "Vacation Notification"
 msgstr "Afwezigheidsbericht"
 
-#: tpl_messages.php:201
+#: tpl_messages.php:204
 msgid ""
 "Activate vacation notification (only one of vacation, forward and delivery "
 "to folder can be active at any time)"
-msgstr "Activeer afwezigheidsbericht (enkel één vakantie, forward en aflevering naar folder kan tezelfdertijd geactieveerd zijn)"
+msgstr ""
+"Activeer afwezigheidsbericht (enkel één vakantie, forward en aflevering naar "
+"folder kan tezelfdertijd geactieveerd zijn)"
 
-#: tpl_messages.php:202
+#: tpl_messages.php:205
 msgid "Resend notification only after"
 msgstr "Stuur mededeling enkel na "
 
-#: tpl_messages.php:203
+#: tpl_messages.php:206
 msgid "days"
 msgstr "dagen"
 
-#: tpl_messages.php:204
+#: tpl_messages.php:207
 msgid "Send responses for these addresses:"
 msgstr "Stuur antwoorden voor deze adressen:"
 
-#: tpl_messages.php:205
+#: tpl_messages.php:208
 msgid "(one address per line)"
 msgstr "(een adres per lijn)"
 
-#: tpl_messages.php:206
+#: tpl_messages.php:209
 msgid "Do not send vacation replies to spam messages"
 msgstr "Geen afwezigheidsberichten sturen naar spam"
 
-#: tpl_messages.php:207
+#: tpl_messages.php:210
 msgid "Only react to mail coming from domain"
 msgstr "Reageer alleen op mail afkomstig van het domein"
 
-#: tpl_messages.php:208
+#: tpl_messages.php:211
 msgid "(leave empty for all domains)"
 msgstr "(leeg laten voor alle domeinen)"
 
-#: tpl_messages.php:210
+#: tpl_messages.php:213
 msgid "Kolab2 Groupware Server Version"
 msgstr "Kolab2 Groupware Server Versie"
 
-#: tpl_messages.php:211
+#: tpl_messages.php:214
 msgid "Kolab2 Groupware Server Component Versions"
 msgstr "Kolab2 Groupware Server Component Versies"
 
-#: tpl_messages.php:212
+#: tpl_messages.php:215
 msgid "Kolab2 Patched OpenPKG Package Versions"
 msgstr "Kolab2 Patched OpenPKG Package Versies"
 
-#: tpl_messages.php:213
+#: tpl_messages.php:216
 msgid "OpenPKG Version"
 msgstr "OpenPKG Versie"
 
@@ -892,12 +1011,22 @@ msgstr "OpenPKG Versie"
 msgid "Error: You don't have Permissions to access this Menu"
 msgstr "Fout: je hebt geen toegangsrechten voor dit Menu "
 
-#: ../../../www/admin/addressbook/addr.php:63
+#: ../../../www/admin/addressbook/addr.php:71
 #: ../../../www/admin/user/user.php:69
 msgid "User, vCard or distribution list with this email address already exists"
 msgstr "Gebruiker, vCard of distributielijst met dit e-mailadres bestaat al"
 
-#: ../../../www/admin/addressbook/addr.php:76
+#: ../../../www/admin/addressbook/addr.php:88
+#: ../../../www/admin/user/user.php:86
+msgid "Email address "
+msgstr "E-mailadres"
+
+#: ../../../www/admin/addressbook/addr.php:88
+#: ../../../www/admin/user/user.php:86 ../../../www/admin/user/user.php:102
+msgid " collision <br />"
+msgstr "conflict"
+
+#: ../../../www/admin/addressbook/addr.php:101
 #: ../../../www/admin/administrator/admin.php:144
 #: ../../../www/admin/distributionlist/list.php:116
 #: ../../../www/admin/maintainer/maintainer.php:137
@@ -906,7 +1035,7 @@ msgstr "Gebruiker, vCard of distributielijst met dit e-mailadres bestaat al"
 msgid "Error: need valid action to proceed"
 msgstr "Fout: heeft een geldige actie nodig om door te gaan"
 
-#: ../../../www/admin/addressbook/addr.php:82
+#: ../../../www/admin/addressbook/addr.php:104
 #: ../../../www/admin/administrator/admin.php:150
 #: ../../../www/admin/distributionlist/list.php:122
 #: ../../../www/admin/maintainer/maintainer.php:143
@@ -915,83 +1044,112 @@ msgstr "Fout: heeft een geldige actie nodig om door te gaan"
 msgid "Error: You don't have the required Permissions"
 msgstr "Fout: je hebt de nodige toegangsrechten niet"
 
-#: ../../../www/admin/addressbook/addr.php:96
+#: ../../../www/admin/addressbook/addr.php:118
 msgid "Primary E-Mail Address"
 msgstr "Hoofd e-mailadres"
 
-#: ../../../www/admin/addressbook/addr.php:98
+#: ../../../www/admin/addressbook/addr.php:120
 msgid "E-Mail Aliases"
 msgstr "E-Mail Aliassen"
 
-#: ../../../www/admin/addressbook/addr.php:100
+#: ../../../www/admin/addressbook/addr.php:123
 #: ../../../www/admin/user/user.php:397
 msgid "One address per line"
 msgstr "Een adres per lijn"
 
-#: ../../../www/admin/addressbook/addr.php:105
+#: ../../../www/admin/addressbook/addr.php:128
 msgid "Post Box"
 msgstr "Postnummer"
 
-#: ../../../www/admin/addressbook/addr.php:130
+#: ../../../www/admin/addressbook/addr.php:142
+#: ../../../www/admin/distributionlist/list.php:144
+#: ../../../www/admin/sharedfolder/sf.php:141
+#, fuzzy, php-format
+msgid "Error: DN required for %s operation"
+msgstr "Fout: dn nodig om handeling te verwijderen"
+
+#: ../../../www/admin/addressbook/addr.php:152
 msgid "Add External Address"
 msgstr "Extern adres toevoegen"
 
-#: ../../../www/admin/addressbook/addr.php:173
+#: ../../../www/admin/addressbook/addr.php:196
 msgid "LDAP Error: could not rename "
 msgstr "LDAP fout: kon naam niet wijzigen"
 
-#: ../../../www/admin/addressbook/addr.php:180
+#: ../../../www/admin/addressbook/addr.php:199
+#: ../../../www/admin/addressbook/addr.php:209
+#, fuzzy, php-format
+msgid "%s successfully updated"
+msgstr "Creatie succesvol"
+
+#: ../../../www/admin/addressbook/addr.php:203
 msgid "LDAP Error: could not read "
 msgstr "LDAP fout: leesfout"
 
-#: ../../../www/admin/addressbook/addr.php:184
+#: ../../../www/admin/addressbook/addr.php:207
 msgid "LDAP Error: could not modify object "
 msgstr "LDAP fout: kon het object niet aanpassen"
 
-#: ../../../www/admin/addressbook/addr.php:195
+#: ../../../www/admin/addressbook/addr.php:218
 msgid "LDAP Error: could not add object "
 msgstr "LDAP fout: kon geen object toevoegen"
 
-#: ../../../www/admin/addressbook/addr.php:207
-#: ../../../www/admin/addressbook/addr.php:227
+#: ../../../www/admin/addressbook/addr.php:220
+#, fuzzy, php-format
+msgid "%s successfully added"
+msgstr "Creatie succesvol"
+
+#: ../../../www/admin/addressbook/addr.php:230
+#: ../../../www/admin/addressbook/addr.php:250
 msgid "Modify External Address"
 msgstr "Pas extern adres aan"
 
-#: ../../../www/admin/addressbook/addr.php:245
+#: ../../../www/admin/addressbook/addr.php:253
+#: ../../../www/admin/addressbook/addr.php:276
+#, php-format
+msgid "Error: Multiple results returned for DN %s"
+msgstr ""
+
+#: ../../../www/admin/addressbook/addr.php:273
 msgid "Delete External Address"
 msgstr "Verwijder extern adres "
 
-#: ../../../www/admin/addressbook/addr.php:255
+#: ../../../www/admin/addressbook/addr.php:283
 msgid "LDAP Error: could not delete "
 msgstr "LDAP fout: kon niet verwijderen"
 
-#: ../../../www/admin/addressbook/addr.php:257
-#: ../../../www/admin/distributionlist/list.php:311
+#: ../../../www/admin/addressbook/addr.php:285
+#: ../../../www/admin/distributionlist/list.php:305
 #: ../../../www/admin/sharedfolder/sf.php:291
 msgid "Entry Deleted"
 msgstr "Entry verwijderd"
 
-#: ../../../www/admin/addressbook/index.php:120
+#: ../../../www/admin/addressbook/addr.php:286
+#, php-format
+msgid "Address book entry with DN %s was deleted"
+msgstr ""
+
+#: ../../../www/admin/addressbook/index.php:122
 #: ../../../www/admin/user/index.php:158
 msgid "Email"
 msgstr "E-mail"
 
-#: ../../../www/admin/addressbook/index.php:121
+#: ../../../www/admin/addressbook/index.php:123
 #: ../../../www/admin/user/index.php:160
 msgid "contains"
 msgstr "bevat"
 
-#: ../../../www/admin/addressbook/index.php:122
+#: ../../../www/admin/addressbook/index.php:124
 #: ../../../www/admin/user/index.php:161
 msgid "is"
 msgstr "is"
 
-#: ../../../www/admin/addressbook/index.php:123
+#: ../../../www/admin/addressbook/index.php:125
 #: ../../../www/admin/user/index.php:162
 msgid "begins with"
 msgstr "begint met"
 
-#: ../../../www/admin/addressbook/index.php:124
+#: ../../../www/admin/addressbook/index.php:126
 #: ../../../www/admin/user/index.php:163
 msgid "ends with"
 msgstr "Eindigt met"
@@ -1035,13 +1193,54 @@ msgstr "Laat leeg om wachtwoord niet te wijzigen"
 msgid "Unique User ID"
 msgstr "Unieke gebruikers ID"
 
+#: ../../../www/admin/administrator/admin.php:186
+#, fuzzy
+msgid "LDAP Error: No such dn: "
+msgstr "LDAP fout: leesfout"
+
+#: ../../../www/admin/administrator/admin.php:233
+#, fuzzy, php-format
+msgid "LDAP Error: could not rename %s to %s: "
+msgstr "LDAP fout: kon naam niet wijzigen"
+
+#: ../../../www/admin/administrator/admin.php:236
+#, fuzzy
+msgid "LDAP Error: could not remove old entry "
+msgstr "LDAP fout: kon niet verwijderen"
+
+#: ../../../www/admin/administrator/admin.php:245
+#: ../../../www/admin/maintainer/maintainer.php:240
+#, fuzzy, php-format
+msgid "LDAP Error: Could not add new group entry %s: %s"
+msgstr "LDAP fout: kon geen object toevoegen"
+
+#: ../../../www/admin/administrator/admin.php:250
+#: ../../../www/admin/maintainer/maintainer.php:245
+#, fuzzy, php-format
+msgid "LDAP Error: Could not remove old group entry %s: %s"
+msgstr "LDAP fout: kon het object niet aanpassen"
+
+#: ../../../www/admin/administrator/admin.php:255
+#: ../../../www/admin/maintainer/maintainer.php:250
+#: ../../../www/admin/sharedfolder/sf.php:221
+#, fuzzy, php-format
+msgid "LDAP Error: could not read %s: %s"
+msgstr "LDAP fout: leesfout"
+
+#: ../../../www/admin/administrator/admin.php:259
+#: ../../../www/admin/maintainer/maintainer.php:254
+#: ../../../www/admin/sharedfolder/sf.php:225
+#, fuzzy, php-format
+msgid "LDAP Error: could not modify object %s: %s"
+msgstr "LDAP fout: kon het object niet aanpassen"
+
 #: ../../../www/admin/administrator/admin.php:264
-#: ../../../www/admin/administrator/admin.php:312
+#: ../../../www/admin/administrator/admin.php:313
 msgid "Modify Administrator"
 msgstr "Wijzig Administrator"
 
 #: ../../../www/admin/administrator/admin.php:265
-#: ../../../www/admin/administrator/admin.php:285
+#: ../../../www/admin/administrator/admin.php:286
 msgid "Administrator "
 msgstr "Administrator "
 
@@ -1050,33 +1249,61 @@ msgstr "Administrator "
 msgid " successfully modified"
 msgstr "Wijziging succesvol"
 
-#: ../../../www/admin/administrator/admin.php:285
+#: ../../../www/admin/administrator/admin.php:277
+#: ../../../www/admin/maintainer/maintainer.php:271
+#: ../../../www/admin/sharedfolder/sf.php:235
+#: ../../../www/admin/user/user.php:666
+#, fuzzy, php-format
+msgid "LDAP Error: could not add object %s: %s"
+msgstr "LDAP fout: kon geen object toevoegen"
+
+#: ../../../www/admin/administrator/admin.php:282
+#: ../../../www/admin/maintainer/maintainer.php:274
+#, fuzzy, php-format
+msgid "LDAP Error: could not add object %s to maintainer group: %s"
+msgstr "LDAP fout: kon geen object toevoegen"
+
+#: ../../../www/admin/administrator/admin.php:286
 #: ../../../www/admin/maintainer/maintainer.php:278
 #: ../../../www/admin/user/user.php:695
 msgid " successfully created"
 msgstr "Creatie succesvol"
 
-#: ../../../www/admin/administrator/admin.php:286
-#: ../../../www/admin/administrator/admin.php:292
-#: ../../../www/admin/administrator/admin.php:303 ../include/menu.php:71
+#: ../../../www/admin/administrator/admin.php:287
+#: ../../../www/admin/administrator/admin.php:293
+#: ../../../www/admin/administrator/admin.php:304 ../include/menu.php:71
 msgid "Create New Administrator"
 msgstr "Creëer nieuwe Administrator"
 
-#: ../../../www/admin/administrator/admin.php:318
+#: ../../../www/admin/administrator/admin.php:319
 msgid "Delete Administrator"
 msgstr "Verwijder Administrator"
 
-#: ../../../www/admin/administrator/admin.php:330
+#: ../../../www/admin/administrator/admin.php:331
 #: ../../../www/admin/maintainer/maintainer.php:323
 #: ../../../www/admin/user/user.php:740
-msgid "Error: need dn for delete operation"
+#, fuzzy
+msgid "Error: need DN for delete operation"
 msgstr "Fout: dn nodig om handeling te verwijderen"
 
-#: ../../../www/admin/administrator/admin.php:332
+#: ../../../www/admin/administrator/admin.php:333
 msgid "Error: you need administrative permissions to delete administrators"
-msgstr "Fout :  je hebt administratieve toegangsrechten nodig om administrators te verwijderen"
+msgstr ""
+"Fout :  je hebt administratieve toegangsrechten nodig om administrators te "
+"verwijderen"
 
-#: ../../../www/admin/administrator/admin.php:346
+#: ../../../www/admin/administrator/admin.php:337
+#, fuzzy, php-format
+msgid "LDAP Error: Could not remove %s from admin group: %s"
+msgstr "LDAP fout: Can't read maintainers group"
+
+#: ../../../www/admin/administrator/admin.php:342
+#: ../../../www/admin/maintainer/maintainer.php:335
+#, fuzzy, php-format
+msgid "LDAP Error: could not mark %s for deletion: %s"
+msgstr "LDAP fout: kon niet verwijderen"
+
+#: ../../../www/admin/administrator/admin.php:347
 msgid "Administrator Deleted"
 msgstr "Administrator verwijderd"
 
@@ -1088,6 +1315,11 @@ msgstr "Beheer Administrators ("
 msgid " Administrators)"
 msgstr "Administrators)"
 
+#: ../../../www/admin/distributionlist/index.php:52
+#, fuzzy, php-format
+msgid "Manage Distribution Lists (%d Lists)"
+msgstr "Beheer distributielijsten"
+
 #: ../../../www/admin/distributionlist/index.php:62
 msgid "not yet implemented"
 msgstr "nog niet geïmplementeerd"
@@ -1095,6 +1327,11 @@ msgstr "nog niet geïmplementeerd"
 #: ../../../www/admin/distributionlist/list.php:45
 msgid "Please add at least one member"
 msgstr "Gelieve tenminste een lid toe te voegen"
+
+#: ../../../www/admin/distributionlist/list.php:49
+#, php-format
+msgid "No user with email address, UID or alias %s"
+msgstr ""
 
 #: ../../../www/admin/distributionlist/list.php:71
 msgid "User or distribution list with this email address already exists"
@@ -1120,33 +1357,82 @@ msgstr "Verborgen"
 msgid ""
 "Check here to make this distribution list available only to authenticated "
 "users"
-msgstr "Kruis hier aan om de distribitielijst beschikbaar allen voor authoriseerde gebruikers"
+msgstr ""
+"Kruis hier aan om de distribitielijst beschikbaar allen voor authoriseerde "
+"gebruikers"
 
 #: ../../../www/admin/distributionlist/list.php:154
 msgid "Add Distribution List"
 msgstr "Voeg distributielijst toe"
+
+#: ../../../www/admin/distributionlist/list.php:188
+#, php-format
+msgid "No user with address %s"
+msgstr ""
+
+#: ../../../www/admin/distributionlist/list.php:204
+#, fuzzy, php-format
+msgid "LDAP Error: Could not rename %s to %s: %s"
+msgstr "LDAP fout: kon naam niet wijzigen"
 
 #: ../../../www/admin/distributionlist/list.php:207
 #: ../../../www/admin/distributionlist/list.php:216
 msgid "Distribution List updated"
 msgstr "Distributielijst geüpdatet"
 
+#: ../../../www/admin/distributionlist/list.php:210
+#: ../../../www/admin/user/user.php:616
+#, fuzzy, php-format
+msgid "LDAP Error: Could not read %s: %s"
+msgstr "LDAP fout: leesfout"
+
+#: ../../../www/admin/distributionlist/list.php:214
+#: ../../../www/admin/distributionlist/list.php:243
+#: ../../../www/admin/user/user.php:629 ../../../www/admin/user/user.php:641
+#: ../../../www/admin/user/user.php:675 ../../../www/admin/user/user.php:688
+#, fuzzy, php-format
+msgid "LDAP Error: Could not modify object %s: %s"
+msgstr "LDAP fout: kon het object niet aanpassen"
+
+#: ../../../www/admin/distributionlist/list.php:225
+#, fuzzy, php-format
+msgid "LDAP Error: Could not add object %s: %s"
+msgstr "LDAP fout: kon geen object toevoegen"
+
+#: ../../../www/admin/distributionlist/list.php:246
+#, php-format
+msgid "Mid-air collision detected, email address %1$s was renamed to %2$s"
+msgstr ""
+
+#: ../../../www/admin/distributionlist/list.php:253
+#, fuzzy, php-format
+msgid "Distribution List '%s' added"
+msgstr "Distributielijst geüpdatet"
+
 #: ../../../www/admin/distributionlist/list.php:265
-#: ../../../www/admin/distributionlist/list.php:281
+#: ../../../www/admin/distributionlist/list.php:279
 msgid "Modify Distribution List"
 msgstr "Distributielijst wijzigen"
 
-#: ../../../www/admin/distributionlist/list.php:299
+#: ../../../www/admin/distributionlist/list.php:282
+#: ../../../www/admin/distributionlist/list.php:297
+#, php-format
+msgid "Error: No results returned for DN '%s'"
+msgstr ""
+
+#: ../../../www/admin/distributionlist/list.php:294
 msgid "Delete Distribution List"
 msgstr "Distributielijst verwijderen"
 
-#: ../../../www/admin/distributionlist/list.php:310
-msgid "Distribution List "
-msgstr "Distributielijst"
+#: ../../../www/admin/distributionlist/list.php:304
+#, fuzzy, php-format
+msgid "Distribution List %s deleted"
+msgstr "Distributielijst geüpdatet"
 
-#: ../../../www/admin/distributionlist/list.php:310
-msgid " deleted"
-msgstr "verwijderd"
+#: ../../../www/admin/distributionlist/list.php:308
+#, fuzzy, php-format
+msgid "LDAP Error: could not delete %s: %s"
+msgstr "LDAP fout: kon niet verwijderen"
 
 #: ../../../www/admin/maintainer/index.php:59
 msgid "Manage Maintainers ("
@@ -1155,6 +1441,22 @@ msgstr "Beheer van de Maintainers("
 #: ../../../www/admin/maintainer/index.php:59
 msgid " Maintainers)"
 msgstr "Maintainers)"
+
+#: ../../../www/admin/maintainer/maintainer.php:179
+#: ../../../www/admin/user/user.php:433
+#, fuzzy, php-format
+msgid "LDAP Error: No such dn: %s: %s"
+msgstr "LDAP fout: leesfout"
+
+#: ../../../www/admin/maintainer/maintainer.php:226
+#, fuzzy, php-format
+msgid "LDAP Error: could not rename %s to %s: %s"
+msgstr "LDAP fout: kon naam niet wijzigen"
+
+#: ../../../www/admin/maintainer/maintainer.php:230
+#, fuzzy, php-format
+msgid "LDAP Error: could not remove old entry %s: %s"
+msgstr "LDAP fout: kon niet verwijderen"
 
 #: ../../../www/admin/maintainer/maintainer.php:259
 #: ../../../www/admin/maintainer/maintainer.php:305
@@ -1179,61 +1481,93 @@ msgstr "Maintainers verwijderen"
 #: ../../../www/admin/maintainer/maintainer.php:325
 #: ../../../www/admin/user/user.php:742
 msgid "Error: you need administrative permissions to delete users"
-msgstr "Fout: je hebt administratieve rechten nodig om gebruikers te verwijderen"
+msgstr ""
+"Fout: je hebt administratieve rechten nodig om gebruikers te verwijderen"
+
+#: ../../../www/admin/maintainer/maintainer.php:329
+#, fuzzy, php-format
+msgid "LDAP Error: Could not remove %s from maintainer group: %s"
+msgstr "LDAP fout: Can't read maintainers group"
 
 #: ../../../www/admin/maintainer/maintainer.php:341
 msgid "Maintainer Deleted"
 msgstr "Maintainer verwijderd"
 
-#: ../../../www/admin/service/index.php:127
-#: ../../../www/admin/service/index.php:136
-#: ../../../www/admin/service/index.php:145
-#: ../../../www/admin/service/index.php:154
-#: ../../../www/admin/service/index.php:164
-#: ../../../www/admin/service/index.php:173
-#: ../../../www/admin/service/index.php:183
-#: ../../../www/admin/service/index.php:197
-#: ../../../www/admin/service/index.php:212
-#: ../../../www/admin/service/index.php:223
+#: ../../../www/admin/service/index.php:95
+#, php-format
+msgid "No account found for email address %s"
+msgstr ""
+
+#: ../../../www/admin/service/index.php:103
+#, fuzzy, php-format
+msgid "LDAP Error: Failed to add distribution list %s: %s"
+msgstr "LDAP fout: bijwerken van het Kolab configuratie object is mislukt:"
+
+#: ../../../www/admin/service/index.php:105
+#, fuzzy, php-format
+msgid "Successfully created distribution list %s"
+msgstr "Maak distributielijsten"
+
+#: ../../../www/admin/service/index.php:123
+#: ../../../www/admin/service/index.php:132
+#: ../../../www/admin/service/index.php:141
+#: ../../../www/admin/service/index.php:150
+#: ../../../www/admin/service/index.php:160
+#: ../../../www/admin/service/index.php:169
+#: ../../../www/admin/service/index.php:180
+#: ../../../www/admin/service/index.php:198
+#: ../../../www/admin/service/index.php:213
+#: ../../../www/admin/service/index.php:224
 msgid "LDAP Error: failed to modify kolab configuration object: "
 msgstr "LDAP fout: bijwerken van het Kolab configuratie object is mislukt:"
 
-#: ../../../www/admin/service/index.php:230
+#: ../../../www/admin/service/index.php:231
 msgid "POP3 Service"
 msgstr "POP3 Service"
 
-#: ../../../www/admin/service/index.php:231
+#: ../../../www/admin/service/index.php:232
 msgid "POP3/SSL service (TCP port 995)"
 msgstr "POP3/SSL service (TCP poort 995)"
 
-#: ../../../www/admin/service/index.php:232
+#: ../../../www/admin/service/index.php:233
 msgid "IMAP Service"
 msgstr "IMAP Service"
 
-#: ../../../www/admin/service/index.php:233
+#: ../../../www/admin/service/index.php:234
 msgid "IMAP/SSL Service (TCP port 993)"
 msgstr "IMAP/SSL Service (TCP poort 993)"
 
-#: ../../../www/admin/service/index.php:234
+#: ../../../www/admin/service/index.php:235
 msgid "Sieve service (TCP port 2000)"
 msgstr "Sieve service (TCP poort 2000)"
 
-#: ../../../www/admin/service/index.php:236
+#: ../../../www/admin/service/index.php:237
 msgid "FTP FreeBusy Service (Legacy, not interoperable with Kolab2 FreeBusy)"
-msgstr "FTP Free/Busy service (vervallen, niet compatibel met Kolab2 Free/Busy)"
+msgstr ""
+"FTP Free/Busy service (vervallen, niet compatibel met Kolab2 Free/Busy)"
 
-#: ../../../www/admin/service/index.php:238
+#: ../../../www/admin/service/index.php:239
 msgid "HTTP FreeBusy Service (Legacy)"
 msgstr "HTTP Free/Busy service (vervallen)"
 
-#: ../../../www/admin/service/index.php:239
+#: ../../../www/admin/service/index.php:240
 msgid "Amavis Email Scanning (Virus/Spam)"
 msgstr "Amavis email scannen (virus/anti-spam)"
+
+#: ../../../www/admin/sharedfolder/index.php:39
+#, fuzzy, php-format
+msgid "Manage Shared Folders (%d Folders)"
+msgstr "Beheer gedeelde mappen"
 
 #: ../../../www/admin/sharedfolder/sf.php:50
 #: ../../../www/admin/sharedfolder/sf.php:57
 msgid "Permission for UID/email/GID"
 msgstr "Toestemming voor UID/e-mail/GID"
+
+#: ../../../www/admin/sharedfolder/sf.php:100
+#, php-format
+msgid "No UID or GID %s"
+msgstr ""
 
 #: ../../../www/admin/sharedfolder/sf.php:119
 msgid "Folder Name"
@@ -1264,9 +1598,19 @@ msgstr "Toestemming voor UID/GID"
 msgid "Add Shared Folder"
 msgstr "Voeg gedeelde map toe"
 
+#: ../../../www/admin/sharedfolder/sf.php:215
+#, fuzzy, php-format
+msgid "LDAP Error: could not rename %1$s to %2$s: %3$s"
+msgstr "LDAP fout: kon naam niet wijzigen"
+
 #: ../../../www/admin/sharedfolder/sf.php:218
 #: ../../../www/admin/sharedfolder/sf.php:227
 msgid "Shared folder updated"
+msgstr "Gedeelde map bijgewerkt"
+
+#: ../../../www/admin/sharedfolder/sf.php:237
+#, fuzzy, php-format
+msgid "Shared folder '%s' added"
 msgstr "Gedeelde map bijgewerkt"
 
 #: ../../../www/admin/sharedfolder/sf.php:249
@@ -1274,42 +1618,92 @@ msgstr "Gedeelde map bijgewerkt"
 msgid "Modify Shared Folder"
 msgstr "Gedeelde map wijzigen"
 
+#: ../../../www/admin/sharedfolder/sf.php:269
+#: ../../../www/admin/sharedfolder/sf.php:284
+#, php-format
+msgid "Error: No results returned for DN %s"
+msgstr ""
+
 #: ../../../www/admin/sharedfolder/sf.php:281
 msgid "Delete Shared Folder"
 msgstr "Gedeelde map verwijderen"
 
 #: ../../../www/admin/sharedfolder/sf.php:290
-msgid "Shared folder "
-msgstr "Gedeelde map"
-
-#: ../../../www/admin/sharedfolder/sf.php:290
-msgid " marked for deletion"
+#, fuzzy, php-format
+msgid "Shared folder %s marked for deletion"
 msgstr "Aangestipt voor verwijdering"
+
+#: ../../../www/admin/sharedfolder/sf.php:294
+#, fuzzy, php-format
+msgid "LDAP Error: Could not mark %s for deletion: %s"
+msgstr "LDAP fout: kon niet verwijderen"
+
+#: ../../../www/admin/user/deliver.php:37
+#, fuzzy
+msgid ""
+"Net/Sieve.php is missing. Without that, filter settings are not available"
+msgstr ""
+"Net/Sieve.php ontbreekt. Vakantie instellingen zijn daardoor niet beschikbaar"
+
+#: ../../../www/admin/user/deliver.php:66
+#: ../../../www/admin/user/forward.php:70
+msgid "Script was:"
+msgstr "Script was:"
+
+#: ../../../www/admin/user/deliver.php:74
+#, fuzzy, php-format
+msgid "Delivery to '%s' successfully activated"
+msgstr "Vakantiemededeling succesvol geactiveerd"
+
+#: ../../../www/admin/user/deliver.php:75
+#, fuzzy, php-format
+msgid "Delivery to '%s' successfully deactivated"
+msgstr "Vakantiemededeling succesvol uitgeschakeld"
 
 #: ../../../www/admin/user/forward.php:38
 #: ../../../www/admin/user/vacation.php:17
-msgid "Net/Sieve.php is missing. Without that, vacation settings are not available"
-msgstr "Net/Sieve.php ontbreekt. Vakantie instellingen zijn daardoor niet beschikbaar"
+msgid ""
+"Net/Sieve.php is missing. Without that, vacation settings are not available"
+msgstr ""
+"Net/Sieve.php ontbreekt. Vakantie instellingen zijn daardoor niet beschikbaar"
 
 #: ../../../www/admin/user/forward.php:64 ../../../www/admin/user/user.php:58
 msgid "Please enter an email address"
 msgstr "Gelieve een e-mailadresin te geven"
 
-#: ../../../www/admin/user/forward.php:70
-msgid "Script was:"
-msgstr "Script was:"
+#: ../../../www/admin/user/forward.php:78
+#, fuzzy, php-format
+msgid "Forwarding to '%s' successfully activated"
+msgstr "Vakantiemededeling succesvol geactiveerd"
 
-#: ../../../www/admin/user/user.php:86
-msgid "Email address "
-msgstr "E-mailadres"
+#: ../../../www/admin/user/forward.php:79
+#, fuzzy, php-format
+msgid "Forwarding to '%s' successfully deactivated"
+msgstr "Vakantiemededeling succesvol uitgeschakeld"
 
-#: ../../../www/admin/user/user.php:86 ../../../www/admin/user/user.php:102
-msgid " collision <br />"
-msgstr "conflict"
+#: ../../../www/admin/user/index.php:95
+#, fuzzy, php-format
+msgid "Manage Email User (%d Users)"
+msgstr "Behher gebruikers e-mails"
+
+#: ../../../www/admin/user/user.php:65
+#, php-format
+msgid "Email address %1$s not in domain %2$s"
+msgstr ""
 
 #: ../../../www/admin/user/user.php:102
 msgid "UID "
 msgstr "UID"
+
+#: ../../../www/admin/user/user.php:117
+#, php-format
+msgid "Delegate %s does not exist"
+msgstr ""
+
+#: ../../../www/admin/user/user.php:130
+#, php-format
+msgid "Illegal user or group %s"
+msgstr ""
 
 #: ../../../www/admin/user/user.php:375
 msgid "Unique Identity (UID)"
@@ -1344,8 +1738,11 @@ msgid "Resource Account"
 msgstr "Hulpbron account"
 
 #: ../../../www/admin/user/user.php:386
-msgid "NOTE: An internal user is a user that will not be visible in the address book"
-msgstr "Opmerking: een interne gebruiker is een gebruiker dit niet zichtbaar zal zijn in het adresboek"
+msgid ""
+"NOTE: An internal user is a user that will not be visible in the address book"
+msgstr ""
+"Opmerking: een interne gebruiker is een gebruiker dit niet zichtbaar zal "
+"zijn in het adresboek"
 
 #: ../../../www/admin/user/user.php:387
 msgid "Invitation Policy"
@@ -1359,7 +1756,9 @@ msgstr "Voor automatische uitnodigingsafhandeling"
 msgid ""
 "NOTE: For regular accounts to use this feature, give the 'calendar' user "
 "access to the Calendar folder"
-msgstr "Opmerking: reguliere accounts die deze functie willen gebruiken, moeten toegang hebben tot de kalendermap"
+msgstr ""
+"Opmerking: reguliere accounts die deze functie willen gebruiken, moeten "
+"toegang hebben tot de kalendermap"
 
 #: ../../../www/admin/user/user.php:394
 msgid "Email Aliases"
@@ -1385,6 +1784,13 @@ msgstr "Free/Busy interval in dagen"
 msgid "Leave blank for default (60 days)"
 msgstr "Laat leeg voor standaard (60 dagen)"
 
+#: ../../../www/admin/user/user.php:469
+#, php-format
+msgid ""
+"Could not read resource encryption public key file://%s/etc/kolab/res_pub."
+"pem: "
+msgstr ""
+
 #: ../../../www/admin/user/user.php:475
 msgid "Could not encrypt password: "
 msgstr "Kon wachtwoord niet versleutelen:"
@@ -1394,13 +1800,40 @@ msgid ""
 "Account DN could not be modified, distribution list <a href='/admin/"
 "distributionlist/list.php?action=modify&dn="
 msgstr ""
-"DN account kon niet gewijzigd worden, distributielijst "
-"<a href='/admin/"
+"DN account kon niet gewijzigd worden, distributielijst <a href='/admin/"
 "distributionlist/list.php?action=modify&dn="
+
+#: ../../../www/admin/user/user.php:572
+#, php-format
+msgid ""
+"'>'%s'</a> depends on it. To modify this account, first remove it from the "
+"distribution list."
+msgstr ""
+
+#: ../../../www/admin/user/user.php:602 ../../../www/admin/user/user.php:606
+#, fuzzy, php-format
+msgid "LDAP Error: Could not rename %1$s to %2$s: %3$s"
+msgstr "LDAP fout: kon naam niet wijzigen"
+
+#: ../../../www/admin/user/user.php:611
+#, fuzzy, php-format
+msgid "LDAP Error: Could not remove old entry %s,%s: %s"
+msgstr "LDAP fout: kon naam niet wijzigen"
+
+#: ../../../www/admin/user/user.php:643 ../../../www/admin/user/user.php:677
+#: ../../../www/admin/user/user.php:690
+#, php-format
+msgid "Mid-air collision detected, alias %1$s renamed to %2$s"
+msgstr ""
 
 #: ../../../www/admin/user/user.php:647 ../../../www/admin/user/user.php:722
 msgid "Modify User"
 msgstr "Gebruiker wijzigen"
+
+#: ../../../www/admin/user/user.php:648
+#, fuzzy, php-format
+msgid "User '%s' successfully modified"
+msgstr "Wijziging succesvol"
 
 #: ../../../www/admin/user/user.php:695
 msgid "User "
@@ -1411,11 +1844,35 @@ msgstr "Gebruiker"
 msgid "Create New User"
 msgstr "Creëer nieuwe gebruiker"
 
-#: ../../../www/admin/user/user.php:728 ../../../www/admin/user/user.php:766
+#: ../../../www/admin/user/user.php:728 ../../../www/admin/user/user.php:774
 msgid "Delete User"
 msgstr "Gebruiker verwijderen"
 
-#: ../../../www/admin/user/user.php:760
+#: ../../../www/admin/user/user.php:753
+#, fuzzy, php-format
+msgid "Account could not be deleted, distribution list '%s' depends on it."
+msgstr ""
+"DN account kon niet gewijzigd worden, distributielijst <a href='/admin/"
+"distributionlist/list.php?action=modify&dn="
+
+#: ../../../www/admin/user/user.php:756
+#, php-format
+msgid "Account removed from distribution list '%s'."
+msgstr ""
+
+#: ../../../www/admin/user/user.php:758
+#, php-format
+msgid ""
+"Failure to remove account from distribution list '%s', account will not be "
+"deleted."
+msgstr ""
+
+#: ../../../www/admin/user/user.php:766
+#, fuzzy, php-format
+msgid "LDAP Error: could not mark '%s' for deletion: %s"
+msgstr "LDAP fout: kon niet verwijderen"
+
+#: ../../../www/admin/user/user.php:768
 msgid "User Deleted"
 msgstr "Gebruiker verwijderd"
 
@@ -1480,6 +1937,47 @@ msgstr "-- \r\n"
 msgid "<enter your name and email address here>"
 msgstr "<vul hier uw naam en e-mailadres in>"
 
+#: ../include/form.class.php:60
+msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
+msgstr "<tr><th>Atribuut</th>"
+
+#: ../include/form.class.php:116
+msgid "Yes"
+msgstr ""
+
+#: ../include/form.class.php:116
+msgid "No"
+msgstr ""
+
+#: ../include/form.class.php:186
+msgid "Always accept"
+msgstr "Altijd accepteren"
+
+#: ../include/form.class.php:187
+msgid "Always reject"
+msgstr "Altijd afwijzen"
+
+#: ../include/form.class.php:188
+msgid "Reject if conflicts"
+msgstr "Afwijzen bij conflicten"
+
+#: ../include/form.class.php:189
+msgid "Manual if conflicts"
+msgstr "Handmatig bij conflicten"
+
+#: ../include/form.class.php:190
+msgid "Manual"
+msgstr "Handmatig"
+
+#: ../include/form.class.php:196 ../include/form.class.php:202
+msgid "Anyone"
+msgstr ""
+
+#: ../include/form.class.php:256
+#, fuzzy, php-format
+msgid "Required field %s is empty"
+msgstr "Vereiste veld"
+
 #: ../include/auth.class.php:40
 msgid "Server error, no ldap object!"
 msgstr "Serverfout, geen LDAP object"
@@ -1492,6 +1990,11 @@ msgstr "Kon geen verbinding maken met LDAP server"
 msgid "Could not bind to LDAP server"
 msgstr "Kon geen verbinding maken met LDAP server"
 
+#: ../include/auth.class.php:70
+#, php-format
+msgid "User class '%s' is denied access"
+msgstr ""
+
 #: ../include/auth.class.php:83 ../include/auth.class.php:87
 msgid "Wrong username or password"
 msgstr "Verkeerde gebruikersnaam of wachtwoord"
@@ -1500,41 +2003,43 @@ msgstr "Verkeerde gebruikersnaam of wachtwoord"
 msgid "Please log in as a valid user"
 msgstr "Gelieve aan te melden als een geldige gebruiker"
 
-#: ../include/form.class.php:60
-msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
-msgstr "<tr><th>Atribuut</th>"
-
-#: ../include/form.class.php:179
-msgid "Always accept"
-msgstr "Altijd accepteren"
-
-#: ../include/form.class.php:180
-msgid "Always reject"
-msgstr "Altijd afwijzen"
-
-#: ../include/form.class.php:181
-msgid "Reject if conflicts"
-msgstr "Afwijzen bij conflicten"
-
-#: ../include/form.class.php:182
-msgid "Manual if conflicts"
-msgstr "Handmatig bij conflicten"
-
-#: ../include/form.class.php:183
-msgid "Manual"
-msgstr "Handmatig"
-
-#: ../include/form.class.php:229
-msgid "Required field "
-msgstr "Vereiste veld"
-
-#: ../include/form.class.php:229
-msgid " is empty"
-msgstr " is leeg"
-
 #: ../include/ldap.class.php:53
-msgid "Error setting LDAP protocol to v3. Please contact your system administrator"
-msgstr "Fout met instelling LDAP protocol to v3. Gelieve contact op te nemen met uw systeembeheerder "
+msgid ""
+"Error setting LDAP protocol to v3. Please contact your system administrator"
+msgstr ""
+"Fout met instelling LDAP protocol to v3. Gelieve contact op te nemen met uw "
+"systeembeheerder "
+
+#: ../include/ldap.class.php:188 ../include/ldap.class.php:218
+#, php-format
+msgid "No such object %s"
+msgstr ""
+
+#: ../include/ldap.class.php:191 ../include/ldap.class.php:221
+#: ../include/ldap.class.php:251
+#, php-format
+msgid "LDAP Error searching for DN %s: %s"
+msgstr ""
+
+#: ../include/ldap.class.php:204
+#, php-format
+msgid "Error searching for DN for UID=%s"
+msgstr ""
+
+#: ../include/ldap.class.php:234
+#, php-format
+msgid "Error searching for DN for Mail=%s"
+msgstr ""
+
+#: ../include/ldap.class.php:264
+#, php-format
+msgid "Error searching for DN for alias=%s: %s"
+msgstr ""
+
+#: ../include/ldap.class.php:277
+#, php-format
+msgid "Error searching for DN for mail_or_alias=%s: %s"
+msgstr ""
 
 #: ../include/ldap.class.php:308
 msgid "LDAP Error: Can't read maintainers group: "
@@ -1640,3 +2145,17 @@ msgstr "KDE1"
 msgid "<b>Versions</b>"
 msgstr "<b>Versies</b>"
 
+#~ msgid "Distribution List "
+#~ msgstr "Distributielijst"
+
+#~ msgid " deleted"
+#~ msgstr "verwijderd"
+
+#~ msgid "Shared folder "
+#~ msgstr "Gedeelde map"
+
+#~ msgid " is empty"
+#~ msgstr " is leeg"
+
+#~ msgid "Enable MX lookup for relayhost (if in doubt, leave it off)"
+#~ msgstr "Activeer de MX controle voor de relayhost (bij twijfel, leeg laten)"

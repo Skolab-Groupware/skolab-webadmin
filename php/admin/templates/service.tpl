@@ -85,11 +85,9 @@
 <br />
 <h2>{tr msg="SMTP \"smarthost/relayhost\""}</h2>
 <div class="contentform">
-<form name="postfixrelayhost" method="post">
-{tr msg="Smarthost to use to send outgoing mail (host.domain.tld). Leave empty for no relayhost."}
-<input type="text" name="postfixrelayhost" size="80"  value="{$postfixrelayhost}" /><br/>
-<input type="checkbox" name="postfixrelayhostmx" {if $postfixrelayhostmx == 'true' }checked{/if} />
-{tr msg="Enable MX lookup for relayhost (if in doubt, leave it off)"}
+<form name="postfixrelayhostform" method="post">
+{tr msg="Smarthost (and optional port) to use to send outgoing mail (host.domain.tld). Leave empty for no relayhost."}
+<input type="text" name="postfixrelayhost" size="40"  value="{$postfixrelayhost}" /><br/>
 <div align="right"><input type="submit" name="submitpostfixrelayhost" value="{tr msg="Update"}" /></div>
 </form>
 </div>

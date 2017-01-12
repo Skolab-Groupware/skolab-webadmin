@@ -185,10 +185,10 @@ class KolabLDAP {
 	  if( $entries['count'] == 1 ) {
 		return $entries[0]['uid'][0];
 	  } else {
-		$errors[] = _("No such object $dn");
+		$errors[] = sprintf(_("No such object %s"), $dn);
 	  }
 	} else {
-	  $errors[] = _("LDAP Error searching for DN $dn: ").ldap_error($this->connection);
+	  $errors[] = sprintf(_("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection) );
 	}
     return false;	
   }
@@ -201,7 +201,7 @@ class KolabLDAP {
 	return ldap_get_dn( $this->connection, $entry );
       }
     } else {
-      echo _("Error searching for DN for UID=$uid");
+      echo sprintf( _("Error searching for DN for UID=%s"), $uid);
     }
     return false;
   }
@@ -215,10 +215,10 @@ class KolabLDAP {
       if( $entries['count'] == 1 ) {
         return $entries[0]['mail'][0]; 
       } else {
-        $errors[] = _("No such object $dn"); 
+        $errors[] = sprintf(_("No such object %s"), $dn); 
       } 
     } else {
-      $errors[] = _("LDAP Error searching for DN $dn: ").ldap_error($this->connection);
+      $errors[] = sprintf( _("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection) );
     }
     return false;
   }
@@ -231,7 +231,7 @@ class KolabLDAP {
         return ldap_get_dn( $this->connection, $entry );
       }
     } else {
-      echo _("Error searching for DN for Mail=$mail");
+      echo sprintf( _("Error searching for DN for Mail=%s"), $mail);
     }
     return false;
   }
@@ -248,7 +248,7 @@ class KolabLDAP {
         $errors[] = _("No such object $dn");
       }
     } else {
-      $errors[] = _("LDAP Error searching for DN $dn: ").ldap_error($this->connection);
+      $errors[] = sprintf( _("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection) );
     }
     return false;
   }
@@ -261,7 +261,7 @@ class KolabLDAP {
         return ldap_get_dn( $this->connection, $entry );
       }
     } else {
-      $errors[] = _("Error searching for DN for alias=$mail: ").ldap_error($this->connection);
+      $errors[] = sprintf( _("Error searching for DN for alias=%s: %s"), $mail, ldap_error($this->connection));
     }
     return false;
   }
@@ -274,7 +274,7 @@ class KolabLDAP {
         return ldap_get_dn( $this->connection, $entry );
       }
     } else {
-      $errors[] = _("Error searching for DN for mail_or_alias=$mail: ").ldap_error($this->connection);
+      $errors[] = sprintf(_("Error searching for DN for mail_or_alias=%s: %s"), $mail, ldap_error($this->connection));
     }
     return false;
   }
@@ -306,7 +306,7 @@ class KolabLDAP {
     $res = ldap_search( $this->connection, $mybase, $filter, array('member') );
     if( !$res ) {
       array_push($errors, _("LDAP Error: Can't read maintainers group: ")
-				 .ldap_error($conn) );	
+				 .ldap_error($conn) );
       return array();
     }
     $entries = ldap_get_entries( $this->connection, $res );

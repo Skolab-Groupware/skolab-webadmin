@@ -75,8 +75,8 @@ if( !$errors ) {
 	  }
 
 	  if( !$errors ) {
-		if( $active ) $messages[] = _("Forwarding to '$address' successfully activated");
-		else $messages[] =  _("Forwarding to '$address' successfully deactivated");
+		if( $active ) $messages[] = sprintf( _("Forwarding to '%s' successfully activated"), $address );
+		else $messages[] =  sprintf( _("Forwarding to '%s' successfully deactivated"), $address );
 	  }
 	}
   }

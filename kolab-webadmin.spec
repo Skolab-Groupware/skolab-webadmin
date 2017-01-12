@@ -32,7 +32,7 @@ Class:        JUNK
 Group:        Mail
 License:      GPL
 Version:      0.4.0
-Release:      20050831
+Release:      20060810
 
 
 #   list of sources

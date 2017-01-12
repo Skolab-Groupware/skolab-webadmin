@@ -67,7 +67,7 @@ class KolabAuth {
 					$auth_group = $ldap->groupForUid( $auth_user );
 					$tmp_group = ($auth_user=='manager')?'manager':$auth_group;
 					if( !in_array( $tmp_group, $this->params['allow_user_classes'] ) ) {
-						$this->error_string = _("User class '$tmp_group' is denied access");
+					    $this->error_string = sprintf(_("User class '%s' is denied access"), $tmp_group);
 						$this->gotoLoginPage();					  
 					}
 					$bind_result = $ldap->bind( $dn, $_POST['password'] );

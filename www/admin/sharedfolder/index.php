@@ -36,7 +36,7 @@ if( !$errors ) {
   $result = ldap_search($ldap->connection, $base_dn, $filter);
   if( $result ) {
 	$count = ldap_count_entries($ldap->connection, $result);
-	$title = _("Manage Shared Folders ($count Folders)");
+	$title = sprintf( _("Manage Shared Folders (%d Folders)"), $count );
 	$template = 'sflistall.tpl';
 	ldap_sort($ldap->connection,$result,'cn');
 	$entry = ldap_first_entry($ldap->connection, $result);

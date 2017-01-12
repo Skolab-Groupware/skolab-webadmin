@@ -139,7 +139,7 @@ if( $action == 'modify' || $action == 'delete' || $action == 'save' || $action =
   if( $_REQUEST['dn'] ) {
 	$dn = $_REQUEST['dn'];
   } else {  
-	array_push($errors, _("Error: DN required for $action operation") );
+	array_push($errors, sprintf(_("Error: DN required for %s operation"), $action ) );
   }
 }
 
@@ -188,25 +188,38 @@ if( !$errors ) {
 			else $newdn = $dn;
 			debug("action=save, dn=$dn, newdn=$newdn<br/>\n");
 			if (strcmp($dn,$newdn) != 0) {
-			  if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
-				  ($entry=ldap_first_entry($ldap->connection,$result)) &&
-				  ($oldattrs=ldap_get_attributes($ldap->connection,$entry))) {
-				foreach( $ldap_object as $k => $v ) if( $v == array() ) unset( $ldap_object[$k] );
-				if (!ldap_add($ldap->connection,$newdn, $ldap_object) || !ldap_delete($ldap->connection,$dn)) {
-				  array_push($errors, _("LDAP Error: could not rename ").$dn.
-							 " to ".$newdn." ".ldap_error($ldap->connection));
+			  // Check for distribution lists with this entry as member
+			  $ldap->search( $_SESSION['base_dn'], 
+							 '(&(objectClass=kolabGroupOfNames)(!(kolabDeleteFlag=*))(member='.$ldap->escape($dn).'))',
+							 array( 'dn', 'mail' ) );
+			  $distlists = $ldap->getEntries();
+			  unset( $distlists['count'] );
+			  foreach( $distlists as $distlist ) {
+				$dlcn = $distlist['mail'][0];
+				$errors[] = sprintf(_("Addressbook entry DN could not be modified, distribution list <a href='/admin/distributionlist/list.php?action=modify&dn=%s'>'%s'</a> depends on it. To modify this entry, first remove it from the distribution list."), urlencode($distlist['dn']), $dlcn );
+			  }
+
+			  if( !$errors ) {
+				if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
+					($entry=ldap_first_entry($ldap->connection,$result)) &&
+					($oldattrs=ldap_get_attributes($ldap->connection,$entry))) {
+				  foreach( $ldap_object as $k => $v ) if( $v == array() ) unset( $ldap_object[$k] );
+				  if (!ldap_add($ldap->connection,$newdn, $ldap_object) || !ldap_delete($ldap->connection,$dn)) {
+					array_push($errors, _("LDAP Error: could not rename ").$dn.
+							   " to ".$newdn." ".ldap_error($ldap->connection));
+				  } else {
+					$messages[] = sprintf(_("%s successfully updated"), $newdn);
+				  }
+				  $dn = $newdn;
 				} else {
-				  $messages[] = _("$newdn successfully updated");
+				  array_push($errors,_("LDAP Error: could not read ").$dn.": ".ldap_error($ldap->connection));
 				}
-				$dn = $newdn;
-			  } else {
-				array_push($errors,_("LDAP Error: could not read ").$dn." ".ldap_error($ldap->connection));
 			  }
 			} else {
 			  if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
 				array_push($errors, _("LDAP Error: could not modify object ").$dn.": ".ldap_error($ldap->connection)); 
 			  } else {
-				$messages[] = _("$dn successfully updated");
+				$messages[] = sprintf(_("%s successfully updated"), $dn);
 			  }
 			}
 		  } 
@@ -217,7 +230,7 @@ if( !$errors ) {
 			if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) {
 			  array_push($errors, _("LDAP Error: could not add object ").$dn.": ".ldap_error($ldap->connection));
 			} else {
-				  $messages[] = _("$dn successfully added");
+			  $messages[] = sprintf(_("%s successfully added"), $dn);
 			}
 		  }
 		  if ($errors) {
@@ -238,20 +251,17 @@ if( !$errors ) {
 	}
 	break;
   case 'modify':
-	$result = $ldap->search( $dn, '(objectClass=inetOrgPerson)' );
-	if( $result ) {
-	  $ldap_object = ldap_get_entries( $ldap->connection, $result );
-	  if( $ldap_object['count'] == 1 ) {
-		fill_form_for_modify( $form, $ldap_object[0] );
-		$form->entries['action']['value'] = 'save';
-		$form->entries['dn'] = array( 'name' => 'dn',
-									  'type' => 'hidden',
-									  'value' => $dn );
-		$heading = _('Modify External Address'); 
-		$content = $form->outputForm();
-	  } else {
-		array_push($errors, _("Error: Multiple results returned for DN $dn") );
-	  }
+	$ldap_object = $ldap->read( $dn );
+	if( $ldap_object ) {
+	  fill_form_for_modify( $form, $ldap_object );
+	  $form->entries['action']['value'] = 'save';
+	  $form->entries['dn'] = array( 'name' => 'dn',
+									'type' => 'hidden',
+									'value' => $dn );
+	  $heading = _('Modify External Address'); 
+	  $content = $form->outputForm();
+	} else {
+	  array_push($errors, sprintf(_("Error: No entry with DN %s found"), $dn) );
 	}
 	break;
   case 'delete':
@@ -260,30 +270,52 @@ if( !$errors ) {
 		$form->entries[$k]['attrs'] = 'readonly';
 	  }
 	}
-	$result = $ldap->search( $dn, '(objectClass=*)' );
-	if( $result ) {
-	  $ldap_object = ldap_get_entries( $ldap->connection, $result );
-	  if( $ldap_object['count'] == 1 ) {
-		fill_form_for_modify( $form, $ldap_object[0] );
-		$form->entries['action']['value'] = 'kill';
-		foreach( array_keys($form->entries) as $key ) {
-		  $form->entries[$key]['attrs'] = 'readonly';
-		}
-		$form->submittext = _('Delete');
-		$heading = _('Delete External Address');
-		$content = $form->outputForm();
-	  } else {
-		array_push($errors, _("Error: Multiple results returned for DN $dn") );
+	$ldap_object = $ldap->read($dn);
+	if( $ldap_object ) {
+	  fill_form_for_modify( $form, $ldap_object );
+	  $form->entries['action']['value'] = 'kill';
+	  foreach( array_keys($form->entries) as $key ) {
+		$form->entries[$key]['attrs'] = 'readonly';
 	  }
+	  $form->submittext = _('Delete');
+	  $heading = _('Delete External Address');
+	  $content = $form->outputForm();
+	} else {
+	  array_push($errors, sprintf(_("Error: No entry with DN %s found"), $dn) );
 	}
 	break;
   case 'kill':
+	// Check for distribution lists with only this user as member
+	$ldap->search( $_SESSION['base_dn'],
+				   '(&(objectClass=kolabGroupOfNames)(member='.$ldap->escape($dn).'))',
+				   array( 'dn', 'cn', 'mail', 'member' ) );
+	$distlists = $ldap->getEntries();
+	unset($distlists['count']);
+	foreach( $distlists as $distlist ) {
+	  $dlmail = $distlist['mail'][0];
+	  if( !$dlmail ) $dlmail = $distlist['cn'][0]; # Compatibility with old stuff
+	  if( $distlist['member']['count'] == 1 ) {
+		$errors[] = sprintf(_("Account could not be deleted, distribution list '%s' depends on it."), $dlmail);
+	  }
+	}
+	if( !$errors ) foreach( $distlists as $distlist ) {
+	  $dlmail = $distlist['mail'][0];
+	  if( !$dlmail ) $dlmail = $distlist['cn'][0]; # Compatibility with old stuff
+	  if( ldap_mod_del( $ldap->connection, $distlist['dn'], array('member' => $dn ) ) ) {
+		$messages[] = sprintf(_("Addressbook entry removed from distribution list '%s'."), $dlmail);
+	  } else {
+		$errors[] = sprintf(_("Failure to remove addressbook entry from distribution list '%s', entry will not be deleted."),
+							$dlmail);
+		break;
+	  }
+	}
+	
 	if (!$errors) {    
 	  if (!($ldap->deleteObject($dn))) {
 		array_push($errors, _("LDAP Error: could not delete ").$dn.": ".ldap_error($ldap->connection));
 	  } else {
 		$heading = _('Entry Deleted');
-		$messages[] = _("Address book entry with DN $dn  was deleted");
+		$messages[] = sprintf(_("Address book entry with DN %s was deleted"), $dn);
 		$contenttemplate = 'addrdeleted.tpl';
 	  }
 	}
