@@ -1,40 +1,43 @@
 AC_PREREQ(2.57)
 
-m4_define(_VERSION,0.4.0)
+m4_define(_VERSION,2.1.0)
 AC_INIT([kolab-webadmin],[_VERSION],[kolab-devel@kolab.org])
 AC_CONFIG_SRCDIR(php/admin/include/ldap.class.php)
 AC_CONFIG_AUX_DIR(.)
 
-AM_INIT_AUTOMAKE([gnu] [1.7] [dist-bzip2])
+AM_INIT_AUTOMAKE([gnu] [1.7] [dist-bzip2] [no-dist-gzip])
 AC_PREFIX_DEFAULT([/usr])
 
-AC_ARG_ENABLE([dist],
-  [AC_HELP_STRING([--enable-dist=DIST],
+AC_ARG_WITH([dist],
+  [AC_HELP_STRING([--with-dist=DIST],
     [distribution target (default: openpkg)])],
-  [distribution=dist_conf/$enable_dist],
-  [distribution=dist_conf/kolab])
+  [distribution=$srcdir/dist_conf/$withval],
+  [distribution=$srcdir/dist_conf/kolab])
+
+AS_IF([test -f $distribution],,
+	AC_MSG_ERROR([incorrect value for --with-dist: $withval])
+)
 AC_SUBST_FILE(distribution)
 
-AC_ARG_ENABLE([wsdocrootdir],
-  [AC_HELP_STRING([--enable-wsdocrootdir=DIR],
-    [The webserver document root (default: LOCALSTATEDIR/kolab/www)])],
-  [wsdocrootdir="$enable_wsdocrootdir"],
-  [wsdocrootdir="\$(localstatedir)/kolab/www"])
-AC_SUBST(wsdocrootdir)
+common=dist_conf/common
+AC_SUBST_FILE(common)
 
-AC_ARG_ENABLE([phpdir],
-  [AC_HELP_STRING([--enable-phpdir=DIR],
-    [The webserver document root (default: LOCALSTATEDIR/kolab/php)])],
-  [phpdir="$enable_phpdir"],
-  [phpdir="\$(localstatedir)/kolab/php"])
-AC_SUBST(phpdir)
+AC_ARG_WITH([openpkg],
+  [AC_HELP_STRING([--with-openpkg],
+    [Special Files for the openpkg platform])],
+  [case "${withval}" in
+    yes) openpkg=true ;;
+	 no)  openpkg=false ;;
+	 *)   AC_MSG_ERROR(bad value ${withval} for --with-openpkg) ;;
+  esac],[openpkg=true])
+AM_CONDITIONAL(OPENPKG, test x$openpkg = xtrue)
 
-AC_ARG_ENABLE([pkgdocdir],
-  [AC_HELP_STRING([--enable-pkgdocdir=DIR],
-    [where to install the documentation (default: DATADIR/doc)])],
-  [pkgdocdir="$enable_pkgdocdir"],
-  [pkgdocdir="\$(datadir)/doc/${PACKAGE}"])
-AC_SUBST(pkgdocdir)
+if test "x$openpkg" = "xtrue"; then
+  WITHOPENPKG=yes
+else
+  WITHOPENPKG=no
+fi
+AC_SUBST(WITHOPENPKG)
 
 # Checks for libraries.
 

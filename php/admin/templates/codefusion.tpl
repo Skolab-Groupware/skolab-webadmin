@@ -21,7 +21,7 @@
 </p>
 
 <p>
-Stephan Buys <a href="mailto:s.buys@codefusion.co.za">s.buys@codefusion.co.za</a><br>
+Stephan Buys<br>
 </p>
 
 </div>

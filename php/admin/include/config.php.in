@@ -18,10 +18,10 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-$topdir = '/admin';
+$topdir = '/@kolab_php_module_prefix@admin';
 $kolab_prefix = '@prefix@';
-$php_dir      = '@phpdir@';
-$locale_dir   = "$php_dir/admin/locale/";
+$php_dir      = '@phplibdir2@';
+$locale_dir   = "$php_dir/@kolab_php_module_prefix@admin/locale/";
 
 /*
   Local variables:

@@ -1,6 +1,6 @@
 <?php
 /*
- *  Copyright (c) 2004 Klarälvdalens Datakonsult AB
+ *  Copyright (c) 2004,2005 Klarälvdalens Datakonsult AB
  *
  *    Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
  *
@@ -45,6 +45,7 @@ class KolabLDAP {
     $this->is_bound = false;
     $this->bind_dn = false;
     $this->search_result = false;
+	$this->cached_domains = false;
 	// Always connect to master server
     $this->connection=ldap_connect($_SESSION['ldap_master_uri']);
 	if (ldap_set_option($this->connection, LDAP_OPT_PROTOCOL_VERSION, 3)) {
@@ -128,19 +129,14 @@ class KolabLDAP {
   function read( $dn ) {
     $result = ldap_read($this->connection, $dn, "(objectclass=*)");
     if( !$result ) {
-      print $this->error();
       return false;
     }
     $entry = ldap_first_entry($this->connection,$result);
     if( !$entry ) {
-      print $this->error();
       ldap_free_result($result);
       return false;
     }
     $ldap_object = ldap_get_attributes($this->connection,$entry);
-    if( !$ldap_object ) {
-      print $this->error();
-    }
     ldap_free_result($result);
     return $ldap_object;
   }
@@ -185,10 +181,10 @@ class KolabLDAP {
 	  if( $entries['count'] == 1 ) {
 		return $entries[0]['uid'][0];
 	  } else {
-		$errors[] = sprintf(_("No such object %s"), $dn);
+		$errors[] = sprintf( _("No such object %s"), $dn );
 	  }
 	} else {
-	  $errors[] = sprintf(_("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection) );
+	  $errors[] = sprintf( _("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection));
 	}
     return false;	
   }
@@ -201,7 +197,7 @@ class KolabLDAP {
 	return ldap_get_dn( $this->connection, $entry );
       }
     } else {
-      echo sprintf( _("Error searching for DN for UID=%s"), $uid);
+      echo sprintf( _("Error searching for DN for UID=%s"), $uid );
     }
     return false;
   }
@@ -215,10 +211,10 @@ class KolabLDAP {
       if( $entries['count'] == 1 ) {
         return $entries[0]['mail'][0]; 
       } else {
-        $errors[] = sprintf(_("No such object %s"), $dn); 
+        $errors[] = sprintf( _("No such object %s"), $dn);
       } 
     } else {
-      $errors[] = sprintf( _("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection) );
+      $errors[] = sprintf(_("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection));
     }
     return false;
   }
@@ -245,7 +241,7 @@ class KolabLDAP {
       if( $entries['count'] == 1 ) {
         return $entries[0]['alias'][0];
       } else {
-        $errors[] = _("No such object $dn");
+        $errors[] = sprintf( _("No such object %s"), $dn);
       }
     } else {
       $errors[] = sprintf( _("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection) );
@@ -274,7 +270,7 @@ class KolabLDAP {
         return ldap_get_dn( $this->connection, $entry );
       }
     } else {
-      $errors[] = sprintf(_("Error searching for DN for mail_or_alias=%s: %s"), $mail, ldap_error($this->connection));
+      $errors[] = sprintf( _("Error searching for DN for mail or alias %s: %s"), $mail, ldap_error($this->connection));
     }
     return false;
   }
@@ -288,13 +284,45 @@ class KolabLDAP {
     if ($dn) {
       $group = 'user';
       $filter = '(member='.$this->escape($dn).')';
+      $result = $this->search( 'cn=domain-maintainer,cn=internal,'.$_SESSION['base_dn'], $filter);	  
+      if (ldap_count_entries($this->connection, $result) > 0) $group = 'domain-maintainer';	  
       $result = $this->search( 'cn=maintainer,cn=internal,'.$_SESSION['base_dn'], $filter);
       if (ldap_count_entries($this->connection, $result) > 0) $group = 'maintainer';
       $result = $this->search( 'cn=admin,cn=internal,'.$_SESSION["base_dn"], $filter);
       if (ldap_count_entries($this->connection, $result) > 0) $group = 'admin';
       if ($result) $this->freeSearchResult();
     }
+	debug("groupForUid( $uid) = $group");
     return $group;
+  }
+
+  function domainsForMaintainerDn( $dn ) {
+    if( !$this->is_bound ) {
+      return false;
+    }
+	debug("\tdn=$dn");
+	$domains = array();
+	$filter = '(member='.$this->escape($dn).')';
+	debug("filter:$filter");
+	$result = $this->search( 'cn=domains,cn=internal,'.$_SESSION['base_dn'], $filter);	  
+	$entries = $this->getEntries();
+	unset($entries['count']);
+	if( count($entries) > 0) {
+	  foreach( $entries as $val ) {
+		debug("\tdomain=".$val['cn'][0]);
+		$domains[] = $val['cn'][0];
+	  }
+	}
+	return $domains;
+  }
+
+  function domainsForMaintainerUid( $uid ) {
+	debug("domainsForMaintainer( $uid ):");
+    $dn = $this->dnForUid($uid);
+	if($dn) {
+	  return $this->domainsForMaintainerDn($dn);
+	}
+	return false;
   }
 
   // Get members of a group as an array of DNs
@@ -306,7 +334,7 @@ class KolabLDAP {
     $res = ldap_search( $this->connection, $mybase, $filter, array('member') );
     if( !$res ) {
       array_push($errors, _("LDAP Error: Can't read maintainers group: ")
-				 .ldap_error($conn) );
+				 .ldap_error($conn) );	
       return array();
     }
     $entries = ldap_get_entries( $this->connection, $res );
@@ -374,6 +402,66 @@ class KolabLDAP {
 	return $count;
   }
 
+  function domains( $reload = false ) {
+	if( $reload || !$this->cached_domains ) {
+	  $kolab_obj = $this->read( 'k=kolab,'.$_SESSION['base_dn'] );
+	  if( !$kolab_obj ) return false;
+	  $this->cached_domains = $kolab_obj['postfix-mydestination'];
+	  unset($this->cached_domains['count']);
+	  debug("loading domains");
+	}
+	debug("ldap->domains() returns ".join(", ", $this->cached_domains));
+	return $this->cached_domains;
+  }
+
+  function addToDomainGroups( $member, $domains ) {
+	foreach( $domains as $domain ) {
+	  $domgrpdn = 'cn='.$this->dn_escape($domain).',cn=domains,cn=internal,'.$_SESSION['base_dn'];
+	  $dom_obj = $this->read( $domgrpdn );	  
+	  if( !$dom_obj ) {
+		debug("+Adding group $domgrpdn with member $member");
+		if( !ldap_add($this->connection, $domgrpdn, 
+					  array( 'objectClass' => array('top', 'kolabGroupOfNames'),
+							 'cn' => $domain,
+							 'member' => $member ) ) ) {
+		  debug("Error adding domain group: ".ldap_error($this->connection));
+		  return false;
+		}
+	  } else {
+		if( !in_array( $member, $dom_obj['member'] ) ) {
+		  debug("+Adding member $member to $domgrpdn");
+		  if( !ldap_mod_add( $this->connection, $domgrpdn, array( 'member' => $member ) ) ) {
+			debug("Error adding $member to domain $domgrpdn: ".ldap_error($this->connection));
+			return false;
+		  }
+		}
+	  }
+	}
+	return true;
+  }
+
+  function removeFromDomainGroups( $member, $domains ) {
+	foreach( $domains as $domain ) {
+	  $domgrpdn = 'cn='.$this->dn_escape($domain).',cn=domains,cn=internal,'.$_SESSION['base_dn'];
+	  $dom_obj = $this->read( $domgrpdn );
+	  if( $dom_obj ) {
+		if( count( $dom_obj['member'] == 1 ) ) {
+		  debug("-Removing group $domgrpdn");
+		  if( !ldap_delete( $this->connection, $domgrpdn ) ) {
+			debug("Error deleting domain group $domgrpdn: ".ldap_error($this->connection));
+			return false;			
+		  }
+		} else {
+		  debug("-Removing member $member from group $domgrpdn");
+		  if( !ldap_mod_del( $this->connection, $domgrpdn, array( 'member' => $member ) ) ) {
+			debug("Error deleting $member from domain $domgrpdn: ".ldap_error($this->connection));
+			return false;
+		  }  
+		}
+	  }
+	}	
+  }
+
   // Set deleflag on object, or if $delete_now is
   // true, just delete it
   function deleteObject( $dn, $delete_now = false ) {
@@ -417,6 +505,7 @@ class KolabLDAP {
   var $is_bound;
   var $bind_dn;
   var $search_result;
+  var $cached_domains;
 };
 
 $ldap =& new KolabLDAP;

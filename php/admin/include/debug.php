@@ -28,7 +28,7 @@ function debug($str) {
 function debug_var_dump($var) {
     #print '<pre>';
     #var_dump($var);
-    #print '</pre>';
+	#print '</pre>';
 }
 function backtrace() {
 	$debug_array = debug_backtrace();

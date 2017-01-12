@@ -84,6 +84,11 @@ a:hover { color: #113399; }
 }
 .submenuitemselected {   
 }
+.alphagroupitem { 
+}
+.alphagroupitemselected { 
+  font-weight:bold
+}
 #logout { 
   color: red;
 }
@@ -182,4 +187,14 @@ th {
   background-color: #E0E3E0;
   border: solid 1px black;  
   padding: .2em .5em .2em .5em; 
+}
+
+.required_asterisk { 
+  color: red;
+  font-size: 80%;
+  text-align: right;
+}
+
+label {
+  cursor: pointer;
 }

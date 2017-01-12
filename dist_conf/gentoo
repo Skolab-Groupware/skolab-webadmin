@@ -1,0 +1,308 @@
+sysrundir=${localstatedir}/run
+logdir=${localstatedir}/log
+statelibdir=${localstatedir}/lib
+wwwdir=${localstatedir}/www
+
+# @l_nusr@
+kolab_usr=kolab-n
+# @l_ngrp@
+kolab_grp=kolab-n
+# @l_musr@
+kolab_musr=kolab
+# @l_mgrp@
+kolab_mgrp=kolab
+# @l_nuid@
+kolab_uid=1002
+# @l_ngid@
+kolab_gid=1002
+# @l_rusr@
+kolab_rusr=kolab-r
+# @l_rgrp@
+kolab_rgrp=kolab-r
+# @l_susr@
+kolab_susr=root
+
+# Access to ssl certs
+pki_grp=${kolab_rgrp}
+
+BASHELL=/bin/bash
+PERL=${bindir}/perl
+PHP=${bindir}/php
+
+# FIXME: This could be used to provide an external wrapper for the 
+#        rc scripts rather than patching the code
+KOLABRC=${bindir}/openpkg
+
+RPM=${KOLABRC} rpm
+TAR=/bin/tar
+
+# Define the deamons that are executed with openpkg rc
+LDAPD=openldap
+
+kolab_rcdir=${sysconfdir}/rc.d
+# FIXME: Would be nice if we could specify the doc-dir from the outside too.
+#        But currently the Makefile.am automatically adds the plain package name
+pkgdocdir=${datadir}/doc
+
+fsl_logfile=${localstatedir}/fsl/fsl.log
+
+#####################################################################
+# Clamav parameters
+
+### -> users
+
+clamav_rusr=${amavisd_rusr}
+clamav_usr=root
+clamav_grp=root
+
+### -> files
+
+clamav_confdir=${sysconfdir}
+clamav_statedir=${statelibdir}/clamav
+clamav_datadir=${clamav_statedir}
+clamav_socket=${amavisd_home}/clamd.sock
+clamav_logfile=${logdir}/clamav/clamd.log
+clamav_pidfile=${amavisd_home}/clamd.pid
+freshclam_logfile=${logdir}/clamav/freshclam.log
+freshclam_pidfile=${sysrundir}/clamav/freshclam.pid
+
+#--------------------------------------------------------------------
+
+#####################################################################
+# Amavis parameters
+
+### -> users
+
+amavisd_rusr=amavis
+amavisd_usr=root
+amavisd_grp=amavis
+
+### -> files
+
+amavisd_confdir=${sysconfdir}
+amavisd_conffile=${sysconfdir}/amavisd.conf
+amavisd_templatedir=${sysconfdir}/amavisd/templates
+amavisd_logfile=${logdir}/amavis.log
+amavisd_home=${localstatedir}/amavis
+
+#--------------------------------------------------------------------
+
+#####################################################################
+# Postfix parameters
+
+### -> users
+
+emailserver_usr=root
+emailserver_grp=root
+emailserver_mail_owner=postfix
+emailserver_setgid_grp=postdrop
+emailserver_master_usr=${kolab_grp}
+emailserver_default_privs=nobody
+emailserver_tables_usr=root
+
+### -> files
+
+emailserver_localstatedir=${localstatedir}/spool/postfix
+emailserver_confdir=${sysconfdir}/postfix
+emailserver_socket=${imap_statedir}/socket/lmtp
+emailserver_logfile=${emailserver_localstatedir}/log/postfix.log
+aliases_file=${sysconfdir}/mail/aliases
+
+#--------------------------------------------------------------------
+
+#####################################################################
+# Sasl parameters
+
+### -> files
+
+sasl_authdconffile=${sysconfdir}/sasl2/saslauthd.conf
+sasl_smtpconffile=${sysconfdir}/sasl2/smtpd.conf
+sasl_logfile=${localstatedir}/log/saslauthd.log
+
+#--------------------------------------------------------------------
+
+#####################################################################
+# Are these needed?
+
+emailscan_usr=kolab-r
+emailscan_grp=kolab-r
+
+#####################################################################
+# Imapd parameters
+
+### -> users
+
+imap_usr=cyrus
+imap_grp=mail
+
+### -> files
+
+imap_confperm=0644
+imap_confdir=${sysconfdir}
+imap_statedir=${localstatedir}/imap
+
+imap_masterlogfile=${imap_statedir}/log/master.log
+imap_misclogfile=${imap_statedir}/log/misc.log
+imap_spool=${localstatedir}/spool/imap
+imap_sievedir=${imap_statedir}/sieve
+imap_notify_socket=${imap_statedir}/socket/notify
+
+#####################################################################
+# Proftpd parameters
+
+### -> users
+
+ftpserver_musr=kolab
+ftpserver_usr=nobody
+ftpserver_grp=nobody
+# Why hardcoded uid/gid???
+ftpserver_uid=65534
+ftpserver_gid=65534
+
+### -> files
+
+ftpserver_scoreboardfile=${sysrundir}/proftpd/score
+ftpserver_logfile=${logdir}/proftpd.log
+ftpserver_confdir=${sysconfdir}/proftpd
+ftpserver_pidfile=${sysrundir}/proftpd/proftpd.pid
+
+#--------------------------------------------------------------------
+
+#####################################################################
+# LDAP parameters
+
+### -> users
+
+ldapserver_rusr=ldap
+ldapserver_usr=root
+ldapserver_grp=ldap
+ldapserver_rgrp=kolab-r
+
+### -> config files
+
+ldapserver_confdir=${sysconfdir}/openldap
+ldapserver_schemadir=${ldapserver_confdir}/schema
+
+### -> state files
+
+ldapserver_statedir=${statelibdir}/openldap
+ldapserver_dir=${statelibdir}/openldap-data
+
+### -> log files
+
+ldapserver_logfile=${logdir}/openldap.log
+
+### -> runtime files
+
+ldapserver_rundir=${localstatedir}/run/openldap
+
+ldapserver_pidfile=${ldapserver_rundir}/slapd.pid
+ldapserverslurpd_pidfile=${ldapserver_rundir}/slurpd.pid
+ldapserver_argsfile=${ldapserver_rundir}/slapd.args
+ldapserver_replogfile=${ldapserver_rundir}/replog
+
+#--------------------------------------------------------------------
+
+#####################################################################
+# Apache parameters
+
+### -> users
+
+webserver_musr=apache
+webserver_usr=apache
+webserver_grp=apache
+
+webserver_confdir=${sysconfdir}/apache2
+webserver_logdir=${logdir}/apache2
+webserver_errorlogfile=${webserver_logdir}/apache-error.log
+webserver_accesslogfile=${webserver_logdir}/apache-access.log
+webserver_acceptlock=${webserver_logdir}/accept.lock
+webserver_runtime_status=${webserver_logdir}/apache_runtime_status
+webserver_sessions=${localstatedir}/cache/httpd_sessions
+
+webserver_document_root=${wwwdir}/kolab/htdocs
+webserver_cgidir=${webserver_document_root}/cgi-bin
+webserver_pidfile=${localstatedir}/apache/run/apache.pid
+webserver_mime_magicfile=${sysconfdir}/apache/mime.magic
+webserver_mime_typesfile=${sysconfdir}/apache/mime.types
+webserver_sslscache=${webserver_logdir}/ssl_scache
+webserver_sslmutex=${webserver_logdir}/ssl_mutex
+# webserver_web_prefix is empty indeed
+webserver_web_prefix=
+
+#####################################################################
+# PHP parameters
+
+phpini_dir=${sysconfdir}/php/apache2-php5/
+phplibdir=${datadir}/php
+phplibdir2=${datadir}/php
+phppeardir=${phplibdir}
+kolab_php_module_prefix=kolab/
+kolab_php_smarty_prefix=smarty/
+
+#--------------------------------------------------------------------
+
+#####################################################################
+# Kolabd parameters
+
+### -> users
+
+kolab_smtpdpolicy_conffile_usr=${kolab_musr}
+kolab_smtpdpolicy_conffile_grp=${kolab_grp}
+
+### -> files
+
+kolab_statedir=${statelibdir}/kolab
+kolab_logdir=${logdir}/kolab
+kolab_scriptsdir=${datadir}/kolabd/scripts
+kolab_pidfile=${kolab_statedir}/kolab.pid
+kolab_mailboxuiddb=${kolab_statedir}/mailbox-uidcache.db
+
+### -> backup
+
+backupdir=${sysconfdir}/kolab
+backupfiles=${amavisd_conffile}              \
+	    ${clamav_confdir}/clamd.conf     \
+	    ${imap_confdir}/cyrus.conf       \
+	    ${imap_confdir}//imapd.conf      \
+	    ${clamav_confdir}/freshclam.conf \
+	    ${ldapserver_confdir}/ldap.conf  \
+	    ${ldapserver_confdir}/slapd.conf \
+	    ${emailserver_confdir}/main.cf   \
+	    ${emailserver_confdir}/master.cf \
+	    ${emailserver_confdir}/transport \
+	    ${emailserver_confdir}/virtual   \
+	    ${aliases_file}                  \
+            ${sysconfdir}/conf.d/apache2     \
+            ${sysconfdir}/conf.d/saslauthd
+	    
+#--------------------------------------------------------------------
+
+#####################################################################
+# Kolab-resource-handlers parameters
+
+### -> users
+
+resmgr_usr=root
+resmgr_grp=root
+freebusy_usr=root
+freebusy_grp=apache
+resmgr_conffile_usr=${kolab_musr}
+resmgr_conffile_grp=${kolab_grp}
+
+### -> files
+
+resmgr_logfile=${kolab_logdir}/resmgr/resmgr.log
+resmgr_confdir=${sysconfdir}/kolab/resmgr
+resmgr_filterdir=${kolab_statedir}/resmgr/filter
+resmgr_scriptsdir=${datadir}/kolabd/resmgr/scripts
+freebusy_logfile=${kolab_logdir}/freebusy/freebusy.log
+freebusy_cachedir=${localstatedir}/cache/freebusy
+
+#--------------------------------------------------------------------
+
+fbview_logfile=${localstatedir}/resmgr/fbview.log
+
+graveyard_uidcache=${localstatedir}/kolab/graveyard_uidcache.db
+graveyard_tscache=${localstatedir}/kolab/graveyard_tscache.db
+

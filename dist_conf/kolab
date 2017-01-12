@@ -1,0 +1,201 @@
+# @l_nusr@
+kolab_usr=kolab-n
+# @l_ngrp@
+kolab_grp=kolab-n
+# @l_musr@
+kolab_musr=kolab
+# @l_mgrp@
+kolab_mgrp=kolab
+# @l_nuid@
+kolab_uid=1002
+# @l_ngid@
+kolab_gid=1002
+# @l_rusr@
+kolab_rusr=kolab-r
+# @l_rgrp@
+kolab_rgrp=kolab-r
+# @l_susr@
+kolab_susr=root
+
+BASHELL=${libdir}/openpkg/bash
+PERL=${bindir}/perl
+PHP=${bindir}/php
+KOLABRC=${bindir}/openpkg
+RPM=${KOLABRC} rpm
+TAR=${libdir}/openpkg/tar
+
+# Define the deamons that are executed with openpkg rc
+LDAPD=openldap
+
+kolab_rcdir=${sysconfdir}/rc.d
+pkgdocdir=${datadir}/doc
+
+# /kolab/bin/perl -V:vendorlib | sed "s/.*'\(.*\)'\;/\1/"
+perllib=${libdir}/perl/vendor_perl/5.8.7
+
+amavisd_conffile=${sysconfdir}/amavisd/amavisd.conf
+amavisd_templatedir=${sysconfdir}/amavisd/templates
+amavisd_logfile=${localstatedir}/amavisd/amavisd.log
+amavisd_home=${localstatedir}/amavisd
+# @l_rusr@
+amavisd_rusr=kolab-r
+# @l_musr@
+amavisd_usr=kolab
+# @l_rgrp@
+amavisd_grp=kolab-r
+amavisd_rpm=amavisd
+
+
+fsl_logfile=${localstatedir}/fsl/fsl.log
+
+clamav_confdir=${sysconfdir}/clamav
+clamav_socket=${localstatedir}/clamav/clamd.sock
+clamav_logfile=${localstatedir}/clamav/clamd.log
+clamav_pidfile=${localstatedir}/clamav/clamd.pid
+clamav_datadir=${datadir}/clamav
+freshclam_logfile=${localstatedir}/clamav/freshclam.log
+freshclam_pidfile=${sysrundir}/freshclam.pid
+# @l_rusr@
+clamav_rusr=kolab-r
+# @l_musr@
+clamav_usr=kolab
+# @l_rgrp@
+clamav_grp=kolab-r
+
+# @l_musr@
+# @l_rgrp@
+
+
+emailscan_usr=kolab-r
+emailscan_grp=kolab-r
+
+emailserver_confdir=${sysconfdir}/postfix
+emailserver_socket=${localstatedir}/kolab/lmtp
+emailserver_localstatedir=${localstatedir}/postfix
+emailserver_logfile=${emailserver_localstatedir}/log/postfix.log
+emailserver_usr=${kolab_usr}
+emailserver_musr=kolab
+emailserver_grp=kolab-r
+# @l_musr@
+emailserver_mail_owner=kolab
+emailserver_setgid_grp=kolab-r
+emailserver_default_privs=kolab-n
+emailserver_master_usr=kolab-n
+emailserver_rpm=postfix
+emailserver_tables_usr=root
+
+ftpserver_scoreboardfile=${localstatedir}/proftpd/score
+ftpserver_logfile=${localstatedir}/proftpd/proftpd.log
+ftpserver_confdir=${sysconfdir}/proftpd
+ftpserver_pidfile=${localstatedir}/proftpd/proftpd.pid
+ftpserver_musr=kolab
+ftpserver_usr=${kolab_usr}
+ftpserver_grp=${kolab_grp}
+# Why hardcoded uid/gid???
+ftpserver_uid=19416
+ftpserver_gid=19416
+
+imap_confdir=${sysconfdir}/imapd
+imap_confperm=0640
+# @l_musr@
+imap_usr=kolab
+# @l_rgrp@
+imap_grp=kolab-r
+imap_masterlogfile=${localstatedir}/imapd/log/master.log
+imap_misclogfile=${localstatedir}/imapd/log/misc.log
+imap_statedir=${localstatedir}/imapd
+imap_spool=${imap_statedir}/spool
+imap_sievedir=${imap_statedir}/sieve
+imap_lmtp=${imap_statedir}/lmtp
+imap_notify_socket=${imap_statedir}/socket/notify
+imap_rpm=imapd
+
+
+kolab_statedir=${localstatedir}/kolab
+kolab_logdir=${kolab_statedir}/log
+kolab_pidfile=${kolab_statedir}/kolab.pid
+kolab_mailboxuiddb=${kolab_statedir}/mailbox-uidcache.db
+kolab_rpm=kolabd
+kolab_resource_handlers_rpm=kolab-resource-handlers
+kolab_webadmin_rpm=kolab-webadmin
+perl_kolab_rpm=perl-kolab
+kolab_smtpdpolicy_conffile_usr=${kolab_musr}
+kolab_smtpdpolicy_conffile_grp=${kolab_grp}
+kolab_php_module_prefix=
+kolab_scriptsdir=$(sysconfdir)/kolab
+kolab_php_smarty_prefix=Smarty
+
+ldapserver_statedir=${localstatedir}/openldap
+ldapserver_dir=${ldapserver_statedir}/openldap-data
+ldapserver_replogfile=${ldapserver_statedir}/replog
+ldapserver_argsfile=${ldapserver_statedir}/slapd.args
+ldapserver_logfile=${ldapserver_statedir}/openldap.log
+ldapserver_rundir=${ldapserver_statedir}/run
+ldapserver_pidfile=${ldapserver_rundir}/slapd.pid
+ldapserverslurpd_pidfile=${ldapserver_rundir}/slurpd.pid
+ldapserver_schemadir=${sysconfdir}/openldap/schema
+ldapserver_confdir=${sysconfdir}/openldap
+# @l_musr@
+ldapserver_usr=kolab
+# @l_mgrp@
+ldapserver_grp=kolab
+ldapserver_rgrp=kolab-r
+ldapserver_rusr=kolab
+
+webserver_document_root=${localstatedir}/kolab/www
+webserver_cgidir=${webserver_document_root}/cgi-bin
+webserver_sessions=${localstatedir}/kolab/httpd_sessions
+webserver_logdir=${localstatedir}/apache/log
+webserver_acceptlock=${webserver_logdir}/accept.lock
+webserver_runtime_status=${webserver_logdir}/apache_runtime_status
+webserver_errorlogfile=${webserver_logdir}/apache-error.log
+webserver_accesslogfile=${webserver_logdir}/apache-access.log
+webserver_confdir=${sysconfdir}/apache
+webserver_pidfile=${localstatedir}/apache/run/apache.pid
+webserver_mime_magicfile=${sysconfdir}/apache/mime.magic
+webserver_mime_typesfile=${sysconfdir}/apache/mime.types
+webserver_sslscache=${webserver_logdir}/ssl_scache
+webserver_sslmutex=${webserver_logdir}/ssl_mutex
+# webserver_web_prefix is empty indeed
+webserver_web_prefix=
+webserver_musr=kolab
+webserver_usr=${kolab_usr}
+webserver_grp=${kolab_grp}
+webserver_rpm=apache
+
+phpini_dir=${sysconfdir}/apache
+phplibdir=${libdir}/php
+phplibdir2=${kolab_statedir}/php
+phppeardir=${phplibdir2}/pear
+
+sasl_authdconffile=${sysconfdir}/sasl/saslauthd.conf
+sasl_smtpconffile=${sysconfdir}/sasl/apps/smtpd.conf
+sasl_logfile=${localstatedir}/sasl/log/saslauthd.log
+
+sysrundir=${localstatedir}/run
+
+resmgr_logfile=${localstatedir}/resmgr/resmgr.log
+resmgr_confdir=${sysconfdir}/resmgr
+resmgr_conffile_usr=${kolab_musr}
+resmgr_conffile_grp=${kolab_grp}
+resmgr_filterdir=${localstatedir}/resmgr/filter
+resmgr_scriptsdir=${resmgr_confdir}
+# @l_musr@
+resmgr_usr=kolab
+# @l_ngrp@
+resmgr_grp=kolab-n
+
+fbview_logfile=${localstatedir}/resmgr/fbview.log
+freebusy_logfile=${localstatedir}/resmgr/freebusy.log
+freebusy_cachedir=${webserver_document_root}/freebusy/cache
+freebusy_usr=kolab
+freebusy_grp=kolab-n
+
+graveyard_uidcache=${localstatedir}/kolab/graveyard_uidcache.db
+graveyard_tscache=${localstatedir}/kolab/graveyard_tscache.db
+
+backupdir=${sysconfdir}/kolab
+
+pki_grp=${kolab_rgrp}
+
+aliases_file=${emailserver_confdir}/aliases

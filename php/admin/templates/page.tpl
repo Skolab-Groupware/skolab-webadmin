@@ -12,9 +12,9 @@
 <meta name="robots" content="noindex" />	
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Language" content="{$currentlang}" /> 
-<meta name="description" content="Kolab Administration Webintefrace" />
+<meta name="description" content="Kolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
-<link rel="stylesheet" href="{$stylesheet|default:"$topdir/style.css"}" />
+<link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/style.css"}" />
 
 <script type="text/javascript">
 <!--

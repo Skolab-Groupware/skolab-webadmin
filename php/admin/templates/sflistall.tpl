@@ -10,12 +10,13 @@
 
 <table class="contenttable" cellpadding="0" cellspacing="1px">
 	<tr class="contentrow">
-	<th>{tr msg="Name"}</th><th>{tr msg="Server"}</th><th colspan="2">{tr msg="Action"}</th>
+	<th>{tr msg="Name"}</th><th>{tr msg="Server"}</th><th>{tr msg="Type"}</th><th colspan="2">{tr msg="Action"}</th>
 	</tr>
 {section name=id loop=$entries}
 	<tr class="contentrow{cycle values="even,odd"}">
 	   <td class="contentcell">{$entries[id].cn|escape:"html"}</td>
 	   <td class="contentcell">{$entries[id].kolabhomeserver|escape:"html"}</td>
+	   <td class="contentcell">{$entries[id].foldertype|escape:"html"}</td>
 	{if $entries[id].deleted neq "FALSE"}
 	   <td class="actioncell" colspan="2">{tr msg="Folder deleted, awaiting cleanup..."}</td>
 	{else}

@@ -1,0 +1,71 @@
+kolab_usr=kolab               # kolab-n
+kolab_grp=kolab               # kolab-n
+kolab_uid=60001               # @l_nuid@
+kolab_gid=60001               # @l_ngid@
+restricted_kolab_usr=kolab    # kolab-r
+restricted_kolab_grp=kolab    # kolab-r
+
+rcdir=${sysconfdir}/rc
+
+kolabd_usr=root
+kolab_statedir = ${localstatedir}/kolab
+kolab_php_smarty_prefix=Smarty
+
+sasl_confdir = ${sysconfdir}
+
+imap_confdir=${sysconfdir}
+imap_confperm=0644
+imap_usr=cyrus
+imap_grp=mail
+
+clamav_socket=${localstatedir}/clamav/clamd.sock
+clamav_logfile=/var/log/clamav/clamd.log
+clamav_pidfile=/var/run/clamav/clamd.pid
+clamav_confdir=${sysconfdir}
+
+
+emailscan_usr=${restricted_kolab_usr}
+emailscan_grp=${restricted_kolab_grp}
+
+emailserver_socket=${localstatedir}/imap/socket/lmtp
+emailserver_localstatedir=/var/spool/postfix
+emailserver_sasl_conffile=${sasl_confdir}/postfix/sasl/smtpd.conf
+emailserver_usr=${kolab_usr}
+emailserver_grp=${restricted_kolab_grp}
+emailserver_mail_usr=kolab              # = kolab
+
+ftpserver_scoreboardfile=/var/run/proftpd/proftpd.scoreboard
+ftpserver_logfile=/var/log/proftpd/proftpd.log
+ftpserver_pidfile=/var/run/proftpd.pid
+ftpserver_confdir=${sysconfdir}
+ftpserver_usr=nobody
+ftpserver_grp=nogroup
+ftpserver_uid=65534
+ftpserver_gid=65534
+
+kolab_logdir=/var/log/kolab
+kolab_pidfile=/var/run/kolab/kolab.pid
+kolab_scriptsdir=$(sysconfdir)/kolab
+
+ldapserver_dir=${localstatedir}/ldap-kolab
+ldapserver_rundir=/var/run/ldap
+ldapserver_schemadir=${datadir}/openldap/schema
+ldapserver_replogfile=${localstatedir}/ldap-kolab/replog
+ldapserver_argsfile=/var/run/ldap/slapd.args
+ldapserver_usr=ldap
+ldapserver_grp=ldap
+ldapserver_rusr=ldap
+
+webserver_document_root=/var/www/html/kolab
+webserver_logdir=/var/log/httpd
+webadmindir = /var/www/html/kolab/admin
+webserver_confdir=${sysconfdir}/httpd/conf
+webserver_pidfile=/var/run/httpd/httpd.pid
+webserver_mime_magicfile=${sysconfdir}/httpd/conf/magic
+webserver_mime_typesfile=${sysconfdir}/httpd/conf/mime.types
+webserver_usr=apache
+webserver_grp=apache
+
+sysrundir = /var/run
+
+resmgr_scriptsdir=${resmgr_confdir}

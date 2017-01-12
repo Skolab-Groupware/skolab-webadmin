@@ -37,7 +37,9 @@ function supported_lang($lang) {
 			   "nl_nl" => "nl_NL",
 			   "en"    => "en_US",
 			   "en_gb" => "en_US",
-			   "en_us" => "en_US");
+			   "en_us" => "en_US",
+			   "es"    => "es_ES",
+			   "es_es" => "es_ES");
 
     // Locales must be in the format xx_YY to be recognized by xgettext
     $lang = strtolower(str_replace('-','_',$lang));
@@ -69,12 +71,18 @@ function getLanguage()
 			// In case of multiple accept languages, keep the first one
 			$acceptList = explode(",", $acceptList);
 			foreach($acceptList as $l) {
+				$pos = strpos($l, ';' );
+				if( $pos !== false ) {
+				    $l = explode(';',$l);
+					$l = $l[0];
+				}
 				if( $tmp = supported_lang($l) ) {
-					$lang = $tmp;
-					break;
+				    $lang = $tmp;
+				    break;
 				}
 			}
-        }    
+        }
+		if( !$lang ) $lang = "en";
         setLanguage($lang);
     }    
     return supported_lang($_SESSION["lang"]);
@@ -95,6 +103,7 @@ if(!empty($_REQUEST["lang"])) {
 // I18N support information
 $language = getLanguage();
 putenv("LANG=$language"); 
+putenv("LANGUAGE=$language"); 
 setlocale(LC_ALL, $language);
 
 $domain = "messages";

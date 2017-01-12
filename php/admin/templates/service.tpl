@@ -6,18 +6,20 @@
 *}
 <h1>{tr msg="Kolab Server Settings"}</h1>
 
-{if $systemaliasconf }
+{if count($systemaliasconf)>0 }
 <a name="systemaliasconf"></a>
 <h2>{tr msg="Administrative email addresses"}</h2>
 <div class="contentsimple">
 <p>{tr msg="You have not yet set up a receiving account for the administrative email addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. Enter the email address of a kolab account below and press the button to create a distribution list for each of those addresses. Later you can add or remove people from the lists like any other distribution list"}</p>
+{section name=id loop=$systemaliasconf}
 <div class="contentform">
-<form name="systemalias" method="post">
-{tr msg="Email address of account that should receive administrative mail:"}
-<input type="text" name="systemaliasmail" size="80"  value="{$systemaliasmail}" /><br/>
-<div align="right"><input type="submit" name="submitsystemalias" value="{tr msg="Create Distribution Lists"}" /></div>
+<form name="systemalias_{$systemaliasconf[id].n}" method="post">
+{tr msg="Email address of account that should receive administrative mail for domain "}  {$systemaliasconf[id].domain|escape:html}:
+<input type="text" name="systemaliasmail_{$systemaliasconf[id].n}" size="80"  value="{$systemaliasmail[id]|escape:"html"}" /><br/>
+<div align="right"><input type="submit" name="submitsystemalias_{$systemaliasconf[id].n}" value="{tr msg="Create Distribution Lists"}" /></div>
 </form>
 </div>
+{/section}
 <br />
 </div>
 {/if}
@@ -26,7 +28,7 @@
 <div class="contentsimple">
 <p>{tr msg="Using legacy services poses a security thread due to leakage of cleartext passwords, lack of authenticity and privacy."}</p>
 <p>{tr msg="The legacy Freebusy Support (FTP and HTTP) is only required for Outlook2000 clients. Under all other circumstances it is advised to use the server-side freebusy creation feature over secure HTTP instead (this is enabled by default and may not be deactivated)."}</p>
-<p>{tr msg="Further details with regards to security considerations are available on the internet at the <a href=\"http://www.kolab.org\">Kolab</a> webserver."}</p>
+<p>{tr msg="Further details with regards to security considerations might be available from the <a href=\"http://www.kolab.org\">Kolab Project</a>."}</p>
 </div>
 <h3>{tr msg="Services"}</h3>
 <form name="serviceform" method="post">
@@ -50,7 +52,7 @@
 <div class="contentform">
 <form name="quotawarnform" method="post">
 <br />
-{tr msg="Warn users when they have used"} <input name="quotawarn" size="3"  value="{$quotawarn}" /> {tr msg="% of their quota"}<br />
+{tr msg="Warn users when they have used"} <input name="quotawarn" size="3"  value="{$quotawarn|escape:"html"}" /> {tr msg="% of their quota"}<br />
 <div align="right"><input type="submit" name="submitquotawarn" value="{tr msg="Update"}" /></div>
 </form>
 </div>
@@ -69,7 +71,7 @@
 <div class="contentform">
 <form name="freebusypastform" method="post">
 <br />
-{tr msg="When creating free/busy lists, include data from"} <input name="freebusypast" size="3"  value="{$freebusypast}" /> {tr msg="days in the past"}<br />
+{tr msg="When creating free/busy lists, include data from"} <input name="freebusypast" size="3"  value="{$freebusypast|escape:"html"}" /> {tr msg="days in the past"}<br />
 <div align="right"><input type="submit" name="submitfreebusypast" value="{tr msg="Update"}" /></div>
 </form>
 </div>
@@ -78,7 +80,7 @@
 <div class="contentform">
 <form name="postfixmynetworksform" method="post">
 {tr msg="Networks allowed to relay and send mail through unauthenticated SMTP connections to the Kolab server (comma separated networks in x.x.x.x/y format):"}
-<input type="text" name="postfixmynetworks" size="80"  value="{$postfixmynetworks}" />
+<input type="text" name="postfixmynetworks" size="80"  value="{$postfixmynetworks|escape:"html"}" />
 <div align="right"><input type="submit" name="submitpostfixmynetworks" value="{tr msg="Update"}" /></div>
 </form>
 </div>
@@ -87,7 +89,8 @@
 <div class="contentform">
 <form name="postfixrelayhostform" method="post">
 {tr msg="Smarthost (and optional port) to use to send outgoing mail (host.domain.tld). Leave empty for no relayhost."}
-<input type="text" name="postfixrelayhost" size="40"  value="{$postfixrelayhost}" /><br/>
+<input type="text" name="postfixrelayhost" size="40"  value="{$postfixrelayhost|escape:"html"}" />:
+<input type="text" name="postfixrelayport" size="4" value="{$postfixrelayport|escape:"html"}" /><br/>
 <div align="right"><input type="submit" name="submitpostfixrelayhost" value="{tr msg="Update"}" /></div>
 </form>
 </div>
@@ -96,11 +99,36 @@
 <div class="contentform">
 <form name="postfixallowunauthform" method="post">
 <input type="checkbox" name="postfixallowunauth" {if $postfixallowunauth == 'true' }checked{/if} />
-{tr msg="Accept mail from other domains over non-authenticated SMTP. This must be enabled if you want to use the Kolab server to receive mail from other internet domains."}
+{tr msg="Accept mail from other domains over unauthenticated SMTP. This must be enabled if you want to use the Kolab Server to receive mail from other internet domains directly. Leave disabled to accept mail only from SMTP gateways that are within the privileged network."}
 <div align="right"><input type="submit" name="submitpostfixallowunauth" value="{tr msg="Update"}" /></div>
 </form>
 </div>
 <br />
+<h2>{tr msg="Domains"}</h2>
+<table class="contenttable" cellpadding="0" cellspacing="1px">
+	<tr class="contentrow">
+	<th>{tr msg="Domain"}</th><th>{tr msg="Action"}</th>
+	</tr>
+{section name=id loop=$postfixmydestination}
+	<tr class="contentrow{cycle values="even,odd"}">
+	   <td class="contentcell">{$postfixmydestination[id]|escape:"html"}</td>
+	   <td class="actioncell">{strip}
+		<form method="post">
+		<input type="hidden" name="adestination" value="{$postfixmydestination[id]}" />
+		<input type="submit" name="deletedestination" value="{tr msg="Delete"}" />
+		</form>
+           {/strip}</td>
+	</tr>
+{/section}
+	<tr class="contentrow{cycle values="even,odd"}">
+	   <form method="post">
+	   <td class="contentcell"> 
+		<input type="text" size="60" name="adestination" />
+           </td><td class="actioncell"><input type="submit" name="adddestination" value="{tr msg="Add"}" /></td>
+	   </form>
+	</tr>
+</table>
+<br/>
 <h2>{tr msg="Mail Filter Settings"}</h2>
 <div class="contentform">
 <form name="kolabfilterform" method="post">
@@ -122,7 +150,7 @@
 </div>
 <br />
 
-<h2>{tr msg="Kolab Hosts"}</h2>
+<h2>{tr msg="Kolab Hostnames (for Master and Slaves)"}</h2>
 <table class="contenttable" cellpadding="0" cellspacing="1px">
 	<tr class="contentrow">
 	<th>{tr msg="Host"}</th><th>{tr msg="Action"}</th>

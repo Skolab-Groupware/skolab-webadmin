@@ -14,13 +14,13 @@ longdesc="http://www.klaralvdalens-datakonsult.se" border="0"></a>
 {tr msg="The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"}
 </p>
 <p>
-<a href="mailto:bo@klaralvdalens-datakonsult.se?subject=Kolab Client (Kontact)">Bo Thorsen</a><br>
-<a href="mailto:michel@klaralvdalens-datakonsult.se?subject=Kolab Client (Kontact)">Michel Boyer de la Giroday</a><br>
-<a href="mailto:steffen@klaralvdalens-datakonsult.se?subject=Kolab Client (Kontact)">Steffen Hansen</a><br>
-<a href="mailto:kalle@klaralvdalens-datakonsult.se?subject=Kolab Client (Kontact)">Matthias Kalle Dalheimer</a><br>
-<a href="mailto:dfaure@klaralvdalens-datakonsult.se?subject=Kolab Client (Kontact)">David Faure</a><br>
-<a href="mailto:khz@klaralvdalens-datakonsult.se?subject=Kolab Client (Kontact)">Karl-Heinz Zimmer</a><br>
-<a href="mailto:lutz@klaralvdalens-datakonsult.se?subject=Kolab Client (Kontact)">Lutz Rogowski</a><br>
-<a href="mailto:romain@klaralvdalens-datakonsult.se">Romain Pokrzywka</a><br>
+Bo Thorsen<br>
+Michel Boyer de la Giroday<br>
+Steffen Hansen<br>
+Matthias Kalle Dalheimer<br>
+David Faure<br>
+Karl-Heinz Zimmer<br>
+Lutz Rogowski<br>
+Romain Pokrzywka<br>
 </p>
 </div>

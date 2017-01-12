@@ -1,17 +1,17 @@
 {* Smarty Template *}
 {*
  (c) 2003 Tassilo Erlewein <tassilo.erlewein@erfrakon.de>
- (c) 2004 Martin Konold <martin.konold@erfrakon.de>
+ (c) 2004-2006 Martin Konold <martin.konold@erfrakon.de>
  This program is Free Software under the GNU General Public License (>=v2).
  Read the file COPYING that comes with this packages for details.
 *}
 <div class="contentsimple">
 <p>
-{tr msg="Kolab's concept was done by <a href=\"http://www.erfrakon.com\">erfrakon</a>; the company also designed and implemented the Kolab 1 Server and did the design and architecture for the Kolab 2 Server while providing consulting for the implementation of the Kolab 2 server and the Kolab 2 clients."}
+{tr msg="Kolab's architecture was done by <a href=\"http://www.erfrakon.com\">erfrakon</a>; the company also designed and implemented the Kolab 1 Server and did the design and architecture for the Kolab 2 Server while providing consulting for the implementation of the Kolab 2 server and the Kolab 2 clients."}
 </p>
-<IMG SRC="../pics/erfrakon.png" ALT="erfrakon" align="middle" longdesc="http://www.erfrakon.com" usemap="#maperfrakon">
+<IMG SRC="../pics/erfrakon.png" ALT="erfrakon" align="middle" longdesc="http://www.erfrakon.de" usemap="#maperfrakon">
 <map name="maperfrakon">
- <area shape="rect" coords="0,0,300,30" href="http://www.erfrakon.com">
+ <area shape="rect" coords="0,0,300,30" href="http://www.erfrakon.de">
 </map> 
   
 <p>
@@ -21,8 +21,8 @@
 {tr msg="The following people worked on Kolab for erfrakon:"}
 </p>
 <p>
-<a href="mailto:tassilo.erlewein@erfrakon.de?subject=Kolab Server 2.0">Tassilo Erlewein</a><br>
-<a href="mailto:achim.frank@erfrakon.de?subject=Kolab Server 2.0">Achim Frank</a><br>
-<a href="mailto:martin.konold@erfrakon.de?subject=Kolab Server 2.0">Martin Konold</a><br>
+Tassilo Erlewein<br>
+Achim Frank<br>
+Martin Konold<br>
 </p>
 </div>

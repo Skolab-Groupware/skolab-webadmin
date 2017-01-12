@@ -13,11 +13,15 @@
 <p>
 {tr msg="Kolab builds upon many other Free Software projects, namely:"}
 <ul>
+ <li><a href="http://www.ijs.si/software/amavisd/">amavisd-new</a> {tr msg="(Mail Scanner)"}</li>
  <li><a href="http://www.apache.org/">Apache</a> {tr msg="(HTTP Server)"}</li>
+ <li><a href="http://www.clamav.net/">ClamAV</a> {tr msg="(Virus Scanner)"}</li>
  <li><a href="http://asg.web.cmu.edu/cyrus/imapd/">Cyrus</a> {tr msg="(IMAP Server)"}</li>
  <li><a href="http://www.openldap.org/">OpenLDAP</a> {tr msg="(LDAP Server)"}</li>
  <li><a href="http://www.postfix.org/">Postfix</a> {tr msg="(MTA)"}</li>
- <li><a href="http://www.proftpd.org/">ProFTPD</a> {tr msg="(FTP Server)"}</li>
+<!--  <li><a href="http://www.proftpd.org/">ProFTPD</a> {tr msg="(FTP Server)"}</li> -->
+ <li><a href="http://spamassassin.apache.org/">SpamAssasin</a> {tr msg="(SPAM Filter)"}</li>
+
 </ul>
 {tr msg="The following projects are used in binding the above together, in order to create the Kolab Server:"}
 <ul>
@@ -73,23 +77,23 @@
 
 <p>
 <ul>
- <li><a href="mailto:skbinge@gmail.com">Stuart Bing&euml;</a></li>
- <li><a href="mailto:s.buys@codefusion.co.za">Stephan Buys</a></li>
- <li><a href="mailto:kalle@klaralvdalens-datakonsult.se?subject=Kolab Server 1.9">Matthias Kalle Dalheimer</a></li>
- <li><a href="mailto:tassilo.erlewein@erfrakon.de?subject=Kolab Server 1.9">Tassilo Erlewein</a></li>
- <li><a href="mailto:dfaure@klaralvdalens-datakonsult.se?subject=Kolab Client 1.9">David Faure</a></li>
- <li><a href="mailto:achim.frank@erfrakon.de?subject=Kolab Server 1.9">Achim Frank</a></li>
- <li><a href="mailto:michel@klaralvdalens-datakonsult.se?subject=Kolab Client 1.9">Michel Boyer de la Giroday</a></li>
- <li><a href="mailto:steffen@klaralvdalens-datakonsult.se?subject=Kolab Client 1.9">Steffen Hansen</a></li>
- <li><a href="mailto:bh@intevation.de?subject=Kolab Server 1.9">Bernhard Herzog</a>
- <li><a href="mailto:martin.konold@erfrakon.de?subject=Kolab Server 1.9">Martin Konold</a></li>
- <li><a href="mailto:mutz@kde.org?subject=Kolab Server 1.9">Marc Mutz</a></li>
+ <li>Stuart Bing&euml;</li>
+ <li>Stephan Buys</li>
+ <li>Matthias Kalle Dalheimer</li>
+ <li>Tassilo Erlewein</li>
+ <li>David Faure</li>
+ <li>Achim Frank</li>
+ <li>Michel Boyer de la Giroday</li>
+ <li>Steffen Hansen</li>
+ <li>Bernhard Herzog
+ <li>Martin Konold</li>
+ <li>Marc Mutz</li>
  <li>Bernhard Reiter</li>
- <li><a href="mailto:lutz@klaralvdalens-datakonsult.se?subject=Kolab Server 1.9">Lutz Rogowski</a></li>
- <li><a href="mailto:bo@klaralvdalens-datakonsult.se?subject=Kolab Server 1.9">Bo Thorsen</a></li>
- <li><a href="mailto:jan@intevation.de?subject=Kolab Server 1.9">Jan-Oliver Wagner</a></li>
- <li><a href="mailto:khz@klaralvdalens-datakonsult.se?subject=Kolab Server 1.9">Karl-Heinz Zimmer</a></li>
- <li><a href="mailto:romain@klaralvdalens-datakonsult.se?">Romain Pokrzywka</a></li>
+ <li>Lutz Rogowski</li>
+ <li>Bo Thorsen</li>
+ <li>Jan-Oliver Wagner</li>
+ <li>Karl-Heinz Zimmer</li>
+ <li>Romain Pokrzywka</li>
 </ul>
 </p>
 

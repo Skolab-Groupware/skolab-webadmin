@@ -22,7 +22,7 @@ require_once('locale.php');
 
 $menuitems = array();
 
-if( $auth->group() == "admin" || $auth->group() == "maintainer" ) {
+if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group() == 'domain-maintainer' ) {
   $menuitems['user'] = array( 'name' => _('Users'),
 							  'url'  => $topdir.'/user/',
 							  'title' => _('Manage Email Users'),
@@ -41,13 +41,16 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" ) {
 												 array( 'name' => _('Vacation'),
 														'url'  => 'vacation.php' )));
 }
-if( $auth->group() == "admin" || $auth->group() == "maintainer" ) {
+if( $auth->group() == "admin" || $auth->group() == "maintainer") {
   $menuitems['addressbook'] = array( 'name' => _('Addressbook'),
 									 'url'  => $topdir.'/addressbook/',
 									 'title' => _('Manage Address Book'),
 									 'submenu' => array( 
 														array( 'name' => _('Create New vCard'),
 															   'url' => 'addr.php?action=create' )));
+
+}
+if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group() == 'domain-maintainer') {
   $menuitems['sf'] = array( 'name' => _('Shared Folder'),
 							'url'  => $topdir.'/sharedfolder/',
 							'title' => _('Manage Shared Folders'),
@@ -55,7 +58,7 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" ) {
 											   array( 'name' => _('Add Shared Folder'),
 													  'url' => 'sf.php?action=create' )));  
 }
-if( $auth->group() == 'admin' || $auth->group() == 'maintainer' ) {
+if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group() == 'domain-maintainer') {
   $menuitems['distlist'] = array( 'name' => _('Distribution Lists'),
 									   'url'  => $topdir.'/distributionlist/',
 									   'title' => _('Manage Distribution Lists'),
@@ -70,8 +73,12 @@ if( $auth->group() == 'admin' ) {
 									   'submenu' => array(
 														  array( 'name' => _('Create New Administrator'),
 																 'url'   => 'admin.php?action=create' ) ) );
-}
-if( $auth->group() == 'admin' ) {
+  $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
+									   'url'  => $topdir.'/domainmaintainer/',
+									   'title' => _('Manage Domain Maintainers'),
+									   'submenu' => array(
+														  array( 'name' => _('Create New Domain Maintainer'),
+																 'url'   => 'domainmaintainer.php?action=create' ) ) );
   $menuitems['maintainer'] = array( 'name' => _('Maintainers'),
 									'url'  => $topdir.'/maintainer/',
 									'title' => _('Manage Maintainers'),
@@ -83,6 +90,17 @@ if( $auth->group() == 'admin' ) {
   $menuitems['maintainer'] = array( 'name' => _('Maintainers'),
 									'url'  => $topdir.'/maintainer/maintainer.php?action=modify&dn='.urlencode($mdn),
 									'title' => _('Manage Maintainer') );  
+  $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
+									   'url'  => $topdir.'/domainmaintainer/',
+									   'title' => _('Manage Domain Maintainers'),
+									   'submenu' => array(
+														  array( 'name' => _('Create New Domain Maintainer'),
+																 'url'   => 'domainmaintainer.php?action=create' ) ) );
+} else if( $auth->group() == 'domain-maintainer' ) {
+  $mdn = $auth->dn();
+  $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
+									'url'  => $topdir.'/domainmaintainer/domainmaintainer.php?action=modify&dn='.urlencode($mdn),
+									'title' => _('Manage Domain Maintainer') );  
 }
 if( $auth->group() == 'admin' ) {
   $menuitems['service'] = array( 'name' => _('Services'),
@@ -105,7 +123,7 @@ $menuitems['about'] = array( 'name' => _('About Kolab'),
 												array( 'name' => _('KDE'),
 													   'url'  => 'kde.php' )
 												));
-if( $auth->group() == 'admin' || $auth->group() == 'maintainer' ) {
+if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group() == 'domain-maintainer') {
   $menuitems['about']['submenu'][] = array( 'name' => _('<b>Versions</b>'),
 											'url'  => 'versions.php' );
 }

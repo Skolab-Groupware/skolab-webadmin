@@ -1,3 +1,252 @@
+2007-05-09  Gunnar Wrobel  <p@rdus.de>
+
+	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+
+	Fixed
+	kolab/issue1617 (https://intevation.de/roundup/kolab/issue1617)
+
+2007-03-23  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+
+	Fixed update of the domain name after modification of a domain
+	maintainer.
+
+	Fixes
+	kolab/issue1670 (https://intevation.de/roundup/kolab/issue1670)
+	
+2007-03-21  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+
+	Added check for empty set of selected domains when creating or
+	modifying a domain maintainer.
+
+2007-03-16  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/user/user.php.in: 
+	* www/admin/sharedfolder/sf.php.in: 
+	* www/admin/maintainer/maintainer.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/distributionlist/list.php.in: 
+	* www/admin/administrator/admin.php.in: 
+	* www/admin/addressbook/addr.php.in: 
+
+	Fixed for the new LDAP overlays introduced in
+	http://kolab.org/cgi-bin/viewcvs-kolab.cgi/server/kolabd/kolabd/templates/slapd.conf.template.in.diff?r1=1.9&r2=1.10
+
+	Tries to fix the following issues:
+
+	https://intevation.de/roundup/kolab/issue1614
+	https://intevation.de/roundup/kolab/issue1652
+	https://intevation.de/roundup/kolab/issue1654
+	
+2007-02-20 Bernhard Reiter <bernhard@intevation.de>
+
+	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+	Translated two more strings.
+
+2007-02-20  Gunnar Wrobel  <wrobel@pardus.de>
+
+	* www/admin/user/user.php.in (fill_form_for_modify): 
+
+	Fixed typo (issue 1612;
+	https://intevation.de/roundup/kolab/issue1612). This should allow
+	to select the user account type again. Patch submitted by TIm
+	Gerundt.
+
+2007-02-02  Sascha Wilde  <wilde@intevation.de>
+
+	* php/admin/templates/kolab.tpl: Restrict access to /fbview* to
+	save us from attacks against any of the various horde files.
+	Fixes issue 1507.  And fixed minor bug in the usage of
+	@webserver_web_prefix@.
+
+	* php/admin/templates/kolab.tpl, www/admin/kolab/versions.php.in:
+	Corrected version information, fixing last parts of issue 1486.
+
+2007-02-01  Gunnar Wrobel  <wrobel@pardus.de>
+
+	* www/admin/user/user.php.in (inMaintainerDomain): 
+
+	New function to support checking if a given user lies in the
+	domains of the current domain-maintainer. Should fix issue 1559
+	(https://intevation.de/roundup/kolab/issue1559)
+	
+2007-01-18  Gunnar Wrobel  <wrobel@pardus.de>
+
+	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+
+	Added the german translation for recent patch to
+	systemaliasnagscreen.tpl (http://kolab.org/cgi-bin/viewcvs-kolab.cgi/server/kolab-webadmin/kolab-webadmin/php/admin/templates/systemaliasnagscreen.tpl.diff?r1=1.1&r2=1.2)
+
+	See issue1539 (https://intevation.de/roundup/kolab/issue1539)
+	
+	* www/admin/sharedfolder/sf.php.in: 
+
+	Allow modification of the shared folder type.
+	
+	Fix for issue1479 (https://intevation.de/roundup/kolab/issue1479).
+
+2007-01-10 Marcus Hüwe <suse-tux@gmx.de>
+	* php/admin/include/form.class.php: added a __toString() method otherwise
+	  it will not work with php 5.2.0 (see issue1558)
+
+2006-12-19 Richard Bos <richard@radoeka.nl>
+	* php/admin/templates/service.tpl: spelling error Privileged is correct
+	  and removed an inconsistency: non-authorized -> unauthorized.
+
+2006-03-26 Richard Bos <richard@radoeka.nl>
+	Patch from Gunnar Wrobel
+	* php/admin/include/mysmarty.php.in: make the Smarty prefix
+	  configurable, using variable: kolab_php_smarty_prefix
+
+2006-03-22 Marcus Hüwe <suse-tux@gmx.de>
+	Patch committed by Richard Bos
+	* www/admin/user/user.php.in: replaced $kolab_prefix/etc by
+	  @sysconfidir@
+
+2006-03-07 Bernhard Reiter <bernhard@intevation.de>
+	* www/admin/user/index.php.in: Renamed Deletages to Email-Delegates
+	in $entries['kolabdelegate'] and checkdelegate(). Also improved
+	the formating and the comment.
+
+2006-02-05 Richard Bos <richard@radoeka.nl>
+	* www/admin/addressbook/addr.php, www/admin/addressbook/index.php,
+	  www/admin/administrator/admin.php, www/admin/administrator/index.php,
+	  www/admin/distributionlist/index.php,
+	  www/admin/distributionlist/list.php,
+	  www/admin/domainmaintainer/domainmaintainer.php,
+	  www/admin/domainmaintainer/index.php, www/admin/index.php,
+	  www/admin/kolab/codefusion.php, www/admin/kolab/erfrakon.php,
+	  www/admin/kolab/index.php, www/admin/kolab/intevation.php,
+	  www/admin/kolab/kdab.php, www/admin/kolab/kde.php,
+	  www/admin/maintainer/index.php, www/admin/maintainer/maintainer.php,
+	  www/admin/service/index.php, www/admin/sharedfolder/index.php,
+	  www/admin/sharedfolder/sf.php, www/admin/user/deliver.php,
+	  www/admin/user/forward.php, www/admin/user/index.php,
+	  www/admin/user/vacation.php, php/admin/include/mysmarty.php: removed
+	* www/admin/addressbook/addr.php.in, www/admin/addressbook/index.php.in,
+	  www/admin/administrator/admin.php.in,
+	  www/admin/administrator/index.php.in,
+	  www/admin/distributionlist/index.php.in,
+	  www/admin/distributionlist/list.php.in,
+	  www/admin/domainmaintainer/domainmaintainer.php.in,
+	  www/admin/domainmaintainer/index.php.in, www/admin/index.php.in,
+	  www/admin/kolab/codefusion.php.in, www/admin/kolab/erfrakon.php.in,
+	  www/admin/kolab/index.php.in, www/admin/kolab/intevation.php.in,
+	  www/admin/kolab/kdab.php.in, www/admin/kolab/kde.php.in,
+	  www/admin/maintainer/index.php.in,
+	  www/admin/maintainer/maintainer.php.in,
+	  www/admin/service/index.php.in, www/admin/sharedfolder/index.php.in,
+	  www/admin/sharedfolder/sf.php.in, www/admin/user/deliver.php.in,
+	  www/admin/user/forward.php.in, www/admin/user/index.php.in,
+	  www/admin/user/vacation.php.in,
+	  php/admin/include/mysmarty.php.in: added.  Use the new build
+	  variable: kolab_php_module_prefix variable.
+	* Makefile.am: reflect the changes in the above mentioned files.
+
+2006-01-17 Richard Bos <richard@radoeka.nl>
+	* Makefile.am: corrected make rule for php/admin/templates/versions.tpl
+
+2006-01-16 Marcus Hüwe <suse-tux@gmx.de>
+	Patch committed by Richard Bos
+	* www/admin/kolab/versions.php.in: use rpm package name variables for
+	  the software package version query's
+	* php/admin/templates/versions.tpl: moved to
+	  php/admin/templates/versions.tpl.in
+	* php/admin/templates/versions.tpl.in: show openpkg information when
+	  installed on an openpkg system only.
+	* Makefile.am: process php/admin/templates/versions.tpl.in
+	* configure.ac: add --with-openpkg cmdline argument
+
+2006-01-15 Marcus Hüwe <suse-tux@gmx.de>
+	Patch committed by Richard Bos
+	* www/admin/kolab/versions.php: moved to /www/admin/kolab/versions.php.in,
+	  replaced "$kolab_prefix/bin/openpkg" with @RPM@
+	* Makefile.am: make www/admin/kolab/versions.php.in
+
+2006-01-14 Marcus Hüwe <suse-tux@gmx.de>
+	Patch commited by Richard Bos
+	* configure.ac: replaced --enable-dist with --with-dist
+	  Added dist_conf file check.  If dist_conf file specified with
+	  --with-dist is not present fail configure.
+	* kolab-webadmin.spec.in: replaced --enable-dist with --with-dist
+
+2006-01-03 Richard Bos <richard@radoeka.nl>
+	* Makefile.am: distribute only the files to be distributed
+	  from the dist_conf directory
+	  Added a distclean-local rule to remove the directory autom4te.cache
+
+2005-12-30 Richard Bos <richard@radoeka.nl>
+	* Makefile.am: add webserver_web_prefix so the involved files
+	  are installed in the right directory.
+
+2005-12-30 Marcus Hüwe <suse-tux@gmx.de>
+	Patch committed by Richard Bos, see issue1049
+	* php/admin/include/auth.class.php: moved to
+	  php/admin/include/auth.class.php.in
+	* php/admin/include/headers.php: moved to
+	  php/admin/include/headers.php.in
+	* php/admin/templates/page.tpl: moved to php/admin/templates/page.tpl.in
+	* www/admin/logout.php: moved to www/admin/logout.php.in
+	* www/admin/user/user.php: moved to www/admin/user/user.php.in
+	* php/admin/include/auth.class.php.in,
+	  php/admin/include/headers.php.in,
+	  php/admin/templates/page.tpl.in,
+	  www/admin/logout.php.in,
+	  www/admin/user/user.php.in: added @webserver_web_prefix@
+	* Makefile.am: added some code for the @webserver_web_prefix@
+
+2005-12-22 Richard Bos <richard@radoeka.nl>
+	* www/admin/user/deliver.php,
+	  www/admin/user/forward.php,
+	  www/admin/user/vacation.php: changed $kolab_prefix/bin into @bindir@
+
+2005-12-19 Richard Bos <richard@radoeka.nl>
+	* configure.ac: added no-dist-gzip to AM_INIT_AUTOMAKE
+	* ../Makefile: reflected change in configure.ac, to create only bzipped
+	  tarbals.  Changed 'make dist' into 'make distcheck'
+
+2005-12-16 Marcus Hüwe <suse-tux@gmx.de>
+	* Makefile.am: added dist_ prefix
+
+2005-12-14 Richard Bos <richard@radoeka.nl>
+	* NEWS: added with the latest news from: release-notes.txt
+	* AUTHORS: added
+	* bootstrap: removed the touch on NEWS, AUTHORS and ChangeLog as they
+	  are now all part of cvs
+	* Makefile.am: The doc files ChangeLog, COPYING, NEWS and AUTHORS
+	  are distributed and installed in $(pkgdocdir)/@PACKAGE@
+	* php/admin/locale/nl/LC_MESSAGES/messages.po: updated
+
+2005-12-10 Richard Bos <richard@radoeka.nl>
+	* php/admin/locale/nl/LC_MESSAGES/messages.po: updated
+	* php/admin/include/mysmarty.php: changed Neerlandais to
+	  Nederlands
+
+2005-11-15 Richard
+	* bootstrap: copy the dist_conf file from kolabd instead of
+	  perl-kolab
+	* configure.ac: removed the options: --enable-wsdocrootdir,
+	  --phpdir and pkgdocdir.  These are all defined in the
+	  kolab/dist_conf files
+	  Added $srcdir to the distribution assignments
+	* Makefile.am: replaced do_subst by @common@ (include the dist_conf
+	  file), reflected this change in configure.ac as well
+	  Replaced wsdocrootdir by webserver_document_root
+	  Renamed wsadmin... to the more appropriate name wskolab...
+	  Replaced phpdir by phplibdir2
+	  Renamed phpadmin... to the more appropriate name phpkolab 
+	  Added prefix dist_ to dist_phplocaleXX_DATA variables so
+	  make distcheck completes
+	  Removed test -z "$(webserver_usr)" || chown $(webserver_usr)
+	  so make distcheck completes.  This should be handled by rpm or
+	  an external script.  In case an rpm is build it is very likely
+	  that the user used in chown is not present.
+	* php/admin/include/config.php.in: changed phpdir to phplibdir2
+
+
 2004-07-09 07:37  stephan
 
 	* php/admin/templates/en/kolab.tpl: Add appropriate email address

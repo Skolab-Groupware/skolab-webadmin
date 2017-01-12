@@ -1,0 +1,12 @@
+2.0.99-20051213
+
+      Updated Dutch translation (Richard Bos)
+
+      * Fixing:
+          Isuse1023 (fix some typos in messages)
+
+2.0.99-20051130
+
+      * Fixing:
+          Issue1007 (kolab-webadmin autoconfiscation patch by Richard Bos)
+

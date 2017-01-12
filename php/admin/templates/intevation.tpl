@@ -15,14 +15,8 @@ align ="middle" longdesc="www.intevation.net" border="0"></a>
 {tr msg="The following people worked on Kolab for Intevation:"}
 </p>
 <p>
-Bernhard Reiter
-<a href="mailto:bernhard.reiter@intevation.de"><tt>&lt;Bernhard.Reiter@intevation.de&gt;</tt></a>
-<br>
-Jan-Oliver Wagner 
-<a href="mailto:jan-oliver.wagner@intevation.de"><tt>&lt;Jan-Oliver.Wagner@intevation.de&gt;</tt></a>
-<br>
+Bernhard Reiter<br>
+Jan-Oliver Wagner<br>
 Marc Mutz
-<a href="mailto:Marc.Mutz@intevation.de"><tt>&lt;Marc.Mutz@intevation.de&gt;</tt></a>
-<br>
 </p>
 </div>

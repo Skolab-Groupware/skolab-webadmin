@@ -1,6 +1,6 @@
 <?php
 /*
- *  Copyright (c) 2004-2005 Klarälvdalens Datakonsult AB
+ *  Copyright (c) 2004 Klarälvdalens Datakonsult AB
  *
  *    Writen by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
  *
@@ -44,8 +44,29 @@ class KolabForm {
       if( !isset( $value['attrs'] ) ) $this->entries[$key]['attrs'] = '';
     }
   }
+
+  /*
+   * this function will be called if an instance of KolabForm will be treated
+   * as a string
+   */
+  function __toString() {
+    return sprintf("Debuginformation for class: %s; name: %s; template: %s;", get_class($this), $this->name, $this->template);
+   }
+
+  /*private*/function comment_helper( &$value ) {
+	  $ast = '';
+	  if( isset($value['validation'])){
+		  if( is_array( $value['validation'] ) && in_array( 'notempty', $value['validation']) ) {
+			  $ast = '<span class="required_asterisk">*</span> ';
+		  } else if( $value['validation'] == 'notempty' ) {
+			  $ast = '<span class="required_asterisk">*</span> ';			  
+		  }
+	  }
+	  return $ast.$value['comment'];
+  }
   
   function outputForm() {
+	  debug_var_dump($this->entries);
     $str = '<div class="contentform">';
     /*
     if( count( $this->errors ) > 0 ) {
@@ -61,15 +82,10 @@ class KolabForm {
     
     $size = 60;
     foreach( $this->entries as $key => $value ) {
-      if( !isset( $value['type'] ) ) $value['type'] = '';
+      if( !isset( $value['type'] ) || $value['type']=='' ) $value['type'] = 'text';
       if( !isset( $value['comment'] ) ) $value['comment'] = '';
       if( !isset( $value['attrs'] ) ) $value['attrs'] = '';
       if( !isset( $value['value'] ) ) $value['value'] = '';
-	  if( empty($value['type']) ) {
-		// Default is text
-		$value['type'] = 'text';
-	  }
-
       switch( $value['type'] ) {
       case 'hidden': continue;
       case 'password':
@@ -88,14 +104,47 @@ class KolabForm {
 		  $str .= '<td><input name="'.$key.'" type="'.$value['type'].'" value="'.MySmarty::htmlentities($value['value']).'" '
 			.MySmarty::htmlentities($value['attrs']).' size="'.$size.'" /></td>';
 		}
-		$str .= '<td>'.$value['comment'].'</td>';
+		$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+		$str .= '</tr>'."\n";
+		break;
+	  case 'email':
+		$str .= '<tr>';
+		$str .= '<td>'.$value['name'].'</td>';
+		if( strpos($value['value'],'@')===false ) {
+		  $uname = $value['value'];
+		  $domain = '';
+		} else {
+		  list($uname,$domain) = split('@',$value['value']);
+		}
+		if( ereg( 'readonly', $value['attrs'] ) ) {
+		  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($value['value']).'</p><input name="user_'.$key.'" type="hidden" value="'.
+			MySmarty::htmlentities($uname).'" /><input name="domain_'.$key.'" type="hidden" value="'.
+			MySmarty::htmlentities($domain).'" /></td>';
+		} else {
+		  $str .= '<td><input name="user_'.$key.'" type="text" value="'.MySmarty::htmlentities($uname).'" '
+			.$value['attrs'].' size="'.($size-40).'" />';
+		  if( count($value['domains']) == 1 ) {
+			$str .= '<input name="domain_'.$key.'" type="hidden" value="'.MySmarty::htmlentities($value['domains'][0]).'" />';
+			$str .= '<span class="ctrl">@'.MySmarty::htmlentities($value['domains'][0]).'</span></td>';
+		  } else {
+			$str .= '@<select name="domain_'.$key.'" '.$value['attrs']." >\n";
+			foreach( $value['domains'] as $dom ) {
+			  if( $dom == $domain ) $s = 'selected';
+			  else $s = '';
+			  $str .= '<option value="'.MySmarty::htmlentities($dom).'" '.$s.'>'.MySmarty::htmlentities($dom).'</option>'."\n";
+			}
+			$str .= '</select>';
+			$str .= '</td>';
+		  }
+		}
+		$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 		$str .= '</tr>'."\n";
 		break;
 	  case 'comment':
 		$str .= '<tr>';
 		$str .= '<td>'.$value['name'].'</td>';
 		$str .= '<td>'.$value['value'].'</td>';
-		$str .= '<td>'.$value['comment'].'</td>';
+		$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 		$str .= '</tr>'."\n";
 		break;
       case 'textarea':
@@ -106,7 +155,7 @@ class KolabForm {
 		} else {
 		  $str .= '<td><textarea name="'.$key.'" rows="5" cols="'.$size.'" '.$value['attrs'].' onkeypress="javascript:textareakeypress()">'.MySmarty::htmlentities($value['value']).'</textarea></td>';
 		}
-		$str .= '<td>'.$value['comment'].'</td>';
+		$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 		$str .= '</tr>'."\n";
 		break;	
       case 'checkbox':
@@ -117,9 +166,28 @@ class KolabForm {
 		} else {
 		  $str .= '<td><input name="'.$key.'" type="'.$value['type'].'" value="on" '.($value['value']?'checked':'').' '.$value['attrs'].' /></td>';
 		}
-        $str .= '<td>'.$value['comment'].'</td>';
+        $str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 		$str .= '</tr>'."\n";
 		break;	
+	  case 'checklist':
+		$str .= '<tr>';
+		$str .= '<td>'.$value['name'].'</td>';
+		if( ereg( 'readonly', $value['attrs'] ) ) {
+		  $str .= '<td><span class="ctrl">'.(join('<br/>',$value['options'])).'</span></td>';
+		} else {
+		  $str .= '<td><table class="contentform">';
+		  foreach( $value['options'] as $opt ) {
+			if( is_array( $value['value'] ) ) $checked = ( in_array($opt ,$value['value'] ))?"checked":"";
+			else $checked = "";
+			//debug("Checking if $opt is in ".join(",",$value['value'])." :$checked");
+			$str .= '<tr><td><input name="'.$key.'[]" type="checkbox" value="'.MySmarty::htmlentities($opt).'" '.$value['attrs']." $checked /></td><td>"
+			  .MySmarty::htmlentities($opt).'</td></tr>';
+		  }
+		  $str .= '</table></td>';
+		}
+        $str .= '<td>'.$value['comment'].'</td>';
+		$str .= '</tr>'."\n";
+		break;			
 	  case 'select':
 		$str .= '<tr>';
 		$str .= '<td>'.$value['name'].'</td>';
@@ -137,7 +205,32 @@ class KolabForm {
 		  $str .= '</select>';
 		  $str .= '</td>';
 		}
-        $str .= '<td>'.$value['comment'].'</td>';
+        $str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+		$str .= '</tr>'."\n";
+		break;
+	  case 'foldertypeselect':
+		$str .= '<tr>';
+		$str .= '<td>'.$value['name'].'</td>';
+                $entries = array ( '' => _('Unspecified'), 'mail' => _('Mails'), 'task' => _('Tasks'), 
+								   'journal' => _('Journals'), 'event' => _('Events'), 
+								   'contact' => _('Contacts'), 'note' => _('Notes'));
+		if( ereg( 'readonly', $value['attrs'] ) ) {
+		  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($entries[$value['value']]).
+			'<input type="hidden" name="'.$key.'" value="'.MySmarty::htmlentities($value['value']).'" /></p></td>';
+		} else {
+		  $str .= '<td><select name="'.$key.'" '.$value['attrs'].' >'."\n";
+		  foreach ($entries as $id => $title) {
+		  	if ( $value['value'] == $id )
+				$s = 'selected';
+			else
+				$s = '';
+
+		  	$str .= '<option value="'.$id.'" '.$s.'>'.MySmarty::htmlentities($title).'</option>'."\n";
+		  }
+		  $str .= '</select>';
+		  $str .= '</td>';
+		}
+        	$str .= '<td>'.$value['comment'].'</td>';
 		$str .= '</tr>'."\n";
 		break;
       case 'aclselect': // Special Kolab entry for ACLs
@@ -168,7 +261,7 @@ class KolabForm {
 		  $str .= '</select>';
 		  $str .= '</td>';
 		}
-		$str .= '<td>'.$value['comment'].'</td>';
+		$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 		$str .= '</tr>'."\n";	
 		break;
 	  case 'resourcepolicy': // Special Kolab entry for group/resource policies
@@ -218,7 +311,7 @@ class KolabForm {
 		  }
 		}
 		$str .= '</table></td>';
-        $str .= '<td>'.$value['comment'].'</td>';
+        $str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 		$str .= '</tr>'."\n";
 		break;
       }
@@ -235,6 +328,7 @@ class KolabForm {
       }
     }
     $str .= '</form>';
+	$str .= '<div class="required_asterisk">'._('* Required field.').'</div>';
     $str .= '</div>';
     return $str;
   }
@@ -249,15 +343,22 @@ class KolabForm {
 		foreach( $va as $v ) {
 		  //print "validating using $v <br/>";
 		  if( $v == 'notempty' ) {
-			//print "checking nonemptiness of $key: ".$_REQUEST[$key]." len=".strlen(trim($_REQUEST[$key]))."<br/>";
+			debug("checking nonemptiness of $key: ".KolabForm::getRequestVar($key)." len=".strlen(trim(KolabForm::getRequestVar($key))));
 			if( $value['type'] == 'aclselect' ) {
 			  // ignore
+			} else if( $value['type'] == 'email' ) {
+			  debug('Checking '.$value['name'].': '.$_REQUEST['user_'.$key]);
+			  if( strlen(trim($_REQUEST['user_'.$key])) == 0 ) {
+				  $this->errors[] = _('Required field ').$value['name']._(' is empty');
+			  }
 			} else if( strlen( trim($_REQUEST[$key]) ) == 0 ) {
-			  $this->errors[] = sprintf( _('Required field %s is empty'), $value['name']);
+			  $this->errors[] = _('Required field ').$value['name']._(' is empty');
 			}
 		  } else {
 			if( $value['type'] == 'aclselect' ) {
 			  $data = $_REQUEST['user_'.$key].' '.$_REQUEST['perm_'.$key];
+			} else if( $value['type'] == 'email' ) {
+			  $data = trim($_REQUEST['user_'.$key]).'@'.trim($_REQUEST['domain_'.$key]);
 			} else if( $value['type'] == 'resourcepolicy' ) {
 			  $i = 0;
 			  $data = array();
@@ -307,13 +408,24 @@ class KolabForm {
 		$this->entries[$k]['policies'] = $pols;
       } else if( $this->entries[$k]['type'] == 'checkbox' ) {
 		$this->entries[$k]['value'] = isset( $_REQUEST[$k] );
+      } else if( $this->entries[$k]['type'] == 'checklist' ) {
+		$this->entries[$k]['value'] = $_REQUEST[$k];
       } else if( $this->entries[$k]['type'] == 'password' ) {
 		$this->entries[$k]['value'] = $this->value($k);		
+	  } else if( $this->entries[$k]['type'] == 'email' ) {
+		$this->entries[$k]['value'] = trim($this->value('user_'.$k)).'@'.trim($this->value('domain_'.$k));
       } else {
 		$this->entries[$k]['value'] = trim($this->value($k));
       }
     }    
   }
+
+  /* static */ function getRequestVar($var, $default = false)
+  {
+	if( isset($_REQUEST[$var]) ) return $_REQUEST[$var];
+	else return $default;
+  }
+
 
   var $name;
   var $template;

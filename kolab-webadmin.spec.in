@@ -36,14 +36,14 @@ Release:      @spec_build_date@
 
 
 #   list of sources
-Source0:      kolab-webadmin-%{version}.tar.gz
+Source0:      kolab-webadmin-%{version}.tar.bz2
 
 #   build information
 Prefix:       %{l_prefix}
 BuildRoot:    %{l_buildroot}
-BuildPreReq:  OpenPKG, openpkg >= 2.0.0
-PreReq:       OpenPKG, openpkg >= 2.2.0, kolabd >= 1.9.4-20050606
-PreReq:       apache >= 1.3.31-2.2.0, apache::with_gdbm_ndbm = yes, apache::with_mod_auth_ldap = yes, apache::with_mod_dav = yes, apache::with_mod_php = yes, apache::with_mod_php_gdbm = yes, apache::with_mod_php_gettext = yes, apache::with_mod_php_imap = yes, apache::with_mod_php_openldap = yes, apache::with_mod_php_xml = yes, apache::with_mod_ssl = yes
+BuildPreReq:  OpenPKG, openpkg >= 2.5.0
+PreReq:       OpenPKG, openpkg >= 2.5.0, kolabd >= 2.1.0-20070420
+PreReq:       apache >= 1.3.33-2.5.0, apache::with_mod_auth_ldap = yes, apache::with_mod_dav = yes, apache::with_mod_php = yes, apache::with_mod_php_bdb = yes, apache::with_mod_php_gettext = yes, apache::with_mod_php_imap = yes, apache::with_mod_php_openldap = yes, apache::with_mod_php_xml = yes, apache::with_mod_ssl = yes
 PreReq:	      php-smarty >= 2.6.3
 AutoReq:      no
 AutoReqProv:  no
@@ -56,10 +56,10 @@ AutoReqProv:  no
 %prep
     %setup -q
     %{l_shtool} subst -e 's;@kolab_version@;%{kolab_version};g' \
-	www/admin/kolab/versions.php
+	www/admin/kolab/versions.php.in
 
 %build
-    ./configure -prefix=%{l_prefix}
+    ./configure -prefix=%{l_prefix} --with-dist=kolab
 
 %install
     rm -rf $RPM_BUILD_ROOT

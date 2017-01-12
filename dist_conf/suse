@@ -1,0 +1,196 @@
+kolab_usr=root
+kolab_grp=root
+kolab_musr=root
+kolab_mgrp=root
+kolab_uid=1002
+kolab_gid=1002
+kolab_rusr=root
+kolab_rgrp=root
+kolab_susr=root
+
+BASHELL=/bin/bash
+KOLABRC=${sbindir}/kolabsrv
+PERL=${bindir}/perl
+PHP=${bindir}/php
+RPM=/bin/rpm
+TAR=/bin/tar
+
+# Define the deamons that are launched from /etc/init.d
+LDAPD=ldap
+
+kolab_rcdir=${sysconfdir}/init.d
+pkgdocdir=${datadir}/doc/packages/kolab
+
+# perl -V:vendorlib | sed "s/.*'\(.*\)'\;/\1/"
+perllib=${libdir}/perl5/vendor_perl/5.8.7
+
+amavisd_conffile=${sysconfdir}/amavisd.conf
+amavisd_templatedir=${sysconfdir}/amavisd/templates.d
+amavisd_logfile=${localstatedir}/log/amavisd
+amavisd_home=${localstatedir}/spool/amavis
+amavisd_rusr=vscan
+amavisd_usr=root
+amavisd_grp=root
+amavisd_rpm=amavisd-new
+
+fsl_logfile=${localstatedir}/log/fsl
+
+sysrundir=${localstatedir}/run
+
+clamav_confdir=${sysconfdir}
+clamav_socket=/var/lib/clamav/clamd-socket
+clamav_logfile=${localstatedir}/log/clamav
+clamav_pidfile=/var/lib/clamav/clamd.pid
+clamav_datadir=/var/lib/clamav
+freshclam_logfile=${localstatedir}/log/freshclam.log
+freshclam_pidfile=${sysrundir}/freshclam.pid
+clamav_rusr=vscan
+clamav_usr=root
+clamav_grp=vscan
+
+
+emailscan_usr=root
+emailscan_grp=root
+
+emailserver_confdir=${sysconfdir}/postfix
+emailserver_socket=${libdir}/postfix/lmtp
+emailserver_localstatedir=${localstatedir}/spool/postfix
+emailserver_logfile=${localstatedir}/log/postfix.log
+emailserver_usr=root
+emailserver_grp=root
+emailserver_mail_owner=postfix
+emailserver_setgid_grp=maildrop
+emailserver_default_privs=kolab
+emailserver_master_usr=kolab
+emailserver_rpm=postfix
+emailserver_tables_usr=root
+
+ftpserver_scoreboardfile=${localstatedir}/proftpd/score
+ftpserver_logfile=${localstatedir}/log/proftpd.log
+ftpserver_confdir=${sysconfdir}/proftpd
+ftpserver_pidfile=${localstatedir}/proftpd/proftpd.pid
+ftpserver_musr=kolab
+ftpserver_usr=${kolab_usr}
+ftpserver_grp=${kolab_grp}
+# Why hardcoded uid/gid???
+ftpserver_uid=19416
+ftpserver_gid=19416
+
+imap_confdir=${sysconfdir}
+imap_confperm=0640
+imap_usr=cyrus
+imap_grp=mail
+imap_masterlogfile=${localstatedir}/lib/imap/log/master.log
+imap_misclogfile=${localstatedir}/lib/imap/log/misc.log
+imap_statedir=${localstatedir}/lib/imap
+imap_spool=${localstatedir}/spool/imap
+imap_sievedir=${localstatedir}/lib/sieve
+imap_lmtp=${imap_statedir}/lmtp
+imap_notify_socket=${imap_statedir}/socket/notify
+imap_rpm=cyrus-imapd
+
+kolab_statedir=${localstatedir}/lib/kolab
+kolab_logdir=${localstatedir}/log
+kolab_pidfile=${sysrundir}/kolab.pid
+kolab_mailboxuiddb=${kolab_statedir}/mailbox-uidcache.db
+kolab_rpm=kolab
+kolab_resource_handlers_rpm=kolab-resource-handlers
+kolab_webadmin_rpm=kolab-webadmin
+perl_kolab_rpm=perl-kolab
+kolab_smtpdpolicy_conffile_usr=kolab
+kolab_smtpdpolicy_conffile_grp=root
+kolab_scriptsdir=$(datadir)/kolab/scripts
+
+# This variable makes it possible to store all kolab php modules in its own
+# module.  E.g on suse it will be /usr/share/php/kolab instead of just
+# /usr/share/php. This prevents scattering of the kolab php files.
+kolab_php_module_prefix=kolab/
+
+kolab_php_smarty_prefix=Smarty
+
+ldapserver_statedir=${localstatedir}/lib/ldap
+ldapserver_dir=${localstatedir}/lib/ldap
+ldapserver_replogfile=${sysrundir}/slapd/replog
+ldapserver_argsfile=${sysrundir}/slapd/slapd.args
+ldapserver_logfile=${localstatedir}/log/openldap.log
+ldapserver_pidfile=${sysrundir}/slapd/slapd.pid
+ldapserverslurpd_pidfile=${sysrundir}/slapd/slurpd.pid
+ldapserver_schemadir=${sysconfdir}/openldap/schema
+ldapserver_confdir=${sysconfdir}/openldap
+ldapserver_usr=ldap
+ldapserver_grp=ldap
+ldapserver_rgrp=ldap
+ldapserver_rusr=ldap
+
+webserver_document_root=/srv/www/htdocs
+webserver_cgidir=${webserver_document_root}/cgi-bin
+webserver_sessions=${localstatedir}/lib/php
+webserver_logdir=${localstatedir}/log/apache2
+webserver_acceptlock=${webserver_logdir}/accept.lock
+webserver_runtime_status=${webserver_logdir}/apache_runtime_status
+webserver_errorlogfile=${webserver_logdir}/apache-error.log
+webserver_accesslogfile=${webserver_logdir}/apache-access.log
+webserver_confdir=${sysconfdir}/apache2
+webserver_pidfile=${localstatedir}/apache/run/apache.pid
+webserver_mime_magicfile=${sysconfdir}/apache2/magic
+webserver_mime_typesfile=${sysconfdir}/apache2/mime.types
+webserver_sslscache=${webserver_logdir}/ssl_scache
+webserver_sslmutex=${webserver_logdir}/ssl_mutex
+webserver_web_prefix=/kolab
+webserver_musr=wwwrun
+webserver_usr=wwwrun
+webserver_grp=www
+webserver_rpm=apache2
+
+phpini_dir=${sysconfdir}
+phplibdir=${datadir}/php
+phplibdir2=${datadir}/php
+phppeardir=${phplibdir}/PEAR
+
+sasl_smtpconffile=${libdir}/sasl2/smtpd.conf
+sasl_authdconffile=${sysconfdir}/saslauthd.conf
+sasl_logfile=${localstatedir}/log/saslauthd.log
+
+resmgr_logfile=${localstatedir}/log/kolab/resmgr.log
+resmgr_confdir=${sysconfdir}/kolab/resmgr
+resmgr_conffile_usr=kolab
+resmgr_conffile_grp=root
+resmgr_filterdir=${localstatedir}/lib/kolab/resmgr
+resmgr_scriptsdir=${kolab_scriptsdir}/resmgr
+resmgr_usr=root
+resmgr_grp=root
+
+fbview_logfile=${localstatedir}/log/kolab/fbview.log
+freebusy_logfile=${localstatedir}/log/kolab/freebusy.log
+freebusy_cachedir=${webserver_document_root}${webserver_web_prefix}/freebusy/cache
+freebusy_usr=wwwrun
+freebusy_grp=root
+
+graveyard_uidcache=${localstatedir}/kolab/graveyard_uidcache.db
+graveyard_tscache=${localstatedir}/kolab/graveyard_tscache.db
+
+backupdir=${localstatedir}/adm/backup/kolab
+
+pki_grp=pki
+
+aliases_file=${sysconfdir}/aliases
+
+# One time backup files.  These original distribution configuration files
+# will be backed up once, just before kolab is about to change those files.
+backupfiles=/etc/amavisd.conf \
+	/etc/clamd.conf \
+	/etc/cyrus.conf \
+	/etc/imapd.conf \
+	/etc/freshclam.conf \
+	/etc/openldap/ldap.conf \
+	/etc/openldap/slapd.conf \
+	/etc/php.ini \
+	/etc/postfix/main.cf \
+	/etc/postfix/master.cf \
+	/etc/postfix/transport \
+	/etc/postfix/virtual \
+	/etc/saslauthd.conf \
+	/etc/sysconfig/ldap \
+	/etc/sysconfig/saslauthd \
+	/usr/lib/sasl2/smtpd.conf
+

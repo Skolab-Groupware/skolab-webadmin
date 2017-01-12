@@ -6,12 +6,12 @@
 *}
 <h3>{tr msg="Email Users"}</h3>
 <div align="center">
-<a href="{$self_url}?alphalimit="> {tr msg="[ ALL ]"} </a>&nbsp;&nbsp;
-<a href="{$self_url}?alphalimit=a"> [ A-F ] </a>&nbsp;&nbsp;
-<a href="{$self_url}?alphalimit=g"> [ G-L ] </a>&nbsp;&nbsp;
-<a href="{$self_url}?alphalimit=m"> [ M-R ] </a>&nbsp;&nbsp;
-<a href="{$self_url}?alphalimit=s"> [ S-Z ] </a>&nbsp;&nbsp;
-<a href="{$self_url}?alphalimit=other"> {tr msg="[ OTHER ]"} </a>
+<a {if $alphagroup==""}class="alphagroupitemselected"{/if} href="{$self_url}?alphagroup="> {tr msg="[ ALL ]"} </a>&nbsp;&nbsp;
+<a {if $alphagroup=="a"}class="alphagroupitemselected"{/if} href="{$self_url}?alphagroup=a"> [ A-F ] </a>&nbsp;&nbsp;
+<a {if $alphagroup=="g"}class="alphagroupitemselected"{/if} href="{$self_url}?alphagroup=g"> [ G-L ] </a>&nbsp;&nbsp;
+<a {if $alphagroup=="m"}class="alphagroupitemselected"{/if} href="{$self_url}?alphagroup=m"> [ M-R ] </a>&nbsp;&nbsp;
+<a {if $alphagroup=="s"}class="alphagroupitemselected"{/if} href="{$self_url}?alphagroup=s"> [ S-Z ] </a>&nbsp;&nbsp;
+<a {if $alphagroup=="other"}class="alphagroupitemselected"{/if} href="{$self_url}?alphagroup=other"> {tr msg="[ OTHER ]"} </a>
 </div>
 <div class="contentform">
 <form name="filterform" method="post">
