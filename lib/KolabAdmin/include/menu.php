@@ -43,6 +43,10 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
 												array( 'name' => _('ActiveSync'),
 														'url'  => 'activesync.php' ),
 																		));
+																		
+	$menuitems['activesync'] = array( 'name' => _('ActiveSync'),
+							  'url'  => $topdir.'/user/activesync.php',
+							  'title' => _('ActiveSync'));																		
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer") {
   $menuitems['addressbook'] = array( 'name' => _('Addressbook'),
