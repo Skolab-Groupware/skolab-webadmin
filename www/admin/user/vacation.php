@@ -87,12 +87,15 @@ $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems', 
 				 array_key_exists('submenu', 
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
-$smarty->assign( 'active', $handler->fetchVacationSegment()->isActive() );
-$smarty->assign( 'text', $handler->fetchVacationSegment()->getResponse() );
-$smarty->assign( 'addresses', $addresses );
-$smarty->assign( 'maildomain', $handler->fetchVacationSegment()->getDomain() );
-$smarty->assign( 'reacttospam', !$handler->fetchVacationSegment()->getReactToSpam() );
-$smarty->assign( 'days', $handler->fetchVacationSegment()->getResendAfter() );
+if (isset($handler)) {
+    $smarty->assign( 'active', $handler->fetchVacationSegment()->isActive() );
+    $smarty->assign( 'text', $handler->fetchVacationSegment()->getResponse() );
+    $smarty->assign( 'addresses', $addresses );
+    $smarty->assign( 'maildomain', $handler->fetchVacationSegment()->getDomain() );
+    $smarty->assign( 'reacttospam', !$handler->fetchVacationSegment()->getReactToSpam() );
+    $smarty->assign( 'days', $handler->fetchVacationSegment()->getResendAfter() );
+}
+
 $smarty->assign( 'maincontent', 'vacation.tpl' );
 $smarty->display('page.tpl');
 

@@ -69,7 +69,7 @@
 </p>
 
 <p>
-{tr msg="<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> joined the project soon after the original Kolab1 server was released. Its developers are primarily responsible for an updated engine (which forms the base of the Kolab2 server), the web client, as well as contributing to development of the Kolab2 storage format."}
+{tr msg="Code Fusion cc joined the project soon after the original Kolab1 server was released. Its developers are primarily responsible for an updated engine (which forms the base of the Kolab2 server), the web client, as well as contributing to development of the Kolab2 storage format."}
 </p>
 
 <div>
@@ -112,7 +112,7 @@
  <li>Christoph Wickert</li>
  <li>Karl-Heinz Zimmer</li>
  <li>Romain Pokrzywka</li>
- <li>{tr msg="...and anyone we forgot. Please let us know at <a href=\"mail:server-team@lists.kolabsys.com\">server-team@lists.kolabsys.com</a> so we can add you to this list."}
+ <li>{tr msg="...and anyone we forgot. Please let us know at <a href=\"mail:kolab-devel@kolab.org\">kolab-devel@kolab.org</a> so we can add you to this list."}
 </ul>
 </div>
 

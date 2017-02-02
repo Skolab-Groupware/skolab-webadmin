@@ -3,7 +3,8 @@
  *  Copyright (c) 2004 Klarälvdalens Datakonsult AB
  *
  *    Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
- *
+ *	  Updated by Bogomil Shopov <shopov@kolabsys.com>	
+ * 
  *  This  program is free  software; you can redistribute  it and/or
  *  modify it  under the terms of the GNU  General Public License as
  *  published by the  Free Software Foundation; either version 2, or
@@ -20,7 +21,27 @@
 
 require_once('locale.php');
 
+/*
+ * z-Push part for activesync
+ * 
+ * */
+ 
+include_once '@www_dir@/z-push/config.php';
+$showasmenu=true;
+if(defined('KOLAB_LDAP_ACL') and KOLAB_LDAP_ACL !=""){
+	$showasmenu=false;
+	$filter = '(member='.$_SESSION['auth_user'].')';
+	$result = $ldap->search( KOLAB_LDAP_ACL, $filter);
+	if (ldap_count_entries($ldap->connection, $result) > 0)
+		$showasmenu=true;
+}
+
+/*
+ * end z-push activesync part
+ * */
+
 $menuitems = array();
+
 
 if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group() == 'domain-maintainer' ) {
   $menuitems['user'] = array( 'name' => _('Users'),
@@ -39,14 +60,14 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
 												 array( 'name' => _('Forward Email'),
 														'url'  => 'forward.php' ),
 												 array( 'name' => _('Vacation'),
-														'url'  => 'vacation.php' ),
-												array( 'name' => _('ActiveSync'),
-														'url'  => 'activesync.php' ),
-																		));
-																		
+														'url'  => 'vacation.php' )
+																	));
+if($showasmenu){
+	
 	$menuitems['activesync'] = array( 'name' => _('ActiveSync'),
 							  'url'  => $topdir.'/user/activesync.php',
-							  'title' => _('ActiveSync'));																		
+							  'title' => _('ActiveSync'));	
+ }																
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer") {
   $menuitems['addressbook'] = array( 'name' => _('Addressbook'),

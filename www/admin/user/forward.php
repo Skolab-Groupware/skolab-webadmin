@@ -86,9 +86,13 @@ $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems', 
 				 array_key_exists('submenu', 
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
-$smarty->assign( 'active', $handler->fetchForwardSegment()->isActive() );
-$smarty->assign( 'keep', $handler->fetchForwardSegment()->getKeepOnServer() );
-$smarty->assign( 'address', $handler->fetchForwardSegment()->getForwardAddress() );
+
+if (isset($handler)) {
+    $smarty->assign( 'active', $handler->fetchForwardSegment()->isActive() );
+    $smarty->assign( 'keep', $handler->fetchForwardSegment()->getKeepOnServer() );
+    $smarty->assign( 'address', $handler->fetchForwardSegment()->getForwardAddress() );
+}
+
 $smarty->assign( 'maincontent', 'forward.tpl' );
 $smarty->display('page.tpl');
 

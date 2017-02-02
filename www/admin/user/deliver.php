@@ -84,8 +84,11 @@ $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems', 
 				 array_key_exists('submenu', 
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
-$smarty->assign( 'active', $handler->fetchDeliverySegment()->isActive() );
-$smarty->assign( 'inbox', $handler->fetchDeliverySegment()->getDeliveryFolder() );
+if (isset($handler)) {
+    $smarty->assign( 'active', $handler->fetchDeliverySegment()->isActive() );
+    $smarty->assign( 'inbox', $handler->fetchDeliverySegment()->getDeliveryFolder() );
+}
+
 $smarty->assign( 'maincontent', 'deliver.tpl' );
 $smarty->display('page.tpl');
 
