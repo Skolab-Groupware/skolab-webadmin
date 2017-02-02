@@ -215,16 +215,22 @@ function __construct()
 		     //remove Inbox/ part from the name
 		     $folder_chunk=explode("/",$folder);
 		     
-		     //if if only inbox/ show it
-		     if($folder_chunk[1]!=""){
+		     //if it's only inbox/ show it
+		     
+		     
+		     if($folder_chunk[1]!="" and count($folder_chunk)==2 and $folder_chunk[0]=="INBOX"){
 		     //else is inbox/somepart - show only somepart
 		     $folder=$folder_chunk[1];
 		     
-		     }if($folder_chunk[2]!="")
+		     }if($folder_chunk[2]!="" and count($folder_chunk)==3 and $folder_chunk[0]=="user")
 		     {
 		      //user folder
-		     $folder="(".$folder_chunk[1].") ".$folder_chunk[2];
-		     }
+		      $folder= preg_replace(array('/INBOX\//'),array(''),$folder);
+		     }else
+			 	{
+			 		$folder= preg_replace(array('/INBOX\//'),array(''),$folder);
+					
+			 	}
 		     //for saving annot
 		     $part_folder[]=$folders[$i]['realname'];
 		     
@@ -437,7 +443,7 @@ function is_default($folder)
 
 
 /**** Authentication etc. ***/
-$sidx = 'user';
+$sidx = 'activesync';
 require_once('KolabAdmin/include/menu.php');
 
 /**** Submenu for current page ***/

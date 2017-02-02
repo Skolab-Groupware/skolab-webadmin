@@ -7,7 +7,7 @@
 <div class="contenttext">
 <h1>{tr msg="Welcome to the Kolab Groupware Server"}</h1>
 
-<table cellspacing="10" cellpadding="10">
+<table cellspacing="10" cellpadding="10" style="background:#d0e2e6">
 <tr>
 <td>
 <a href="/admin/user/user.php?action=modify" class="welcomelinks"><img src="/admin/images/preferences-system.png" border="0" alt="My settings" /><br /><b>{tr msg="My settings"}</b></a>

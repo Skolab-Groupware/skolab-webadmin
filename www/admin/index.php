@@ -70,6 +70,10 @@ $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', 'Kolab' );
 $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems', array() );
+
+//assign values fo different welcome pages, based on menu.php settings
+$smarty->assign( 'dmurl',$menuitems['domain-maintainer']['url']);
+$smarty->assign( 'murl',$menuitems['maintainer']['url']);
 $smarty->assign( 'maincontent', $maincontent );
 $smarty->display('page.tpl');
 
