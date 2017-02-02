@@ -27,12 +27,8 @@ require_once('KolabAdmin/include/authenticate.php');
 require_once('KolabAdmin/include/form.class.php');
 require_once('KolabAdmin/include/passwd.php');
 
-//try to include ALL possible configuration files
-@include_once '/kolab/var/kolab/www/z-push/config.php';
-@include_once '/etc/z-push/config.php';
-@include_once '/usr/share/z-push/config.php';
-@include_once '/var/www/z-push/config.php';
-
+//include z-Push config file file
+include_once '@www_dir@/z-push/config.php';
 
 
 //define errors array
@@ -41,6 +37,14 @@ $errors = array();
 if((@include_once 'Horde/Kolab/Kolab_Zpush/lib/kolabActivesyncData.php') === false ) {
 	//z-Push in not installed. Why don't you show some scarry warining?
 	$errors[] =_('zPush in not enabled in your system.');
+}
+
+//check for permissions ACL from zpush config file
+if(defined('KOLAB_LDAP_ACL') and KOLAB_LDAP_ACL !=""){
+	$filter = '(member='.$_SESSION['auth_user'].')';
+	$result = $ldap->search( KOLAB_LDAP_ACL, $filter);
+	if (ldap_count_entries($ldap->connection, $result) == 0)
+		$errors[] ="You don't have permissions to manage your activeSync devices.";
 }
 
 /*read from her value of the KOLAB_LAXPIC
@@ -294,7 +298,10 @@ function getFolderType($folder)
 	     {
 	     
 	      return "NOTES";
-	     }
+	     }else
+		 	{
+		 		return "MAIL";
+		 	}
 	    }else{
 	    
 	    return "MAIL";
