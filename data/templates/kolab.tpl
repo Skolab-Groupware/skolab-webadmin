@@ -5,96 +5,58 @@
   End:
 *}
 <div class="contenttext">
-<h1>{tr msg="Kolab2 Groupware Server"}</h1>
+<h1>{tr msg="Kolab Groupware Solution"}</h1>
 <p>
-{tr msg="This is the Kolab2 Server. It is Free Software developed by the <a href=\"http://www.kolab.org/\">Kolab Project</a>, with the intention of bringing groupware functionality to Unix/KDE users as well as Windows desktops."}
+{tr msg="This is the server of the Kolab Groupware Solution, a <a href=\"http://fsfe.org/about/basics/freesoftware\">Free Software</a> Personal Information Management (PIM) solution developed by the <a href=\"http://www.kolab.org/\">Kolab Community</a>. Any installation of the Kolab Groupware Solution would normally include one or more of these servers, in combination with a variety of clients for its users. If you are interested in the technology, you can read more about it <a href=\"/admin/kolab/technology.php\">here</a>."}
 </p>
 
-<div>
-{tr msg="Kolab builds upon many other Free Software projects, namely:"}
+<h2>{tr msg="Why Kolab?"}</h2>
+
+<p>{tr msg="There is a wide variety of reasons why Kolab should be your choice. Several of them have been put together for different target groups in the"} <a href="http://files.kolabsys.com/Public/Handouts/">{tr msg="Handouts for the Kolab Groupware Solution by Kolab Systems"}</a>. {tr msg="To summarize just some points, Kolab is your solution, if"}</p>
+
 <ul>
- <li><a href="http://www.ijs.si/software/amavisd/">amavisd-new</a> {tr msg="(Mail Scanner)"}</li>
- <li><a href="http://www.apache.org/">Apache</a> {tr msg="(HTTP Server)"}</li>
- <li><a href="http://www.clamav.net/">ClamAV</a> {tr msg="(Virus Scanner)"}</li>
- <li><a href="http://asg.web.cmu.edu/cyrus/imapd/">Cyrus</a> {tr msg="(IMAP Server)"}</li>
- <li><a href="http://www.openldap.org/">OpenLDAP</a> {tr msg="(LDAP Server)"}</li>
- <li><a href="http://www.postfix.org/">Postfix</a> {tr msg="(MTA)"}</li>
- <li><a href="http://spamassassin.apache.org/">SpamAssasin</a> {tr msg="(SPAM Filter)"}</li>
-
+ <li>{tr msg="you want a solution that seamlessly integrates into your existing environment;"}</li>
+ <li>{tr msg="you want full control over your data, with all the convenience of the cloud;"}</li>
+ <li>{tr msg="you have elevated security needs for your data;"}</li>
+ <li>{tr msg="you have a very large installation, or want to reduce your hardware footprint;"}</li>
+ <li>{tr msg="you have to operate in diverse environments and installations;"}</li>
+ <li>{tr msg="strategic issues are important to you, e.g. you need sovereignty of the software you deploy;"}</li>
+ <li>{tr msg="your users should be fully productive whether they are on- or offline;"}</li>
+ <li>{tr msg="you want the flexibility to create solutions for your specialised needs;"}</li>
+ <li>{tr msg="you want Free Software/Open Source, but also want the professional support without having to resort to proprietary lock-in."}</li>
 </ul>
-{tr msg="The following projects are used in binding the above together, in order to create the Kolab Server:"}
+
+<h2>{tr msg="More Information"}</h2>
 <ul>
- <li><a href="http://www.perl.org/">Perl</a></li>
- <li><a href="http://www.php.net/">PHP</a></li>
- <li><a href="http://smarty.php.net/">Smarty Template Engine</a></li>
+ <li><a href="http://www.kolab.org">{tr msg="Kolab Community Web Site"}</a></li>
+ <li><a href="http://wiki.kolab.org">{tr msg="Kolab Community Wiki"}</a></li>
+ <li><a href="http://blogs.fsfe.org/greve/?p=431">{tr msg="Article: "} 'The Kolab Story' by Georg Greve</a></li>
+ <li><a href="http://files.kolabsys.com/Public/Handouts/">{tr msg="Handouts for the Kolab Groupware Solution by Kolab Systems"}</a></li>
 </ul>
-{tr msg="The following projects are used as a base for the Kolab Clients:"}
-<ul>
- <li><a href="http://www.kde.org/">K Desktop Environment (KDE)</a></li>
- <li><a href="http://www.horde.org/">The Horde Project</a></li>
-</ul>
-</div>
+
+<h2>{tr msg="Warranties &amp; Commercial Support"}</h2>
 
 <p>
-{tr msg="The Kolab project owes a great deal of thanks to the people of the <a href=\"http://www.openpkg.org/\">OpenPKG</a> project. OpenPKG allows Kolab to run on many diverse platforms in a reliable and predictable manner, by providing a common, easy-to-install, cross-platform base on which to build the server."}
+{tr msg="This is the <b>Community Edition</b> of the Kolab Groupware Server. It is provided by Kolab Systems as fully <a href=\"http://fsfe.org/about/basics/freesoftware\">Free Software</a> and you can use it to the fullest extent and any purpose. There are no license costs or other obligations other than those set forth in the respective Free Software licenses of the various components. <b>There are no warranties or guarantees of any kind, nor is there any guaranteed support. You are running this software entirely at your own risk.</b>"}
 </p>
 
 <p>
-{tr msg="To use all Kolab2 features you need an interoperable client. The KDE Kolab Client was the first such client to be developed and is still considered the reference platform for others to follow. The KDE groupware component Kontact can act as Kolab2 Client. Many thanks to the <a href=\"http://www.kde.org\">KDE Project</a> for providing such a powerful base on which to build this client solution."}
+{tr msg="There is a wide variety of commercial support options and warranties available by <a href=\"/admin/kolab/kolabsystems.php\">Kolab Systems AG</a> and its network of partners, the Kolab Enterprise Community. This support comes with access to the additionally quality assured and hardened <b>Certified Kolab</b> edition, which like the community edition is fully available as Free Software, so has all the advantages of the Community Edition and is free of hidden lock-in."}</p>
+
+<p>{tr msg="Kolab Systems AG will provide limited support for the Community Edition on a case-by-case basis, but with no guaranteed response times, as availability permits, and at rates that may be adjusted due to the work load at the time of the request. <b>It is strongly recommended that for mission-critical professional deployments of the Kolab Groupware Solution you at least choose one of the partially self-supported On Demand support models.</b>"}
 </p>
 
-<p>
-{tr msg="Users of Outlook on Microsoft Windows are able to use a proprietary plug-in to inter-operate with the Kolab server. For Kolab2 the preferred plug-in is the <a href=\"http://www.toltec.co.za/\">Toltec Plug-in</a> by Radley Network Technologies CC. Radley has worked closely with the Kolab community to help develop the Kolab2 storage format."}
-</p>
+<p>{tr msg="<center><table cellspacing=\"2\" cellpadding=\"2\" border=\"1\">
+<tr><td></td><td><b>This edition</b></td><td><em>With SLA by Kolab Systems</em></b></td></tr>
+<tr><td>Support channels</td><td><b>Wiki &amp; public mailing lists only</b></td><td><em>Kolab Systems Ticketing</em></td></tr>
+<tr><td>Guaranteed response times</td><td><b>NO</b></td><td><em>YES</em></td></tr>
+<tr><td>Access to Certified Kolab</td><td><b>NO</b></td><td><em>YES</em></td></tr>
+<tr><td>Warranties</td><td><b>NO</b></td><td><em>YES</em></td></tr>
+<tr><td>Access to custom versions</td><td><b>NO</b></td><td><em>YES</em></td></tr>
+</table></center>"}</p>
 
-<p>
-{tr msg="A list of additional Outlook plug-ins that provide interoperability with the Kolab server is <a href=\"http://www.kolab.org/kolab-plugins.html\">maintained on the Kolab website</a>."}
-</p>
+<p>{tr msg="Kolab Systems provides an overview of all available <a href=\"http://kolabsys.com/index.php/solutions/101\">Service Level Agreements (SLA)</a>. To upgrade your installation to Certified Kolab, please contact"} <a href="getkolab@kolabsys.com">getkolab@kolabsys.com</a> {tr msg="or visit our"} <a href="http://kolabsys.com/index.php/component/form/Get%20Kolab?form_id=2">{tr msg="web page"}</a>.</p>
 
-<p>
-{tr msg="There is also a <a href=\"http://www.kolab.org/webclient.html\">web-based client</a> in development which provides full groupware functionality to mobile users through a web interface. It allows users to access their email, calendars, tasks, etc. from anywhere in the world, by simply connecting through a standard web browser. The web client would not have been possible without the excellent <a href=\"http://www.horde.org/\">Horde project</a> on which to build."}
-</p>
-
-<p>
-{tr msg="As Kolab is a Free Software project, anyone can help to extend the functionality of the software. An active community has developed around the software with many people throughout the world contributing. The project was originally started in 2002 by a joint-venture of three companies: <a href=\"http://www.erfrakon.com/\">erfrakon</a> (design, architecture and server); <a href=\"http://www.intevation.de\">Intevation</a> (project management) and <a href=\"http://www.klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens Datakonsult</a> (client)."}
-</p>
-
-<p>
-{tr msg="<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> joined the project soon after the original Kolab1 server was released. Its developers are primarily responsible for an updated engine (which forms the base of the Kolab2 server), the web client, as well as contributing to development of the Kolab2 storage format."}
-</p>
-
-<div>
- {tr msg="Other contributors:"}<br/>
-<ul>
-<li> <a href="http://www.konsec.com">Konsec GmbH</a> {tr msg="CSSified the Kolab1 web admin GUI"}</li>
-</ul>
-</div>
-
-<p>
-{tr msg="The principal authors of the Kolab client and server software are (in alphabetical order):"}
-</p>
-
-<div>
-<ul>
- <li>Stuart Bing&euml;</li>
- <li>Stephan Buys</li>
- <li>Matthias Kalle Dalheimer</li>
- <li>Tassilo Erlewein</li>
- <li>David Faure</li>
- <li>Achim Frank</li>
- <li>Michel Boyer de la Giroday</li>
- <li>Steffen Hansen</li>
- <li>Bernhard Herzog</li>
- <li>Martin Konold</li>
- <li>Marc Mutz</li>
- <li>Bernhard Reiter</li>
- <li>Lutz Rogowski</li>
- <li>Bo Thorsen</li>
- <li>Jan-Oliver Wagner</li>
- <li>Karl-Heinz Zimmer</li>
- <li>Romain Pokrzywka</li>
-</ul>
-</div>
 
 <hr>
 <small>

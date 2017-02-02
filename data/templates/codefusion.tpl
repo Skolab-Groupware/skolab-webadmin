@@ -7,7 +7,7 @@
 <div class="contentsimple">
 
 <a href="http://www.codefusion.co.za/">
- <img src="../pics/codefusion.png" alt="Code Fusion" style="border:0" />
+ <img src="../images/codefusion.png" alt="Code Fusion" style="border:0" />
 </a>
   
 <p>

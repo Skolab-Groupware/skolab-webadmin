@@ -4,7 +4,7 @@
 {tr msg="<a href=\"http://www.kde.org\">KDE</a> is a powerful <a href=\"http://www.gnu.org/philosophy/free-sw.html\">Free Software</a> graphical desktop environment for Linux and Unix workstations. It combines ease of use, contemporary functionality, and outstanding graphical design with the technological superiority of the Unix operating system."}
 </p>
 <div class="align_center">
-<img src="../pics/kde.png" alt="KDE" longdesc="http://www.kde.org" />
+<img src="../images/kde.png" alt="KDE" longdesc="http://www.kde.org" />
 </div>
 <p>
 {tr msg="<b>KDE</b> is an Internet project that is truly open in every sense. Development takes place on the Internet and is discussed on our <a href=\"http://www.kde.org/mailinglists.html\">mailing lists</a>, USENET news groups, and IRC channels to which we invite and welcome everyone."}

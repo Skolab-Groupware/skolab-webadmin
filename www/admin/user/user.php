@@ -510,7 +510,8 @@ $entries['street_0'] = array( 'name' => _('Street Address') );
 $entries['postOfficeBox_0'] = array( 'name' => _('Postbox') );
 $entries['postalCode_0'] = array( 'name' => _('Postal Code') );
 $entries['l_0'] = array( 'name' => _('City') );
-$entries['c_0'] = array( 'name' => _('Country') );
+$entries['c_0'] = array( 'name' => _('Country'),
+		'comment' => _('2 letter code from <a href="http://www.iso.org/iso/english_country_names_and_code_elements" target="_blank">ISO 3166</a>') );
 $entries['telephoneNumber_0'] = array( 'name' => _('Telephone Number'),
 						'validation' => 'checkphone' );
 $entries['facsimileTelephoneNumber_0'] = array( 'name' => _('Fax Number'),
@@ -662,6 +663,9 @@ switch( $action ) {
 	   
        if ($action == "save") {
 		 if (!$errors) {
+           // We need the unmodified uid rdn for renaming
+           $new_uid = "uid=" . $ldap->dn_escape($ldap_object['uid']);
+
 		   if (!empty($ldap_object['uid'])) $newdn = "uid=".$ldap->dn_escape($ldap_object['uid']).",".$domain_dn;
 		   else $newdn = $dn;
 		   if (strcmp($dn,$newdn) != 0) {
@@ -674,7 +678,10 @@ switch( $action ) {
 			 if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
 				 ($entry=ldap_first_entry($ldap->connection,$result)) &&
 				 ($oldattrs=ldap_get_attributes($ldap->connection,$entry))) {
-			   $ldap_object['uid'] = $oldattrs['uid'][0];
+
+               // This is no longer necessary.
+			   //$ldap_object['uid'] = $oldattrs['uid'][0];
+
 			   $ldap_object['mail'] = $oldattrs['mail'][0];
 			   unset( $oldattrs['count'] );
 			   foreach( $oldattrs as $k => $v ) {
@@ -700,7 +707,7 @@ switch( $action ) {
 
 			   if ( !$errors ) {
 				 // Try to rename the object
-				 if (!ldap_rename($ldap->connection, $dn, "cn=" . $ldap->dn_escape($ldap_object['cn']), $domain_dn, true)) {
+				 if (!ldap_rename($ldap->connection, $dn, $new_uid, $domain_dn, true)) {
 				   array_push($errors, sprintf(_("LDAP Error: could not rename %s to %s: %s"), $dn,
 											   $newdn, ldap_error($ldap->connection)));
 				 }
@@ -709,7 +716,7 @@ switch( $action ) {
 				   if (!ldap_modify($ldap->connection, $newdn, $ldap_object)) {
 					 // While this should not happen, in case it does, we need to revert the
 					 // renaming
-					 array_push($errors, sprintf(_("LDAP Error: could not modify %s to %s: %s"), $newdn,
+					 array_push($errors, sprintf(_("LDAP Error: could not modify %s: %s"), $newdn,
 												 ldap_error($ldap->connection)));
 					 $old_dn = substr($dn, 0, strlen($dn) - strlen($domain_dn) - 1);
 					 ldap_rename($ldap->connection, $newdn, $old_dn, $domain_dn, true);

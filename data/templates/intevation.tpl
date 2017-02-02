@@ -6,7 +6,7 @@
 
 <div class="align_center">
  <a href="http://intevation.net/">
-  <img src="../pics/intevation_logo.png" alt="Logo Intevation GmbH" height="91" longdesc="www.intevation.net" style="border:0px;" />
+  <img src="../images/intevation_logo.png" alt="Logo Intevation GmbH" height="91" longdesc="www.intevation.net" style="border:0px;" />
  </a>
 </div>
 

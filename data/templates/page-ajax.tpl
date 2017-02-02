@@ -24,7 +24,81 @@ function changeLanguage(combobox) {ldelim}
 {rdelim}
 -->
 </script>
+{literal}
+<script src="/admin/images/mootools.v1.11.js" type="text/javascript"></script>
+<script src="/admin/images/sliding-tabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+function synced(a)
+{
+  var current = a.getElementById; 
+  var ch = a.id;
+  
+  //get the real id from id-1 or id-2
+  var actual_id = ch.split('-');
+  
+  
+  //get the second element
+  var secelement = document.getElementById(actual_id[0]+'-'+'2');
+  var firelement = document.getElementById(actual_id[0]+'-'+'1');
+  
+   
+  if (firelement.checked==false && secelement.checked==true && a.value==1)
+ {
+    secelement.checked=false;
+   
+ }
+ 
 
+  
+}
+</script>
+<style type="text/css" media="screen">
+		#heading {
+			display: block;
+			text-align: center;
+			margin-bottom: 1em;
+			background: #f0f0f0;
+		}
+		#heading * {
+			display: inline;
+			padding: 7px;
+			user-select: none;
+			cursor: pointer;
+			vertical-align: middle;
+		}
+		#heading li.active {
+			background-color: lightgrey;
+			border-radius: 7px;
+			-webkit-border-radius: 5px;
+			-opera-border-radius: 6px;
+			-moz-border-radius: 5px;
+		}
+		
+		#wrapper { border: 1px dotted gray; margin: 1em; padding: 1em;}
+		
+		#panes {
+			text-align: justify;
+			border-style: none;
+			/*width: 245px;*/
+			margin: 0 1em 0 1em;
+
+		}
+		
+		#panes p {
+		  width: 500px;
+		  margin: 0 auto 1em auto;
+		  line-height: 1.2em;
+		}
+		
+		#panes div div { overflow: hidden; top:-96px; position:relative;}
+		#previous { float: none; cursor: pointer; }
+		#next { float: none; cursor: pointer; }
+		table, th, td {vertical-align:top;}
+
+		</style>
+		
+		
+{/literal}
 </head>
 <body>
 <div id="header" class="container">
@@ -106,6 +180,6 @@ function changeLanguage(combobox) {ldelim}
 		</div><!-- .container -->
 	</div><!-- #root -->
 <div id="footer">
-This is the Community Edition of the <b>Kolab Server</b>. <br />It comes with absolutely <b>no warranties</b> and is typically run entirely self supported. You can find help & information on the community <a href="http://kolab.org">web site</a> & <a href="http://wiki.kolab.org">wiki</a>. <br />Professional support is available from <a href="http://kolabsys.com">Kolab Systems</a>.
+This is the Community Edition of the <b>Kolab Server</b>. It comes with absolutely <b>no warranties</b> and is typically run entirely self supported. You can find help & information on the community <a href="http://kolab.org">web site</a> & <a href="http://wiki.kolab.org">wiki</a>. Professional support is available from <a href="http://kolabsys.com">Kolab Systems</a>.
 </body>
 </html>

@@ -181,3 +181,10 @@ border: 1px dashed;
 background-color: #c6ced8;
 
 }
+
+.welcomelinks{
+	color: #5d5656;
+	text-decoration: none;
+	font-size:12px;
+	text-align: center;
+}
