@@ -22,8 +22,6 @@
 
 // PENDING(romain,steffen): Clean up so this is not a mix of code and global functions
 
-session_start();
-
 function supported_lang($lang) {
 
     // REMEMBER TO UPDATE THIS WHEN ADDING NEW LANGUAGES
@@ -99,6 +97,9 @@ function setLanguage($lang)
 if(!empty($_REQUEST["lang"])) {
     setLanguage($_REQUEST["lang"]);
 }
+//reset the Locale BEFORE adding a new one:
+setlocale(LC_ALL,null);
+
 
 // I18N support information
 $language = getLanguage();

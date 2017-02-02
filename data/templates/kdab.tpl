@@ -1,7 +1,7 @@
 {* Smarty Template *}
 <div class="align_center">
  <a href="http://www.klaralvdalens-datakonsult.se/">
-  <img src="../pics/kdab.png" alt="KDAB" longdesc="http://www.klaralvdalens-datakonsult.se" style="border:0px;" />
+  <img src="../images/kdab.png" alt="KDAB" longdesc="http://www.klaralvdalens-datakonsult.se" style="border:0px;" />
  </a>
 </div>
 <div class="contentsimple">

@@ -37,6 +37,7 @@ function exists_group( $group ) {
 /**** Check for system aliases ****/
 $maincontent = 'welcome.tpl';
 if( $auth->group() == 'admin' ) {
+  $maincontent = 'welcome-admin.tpl';
   $domains = $ldap->domains();
   foreach( $domains as $domain ) {
 	if( (!exists_group( 'hostmaster@'.$domain ) ||
@@ -50,6 +51,16 @@ if( $auth->group() == 'admin' ) {
 	}
   }
 }
+if ($auth->group() == 'user') {
+  $maincontent = 'welcome-user.tpl';
+}
+if ($auth->group() == 'maintainer') {
+  $maincontent = 'welcome-maintainer.tpl';
+}
+if ($auth->group() == 'domain-maintainer') {
+  $maincontent = 'welcome-domain-maintainer.tpl';
+}
+
 
 /**** Insert into template and output ***/
 $smarty = new MySmarty();

@@ -53,10 +53,8 @@ if( !$errors ) {
   if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
   else $base_dn = 'k=kolab';
 
-  $privmembers = array_merge( (array)$ldap->groupMembers( "cn=internal,$base_dn", 'admin' ),
-							  (array)$ldap->groupMembers( "cn=internal,$base_dn", 'maintainer' ) );
-
-  $userfilter = "cn=*";
+  
+  $userfilter = "uid=*";
   $filterattr = KolabForm::getRequestVar('filterattr');
   $filtertype = KolabForm::getRequestVar('filtertype');
   $filtervalue = KolabForm::getRequestVar('filtervalue');
@@ -157,7 +155,7 @@ if( !$errors ) {
 		}
 
 		// skip admins and maintainers
-		if( !array_key_exists( $dn, $privmembers ) ) {
+		
 		  $entries[] = array( 'dn' => $dn,
 							  'sn' => $sn,
 							  'fn' => $fn,
@@ -165,7 +163,7 @@ if( !$errors ) {
 							  'mail' => $mail,
 							  'uid' => $uid,
 							  'deleted' => $deleted );
-		}
+		
 		$entry = ldap_next_entry( $ldap->connection,$entry );
 	  }
 	}

@@ -11,7 +11,7 @@
 </p>
 <div class="align_center">
  <a href="http://www.erfrakon.de">
-  <img src="../pics/erfrakon.png" alt="erfrakon" longdesc="http://www.erfrakon.de" usemap="#maperfrakon" style="border:0px;" />
+  <img src="../images/erfrakon.png" alt="erfrakon" longdesc="http://www.erfrakon.de" usemap="#maperfrakon" style="border:0px;" />
  </a>
 </div>
 <p>

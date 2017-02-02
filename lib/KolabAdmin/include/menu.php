@@ -39,7 +39,10 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
 												 array( 'name' => _('Forward Email'),
 														'url'  => 'forward.php' ),
 												 array( 'name' => _('Vacation'),
-														'url'  => 'vacation.php' )));
+														'url'  => 'vacation.php' ),
+												array( 'name' => _('ActiveSync'),
+														'url'  => 'activesync.php' ),
+																		));
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer") {
   $menuitems['addressbook'] = array( 'name' => _('Addressbook'),
@@ -112,16 +115,10 @@ $menuitems['about'] = array( 'name' => _('About Kolab'),
 							 'url'  => $topdir.'/kolab/',
 							 'title' => _('About Kolab'),
 							 'submenu' => array( 
-												array( 'name' => _('Erfrakon'),
-													   'url'  => 'erfrakon.php' ),
-												array( 'name' => _('Intevation'),
-													   'url'  => 'intevation.php' ),
-												array( 'name' => _('Klar&auml;lvdalens Datakonsult'),
-													   'url'  => 'kdab.php' ),
-												array( 'name' => _('Code Fusion'),
-													   'url'  => 'codefusion.php' ),
-												array( 'name' => _('KDE'),
-													   'url'  => 'kde.php' )
+												array( 'name' => _('Kolab Systems'),
+													   'url'  => 'kolabsystems.php' ),
+												array( 'name' => _('Technology'),
+													   'url'  => 'technology.php' ),
 												));
 if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group() == 'domain-maintainer') {
   $menuitems['about']['submenu'][] = array( 'name' => _('Versions'),
