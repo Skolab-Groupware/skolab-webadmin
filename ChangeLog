@@ -1,15 +1,83 @@
-2010-02-21  Gunnar Wrobel <wrobel@pardus.de>
+2010-08-23  Gunnar Wrobel  <p@rdus.de>
 
-	* php/admin/include/ldap.class.php.in: kolab/issue3499 (Kolab web
-	admin does not use LDAP escaping)
+	* lib/KolabAdmin/Ldap.php:
+	* www/admin/administrator/admin.php.in:
+	* www/admin/distributionlist/list.php.in:
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
+	* www/admin/maintainer/maintainer.php.in:
+	* www/admin/sharedfolder/sf.php.in:
+	* www/admin/user/user.php.in:
+
+	kolab/issue4516 (Various logic/spelling fixes for the web admin)
+
+	* kolab-webadmin.spec: 
+	* www/admin/index.php.in: 
+	* www/admin/settings/index.php.in: 
+
+	Support template based configuration of the web admin.
+	kolab/issue4512 (Allow to hide the admin mail settings in the web admin)
+
+	* php/admin/include/form.class.php: 
+
+	kolab/issue4510 (Fix the kolab web admin display for Firefox)
+
+	* lib/KolabAdmin/Ldap.php: 
+	* www/admin/settings/index.php.in:
+
+	kolab/issue4515 (Sort some additional lists in the web admin)
+
+	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+
+	kolab/issue4511 (Correct the German web admin translation)
+
+2010-07-12  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/administrator/admin.php.in:
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
+	* www/admin/maintainer/maintainer.php.in:
+	* www/admin/user/user.php.in:
+
+	kolab/issue4430 ("Modify User" reply page contains user password
+	in plain text)
+
+2010-06-28  Gunnar Wrobel  <p@rdus.de>
+
+	* www/admin/user/user.php.in:
+
+	kolab/issue606 (It is not possible to register people with
+	middlename correctly)
+
+2010-05-21  Mathieu Parent  <math.parent@gmail.com>
+
+	* php/admin/locale/*/LC_MESSAGES/messages.po, www/admin/settings/index.php.in:
+	Configurable sieve port (l10n part of issue4373)
+
+2010-04-07  Gunnar Wrobel  <p@rdus.de>
+
+	* php/*:
+	* www/*:
+	* lib/*:
+	* test/*:
+
+	kolab/issue1446 (Webinterface for setting vacation, email-delivery and forwarding (rt#5033))
+
+2010-03-26 Karl-Heinz Ruskowski <khruskowski@intevation.de>
+
+	* php/admin/include/form.class.php: kolab/issue1262 removed quota
+	limitation
+
+2010-02-21  Gunnar Wrobel  <p@rdus.de>
+
+	* lib/KolabAdmin/Ldap.php: kolab/issue3499 (Kolab web admin does
+	not use LDAP escaping)
 
 2010-01-15  Gunnar Wrobel <wrobel@pardus.de>
 
 	* www/admin/user/user.php.in: kolab/issue4025 (Users can not
 	change theire password (in 2.2.3))
 
-2009-12-07  root  <Gunnar Wrobel <wrobel@pardus.de>>
-
+2009-12-07  Gunnar Wrobel <wrobel@pardus.de>
+ 
 	* www/admin/user/user.php.in: kolab/issue1340 (RFC: restrict users
 	to sending mail only to internal recipients)
 
@@ -20,9 +88,22 @@
 
 	 kolab/issue3499 (Kolab web admin does not use LDAP escaping)
 
+2009-11-25 Richard Bos <richard@radoeka.nl>
+
+	* www/admin/style.css: a better implemention of kolab/issue3401.
+	  Links are now directly visible and change when hovered.
+
 2009-11-16 Richard Bos <richard@radoeka.nl>
+
+	* www/admin/style.css: nicer, friendlier web interface color
+	  kolab/issue3401
 	* php/admin/templates/settings.tpl: Use a table to separate the
 	  checkbox and text, for nicer formatting.  kolab/issue3428
+
+2009-08-27  Mathieu Parent  <math.parent@gmail.com>
+
+	* www/admin/user/{deliver,forward,vacation}.php.in: Better error
+	message when connecting to sieve fails (kolab/issue991)
 
 2009-05-14  Thomas Arendsen Hein  <thomas@intevation.de>
 
