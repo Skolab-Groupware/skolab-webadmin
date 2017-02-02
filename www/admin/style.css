@@ -4,7 +4,7 @@
   End:
 */
 body {
-  color: black;
+  color: #001155;
   background-color: #F8FCF8;
   font-family: verdana,arial,helvetica,sans-serif;
   font-size: 95%;
@@ -135,10 +135,17 @@ a:hover { color: #113399; }
 .contenttext {
   margin: 10px;
 }
+div.contenttext a {
+ font-weight: bold;
+}
 .contenttable {
   width: 100%;
   background-color: black;
   border: 0px;
+}
+.contenttable tr a {
+  font-weight: bold;
+  text-decoration: none;
 }
 .contentroweven {
   background-color: #C0CDE0;
