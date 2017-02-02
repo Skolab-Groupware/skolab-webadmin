@@ -1,3 +1,13 @@
+2010-02-21  Gunnar Wrobel <wrobel@pardus.de>
+
+	* php/admin/include/ldap.class.php.in: kolab/issue3499 (Kolab web
+	admin does not use LDAP escaping)
+
+2010-01-15  Gunnar Wrobel <wrobel@pardus.de>
+
+	* www/admin/user/user.php.in: kolab/issue4025 (Users can not
+	change theire password (in 2.2.3))
+
 2009-12-07  root  <Gunnar Wrobel <wrobel@pardus.de>>
 
 	* www/admin/user/user.php.in: kolab/issue1340 (RFC: restrict users

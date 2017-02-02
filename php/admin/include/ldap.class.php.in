@@ -418,13 +418,13 @@ class KolabLDAP {
                      )
                      (uid='.$this->escape($mail).')
                    )';
-	$res = $this->search( $this->dn_escape($base), $filter, array( 'dn' ) );
+	$res = $this->search( $base, $filter, array( 'dn' ) );
 	$count = 0;
 
 	$entries = ldap_get_entries( $this->connection, $res );
 	if( $excludedn ) {
 	  for ( $i = 0; $i < count( $entries ); $i++ ) {
-		if( is_null( $entries[$i] ) ) continue;
+		if( !isset($entries[$i]) || is_null( $entries[$i] ) ) continue;
 		if( KolabLDAP::unescape_dn_value($entries[$i]['dn']) == KolabLDAP::unescape_dn_value($excludedn) ) continue;	   
 		debug("found ".$entries[$i]['dn'] );
 		$count++;
