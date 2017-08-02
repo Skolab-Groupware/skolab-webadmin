@@ -1,0 +1,44 @@
+== Setup web administration frontend ==
+
+First, set up /etc/kolab/session_vars.php. On a new installation, with kolabd
+bootstrapped the following commands should do it:
+
+ sed -i -e "s@kolabserver.example.com@`grep '^fqdnhostname : ' \
+   /etc/kolab/kolab.conf | gawk '{ print $3 }'`@" /etc/kolab/session_vars.php
+ sed -i -e "s@dc=example,dc=com@`grep '^base_dn : ' \
+   /etc/kolab/kolab.conf | gawk '{ print $3 }'`@" /etc/kolab/session_vars.php
+ sed -i -e "s@PASSWORD@`grep '^php_pw : ' \
+   /etc/kolab/kolab.conf | gawk '{ print $3 }'`@" /etc/kolab/session_vars.php
+ sed  -i -e "s@cn=nobody,cn=internal,dc=example,dc=com@`grep '^php_dn : ' \
+   /etc/kolab/kolab.conf | gawk '{ print $3 }'`@" /etc/kolab/session_vars.php
+
+Then, to activate the web site, in order of preference,
+
+ (a) If you have kolabd installed, that package's (SSL-enabled)
+     Apache configuration includes
+     /etc/kolab/kolab-webadmin-apache.conf by default.
+
+- or -
+
+ (b) Set up an SSL virtual host and include
+     /etc/kolab/kolab-webadmin-apache.conf there.
+
+- or -
+
+ (c) Symlink /etc/kolab/kolab-webadmin-apache.conf to
+     /etc/apache2/conf.d/kolab-webadmin.  (This is obviously insecure,
+     but good enough for testing.)
+
+Reload Apache afterwards in any case.
+
+ /etc/init.d/apache2 reload
+
+== Configuration ==
+
+* go to https://example.net/admin/
+** create an account
+** create the mailing lists
+** If you have an internet domain:
+*** set smarthost/relayhost
+*** [x] Accept Internet Mail
+

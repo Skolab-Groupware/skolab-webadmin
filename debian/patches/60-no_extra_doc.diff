@@ -1,0 +1,48 @@
+Goal: Disables installation of unnecessary documentation
+
+Author: Peter Eisentraut <petere@debian.org>
+
+Upstream status: Specific to Debian
+
+Index: b/Makefile.am
+===================================================================
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -210,11 +210,11 @@
+ 	$(PHP_LOCALE_IT_PO) \
+ 	$(PHP_LOCALE_ES_PO)
+ 
+-kwadocdir = $(pkgdocdir)/@PACKAGE@
+-dist_kwadoc_DATA = ChangeLog \
+-        COPYING \
+-        NEWS \
+-        AUTHORS
++#kwadocdir = $(pkgdocdir)/@PACKAGE@
++#dist_kwadoc_DATA = ChangeLog \
++#        COPYING \
++#        NEWS \
++#        AUTHORS
+ 
+ EXTRA_DIST += dist_conf/common \
+ 	dist_conf/debian \
+Index: b/Makefile.in
+===================================================================
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -385,11 +385,11 @@
+ phplocalenl_DATA = $(PHP_LOCALE_NL_MO)
+ phplocaleit_DATA = $(PHP_LOCALE_IT_MO)
+ phplocalees_DATA = $(PHP_LOCALE_ES_MO)
+-kwadocdir = $(pkgdocdir)/@PACKAGE@
+-dist_kwadoc_DATA = ChangeLog \
+-        COPYING \
+-        NEWS \
+-        AUTHORS
++#kwadocdir = $(pkgdocdir)/@PACKAGE@
++#dist_kwadoc_DATA = ChangeLog \
++#        COPYING \
++#        NEWS \
++#        AUTHORS
+ 
+ all: all-am
+ 

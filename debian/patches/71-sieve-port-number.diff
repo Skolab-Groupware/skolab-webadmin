@@ -1,0 +1,31 @@
+Description: allow another port than 2000 for sieve
+ (port number part)
+Bug: https://issues.kolab.org/issue4373
+Bug-Debian: http://bugs.debian.org/598010
+
+Index: kolab-webadmin-2.2.3-20091217/www/admin/settings/index.php.in
+===================================================================
+--- kolab-webadmin-2.2.3-20091217.orig/www/admin/settings/index.php.in	2010-09-30 23:37:57.000000000 +0200
++++ kolab-webadmin-2.2.3-20091217/www/admin/settings/index.php.in	2010-09-30 23:38:08.000000000 +0200
+@@ -276,7 +276,7 @@
+ 				  array( 'service' => 'pop3s', 'name' => _('POP3/SSL service (TCP port 995)'), 'enabled' => toboolstr( $pop3s ) ),
+ 				  array( 'service' => 'imap', 'name'  => _('IMAP Service'), 'enabled' => toboolstr( $imap ) ),
+ 				  array( 'service' => 'imaps', 'name' => _('IMAP/SSL Service (TCP port 993)'), 'enabled' => toboolstr( $imaps ) ),
+-				  array( 'service' => 'sieve', 'name' => sprintf(_('Sieve service (TCP port %s)'), 2000), 'enabled' => toboolstr( $sieve ) ),
++				  array( 'service' => 'sieve', 'name' => sprintf(_('Sieve service (TCP port %s)'), 4190), 'enabled' => toboolstr( $sieve ) ),
+ 				  array( 'service' => 'http', 'name'  => _('FreeBusy Service via HTTP (in addition to HTTPS)'), 'enabled' => toboolstr( $http ) ),
+ 				  array( 'service' => 'amavis', 'name' => _('Amavis Email Scanning (Virus/Spam)'), 
+ 						 'enabled' => toboolstr( $amavis ) ) );
+Index: kolab-webadmin-2.2.3-20091217/php/admin/include/Sieve.php
+===================================================================
+--- kolab-webadmin-2.2.3-20091217.orig/php/admin/include/Sieve.php	2010-09-30 23:42:41.000000000 +0200
++++ kolab-webadmin-2.2.3-20091217/php/admin/include/Sieve.php	2010-09-30 23:42:50.000000000 +0200
+@@ -147,7 +147,7 @@
+     * @param  string $logintype Type of login to perform
+     * @param  string $euser     Effective User (if $user=admin, login as $euser)
+     */
+-    function Net_Sieve($user = null , $pass  = null , $host = 'localhost', $port = 2000, $logintype = '', $euser = '', $debug = false)
++    function Net_Sieve($user = null , $pass  = null , $host = 'localhost', $port = 4190, $logintype = '', $euser = '', $debug = false)
+     {
+         $this->_state = NET_SIEVE_STATE_DISCONNECTED;
+         $this->_data['user'] = $user;

@@ -1,0 +1,32 @@
+Source: skolab-webadmin
+Section: admin
+Priority: extra
+Maintainer: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.0.0
+Homepage: http://github.com/sunweaver/skolab-webadmin
+Vcs-Browser: http://github.com/sunweaver/skolab-webadmin
+Vcs-Svn: http://github.com/sunweaver/skolab-webadmin
+
+Package: skolab-webadmin
+Architecture: all
+Breaks: kolab-webadmin (<< 3),
+Replaces: kolab-webadmin (<< 3),
+Depends:
+ ${misc:Depends},
+ php,
+ smarty3,
+ php-net-sieve,
+ php-net-ldap,
+ php-mail,
+Description: Skolab administration web interface
+ This package contains the web GUI for the administration of the Skolab
+ groupware server.
+ .
+ Skolab is the continuation of the Kolab 2 groupware. It is a secure,
+ scalable, and reliable groupware server. It consists of a number of
+ well-known and proven components for the standard tasks such as e-mail,
+ directory service, and web service. Kolab adds intelligent interaction
+ between the components, a web administration interface, management of
+ free/busy lists, etc. Various clients can access Kolab, among them
+ Kontact (KDE), Thunderbird (Mozilla) and Horde (web).

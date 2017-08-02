@@ -1,0 +1,41 @@
+Author: gunnar
+
+Update of /kolabrepository/server/kolab-webadmin/kolab-webadmin/www/admin/user
+In directory doto:/tmp/cvs-serv13268/kolab-webadmin/kolab-webadmin/www/admin/user
+
+Modified Files:
+      Tag: kolab_2_2_branch
+	user.php.in 
+Log Message:
+kolab/issue4025 (Users can not change theire password (in 2.2.3))
+
+Index: user.php.in
+===================================================================
+RCS file: /kolabrepository/server/kolab-webadmin/kolab-webadmin/www/admin/user/user.php.in,v
+retrieving revision 1.28.2.3
+retrieving revision 1.28.2.4
+diff -u -d -r1.28.2.3 -r1.28.2.4
+--- a/www/admin/user/user.php.in	7 Dec 2009 13:17:02 -0000	1.28.2.3
++++ b/www/admin/user/user.php.in	15 Jan 2010 15:32:33 -0000	1.28.2.4
+@@ -521,7 +521,9 @@
+   $entries['givenname']['comment'] = '';
+   $entries['sn']['comment'] = '';
+   $entries['alias']['attrs'] = 'readonly';
++  $entries['kolabdelegate']['attrs'] = 'readonly';
+   $entries['kolabhomeserver']['attrs'] = 'readonly';
++  $entries['kolabAllowSMTPRecipient']['attrs'] = 'readonly';
+   $entries['accttype']['attrs'] = 'readonly';
+   $entries['uid']['attrs'] = 'readonly';
+ }
+@@ -717,6 +719,8 @@
+ 			   unset($ldap_object['mail']);
+ 			   unset($ldap_object['uid']);
+ 			   unset($ldap_object['kolabHomeServer']);
++			   unset($ldap_object['kolabAllowSMTPRecipient']);
++			   unset($ldap_object['kolabDelegate']);
+ 			 }
+ 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {			   
+ 			   array_push($errors, sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,
+
+
+
