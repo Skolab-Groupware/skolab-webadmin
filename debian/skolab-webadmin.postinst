@@ -3,10 +3,10 @@
 set -e
 
 fixperms() {
-	chmod 640 /etc/kolab/session_vars.php
-	chown www-data:www-data /etc/kolab/session_vars.php
+	chmod 640 /etc/skolab/session_vars.php
+	chown www-data:www-data /etc/skolab/session_vars.php
 
-	chown www-data:www-data /var/cache/kolab-webadmin/templates
+	chown www-data:www-data /var/cache/skolab-webadmin/templates
 }
 
 case "$1" in
