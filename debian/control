@@ -20,7 +20,7 @@ Depends:
  php,
  smarty3,
  php-net-sieve,
- php-net-ldap,
+ php-net-ldap3,
  php-mail,
 Description: Skolab administration web interface
  This package contains the web GUI for the administration of the Skolab
