@@ -2,7 +2,10 @@ Source: skolab-webadmin
 Section: admin
 Priority: extra
 Maintainer: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
-Build-Depends: debhelper (>= 10)
+Build-Depends:
+ debhelper (>= 10),
+ cdbs,
+ dh-autoreconf,
 Standards-Version: 4.0.0
 Homepage: http://github.com/sunweaver/skolab-webadmin
 Vcs-Browser: http://github.com/sunweaver/skolab-webadmin
