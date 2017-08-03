@@ -168,7 +168,7 @@ class KolabAdmin_Unit_Sieve_Segment_DeliveryTest extends PHPUnit_Framework_TestC
     {
         return 'require "fileinto";' . "\r\n" .
             'if header :contains ["X-Kolab-Scheduling-Message"] ["FALSE"] {' . "\r\n" .
-            'fileinto "INBOX/Test";' . "\r\n" . 
+            'fileinto "INBOX/Test";' . "\r\n" .
             '}' . "\r\n";
     }
 

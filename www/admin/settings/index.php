@@ -124,7 +124,7 @@ if( $_REQUEST['submitservices'] ) {
   if( postvalue( 'sieve' ) != $sieve ) $attrs['cyrus-sieve'] = postvalue( 'sieve' );
   if( postvalue( 'http' ) != $http )    $attrs['apache-http'] = postvalue( 'http' );
   if( postvalue( 'amavis' ) != $amavis )  $attrs['postfix-enable-virus-scan'] = postvalue( 'amavis' );
-  
+
   if( !($result = ldap_modify($ldap->connection, "k=kolab,".$_SESSION['base_dn'], $attrs)) ) {
 	$errors[] = sprintf( _("LDAP Error: failed to modify kolab configuration object: %s"),
 						 ldap_error($ldap->connection));
@@ -195,7 +195,7 @@ if( $_REQUEST['submitpostfixrelayhost'] ) {
   $port_val = trim( $_REQUEST['postfixrelayport'] );
   if( $host_val == '' ) $host_val = array();
   if( $port_val == '' ) $port_val = array();
-  $attrs = array();  
+  $attrs = array();
   $attrs['postfix-relayhost'] = $host_val;
   $attrs['postfix-relayport'] = $port_val;
   if( !($result = ldap_modify($ldap->connection, "k=kolab,".$_SESSION['base_dn'], $attrs)) ) {
@@ -279,7 +279,7 @@ $entries = array( array( 'service' => 'pop3', 'name'  => _('POP3 Service'), 'ena
 				  array( 'service' => 'imaps', 'name' => _('IMAP/SSL Service (TCP port 993)'), 'enabled' => toboolstr( $imaps ) ),
 				  array( 'service' => 'sieve', 'name' => sprintf(_('Sieve service (TCP port %s)'), 2000), 'enabled' => toboolstr( $sieve ) ),
 				  array( 'service' => 'http', 'name'  => _('FreeBusy Service via HTTP (in addition to HTTPS)'), 'enabled' => toboolstr( $http ) ),
-				  array( 'service' => 'amavis', 'name' => _('Amavis Email Scanning (Virus/Spam)'), 
+				  array( 'service' => 'amavis', 'name' => _('Amavis Email Scanning (Virus/Spam)'),
 						 'enabled' => toboolstr( $amavis ) ) );
 
 /**** Check for system aliases ****/
@@ -310,8 +310,8 @@ $smarty->assign( 'kolabfilterallowsender', toboolstr($kolabfilterallowsender) );
 $smarty->assign( 'kolabfilterrejectforgedfrom', toboolstr($kolabfilterrejectforgedfrom) );
 $smarty->assign( 'kolabhost', $kolabhost );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', 'settings.tpl' );
 

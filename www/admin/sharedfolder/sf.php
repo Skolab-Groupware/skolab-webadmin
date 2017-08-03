@@ -1,7 +1,7 @@
 <?php
 /*
  * (c) 2004 Klarälvdalens Datakonsult AB
- *     Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>   
+ *     Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
  *
  * This program is Free Software under the GNU General Public License (>=v2).
  * Read the file COPYING that comes with this packages for details.
@@ -70,7 +70,7 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
 											'type' => 'aclselect',
 											'user' => '',
 											'perm' => 'all'
-											);  
+											);
 }
 
 // Check uid/gid and perm and massage into cyrus ACL
@@ -83,7 +83,7 @@ function process_acl( $uid, $perm )
 	// Special users allowed
 	return "$uid $perm";
   }
-  $res = $ldap->search( $_SESSION['base_dn'], '(&(|(uid='.$ldap->escape($uid).')(mail='.$ldap->escape($uid).')(alias='.$ldap->escape($uid).'))(objectClass=kolabInetOrgPerson))', 
+  $res = $ldap->search( $_SESSION['base_dn'], '(&(|(uid='.$ldap->escape($uid).')(mail='.$ldap->escape($uid).')(alias='.$ldap->escape($uid).'))(objectClass=kolabInetOrgPerson))',
 						array('dn', 'mail' ) );
   if( $ldap->count($res) == 1 ) {
 	// Ok, we have a regular user
@@ -92,7 +92,7 @@ function process_acl( $uid, $perm )
 	$ldap->freeSearchResult();
 	return "$mail $perm";
   }
-  
+
   $res = $ldap->search( $_SESSION['base_dn'], '(&(cn='.$ldap->escape($uid).')(objectClass=kolabGroupOfNames))',
 						array('dn') );
   if( $ldap->count($res) == 1 ) {
@@ -109,7 +109,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 $heading = '';
 
 /**** Form/data handling ***/
-if (!empty($_REQUEST['action']) && 
+if (!empty($_REQUEST['action']) &&
     in_array($_REQUEST['action'],$valid_actions)) $action = trim($_REQUEST['action']);
 else array_push($errors, _("Error: need valid action to proceed"));
 
@@ -146,7 +146,7 @@ $entries['action'] = array( 'name' => 'action',
 if( $action == 'modify' || $action == 'delete' || $action == 'kill' ) {
   if( $_REQUEST['dn'] ) {
 	$dn = $_REQUEST['dn'];
-  } else {  
+  } else {
 	array_push($errors, sprintf(_("Error: DN required for %s operation"), $action));
   }
 }
@@ -161,7 +161,7 @@ if( !$errors ) {
 	$content = $form->outputForm();
 	break;
   case 'firstsave':
-  case 'save':	
+  case 'save':
 	if( $form->isSubmitted() ) {
 	  if( !$form->validate() ) {
 		if($action != "firstsave")
@@ -169,7 +169,7 @@ if( !$errors ) {
 		$form->setValues();
 		$content = $form->outputForm();
 	  } else {
-		$sf_root = $_SESSION['base_dn'];   
+		$sf_root = $_SESSION['base_dn'];
 		$ldap_object = array('objectClass' => 'kolabSharedFolder');
 		// OK, we need to get the name down to lowercase ascii only
 		// we handle a few common cases here
@@ -209,7 +209,7 @@ if( !$errors ) {
 		  if( !empty( $_POST['user_acl_'.$aclcount] ) ) {
 			$acl = process_acl( $_POST['user_acl_'.$aclcount], $_POST['perm_acl_'.$aclcount] );
 			if( $acl ) {
-			  $ldap_object['acl'][] = $acl;			  
+			  $ldap_object['acl'][] = $acl;
 			} else {
 			  break;
 			}
@@ -256,13 +256,13 @@ if( !$errors ) {
 											ldap_error($ldap->connection)));
 			  } else $messages[] = _('Shared folder updated');
 			}
-		  } 
+		  }
 		} else {
 		  if (!$errors) {
 			$dn = "cn=".$ldap->dn_escape($ldap_object['cn']).",".$sf_root;
 			$ldap_object['kolabHomeServer'] = trim($_POST['kolabhomeserver']);
-			if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) 
-			  array_push($errors, sprintf(_("LDAP Error: could not add object %s: %s"), $dn, 
+			if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object))
+			  array_push($errors, sprintf(_("LDAP Error: could not add object %s: %s"), $dn,
 										  ldap_error($ldap->connection)));
 			else $messages[] = sprintf(_("Shared folder '%s' added"), $cn);;
 		  }
@@ -281,7 +281,7 @@ if( !$errors ) {
 		if( $ldap_object ) {
 		  fill_form_for_modify( $form, $ldap_object );
 		}
-		$content = $form->outputForm();		
+		$content = $form->outputForm();
 	  }
 	}
 	break;
@@ -325,7 +325,7 @@ if( !$errors ) {
 		$heading = _('Entry Deleted');
 		$contenttemplate = 'sfdeleted.tpl';
 	  } else {
-		array_push($errors, sprintf(_("LDAP Error: Could not mark %s for deletion: %s"), $dn, 
+		array_push($errors, sprintf(_("LDAP Error: Could not mark %s for deletion: %s"), $dn,
 									ldap_error($ldap->connection)));
 	  }
 	}
@@ -341,8 +341,8 @@ $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'heading', $heading );
 $smarty->assign( 'form', $content );

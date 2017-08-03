@@ -9,13 +9,13 @@ Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/de/LC_MESSAGES/messages.po
 +++ kolab-webadmin-2.2.3-20091217/php/admin/locale/de/LC_MESSAGES/messages.po	2010-09-30 23:36:02.000000000 +0200
 @@ -1675,8 +1675,8 @@
  msgstr "IMAP/SSL-Dienst (TCP-Port 993)"
- 
+
  #: ../../../www/admin/settings/index.php.in:277
 -msgid "Sieve service (TCP port 2000)"
 -msgstr "Sieve-Dienst (TCP-Port 2000)"
 +msgid "Sieve service (TCP port %s)"
 +msgstr "Sieve-Dienst (TCP-Port %s)"
- 
+
  #: ../../../www/admin/settings/index.php.in:278
  msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
 Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/es/LC_MESSAGES/messages.po
@@ -24,13 +24,13 @@ Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/es/LC_MESSAGES/messages.po
 +++ kolab-webadmin-2.2.3-20091217/php/admin/locale/es/LC_MESSAGES/messages.po	2010-09-30 23:36:02.000000000 +0200
 @@ -1669,8 +1669,8 @@
  msgstr "Servicio IMAP/SSL (puerto TCP 993)"
- 
+
  #: ../../../www/admin/settings/index.php.in:277
 -msgid "Sieve service (TCP port 2000)"
 -msgstr "Servicio Sieve (puerto TCP 2000)"
 +msgid "Sieve service (TCP port %s)"
 +msgstr "Servicio Sieve (puerto TCP %s)"
- 
+
  #: ../../../www/admin/settings/index.php.in:278
  msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
 Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/fr/LC_MESSAGES/messages.po
@@ -39,13 +39,13 @@ Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/fr/LC_MESSAGES/messages.po
 +++ kolab-webadmin-2.2.3-20091217/php/admin/locale/fr/LC_MESSAGES/messages.po	2010-09-30 23:36:02.000000000 +0200
 @@ -1674,8 +1674,8 @@
  msgstr "Service IMAP/SSL (TCP port 993)"
- 
+
  #: ../../../www/admin/settings/index.php.in:279
 -msgid "Sieve service (TCP port 2000)"
 -msgstr "Service Sieve (TCP port 2000)"
 +msgid "Sieve service (TCP port %s)"
 +msgstr "Service Sieve (TCP port %s)"
- 
+
  #: ../../../www/admin/settings/index.php.in:280
  msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
 Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/it/LC_MESSAGES/messages.po
@@ -54,13 +54,13 @@ Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/it/LC_MESSAGES/messages.po
 +++ kolab-webadmin-2.2.3-20091217/php/admin/locale/it/LC_MESSAGES/messages.po	2010-09-30 23:36:02.000000000 +0200
 @@ -1669,8 +1669,8 @@
  msgstr "Servizio IMAP/SSL (Porta TCP 993)"
- 
+
  #: ../../../www/admin/settings/index.php.in:277
 -msgid "Sieve service (TCP port 2000)"
 -msgstr "Servizio Sieve (Porta TCP 2000)"
 +msgid "Sieve service (TCP port %s)"
 +msgstr "Servizio Sieve (Porta TCP %s)"
- 
+
  #: ../../../www/admin/settings/index.php.in:278
  msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
 Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/nl/LC_MESSAGES/messages.po
@@ -69,13 +69,13 @@ Index: kolab-webadmin-2.2.3-20091217/php/admin/locale/nl/LC_MESSAGES/messages.po
 +++ kolab-webadmin-2.2.3-20091217/php/admin/locale/nl/LC_MESSAGES/messages.po	2010-09-30 23:36:02.000000000 +0200
 @@ -1656,8 +1656,8 @@
  msgstr "IMAP/SSL Service (TCP poort 993)"
- 
+
  #: ../../../www/admin/settings/index.php.in:277
 -msgid "Sieve service (TCP port 2000)"
 -msgstr "Sieve service (TCP poort 2000)"
 +msgid "Sieve service (TCP port %s)"
 +msgstr "Sieve service (TCP poort %s)"
- 
+
  #: ../../../www/admin/settings/index.php.in:278
  msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
 Index: kolab-webadmin-2.2.3-20091217/www/admin/settings/index.php.in
@@ -89,5 +89,5 @@ Index: kolab-webadmin-2.2.3-20091217/www/admin/settings/index.php.in
 -				  array( 'service' => 'sieve', 'name' => _('Sieve service (TCP port 2000)'), 'enabled' => toboolstr( $sieve ) ),
 +				  array( 'service' => 'sieve', 'name' => sprintf(_('Sieve service (TCP port %s)'), 2000), 'enabled' => toboolstr( $sieve ) ),
  				  array( 'service' => 'http', 'name'  => _('FreeBusy Service via HTTP (in addition to HTTPS)'), 'enabled' => toboolstr( $http ) ),
- 				  array( 'service' => 'amavis', 'name' => _('Amavis Email Scanning (Virus/Spam)'), 
+ 				  array( 'service' => 'amavis', 'name' => _('Amavis Email Scanning (Virus/Spam)'),
  						 'enabled' => toboolstr( $amavis ) ) );

@@ -40,7 +40,7 @@ $params['allow_user_classes'] = array( 'user', 'admin', 'maintainer', 'manager',
 /*
  * Array to configure visibility/access of LDAP attributes to user's account object
  *
- * Possible values for attribute is 
+ * Possible values for attribute is
  *
  * 'ro' (readonly)
  * 'rw' (read/write)

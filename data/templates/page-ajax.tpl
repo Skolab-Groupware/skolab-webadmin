@@ -10,7 +10,7 @@
 <meta charset="UTF-8">
 <title>Kolab: {$page_title}</title>
 <link rel="shortcut icon" type="image/png" href="{$webserver_web_prefix}/favicon.png" />
-<meta name="robots" content="noindex" />	
+<meta name="robots" content="noindex" />
 <meta name="description" content="Kolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
 <link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/screen.css"}" />
@@ -30,26 +30,26 @@ function changeLanguage(combobox) {ldelim}
 <script type="text/javascript">
 function synced(a)
 {
-  var current = a.getElementById; 
+  var current = a.getElementById;
   var ch = a.id;
-  
+
   //get the real id from id-1 or id-2
   var actual_id = ch.split('-');
-  
-  
+
+
   //get the second element
   var secelement = document.getElementById(actual_id[0]+'-'+'2');
   var firelement = document.getElementById(actual_id[0]+'-'+'1');
-  
-   
+
+
   if (firelement.checked==false && secelement.checked==true && a.value==1)
  {
     secelement.checked=false;
-   
- }
- 
 
-  
+ }
+
+
+
 }
 </script>
 <style type="text/css" media="screen">
@@ -73,9 +73,9 @@ function synced(a)
 			-opera-border-radius: 6px;
 			-moz-border-radius: 5px;
 		}
-		
+
 		#wrapper { border: 1px dotted gray; margin: 1em; padding: 1em;}
-		
+
 		#panes {
 			text-align: justify;
 			border-style: none;
@@ -83,21 +83,21 @@ function synced(a)
 			margin: 0 1em 0 1em;
 
 		}
-		
+
 		#panes p {
 		  width: 500px;
 		  margin: 0 auto 1em auto;
 		  line-height: 1.2em;
 		}
-		
+
 		#panes div div { overflow: hidden; top:-96px; position:relative;}
 		#previous { float: none; cursor: pointer; }
 		#next { float: none; cursor: pointer; }
 		table, th, td {vertical-align:top;}
 
 		</style>
-		
-		
+
+
 {/literal}
 </head>
 <body>
@@ -106,7 +106,7 @@ function synced(a)
 <h3><a href="{$kolab_wui}"><img src="/admin/images/klogo.png" style="vertical-align:middle;" alt="logo"></a></h3>
 <div id="menu-top">
 {if $uid}
-<img src="/admin/images/user-icon-1-20x20.gif" width="16" style="vertical-align:middle;" title="Username" alt="username icon"> {$uid} <img src="/admin/images/eye_pencil.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Role" alt="Role icon"> {$group} 
+<img src="/admin/images/user-icon-1-20x20.gif" width="16" style="vertical-align:middle;" title="Username" alt="username icon"> {$uid} <img src="/admin/images/eye_pencil.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Role" alt="Role icon"> {$group}
 {/if}
 
 <img src="/admin/images/ul-icon.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Change Language" alt="Language icon"> <select name="lang" style="height:17px;vertical-align:middle" onchange="changeLanguage(this);">
@@ -128,7 +128,7 @@ function synced(a)
 		<div class="container">
 			<div>
 				<ul id="navlist">
-				
+
 				{foreach from=$menuitems item=menuitem}
   				<li>
 						<a class="{$menuitem.selected}" href="{$menuitem.url}">{$menuitem.name}</a>
@@ -140,7 +140,7 @@ function synced(a)
 
 
 			<div id="content">
-		
+
 <div id="submenu">
 {if count($submenuitems) > 0}
 {$page_title}:

@@ -122,7 +122,7 @@ if (!empty($_REQUEST['dn'])) $dn = trim(urldecode($_REQUEST['dn']));
 // Check auth
 if (!$errors && $auth->group() != 'admin' && $auth->group() != 'maintainer' ) {
   array_push($errors, _("Error: You don't have the required Permissions"));
-}   
+}
 
 // Fill in data
 if ($action == "create") {
@@ -171,7 +171,7 @@ switch( $action ) {
  case 'firstsave':
    debug("adding checkuniquemail to validation");
    $ldap_object['objectClass'] = array( 'top', 'inetOrgPerson', 'kolabInetOrgPerson');
-   $form->entries['uid']['validation'] = 'checkuniquemail';   
+   $form->entries['uid']['validation'] = 'checkuniquemail';
  case 'save':
    if( $form->isSubmitted() ) {
      if( !$form->validate() ) {
@@ -193,15 +193,15 @@ switch( $action ) {
 	   debug_var_dump( $ldap_object );
 
        $domain_dn = domain_dn();
-	   
+
        if ($action == "save") {
 		 if (!$errors) {
 		   if (!empty($ldap_object['cn'])) $newdn = "cn=".$ldap->dn_escape($ldap_object['cn']).",cn=internal,".$domain_dn;
 		   else $newdn = $dn;
 		   if (!$visible && !strstr($newdn,$dn_add)) {
-			 list($cn,$rest) = split(',', $newdn, 2); 
+			 list($cn,$rest) = split(',', $newdn, 2);
 			 $newdn = $cn.$dn_add.",".$rest;
-		   } 
+		   }
 		   if (strcmp($dn,$newdn) != 0) {
 			 if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
 				 ($entry=ldap_first_entry($ldap->connection,$result)) &&
@@ -247,7 +247,7 @@ switch( $action ) {
 		 if( $auth->group() != 'admin' ) {
 		   $form->entries['firstname']['attrs'] = 'readonly';
 		   $form->entries['lastname']['attrs'] = 'readonly';
-		 }		 
+		 }
 		 $form->entries['uid']['attrs'] = 'readonly';
 		 $form->entries['action']['value'] = 'save';
 		 $content = $form->outputForm();
@@ -257,10 +257,10 @@ switch( $action ) {
 		 if (!$errors) {
 		   $dn = "cn=".$ldap->dn_escape($ldap_object['cn']).",cn=internal,".$domain_dn;
 		   debug("Calling ldap_add with dn=$dn");
-		   if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) 
+		   if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object))
 			 array_push($errors, sprintf( _("LDAP Error: could not add object %s: %s"), $dn,
 										  ldap_error($ldap->connection)));
-		   if( $dn && !ldap_mod_add($ldap->connection, 'cn=maintainer,cn=internal,'.$domain_dn, 
+		   if( $dn && !ldap_mod_add($ldap->connection, 'cn=maintainer,cn=internal,'.$domain_dn,
 									array( 'member' => $dn ) ) ) {
 			 array_push($errors, sprintf(_("LDAP Error: could not add object %s to maintainer group: %s"), $dn,
 										 ldap_error($ldap->connection)));
@@ -312,9 +312,9 @@ switch( $action ) {
    break;
  case 'kill':
    if (!$dn) array_push($errors, _("Error: need DN for delete operation"));
-   elseif ($auth->group() != "maintainer" && $auth->group() != "admin") 
+   elseif ($auth->group() != "maintainer" && $auth->group() != "admin")
      array_push($errors, _("Error: you need administrative permissions to delete users"));
-   
+
    if (!$errors) {
 	 if(!ldap_mod_del($ldap->connection, 'cn=maintainer,cn=internal,'.domain_dn(), array('member' => $dn ) )) {
 	   $errors[] = sprintf(_("LDAP Error: Could not remove %s from maintainer group: %s"), $dn,
@@ -343,8 +343,8 @@ $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'heading', $heading );
 $smarty->assign( 'form', $content );

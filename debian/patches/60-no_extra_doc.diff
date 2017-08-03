@@ -11,7 +11,7 @@ Index: b/Makefile.am
 @@ -210,11 +210,11 @@
  	$(PHP_LOCALE_IT_PO) \
  	$(PHP_LOCALE_ES_PO)
- 
+
 -kwadocdir = $(pkgdocdir)/@PACKAGE@
 -dist_kwadoc_DATA = ChangeLog \
 -        COPYING \
@@ -22,7 +22,7 @@ Index: b/Makefile.am
 +#        COPYING \
 +#        NEWS \
 +#        AUTHORS
- 
+
  EXTRA_DIST += dist_conf/common \
  	dist_conf/debian \
 Index: b/Makefile.in
@@ -43,6 +43,6 @@ Index: b/Makefile.in
 +#        COPYING \
 +#        NEWS \
 +#        AUTHORS
- 
+
  all: all-am
- 
+

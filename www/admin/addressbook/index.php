@@ -130,8 +130,8 @@ $smarty->assign( 'filtervalue', $filtervalue );
 
 $smarty->assign( 'entries', $entries );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', $template );
 $smarty->display('page.tpl');

@@ -53,7 +53,7 @@ if( !$errors ) {
   if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
   else $base_dn = 'k=kolab';
 
-  
+
   $userfilter = "uid=*";
   $filterattr = KolabForm::getRequestVar('filterattr');
   $filtertype = KolabForm::getRequestVar('filtertype');
@@ -155,7 +155,7 @@ if( !$errors ) {
 		}
 
 		// skip admins and maintainers
-		
+
 		  $entries[] = array( 'dn' => $dn,
 							  'sn' => $sn,
 							  'fn' => $fn,
@@ -163,7 +163,7 @@ if( !$errors ) {
 							  'mail' => $mail,
 							  'uid' => $uid,
 							  'deleted' => $deleted );
-		
+
 		$entry = ldap_next_entry( $ldap->connection,$entry );
 	  }
 	}
@@ -192,8 +192,8 @@ $smarty->assign( 'filtervalue', $filtervalue );
 $smarty->assign( 'sublist', $sublist );
 $smarty->assign( 'entries', $entries );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', $template );
 $smarty->display('page.tpl');

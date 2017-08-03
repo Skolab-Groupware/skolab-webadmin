@@ -46,7 +46,7 @@ function supported_lang($lang) {
 }
 
 // This function is called in templates my Smarty
-function translate($params) 
+function translate($params)
 {
     $msg = $params["msg"];
     $domain = $params["domain"];
@@ -60,7 +60,7 @@ function translate($params)
 # Returns the currently selected language
 function getLanguage()
 {
-    if(empty($_SESSION["lang"])) 
+    if(empty($_SESSION["lang"]))
     {
 	    $acceptList = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
         if(empty($acceptList)) {
@@ -82,13 +82,13 @@ function getLanguage()
         }
 		if( !$lang ) $lang = "en";
         setLanguage($lang);
-    }    
+    }
     return supported_lang($_SESSION["lang"]);
 }
 
 # Allows languages to be set by users
 function setLanguage($lang)
-{   
+{
     $lang = supported_lang($lang);
     $_SESSION["lang"] = $lang;
 }
@@ -103,8 +103,8 @@ setlocale(LC_ALL,null);
 
 // I18N support information
 $language = getLanguage();
-putenv("LANG=$language"); 
-putenv("LANGUAGE=$language"); 
+putenv("LANG=$language");
+putenv("LANGUAGE=$language");
 setlocale(LC_ALL, $language);
 
 $domain = "messages";

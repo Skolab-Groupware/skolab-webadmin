@@ -33,7 +33,7 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
 
   foreach( array( 'title', 'o', 'ou', 'roomNumber', 'street', 'postOfficeBox',
                   'postalCode', 'l', 'c', 'telephoneNumber',
-                  'facsimileTelephoneNumber' ) as $attr ) {	
+                  'facsimileTelephoneNumber' ) as $attr ) {
     if (is_array($ldap_object[$attr])) $v = $ldap_object[$attr][0];
     else $v = $ldap_object[$attr];
     $form->entries[$attr]['value'] = $v;
@@ -61,7 +61,7 @@ function checkuniquemail( $form, $key, $value ) {
   $excludedn = false;
   if( $action == 'save' ) $excludedn = trim($dn);
 
-  if( $ldap->countMail( $_SESSION['base_dn'], $value, $excludedn ) > 0 ) {	
+  if( $ldap->countMail( $_SESSION['base_dn'], $value, $excludedn ) > 0 ) {
 	return _('User, vCard or distribution list with this email address already exists');
   } else {
 	return '';
@@ -73,11 +73,11 @@ $menuitems[$sidx]['selected'] = 'selected';
 $heading = '';
 
 /**** Form/data handling ***/
-if (!empty($_REQUEST['action']) && 
+if (!empty($_REQUEST['action']) &&
     in_array($_REQUEST['action'],$valid_actions)) $action = trim($_REQUEST['action']);
 else array_push($errors, _("Error: need valid action to proceed") );
 
-if (!$errors && $auth->group() != 'maintainer' && $auth->group() != 'admin') 
+if (!$errors && $auth->group() != 'maintainer' && $auth->group() != 'admin')
 	 array_push($errors, _("Error: You don't have the required Permissions") );
 
 $attributes = array( 'title', 'cn', 'sn', 'mail', 'alias', 'o',
@@ -117,7 +117,7 @@ $dn = '';
 if( $action == 'modify' || $action == 'delete' || $action == 'save' || $action == 'kill' ) {
   if( $_REQUEST['dn'] ) {
 	$dn = $_REQUEST['dn'];
-  } else {  
+  } else {
 	array_push($errors, sprintf(_("Error: DN required for %s operation"), $action ));
   }
 }
@@ -128,18 +128,18 @@ if( !$errors ) {
   switch( $action ) {
   case 'create':
 	$form->entries['action']['value'] = 'firstsave';
-	$heading = _('Add External Address'); 
+	$heading = _('Add External Address');
 	$content = $form->outputForm();
 	break;
   case 'firstsave':
 		$ldap_object = array('objectClass' => array( 'top', 'inetOrgPerson', 'kolabInetOrgPerson' ) );
-  case 'save':	
+  case 'save':
 	if( $form->isSubmitted() ) {
 	  if( !$form->validate() ) {
 		$form->setValues();
 		$content = $form->outputForm();
 	  } else {
-		$addressbook_root = "cn=external,".$_SESSION['base_dn'];   
+		$addressbook_root = "cn=external,".$_SESSION['base_dn'];
 		$firstname = trim($_POST['firstname']);
 		$lastname = trim($_POST['lastname']);
 		$ldap_object['sn'] = trim($lastname);
@@ -156,7 +156,7 @@ if( !$errors ) {
 			$key = $attr."_".$count;
 		  }
 		  if ($count > 0) $ldap_object[$attr] = $args;
-		  elseif (!empty($_POST[$key])) $ldap_object[$attr] = $_POST[$key];  
+		  elseif (!empty($_POST[$key])) $ldap_object[$attr] = $_POST[$key];
 		  else $ldap_object[$attr] = array();
 		}
 		$ldap_object['alias'] = array_unique( array_filter( array_map( 'trim', preg_split( '/\n/', $_POST['alias'] ) ), 'strlen') );
@@ -168,7 +168,7 @@ if( !$errors ) {
 			debug("action=save, dn=$dn, newdn=$newdn<br/>\n");
 			if (strcmp($dn,$newdn) != 0) {
 			  // Check for distribution lists with this entry as member
-			  $ldap->search( $_SESSION['base_dn'], 
+			  $ldap->search( $_SESSION['base_dn'],
 							 '(&(objectClass=kolabGroupOfNames)(!(kolabDeleteFlag=*))(member='.$ldap->escape($dn).'))',
 							 array( 'dn', 'mail' ) );
 			  $distlists = $ldap->getEntries();
@@ -177,7 +177,7 @@ if( !$errors ) {
 				$dlcn = $distlist['mail'][0];
 				$errors[] = sprintf(_("Addressbook entry DN could not be modified, distribution list <a href='".$params['kolab_wui']."/distributionlist/list.php?action=modify&dn=%s'>'%s'</a> depends on it. To modify this entry, first remove it from the distribution list."), urlencode($distlist['dn']), $dlcn );
 			  }
-			  
+
 			  if( !$errors ) {
 				if (($result=ldap_read($ldap->connection,$dn,"(objectclass=*)")) &&
 					($entry=ldap_first_entry($ldap->connection,$result)) &&
@@ -218,7 +218,7 @@ if( !$errors ) {
 				$messages[] = sprintf(_("%s successfully updated"), $dn);
 			  }
 			}
-		  } 
+		  }
 		} else {
 		  if (!$errors) {
 			$dn = "cn=".$ldap->dn_escape($ldap_object['cn']).",".$addressbook_root;
@@ -242,8 +242,8 @@ if( !$errors ) {
 		$form->entries['dn'] = array( 'name' => 'dn',
 									  'type' => 'hidden',
 									  'value' => $dn );
-		$content = $form->outputForm();		
-		
+		$content = $form->outputForm();
+
 	  }
 	}
 	break;
@@ -255,7 +255,7 @@ if( !$errors ) {
 	  $form->entries['dn'] = array( 'name' => 'dn',
 									'type' => 'hidden',
 									'value' => $dn );
-	  $heading = _('Modify External Address'); 
+	  $heading = _('Modify External Address');
 	  $content = $form->outputForm();
 	} else {
 	  array_push($errors, sprintf(_("Error: No entry with DN %s found"), $dn) );
@@ -283,7 +283,7 @@ if( !$errors ) {
 	break;
   case 'kill':
 	// Check for distribution lists with only this user as member
-	$ldap->search( $_SESSION['base_dn'], 
+	$ldap->search( $_SESSION['base_dn'],
 				   '(&(objectClass=kolabGroupOfNames)(member='.$ldap->escape($dn).'))',
 				   array( 'dn', 'cn', 'mail', 'member' ) );
 	$distlists = $ldap->getEntries();
@@ -306,8 +306,8 @@ if( !$errors ) {
 		break;
 	  }
 	}
-	
-	if (!$errors) {    
+
+	if (!$errors) {
 	  if (!($ldap->deleteObject($dn))) {
 		array_push($errors, sprintf(_("LDAP Error: could not delete %s: %s"),$dn,
 									ldap_error($ldap->connection)));
@@ -330,8 +330,8 @@ $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'heading', $heading );
 $smarty->assign( 'form', $content );

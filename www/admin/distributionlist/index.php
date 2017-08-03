@@ -68,7 +68,7 @@ if( !$errors ) {
 	  $attrs = ldap_get_attributes($ldap->connection, $entry);
 	  $dn = ldap_get_dn($ldap->connection,$entry);
 	  $cn = $attrs['cn'][0];
-	  if( $cn != 'admin' && $cn != 'maintainer' && $cn != 'domain-maintainer' 
+	  if( $cn != 'admin' && $cn != 'maintainer' && $cn != 'domain-maintainer'
 		  && !preg_match('/.*,cn=domains,cn=internal,'.$_SESSION['base_dn'].'/', $dn ) ) {
 		$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
 		$kolabhomeserver = _('not yet implemented');
@@ -92,8 +92,8 @@ $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'entries', $entries );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', $template );
 $smarty->display('page.tpl');

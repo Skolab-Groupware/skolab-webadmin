@@ -58,11 +58,11 @@ function checkuniquemail( $form, $key, $value ) {
   if( $key == 'cn' ) {
 	// Here we have the required hack again:
 	// email address is <value of cn>@default-domain
-	if( $ldap->countMail( $_SESSION['base_dn'], $value ) > 0 ) {	
+	if( $ldap->countMail( $_SESSION['base_dn'], $value ) > 0 ) {
 	  return _('User or distribution list with this email address already exists');
 	}
   }
-  return '';	  
+  return '';
 }
 
 function domain_dn()
@@ -72,7 +72,7 @@ function domain_dn()
 
 function fill_form_for_modify( &$form, &$ldap_object ) {
   global $dn;
-  
+
   if (is_array($ldap_object['cn'])) $cn = $ldap_object['cn'][0];
   else $cn = $ldap_object['cn'];
   $form->entries['cn']['value'] = $cn;
@@ -83,8 +83,8 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
   $m = $ldap_object['member'];
   unset( $m['count'] );
   debug_var_dump( $m );
-  $form->entries['members']['value'] = join("\r\n", 
-											array_map( create_function( '$dn', 
+  $form->entries['members']['value'] = join("\r\n",
+											array_map( create_function( '$dn',
 											'global $ldap; return $ldap->mailForDn($dn);' ), $m) );
   $internaldn = 'cn=internal,'.domain_dn();
   debug("internaldn=\"$internaldn\"");
@@ -104,7 +104,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 $heading = '';
 
 /**** Form/data handling ***/
-if (!empty($_REQUEST['action']) && 
+if (!empty($_REQUEST['action']) &&
     in_array($_REQUEST['action'],$valid_actions)) $action = trim($_REQUEST['action']);
 else array_push($errors, _("Error: need valid action to proceed") );
 
@@ -134,7 +134,7 @@ $entries['action'] = array( 'name' => 'action',
 if( $action == 'modify' || $action == 'delete' || $action == 'kill' ) {
   if( $_REQUEST['dn'] ) {
 	$dn = $_REQUEST['dn'];
-  } else {  
+  } else {
 	array_push($errors, sprintf(_("Error: DN required for %s operation"), $action ) );
   }
 }
@@ -150,7 +150,7 @@ if( !$errors ) {
 	break;
   case 'firstsave':
 	$form->entries['cn']['validation'] = array('notempty', 'checkuniquemail');
-  case 'save':	
+  case 'save':
 	if( $form->isSubmitted() ) {
 	  if( !$form->validate() ) {
 		fill_form_for_modify( $form, $ldap_object );
@@ -159,7 +159,7 @@ if( !$errors ) {
 	  } else {
 		$dl_root = domain_dn();
 
-		if (!empty($_POST['hidden']) && $_POST['hidden'] == "on") 
+		if (!empty($_POST['hidden']) && $_POST['hidden'] == "on")
 		  $visible = false;
 		else $visible = true;
 		if (!$visible) $dl_root = "cn=internal,".$dl_root;
@@ -184,7 +184,7 @@ if( !$errors ) {
 			break;
 		  }
 		}
-		if( !$ldap_object['member'] ) unset($ldap_object['member']); 
+		if( !$ldap_object['member'] ) unset($ldap_object['member']);
 
 		if ($action == "save") {
 		  if (!$errors) {
@@ -225,11 +225,11 @@ if( !$errors ) {
 											 ldap_error($ldap->connection)));
 			  else $messages[] = _('Distribution List updated');
 			}
-		  } 
+		  }
 		} else {
 		  // firstsave
 		  if (!$errors) {
-			if( !$ldap_object['member'] ) unset($ldap_object['member']); 
+			if( !$ldap_object['member'] ) unset($ldap_object['member']);
 			$dn = "cn=".$ldap->dn_escape($ldap_object['cn']).",".$dl_root;
 			if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) {
 			  array_push($errors, sprintf( _("LDAP Error: Could not add object %s: %s"), $dn,
@@ -247,13 +247,13 @@ if( !$errors ) {
 				  // Ups!!!
 				  $cn = $ldap_object['cn'];
 				  $newcn = md5( $dn.$cn );
-				  $ldap_object['cn'] = $newcn; 
+				  $ldap_object['cn'] = $newcn;
 				  $ldap_object['dn'] = 'cn='.$ldap->escape($newcn).','.$dl_root;
 				  if (!ldap_rename($ldap->connection, $dn, 'cn='.$ldap->escape($newcn), $dl_root,true)) {
 					$errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,
 										ldap_error($ldap->connection));
 				  }
-				  $error[] = sprintf( _("Mid-air collision detected, email address %1\$s renamed to %2\$s"), 
+				  $error[] = sprintf( _("Mid-air collision detected, email address %1\$s renamed to %2\$s"),
 									  $mail, $newmail);
 				  break;
 				}
@@ -268,14 +268,14 @@ if( !$errors ) {
 		  //print("<div class=\"maintitle\"> Create New Address Book Entry </div>\n");
 		  $form->entries['action']['value'] = 'create';
 		  fill_form_for_modify( $form, $ldap_object );
-		  $content = $form->outputForm();		
+		  $content = $form->outputForm();
 		} else {
 		  $form->entries['action']['value'] = 'save';
 		  $form->entries['dn'] = array( 'type' => 'hidden', 'value' => $dn );
 		  $form->entries['cn']['attrs'] = 'readonly';
 		  $heading = _('Modify Distribution List');
 		  fill_form_for_modify( $form, $ldap_object );
-		  $content = $form->outputForm();		
+		  $content = $form->outputForm();
 		}
 	  }
 	}
@@ -302,7 +302,7 @@ if( !$errors ) {
 		$form->entries[$key]['attrs'] = 'readonly';
 	  }
 	  $form->submittext = _('Delete');
-	  $heading = _('Delete Distribution List'); 
+	  $heading = _('Delete Distribution List');
 	  $content = $form->outputForm();
 	} else {
 	  array_push($errors, sprintf( _("Error: No results returned for DN '%s'"), $dn));
@@ -331,8 +331,8 @@ $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'heading', $heading );
 $smarty->assign( 'form', $content );

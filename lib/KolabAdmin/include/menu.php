@@ -3,8 +3,8 @@
  *  Copyright (c) 2004 Klarälvdalens Datakonsult AB
  *
  *    Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
- *	  Updated by Bogomil Shopov <shopov@kolabsys.com>	
- * 
+ *	  Updated by Bogomil Shopov <shopov@kolabsys.com>
+ *
  *  This  program is free  software; you can redistribute  it and/or
  *  modify it  under the terms of the GNU  General Public License as
  *  published by the  Free Software Foundation; either version 2, or
@@ -23,9 +23,9 @@ require_once('locale.php');
 
 /*
  * z-Push part for activesync
- * 
+ *
  * */
- 
+
 include_once '@www_dir@/z-push/config.php';
 $showasmenu=true;
 if(defined('KOLAB_LDAP_ACL') and KOLAB_LDAP_ACL !=""){
@@ -47,7 +47,7 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
   $menuitems['user'] = array( 'name' => _('Users'),
 							  'url'  => $topdir.'/user/',
 							  'title' => _('Manage Email Users'),
-							  'submenu' => array( 
+							  'submenu' => array(
 												 array( 'name' => _('Create New User'),
 														'url'  => 'user.php?action=create' )));
 } else {
@@ -63,17 +63,17 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
 														'url'  => 'vacation.php' )
 																	));
 if($showasmenu){
-	
+
 	$menuitems['activesync'] = array( 'name' => _('ActiveSync'),
 							  'url'  => $topdir.'/user/activesync.php',
-							  'title' => _('ActiveSync'));	
- }																
+							  'title' => _('ActiveSync'));
+ }
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer") {
   $menuitems['addressbook'] = array( 'name' => _('Addressbook'),
 									 'url'  => $topdir.'/addressbook/',
 									 'title' => _('Manage Address Book'),
-									 'submenu' => array( 
+									 'submenu' => array(
 														array( 'name' => _('Create New vCard'),
 															   'url' => 'addr.php?action=create' )));
 
@@ -82,9 +82,9 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
   $menuitems['sf'] = array( 'name' => _('Shared Folder'),
 							'url'  => $topdir.'/sharedfolder/',
 							'title' => _('Manage Shared Folders'),
-							'submenu' => array( 
+							'submenu' => array(
 											   array( 'name' => _('Add Shared Folder'),
-													  'url' => 'sf.php?action=create' )));  
+													  'url' => 'sf.php?action=create' )));
 }
 if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group() == 'domain-maintainer') {
   $menuitems['distlist'] = array( 'name' => _('Distribution Lists'),
@@ -117,7 +117,7 @@ if( $auth->group() == 'admin' ) {
   $mdn = $auth->dn();
   $menuitems['maintainer'] = array( 'name' => _('Maintainers'),
 									'url'  => $topdir.'/maintainer/maintainer.php?action=modify&dn='.urlencode($mdn),
-									'title' => _('Manage Maintainer') );  
+									'title' => _('Manage Maintainer') );
   $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
 									   'url'  => $topdir.'/domainmaintainer/',
 									   'title' => _('Manage Domain Maintainers'),
@@ -128,7 +128,7 @@ if( $auth->group() == 'admin' ) {
   $mdn = $auth->dn();
   $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
 									'url'  => $topdir.'/domainmaintainer/domainmaintainer.php?action=modify&dn='.urlencode($mdn),
-									'title' => _('Manage Domain Maintainer') );  
+									'title' => _('Manage Domain Maintainer') );
 }
 if( $auth->group() == 'admin' ) {
   $menuitems['service'] = array( 'name' => _('Settings'),
@@ -139,7 +139,7 @@ if( $auth->group() == 'admin' ) {
 $menuitems['about'] = array( 'name' => _('About Kolab'),
 							 'url'  => $topdir.'/kolab/',
 							 'title' => _('About Kolab'),
-							 'submenu' => array( 
+							 'submenu' => array(
 												array( 'name' => _('Kolab Systems'),
 													   'url'  => 'kolabsystems.php' ),
 												array( 'name' => _('Technology'),

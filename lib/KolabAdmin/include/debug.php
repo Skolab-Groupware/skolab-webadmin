@@ -18,9 +18,9 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-function getmicrotime() { 
-    list($usec, $sec) = explode(" ", microtime()); 
-    return ((float)$usec + (float)$sec); 
+function getmicrotime() {
+    list($usec, $sec) = explode(" ", microtime());
+    return ((float)$usec + (float)$sec);
 }
 function debug($str) {
     #print $str.'<br/>';
@@ -45,7 +45,7 @@ function backtrace() {
     //print them
     for($tmp_args_counter = 0; $tmp_args_counter != $args_counter; ++$tmp_args_counter) {
 		echo($debug_array[$tmp_counter]["args"][$tmp_args_counter]);
-      
+
 		if(($tmp_args_counter + 1) != $args_counter) {
 			echo(", ");
 		} else {

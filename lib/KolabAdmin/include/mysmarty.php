@@ -35,7 +35,7 @@ class MySmarty extends Smarty {
 	global $webserver_web_prefix;
 	global $params;
 	$this->Smarty();
-	
+
 	$this->template_dir = $php_dir . '/data/KolabAdmin/templates/';
 	$this->compile_dir = $smarty_compiledir;
 
@@ -50,15 +50,15 @@ class MySmarty extends Smarty {
 	$this->assign('self_url', $_SERVER['REQUEST_URI']);
 
 	$cleanurl = preg_replace('/(\?|&)lang=(.*)(&|$)/', '', $_SERVER['REQUEST_URI']);
-	$this->assign( 'lang_url', 
+	$this->assign( 'lang_url',
 				   strpos($cleanurl,'?')===false?
 				   ($cleanurl.'?lang='):
 				   ($cleanurl.'&lang=') );
-	
-	// If you add a translation, 
+
+	// If you add a translation,
 	// add the new language here
 	$this->assign( 'currentlang', $language );
-	$this->assign( 'languages', array( 
+	$this->assign( 'languages', array(
 									  array( 'name' => 'Deutsch',
 											 'code' => 'de_DE' ),
 									  array( 'name' => 'English',
@@ -76,7 +76,7 @@ class MySmarty extends Smarty {
 
 
   /** UTF-8 friendly htmlentities() */
-  /* static */ function htmlentities( $str ) {	
+  /* static */ function htmlentities( $str ) {
 	return htmlentities( $str, ENT_QUOTES, "UTF-8");
   }
 };

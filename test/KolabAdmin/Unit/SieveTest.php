@@ -232,7 +232,7 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
 
     private function _getScript()
     {
-        return 
+        return
             'fileinto "INBOX/Test";'
             . '## delivery enabled'
             . '## vacation enabled'
@@ -245,7 +245,7 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
 
     private function _getScript2()
     {
-        return 
+        return
             'require "vacation";' . "\r\n" .
             '' . "\r\n" .
             'require "fileinto";' . "\r\n" .
@@ -269,7 +269,7 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
     {
         return 'require "fileinto";' . "\r\n" .
             'if header :contains ["X-Kolab-Scheduling-Message"] ["FALSE"] {' . "\r\n" .
-            'fileinto "INBOX/Test";' . "\r\n" . 
+            'fileinto "INBOX/Test";' . "\r\n" .
             '}' . "\r\n";
     }
 

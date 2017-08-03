@@ -10,14 +10,14 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 
 
 	#header .span-24 {padding-left: 22px;}
-	
+
 	#header h3{
 		height: 54px;
 		top: 17px;
 		position:relative;
 	}
-	
-	
+
+
 
 	#header ul li {
 		list-style-type: none;
@@ -27,11 +27,11 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 #root {
 	background: #e7e7e7 url(/admin/images/root.jpg) repeat-x top left;
 	min-height: 150px;
-	
+
 }
 
 	#root .container {background: transparent url(/admin/images/bottom.png) no-repeat bottom left;}
-	
+
 	#root #main {
 		background: transparent url(/admin/images/bottom_all.png) no-repeat bottom left;
 		margin-bottom: 10px;
@@ -39,7 +39,7 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 	}
 	#navlist{
 	width:100%;
-	
+
 	}
 
 #navlist li {
@@ -49,7 +49,7 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 	margin-right: 2px;
 	list-style: none;
 	margin-top: 1px;
-	
+
 }
 
 
@@ -61,7 +61,7 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 		font-weight:normal;
 		font-size:14px;
 	}
-	
+
 	#navlist li a.selected {font-weight:bold;color: #c6ced8;}
 
 #content {
@@ -73,14 +73,14 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 
 	#content h2, #content h2 a, #content h1 {color: #5c5c5c; font-weight: normal;text-shadow: 0 2px 2px #FFFFFF; }
 	#content p:first-letter { font-size: 1.3em; }
-	
+
 #footer {
-  
+
   padding: 6px;
 text-align: center;
 }
 
-/* Overriding some global properties */	
+/* Overriding some global properties */
 a:link, a:visited { font-weight: normal; }
 
 
@@ -89,8 +89,8 @@ a:link, a:visited { font-weight: normal; }
 	margin-top:-42px;
 	margin-left: 47px;
 	float:left;
-	
-	
+
+
 	padding:5px;
 
 
@@ -101,8 +101,8 @@ a:link, a:visited { font-weight: normal; }
 		text-decoration: underline;
 		text-align: left;
 		padding:7px;
-		
-		
+
+
 	}
 
 #menu-top{

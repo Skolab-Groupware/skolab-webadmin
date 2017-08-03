@@ -39,9 +39,9 @@ if( !$errors ) {
   if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
   else $base_dn = 'k=kolab';
   if( $group == 'domain-maintainer' ) {
-	$domainfilter = '(|'.join('', array_map( 'prepare_domain_filter_component', 
+	$domainfilter = '(|'.join('', array_map( 'prepare_domain_filter_component',
 											 $ldap->domainsForMaintainerDn($auth->dn()))).')';
-	
+
   } else {
 	$domainfilter = '(cn=*)';
   }
@@ -88,8 +88,8 @@ $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'entries', $entries );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', $template );
 $smarty->display('page.tpl');

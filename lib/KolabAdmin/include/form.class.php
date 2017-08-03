@@ -95,12 +95,12 @@ class KolabForm {
       if( is_array( $value['validation'] ) && in_array( 'notempty', $value['validation']) ) {
 	$ast = '<span class="required_asterisk">*</span> ';
       } else if( $value['validation'] == 'notempty' ) {
-	$ast = '<span class="required_asterisk">*</span> ';			  
+	$ast = '<span class="required_asterisk">*</span> ';
       }
     }
     return $ast.$value['comment'];
   }
-  
+
   function outputForm() {
     debug_var_dump($this->entries);
     $str = '<div class="contentform">';
@@ -115,7 +115,7 @@ class KolabForm {
     $str .= '<form name="'.$this->name.'" method="post">';
     $str .= '<table class="contentformtable">';
     $str .= _('<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>')."\n";
-    
+
     $size = 60;
     foreach( $this->entries as $key => $value ) {
       if( !isset( $value['type'] ) || $value['type']=='' ) $value['type'] = 'text';
@@ -125,7 +125,7 @@ class KolabForm {
       switch( $value['type'] ) {
       case 'hidden': continue;
       case 'password':
-	if( ereg( 'readonly', $value['attrs'] ) ) {		  
+	if( ereg( 'readonly', $value['attrs'] ) ) {
 	  // If readonly, skip it -- passwords are at most write-only
 	  break;
 	}
@@ -196,7 +196,7 @@ class KolabForm {
 	}
 	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
-	break;	
+	break;
       case 'checkbox':
 	$str .= '<tr>';
 	if( ereg( 'readonly', $value['attrs'] ) ) {
@@ -208,7 +208,7 @@ class KolabForm {
 	}
 	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
-	break;	
+	break;
       case 'checklist':
 	$str .= '<tr>';
 	$str .= '<td><label>'.$value['name'].'</label></td>';
@@ -227,7 +227,7 @@ class KolabForm {
 	}
 	$str .= '<td>'.$value['comment'].'</td>';
 	$str .= '</tr>'."\n";
-	break;			
+	break;
       case 'select':
 	$str .= '<tr>';
 	if( ereg( 'readonly', $value['attrs'] ) ) {
@@ -237,7 +237,7 @@ class KolabForm {
 	} else {
 	  $str .= '<td><label for="'.$key.'">'.$value['name'].'</label></td>';
 	  $str .= '<td><select name="'.$key.'" id="'.$key.'" '.$value['attrs'].' >'."\n";
-	  
+
 	  for( $i = 0; $i < count($value['options']); ++$i) {
 	    if( $i == $value['value'] ) $s = 'selected="selected"';
 	    else $s = '';
@@ -251,8 +251,8 @@ class KolabForm {
 	break;
       case 'foldertypeselect':
 	$str .= '<tr>';
-	$entries = array ( '' => _('Unspecified'), 'mail' => _('Mails'), 'task' => _('Tasks'), 
-			   'journal' => _('Journals'), 'event' => _('Events'), 
+	$entries = array ( '' => _('Unspecified'), 'mail' => _('Mails'), 'task' => _('Tasks'),
+			   'journal' => _('Journals'), 'event' => _('Events'),
 			   'contact' => _('Contacts'), 'note' => _('Notes'));
 	if( ereg( 'readonly', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
@@ -266,7 +266,7 @@ class KolabForm {
 	      $s = 'selected="selected"';
 	    else
 	      $s = '';
-	    
+
 	    $str .= '<option value="'.$id.'" '.$s.'>'.MySmarty::htmlentities($title).'</option>'."\n";
 	  }
 	  $str .= '</select>';
@@ -287,15 +287,15 @@ class KolabForm {
 	  $str .= '<select name="perm_'.$key.'">'."\n";
 	  if( $value['perm'] ) $selected_perm = $value['perm'];
 	  else $selected_perm = 'all';
-	  foreach( array( 'none', 
-			  'post', 
-			  'read', 'read/post', 
-			  'append', 
-			  'write', 
-			  'read anon', 
-			  'read anon/post', 
-			  'read hidden', 
-			  'read hidden/post', 
+	  foreach( array( 'none',
+			  'post',
+			  'read', 'read/post',
+			  'append',
+			  'write',
+			  'read anon',
+			  'read anon/post',
+			  'read hidden',
+			  'read hidden/post',
 			  'all' ) as $perm ) {
 	    if( $perm == $selected_perm ) $s = 'selected="selected"';
 	    else $s = '';
@@ -305,7 +305,7 @@ class KolabForm {
 	  $str .= '</td>';
 	}
 	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
-	$str .= '</tr>'."\n";	
+	$str .= '</tr>'."\n";
 	break;
       case 'resourcepolicy': // Special Kolab entry for group/resource policies
 	debug("resourcepolicy");
@@ -319,13 +319,13 @@ class KolabForm {
 	unset($tmppol['']);
 	ksort($tmppol);
 	$tmppol[''] = 0;
-	$policies = array( _('Always accept'), 
-			   _('Always reject'), 
-			   _('Reject if conflicts'), 
+	$policies = array( _('Always accept'),
+			   _('Always reject'),
+			   _('Reject if conflicts'),
 			   _('Manual if conflicts'),
 			   _('Manual') );
 	foreach( $tmppol as $user => $pol ) {
-	  debug("form: ".$user." => ".$pol);		  
+	  debug("form: ".$user." => ".$pol);
 	  if( $ro ) {
 	    if( !$user ) continue;
 	    $str .= '<tr><td>';
@@ -344,7 +344,7 @@ class KolabForm {
 	    $j = 0;
 	    foreach( $policies as $p ) {
 	      if( $j == $pol ) {
-		$str .= '<option value="'.$j++.'" selected="selected">'.$p.'</option>'."\n";			
+		$str .= '<option value="'.$j++.'" selected="selected">'.$p.'</option>'."\n";
 	      } else {
 		$str .= '<option value="'.$j++.'">'.$p.'</option>'."\n";
 	      }
@@ -375,7 +375,7 @@ class KolabForm {
     $str .= '</div>';
     return $str;
   }
-  
+
   function validate() {
     $this->errors = array();
     foreach( $this->entries as $key => $value ) {
@@ -454,13 +454,13 @@ class KolabForm {
       } else if( $this->entries[$k]['type'] == 'checklist' ) {
 	$this->entries[$k]['value'] = $_REQUEST[$k];
       } else if( $this->entries[$k]['type'] == 'password' ) {
-	$this->entries[$k]['value'] = $this->value($k);		
+	$this->entries[$k]['value'] = $this->value($k);
       } else if( $this->entries[$k]['type'] == 'email' ) {
 	$this->entries[$k]['value'] = trim($this->value('user_'.$k)).'@'.trim($this->value('domain_'.$k));
       } else {
 	$this->entries[$k]['value'] = trim($this->value($k));
       }
-    }    
+    }
   }
 
   /* static */ function getRequestVar($var, $default = false)

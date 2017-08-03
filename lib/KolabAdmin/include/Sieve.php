@@ -568,7 +568,7 @@ class Net_Sieve
 	if( strtoupper(substr($challenge,0,2))== 'OK' ){
 		return true;
 	}
-	
+
 //echo "CHALL:$challenge\n";
 //*/
 	/*
@@ -576,7 +576,7 @@ class Net_Sieve
          * subsequent authentication, so we just silently ignore it.
          */
 
-///*	
+///*
         if ( PEAR::isError($error = $this->_sendStringResponse( '' ) ) ) {
             $this->_error=$error;
             return $error;
@@ -586,7 +586,7 @@ class Net_Sieve
             return $res;
         }
 
-//*/	
+//*/
     }
 
 

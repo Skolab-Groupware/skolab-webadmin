@@ -84,8 +84,8 @@ $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 if (isset($handler)) {
     $smarty->assign( 'active', $handler->fetchVacationSegment()->isActive() );

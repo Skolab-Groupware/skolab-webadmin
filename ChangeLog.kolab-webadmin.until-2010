@@ -10,23 +10,23 @@
 
 	kolab/issue4516 (Various logic/spelling fixes for the web admin)
 
-	* kolab-webadmin.spec: 
-	* www/admin/index.php.in: 
-	* www/admin/settings/index.php.in: 
+	* kolab-webadmin.spec:
+	* www/admin/index.php.in:
+	* www/admin/settings/index.php.in:
 
 	Support template based configuration of the web admin.
 	kolab/issue4512 (Allow to hide the admin mail settings in the web admin)
 
-	* php/admin/include/form.class.php: 
+	* php/admin/include/form.class.php:
 
 	kolab/issue4510 (Fix the kolab web admin display for Firefox)
 
-	* lib/KolabAdmin/Ldap.php: 
+	* lib/KolabAdmin/Ldap.php:
 	* www/admin/settings/index.php.in:
 
 	kolab/issue4515 (Sort some additional lists in the web admin)
 
-	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+	* php/admin/locale/de/LC_MESSAGES/messages.po:
 
 	kolab/issue4511 (Correct the German web admin translation)
 
@@ -77,14 +77,14 @@
 	change theire password (in 2.2.3))
 
 2009-12-07  Gunnar Wrobel <wrobel@pardus.de>
- 
+
 	* www/admin/user/user.php.in: kolab/issue1340 (RFC: restrict users
 	to sending mail only to internal recipients)
 
 2009-12-03  Gunnar Wrobel  <p@rdus.de>
 
-	* php/admin/include/ldap.class.php.in: 
-	* www/admin/*: 
+	* php/admin/include/ldap.class.php.in:
+	* www/admin/*:
 
 	 kolab/issue3499 (Kolab web admin does not use LDAP escaping)
 
@@ -195,7 +195,7 @@
 
 2008-03-28 Richard Bos <richard@radoeka.nl>
 
-	* php/admin/templates/systemaliasnagscreen.tpl: 
+	* php/admin/templates/systemaliasnagscreen.tpl:
 	  rename of services to settings makes welcome screen fail
 	  (Fixes issue2569)
 	* Removed: www/admin/pics/kde.jpg: has been replaced by
@@ -415,28 +415,28 @@
 
 2007-08-07  Gunnar Wrobel  <p@rdus.de>
 
-	* php/admin/templates/page.tpl.in: 
+	* php/admin/templates/page.tpl.in:
 
 	fixed  kolab/issue1611 ([webadmin] page.tpl use no valid XHTML)
 	https://intevation.de/roundup/kolab/issue1611
 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
 
 	fixed  kolab/issue1246 (Permission handling in the webadmin frontend)
 	https://intevation.de/roundup/kolab/issue1246
 
 2007-07-13  Gunnar Wrobel  <p@rdus.de>
 
-	* php/admin/include/ldap.class.php: 
+	* php/admin/include/ldap.class.php:
 
 	fixed possible PHP notices.
 
 2007-07-12  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
-	* www/admin/sharedfolder/sf.php.in: 
-	* www/admin/addressbook/addr.php.in: 
-	* www/admin/user/user.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
+	* www/admin/sharedfolder/sf.php.in:
+	* www/admin/addressbook/addr.php.in:
+	* www/admin/user/user.php.in:
 
 	fixed kolab/issue932 (Illegal values in webadmin cause LDAP errors)
 	https://intevation.de/roundup/kolab/issue932
@@ -445,14 +445,14 @@
 
 2007-07-11  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/sharedfolder/sf.php.in: 
+	* www/admin/sharedfolder/sf.php.in:
 
 	fixed kolab/issue1694 (Unable to modify the folder type of an already created shared folder)
 	https://intevation.de/roundup/kolab/issue1694
 
 2007-07-10  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/user/user.php.in: 
+	* www/admin/user/user.php.in:
 
 	fixed kolab/issue1162 (Misplaced title field in webinterface)
 	https://intevation.de/roundup/kolab/issue1162
@@ -465,7 +465,7 @@
 2007-07-04  Marcus Hüwe  <suse-tux@gmx.de>
 
 	* Makefile.am:
-	
+
 	exclude the generated *.mo files from a tarball which
 	is created with "make distcheck". Additionally I added a small
 	fix so that "make distcheck" works.
@@ -492,11 +492,11 @@
 
 2007-05-29  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
-	* www/admin/domainmaintainer/index.php.in: 
-	* www/admin/maintainer/index.php.in: 
-	* www/admin/maintainer/maintainer.php.in: 
-	* www/admin/administrator/index.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
+	* www/admin/domainmaintainer/index.php.in:
+	* www/admin/maintainer/index.php.in:
+	* www/admin/maintainer/maintainer.php.in:
+	* www/admin/administrator/index.php.in:
 
 	Committed potential fix for kolab/issue1744 by accident. Probably
 	ok, but I still need to test it. Simply typo (kolabDeleteflag).
@@ -504,92 +504,92 @@
 
 2007-05-28  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/user/user.php.in: 
-	* www/admin/maintainer/maintainer.php.in: 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
-	* www/admin/administrator/admin.php.in: 
-	* www/admin/addressbook/addr.php.in: 
+	* www/admin/user/user.php.in:
+	* www/admin/maintainer/maintainer.php.in:
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
+	* www/admin/administrator/admin.php.in:
+	* www/admin/addressbook/addr.php.in:
 
 	Corrected fix for
 	kolab/issue1742 (https://intevation.de/roundup/kolab/issue1742)
 
 2007-05-24  Gunnar Wrobel  <p@rdus.de>
 
-	* Makefile.am (WSKOLAB_FILES): 
+	* Makefile.am (WSKOLAB_FILES):
 
 	Needed to add print.css to the files that should be installed.
 	kolab/issue1619 (https://intevation.de/roundup/kolab/issue1619)
 
-	* php/admin/templates/login.tpl: 
+	* php/admin/templates/login.tpl:
 
 	Fixed
 	kolab/issue1615 (https://intevation.de/roundup/kolab/issue1615)
 
-	* php/admin/include/form.class.php: 
-	
+	* php/admin/include/form.class.php:
+
 	Fixed
 	kolab/issue1610 (https://intevation.de/roundup/kolab/issue1610)
 
-	* php/admin/templates/page.tpl.in: 
-	* www/admin/print.css: 
-	
+	* php/admin/templates/page.tpl.in:
+	* www/admin/print.css:
+
 	Fixed
 	kolab/issue1619 (https://intevation.de/roundup/kolab/issue1619)
 
-	* php/admin/templates/maintainerlistall.tpl: 
-	* php/admin/templates/domainmaintainerlistall.tpl: 
-	* php/admin/templates/addrlistall.tpl: 
+	* php/admin/templates/maintainerlistall.tpl:
+	* php/admin/templates/domainmaintainerlistall.tpl:
+	* php/admin/templates/addrlistall.tpl:
 
 	Fixed
 	kolab/issue1618 (https://intevation.de/roundup/kolab/issue1618)
 
-	* php/admin/include/form.class.php: 
+	* php/admin/include/form.class.php:
 
 	Fixed
 	kolab/issue1620 (https://intevation.de/roundup/kolab/issue1620)
 
-	* www/admin/user/user.php.in: 
-	* www/admin/maintainer/maintainer.php.in: 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
-	* www/admin/administrator/admin.php.in: 
-	* www/admin/addressbook/addr.php.in: 
+	* www/admin/user/user.php.in:
+	* www/admin/maintainer/maintainer.php.in:
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
+	* www/admin/administrator/admin.php.in:
+	* www/admin/addressbook/addr.php.in:
 
 	Fixed
 	kolab/issue1742 (https://intevation.de/roundup/kolab/issue1742)
 
 2007-05-09  Gunnar Wrobel  <p@rdus.de>
 
-	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+	* php/admin/locale/de/LC_MESSAGES/messages.po:
 
 	Fixed
 	kolab/issue1617 (https://intevation.de/roundup/kolab/issue1617)
 
 2007-03-23  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
 
 	Fixed update of the domain name after modification of a domain
 	maintainer.
 
 	Fixes
 	kolab/issue1670 (https://intevation.de/roundup/kolab/issue1670)
-	
+
 2007-03-21  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
 
 	Added check for empty set of selected domains when creating or
 	modifying a domain maintainer.
 
 2007-03-16  Gunnar Wrobel  <p@rdus.de>
 
-	* www/admin/user/user.php.in: 
-	* www/admin/sharedfolder/sf.php.in: 
-	* www/admin/maintainer/maintainer.php.in: 
-	* www/admin/domainmaintainer/domainmaintainer.php.in: 
-	* www/admin/distributionlist/list.php.in: 
-	* www/admin/administrator/admin.php.in: 
-	* www/admin/addressbook/addr.php.in: 
+	* www/admin/user/user.php.in:
+	* www/admin/sharedfolder/sf.php.in:
+	* www/admin/maintainer/maintainer.php.in:
+	* www/admin/domainmaintainer/domainmaintainer.php.in:
+	* www/admin/distributionlist/list.php.in:
+	* www/admin/administrator/admin.php.in:
+	* www/admin/addressbook/addr.php.in:
 
 	Fixed for the new LDAP overlays introduced in
 	http://kolab.org/cgi-bin/viewcvs-kolab.cgi/server/kolabd/kolabd/templates/slapd.conf.template.in.diff?r1=1.9&r2=1.10
@@ -599,15 +599,15 @@
 	https://intevation.de/roundup/kolab/issue1614
 	https://intevation.de/roundup/kolab/issue1652
 	https://intevation.de/roundup/kolab/issue1654
-	
+
 2007-02-20 Bernhard Reiter <bernhard@intevation.de>
 
-	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+	* php/admin/locale/de/LC_MESSAGES/messages.po:
 	Translated two more strings.
 
 2007-02-20  Gunnar Wrobel  <wrobel@pardus.de>
 
-	* www/admin/user/user.php.in (fill_form_for_modify): 
+	* www/admin/user/user.php.in (fill_form_for_modify):
 
 	Fixed typo (issue 1612;
 	https://intevation.de/roundup/kolab/issue1612). This should allow
@@ -626,25 +626,25 @@
 
 2007-02-01  Gunnar Wrobel  <wrobel@pardus.de>
 
-	* www/admin/user/user.php.in (inMaintainerDomain): 
+	* www/admin/user/user.php.in (inMaintainerDomain):
 
 	New function to support checking if a given user lies in the
 	domains of the current domain-maintainer. Should fix issue 1559
 	(https://intevation.de/roundup/kolab/issue1559)
-	
+
 2007-01-18  Gunnar Wrobel  <wrobel@pardus.de>
 
-	* php/admin/locale/de/LC_MESSAGES/messages.po: 
+	* php/admin/locale/de/LC_MESSAGES/messages.po:
 
 	Added the german translation for recent patch to
 	systemaliasnagscreen.tpl (http://kolab.org/cgi-bin/viewcvs-kolab.cgi/server/kolab-webadmin/kolab-webadmin/php/admin/templates/systemaliasnagscreen.tpl.diff?r1=1.1&r2=1.2)
 
 	See issue1539 (https://intevation.de/roundup/kolab/issue1539)
-	
-	* www/admin/sharedfolder/sf.php.in: 
+
+	* www/admin/sharedfolder/sf.php.in:
 
 	Allow modification of the shared folder type.
-	
+
 	Fix for issue1479 (https://intevation.de/roundup/kolab/issue1479).
 
 2007-01-10 Marcus Hüwe <suse-tux@gmx.de>
@@ -796,7 +796,7 @@
 	  Replaced wsdocrootdir by webserver_document_root
 	  Renamed wsadmin... to the more appropriate name wskolab...
 	  Replaced phpdir by phplibdir2
-	  Renamed phpadmin... to the more appropriate name phpkolab 
+	  Renamed phpadmin... to the more appropriate name phpkolab
 	  Added prefix dist_ to dist_phplocaleXX_DATA variables so
 	  make distcheck completes
 	  Removed test -z "$(webserver_usr)" || chown $(webserver_usr)

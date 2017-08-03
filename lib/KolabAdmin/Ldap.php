@@ -88,7 +88,7 @@ class KolabLDAP {
 	  $val = str_replace('#',    '\#', $val);
 	  $val = str_replace('=',    '\=', $val);
 
-	  // ASCII < 32 escaping                                                                                                                                        
+	  // ASCII < 32 escaping
 	  $val = KolabLDAP::asc2hex32($val);
 
 	  // Convert all leading and trailing spaces to sequences of \20.
@@ -185,7 +185,7 @@ class KolabLDAP {
     if( $attrs ) {
 	  $this->search_result = ldap_search( $this->connection, $base, $filter, $attrs );
 	} else {
-	  $this->search_result = ldap_search( $this->connection, $base, $filter );	  
+	  $this->search_result = ldap_search( $this->connection, $base, $filter );
 	}
     return $this->search_result;
   }
@@ -225,7 +225,7 @@ class KolabLDAP {
 	} else {
 	  $errors[] = sprintf( _("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection));
 	}
-    return false;	
+    return false;
   }
 
   function dnForUid( $uid ) {
@@ -248,10 +248,10 @@ class KolabLDAP {
       $entries = ldap_get_entries( $this->connection, $res );
       ldap_free_result( $res );
       if( $entries[0]['count'] == 1 ) {
-        return $entries[0]['mail'][0]; 
+        return $entries[0]['mail'][0];
       } else {
         $errors[] = sprintf( _("No such object %s"), $dn);
-      } 
+      }
     } else {
       $errors[] = sprintf(_("LDAP Error searching for DN %s: %s"), $dn, ldap_error($this->connection));
     }
@@ -323,8 +323,8 @@ class KolabLDAP {
     if ($dn) {
       $group = 'user';
       $filter = '(member='.$this->escape($dn).')';
-      $result = $this->search( 'cn=domain-maintainer,cn=internal,'.$_SESSION['base_dn'], $filter);	  
-      if (ldap_count_entries($this->connection, $result) > 0) $group = 'domain-maintainer';	  
+      $result = $this->search( 'cn=domain-maintainer,cn=internal,'.$_SESSION['base_dn'], $filter);
+      if (ldap_count_entries($this->connection, $result) > 0) $group = 'domain-maintainer';
       $result = $this->search( 'cn=maintainer,cn=internal,'.$_SESSION['base_dn'], $filter);
       if (ldap_count_entries($this->connection, $result) > 0) $group = 'maintainer';
       $result = $this->search( 'cn=admin,cn=internal,'.$_SESSION["base_dn"], $filter);
@@ -343,7 +343,7 @@ class KolabLDAP {
 	$domains = array();
 	$filter = '(member='.$this->escape($dn).')';
 	debug("filter:$filter");
-	$result = $this->search( 'cn=domains,cn=internal,'.$_SESSION['base_dn'], $filter);	  
+	$result = $this->search( 'cn=domains,cn=internal,'.$_SESSION['base_dn'], $filter);
 	$entries = $this->getEntries();
 	unset($entries['count']);
 	if( count($entries) > 0) {
@@ -374,7 +374,7 @@ class KolabLDAP {
     $res = ldap_search( $this->connection, $mybase, $filter, array('member') );
     if( !$res ) {
       array_push($errors, _("LDAP Error: Can't read maintainers group: ")
-				 .ldap_error($this->connection) );	
+				 .ldap_error($this->connection) );
       return array();
     }
     $entries = ldap_get_entries( $this->connection, $res );
@@ -408,12 +408,12 @@ class KolabLDAP {
 	if( $excludedn ) {
 	  for ( $i = 0; $i < count( $entries ); $i++ ) {
 		if( !isset($entries[$i]) || is_null( $entries[$i] ) ) continue;
-		if( KolabLDAP::unescape_dn_value($entries[$i]['dn']) == KolabLDAP::unescape_dn_value($excludedn) ) continue;	   
+		if( KolabLDAP::unescape_dn_value($entries[$i]['dn']) == KolabLDAP::unescape_dn_value($excludedn) ) continue;
 		debug("found ".$entries[$i]['dn'] );
 		$count++;
-	  } 
+	  }
 	} else $count += $entries['count'];
-	
+
 	/* Distribution lists have a mail attr now too,
 	   so it looks like we count them twice.
 	   For some reason I've not seen any problems
@@ -425,7 +425,7 @@ class KolabLDAP {
 	$cn = substr( $mail, 0, strpos( $mail, '@' ) );
 	$filter = '(&(objectClass=kolabGroupOfNames)(cn='.$this->escape($cn).'))';
 	$res = $this->search( $base, $filter, array( 'dn' ) );
-	
+
 	$entries = ldap_get_entries( $this->connection, $res );
 	if( $excludedn ) {
 	  for ( $i = 0; $i < count( $entries ); $i++ ) {
@@ -433,9 +433,9 @@ class KolabLDAP {
 		if( $entries[$i]['dn'] == $excludedn ) continue;
 		debug("found ".$entries[$i]['dn'] );
 		$count++;
-	  } 
+	  }
 	} else $count += $entries['count'];
-	
+
 	debug("Got $count addresses");
 
 	$this->freeSearchResult();
@@ -461,10 +461,10 @@ class KolabLDAP {
 	}
 	foreach( $domains as $domain ) {
 	  $domgrpdn = 'cn='.$this->dn_escape($domain).',cn=domains,cn=internal,'.$_SESSION['base_dn'];
-	  $dom_obj = $this->read( $domgrpdn );	  
+	  $dom_obj = $this->read( $domgrpdn );
 	  if( !$dom_obj ) {
 		debug("+Adding group $domgrpdn with member $member");
-		if( !ldap_add($this->connection, $domgrpdn, 
+		if( !ldap_add($this->connection, $domgrpdn,
 					  array( 'objectClass' => array('top', 'kolabGroupOfNames'),
 							 'cn' => $domain,
 							 'member' => $member ) ) ) {
@@ -496,17 +496,17 @@ class KolabLDAP {
 		  debug("-Removing group $domgrpdn");
 		  if( !ldap_delete( $this->connection, $domgrpdn ) ) {
 			debug("Error deleting domain group $domgrpdn: ".ldap_error($this->connection));
-			return false;			
+			return false;
 		  }
 		} else {
 		  debug("-Removing member $member from group $domgrpdn");
 		  if( !ldap_mod_del( $this->connection, $domgrpdn, array( 'member' => $member ) ) ) {
 			debug("Error deleting $member from domain $domgrpdn: ".ldap_error($this->connection));
 			return false;
-		  }  
+		  }
 		}
 	  }
-	}	
+	}
 	return true;
   }
 
@@ -535,11 +535,11 @@ class KolabLDAP {
 	  $kolab_obj = $this->read( 'k=kolab,'.$_SESSION['base_dn'] );
 	  if( !$kolab_obj ) return false;
 	  $delete_template = array();
-	  $delete_template['kolabDeleteflag'] = $kolab_obj['kolabHost'];	  
+	  $delete_template['kolabDeleteflag'] = $kolab_obj['kolabHost'];
 	  unset($delete_template['kolabDeleteflag']['count']);
 	  if( $nuke_password ) {
 		// Write random garbage into passwd field to lock the user out
-		$delete_template['userPassword'] = '{sha}'.base64_encode( pack('H*', 
+		$delete_template['userPassword'] = '{sha}'.base64_encode( pack('H*',
 																	   sha1( str_rand( 32 ) )));
 	  }
 	  if( !ldap_modify($this->connection,$dn,$delete_template) ) {

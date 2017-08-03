@@ -42,7 +42,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 /**** Sieve handling ***/
   $obj = $ldap->read( $auth->dn() );
   $sieve =& new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
-  
+
   if( $sieve->getError() ) {
     $errors[] = _('Error while connecting to Sieve service:');
     $errors[] = $sieve->getError();
@@ -83,8 +83,8 @@ $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 
 if (isset($handler)) {

@@ -16,7 +16,7 @@ ini_set('include_path', dirname(__FILE__) . '/../../lib' . PATH_SEPARATOR . ini_
 if (!spl_autoload_functions()) {
     spl_autoload_register(
         create_function(
-            '$class', 
+            '$class',
             '$filename = str_replace(array(\'::\', \'_\'), \'/\', $class);'
             . '$err_mask = E_ALL ^ E_WARNING;'
             . '$oldErrorReporting = error_reporting($err_mask);'

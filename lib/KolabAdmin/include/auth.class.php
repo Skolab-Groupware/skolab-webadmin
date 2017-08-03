@@ -43,7 +43,7 @@ class KolabAuth {
 		// Anon. bind first
 		if( !$ldap->bind( $_SESSION['php_dn'],  $_SESSION['php_pw'] ) ) {
 			$this->error_string = _("Could not bind to LDAP server: ").$ldap->error();
-			$this->gotoLoginPage(); 
+			$this->gotoLoginPage();
 		}
 		if( $this->isAuthenticated() ) {
 			$bind_result = $ldap->bind( $_SESSION['auth_dn'], $_SESSION['auth_pw'] );
@@ -54,7 +54,7 @@ class KolabAuth {
 			// Anon. bind first
 			if( !$ldap->bind() ) {
 				$this->error_string = _("Could not bind to LDAP server");
-				$this->gotoLoginPage(); 
+				$this->gotoLoginPage();
 			}
 			// User not logged in, check login/password
 			if( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
@@ -68,7 +68,7 @@ class KolabAuth {
 					$tmp_group = ($auth_user=='manager')?'manager':$auth_group;
 					if( !in_array( $tmp_group, $this->params['allow_user_classes'] ) ) {
 						$this->error_string = _("User class '$tmp_group' is denied access");
-						$this->gotoLoginPage();					  
+						$this->gotoLoginPage();
 					}
 					$bind_result = $ldap->bind( $dn, $_POST['password'] );
 					if( $bind_result ) {
@@ -81,12 +81,12 @@ class KolabAuth {
 						return true;
 					} else {
 						$this->error_string = _("Wrong username or password");
-						$this->gotoLoginPage(); 
+						$this->gotoLoginPage();
 					}
 				} else {
 					$this->error_string = _("Wrong username or password");
 					//$this->error_string = "Dn not found";
-					$this->gotoLoginPage(); 
+					$this->gotoLoginPage();
 				}
 			} else {
 				//$this->error_string = _('Please log in as a valid user');
@@ -98,7 +98,7 @@ class KolabAuth {
 			return true;
 		}
 	}
-  
+
 	function logout() {
 		session_unset();
 		session_destroy();

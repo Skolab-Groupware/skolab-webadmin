@@ -140,7 +140,7 @@
 {/section}
 	<form method="post" action="">
 	<tr class="contentrow{cycle values="even,odd"}">
-	   <td class="contentcell"> 
+	   <td class="contentcell">
 		<input type="text" size="60" name="adestination" />
            </td><td class="actioncell"><input type="submit" name="adddestination" value="{tr msg="Add"}" /></td>
 	</tr>
@@ -197,7 +197,7 @@
 {/section}
 	<form method="post" action="">
 	<tr class="contentrow{cycle values="even,odd"}">
-	   <td class="contentcell"> 
+	   <td class="contentcell">
 		<input type="text" size="60" name="akolabhost" />
            </td><td class="actioncell"><input type="submit" name="addkolabhost" value="{tr msg="Add"}" /></td>
 	</tr>

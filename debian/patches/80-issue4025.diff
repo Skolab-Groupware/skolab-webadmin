@@ -5,7 +5,7 @@ In directory doto:/tmp/cvs-serv13268/kolab-webadmin/kolab-webadmin/www/admin/use
 
 Modified Files:
       Tag: kolab_2_2_branch
-	user.php.in 
+	user.php.in
 Log Message:
 kolab/issue4025 (Users can not change theire password (in 2.2.3))
 
@@ -34,7 +34,7 @@ diff -u -d -r1.28.2.3 -r1.28.2.4
 +			   unset($ldap_object['kolabAllowSMTPRecipient']);
 +			   unset($ldap_object['kolabDelegate']);
  			 }
- 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {			   
+ 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
  			   array_push($errors, sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,
 
 

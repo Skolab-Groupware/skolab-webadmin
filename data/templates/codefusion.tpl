@@ -9,7 +9,7 @@
 <a href="http://www.codefusion.co.za/">
  <img src="../images/codefusion.png" alt="Code Fusion" style="border:0" />
 </a>
-  
+
 <p>
 {tr msg="<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is a specialist email solution provider based in Johannesburg, South Africa specialising in the deployment and support of Kolab."}
 </p>

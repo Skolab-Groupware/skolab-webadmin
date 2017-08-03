@@ -24,13 +24,13 @@ class KolabAdmin_Sieve_Script {
     static function dotstuff( $str ) {
         return str_replace( "\n.", "\n..", $str );
     }
-  
+
     static function undotstuff( $str ) {
         return str_replace( "\n..", "\n.", $str );
     }
-  
+
     static function getDeliverFolder( $script ) {
-        $inbox = false;      
+        $inbox = false;
         if( preg_match("/fileinto \"INBOX\/([^\"]*)\";/", $script, $regs ) ) {
             $inbox = $regs[1];
         }
@@ -57,7 +57,7 @@ class KolabAdmin_Sieve_Script {
         }
         return $maildomain;
     }
-  
+
     static function getReactToSpam( $script ) {
         $spam = false;
         if( preg_match('/header :contains "X-Spam-Flag" "YES"/i', $script ) ) {
@@ -114,7 +114,7 @@ class KolabAdmin_Sieve_Script {
     static function isVacationEnabled($script) {
         return ereg('## vacation enabled', $script, $regs )>0;
     }
-  
+
     static function createScript($scriptinfo) {
         $tests = array();
         if( $scriptinfo['vacationenabled'] ) {

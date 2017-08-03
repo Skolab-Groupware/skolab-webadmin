@@ -104,13 +104,13 @@ function checkuniquemail( $form, $key, $value ) {
   debug("value=$value, domain=$domains");
   $ok = false;
   foreach( $domains as $domain ) {
-	if( endsWith( $value, '@'.$domain ) ) {	
+	if( endsWith( $value, '@'.$domain ) ) {
 	  $ok = true;
 	}
   }
   if(!$ok) return sprintf(_("Email address %1\$s not in domains %2\$s"), $value, join(", ", $domains));
 
-  if( $ldap->countMail( $_SESSION['base_dn'], $value ) > 0 ) {	
+  if( $ldap->countMail( $_SESSION['base_dn'], $value ) > 0 ) {
 	return _('User, vCard or distribution list with this email address already exists');
   } else {
 	return '';
@@ -143,7 +143,7 @@ function checkdelegate( $form, $key, $value ) {
   foreach( $lst as $delegate ) {
 	if( $ldap->count( $ldap->search( $_SESSION['base_dn'], '(mail='.$ldap->escape($delegate).')' ) ) == 0 ) {
 	  return sprintf(_("Email-Delegate %s does not exist"), $delegate);
-	} 
+	}
   }
   return '';
 }
@@ -154,7 +154,7 @@ function checksmtprecipient ( $form, $key, $value ) {
   require_once 'Mail/RFC822.php';
   foreach( $lst as $SMTPRecipient ) {
     $trimmed = ltrim($SMTPRecipient, "-."); // potentially every entry is negated with a '-'
-    // $SMTPRecipient is either an 
+    // $SMTPRecipient is either an
     // - email address
     // - local part of an email address with an @ suffix
     // - a domain part
@@ -196,13 +196,13 @@ function valid_domain($domain) {
 
 function valid_local_part($local_part) {
   // the local part always has an @ appended
-  $local_part = rtrim($local_part, '@'); 
+  $local_part = rtrim($local_part, '@');
   $check = new Mail_RFC822();
   return $check->_validateLocalPart($local_part);
 }
 
 // Check uid/gid used in invitation policy
-// We're pretty relaxed about what is entered 
+// We're pretty relaxed about what is entered
 // here and only check some basic syntax
 function checkpolicy( $form, $key, $value ) {
   foreach( $value as $v ) {
@@ -259,7 +259,7 @@ function apply_attributeaccess( &$entries ) {
 			$entries[$key]['validation'][] = array( $entries[$key]['validation'], 'notempty' );
 		  }
 		} else {
-		  $entries[$key]['validation'] = 'notempty';		  
+		  $entries[$key]['validation'] = 'notempty';
 		}
 	  }
 	}
@@ -293,9 +293,9 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
 	  if( in_array('cn=groups',$dncomp) ) {
 		  $form->entries['accttype']['value'] = 2;
 	  } else if( in_array('cn=resources',$dncomp) ) {
-		  $form->entries['accttype']['value'] = 3;	
+		  $form->entries['accttype']['value'] = 3;
 	  } else if( in_array('cn=internal',$dncomp) ) {
-		  $form->entries['accttype']['value'] = 1;	
+		  $form->entries['accttype']['value'] = 1;
 	  } else {
 		  $form->entries['accttype']['value'] = 0;
 	  }
@@ -326,11 +326,11 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
 		  $policies[$user] = $pol;
 	  }
 	  if( !isset( $policies['anyone'] ) ) $policies['anyone'] = 4 /*ACT_MANUAL*/;
-	  $form->entries['kolabinvitationpolicy']['policies'] = $policies;  
+	  $form->entries['kolabinvitationpolicy']['policies'] = $policies;
   }
 
-  foreach( array( 'title', 'o', 'ou', 'roomNumber', 'street', 
-				  'postOfficeBox', 'postalCode', 'l', 'c', 
+  foreach( array( 'title', 'o', 'ou', 'roomNumber', 'street',
+				  'postOfficeBox', 'postalCode', 'l', 'c',
 				  'telephoneNumber', 'facsimileTelephoneNumber' ) as $attr ) {
 	if(!array_key_exists($attr.'_0',$form->entries)) continue;
     if (is_array($ldap_object[$attr])) $v = $ldap_object[$attr][0];
@@ -389,7 +389,7 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
 
   // freebusyfuture
   if( isset( $form->entries['kolabFreeBusyFuture_0'] ) ) {
-	if( is_array( $ldap_object['kolabFreeBusyFuture'] ) ) 
+	if( is_array( $ldap_object['kolabFreeBusyFuture'] ) )
 	  $freebusyfuture = $ldap_object['kolabFreeBusyFuture'][0];
 	else $freebusyfuture = $ldap_object['kolabFreeBusyFuture'];
 	$form->entries['kolabFreeBusyFuture_0']['value'] = $freebusyfuture;
@@ -485,7 +485,7 @@ $entries = array( 'givenname' => array( 'name' => _('First Name'),
 									 'comment' => _('For automatic invitation handling') . '<br/>' .
 									 _("NOTE: For regular accounts to use this feature, give the 'calendar' user access to the Calendar folder") ));
 
-$entries['alias'] = array( 'name' => _('Email Aliases'), 
+$entries['alias'] = array( 'name' => _('Email Aliases'),
 						   'type' => 'textarea',
 						   'validation' => 'checkuniquealias',
 						   'comment' => _('One address per line') );
@@ -501,7 +501,7 @@ $entries['kolabAllowSMTPRecipient'] =array( 'name' => _('Allowed Recipients'),
                 'validation' => 'checksmtprecipient',
                 'comment' => _('Restrict allowed recipients of SMTP messages') . '<br/>' .
                         _('One entry per line.') );
- 
+
 $entries['title_0'] = array( 'name' => _('Title') );
 $entries['o_0'] = array( 'name' => _('Organisation') );
 $entries['ou_0'] = array( 'name' => _('Organisational Unit') );
@@ -605,7 +605,7 @@ switch( $action ) {
 		   $key = $attr."_".$count;
 		 }
 		 if ($count > 0) $ldap_object[$attr] = $args;
-		 elseif (!empty($_POST[$key])) $ldap_object[$attr] = $_POST[$key];  
+		 elseif (!empty($_POST[$key])) $ldap_object[$attr] = $_POST[$key];
 		 else/*if (in_array($key,$_POST))*/ $ldap_object[$attr] = array();
        }
 	   {
@@ -618,33 +618,33 @@ switch( $action ) {
 		   debug("Looking at $user:$pol");
 		   $i++;
 		   if( !empty($user) && 0 <= $pol && $pol < 5  ) {
-			 $ra = array('ACT_ALWAYS_ACCEPT', 
-						 'ACT_ALWAYS_REJECT', 
-						 'ACT_REJECT_IF_CONFLICTS', 
-						 'ACT_MANUAL_IF_CONFLICTS', 
+			 $ra = array('ACT_ALWAYS_ACCEPT',
+						 'ACT_ALWAYS_REJECT',
+						 'ACT_REJECT_IF_CONFLICTS',
+						 'ACT_MANUAL_IF_CONFLICTS',
 						 'ACT_MANUAL' );
 			 if( $ra[$pol] ) {
 			   $ldap_object['kolabInvitationPolicy'][] = ($user=='anyone'?"":"$user:").$ra[$pol];
 			 }
 		   }
-		 }		 
+		 }
 	   }
 	   $dn_add = "";
 
 	   // kolabdelegate
-	   $ldap_object['kolabDelegate'] = array_unique( array_filter( array_map( 'trim', 
+	   $ldap_object['kolabDelegate'] = array_unique( array_filter( array_map( 'trim',
 												preg_split( '/\n/', $_POST['kolabdelegate'] ) ), 'strlen') );
 	   if( !$ldap_object['kolabDelegate'] && $action == 'firstsave' ) unset($ldap_object['kolabDelegate']);
 
 	   // kolabAllowSMTPRecipient
-	   $ldap_object['kolabAllowSMTPRecipient'] = array_unique( array_filter( array_map( 'trim', 
+	   $ldap_object['kolabAllowSMTPRecipient'] = array_unique( array_filter( array_map( 'trim',
 												preg_split( '/\n/', $_POST['kolabAllowSMTPRecipient'] ) ), 'strlen') );
 	   if( !$ldap_object['kolabAllowSMTPRecipient'] && $action == 'firstsave' ) unset($ldap_object['kolabAllowSMTPRecipient']);
 
 
        if ($auth->group() == "maintainer" || $auth->group() == "admin") {
 		 // alias
-		 $ldap_object['alias'] = array_unique( array_filter( array_map( 'trim', preg_split( '/\n/', $_POST['alias'] ) ), 'strlen') );	   
+		 $ldap_object['alias'] = array_unique( array_filter( array_map( 'trim', preg_split( '/\n/', $_POST['alias'] ) ), 'strlen') );
 		 if( !$ldap_object['alias'] && $action == 'firstsave' ) unset($ldap_object['alias']);
 
 		 // userquota
@@ -660,7 +660,7 @@ switch( $action ) {
 	   else if( $_POST['accttype'] == 2 ) $dn_accttype='cn=groups,';
 	   else if( $_POST['accttype'] == 3 ) $dn_accttype='cn=resources,';
        $domain_dn = $dn_accttype.domain_dn();
-	   
+
        if ($action == "save") {
 		 if (!$errors) {
            // We need the unmodified uid rdn for renaming
@@ -670,7 +670,7 @@ switch( $action ) {
 		   else $newdn = $dn;
 		   if (strcmp($dn,$newdn) != 0) {
 			 // Check for distribution lists with this user as member
-			 $ldap->search( $_SESSION['base_dn'], 
+			 $ldap->search( $_SESSION['base_dn'],
 							'(&(objectClass=kolabGroupOfNames)(!(kolabDeleteFlag=*))(member='.$ldap->escape($dn).'))',
 							array( 'dn', 'mail' ) );
 			 $distlists = $ldap->getEntries();
@@ -688,7 +688,7 @@ switch( $action ) {
 				 if( is_int($k) ) continue;
 				 if( !$ldap_object[$k] ) {
 				   unset($v['count'] );
-				   if( count($v) > 1 ) { 
+				   if( count($v) > 1 ) {
 					 $ldap_object[$k] = $v;
 				   } else {
 					 $ldap_object[$k] = $v[0];
@@ -703,7 +703,7 @@ switch( $action ) {
 			   $explodeddn = ldap_explode_dn( $dn, 0 );
 			   unset($explodeddn['count']);
 			   unset($explodeddn[0]);
-			   $tmpbasedn = join(",",$explodeddn);			   
+			   $tmpbasedn = join(",",$explodeddn);
 
 			   if ( !$errors ) {
 				 // Try to rename the object
@@ -741,7 +741,7 @@ switch( $action ) {
 			   unset($ldap_object['kolabAllowSMTPRecipient']);
 			   unset($ldap_object['kolabDelegate']);
 			 }
-			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {			   
+			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
 			   array_push($errors, sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,
 										   ldap_error($ldap->connection)));
 			   debug_var_dump( $ldap_object );
@@ -755,10 +755,10 @@ switch( $action ) {
 			   $newalias = md5( $dn.$alias ).'@'.substr( $alias, 0, strpos( $alias, '@' ) );
 			   $ldap_object['alias'][$i] = $newalias;
 			   if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
-				 $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn, 
+				 $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,
 									 ldap_error($ldap->connection));
 			   }
-			   $error[] = sprintf(_("Mid-air collision detected, alias %1\$s renamed to %2\$s"), 
+			   $error[] = sprintf(_("Mid-air collision detected, alias %1\$s renamed to %2\$s"),
 								  $alias, $newalias);
 			 }
 		   }
@@ -783,7 +783,7 @@ switch( $action ) {
 			 if( $v == array() ) unset($ldap_object[$k]);
 		   }
 		   debug("Calling ldap_add with dn=$dn");
-		   if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object)) 
+		   if ($dn && !ldap_add($ldap->connection, $dn, $ldap_object))
 			 array_push($errors, sprintf(_("LDAP Error: could not add object %s: %s"), $dn,
 										 ldap_error($ldap->connection)));
 
@@ -794,10 +794,10 @@ switch( $action ) {
 			 $newmail = md5( $dn.$mail ).'@'.substr( $mail, 0, strpos( $mail, '@' ) );
 			 $ldap_object['uid'] = $ldap_object['mail'] = $newmail;
 			 if (!ldap_modify($ldap->connection, $dn, $ldap_object)) {
-			   $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn, 
+			   $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,
 								   ldap_error($ldap->connection));
 			 }
-			 $error[] = sprintf(_("Mid-air collision detected, email address %1\$s renamed to %2\$s"), 
+			 $error[] = sprintf(_("Mid-air collision detected, email address %1\$s renamed to %2\$s"),
 								$mail, $newmail);
 		   }
 
@@ -812,7 +812,7 @@ switch( $action ) {
 				 $errors[] = sprintf(_("LDAP Error: Could not modify object %s: %s"), $dn,
 									 ldap_error($ldap->connection));
 			   }
-			   $error[] = sprintf(_("Mid-air collision detected, alias %1\$s renamed to %2\$s"), 
+			   $error[] = sprintf(_("Mid-air collision detected, alias %1\$s renamed to %2\$s"),
 								  $alias, $newalias);
 			 }
 		   }
@@ -869,12 +869,12 @@ switch( $action ) {
 	 if (!inMaintainerDomain($dn)) {
 	   array_push($errors, _("Error: You don't have the required Permissions") );
 	 }
-   } elseif ($auth->group() != "maintainer" && $auth->group() != "admin") {     
+   } elseif ($auth->group() != "maintainer" && $auth->group() != "admin") {
 	 array_push($errors, _("Error: you need administrative permissions to delete users"));
    }
 
    // Check for distribution lists with only this user as member
-   $ldap->search( $_SESSION['base_dn'], 
+   $ldap->search( $_SESSION['base_dn'],
 				  '(&(objectClass=kolabGroupOfNames)(member='.$ldap->escape($dn).'))',
 				  array( 'dn', 'cn', 'mail', 'member' ) );
    $distlists = $ldap->getEntries();
@@ -900,7 +900,7 @@ switch( $action ) {
 
    if( !$errors ) {
 	 if (!$ldap->deleteObject($dn)) {
-	   array_push($errors, sprintf(_("LDAP Error: could not mark '%s' for deletion: %s"), $dn, 
+	   array_push($errors, sprintf(_("LDAP Error: could not mark '%s' for deletion: %s"), $dn,
 								   $ldap->error()));
 	 } else {
 	   $heading = _("User Deleted");
@@ -919,7 +919,7 @@ switch( $action ) {
 	 $form->entries['action']['value'] = 'kill';
 	 $form->submittext = _('Delete');
 	 $content = $form->outputForm();
-   }   
+   }
    break;
 }
 
@@ -931,8 +931,8 @@ $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
-$smarty->assign( 'submenuitems', 
-				 array_key_exists('submenu', 
+$smarty->assign( 'submenuitems',
+				 array_key_exists('submenu',
 								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'heading', $heading );
 $smarty->assign( 'form', $content );
