@@ -9,25 +9,9 @@ fixperms() {
 	chown www-data:www-data /var/cache/kolab-webadmin/templates
 }
 
-# Move a conffile without triggering a dpkg question
-# (http://wiki.debian.org/DpkgConffileHandling&rev=11)
-mv_conffile() {
-    OLDCONFFILE="$1"
-    NEWCONFFILE="$2"
-    if [ -e "$OLDCONFFILE" ]; then
-        echo "Preserving user changes to $NEWCONFFILE ..."
-        mv -f "$NEWCONFFILE" "$NEWCONFFILE".dpkg-new
-        mv -f "$OLDCONFFILE" "$NEWCONFFILE"
-    fi
-}
-
 case "$1" in
 configure)
 	fixperms
-    if dpkg --compare-versions "$2" le "2.2.1-20090331-1"; then
-        mv_conffile "/etc/kolab-webadmin/session_vars.php" "/etc/kolab/session_vars.php"
-        rmdir /etc/kolab-webadmin 2>/dev/null || true
-    fi
 esac
 
 #DEBHELPER#
