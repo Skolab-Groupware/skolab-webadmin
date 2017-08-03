@@ -1,0 +1,1364 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab-Webadmin Dutch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-15 12:08+0200\n"
+"PO-Revision-Date: 2007-11-21 14:56+0100\n"
+"Last-Translator: Richard Bos <richard@radoeka.nl>\n"
+"Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid " Administrators)"
+msgstr "Administrators)"
+
+msgid " Maintainers)"
+msgstr "Maintainers)"
+
+msgid " deleted"
+msgstr " verwijderd"
+
+msgid " is empty"
+msgstr " is leeg"
+
+msgid " marked for deletion"
+msgstr " aangemerkt voor verwijdering"
+
+msgid " successfully created"
+msgstr " aanmaken gelukt"
+
+msgid " successfully modified"
+msgstr "Wijziging succesvol"
+
+msgid "% of their quota"
+msgstr "% van hun quota hebben gebruikt"
+
+msgid "%s successfully added"
+msgstr "%s succesvol aangemaakt"
+
+msgid "%s successfully updated"
+msgstr "%s succesvol bijgewerkt"
+
+msgid "(HTTP Server)"
+msgstr "(HTTP server)"
+
+msgid "(LDAP Server)"
+msgstr "(LDAP server)"
+
+msgid "(MTA)"
+msgstr "(MTA)"
+
+msgid "(Mail Scanner)"
+msgstr "(E-mail scanner)"
+
+msgid "(SPAM Filter)"
+msgstr "(Spam filter)"
+
+msgid "(Virus Scanner)"
+msgstr "(Virus scanner)"
+
+msgid "(leave empty for all domains)"
+msgstr "(leeg laten voor alle domeinen)"
+
+msgid "(one address per line)"
+msgstr "(een adres per lijn)"
+
+msgid "(only external addresses without a kolab user account)"
+msgstr " (alleen externe adressen zonder Kolab gebruikersaccount) "
+
+msgid "* Required field."
+msgstr "Vereist veld"
+
+msgid ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is a specialist "
+"email solution provider based in Johannesburg, South Africa specialising in "
+"the deployment and support of Kolab."
+msgstr ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is een "
+"gespecialiseerde provider voor E-mailoplossingen gevestigd in Johannesburg, "
+"Zuid Afrika gespecialiseerd in de verspreiding en ondersteuning van Kolab "
+
+msgid ""
+"<a href=\"http://www.erfrakon.com\">erfrakon</a> is a consulting company "
+"dedicated to opensource software and Linux. The main tasks of erfrakon "
+"within the Kolab project are the principle design and architecure of the "
+"Kolab groupware solution and the creation of the Kolab 1 server."
+msgstr ""
+"<a href=\"http://www.erfrakon.com\">erfrakon</a> is een consultancy bedrijf "
+"gewijd aan opensource software en Linux. De hoofdopdrachten van Efrakon "
+"binnen het kolab project zijn het ontwerp en de architectuur van Kolab "
+"groupware oplossingen en de creatie van de Kolab 1 server."
+
+msgid ""
+"<a href=\"http://www.kde.org\">KDE</a> is a powerful <a href=\"http://www."
+"gnu.org/philosophy/free-sw.html\">Free Software</a> graphical desktop "
+"environment for Linux and Unix workstations. It combines ease of use, "
+"contemporary functionality, and outstanding graphical design with the "
+"technological superiority of the Unix operating system."
+msgstr ""
+"<a href=\"http://www.kde.nl\">KDE</a> is een krachtige <a href=\"http://www."
+"gnu.org/philosophy/free-sw.html\"> Vrije Software </a> grafische bureau "
+"omgeving voor Linux en Unix werkstations. Het combineert gebruiksgemak, "
+"hedendaagse functionaliteit, een opmerkelijke grafische interface en de "
+"grote technologische superioriteit van het Unix besturingssysteem."
+
+msgid ""
+"<b>KDE</b> is a mature desktop suite providing a solid basis to an ever "
+"growing number of <a href=\"http://www.kde-apps.org\">applications</a> for "
+"Unix workstations.  KDE has developed a high quality development framework "
+"for Unix, which allows for the rapid and efficient creation of applications."
+msgstr ""
+"<b>KDE</b> is een geëvolueerde desktop suite die een solide basis biedt voor "
+"een groeiend aantal <a href=\"http://www.kde-apps.org\">toepassingen</a> "
+"voor Unix werkstations.  KDE heeft voor Unix een ontwikkelingsomgeving van "
+"hoge kwaliteit ontwikkeld, die een snelle en efficiënte ontwikkeling van "
+"toepassingen toelaat."
+
+msgid ""
+"<b>KDE</b> is an Internet project that is truly open in every sense. "
+"Development takes place on the Internet and is discussed on our <a href="
+"\"http://www.kde.org/mailinglists.html\">mailing lists</a>, USENET news "
+"groups, and IRC channels to which we invite and welcome everyone."
+msgstr ""
+"<b>KDE</b> is een internetproject dat in elk opzicht open is. De "
+"ontwikkeling vindt plaats op het internet en wordt bediscussieerd op onze <a "
+"href=\"http://www.kde.org/mailinglists.html\">discussielijsten</a>,  USENET "
+"nieuwsgroepen, en IRC kanalen waarop iedereen uitgenodigd en welkom is."
+
+msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
+msgstr "<tr><th>Attribuut</th><th>Waarde</th><th>Commentaar</th></tr>"
+
+msgid ""
+"A list of additional Outlook plug-ins that provide interoperability with the "
+"Kolab server is <a href=\"http://www.kolab.org/kolab-plugins.html"
+"\">maintained on the Kolab website</a>."
+msgstr ""
+"Een lijst van bijkomende Outlook plug-ins die voor samenwerking zorgt met de "
+"Kolab server zijn <a href=\"http://www.kolab.org/kolab-plugins.html\">wordt "
+"onderhouden op de Kolab website</a>."
+
+msgid "About Kolab"
+msgstr "Info over Kolab"
+
+msgid "Accept Internet Mail"
+msgstr "Internet mail aanvaarden"
+
+msgid ""
+"Accept mail from other domains over unauthenticated SMTP. This must be "
+"enabled if you want to use the Kolab Server to receive mail from other "
+"internet domains directly. Leave disabled to accept mail only from SMTP "
+"gateways that are within the privileged network."
+msgstr ""
+"Aanvaard mail van andere domeinen via niet geautenticeerde SMTP. Dit moet "
+"ingeschakeld zijn wanneer de Kolab server wordt gebruikt om mail te "
+"ontvangen via andere internetdomeinen. "
+
+msgid "Account Type"
+msgstr "Account Type"
+
+msgid "Account could not be deleted, distribution list '%s' depends on it."
+msgstr ""
+"Account kan niet worden verwijderd, distributielijst %s is er van "
+"afhankelijk."
+
+msgid "Account removed from distribution list '%s'."
+msgstr "Account is verwijderd van distributielijst '%s'."
+
+msgid "Account with this UID already exists"
+msgstr "Account met deze UID bestaat reeds"
+
+msgid "Action"
+msgstr "Actie"
+
+msgid "Action to take for messages that fail the check:"
+msgstr "Welke actie uitvoeren voor berichten die de test falen"
+
+msgid "Add"
+msgstr "Toevoegen"
+
+msgid "Add Distribution List"
+msgstr "Voeg distributielijst toe"
+
+msgid "Add External Address"
+msgstr "Extern adres toevoegen"
+
+msgid "Add Shared Folder"
+msgstr "Voeg gedeelde map toe"
+
+msgid "Address book entry with DN %s was deleted"
+msgstr "Adresboek entry met DN %s is verwijderd"
+
+msgid "Addressbook"
+msgstr "Adresboek"
+
+msgid "Addressbook entry removed from distribution list '%s'."
+msgstr "Account is verwijderd van distributielijst '%s'."
+
+msgid "Administrative email addresses"
+msgstr "Administratief E-mailadres"
+
+msgid "Administrator "
+msgstr "Administrator "
+
+msgid "Administrator Deleted"
+msgstr "Administrator verwijderd"
+
+msgid "Administrators"
+msgstr "Administrators"
+
+msgid "Allow unauthenticated downloading of Free/Busy information"
+msgstr ""
+"Laat niet ge-authenticeerde downloading toe van vrij/bezet informatie  "
+
+msgid "Always accept"
+msgstr "Altijd accepteren"
+
+msgid "Always reject"
+msgstr "Altijd afwijzen"
+
+msgid "Always reject the message."
+msgstr "Het bericht altijd afwijzen. "
+
+msgid "Amavis Email Scanning (Virus/Spam)"
+msgstr "Amavis E-mail scannen (virus/anti-spam)"
+
+msgid "Anyone"
+msgstr "Iemand"
+
+msgid ""
+"As Kolab is a Free Software project, anyone can help to extend the "
+"functionality of the software. An active community has developed around the "
+"software with many people throughout the world contributing. The project was "
+"originally started in 2002 by a joint-venture of three companies: <a href="
+"\"http://www.erfrakon.com/\">erfrakon</a> (design, architecture and server); "
+"<a href=\"http://www.intevation.de\">Intevation</a> (project management) and "
+"<a href=\"http://www.klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens "
+"Datakonsult</a> (client)."
+msgstr ""
+"Aangezien Kolab een Free Software project is, kan iedereen helpen om de "
+"functionaliteit van de software uit te breiden. Een actieve gemeenschap "
+"heeft zich ontwikkeld rond de software met verschillende mensen uit de hele "
+"wereld. Het project werd opgestart in 2002 door een joint venture van drie "
+"bedrijven <a href=\"http://www.erfrakon.com/\">erfrakon</a> (design, "
+"architectuur en server); <a href=\"http://www.intevation.de\">Intevation</a> "
+"(project management) en <a href=\"http://www.klaralvdalens-datakonsult.se/"
+"\">Klar&auml;lvdalens Datakonsult</a> (client)."
+
+msgid "Attribute"
+msgstr "Toewijzing"
+
+msgid "Back to list of addresses"
+msgstr "Terug naar de lijst van adressen"
+
+msgid "Back to list of administrators"
+msgstr "Terug naar de lijst van de beheerders"
+
+msgid "Back to list of distribution lists"
+msgstr "Terug naar de lijst van de beheerders"
+
+msgid "Back to list of maintainers"
+msgstr "Terug naar de lijst van de handhavers"
+
+msgid "Back to list of shared folders"
+msgstr "Terug naar de lijst van de gebruikers"
+
+msgid "Back to list of users"
+msgstr "Terug naar de lijst van de gebruikers"
+
+msgid "CSSified the Kolab1 web admin GUI"
+msgstr "CSSified de Kolab1 webbeheerder GUI"
+
+msgid "Check domains this domain maintainer should be able to maintain"
+msgstr ""
+"Controleer domein, deze domein beheerder moet in staat zijn om te onderhouden"
+
+msgid ""
+"Check here to make this distribution list available only to authenticated "
+"users"
+msgstr ""
+"Kruis hier aan om de distribitielijst alleen beschikbaar te maken voor ge-"
+"authoriseerde gebruikers"
+
+msgid "Check messages for mismatching From header and envelope from."
+msgstr ""
+"Controleer berichten op niet overeenkomstige From header en envelope From"
+
+msgid "City"
+msgstr "Stad"
+
+msgid ""
+"Code Fusion has played, and continues to play, an integral part in "
+"developing and extending the Kolab server; specifically with regards to "
+"enhancing the base Kolab engine, adding in support for Microsoft Active "
+"Directory &reg; as an LDAP backend, as well as extending the <a href="
+"\"http://www.horde.org/\">Horde project</a> to provide a web-based groupware "
+"client for the Kolab server."
+msgstr ""
+"Code Fusion heeft een rol gespeeld, en blijft die nog spelen in de "
+"ontwikkeling en de uitbreiding van de Kolab server; vooral met betrekking "
+"tot de verbetering van de basis Kolab engine, door de ondersteuning voor "
+"Microsoft Active Directory &reg toe te voegen; als een LDAP backend en door "
+"het <a href=\"http://www.horde.org/\">Horde-project</a> te verbeteren door "
+"een web-based groupware client voor de Kolab server te voorzien.."
+
+msgid "Comment"
+msgstr "Commentaar"
+
+msgid "Contacts"
+msgstr "Contacten"
+
+msgid "Could not bind to LDAP server"
+msgstr "Kon geen verbinding maken met LDAP server"
+
+msgid "Could not bind to LDAP server: "
+msgstr "Kon geen verbinding maken met LDAP server: "
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Create Distribution Lists"
+msgstr "Maak distributielijsten"
+
+msgid "Create New Administrator"
+msgstr "Nieuwe administrator aanmaken"
+
+msgid "Create New Domain Maintainer"
+msgstr "Nieuwe domein beheerder aanmaken"
+
+msgid "Create New List"
+msgstr "Maak een nieuwe lijst"
+
+msgid "Create New Maintainer"
+msgstr "Nieuwe beheerder aanmaken"
+
+msgid "Create New User"
+msgstr "Creëer nieuwe gebruiker"
+
+msgid "Create New vCard"
+msgstr "Maak een nieuwe vCard"
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "Delete Administrator"
+msgstr "Verwijder administrator"
+
+msgid "Delete Distribution List"
+msgstr "Distributielijst verwijderen"
+
+msgid "Delete Domain Maintainer"
+msgstr "Domein beheerder verwijderen"
+
+msgid "Delete External Address"
+msgstr "Verwijder extern adres "
+
+msgid "Delete Maintainer"
+msgstr "Beheerder verwijderen"
+
+msgid "Delete Shared Folder"
+msgstr "Gedeelde map verwijderen"
+
+msgid "Delete User"
+msgstr "Gebruiker verwijderen"
+
+msgid "Deliver regular mail to folder"
+msgstr "Plaats reguliere email in map"
+
+msgid "Delivery to '%s' successfully activated"
+msgstr "Afleveren aan '%s' succesvol geactiveerd"
+
+msgid "Delivery to '%s' successfully deactivated"
+msgstr "Afleveren aan '%s' succesvol uitgeschakeld"
+
+msgid "Distribution List "
+msgstr "Distributielijst "
+
+msgid "Distribution List '%s' added"
+msgstr "Distributielijst %s toegevoegd"
+
+msgid "Distribution List updated"
+msgstr "Distributielijst bijgewerkt"
+
+msgid "Distribution Lists"
+msgstr "Distributielijsten"
+
+msgid "Do not send vacation replies to spam messages"
+msgstr "Geen afwezigheidsberichten sturen naar spam"
+
+msgid "Domain"
+msgstr "Domein"
+
+msgid "Domain Maintainer Deleted"
+msgstr "Domein beheerder verwijderd"
+
+msgid "Domain Maintainers"
+msgstr "Domein beheerders"
+
+msgid "Domain maintainer "
+msgstr "Domein beheerder"
+
+msgid "Domains"
+msgstr "Domeinen"
+
+msgid "E-Mail Aliases"
+msgstr "E-Mail Aliassen"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Email Alias"
+msgstr "E-mail Alias"
+
+msgid "Email Aliases"
+msgstr "E-mail Aliases"
+
+msgid "Email Delivery"
+msgstr "Email aflevering"
+
+msgid "Email Forwarding"
+msgstr "Verzending van E-mail"
+
+msgid "Email Users"
+msgstr "Email gebruikers"
+
+msgid "Email address "
+msgstr "E-mailadres"
+
+msgid "Email address %1$s not in domains %2$s"
+msgstr "E-mail adres  %1$s niet in domeinen %2$s"
+
+msgid ""
+"Email address of account that should receive administrative mail for domain "
+msgstr ""
+"Het E-mailadres van de account die de administratieve E-mail van dit domein "
+"moet ontvangen:"
+
+msgid "Email-Delegate %s does not exist"
+msgstr "Delegate %s bestaat niet"
+
+msgid "Email-Delegates"
+msgstr "Gemachtigde"
+
+msgid "Enable or Disable individual Services"
+msgstr "Aanzetten of uitzetten van individuele services"
+
+msgid "Enabled"
+msgstr "Ingeschakeld"
+
+msgid "Enter UID and password to login"
+msgstr "Vul je UID en wachtwoord in om in te loggen"
+
+msgid "Entry Deleted"
+msgstr "Entry verwijderd"
+
+msgid "Entry deleted, awaiting cleanup..."
+msgstr "Map verwijderd, wacht op opruiming... "
+
+msgid "Error: DN required for %s operation"
+msgstr "Fout: dn nodig voor %s handeling"
+
+msgid "Error: No entry with DN %s found"
+msgstr "Fout: geen ingang met DN %s gevonden"
+
+msgid "Error: No results returned for DN '%s'"
+msgstr "Fout: geen resultaten voor DN %s"
+
+msgid "Error: You don't have Permissions to access this Menu"
+msgstr "Fout: je hebt geen toegangsrechten voor dit menu "
+
+msgid "Error: You don't have the required Permissions"
+msgstr "Fout: je hebt de nodige toegangsrechten niet"
+
+msgid "Error: need DN for delete operation"
+msgstr "Fout: DN is nodig voor het verwijderen"
+
+msgid "Error: need valid action to proceed"
+msgstr "Fout: heeft een geldige actie nodig om door te gaan"
+
+msgid "Error: you need administrative permissions to delete administrators"
+msgstr ""
+"Fout: je hebt administratieve toegangsrechten nodig om administrators te "
+"verwijderen"
+
+msgid "Error: you need administrative permissions to delete domain maintainers"
+msgstr ""
+"Fout :  je hebt administratieve toegangsrechten nodig om administrators te "
+"verwijderen"
+
+msgid "Error: you need administrative permissions to delete users"
+msgstr ""
+"Fout: er zijn administratieve rechten nodig om gebruikers te verwijderen"
+
+msgid "Errors:"
+msgstr "fouten"
+
+msgid "Events"
+msgstr "Gebeurtenissen"
+
+msgid ""
+"Failure to remove account from distribution list '%s', account will not be "
+"deleted."
+msgstr ""
+"De account kon niet van de distributielijst worden verwijderd.  De account "
+"is niet verwijderd."
+
+msgid ""
+"Failure to remove addressbook entry from distribution list '%s', entry will "
+"not be deleted."
+msgstr ""
+"De account kon niet van de distributielijst worden verwijderd.  De account "
+"is niet verwijderd."
+
+msgid "Fax Number"
+msgstr "Faxnummer"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Filter:"
+msgstr "Filter"
+
+msgid "First Name"
+msgstr "Voornaam"
+
+msgid "Folder Location"
+msgstr "Map locatie"
+
+msgid "Folder Name"
+msgstr "Map naam"
+
+msgid "Folder Type"
+msgstr "Map naam "
+
+msgid "Folder deleted, awaiting cleanup..."
+msgstr "Map verwijderd, wacht op opruiming... "
+
+msgid "For automatic invitation handling"
+msgstr "Voor automatische uitnodigingsafhandeling"
+
+msgid "Forward Email"
+msgstr "E-mail doorsturen"
+
+msgid "Forward mail to"
+msgstr "Stuur E-mail door naar"
+
+msgid "Forwarding to '%s' successfully activated"
+msgstr "Doorsturen naar '%s' succesvol geactiveerd"
+
+msgid "Forwarding to '%s' successfully deactivated"
+msgstr "Doorsturen naar '%s' succesvol uitgeschakeld"
+
+msgid "Free/Busy interval in days"
+msgstr "Vrij/bezet interval in dagen"
+
+msgid "Free/Busy settings"
+msgstr "Vrij/bezet instellingen"
+
+msgid "Group Account"
+msgstr "Group account"
+
+msgid "Hidden"
+msgstr "Verborgen"
+
+msgid "Host"
+msgstr "Host"
+
+msgid "IMAP Service"
+msgstr "IMAP Service"
+
+msgid "IMAP/SSL Service (TCP port 993)"
+msgstr "IMAP/SSL Service (TCP poort 993)"
+
+msgid "Illegal user or group %s"
+msgstr "Illegale gebruiker of groep %s"
+
+msgid "Internal"
+msgstr "Intern"
+
+msgid "Internal User Account"
+msgstr "Interne gebruikersaccount"
+
+msgid ""
+"Intevation GmbH coordinated the Projects: Kroupware and Proko2, which are "
+"the main driving force behind Kolab1&2. In addition to project management "
+"Intevation did most of the quality assurance."
+msgstr ""
+"Intevation GmbH coördineerde de projecten: Kroupware en Proko2, die de "
+"voornaamste drijvende krachten waren achter Kolab1&2. Naast het project "
+"management verzorgde Intevation de meeste kwaliteitscontrole."
+
+msgid ""
+"Intevation GmbH is a IT-company exclusively focusing on Free Software. Its "
+"business units are strategic consulting, project management and geographic "
+"information systems."
+msgstr ""
+"Intevation GmbH is een IT-bedrijf exclusief gefocust op Free Software. Hun "
+"business units zijn strategische consulting, projectmanagement en "
+"geografische informatiesystemen."
+
+msgid "Invitation Policy"
+msgstr "Uitnodigingsbeleid"
+
+msgid "Journals"
+msgstr "Journalen"
+
+msgid "Keep copy on server"
+msgstr "Bewaar een kopie op de server"
+
+msgid ""
+"Klar&auml;lvdalens Datakonsult AB is a consulting company dedicated to "
+"opensource software, Linux, and the <a href=\"http://www.trolltech.com/"
+"products/qt/\">Qt</a> library. The main tasks of KDAB within the Kolab "
+"project are design and implementation of the Kolab KDE clients and the "
+"implementation of the current Kolab 2 server."
+msgstr ""
+"Klar&auml;lvdalens Datakonsult AB is een consulting bedrijf gewijd aan "
+"opensource software, Linux, en de <a href=\"http://www.trolltech.com/"
+"products/qt/\">Qt</a> bibliotheek. De hoofdopdrachten van KDAB binnen het "
+"Kolab project zijn ontwerp en implementatie van de Kolab KDE clients en de "
+"implementatie van de huidige Kolab 2 server."
+
+msgid "Kolab Groupware login"
+msgstr "Kolab Groupware login"
+
+msgid "Kolab Hostnames (for Master and Slaves)"
+msgstr "Kolab hostnamen (voor Master en Slaves)"
+
+msgid "Kolab Server Settings"
+msgstr "Kolab Server Instellingen"
+
+msgid ""
+"Kolab's architecture was done by <a href=\"http://www.erfrakon.com"
+"\">erfrakon</a>; the company also designed and implemented the Kolab 1 "
+"Server and did the design and architecture for the Kolab 2 Server while "
+"providing consulting for the implementation of the Kolab 2 server and the "
+"Kolab 2 clients."
+msgstr ""
+"Het Kolab concept is gerealiseerd door <a href=\"http://www.erfrakon.com"
+"\">erfrakon</a>; het bedrijf ontwierp en implementeerde de Kolab -1 server "
+"en ontwierp en bouwde de kolab-2 server en levert advies over het "
+"implementeren van de Kolab-2 server en Kolab-2 clients."
+
+msgid "Kolab2 Patched OpenPKG Package Versions"
+msgstr "Kolab2 Patched OpenPKG Package Versies"
+
+msgid "LDAP Error: Could not add object %s: %s"
+msgstr "LDAP fout: kon object %s: %s niet toevoegen"
+
+msgid "LDAP Error: Could not delete %s: %s"
+msgstr "LDAP fout: kon %s: %s niet verwijderen"
+
+msgid "LDAP Error: Could not mark %s for deletion: %s"
+msgstr "LDAP fout: kon %s niet voor verwijdereing markeren: %s"
+
+msgid "LDAP Error: Could not modify object %s: %s"
+msgstr "LDAP fout: kon het object niet aanpassen %s: %s"
+
+msgid "LDAP Error: Could not read %s: %s"
+msgstr "LDAP fout: leesfout %s: %s"
+
+msgid "LDAP Error: Could not remove %s from admin group: %s"
+msgstr "LDAP fout: kan %s van admin groep %s niet verwijderen"
+
+msgid "LDAP Error: Could not remove %s from maintainer group: %s"
+msgstr "LDAP fout: kan %s niet van beheerders groep: %s verwijderen"
+
+msgid "LDAP Error: Failed to add distribution list %s: %s"
+msgstr "LDAP fout: het toevoegen van de distributielijst %s: %s is gefaald"
+
+msgid "LDAP Error: Failed to delete domain object %s: %s"
+msgstr "LDAP fout: het verwijderen van domein object %s: %s is gefaald"
+
+msgid "LDAP Error: No such dn: %s: %s"
+msgstr "LDAP fout: er is geen dn %s: %s"
+
+msgid "LDAP Error: could not add object %s to maintainer group: %s"
+msgstr "LDAP fout: kon object %s niet aan e beheerders groep %s toevoegen"
+
+msgid "LDAP Error: could not add object %s: %s"
+msgstr "LDAP fout: kon object %s: %s niet toevoegen"
+
+msgid "LDAP Error: could not delete %s: %s"
+msgstr "LDAP fout: kon %s: %s niet verwijderen"
+
+msgid "LDAP Error: could not mark %s for deletion: %s"
+msgstr "LDAP fout: kon %s niet voor verwijdering markeren: %s"
+
+msgid "LDAP Error: could not mark '%s' for deletion: %s"
+msgstr "LDAP fout: kon '%s' niet voor verwijdering markeren: %s"
+
+msgid "LDAP Error: could not modify object %s: %s"
+msgstr "LDAP fout: kon het object %s: %s niet aanpassen"
+
+msgid "LDAP Error: could not read %s: %s"
+msgstr "LDAP fout: kon %s: %s niet lezen"
+
+msgid "LDAP Error: could not rename %s to %s: %s"
+msgstr "LDAP fout: kon naam niet wijzigen van %s naar %s: %s"
+
+msgid "LDAP Error: failed to modify kolab configuration object: %s"
+msgstr "LDAP fout: het bijwerken van Kolab configuratie object %s is gefaald"
+
+msgid "Last Name"
+msgstr "Achternaam"
+
+msgid "Leave blank for default (60 days)"
+msgstr "Laat leeg voor standaard (60 dagen)"
+
+msgid "Leave blank for unlimited"
+msgstr "Laat leeg indien onbeperkt"
+
+msgid "Leave blank to keep password unchanged"
+msgstr "Laat leeg om wachtwoord niet te wijzigen"
+
+msgid "List Name"
+msgstr "Lijstnaam"
+
+msgid "List deleted, awaiting cleanup..."
+msgstr "Gebruiker verwijderd, wacht op opruiming..."
+
+msgid "Listname"
+msgstr "Lijstnaam"
+
+msgid "MBytes (empty for unlimited)"
+msgstr "MBytes (leeg voor onbeperkt)"
+
+msgid "Mail Delivery"
+msgstr "E-mail aflevering"
+
+msgid "Mail Filter Settings"
+msgstr "Mail filter instellingen"
+
+msgid "Mailbox Home Server"
+msgstr "Postvak Home Server"
+
+msgid "Mails"
+msgstr "E-mails"
+
+msgid "Maintainer "
+msgstr "Maintainer "
+
+msgid "Maintainer Deleted"
+msgstr "Beheerder verwijderd"
+
+msgid "Maintainers"
+msgstr "Beheerders"
+
+msgid "Manage Address Book"
+msgstr "Beheer adresboek"
+
+msgid "Manage Administrators"
+msgstr "Beheer administrators"
+
+msgid "Manage Administrators ("
+msgstr "Beheer administrators ("
+
+msgid "Manage Distribution Lists"
+msgstr "Beheer distributielijsten"
+
+msgid "Manage Distribution Lists (%d Lists)"
+msgstr "Beheer distributielijsten (%d lijsten)"
+
+msgid "Manage Domain Maintainer"
+msgstr "Beheer maintainers"
+
+msgid "Manage Domain Maintainers"
+msgstr "Beheer domein beheerders"
+
+msgid "Manage Email User (%d Users)"
+msgstr "Beheer gebruikers E-mails (%d gebruikers)"
+
+msgid "Manage Email Users"
+msgstr "Beheer email gebruikers"
+
+msgid "Manage Maintainer"
+msgstr "Beheer maintainer"
+
+msgid "Manage Maintainers"
+msgstr "Beheer maintainers"
+
+msgid "Manage Maintainers ("
+msgstr "Beheer van de Maintainers("
+
+msgid "Manage Shared Folders"
+msgstr "Beheer gedeelde mappen"
+
+msgid "Manage Shared Folders (%d Folders)"
+msgstr "Beheer gedeelde mappen (%d mappen)"
+
+msgid "Manager's password can't be changed from the webgui"
+msgstr "Managers wachtwoord kan niet gewijzigd worden via de webgui"
+
+msgid "Manual"
+msgstr "Handmatig"
+
+msgid "Manual if conflicts"
+msgstr "Handmatig bij conflicten"
+
+msgid "Members"
+msgstr "Leden"
+
+msgid "Message:"
+msgstr "Bericht"
+
+msgid "Mid-air collision detected, alias %1$s renamed to %2$s"
+msgstr "Opmerking; alias %1$s hernoemd naar %2$s"
+
+msgid "Mid-air collision detected, email address %1$s renamed to %2$s"
+msgstr "Opmerking; E-mail adres %1$s hernoemd naar %2$s"
+
+msgid "Modify"
+msgstr "Wijzigen"
+
+msgid "Modify Administrator"
+msgstr "Wijzig administrator"
+
+msgid "Modify Distribution List"
+msgstr "Distributielijst wijzigen"
+
+msgid "Modify Domain Maintainer"
+msgstr "Domein beheerders wijzigen"
+
+msgid "Modify External Address"
+msgstr "Pas extern adres aan"
+
+msgid "Modify Maintainer"
+msgstr "Maintainers wijzigen"
+
+msgid "Modify Shared Folder"
+msgstr "Gedeelde map wijzigen"
+
+msgid "Modify User"
+msgstr "Gebruiker wijzigen"
+
+msgid "My User Settings"
+msgstr "Mijn gebruiker instellingen"
+
+msgid "NOTE:"
+msgstr "Opmerking:"
+
+msgid ""
+"NOTE: An internal user is a user that will not be visible in the address book"
+msgstr "Opmerking: een interne gebruiker is niet zichtbaar in het adresboek"
+
+msgid ""
+"NOTE: For regular accounts to use this feature, give the 'calendar' user "
+"access to the Calendar folder"
+msgstr ""
+"Opmerking: reguliere accounts die deze functie willen gebruiken, moeten "
+"toegang hebben tot de kalendermap"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid ""
+"Networks allowed to relay and send mail through unauthenticated SMTP "
+"connections to the Kolab server (comma separated networks in x.x.x.x/y "
+"format):"
+msgstr ""
+"Netwerken die toestemming hebben om mail te zenden en door te sturen via een "
+"niet geautentificeerde SMTP verbinding met de Kolab server (netwerken "
+"gescheiden door komma's in het formaat x.x.x.x/y ):"
+
+msgid "No"
+msgstr "Nee"
+
+msgid "No UID or GID %s"
+msgstr "Geen UID of GID %s"
+
+msgid "No account found for email address %s"
+msgstr "Er is geen account voor E-mailadres %s"
+
+msgid ""
+"No account is configured to receive mail for administrative addresses. If "
+"you have not yet created an account for this, "
+msgstr ""
+"Er is nog geen account ingesteld om email te ontvangen voor administratieve "
+"emailadressen. Als daarvoor nog geen account beschikbaar is, gelieve er één "
+"aan te maken en ga dan verder met het configureren van kolab; "
+
+msgid "No user with address %s"
+msgstr "Geen gebruiker met adres %s"
+
+msgid "No user with email address, UID or alias %s"
+msgstr "Er is geen gebruiker met E-mailadres, UID of alias %s"
+
+msgid "Non volatile"
+msgstr "Permanent"
+
+msgid ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
+msgstr ""
+"Laat enkel E-mail toe met een betrouwbare From header voor accounts op deze "
+"server. Merk op dat het inschakelen van deze instelling ervoor zorgt dat de "
+"server alle E-mail weigert met non-matching afzender en from header als de "
+"afzender een account heeft op deze server. Dit gebeurt soms met "
+"mailinglijsten."
+
+msgid "Notes"
+msgstr "Aantekeningen"
+
+msgid "Object Deleted, awaiting cleanup..."
+msgstr "Object verwijderd, wacht op opruiming..."
+
+msgid "One address per line"
+msgstr "Eén adres per lijn"
+
+msgid "One email address per line"
+msgstr "Eén E-mailadres per lijn"
+
+msgid "One email address per line."
+msgstr "Eén E-mailadres per lijn"
+
+msgid "Only react to mail coming from domain"
+msgstr "Reageer alleen op mail afkomstig van het domein"
+
+msgid "OpenPKG Version"
+msgstr "OpenPKG Versie"
+
+msgid "Optional - Defaults to Primary Email Address"
+msgstr "Optioneel - standaard voor hoofd E-mailadres"
+
+msgid "Organisation"
+msgstr "Organisatie"
+
+msgid "Organisational Unit"
+msgstr "Organisatorische unit"
+
+msgid "Other contributors:"
+msgstr "Andere medewerkers"
+
+msgid "Others allowed to send emails with a \"from\" address of this account."
+msgstr ""
+"Anderen toestaan om email te sturen met een \"from\" adres van dit account."
+
+msgid "POP3 Service"
+msgstr "POP3 Service"
+
+msgid "POP3/SSL service (TCP port 995)"
+msgstr "POP3/SSL service (TCP poort 995)"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Password is empty"
+msgstr "Wachtwoord is leeg"
+
+msgid "Password:"
+msgstr "Wachtwoord"
+
+msgid "Passwords dont match"
+msgstr "Wachtwoorden stemmen niet overeen"
+
+msgid "Permission for UID/GID"
+msgstr "Toestemming voor UID/GID"
+
+msgid "Permission for UID/email/GID"
+msgstr "Toestemming voor UID/E-mail/GID"
+
+msgid "Please add at least one member"
+msgstr "Gelieve tenminste één lid toe te voegen"
+
+msgid "Please enter an email address"
+msgstr "Gelieve een E-mailadres in te geven"
+
+msgid "Post Box"
+msgstr "Postbus"
+
+msgid "Postal Code"
+msgstr "Postcode"
+
+msgid "Postbox"
+msgstr "Nummer"
+
+msgid "Primary E-Mail Address"
+msgstr "Hoofd E-mailadres"
+
+msgid "Primary Email Address"
+msgstr "Primair E-mailadres"
+
+msgid "Privileged Networks"
+msgstr "Bevoorrechte netwerken"
+
+msgid "Public"
+msgstr "Openbaar"
+
+msgid "Quota Limit"
+msgstr "Quota limiet"
+
+msgid "Quota can not be negative"
+msgstr "Quota kan niet negatief zijn"
+
+msgid "Quota settings"
+msgstr "Quota instellingen"
+
+msgid "Reject if conflicts"
+msgstr "Afwijzen bij conflicten"
+
+msgid ""
+"Reject the message, except if it originates from the outside and the From "
+"header matches one of Kolab server's domains. In that case rewrite the From "
+"header so the recipient can see the potential forgery."
+msgstr ""
+"Weiger het bericht, behalve als deze van buiten komt en een From header "
+"heeft overeenkomstig met 1 van de Kolab server domeinen.  In dit geval wordt "
+"de From header herschreven, zodat de ontvanger het mogelijke misbruik kan "
+"zien"
+
+msgid "Required"
+msgstr "Vereist"
+
+msgid "Required field "
+msgstr "Vereiste veld"
+
+msgid "Required, non volatile"
+msgstr "Vereist, permanent"
+
+msgid "Resend notification only after"
+msgstr "Stuur mededeling opnieuw na "
+
+msgid "Resource Account"
+msgstr "Hulpbron account"
+
+msgid "Room Number"
+msgstr "Kantoornummer"
+
+msgid "SMTP \"smarthost/relayhost\""
+msgstr "SMTP \"smarthost/relayhost\""
+
+msgid "Send responses for these addresses:"
+msgstr "Stuur antwoorden voor deze adressen:"
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Server error, no ldap object!"
+msgstr "Serverfout, geen LDAP object"
+
+msgid "Service"
+msgstr "Service"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Shared Folder"
+msgstr "Gedeelde map"
+
+msgid "Shared folder "
+msgstr "Gedeelde map "
+
+msgid "Shared folder '%s' added"
+msgstr "Gedeelde map %s toegevoegd"
+
+msgid "Shared folder updated"
+msgstr "Gedeelde map bijgewerkt"
+
+msgid "Shared folders"
+msgstr "Gedeelde mappen"
+
+msgid "Sieve service (TCP port %s)"
+msgstr "Sieve service (TCP poort %s)"
+
+msgid ""
+"Smarthost (and optional port) to use to send outgoing mail (host.domain."
+"tld). Leave empty for no relayhost."
+msgstr ""
+"Smarthost (en optionele poort) gebruiken om uitgaande mail te versturen "
+"(host.domain.tld, leeg laten indien geen relayhost):"
+
+msgid "Street Address"
+msgstr "Straat + Adres"
+
+msgid "Submit"
+msgstr "Verzenden"
+
+msgid "Successfully created distribution list %s"
+msgstr "Het aanmaken van de distributielijst %s is geslaagd"
+
+msgid "System Settings"
+msgstr "Systeem Instellingen"
+
+msgid "Tasks"
+msgstr "Taken"
+
+msgid "Telephone Number"
+msgstr "Telefoonnummer"
+
+msgid ""
+"The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by"
+msgstr ""
+"The Kolab 1 KDE client en de Kolab 2 KDE client (Kontact) werd ontworpen door"
+
+msgid ""
+"The Kolab project owes a great deal of thanks to the people of the <a href="
+"\"http://www.openpkg.org/\">OpenPKG</a> project. OpenPKG allows Kolab to run "
+"on many diverse platforms in a reliable and predictable manner, by providing "
+"a common, easy-to-install, cross-platform base on which to build the server."
+msgstr ""
+"Het Kolab-project bedankt in het bijzonder het project <a href=\"http://www."
+"openpkg.org/\">OpenPKG</a>. OpenPKG laat  Kolab toe om op een betrouwbare en "
+"voorspelbare manier op verschillende platformen te draaien, door te zorgen "
+"voor een gemeenschappelijke basis, een gemakkelijke installatie."
+
+msgid "The address with DN"
+msgstr "Het adres met DN"
+
+msgid "The administrator with DN"
+msgstr "De beheerder met DN"
+
+msgid "The distribution list with DN"
+msgstr "De distributielijst met DN"
+
+msgid ""
+"The following people from Code Fusion are involved in the Kolab project (in "
+"alphabetical order):"
+msgstr ""
+"De volgende mensen van Code Fusion zijn betrokken bij het Kolab project (in "
+"de alfabetische volgorde):"
+
+msgid "The following people worked on Kolab for Intevation:"
+msgstr "De volgende mensen hebben op Kolab gewerkt voor Intevation:"
+
+msgid ""
+"The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"
+msgstr ""
+"De volgende mensen hebben aan Kolab gewerkt van Klar&auml;lvdalens "
+"Datakonsult AB:"
+
+msgid "The following people worked on Kolab for erfrakon:"
+msgstr "De volgende mensen hebben op Kolab gewerkt voor erfrakon"
+
+msgid "The maintainer with DN"
+msgstr "de maintainer met DN"
+
+msgid "The shared folder with DN"
+msgstr "De gedeelde folder met DN"
+
+msgid "The user with DN"
+msgstr "De gebruiker met DN"
+
+msgid ""
+"There is also a <a href=\"http://www.kolab.org/webclient.html\">web-based "
+"client</a> in development which provides full groupware functionality to "
+"mobile users through a web interface. It allows users to access their email, "
+"calendars, tasks, etc. from anywhere in the world, by simply connecting "
+"through a standard web browser. The web client would not have been possible "
+"without the excellent <a href=\"http://www.horde.org/\">Horde project</a> on "
+"which to build."
+msgstr ""
+"Er is ook een <a href=\"http://www.kolab.org/webclient.html\">web-based "
+"client</a> in ontwikkeling die een volledige groupware functionaliteit biedt "
+"aan mobiele gebruikers door een web interface. De gebruikers kunnen hun E-"
+"mails, kalenders en taken lezen vanaf iedere plaats in de wereld, gewoon "
+"door een simpele verbinding via een standard web browser. De web client zou "
+"niet mogelijk geweest zijn zonder het uitstekende <a href=\"http://www.horde."
+"org/\">Horde project</a>"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid ""
+"To use all Kolab2 features you need an interoperable client. The KDE Kolab "
+"Client was the first such client to be developed and is still considered the "
+"reference platform for others to follow. The KDE groupware component Kontact "
+"can act as Kolab2 Client. Many thanks to the <a href=\"http://www.kde.org"
+"\">KDE Project</a> for providing such a powerful base on which to build this "
+"client solution."
+msgstr ""
+"Om alle functies van Kolab2 te kunnen gebruiken heb je Kolab 2 compatibele "
+"client nodig . De KDE Kolab client was de eerste die zo'n client heeft "
+"ontwikkeld en wordt nog steeds beschouwd als het referentieplatform voor "
+"andere. De KDE groupware component Kontact kan handelen als een Kolab2 "
+"client. Onze dank gaat uit naar het <a href=\"http://www.kde.nl\">KDE "
+"project</a> voor het ter beschikking stellen van het krachtige platform "
+"waarop de client gebouwd is."
+
+msgid "Type"
+msgstr "Soort"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "UID "
+msgstr "UID"
+
+msgid "Unique Identity (UID)"
+msgstr "Unieke identiteit (UID)"
+
+msgid "Unique User ID"
+msgstr "Unieke gebruikers ID"
+
+msgid "Unspecified"
+msgstr "Niet gespecificeerd"
+
+msgid "Update"
+msgstr "Bijwerken"
+
+msgid ""
+"Use the Sender header instead of From for the above checks if Sender is "
+"present."
+msgstr ""
+"Gebruik de Sender header in plaats van From voor de bovenstaande controles "
+"indien Sender aanwezig is"
+
+msgid "User "
+msgstr "Gebruiker"
+
+msgid "User '%s' successfully modified"
+msgstr "Gebruiker '%s' succesvol gewijzigd"
+
+msgid "User Account"
+msgstr "Gebruikersaccount"
+
+msgid "User Deleted"
+msgstr "Gebruiker verwijderd"
+
+msgid "User Deleted, awaiting cleanup..."
+msgstr "Gebruiker verwijderd, wacht op opruiming..."
+
+msgid "User Quota in KB"
+msgstr "Beschikbare schijfruimte in KB per gebruiker "
+
+msgid "User Quota in MBytes"
+msgstr "Beschikbare schijfruimte in MBytes per gebruiker "
+
+msgid "User or distribution list with this email address already exists"
+msgstr "Gebruiker of distributielijst met dit E-mailadres bestaat al"
+
+msgid "User, vCard or distribution list with this email address already exists"
+msgstr "Gebruiker, vCard of distributielijst met dit E-mailadres bestaat al"
+
+msgid "Username:"
+msgstr "Gebruikersnaam"
+
+msgid "Users"
+msgstr "Gebruikers"
+
+msgid ""
+"Users of Outlook on Microsoft Windows are able to use a proprietary plug-in "
+"to inter-operate with the Kolab server. For Kolab2 the preferred plug-in is "
+"the <a href=\"http://www.toltec.co.za/\">Toltec Plug-in</a> by Radley "
+"Network Technologies CC. Radley has worked closely with the Kolab community "
+"to help develop the Kolab2 storage format."
+msgstr ""
+"De gebruikers van Microsoft Outlook onder Microsoft Windows kunnen een "
+"proprietary plug-in gebruiken om samen te werken  met de Kolab server. Voor "
+"Kolab2 is de geprefereede plug-in de <a href=\"http://www.toltec.co.za/"
+"\">plug-in Toltec</a> geschreven door Radley Network Technologies CC. Radley "
+"heeft nauw samengewerkt met de Kolab gemeenschap om te helpen bij de "
+"ontwikkeling van het opslagformaat van Kolab2."
+
+msgid "Vacation"
+msgstr "Vakantie"
+
+msgid "Vacation Notification"
+msgstr "Afwezigheidsbericht"
+
+msgid "Vacation message successfully activated"
+msgstr "Vakantiemededeling succesvol geactiveerd"
+
+msgid "Vacation message successfully deactivated"
+msgstr "Vakantiemededeling succesvol uitgeschakeld"
+
+msgid "Value"
+msgstr "Waarde"
+
+msgid "Verify Password"
+msgstr "Wachtwoord controleren"
+
+msgid "Versions"
+msgstr "Versies"
+
+msgid "Visibility"
+msgstr "Zichtbaarheid"
+
+msgid "Warn users when they have used"
+msgstr "Waarschuw gebruikers wanneer ze"
+
+msgid "Welcome to the Kolab administration interface"
+msgstr "Welkom op Kolab beheersinterface"
+
+msgid "When creating free/busy lists, include data from"
+msgstr "Wanneer vrij/bezet lijsten worden gecreëerd, voeg gegevens in van"
+
+msgid "Wrong username or password"
+msgstr "Verkeerde gebruikersnaam of wachtwoord"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid ""
+"You have not yet set up a receiving account for the administrative email "
+"addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
+"DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
+"Enter the email address of a kolab account below and press the button to "
+"create a distribution list for each of those addresses. Later you can add or "
+"remove people from the lists like any other distribution list"
+msgstr ""
+"U hebt nog geen adres gedefinieerd voor de ontvangst van administratieve E-"
+"mailadressen hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
+"DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
+"Vul hieronder het E-mailadres in van een Kolab account en druk op de knop om "
+"een distributielijst te creëren voor elk van deze adressen. Later kunt u nog "
+"personen toevoegen of verwijderen van deze lijst zoals op elke andere "
+"distributielijst."
+
+msgid "[ ALL ]"
+msgstr "[ ALLE ]"
+
+msgid "[ OTHER ]"
+msgstr "[ Andere ]"
+
+msgid "and then go"
+msgstr "en ga dan naar"
+
+msgid "begins with"
+msgstr "begint met"
+
+msgid "check here to make this users address <br/> visible in the address book"
+msgstr ""
+"hier aankruisen om dit gebruikersadres zichtbaar te maken in het adresboek"
+
+msgid "contains"
+msgstr "bevat"
+
+msgid "days"
+msgstr "dagen"
+
+msgid "days in the past"
+msgstr "voorgaande dagen"
+
+msgid "ends with"
+msgstr "Eindigt met"
+
+msgid "has been deleted"
+msgstr "Is verwijderd"
+
+msgid "here"
+msgstr "instellen administratief emailadres "
+
+msgid "is"
+msgstr "is"
+
+msgid "non volatile"
+msgstr "permanent"
+
+msgid "not yet implemented"
+msgstr "nog niet geïmplementeerd"
+
+msgid "please do so"
+msgstr "aanmaken account voor administratieve emailadressen"
+
+msgid "to set up forwarding of mail to administrative email addresses."
+msgstr ""
+"om het doorsturen van email naar administratieve emailadressen in te stellen."
+
+msgid "uid"
+msgstr "uid"

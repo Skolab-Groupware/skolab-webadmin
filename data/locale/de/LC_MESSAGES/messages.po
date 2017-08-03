@@ -1,0 +1,1428 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kolab-Webadmin German\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-15 12:08+0200\n"
+"PO-Revision-Date: 2008-06-02 17:40+0200\n"
+"Last-Translator: Thomas Arendsen Hein <thomas@intevation.de>\n"
+"Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid " Administrators)"
+msgstr " Administratoren)"
+
+msgid " Maintainers)"
+msgstr " Verwalter)"
+
+msgid ""
+" collides with an address already used for another user, a vCard or a "
+"distribution list.<br />"
+msgstr ""
+" kollidiert mit einer Adresse, die bereits für einen anderen Benutzer, eine "
+"Visitenkarte oder eine Verteilerliste verwendet wird.<br />"
+
+msgid " deleted"
+msgstr " gelöscht"
+
+msgid " is empty"
+msgstr " ist leer"
+
+msgid " marked for deletion"
+msgstr " zum Löschen vorgemerkt"
+
+msgid " successfully created"
+msgstr " erfolgreich erzeugt"
+
+msgid " successfully modified"
+msgstr " erfolgreich geändert"
+
+msgid "% of their quota"
+msgstr "% des zugestandenen Kontingents beträgt"
+
+msgid "%s successfully added"
+msgstr "%s erfolgreich hinzugefügt"
+
+msgid "%s successfully updated"
+msgstr "%s erfolgreich aktualisiert"
+
+msgid "(HTTP Server)"
+msgstr "(HTTP-Server)"
+
+msgid "(LDAP Server)"
+msgstr "LDAP-Server"
+
+msgid "(MTA)"
+msgstr "(MTA)"
+
+msgid "(Mail Scanner)"
+msgstr "(E-Mail-Scanner)"
+
+msgid "(SPAM Filter)"
+msgstr "(Spamfilter)"
+
+msgid "(Virus Scanner)"
+msgstr "(Virenscanner)"
+
+msgid "(leave empty for all domains)"
+msgstr "(freilassen für alle Domänen)"
+
+msgid "(one address per line)"
+msgstr "(Eine Adresse pro Zeile)"
+
+msgid "(only external addresses without a kolab user account)"
+msgstr "(nur externe Adresse ohne Kolab-Benutzerkonto)"
+
+msgid "* Required field."
+msgstr "* Pflichtfeld"
+
+msgid ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is a specialist "
+"email solution provider based in Johannesburg, South Africa specialising in "
+"the deployment and support of Kolab."
+msgstr ""
+"<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> ist ein auf E-"
+"Mail-Lösungen spezialisierter Dienstleister in Johannesburg, Südafrika, der "
+"besonders an Inbetriebnahme und Support für Kolab arbeitet."
+
+msgid ""
+"<a href=\"http://www.erfrakon.com\">erfrakon</a> is a consulting company "
+"dedicated to opensource software and Linux. The main tasks of erfrakon "
+"within the Kolab project are the principle design and architecure of the "
+"Kolab groupware solution and the creation of the Kolab 1 server."
+msgstr ""
+"<a href=\"http://www.erfrakon.com\">erfrakon</a> ist eine Consulting-Firma, "
+"die sich Open Source Software und Linux verschrieben hat. Die Hauptaufgaben "
+"von erfrakon im Kolab-Projekt sind das grundlegende Design und die "
+"Architektur der Kolab-Groupware-Lösung und die Erstellung des Kolab 1-"
+"Servers."
+
+msgid ""
+"<a href=\"http://www.kde.org\">KDE</a> is a powerful <a href=\"http://www."
+"gnu.org/philosophy/free-sw.html\">Free Software</a> graphical desktop "
+"environment for Linux and Unix workstations. It combines ease of use, "
+"contemporary functionality, and outstanding graphical design with the "
+"technological superiority of the Unix operating system."
+msgstr ""
+"<a href=\"http://www.kde.org\">KDE</a> ist eine mächtige <a href=\"http://"
+"www.gnu.org/philosophy/free-sw.html\">Open Source</a> grafische "
+"Schreibtischumgebung für Linux- und UNIX-Workstations. Sie kombiniert "
+"einfachste Bedienung mit zeitgemäßer Funktionalität und herausragendes "
+"grafisches Design mit der technologischen Überlegenheit des Betriebssystems "
+"UNIX."
+
+msgid ""
+"<b>KDE</b> is a mature desktop suite providing a solid basis to an ever "
+"growing number of <a href=\"http://www.kde-apps.org\">applications</a> for "
+"Unix workstations.  KDE has developed a high quality development framework "
+"for Unix, which allows for the rapid and efficient creation of applications."
+msgstr ""
+"<b>KDE</b> ist eine reife Schreibtischumgebung, die einer ständig wachsenden "
+"Anzahl von <a href=\"http://apps.kde.com\">Applikationen</a> für Unix-"
+"Umgebungen eine solide Basis bietet. KDE hat ein hochqualitatives "
+"Entwicklungs-Framework für Unix entwickelt, mit dem Applikationen schnell "
+"und effizient entwickelt werden können."
+
+msgid ""
+"<b>KDE</b> is an Internet project that is truly open in every sense. "
+"Development takes place on the Internet and is discussed on our <a href="
+"\"http://www.kde.org/mailinglists.html\">mailing lists</a>, USENET news "
+"groups, and IRC channels to which we invite and welcome everyone."
+msgstr ""
+"<b>KDE</b> ist ein Internet-Projekt, das in jeder Hinsicht wahrhaft offen "
+"ist. Die Entwicklung findet im Internet statt und wird auf unseren <a href="
+"\"http://www.kde.org/mailinglists.html\">Mailing-Listen</a>, USENET-"
+"Newsgruppen und IRC-Kanälen diskutiert, zu denen wir alle einladen und "
+"willkommen heißen."
+
+msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
+msgstr "<tr><th>Attribut</th><th>Wert</th><th>Kommentar</th></tr>"
+
+msgid ""
+"A list of additional Outlook plug-ins that provide interoperability with the "
+"Kolab server is <a href=\"http://www.kolab.org/kolab-plugins.html"
+"\">maintained on the Kolab website</a>."
+msgstr ""
+"Eine Liste der weiteren Outlook-Plug-Ins, die Interoperabilität mit dem "
+"Kolab-Server ermöglichen, finden Sie unter <a href=\"http://www.kolab.org/"
+"kolab-plugins.html\">auf der Kolab-Website</a>."
+
+msgid "About Kolab"
+msgstr "Über Kolab"
+
+msgid "Accept Internet Mail"
+msgstr "Nachrichten aus dem Internet akzeptieren"
+
+msgid ""
+"Accept mail from other domains over unauthenticated SMTP. This must be "
+"enabled if you want to use the Kolab Server to receive mail from other "
+"internet domains directly. Leave disabled to accept mail only from SMTP "
+"gateways that are within the privileged network."
+msgstr ""
+"Nachrichten aus anderen Domänen über nicht-authentifiziertes SMTP "
+"akzeptieren. Dies muß eingeschaltet werden, wenn der Kolab-Server "
+"Nachrichten aus anderen Internet-Domänen empfangen können soll. Wenn dies "
+"ausgeschaltet ist, werden E-Mails nur von SMTP-Servern in den privilegierten "
+"Netzwerken angenommen."
+
+msgid "Account Type"
+msgstr "Kontotyp"
+
+msgid "Account could not be deleted, distribution list '%s' depends on it."
+msgstr ""
+"Das Konto konnte nicht gelöscht werden; die Verteilerliste '%s' hängt davon "
+"ab."
+
+msgid "Account removed from distribution list '%s'."
+msgstr "Das Konto wurde von der Verteilerliste '%s' entfernt."
+
+msgid "Account with this UID already exists"
+msgstr "Konto mit dieser UID existiert bereits"
+
+msgid "Action"
+msgstr "Aktion"
+
+msgid "Action to take for messages that fail the check:"
+msgstr "Maßname für Nachrichten, deren Überprüfung fehlschlägt:"
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "Add Distribution List"
+msgstr "Verteilerliste hinzufügen"
+
+msgid "Add External Address"
+msgstr "Externe Adresse hinzufügen"
+
+msgid "Add Shared Folder"
+msgstr "Gemeinsam genutzten Ordner hinzufügen"
+
+msgid "Address book entry with DN %s was deleted"
+msgstr "Adressbucheintrag mit DN %s wurde gelöscht"
+
+msgid "Addressbook"
+msgstr "Adressbuch"
+
+msgid "Addressbook entry removed from distribution list '%s'."
+msgstr "Die Adresse wurde von der Verteilerliste '%s' entfernt."
+
+msgid "Administrative email addresses"
+msgstr "Administrative E-Mail-Adressen"
+
+msgid "Administrator "
+msgstr "Administrator "
+
+msgid "Administrator Deleted"
+msgstr "Administrator gelöscht"
+
+msgid "Administrators"
+msgstr "Administratoren"
+
+msgid "Allow unauthenticated downloading of Free/Busy information"
+msgstr ""
+"Unauthentifiziertes Herunterladen von Frei/Belegt-Informationen erlauben"
+
+msgid "Always accept"
+msgstr "Immer annehmen"
+
+msgid "Always reject"
+msgstr "Immer ablehnen"
+
+msgid "Always reject the message."
+msgstr "Die Nachricht immer ablehnen."
+
+msgid "Amavis Email Scanning (Virus/Spam)"
+msgstr "Amavis-Scannen von E-Mail-Nachrichten (Viren/Spam)"
+
+msgid "Anyone"
+msgstr "Alle"
+
+msgid ""
+"As Kolab is a Free Software project, anyone can help to extend the "
+"functionality of the software. An active community has developed around the "
+"software with many people throughout the world contributing. The project was "
+"originally started in 2002 by a joint-venture of three companies: <a href="
+"\"http://www.erfrakon.com/\">erfrakon</a> (design, architecture and server); "
+"<a href=\"http://www.intevation.de\">Intevation</a> (project management) and "
+"<a href=\"http://www.klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens "
+"Datakonsult</a> (client)."
+msgstr ""
+"Da Kolab ein Freie Software-Projekt ist, kann jeder dabei mithelfen, die "
+"Funktionalität der Software zu erweitern. Eine aktive Gemeinde hat sich um "
+"die Software herum gebildet, zu der viele Leute auf der ganzen Welt "
+"beitragen. Das Projekt wurde ursprünglich im Jahre 2002 durch ein Joint "
+"Venture der drei Firmen <a href=\"http://www.erfrakon.com/\">erfrakon</a> "
+"(Design, Architektur und Server), <a href=\"http://www.intevation.de"
+"\">Intevation</a> (Projektmanagement) und <a href=\"http://www.klaralvdalens-"
+"datakonsult.se/\">Klar&auml;lvdalens Datakonsult AB</a> (Klient) ins Leben "
+"gerufen."
+
+msgid "Attribute"
+msgstr "Attribut"
+
+msgid "Back to list of addresses"
+msgstr "Zurück zur Adressliste"
+
+msgid "Back to list of administrators"
+msgstr "Zurück zur Liste der Administratoren"
+
+msgid "Back to list of distribution lists"
+msgstr "Zurück zur Liste der Verteilerlisten"
+
+msgid "Back to list of maintainers"
+msgstr "Zurück zur Liste der Verwalter"
+
+msgid "Back to list of shared folders"
+msgstr "Zurück zur Liste der gemeinsam genutzten Ordner"
+
+msgid "Back to list of users"
+msgstr "Zurück zur Liste der Benutzer"
+
+msgid "CSSified the Kolab1 web admin GUI"
+msgstr "Hat das Web-Administrations-GUI von Kolab1 auf CSS umgestellt"
+
+msgid "Check domains this domain maintainer should be able to maintain"
+msgstr ""
+"Kreuzen Sie die Domänen an, die dieser Domänenverwalter verwalten können "
+"sollte"
+
+msgid ""
+"Check here to make this distribution list available only to authenticated "
+"users"
+msgstr ""
+"Kreuzen Sie diese Option an, wenn diese Verteilerliste nur authentifizierten "
+"Benutzern zur Verfügung stehen soll"
+
+msgid "Check messages for mismatching From header and envelope from."
+msgstr ""
+"Nachrichten darauf überprüfen, ob From-Kopfzeile und Umschlag (\"envelope\") "
+"nicht übereinstimmen."
+
+msgid "City"
+msgstr "Stadt"
+
+msgid ""
+"Code Fusion has played, and continues to play, an integral part in "
+"developing and extending the Kolab server; specifically with regards to "
+"enhancing the base Kolab engine, adding in support for Microsoft Active "
+"Directory &reg; as an LDAP backend, as well as extending the <a href="
+"\"http://www.horde.org/\">Horde project</a> to provide a web-based groupware "
+"client for the Kolab server."
+msgstr ""
+"Code Fusion hat eine zentrale Rolle in der Entwicklung und Erweiterung des "
+"Kolab-Servers gespielt und wird das auch in Zukunft tun; insbesondere "
+"hinsichtlich Erweiterungen der zugrundeliegenden Kolab-Engine, der "
+"Unterstützung von Microsoft Active Directory &reg; als LDAP-Backend und der "
+"Erweiterung des <a href=\"http://www.horde.org/\">Horde-Projekts</a> als Web-"
+"basierter Groupware-Client für den Kolab-Server."
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Contacts"
+msgstr "Kontakte"
+
+msgid "Could not bind to LDAP server"
+msgstr "Anmeldung am LDAP-Server fehlgeschlagen"
+
+msgid "Could not bind to LDAP server: "
+msgstr "Anmeldung am LDAP-Server fehlgeschlagen: "
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Create Distribution Lists"
+msgstr "Verteilerlisten anlegen"
+
+msgid "Create New Administrator"
+msgstr "Neuen Administrator anlegen"
+
+msgid "Create New Domain Maintainer"
+msgstr "Neuen Domänenverwalter anlegen"
+
+msgid "Create New List"
+msgstr "Neue Liste anlegen"
+
+msgid "Create New Maintainer"
+msgstr "Neuen Verwalter anlegen"
+
+msgid "Create New User"
+msgstr "Neuen Benutzer anlegen"
+
+msgid "Create New vCard"
+msgstr "Neue Visitenkarte (vCard) erzeugen"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Delete Administrator"
+msgstr "Administrator löschen"
+
+msgid "Delete Distribution List"
+msgstr "Verteilerliste löschen"
+
+msgid "Delete Domain Maintainer"
+msgstr "Domänenverwalter löschen"
+
+msgid "Delete External Address"
+msgstr "Externe Adresse löschen"
+
+msgid "Delete Maintainer"
+msgstr "Verwalter löschen"
+
+msgid "Delete Shared Folder"
+msgstr "Gemeinsam genutzten Ordner löschen"
+
+msgid "Delete User"
+msgstr "Benutzer löschen"
+
+msgid "Deliver regular mail to folder"
+msgstr "Normale Nachrichten an den Ordner zustellen"
+
+msgid "Delivery to '%s' successfully activated"
+msgstr "Versand an '%s' erfolgreich aktiviert"
+
+msgid "Delivery to '%s' successfully deactivated"
+msgstr "Versand an '%s' erfolgreich deaktiviert"
+
+msgid "Distribution List "
+msgstr "Verteilerliste "
+
+msgid "Distribution List '%s' added"
+msgstr "Verteilerliste '%s' wurde hinzugefügt"
+
+msgid "Distribution List updated"
+msgstr "Verteilerliste aktualisiert"
+
+msgid "Distribution Lists"
+msgstr "Verteilerlisten"
+
+msgid "Do not send vacation replies to spam messages"
+msgstr "Keine Abwesenheitsbenachrichtigungen auf Spamnachrichten senden"
+
+msgid "Domain"
+msgstr "Domäne"
+
+msgid "Domain Maintainer Deleted"
+msgstr "Domänenverwalter gelöscht"
+
+msgid "Domain Maintainers"
+msgstr "Domänenverwalter"
+
+msgid "Domain maintainer "
+msgstr "Domänenverwalter "
+
+msgid "Domains"
+msgstr "Domänen"
+
+msgid "E-Mail Aliases"
+msgstr "E-Mail-Aliasnamen"
+
+msgid "E-mail"
+msgstr "E-Mail"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Email Alias"
+msgstr "E-Mail-Aliasnamen"
+
+msgid "Email Aliases"
+msgstr "E-Mail-Aliasnamen"
+
+msgid "Email Delivery"
+msgstr "E-Mail-Zustellung"
+
+msgid "Email Forwarding"
+msgstr "E-Mail-Weiterleitung"
+
+msgid "Email Users"
+msgstr "E-Mail-Benutzer"
+
+msgid "Email address "
+msgstr "E-Mail-Adresse"
+
+msgid "Email address %1$s not in domains %2$s"
+msgstr "E-Mail-Adresse %1$s nicht in Domänen %2$s vorhanden"
+
+msgid ""
+"Email address of account that should receive administrative mail for domain "
+msgstr ""
+"E-Mail-Adresse des Kontos, das die administrativen Nachrichten empfangen "
+"soll:"
+
+msgid "Email-Delegate %s does not exist"
+msgstr "Bevollmächtigter %s existiert nicht"
+
+msgid "Email-Delegates"
+msgstr "Bevollmächtigte"
+
+msgid "Enable or Disable individual Services"
+msgstr "Einzelne Dienste einschalten oder abschalten"
+
+msgid "Enabled"
+msgstr "Eingeschaltet"
+
+msgid "Enter UID and password to login"
+msgstr "Geben Sie Ihre UID und Ihr Passwort ein, um sich anzumelden"
+
+msgid "Entry Deleted"
+msgstr "Eintrag gelöscht"
+
+msgid "Entry deleted, awaiting cleanup..."
+msgstr "Eintrag gelöscht, warte auf Aufräumaktion..."
+
+msgid "Error: DN required for %s operation"
+msgstr "Fehler: dn wird für die Operation %s benötigt"
+
+msgid "Error: No entry with DN %s found"
+msgstr "Fehler: Kein Eintrag mit DN %s gefunden"
+
+msgid "Error: No results returned for DN '%s'"
+msgstr "Fehler: Für DN '%s' wurden keine Ergebnisse zurückgegeben"
+
+msgid "Error: You don't have Permissions to access this Menu"
+msgstr "Fehler: Sie haben keine Zugriffsrechte auf dieses Menü"
+
+msgid "Error: You don't have the required Permissions"
+msgstr "Fehler: Sie haben nicht die erforderlichen Zugriffsrechte"
+
+msgid "Error: need DN for delete operation"
+msgstr "Fehler: DN wird für Löschoperation benötigt"
+
+msgid "Error: need valid action to proceed"
+msgstr "Fehler: Kann nicht weitermachen ohne zulässige Aktion"
+
+msgid "Error: you need administrative permissions to delete administrators"
+msgstr ""
+"Fehler: Sie benötigen Administratorrechte, um Administratoren löschen zu "
+"dürfen"
+
+msgid "Error: you need administrative permissions to delete domain maintainers"
+msgstr ""
+"Fehler: Sie benötigen Administratorrechte, um Domänenverwalter löschen zu "
+"dürfen"
+
+msgid "Error: you need administrative permissions to delete users"
+msgstr "Fehler: Sie benötigen Administratorrechte, um Benutzer zu löschen"
+
+msgid "Errors:"
+msgstr "Fehler:"
+
+msgid "Events"
+msgstr "Kalender"
+
+msgid ""
+"Failure to remove account from distribution list '%s', account will not be "
+"deleted."
+msgstr ""
+"Konnte das Konto nicht aus der Verteilerliste '%s' entfernen; das Konto wird "
+"nicht gelöscht."
+
+msgid ""
+"Failure to remove addressbook entry from distribution list '%s', entry will "
+"not be deleted."
+msgstr ""
+"Konnte die Adresse nicht aus der Verteilerliste '%s' entfernen; der Eintrag "
+"wird nicht gelöscht."
+
+msgid "Fax Number"
+msgstr "Faxnummer"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "Filter:"
+msgstr "Filter:"
+
+msgid "First Name"
+msgstr "Vorname"
+
+msgid "Folder Location"
+msgstr "Ordnerposition"
+
+msgid "Folder Name"
+msgstr "Ordnername"
+
+msgid "Folder Type"
+msgstr "Ordnertyp"
+
+msgid "Folder deleted, awaiting cleanup..."
+msgstr "Ordner gelöscht, warte auf Aufräumaktion..."
+
+msgid "For automatic invitation handling"
+msgstr "Für das automatische Bearbeiten von Einladungen"
+
+msgid "Forward Email"
+msgstr "E-Mail weiterleiten"
+
+msgid "Forward mail to"
+msgstr "E-Mail weiterleiten an"
+
+msgid "Forwarding to '%s' successfully activated"
+msgstr "Weiterleitung an '%s' erfolgreich aktiviert"
+
+msgid "Forwarding to '%s' successfully deactivated"
+msgstr "Weiterleiten an '%s' erfolgreich deaktiviert"
+
+msgid "Free/Busy interval can not be negative"
+msgstr "Frei/Belegt-Intervall kann nicht negativ sein"
+
+msgid "Free/Busy interval in days"
+msgstr "Frei/Belegt-Intervall in Tagen"
+
+msgid "Free/Busy interval must be a number"
+msgstr "Frei/Belegt-Intervall muss eine Zahl sein"
+
+msgid "Free/Busy interval must be an integer"
+msgstr "Frei/Belegt-Intervall muss eine ganze Zahl sein"
+
+msgid "Free/Busy settings"
+msgstr "Frei/Belegt-Einstellungen"
+
+msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
+msgstr "Frei/Belegt-Dienst über HTTP (zusätzlich zu HTTPS)"
+
+msgid "Group Account"
+msgstr "Gruppenkonto"
+
+msgid "Hidden"
+msgstr "Verborgen"
+
+msgid "Host"
+msgstr "Host"
+
+msgid "IMAP Service"
+msgstr "IMAP-Dienst"
+
+msgid "IMAP/SSL Service (TCP port 993)"
+msgstr "IMAP/SSL-Dienst (TCP-Port 993)"
+
+msgid "Illegal user or group %s"
+msgstr "Ungültiger Benutzer oder Gruppe %s"
+
+msgid "Internal"
+msgstr "Intern"
+
+msgid "Internal User Account"
+msgstr "Internes Benutzerkonto"
+
+msgid ""
+"Intevation GmbH coordinated the Projects: Kroupware and Proko2, which are "
+"the main driving force behind Kolab1&2. In addition to project management "
+"Intevation did most of the quality assurance."
+msgstr ""
+"Intevation GmbH hat die Projekte Kroupware und Proko2 koordiniert, die die "
+"Haupt-Triebkraft hinter Kolab1&2 waren. Neben dem Projektmanagement hat "
+"Intevation auch den größten Teil der Qualitätssicherung übernommen."
+
+msgid ""
+"Intevation GmbH is a IT-company exclusively focusing on Free Software. Its "
+"business units are strategic consulting, project management and geographic "
+"information systems."
+msgstr ""
+"Intevation GmbH ist eine IT-Firma, die sich ausschließlich mit Freier "
+"Software befaßt. Ihre Geschäftseinheiten sind die strategische Beratung, "
+"Projektmanagement und geografische Informationssysteme."
+
+msgid "Invitation Policy"
+msgstr "Einladungs-Richtlinie"
+
+msgid "Journals"
+msgstr "Journal"
+
+msgid "Keep copy on server"
+msgstr "Kopie auf dem Server belassen"
+
+msgid ""
+"Klar&auml;lvdalens Datakonsult AB is a consulting company dedicated to "
+"opensource software, Linux, and the <a href=\"http://www.trolltech.com/"
+"products/qt/\">Qt</a> library. The main tasks of KDAB within the Kolab "
+"project are design and implementation of the Kolab KDE clients and the "
+"implementation of the current Kolab 2 server."
+msgstr ""
+"Klar&auml;lvdalens Datakonsult AB ist eine Consulting-Firma, die sich Open "
+"Source-Software, Linux, und der <a href=\"http://www.trolltech.com/products/"
+"qt/\">Qt</a>-Bibliothek verschrieben hat. Die Hauptaufgaben von KDAB im "
+"Kolab-Projekt sind das Design und die Implementation der Kolab-KDE-Klienten "
+"und die Implementation des derzeitigen Kolab2-Servers."
+
+msgid "Kolab Groupware login"
+msgstr "Kolab Groupware login"
+
+msgid "Kolab Hostnames (for Master and Slaves)"
+msgstr "Kolab-Rechnernamen (für Master- und Slaveserver)"
+
+msgid "Kolab Server Settings"
+msgstr "Kolab-Server-Einstellungen"
+
+msgid ""
+"Kolab's architecture was done by <a href=\"http://www.erfrakon.com"
+"\">erfrakon</a>; the company also designed and implemented the Kolab 1 "
+"Server and did the design and architecture for the Kolab 2 Server while "
+"providing consulting for the implementation of the Kolab 2 server and the "
+"Kolab 2 clients."
+msgstr ""
+"Das Kolab-Konzept wurde von <a href=\"http://www.erfrakon.com\">erfrakon</a> "
+"erstellt, der Firma, die auch den Kolab 1-Server entworfen und implementiert "
+"hat und das Design und die Architektur für den Kolab 2-Server erstellt und "
+"bei der Implementation des Kolab 2-Servers und der Kolab 2-Klienten beraten "
+"hat."
+
+msgid "Kolab2 Patched OpenPKG Package Versions"
+msgstr "Kolab2-Gepatchte-OpenPKG-Paket-Versionen"
+
+msgid "LDAP Error: Could not add object %s: %s"
+msgstr "LDAP-Fehler: Konnte Objekt %s nicht hinzufügen: %s"
+
+msgid "LDAP Error: Could not delete %s: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht löschen: %s"
+
+msgid "LDAP Error: Could not mark %s for deletion: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht zum Löschen vormerken: %s"
+
+msgid "LDAP Error: Could not modify object %s: %s"
+msgstr "LDAP-Fehler: Konnte Objekt %s nicht ändern: %s"
+
+msgid "LDAP Error: Could not read %s: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht lesen: %s"
+
+msgid "LDAP Error: Could not remove %s from admin group: %s"
+msgstr ""
+"LDAP-Fehler: Konnte %s nicht aus der Administratoren-Gruppe entfernen: %s"
+
+msgid "LDAP Error: Could not remove %s from maintainer group: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht aus der Verwalter-Gruppe entfernen: %s"
+
+msgid "LDAP Error: Failed to add distribution list %s: %s"
+msgstr "LDAP-Fehler: Konnte die Verteilerliste %s nicht hinzufügen: %s"
+
+msgid "LDAP Error: Failed to delete domain object %s: %s"
+msgstr "LDAP-Fehler: Konnte das Domänen-Objekt %s nicht löschen: %s"
+
+msgid "LDAP Error: No such dn: %s: %s"
+msgstr "LDAP-Fehler: DN %s existiert nicht: %s"
+
+msgid "LDAP Error: could not add object %s to maintainer group: %s"
+msgstr "LDAP-Fehler: Konnte Objekt %s nicht zur Verwaltergruppe hinzufügen: %s"
+
+msgid "LDAP Error: could not add object %s: %s"
+msgstr "LDAP-Fehler: Konnte Objekt %s nicht hinzufügen: %s"
+
+msgid "LDAP Error: could not delete %s: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht löschen: %s"
+
+msgid "LDAP Error: could not mark %s for deletion: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht zum Löschen vormerken: %s"
+
+msgid "LDAP Error: could not mark '%s' for deletion: %s"
+msgstr "LDAP-Fehler: Konnte '%s' nicht zum Löschen vormerken: %s"
+
+msgid "LDAP Error: could not modify %s to %s: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht in %s ändern: %s"
+
+msgid "LDAP Error: could not modify object %s: %s"
+msgstr "LDAP-Fehler: Konnte Objekt %s nicht ändern: %s"
+
+msgid "LDAP Error: could not read %s: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht lesen: %s"
+
+msgid "LDAP Error: could not rename %s to %s: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht in %s umbenennen: %s"
+
+msgid "LDAP Error: failed to modify kolab configuration object: %s"
+msgstr "LDAP-Fehler: Konnte das Kolab-Konfigurationsobjekt nicht verändern: %s"
+
+msgid "Last Name"
+msgstr "Nachname"
+
+msgid "Leave blank for default (60 days)"
+msgstr "Freilassen für die Voreinstellung (60 Tage)"
+
+msgid "Leave blank for unlimited"
+msgstr "Freilassen für unbegrenzten Platz"
+
+msgid "Leave blank to keep password unchanged"
+msgstr "Frei lassen, um das alte Passwort beizubehalten"
+
+msgid "List Name"
+msgstr "Listenname"
+
+msgid "List deleted, awaiting cleanup..."
+msgstr "Liste gelöscht, warte auf Aufräumaktion..."
+
+msgid "Listname"
+msgstr "Listenname"
+
+msgid "MBytes (empty for unlimited)"
+msgstr "MBytes (leer lassen für unbegrenzten Plattenplatz)"
+
+msgid "Mail Delivery"
+msgstr "E-Mail-Zustellung"
+
+msgid "Mail Filter Settings"
+msgstr "Einstellungen für Nachrichtenfilter"
+
+msgid "Mailbox Home Server"
+msgstr "Home-Server des E-Mail-Kontos"
+
+msgid "Mails"
+msgstr "E-Mail"
+
+msgid "Maintainer "
+msgstr "Verwalter "
+
+msgid "Maintainer Deleted"
+msgstr "Verwalter gelöscht"
+
+msgid "Maintainers"
+msgstr "Verwalter"
+
+msgid "Manage Address Book"
+msgstr "Adressbuch verwalten"
+
+msgid "Manage Administrators"
+msgstr "Administratoren verwalten"
+
+msgid "Manage Administrators ("
+msgstr "Administratoren verwalten ("
+
+msgid "Manage Distribution Lists"
+msgstr "Verteilerlisten verwalten"
+
+msgid "Manage Distribution Lists (%d Lists)"
+msgstr "Verteilerlisten verwalten (%d Listen)"
+
+msgid "Manage Domain Maintainer"
+msgstr "Domänenverwalter verwalten"
+
+msgid "Manage Domain Maintainers"
+msgstr "Domänenverwalter verwalten"
+
+msgid "Manage Email User (%d Users)"
+msgstr "E-Mail-Benutzer verwalten (%d Benutzer)"
+
+msgid "Manage Email Users"
+msgstr "E-Mail-Benutzer verwalten"
+
+msgid "Manage Maintainer"
+msgstr "Verwalter verwalten"
+
+msgid "Manage Maintainers"
+msgstr "Verwalter verwalten"
+
+msgid "Manage Maintainers ("
+msgstr "Verwalter verwalten ("
+
+msgid "Manage Shared Folders"
+msgstr "Gemeinsam genutzte Ordner verwalten"
+
+msgid "Manage Shared Folders (%d Folders)"
+msgstr "Gemeinsam genutzte Ordner verwalten (%d Ordner)"
+
+msgid "Manager's password can't be changed from the webgui"
+msgstr ""
+"Das Passwort des Managers kann nicht in der Web-Schnittstelle geändert werden"
+
+msgid "Manual"
+msgstr "Manuell"
+
+msgid "Manual if conflicts"
+msgstr "Im Konfliktfall manuell bearbeiten"
+
+msgid "Members"
+msgstr "Teilnehmer"
+
+msgid "Message:"
+msgstr "Nachricht:"
+
+msgid "Mid-air collision detected, alias %1$s renamed to %2$s"
+msgstr ""
+"Miteinander in Konflikt stehende Änderungen aufgetreten; der Aliasname %1$s "
+"wurde in %2$s umbenannt"
+
+msgid "Mid-air collision detected, email address %1$s renamed to %2$s"
+msgstr ""
+"Miteinander in Konflikt stehende Änderungen entdeckt: E-Mail-Adresse %1$s "
+"wurde in %2$s umbenannt"
+
+msgid "Modify"
+msgstr "Bearbeiten"
+
+msgid "Modify Administrator"
+msgstr "Administrator bearbeiten"
+
+msgid "Modify Distribution List"
+msgstr "Verteilerliste bearbeiten"
+
+msgid "Modify Domain Maintainer"
+msgstr "Domänenverwalter bearbeiten"
+
+msgid "Modify External Address"
+msgstr "Externe Adresse bearbeiten"
+
+msgid "Modify Maintainer"
+msgstr "Verwalter bearbeiten"
+
+msgid "Modify Shared Folder"
+msgstr "Gemeinsam genutzten Ordner bearbeiten"
+
+msgid "Modify User"
+msgstr "Benutzer bearbeiten"
+
+msgid "My User Settings"
+msgstr "Meine Benutzereinstellungen"
+
+msgid "NOTE:"
+msgstr "ANMERKUNG:"
+
+msgid ""
+"NOTE: An internal user is a user that will not be visible in the address book"
+msgstr ""
+"ANMERKUNG: Ein interner Benutzer ist ein Benutzer, der nicht im Adressbuch "
+"angezeigt wird"
+
+msgid ""
+"NOTE: For regular accounts to use this feature, give the 'calendar' user "
+"access to the Calendar folder"
+msgstr ""
+"ANMERKUNG: Damit normale Konten diese Funktion verwenden können, muss der "
+"Benutzer 'calendar' Zugriff auf den Kalender-Ordner haben"
+
+msgid "Name"
+msgstr "Name"
+
+msgid ""
+"Networks allowed to relay and send mail through unauthenticated SMTP "
+"connections to the Kolab server (comma separated networks in x.x.x.x/y "
+"format):"
+msgstr ""
+"Netzwerke, die Nachrichten über unauthentifizierte SMTP-Verbindungen an den "
+"Kolab-Server weiterleiten und damit verschicken dürfen (durch Kommata "
+"getrennte Liste von Netzwerken im Format x.x.x.x/y):"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "No UID or GID %s"
+msgstr "Keine UID oder GID %s"
+
+msgid "No account found for email address %s"
+msgstr "Für die E-Mail-Adresse %s wurde kein Konto gefunden"
+
+msgid ""
+"No account is configured to receive mail for administrative addresses. If "
+"you have not yet created an account for this, "
+msgstr ""
+"Es wurde kein Konto zum Empfang von Nachrichten an administrative Adressen "
+"konfiguriert. Wenn Sie hierfür noch kein Konto angelegt haben, "
+
+msgid "No user with address %s"
+msgstr "Es existiert kein Benutzer mit der Adresse %s"
+
+msgid "No user with email address, UID or alias %s"
+msgstr "Kein Benutzer mit dieser E-Mail-Adresse, UID oder Alias: %s"
+
+msgid "Non volatile"
+msgstr "unveränderlich"
+
+msgid ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
+msgstr ""
+"Beachten Sie, dass der Server mit dieser Einstellung alle Nachrichten, bei "
+"denen Absender und From-Zeile nicht übereinstimmen, zurückweisen wird, wenn "
+"der Absender über ein Konto auf diesem Server verfügt. Dies kann "
+"beispielsweise bei Nachrichtenlisten zu Problemen führen."
+
+msgid "Notes"
+msgstr "Notizen"
+
+msgid "Object Deleted, awaiting cleanup..."
+msgstr "Objekt gelöscht, warte auf Aufräumaktion..."
+
+msgid "One address per line"
+msgstr "Eine Adresse pro Zeile"
+
+msgid "One email address per line"
+msgstr "Eine E-Mail-Adresse pro Zeile"
+
+msgid "One email address per line."
+msgstr "Eine E-Mail-Adresse pro Zeile."
+
+msgid "Only react to mail coming from domain"
+msgstr "Nur auf Nachrichten reagieren, die aus dieser Domäne kommen"
+
+msgid "OpenPKG Version"
+msgstr "OpenPKG-Version"
+
+msgid "Optional - Defaults to Primary Email Address"
+msgstr "Optional - Default ist die primäre E-Mail-Adresse"
+
+msgid "Organisation"
+msgstr "Organisation"
+
+msgid "Organisational Unit"
+msgstr "Organisationseinheit"
+
+msgid "Other contributors:"
+msgstr "Weitere Mitwirkende:"
+
+msgid "Others allowed to send emails with a \"from\" address of this account."
+msgstr ""
+"Andere, denen erlaubt ist, E-Mails mit einer \"From:\"-Adresse dieses Kontos "
+"zu verschicken."
+
+msgid "PEAR/Horde Versions"
+msgstr "PEAR/Horde-Versionen"
+
+msgid "POP3 Service"
+msgstr "POP3-Dienst"
+
+msgid "POP3/SSL service (TCP port 995)"
+msgstr "POP3/SSL-Dienst (TCP-Port 995)"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Password is empty"
+msgstr "Passwort ist leer"
+
+msgid "Password:"
+msgstr "Passwort:"
+
+msgid "Passwords dont match"
+msgstr "Passwörter stimmen nicht überein"
+
+msgid "Permission for UID/GID"
+msgstr "Zugriffsrechte für UID/GID"
+
+msgid "Permission for UID/email/GID"
+msgstr "Zugriffsrechte für UID/E-Mail/GID"
+
+msgid ""
+"Phone entries may only contain a-z, numbers, spaces and the characters ()-+/."
+"=?:"
+msgstr ""
+"Telefonnummern dürfen nur a-z, Ziffern, Leerzeichen und die Zeichen ()-+/."
+"=?: enthalten."
+
+msgid "Please add at least one member"
+msgstr "Bitte fügen Sie wenigstens einen Eintrag hinzu"
+
+msgid "Please enter a uid value"
+msgstr "Bitte geben Sie eine UID ein"
+
+msgid "Please enter an email address"
+msgstr "Bitte geben Sie eine E-Mail-Adresse ein"
+
+msgid "Post Box"
+msgstr "Postfach"
+
+msgid "Postal Code"
+msgstr "Postleitzahl"
+
+msgid "Postbox"
+msgstr "Postfach"
+
+msgid "Primary E-Mail Address"
+msgstr "Primäre E-Mail-Adresse"
+
+msgid "Primary Email Address"
+msgstr "Primäre E-Mail-Adresse"
+
+msgid "Privileged Networks"
+msgstr "Privilegierte Netzwerke"
+
+msgid "Public"
+msgstr "Öffentlich"
+
+msgid "Quota Limit"
+msgstr "Plattenplatz-Kontingent"
+
+msgid "Quota can not be negative"
+msgstr "Plattenplatz kann nicht negativ sein"
+
+msgid "Quota must be a number"
+msgstr "Plattenplatz-Kontingent muss eine Zahl sein"
+
+msgid "Quota must be an integer"
+msgstr "Plattenplatz-Kontingent muss eine ganze Zahl sein"
+
+msgid "Quota settings"
+msgstr "Plattenplatz-Kontingent-Einstellungen"
+
+msgid "Reject if conflicts"
+msgstr "Ablehnen im Konfliktfall"
+
+msgid ""
+"Reject the message, except if it originates from the outside and the From "
+"header matches one of Kolab server's domains. In that case rewrite the From "
+"header so the recipient can see the potential forgery."
+msgstr ""
+"Nachricht zurückweisen, sofern sie nicht von außen kommt, aber eine From-"
+"Kopfzeile enthält, die mit der Domäne des Kolab-Servers übereinstimmt. In "
+"diesem Fall die From-Kopfzeile umschreiben, damit der Empfänger die mögliche "
+"Fälschung erkennen kann."
+
+msgid "Required"
+msgstr "Pflichtfeld"
+
+msgid "Required field "
+msgstr "Pflichtfeld "
+
+msgid "Required, non volatile"
+msgstr "Pflichtfeld, unveränderlich"
+
+msgid "Resend notification only after"
+msgstr "Benachrichtigung erst nach"
+
+msgid "Resource Account"
+msgstr "Ressourcenkonto"
+
+msgid "Room Number"
+msgstr "Zimmernummer"
+
+msgid "SMTP \"smarthost/relayhost\""
+msgstr "SMTP-\"Smarthost/Relayhost\""
+
+msgid "Send responses for these addresses:"
+msgstr "Antworten für diese Adressen schicken:"
+
+msgid "Server"
+msgstr "Server"
+
+msgid "Server error, no ldap object!"
+msgstr "Server-Fehler, kein LDAP-Objekt!"
+
+msgid "Service"
+msgstr "Dienst"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Shared Folder"
+msgstr "Gemeinsam genutzter Ordner"
+
+msgid "Shared folder "
+msgstr "Gemeinsam genutzter Ordner "
+
+msgid "Shared folder '%s' added"
+msgstr "Gemeinsam genutzter Ordner '%s' hinzugefügt"
+
+msgid "Shared folder updated"
+msgstr "Gemeinsam genutzter Ordner aktualisiert"
+
+msgid "Shared folders"
+msgstr "Gemeinsam genutzte Ordner"
+
+msgid "Sieve service (TCP port %s)"
+msgstr "Sieve-Dienst (TCP-Port %s)"
+
+msgid ""
+"Smarthost (and optional port) to use to send outgoing mail (host.domain."
+"tld). Leave empty for no relayhost."
+msgstr ""
+"Smarthost (und optionaler Port) wird zum Verschicken ausgehender Nachrichten "
+"verwendet (host.domain.tld). Wenn Sie keinen solchen verwenden wollen, "
+"lassen Sie dieses Feld leer."
+
+msgid "Street Address"
+msgstr "Straßenanschrift"
+
+msgid "Submit"
+msgstr "Absenden"
+
+msgid "Successfully created distribution list %s"
+msgstr "Verteilerliste %s erfolgreich angelegt"
+
+msgid "System Settings"
+msgstr "Systemeinstellungen"
+
+msgid "Tasks"
+msgstr "Aufgaben"
+
+msgid "Telephone Number"
+msgstr "Telefonnummer"
+
+msgid ""
+"The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by"
+msgstr ""
+"Der Kolab 1-KDE-Klient und der Kolab 2-KDE-Klient (Kontact) wurden "
+"entwickelt von"
+
+msgid ""
+"The Kolab project owes a great deal of thanks to the people of the <a href="
+"\"http://www.openpkg.org/\">OpenPKG</a> project. OpenPKG allows Kolab to run "
+"on many diverse platforms in a reliable and predictable manner, by providing "
+"a common, easy-to-install, cross-platform base on which to build the server."
+msgstr ""
+"Das Kolab-Projekt schuldet den Mitarbeitern des <a href=\"http://www.openpkg."
+"org/\">OpenPKG</a>-Projekts großen Dank. Dank OpenPKG kann Kolab auf vielen "
+"verschiedenen Plattformen zuverlässig und konsistent ausgeführt werden, "
+"indem eine gemeinsame, leicht zu installierende, plattformübergreifende "
+"Basis bereitgestellt wird, auf der der Server aufsetzt."
+
+msgid "The address with DN"
+msgstr "Die Adresse mit DN"
+
+msgid "The administrator with DN"
+msgstr "Der Administrator mit DN"
+
+msgid "The distribution list with DN"
+msgstr "Die Verteilerliste mit DN"
+
+msgid ""
+"The following people from Code Fusion are involved in the Kolab project (in "
+"alphabetical order):"
+msgstr ""
+"The folgenden Mitarbeiter von Code Fusion haben am Kolab-Projekt mitgewirkt "
+"(in alphabetischer Reihenfolge):"
+
+msgid "The following people worked on Kolab for Intevation:"
+msgstr "Die folgenden Mitarbeiter von Intevation haben an Kolab mitgewirkt:"
+
+msgid ""
+"The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"
+msgstr ""
+"Die folgenden Mitarbeiter von Klar&auml;lvdalens Datakonsult AB haben an "
+"Kolab mitgearbeitet:"
+
+msgid "The following people worked on Kolab for erfrakon:"
+msgstr "Die folgenden Mitarbeiter von erfrakon haben an Kolab mitgewirkt:"
+
+msgid "The maintainer with DN"
+msgstr "Der Verwalter mit DN"
+
+msgid "The shared folder with DN"
+msgstr "Der gemeinsam genutzte Ordner mit DN"
+
+msgid "The user with DN"
+msgstr "Der Benutzer mit DN"
+
+msgid ""
+"There is also a <a href=\"http://www.kolab.org/webclient.html\">web-based "
+"client</a> in development which provides full groupware functionality to "
+"mobile users through a web interface. It allows users to access their email, "
+"calendars, tasks, etc. from anywhere in the world, by simply connecting "
+"through a standard web browser. The web client would not have been possible "
+"without the excellent <a href=\"http://www.horde.org/\">Horde project</a> on "
+"which to build."
+msgstr ""
+"Es wird auch an einem <a href=\"http://www.kolab.org/webclient.html\">Web-"
+"basierten Klienten</a> gearbeitet, der mobilen Anwendern eine vollständige "
+"Groupware-Funktionalität über eine Web-Schnittstelle ermöglichen wird. Damit "
+"können Benutzer von beliebigen Orten ihre E-Mail abfragen und Kalender und "
+"Aufgaben einsehen, indem sie sich einfach mit einem handelsüblichen Web-"
+"Browser verbinden. Der Web-Klient wäre ohne das ausgezeichnete <a href="
+"\"http://www.horde.org/\">Horde-Projekt</a> als Grundlage nicht möglich "
+"gewesen."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid ""
+"To use all Kolab2 features you need an interoperable client. The KDE Kolab "
+"Client was the first such client to be developed and is still considered the "
+"reference platform for others to follow. The KDE groupware component Kontact "
+"can act as Kolab2 Client. Many thanks to the <a href=\"http://www.kde.org"
+"\">KDE Project</a> for providing such a powerful base on which to build this "
+"client solution."
+msgstr ""
+"Um alle Kolab2-Funktionen benutzen zu können, benötigen Sie einen "
+"interoperablen Klienten. Der KDE-Kolab-Klient war der erste derartige "
+"Klient, der entwickelt wurde, und gilt immer noch als die Referenzplattform, "
+"an der sich die anderen Klienten orientieren. Die KDE-Groupware-Komponente "
+"Kontact kann als Kolab2-Klient dienen. Vielen Dank an das <a href=\"http://"
+"www.kde.org\">KDE-Projekt</a>, das eine derart mächtige Grundlage für die "
+"Entwicklung dieser Klientenlösung bereitgestellt hat."
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "UID"
+msgstr "UID"
+
+msgid "UID "
+msgstr "UID "
+
+msgid "Unique Identity (UID)"
+msgstr "Eindeutige Identität (UID)"
+
+msgid "Unique User ID"
+msgstr "Eindeutige Benutzer-ID"
+
+msgid "Unspecified"
+msgstr "Unspezifiziert"
+
+msgid "Update"
+msgstr "Aktualisieren"
+
+msgid ""
+"Use the Sender header instead of From for the above checks if Sender is "
+"present."
+msgstr ""
+"Falls eine Sender-Kopfzeile existiert, diese anstelle der From-Zeile für die "
+"obigen Überprüfungen verwenden."
+
+msgid "User "
+msgstr "Benutzer "
+
+msgid "User '%s' successfully modified"
+msgstr "Benutzer '%s' erfolgreich geändert"
+
+msgid "User Account"
+msgstr "Benutzerkonto"
+
+msgid "User Deleted"
+msgstr "Benutzer gelöscht"
+
+msgid "User Deleted, awaiting cleanup..."
+msgstr "Benutzer gelöscht, warte auf Aufräumaktion..."
+
+msgid "User Quota in KB"
+msgstr "Kontingent des Benutzers in KBytes"
+
+msgid "User Quota in MBytes"
+msgstr "Plattenplatz-Kontingent des Benutzers in MBytes"
+
+msgid "User or distribution list with this email address already exists"
+msgstr ""
+"Es existiert bereits ein Benutzer oder eine Verteilerliste mit dieser E-Mail-"
+"Adresse"
+
+msgid "User, vCard or distribution list with this email address already exists"
+msgstr ""
+"Es existiert bereits ein Benutzer, eine vCard, oder eine Verteilerliste mit "
+"dieser E-Mail-Adresse"
+
+msgid "Username:"
+msgstr "Benutzername:"
+
+msgid "Users"
+msgstr "Benutzer"
+
+msgid ""
+"Users of Outlook on Microsoft Windows are able to use a proprietary plug-in "
+"to inter-operate with the Kolab server. For Kolab2 the preferred plug-in is "
+"the <a href=\"http://www.toltec.co.za/\">Toltec Plug-in</a> by Radley "
+"Network Technologies CC. Radley has worked closely with the Kolab community "
+"to help develop the Kolab2 storage format."
+msgstr ""
+"Benutzer von Outlook unter Microsoft-Windows können ein proprietäres Plug-In "
+"verwenden, um mit dem Kolab-Server zusammenzuarbeiten. Für Kolab2 ist das "
+"empfohlene Plug-In das <a href=\"http://www.toltec.co.za/\">Toltec-Plug-In</"
+"a> von Radley Network Technologies CC. Radley hat mit der Kolab-Gemeinde eng "
+"zusammengearbeitet, um das Speicherformat von Kolab2 zu definieren."
+
+msgid "Vacation"
+msgstr "Abwesenheit"
+
+msgid "Vacation Notification"
+msgstr "Benachrichtigungen bei Abwesenheit"
+
+msgid "Vacation message successfully activated"
+msgstr "Abwesenheitsnachricht erfolgreich aktiviert"
+
+msgid "Vacation message successfully deactivated"
+msgstr "Abwesenheitsnachricht erfolgreich deaktiviert"
+
+msgid "Value"
+msgstr "Wert"
+
+msgid "Verify Password"
+msgstr "Passwort bestätigen"
+
+msgid "Versions"
+msgstr "Versionen"
+
+msgid "Visibility"
+msgstr "Sichtbarkeit"
+
+msgid "Warn users when they have used"
+msgstr "Benutzer warnen, wenn der Verbrauch"
+
+msgid "Welcome to the Kolab administration interface"
+msgstr "Willkommen zur Kolab-Systemadministration"
+
+msgid "When creating free/busy lists, include data from"
+msgstr "Beim Erzeugen von Frei/Belegt-Listen, Daten aus "
+
+msgid "Wrong username or password"
+msgstr "Falscher Benutzername oder falsches Passwort"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid ""
+"You have not yet set up a receiving account for the administrative email "
+"addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
+"DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
+"Enter the email address of a kolab account below and press the button to "
+"create a distribution list for each of those addresses. Later you can add or "
+"remove people from the lists like any other distribution list"
+msgstr ""
+"Sie haben noch kein Konto zum Empfang von Nachrichten an die administrativen "
+"E-Mail-Adressen hostmaster@ihredomaene.tld, postmaster@ihredomaene.tld und "
+"abuse@ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse des "
+"Kolab-Kontos unten ein und betätigen Sie die Schaltfläche, um eine "
+"Verteilerliste für jede dieser Adressen zu erzeugen. Sie können dann später "
+"Adressaten diesen Listen hinzufügen oder davon entfernen wie mit jeder "
+"anderen Verteilerliste"
+
+msgid "[ ALL ]"
+msgstr "[ ALLE ]"
+
+msgid "[ OTHER ]"
+msgstr "[ ANDERE ]"
+
+msgid "and then go"
+msgstr "und richten Sie danach"
+
+msgid "begins with"
+msgstr "beginnt mit"
+
+msgid "check here to make this users address <br/> visible in the address book"
+msgstr ""
+"Wählen Sie diese Option an, um die Adresse dieses Benutzers <br/> im "
+"Adressbuch anzuzeigen"
+
+msgid "contains"
+msgstr "enthält"
+
+msgid "days"
+msgstr "Tagen erneut senden"
+
+msgid "days in the past"
+msgstr "vergangenen Tagen verwenden"
+
+msgid "ends with"
+msgstr "endet mit"
+
+msgid "has been deleted"
+msgstr "wurde gelöscht"
+
+msgid "here"
+msgstr "hier"
+
+msgid "is"
+msgstr "ist gleich"
+
+msgid "non volatile"
+msgstr "unveränderlich"
+
+msgid "not yet implemented"
+msgstr "noch nicht implementiert"
+
+msgid "please do so"
+msgstr "dann tun Sie das bitte jetzt"
+
+msgid "to set up forwarding of mail to administrative email addresses."
+msgstr ""
+"die Weiterleitung von Nachrichten an administrative E-Mail-Adressen ein."
+
+msgid "uid"
+msgstr "uid"
