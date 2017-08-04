@@ -22,10 +22,12 @@ require_once('ldap.class.php');
 require_once('debug.php');
 require_once('mysmarty.php');
 require_once('locale.php');
+require_once('session_vars.php');
 
 class KolabAuth {
-    function __construct ( $do_auth = true, $params = array() ) {
-	    $this->params = $params;
+	function __construct ( $do_auth = true, $params = array() ) {
+		global $params;
+		$this->params = $params;
 		if( isset( $_GET['logout'] ) || isset( $_POST['logout'] ) ) {
 			$this->logout();
 		} else if( $do_auth ) {
