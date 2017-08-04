@@ -201,7 +201,7 @@ switch( $action ) {
 		   if (!empty($ldap_object['cn'])) $newdn = "cn=".$ldap->dn_escape($ldap_object['cn']).",cn=internal,".$domain_dn;
 		   else $newdn = $dn;
 		   if (!$visible && !strstr($newdn,$dn_add)) {
-			 list($cn,$rest) = split(',', $newdn, 2);
+			 list($cn,$rest) = preg_split('/,/', $newdn, 2);
 			 $newdn = $cn.$dn_add.",".$rest;
 		   }
 		   if (strcmp($dn,$newdn) != 0) {

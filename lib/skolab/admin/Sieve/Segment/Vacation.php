@@ -290,7 +290,7 @@ extends KolabAdmin_Sieve_Segment
     public function parseRecipientAddresses($script)
     {
         if (preg_match("/:addresses \\[([^\\]]*)\\]/s", $script, $regs)) {
-            $tmp = split(',', $regs[1]);
+            $tmp = preg_split('/,/', $regs[1]);
             $this->_recipient_addresses = array();
             foreach ($tmp as $a) {
                 if (preg_match('/^ *"(.*)" *$/', $a, $regs)) {

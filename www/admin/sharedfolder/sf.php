@@ -56,7 +56,7 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
   //var_dump( $ldap_object['acl'] );
   foreach( $ldap_object['acl'] as $key => $acl ) {
 	if( $key === 'count' ) continue;
-	list($u, $p ) = split( ' ', $acl, 2 );
+	list($u, $p ) = preg_split( '/\ /', $acl, 2 );
 	if( !strncmp( "group:", $u, 6 ) ) $u = substr( $u, 6 );
 	//debug( "u=$u, p=$p" );
 	$form->entries['acl_'.$aclcount] = array( 'name' => _('Permission for UID/email/GID'),

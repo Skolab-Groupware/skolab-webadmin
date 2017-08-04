@@ -40,7 +40,7 @@ class KolabAdmin_Sieve_Script {
     static function getVacationAddresses( $script ) {
         $addresses = false;
         if( preg_match("/:addresses \\[([^\\]]*)\\]/s", $script, $regs ) ) {
-            $tmp = split(',', $regs[1] );
+            $tmp = preg_split('/,/', $regs[1] );
             $addresses = array();
             foreach( $tmp as $a ) {
                 if( ereg('^ *"(.*)" *$', $a, $regs ) ) $addresses[] = $regs[1];

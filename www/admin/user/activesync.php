@@ -83,7 +83,7 @@ if (isset($_POST['actived']))
 function __construct()
 {
 	//not sure about that
-	list($prefix, $domain) = split("@",$_SESSION['auth_user']);
+	list($prefix, $domain) = preg_split( '/\@/',$_SESSION['auth_user']);
 	$this->connectstring= $_server = "{localhost:143/imap/notls/norsh}";
 	$tmbox = imap_open($_server , $_SESSION['auth_user'], $_SESSION['auth_pw'], OP_HALFOPEN);
 	  if ($tmbox) {

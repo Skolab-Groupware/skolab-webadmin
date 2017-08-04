@@ -150,7 +150,7 @@ class KolabForm {
 	  $uname = $value['value'];
 	  $domain = '';
 	} else {
-	  list($uname,$domain) = split('@',$value['value']);
+	  list($uname,$domain) = preg_split( '/\@/',$value['value']);
 	}
 	if( ereg( 'readonly', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';

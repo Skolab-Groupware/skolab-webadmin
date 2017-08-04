@@ -143,7 +143,7 @@ if( !$errors ) {
 		$sn = $attrs['sn'][0];
 		$cn = $attrs['cn'][0];
 		$fn = KolabLDAP::getGivenName($cn, $sn);
-		$dncomp = split( ',', $dn );
+		$dncomp = preg_split( '/,/', $dn );
 		if( in_array('cn=groups',$dncomp) ) {
 		  $type = 'G';
 		} else if( in_array('cn=resources',$dncomp) ) {
@@ -171,6 +171,7 @@ if( !$errors ) {
 }
 
 /**** Insert into template and output ***/
+
 $smarty = new MySmarty();
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'uid', $auth->uid() );

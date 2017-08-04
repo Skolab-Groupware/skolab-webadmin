@@ -288,7 +288,7 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
   if(array_key_exists('mail',$form->entries))  $form->entries['mail']['attrs'] = 'readonly';
   if(array_key_exists('uid',$form->entries))  $form->entries['uid']['value'] = $uid;
   // accttype
-  $dncomp = split( ',', $dn );
+  $dncomp = preg_split( '/,/', $dn );
   if(array_key_exists('accttype',$form->entries)) {
 	  if( in_array('cn=groups',$dncomp) ) {
 		  $form->entries['accttype']['value'] = 2;
