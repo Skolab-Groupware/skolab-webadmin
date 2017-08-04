@@ -1,2 +1,1 @@
 debian/apache.conf etc/skolab/webadmin/
-debian/session_vars.php etc/skolab/webadmin/

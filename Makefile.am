@@ -35,4 +35,6 @@ DISTCLEANFILES=$(MAINTAINERCLEANFILES)
 
 install-data-hook:
 	$(mkinstalldirs) $(DESTDIR)$(smarty_compiledir)
+	ln -s ${sysconfdir}/skolab/webadmin/session_vars.php $(DESTDIR)${phplib_dir}/skolab/admin/include/session_vars.php
+	ln -s ${sysconfdir}/skolab/webadmin/config.php       $(DESTDIR)${phplib_dir}/skolab/admin/include/config.php
 # 	test -z "$(webserver_user)" || chown $(webserver_user) $(DESTDIR)$(phpkolabdir)/templates_c

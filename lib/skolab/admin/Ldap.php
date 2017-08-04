@@ -18,6 +18,8 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
+require_once('skolab/admin/include/session_vars.php');
+
 class KolabLDAP {
   function KolabLDAP() {
     $this->is_bound = false;

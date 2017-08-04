@@ -18,9 +18,12 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-$topdir       = '@webserver_document_root@@webadminui_alias@';
-$php_dir      = '@phplib_dir@';
-$locale_dir   = '@locale_dir@';
+$webserver_web_prefix = '@webadminui_alias@';
+$topdir               = '@webserver_document_root@'.$webserver_web_prefix;
+$php_dir              = '@phplib_dir@';
+$locale_dir           = '@locale_dir@';
+$smarty_compiledir    = '@smarty_compiledir@';
+$language             = 'en';
 
 /*
   Local variables:

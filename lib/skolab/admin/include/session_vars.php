@@ -68,4 +68,14 @@ $params['attribute_access'] = array(
 			 'telephoneNumber' => 'hidden'
 			 */
 );
+
+/*
+  Local variables:
+  mode: php
+  indent-tabs-mode: t
+  tab-width: 4
+  buffer-file-coding-system: utf-8
+  End:
+  vim:encoding=utf-8:
+ */
 ?>
