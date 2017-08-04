@@ -13,8 +13,8 @@
 <meta name="robots" content="noindex" />
 <meta name="description" content="Kolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
-<link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/screen.css{/t}" />
-<link rel="stylesheet" type="text/css" href="{"$topdir/custom.css{/t}" />
+<link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/screen.css"} />
+<link rel="stylesheet" type="text/css" href="{$webserver_web_prefix}/custom.css" />
 
 <script type="text/javascript">
 <!--
@@ -119,7 +119,7 @@ function synced(a)
 {/section}
 </select>
 {if $uid}
-<a id="logout" href="{$topdir}/logout.php"><img src="{$webserver_web_prefix}/images/icon_grey_logout.png" width="16" style="vertical-align:middle;margin-left:90px;" title="Logout" alt="Logout icon"></a>
+<a id="logout" href="{$webserver_web_prefix}/logout.php"><img src="{$webserver_web_prefix}/images/icon_grey_logout.png" width="16" style="vertical-align:middle;margin-left:90px;" title="Logout" alt="Logout icon"></a>
 {/if}
 </div>
 		</div><!-- .span-24 -->
