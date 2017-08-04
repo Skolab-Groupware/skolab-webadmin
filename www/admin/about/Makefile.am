@@ -7,6 +7,8 @@ WSABOUT_FILES =				\
 	codefusion.php			\
 	kdab.php			\
 	kde.php				\
+	kolabsystems.php		\
+	technology.php			\
 	versions.php			\
 	$(NULL)
 
