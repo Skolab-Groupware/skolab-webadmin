@@ -3,8 +3,8 @@
 set -e
 
 fixperms() {
-	chmod 640 /etc/skolab/session_vars.php
-	chown www-data:www-data /etc/skolab/session_vars.php
+	chmod 640 /etc/skolab/webadmin/session_vars.php
+	chown www-data:www-data /etc/skolab/webadmin/session_vars.php
 
 	chown www-data:www-data /var/cache/skolab-webadmin/templates
 }
