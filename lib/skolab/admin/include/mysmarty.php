@@ -29,14 +29,14 @@ include_once('smarty3/SmartyBC.class.php');
 //}
 
 class MySmarty extends SmartyBC {
-  function MySmarty() {
+  function __construct() {
 	global $topdir;
 	global $php_dir;
 	global $language;
 	global $smarty_compiledir;
 	global $webserver_web_prefix;
 	global $params;
-	$this->Smarty();
+	SmartyBC::__construct();
 
 	$this->template_dir = $php_dir . '/data/skolab/admin/templates/';
 	$this->compile_dir = $smarty_compiledir;

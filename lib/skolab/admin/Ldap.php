@@ -21,7 +21,7 @@
 require_once('skolab/admin/include/session_vars.php');
 
 class KolabLDAP {
-  function KolabLDAP() {
+  function __construct() {
     $this->is_bound = false;
     $this->bind_dn = false;
     $this->search_result = false;

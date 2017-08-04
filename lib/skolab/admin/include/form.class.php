@@ -68,7 +68,7 @@ class KolabForm {
    * The "callbackfnct" function should be a global function with 3 parameters:
    * (form, key, value)
    */
-  function KolabForm( $name, $template, $entries ) {
+  function __construct( $name, $template, $entries ) {
     $this->name = $name;
     $this->template = $template;
     $this->entries = $entries;

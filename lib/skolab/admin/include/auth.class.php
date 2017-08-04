@@ -24,7 +24,7 @@ require_once('mysmarty.php');
 require_once('locale.php');
 
 class KolabAuth {
-    function KolabAuth( $do_auth = true, $params = array() ) {
+    function __construct ( $do_auth = true, $params = array() ) {
 	    $this->params = $params;
 		if( isset( $_GET['logout'] ) || isset( $_POST['logout'] ) ) {
 			$this->logout();
