@@ -168,7 +168,7 @@ if( $dn ) {
   unset($oc['count']);
 }
 
-$form =& new KolabForm( 'admin', 'createadmin.tpl', $entries );
+$form = new KolabForm( 'admin', 'createadmin.tpl', $entries );
 /***************** Main action swicth **********************/
 switch( $action ) {
  case 'firstsave':

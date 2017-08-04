@@ -22,7 +22,7 @@ require_once('skolab/admin/include/menu.php');
 $menuitems[$sidx]['selected'] = 'selected';
 
 /**** Insert into template and output ***/
-$smarty =& new MySmarty();
+$smarty = new MySmarty();
 $smarty->assign( 'topdir', $topdir );
 $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );

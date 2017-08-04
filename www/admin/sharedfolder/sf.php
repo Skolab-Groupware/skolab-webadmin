@@ -151,7 +151,7 @@ if( $action == 'modify' || $action == 'delete' || $action == 'kill' ) {
   }
 }
 
-$form =& new KolabForm( 'vcard', 'createaddr.tpl', $entries );
+$form = new KolabForm( 'vcard', 'createaddr.tpl', $entries );
 
 if( !$errors ) {
   switch( $action ) {
@@ -334,7 +334,7 @@ if( !$errors ) {
 }
 
 /**** Insert into template and output ***/
-$smarty =& new MySmarty();
+$smarty = new MySmarty();
 $smarty->assign( 'errors', array_merge((array)$errors,(array)$form->errors) );
 $smarty->assign( 'heading', $heading );
 $smarty->assign( 'uid', $auth->uid() );

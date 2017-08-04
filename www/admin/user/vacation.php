@@ -29,7 +29,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 
 /**** Sieve handling ***/
   $obj = $ldap->read( $auth->dn() );
-  $sieve =& new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
+  $sieve = new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
   //$sieve->setDebug(true);
 
   if( $sieve->getError() ) {

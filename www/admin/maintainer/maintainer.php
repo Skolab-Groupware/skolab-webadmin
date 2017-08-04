@@ -165,7 +165,7 @@ if( $dn ) {
   unset($oc['count']);
 }
 
-$form =& new KolabForm( 'maintainer', 'createmaintainer.tpl', $entries );
+$form = new KolabForm( 'maintainer', 'createmaintainer.tpl', $entries );
 /***************** Main action swicth **********************/
 switch( $action ) {
  case 'firstsave':

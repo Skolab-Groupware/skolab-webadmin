@@ -40,7 +40,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 
 /**** Sieve handling ***/
   $obj = $ldap->read( $auth->dn() );
-  $sieve =& new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
+  $sieve = new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
 
   if( $sieve->getError() ) {
     $errors[] = _('Error while connecting to Sieve service:');

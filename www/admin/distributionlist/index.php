@@ -85,7 +85,7 @@ if( !$errors ) {
 
 
 /**** Insert into template and output ***/
-$smarty =& new MySmarty();
+$smarty = new MySmarty();
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );

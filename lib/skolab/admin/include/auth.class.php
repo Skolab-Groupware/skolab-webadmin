@@ -117,7 +117,7 @@ class KolabAuth {
 
 	function gotoLoginPage() {
 		global $topdir;
-		$smarty =& new MySmarty();
+		$smarty = new MySmarty();
 		$smarty->assign( 'topdir', $topdir );
 		$smarty->assign( 'uid', '' );
 		$smarty->assign( 'group', '' );
