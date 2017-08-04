@@ -106,8 +106,7 @@ class KolabAuth {
 		session_unset();
 		session_destroy();
 		$this->error_string = false;
-		//$this->gotoLoginPage();
-		Header("Location: $this->params['kolab_wui']/");
+		$this->gotoLoginPage();
 	}
 
 	function handleLogin() {
