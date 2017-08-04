@@ -22,6 +22,7 @@ $webserver_web_prefix = '@webadminui_alias@';
 $topdir               = '@webserver_document_root@'.$webserver_web_prefix;
 $php_dir              = '@phplib_dir@';
 $locale_dir           = '@locale_dir@';
+$smarty_templates_dir = '@smarty_templates_dir@';
 $smarty_compiledir    = '@smarty_compiledir@';
 $language             = 'en';
 

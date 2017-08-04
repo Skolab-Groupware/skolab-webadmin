@@ -30,11 +30,12 @@ libkolabadminconfigdir = $(sysconfdir)/skolab/webadmin
 libkolabadminconfig_DATA = $(LIB_KOLABADMIN_CONFIG_FILES)
 
 config.php: config.php.in
-	sed -e 's|\@webserver_document_root\@|${webserver_document_root}|g'     \
-	   -e 's|\@webadminui_alias\@|${webadminui_alias}|g'                   \
-	   -e 's|\@phplib_dir\@|${phplib_dir}|g'                               \
-	   -e 's|\@locale_dir\@|${locale_dir}|g'                               \
-	   -e 's|\@smarty_compiledir\@|${smarty_compiledir}|g'                               \
+	sed -e 's|\@webserver_document_root\@|${webserver_document_root}|g'	\
+	   -e 's|\@webadminui_alias\@|${webadminui_alias}|g'			\
+	   -e 's|\@phplib_dir\@|${phplib_dir}|g'				\
+	   -e 's|\@locale_dir\@|${locale_dir}|g'				\
+	   -e 's|\@smarty_compiledir\@|${smarty_compiledir}|g'			\
+	   -e 's|\@smarty_templates_dir\@|${smarty_templates_dir}|g'		\
 	< config.php.in >$@
 
 CLEANFILES += config.php

@@ -33,12 +33,14 @@ class MySmarty extends SmartyBC {
 	global $topdir;
 	global $php_dir;
 	global $language;
+	global $smarty_templates_dir;
 	global $smarty_compiledir;
 	global $webserver_web_prefix;
 	global $params;
+
 	SmartyBC::__construct();
 
-	$this->template_dir = $php_dir . '/data/skolab/admin/templates/';
+	$this->template_dir = $smarty_templates_dir;
 	$this->compile_dir = $smarty_compiledir;
 
 	// Added for i18n management (Romain 05-03-03)
