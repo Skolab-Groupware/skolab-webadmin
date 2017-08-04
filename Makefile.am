@@ -10,7 +10,7 @@ MAINTAINERCLEANFILES =					\
     $(srcdir)/data/Makefile.in				\
     $(srcdir)/data/locale/Makefile.in			\
     $(srcdir)/data/templates/Makefile.in		\
-    $(srcdir)/lib/KolabAdmin/Makefile.in		\
+    $(srcdir)/lib/skolab/admin/Makefile.in		\
     $(srcdir)/lib/Makefile.in				\
     $(srcdir)/test/Makefile.in				\
     $(srcdir)/www/Makefile.in				\

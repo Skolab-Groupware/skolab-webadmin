@@ -18,14 +18,14 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-require_once('KolabAdmin/include/mysmarty.php');
-require_once('KolabAdmin/include/headers.php');
-require_once('KolabAdmin/include/locale.php');
-require_once('KolabAdmin/include/authenticate.php');
+require_once('skolab/admin/include/mysmarty.php');
+require_once('skolab/admin/include/headers.php');
+require_once('skolab/admin/include/locale.php');
+require_once('skolab/admin/include/authenticate.php');
 
 /**** Authentication etc. ***/
 
-require_once('KolabAdmin/include/menu.php');
+require_once('skolab/admin/include/menu.php');
 
 function exists_group( $group ) {
   global $ldap;

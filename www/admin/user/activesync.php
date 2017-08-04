@@ -20,12 +20,12 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-require_once('KolabAdmin/include/mysmarty.php');
-require_once('KolabAdmin/include/headers.php');
-require_once('KolabAdmin/include/locale.php');
-require_once('KolabAdmin/include/authenticate.php');
-require_once('KolabAdmin/include/form.class.php');
-require_once('KolabAdmin/include/passwd.php');
+require_once('skolab/admin/include/mysmarty.php');
+require_once('skolab/admin/include/headers.php');
+require_once('skolab/admin/include/locale.php');
+require_once('skolab/admin/include/authenticate.php');
+require_once('skolab/admin/include/form.class.php');
+require_once('skolab/admin/include/passwd.php');
 
 //include z-Push config file file
 include_once '@www_dir@/z-push/config.php';
@@ -451,7 +451,7 @@ function is_default($folder)
 
 /**** Authentication etc. ***/
 $sidx = 'activesync';
-require_once('KolabAdmin/include/menu.php');
+require_once('skolab/admin/include/menu.php');
 
 /**** Submenu for current page ***/
 $menuitems[$sidx]['selected'] = 'selected';
@@ -479,7 +479,7 @@ if(count($devs)<1)
 /**** Insert into template and output ***/
 $smarty = new MySmarty();
 //add the plugin
-$smarty->plugins_dir[] = 'KolabAdmin/include/';
+$smarty->plugins_dir[] = 'skolab/admin/include/';
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'messages', $messages );
 $smarty->assign( 'uid', $auth->uid() );

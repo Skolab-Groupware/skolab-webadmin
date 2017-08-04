@@ -7,10 +7,10 @@
  Read the file COPYING that comes with this packages for details.
 */
 
-require_once('KolabAdmin/include/mysmarty.php');
-require_once('KolabAdmin/include/headers.php');
-require_once('KolabAdmin/include/locale.php');
-require_once('KolabAdmin/include/authenticate.php');
+require_once('skolab/admin/include/mysmarty.php');
+require_once('skolab/admin/include/headers.php');
+require_once('skolab/admin/include/locale.php');
+require_once('skolab/admin/include/authenticate.php');
 
 $errors = array();
 
@@ -22,7 +22,7 @@ if( $auth->group() != 'maintainer' && $auth->group() != 'admin' && $auth->group(
   array_push($errors, _("Error: You don't have Permissions to access this Menu"));
 }
 
-require_once('KolabAdmin/include/menu.php');
+require_once('skolab/admin/include/menu.php');
 
 /**** Submenu for current page ***/
 $menuitems[$sidx]['selected'] = 'selected';

@@ -59,7 +59,11 @@ AC_CONFIG_FILES([
 data/locale/Makefile
 data/templates/Makefile
 data/Makefile
-lib/KolabAdmin/Makefile
+lib/skolab/admin/Sieve/Segment/Makefile
+lib/skolab/admin/Sieve/Makefile
+lib/skolab/admin/include/Makefile
+lib/skolab/admin/Makefile
+lib/skolab/Makefile
 lib/Makefile
 test/Makefile
 www/admin/administrator/Makefile

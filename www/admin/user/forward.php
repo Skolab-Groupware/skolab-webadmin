@@ -18,23 +18,23 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-require_once 'KolabAdmin/include/mysmarty.php';
-require_once 'KolabAdmin/include/headers.php';
-require_once('KolabAdmin/include/locale.php');
-require_once 'KolabAdmin/include/authenticate.php';
+require_once 'skolab/admin/include/mysmarty.php';
+require_once 'skolab/admin/include/headers.php';
+require_once('skolab/admin/include/locale.php');
+require_once 'skolab/admin/include/authenticate.php';
 require_once 'Net/Sieve.php';
 require_once 'Horde/String.php';
-require_once 'KolabAdmin/Sieve.php';
-require_once 'KolabAdmin/Sieve/Script.php';
-require_once 'KolabAdmin/Sieve/Segment.php';
-require_once 'KolabAdmin/Sieve/Segment/Delivery.php';
-require_once 'KolabAdmin/Sieve/Segment/Forward.php';
-require_once 'KolabAdmin/Sieve/Segment/Vacation.php';
+require_once 'skolab/admin/Sieve.php';
+require_once 'skolab/admin/Sieve/Script.php';
+require_once 'skolab/admin/Sieve/Segment.php';
+require_once 'skolab/admin/Sieve/Segment/Delivery.php';
+require_once 'skolab/admin/Sieve/Segment/Forward.php';
+require_once 'skolab/admin/Sieve/Segment/Vacation.php';
 
 /**** Authentication etc. ***/
 $sidx = 'user';
 
-require_once('KolabAdmin/include/menu.php');
+require_once('skolab/admin/include/menu.php');
 
 /**** Submenu for current page ***/
 $menuitems[$sidx]['selected'] = 'selected';

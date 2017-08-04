@@ -24,6 +24,7 @@ global $params;
 if( !isset($auth) ) {
   $auth =& new KolabAuth(true,$params);
 }
+
 /*
   Local variables:
   mode: php

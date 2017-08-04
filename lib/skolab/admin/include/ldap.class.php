@@ -19,7 +19,7 @@
  */
 
 require_once('mysmarty.php');
-require_once('KolabAdmin/Ldap.php');
+require_once('skolab/admin/Ldap.php');
 require_once('debug.php');
 
 /* We dont have any better place to put this right now... */

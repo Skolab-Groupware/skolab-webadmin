@@ -14,7 +14,7 @@
 /**
  * Require the tested classes.
  */
-require_once dirname(__FILE__) . '/../../../lib/KolabAdmin/Ldap.php';
+require_once dirname(__FILE__) . '/../../../lib/skolab/admin/Ldap.php';
 
 /**
  * Test the webadmin code.

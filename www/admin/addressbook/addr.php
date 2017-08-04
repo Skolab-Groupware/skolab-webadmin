@@ -1,9 +1,9 @@
 <?php
-require_once('KolabAdmin/include/mysmarty.php');
-require_once('KolabAdmin/include/headers.php');
-require_once('KolabAdmin/include/locale.php');
-require_once('KolabAdmin/include/authenticate.php');
-require_once('KolabAdmin/include/form.class.php');
+require_once('skolab/admin/include/mysmarty.php');
+require_once('skolab/admin/include/headers.php');
+require_once('skolab/admin/include/locale.php');
+require_once('skolab/admin/include/authenticate.php');
+require_once('skolab/admin/include/form.class.php');
 
 
 /**** Authentication etc. ***/
@@ -17,7 +17,7 @@ if( $auth->group() != 'maintainer' && $auth->group() != 'admin') {
    array_push($errors, _("Error: You don't have Permissions to access this Menu") );
 }
 
-require_once('KolabAdmin/include/menu.php');
+require_once('skolab/admin/include/menu.php');
 
 function fill_form_for_modify( &$form, &$ldap_object ) {
   if (is_array($ldap_object['sn'])) $lastname = $ldap_object['sn'][0];

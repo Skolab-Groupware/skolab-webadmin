@@ -1,1 +1,1 @@
-SUBDIRS = KolabAdmin
+SUBDIRS = skolab

@@ -18,7 +18,7 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-require_once('KolabAdmin/include/mysmarty.php');
+require_once('skolab/admin/include/mysmarty.php');
 
 session_start();
 session_destroy();

@@ -36,7 +36,7 @@ class MySmarty extends Smarty {
 	global $params;
 	$this->Smarty();
 
-	$this->template_dir = $php_dir . '/data/KolabAdmin/templates/';
+	$this->template_dir = $php_dir . '/data/skolab/admin/templates/';
 	$this->compile_dir = $smarty_compiledir;
 
 	// Added for i18n management (Romain 05-03-03)
