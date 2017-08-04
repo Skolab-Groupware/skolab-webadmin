@@ -117,14 +117,20 @@ class KolabAuth {
 
 	function gotoLoginPage() {
 		global $topdir;
+		global $webserver_web_prefix;
 		$smarty = new MySmarty();
 		$smarty->assign( 'topdir', $topdir );
 		$smarty->assign( 'uid', '' );
 		$smarty->assign( 'group', '' );
+		$smarty->assign( 'errors', array() );
+		$smarty->assign( 'messages', array() );
 		$smarty->assign( 'page_title', _('Kolab Groupware login') );
 		$smarty->assign( 'menuitems', array() );
+		$smarty->assign( 'submenuitems', array() );
 		if( $this->error() ) $smarty->assign( 'errors', array( $this->error() ) );
 		$smarty->assign( 'maincontent', 'login.tpl' );
+		$smarty->assign( 'webserver_web_prefix', $webserver_web_prefix );
+		$smarty->assign( 'kolab_wui', $params['kolab_wui']);
 		$smarty->display('page.tpl');
 		exit();
 	}
