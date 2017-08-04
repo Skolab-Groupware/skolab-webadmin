@@ -74,11 +74,11 @@ lib/skolab/admin/Makefile
 lib/skolab/Makefile
 lib/Makefile
 test/Makefile
+www/admin/about/Makefile
 www/admin/administrator/Makefile
 www/admin/addressbook/Makefile
 www/admin/distributionlist/Makefile
 www/admin/domainmaintainer/Makefile
-www/admin/kolab/Makefile
 www/admin/images/Makefile
 www/admin/maintainer/Makefile
 www/admin/settings/Makefile

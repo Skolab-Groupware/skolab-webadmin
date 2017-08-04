@@ -45,14 +45,14 @@ $menuitems = array();
 
 if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group() == 'domain-maintainer' ) {
   $menuitems['user'] = array( 'name' => _('Users'),
-							  'url'  => $topdir.'/user/',
+							  'url'  => $webserver_web_prefix.'/user/',
 							  'title' => _('Manage Email Users'),
 							  'submenu' => array(
 												 array( 'name' => _('Create New User'),
 														'url'  => 'user.php?action=create' )));
 } else {
   $menuitems['user'] = array( 'name' => _('My User Settings'),
-							  'url'  => $topdir.'/user/user.php?action=modify',
+							  'url'  => $webserver_web_prefix.'/user/user.php?action=modify',
 							  'title' => _('My User Settings'),
 							  'submenu' => array(
 												 array( 'name' => _('Mail Delivery'),
@@ -65,13 +65,13 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
 if($showasmenu){
 
 	$menuitems['activesync'] = array( 'name' => _('ActiveSync'),
-							  'url'  => $topdir.'/user/activesync.php',
+							  'url'  => $webserver_web_prefix.'/user/activesync.php',
 							  'title' => _('ActiveSync'));
  }
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer") {
   $menuitems['addressbook'] = array( 'name' => _('Addressbook'),
-									 'url'  => $topdir.'/addressbook/',
+									 'url'  => $webserver_web_prefix.'/addressbook/',
 									 'title' => _('Manage Address Book'),
 									 'submenu' => array(
 														array( 'name' => _('Create New vCard'),
@@ -80,7 +80,7 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer") {
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group() == 'domain-maintainer') {
   $menuitems['sf'] = array( 'name' => _('Shared Folder'),
-							'url'  => $topdir.'/sharedfolder/',
+							'url'  => $webserver_web_prefix.'/sharedfolder/',
 							'title' => _('Manage Shared Folders'),
 							'submenu' => array(
 											   array( 'name' => _('Add Shared Folder'),
@@ -88,7 +88,7 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
 }
 if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group() == 'domain-maintainer') {
   $menuitems['distlist'] = array( 'name' => _('Distribution Lists'),
-									   'url'  => $topdir.'/distributionlist/',
+									   'url'  => $webserver_web_prefix.'/distributionlist/',
 									   'title' => _('Manage Distribution Lists'),
 									   'submenu' => array(
 														  array( 'name' => _('Create New List'),
@@ -96,19 +96,19 @@ if( $auth->group() == 'admin' || $auth->group() == 'maintainer' || $auth->group(
 }
 if( $auth->group() == 'admin' ) {
   $menuitems['administrator'] = array( 'name' => _('Administrators'),
-									   'url'  => $topdir.'/administrator/',
+									   'url'  => $webserver_web_prefix.'/administrator/',
 									   'title' => _('Manage Administrators'),
 									   'submenu' => array(
 														  array( 'name' => _('Create New Administrator'),
 																 'url'   => 'admin.php?action=create' ) ) );
   $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
-									   'url'  => $topdir.'/domainmaintainer/',
+									   'url'  => $webserver_web_prefix.'/domainmaintainer/',
 									   'title' => _('Manage Domain Maintainers'),
 									   'submenu' => array(
 														  array( 'name' => _('Create New Domain Maintainer'),
 																 'url'   => 'domainmaintainer.php?action=create' ) ) );
   $menuitems['maintainer'] = array( 'name' => _('Maintainers'),
-									'url'  => $topdir.'/maintainer/',
+									'url'  => $webserver_web_prefix.'/maintainer/',
 									'title' => _('Manage Maintainers'),
 									'submenu' => array(
 													   array( 'name' => _('Create New Maintainer'),
@@ -116,10 +116,10 @@ if( $auth->group() == 'admin' ) {
 } else if( $auth->group() == 'maintainer' ) {
   $mdn = $auth->dn();
   $menuitems['maintainer'] = array( 'name' => _('Maintainers'),
-									'url'  => $topdir.'/maintainer/maintainer.php?action=modify&dn='.urlencode($mdn),
+									'url'  => $webserver_web_prefix.'/maintainer/maintainer.php?action=modify&dn='.urlencode($mdn),
 									'title' => _('Manage Maintainer') );
   $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
-									   'url'  => $topdir.'/domainmaintainer/',
+									   'url'  => $webserver_web_prefix.'/domainmaintainer/',
 									   'title' => _('Manage Domain Maintainers'),
 									   'submenu' => array(
 														  array( 'name' => _('Create New Domain Maintainer'),
@@ -127,17 +127,17 @@ if( $auth->group() == 'admin' ) {
 } else if( $auth->group() == 'domain-maintainer' ) {
   $mdn = $auth->dn();
   $menuitems['domain-maintainer'] = array( 'name' => _('Domain Maintainers'),
-									'url'  => $topdir.'/domainmaintainer/domainmaintainer.php?action=modify&dn='.urlencode($mdn),
+									'url'  => $webserver_web_prefix.'/domainmaintainer/domainmaintainer.php?action=modify&dn='.urlencode($mdn),
 									'title' => _('Manage Domain Maintainer') );
 }
 if( $auth->group() == 'admin' ) {
   $menuitems['service'] = array( 'name' => _('Settings'),
-								 'url'  => $topdir.'/settings/',
+								 'url'  => $webserver_web_prefix.'/settings/',
 								 'title' => _('System Settings') );
 }
 
 $menuitems['about'] = array( 'name' => _('About Kolab'),
-							 'url'  => $topdir.'/kolab/',
+							 'url'  => $webserver_web_prefix.'/about/',
 							 'title' => _('About Kolab'),
 							 'submenu' => array(
 												array( 'name' => _('Kolab Systems'),
