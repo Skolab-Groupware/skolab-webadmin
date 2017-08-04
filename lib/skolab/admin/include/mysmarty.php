@@ -21,12 +21,14 @@
 require_once('config.php');
 require_once('locale.php');
 
+include_once('smarty3/SmartyBC.class.php');
+
 // PENDING: Remove this before production(!)
 //function count_bytes($tpl_output, &$smarty) {
 //  return $tpl_output.strlen($tpl_output);
 //}
 
-class MySmarty extends Smarty {
+class MySmarty extends SmartyBC {
   function MySmarty() {
 	global $topdir;
 	global $php_dir;
