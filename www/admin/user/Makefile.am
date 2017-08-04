@@ -8,6 +8,6 @@ WSUSER_FILES =				\
 	deliver.php			\
 	$(NULL)
 
-wskolabdir = $(webserver_document_root)$(webadminui_alias)
+wskolabdir = $(webserver_document_root)
 wsuserdir = $(wskolabdir)/user
 wsuser_DATA = $(WSUSER_FILES)

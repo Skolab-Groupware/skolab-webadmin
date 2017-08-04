@@ -5,6 +5,6 @@ WSMAINTAINER_FILES =			\
 	index.php			\
 	$(NULL)
 
-wskolabdir = $(webserver_document_root)$(webadminui_alias)
+wskolabdir = $(webserver_document_root)
 wsmaintainerdir = $(wskolabdir)/maintainer
 wsmaintainer_DATA = $(WSMAINTAINER_FILES)

@@ -47,6 +47,6 @@ WSIMAGES_FILES =				\
     user-icon-1-20x20.gif			\
     $(NULL)
 
-wskolabdir = $(webserver_document_root)$(webadminui_alias)
+wskolabdir = $(webserver_document_root)
 wsimagesdir = $(wskolabdir)/images
 dist_wsimages_DATA = $(WSIMAGES_FILES)

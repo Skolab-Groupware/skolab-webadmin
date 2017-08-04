@@ -13,5 +13,5 @@ WSKOLAB_FILES =					\
 	favicon.png				\
 	$(NULL)
 
-wskolabdir = $(webserver_document_root)$(webadminui_alias)
+wskolabdir = $(webserver_document_root)
 wskolab_DATA = $(WSKOLAB_FILES)

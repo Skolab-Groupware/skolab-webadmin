@@ -5,6 +5,6 @@ WSADDRESSBOOK_FILES =			\
 	index.php			\
 	$(NULL)
 
-wskolabdir = $(webserver_document_root)$(webadminui_alias)
+wskolabdir = $(webserver_document_root)
 wsaddressbookdir   = $(wskolabdir)/addressbook
 wsaddressbook_DATA = $(WSADDRESSBOOK_FILES)

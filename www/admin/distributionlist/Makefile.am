@@ -5,6 +5,6 @@ WSDISTRIBUTIONLIST_FILES =			\
 	list.php				\
 	$(NULL)
 
-wskolabdir = $(webserver_document_root)$(webadminui_alias)
+wskolabdir = $(webserver_document_root)
 wsdistributionlistdir = $(wskolabdir)/distributionlist
 wsdistributionlist_DATA = $(WSDISTRIBUTIONLIST_FILES)

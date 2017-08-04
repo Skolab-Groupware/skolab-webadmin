@@ -12,6 +12,6 @@ WSABOUT_FILES =				\
 	versions.php			\
 	$(NULL)
 
-wskolabdir = $(webserver_document_root)$(webadminui_alias)
+wskolabdir = $(webserver_document_root)
 wsaboutdir = $(wskolabdir)/about
 wsabout_DATA = $(WSABOUT_FILES)
