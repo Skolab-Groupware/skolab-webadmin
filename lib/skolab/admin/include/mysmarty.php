@@ -37,8 +37,10 @@ class MySmarty extends SmartyBC {
 	global $smarty_compiledir;
 	global $webserver_web_prefix;
 	global $params;
+	global $smarty_debugging;
 
 	SmartyBC::__construct();
+	$this->debugging = $smarty_debugging;
 
 	$this->template_dir = $smarty_templates_dir;
 	$this->compile_dir = $smarty_compiledir;
