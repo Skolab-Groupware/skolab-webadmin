@@ -164,7 +164,8 @@ class KolabAuth {
 
 	var $error_string = false;
 	var $params;
-};
+}
+
 /*
   Local variables:
   mode: php
