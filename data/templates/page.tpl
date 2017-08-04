@@ -45,7 +45,7 @@ function changeLanguage(combobox) {ldelim}
 {/section}
 </select>
 {if $uid}
-<a id="logout" href="{$webserver_web_prefix}/logout.php"><img src="{$webserver_web_prefix}/images/icon_grey_logout.png" width="16" style="vertical-align:middle;margin-left:90px;" title="Logout" alt="Logout icon"></a>
+<a id="logout" href="{$webserver_web_prefix}/logout.php"><img src="{$webserver_web_prefix}/images/icon_grey_logout.png" width="16" style="vertical-align:middle;margin-left:10px;" title="Logout" alt="Logout icon"></a>
 {/if}
 </div>
 		</div><!-- .span-24 -->
