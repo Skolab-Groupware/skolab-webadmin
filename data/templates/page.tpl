@@ -13,7 +13,7 @@
 <meta name="robots" content="noindex" />
 <meta name="description" content="Kolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
-<link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/screen.css"}" />
+<link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$webserver_web_prefix/screen.css"}" />
 <link rel="stylesheet" type="text/css" href="{$webserver_web_prefix}/custom.css" />
 
 <script type="text/javascript">
