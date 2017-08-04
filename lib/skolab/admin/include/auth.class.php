@@ -40,6 +40,7 @@ class KolabAuth {
 			$this->error_string = _("Server error, no ldap object!");
 			return false;
 		}
+
 		// Anon. bind first
 		if( !$ldap->bind( $_SESSION['php_dn'],  $_SESSION['php_pw'] ) ) {
 			$this->error_string = _("Could not bind to LDAP server: ").$ldap->error();
@@ -59,7 +60,7 @@ class KolabAuth {
 			// User not logged in, check login/password
 			if( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
 				$dn = $ldap->dnForUid( $_POST['username'] );
-                if (!$dn) {
+				if (!$dn) {
 					$dn = $ldap->dnForMail( $_POST['username'] ); // try mail attribute
 				}
 				if( $dn ) {
