@@ -21,14 +21,14 @@
 require_once('config.php');
 require_once('locale.php');
 
-include_once('smarty3/SmartyBC.class.php');
+include_once('smarty3/Smarty.class.php');
 
 // PENDING: Remove this before production(!)
 //function count_bytes($tpl_output, &$smarty) {
 //  return $tpl_output.strlen($tpl_output);
 //}
 
-class MySmarty extends SmartyBC {
+class MySmarty extends Smarty {
   function __construct() {
 	global $topdir;
 	global $php_dir;
@@ -39,14 +39,11 @@ class MySmarty extends SmartyBC {
 	global $params;
 	global $smarty_debugging;
 
-	SmartyBC::__construct();
+	Smarty::__construct();
 	$this->debugging = $smarty_debugging;
 
 	$this->template_dir = $smarty_templates_dir;
 	$this->compile_dir = $smarty_compiledir;
-
-	// Added for i18n management (Romain 05-03-03)
-	$this->register_function("tr", "translate");
 
 	//$this->register_outputfilter("count_bytes");
 
@@ -79,7 +76,6 @@ class MySmarty extends SmartyBC {
 											 'code' => 'es_ES' ),
 									  ));
   }
-
 
   /** UTF-8 friendly htmlentities() */
   /* static */ function htmlentities( $str ) {
