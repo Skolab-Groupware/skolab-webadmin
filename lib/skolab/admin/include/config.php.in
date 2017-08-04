@@ -24,7 +24,7 @@ $php_dir              = '@phplib_dir@';
 $locale_dir           = '@locale_dir@';
 $smarty_templates_dir = '@smarty_templates_dir@';
 $smarty_compiledir    = '@smarty_compiledir@';
-$language             = 'en';
+$language             = 'en_US';
 
 /*
   Local variables:
