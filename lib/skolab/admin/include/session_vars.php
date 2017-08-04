@@ -16,6 +16,8 @@
  * since we source this file on every invokation anyway.
  */
 
+require_once('config.php');
+
 @session_start();
 
 $_SESSION['fqdnhostname'] = "kolabserver.example.com";
@@ -24,15 +26,32 @@ $_SESSION['base_dn'] = "dc=example,dc=com";
 $_SESSION['php_dn'] = "cn=nobody,cn=internal,dc=example,dc=com";
 $_SESSION['php_pw'] = "PASSWORD";
 
-
 /***********************************************************************
  * Global config
  */
 
 $params = array();
 
-# URL to the Kolab Webmailer
-$params['kolab_wui'] = 'https://'.$_SESSION['fqdnhostname'];
+/*
+ * protocol to use (http, https)
+ */
+$params['http_protocol'] = 'http';
+
+/*
+ * URL to the SKolab Webadmin Tool
+ */
+$params['skolab_webadmin_url'] = $params['http_protocol'].'://'.$_SESSION['fqdnhostname'].'/'.$webserver_web_prefix;
+
+/*
+ * URL to the Kolab Webmailer
+ */
+$params['kolab_wui'] = $params['http_protocol'].'://'.$_SESSION['fqdnhostname'];
+
+/*
+ * if true, then we return to the login page after logout,
+ * if false, we open $params['kolab_wui'] after logout
+ */
+$params['return_to_login_after_logout'] = true;
 
 /*
  * Which user classes can log in to the webgui?

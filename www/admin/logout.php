@@ -18,9 +18,15 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
+require_once('skolab/admin/include/session_vars.php');
 require_once('skolab/admin/include/mysmarty.php');
 
 session_start();
 session_destroy();
 session_unset();
-header("Location: " . $params['kolab_wui'] . "/");
+
+if ($params['return_to_login_after_logout']) {
+	header("Location: " . $params['skolab_webadmin_url'] . "/");
+} else {
+	header("Location: " . $params['kolab_wui'] . "/");
+}
