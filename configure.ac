@@ -42,6 +42,14 @@ AC_ARG_WITH([locale_dir],
   [locale_dir=/usr/share/$PACKAGE/locale])
 AC_SUBST(locale_dir)
 
+AC_ARG_WITH([phplib_dir],
+  [AC_HELP_STRING([--with-phplib_dir=DIR],
+    [Directory where the translation files are located (default: /usr/share/php))])],
+  [phplib_dir=$withval],
+  [phplib_dir=/usr/share/php])
+AC_SUBST(phplib_dir)
+
+
 AC_ARG_WITH([webserver_user],
   [AC_HELP_STRING([--with-webserver_user=USER],
     [User account the webserver runs under (default: www-data))])],
