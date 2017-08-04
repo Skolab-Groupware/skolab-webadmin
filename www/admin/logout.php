@@ -28,5 +28,5 @@ session_unset();
 if ($params['return_to_login_after_logout']) {
 	header("Location: " . $params['skolab_webadmin_url'] . "/");
 } else {
-	header("Location: " . $params['kolab_wui'] . "/");
+	header("Location: " . $params['skolab_webmailer_url'] . "/");
 }

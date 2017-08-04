@@ -45,11 +45,11 @@ $params['skolab_webadmin_url'] = $params['http_protocol'].'://'.$_SESSION['fqdnh
 /*
  * URL to the Kolab Webmailer
  */
-$params['kolab_wui'] = $params['http_protocol'].'://'.$_SESSION['fqdnhostname'];
+$params['skolab_webmailer_url'] = $params['http_protocol'].'://'.$_SESSION['fqdnhostname'];
 
 /*
  * if true, then we return to the login page after logout,
- * if false, we open $params['kolab_wui'] after logout
+ * if false, we open $params['skolab_webmailer_url'] after logout
  */
 $params['return_to_login_after_logout'] = true;
 

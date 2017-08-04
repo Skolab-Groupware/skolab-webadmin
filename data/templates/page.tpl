@@ -29,7 +29,7 @@ function changeLanguage(combobox) {ldelim}
 <body>
 <div id="header" class="container">
 <div class="span-24">
-<h3><a href="{$kolab_wui}"><img src="{$webserver_web_prefix}/images/klogo.png" style="vertical-align:middle;" alt="logo"></a></h3>
+<h3><a href="{$skolab_webmailer_url}"><img src="{$webserver_web_prefix}/images/klogo.png" style="vertical-align:middle;" alt="logo"></a></h3>
 <div id="menu-top">
 {if $uid}
 <img src="{$webserver_web_prefix}/images/user-icon-1-20x20.gif" width="16" style="vertical-align:middle;" title="Username" alt="username icon"> {$uid} <img src="{$webserver_web_prefix}/images/eye_pencil.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Role" alt="Role icon"> {$group}

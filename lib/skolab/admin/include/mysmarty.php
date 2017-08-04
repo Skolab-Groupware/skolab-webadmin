@@ -48,7 +48,7 @@ class MySmarty extends Smarty {
 	//$this->register_outputfilter("count_bytes");
 
 	$this->assign('webserver_web_prefix', $webserver_web_prefix);
-	$this->assign('kolab_wui', $params['kolab_wui']);
+	$this->assign('skolab_webmailer_url', $params['skolab_webmailer_url']);
 	$this->assign('topdir', $topdir);
 	$this->assign('self_url', $_SERVER['REQUEST_URI']);
 
