@@ -15,7 +15,7 @@ SMARTY_TEMPLATES =			\
 	login.tpl			\
 	maintainerlistall.tpl		\
 	domainmaintainerlistall.tpl	\
-	kolab.tpl			\
+	about.tpl			\
 	addrlistall.tpl			\
 	forward.tpl			\
 	deliver.tpl			\

@@ -34,7 +34,7 @@
 <a href="{$webserver_web_prefix}/settings/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/preferences-system.png" border="0" alt="Settings" /><br /><b>{t}Settings{/t}</b></a>
 </td>
 <td>
-<a href="{$webserver_web_prefix}/kolab/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/dialog-information.png" border="0" alt="About Kolab" /><br /><b>{t}About{/t}</b></a>
+<a href="{$webserver_web_prefix}/about/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/dialog-information.png" border="0" alt="About Kolab" /><br /><b>{t}About{/t}</b></a>
 </td>
 </tr></table>
 </div>

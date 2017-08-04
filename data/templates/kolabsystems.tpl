@@ -20,8 +20,8 @@
 
 <ul>
 <li><a href="http://www.pardus.de">P@rdus</a></li>
-<li><a href="{$webserver_web_prefix}/kolab/intevation.php">Intevation</a></li>
-<li><a href="{$webserver_web_prefix}/kolab/kdab.php">KDAB</a></li>
+<li><a href="{$webserver_web_prefix}/about/intevation.php">Intevation</a></li>
+<li><a href="{$webserver_web_prefix}/about/kdab.php">KDAB</a></li>
 <li><a href="http://www.libertech.fr/default.htm">Libertech</a></li>
 <li>...and all the community contributors.
 </ul>

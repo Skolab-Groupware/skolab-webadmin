@@ -28,7 +28,7 @@
 <a href="{$webserver_web_prefix}/domainmaintainer/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/book2.png" border="0" alt="Domain Maintainers" /><br /><b>{t}Domain Maintainers{/t}</b></a>
 </td>
 <td>
-<a href="{$webserver_web_prefix}/kolab/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/dialog-information.png" border="0" alt="About Kolab" /><br /><b>{t}About{/t}</b></a>
+<a href="{$webserver_web_prefix}/about/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/dialog-information.png" border="0" alt="About Kolab" /><br /><b>{t}About{/t}</b></a>
 </td>
 </tr></table>
 </div>

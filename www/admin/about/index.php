@@ -29,7 +29,7 @@ $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems', $menuitems[$sidx]['submenu'] );
-$smarty->assign( 'maincontent', 'kolab.tpl' );
+$smarty->assign( 'maincontent', 'about.tpl' );
 $smarty->display('page.tpl');
 
 /*

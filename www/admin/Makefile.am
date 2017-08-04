@@ -1,6 +1,6 @@
 NULL =
 
-SUBDIRS = user administrator addressbook images settings kolab distributionlist sharedfolder domainmaintainer maintainer
+SUBDIRS = about user administrator addressbook images settings distributionlist sharedfolder domainmaintainer maintainer
 
 WSKOLAB_FILES =					\
 	index.php				\

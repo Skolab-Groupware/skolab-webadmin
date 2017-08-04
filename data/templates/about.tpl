@@ -7,7 +7,7 @@
 <div class="contenttext">
 <h1>{t}Kolab Groupware Solution{/t}</h1>
 <p>
-{t}This is the server of the Kolab Groupware Solution, a <a href=\"http://fsfe.org/about/basics/freesoftware\">Free Software</a> Personal Information Management (PIM) solution developed by the <a href=\"http://www.kolab.org/\">Kolab Community</a>. Any installation of the Kolab Groupware Solution would normally include one or more of these servers, in combination with a variety of clients for its users. If you are interested in the technology, you can read more about it <a href=\"/admin/kolab/technology.php\">here</a>.{/t}
+{t}This is the server of the Kolab Groupware Solution, a <a href=\"http://fsfe.org/about/basics/freesoftware\">Free Software</a> Personal Information Management (PIM) solution developed by the <a href=\"http://www.kolab.org/\">Kolab Community</a>. Any installation of the Kolab Groupware Solution would normally include one or more of these servers, in combination with a variety of clients for its users. If you are interested in the technology, you can read more about it <a href=\"/admin/about/technology.php\">here</a>.{/t}
 </p>
 
 <h2>{t}Why Kolab?{/t}</h2>
@@ -41,7 +41,7 @@
 </p>
 
 <p>
-{t}There is a wide variety of commercial support options and warranties available by <a href=\"/admin/kolab/kolabsystems.php\">Kolab Systems AG</a> and its network of partners, the Kolab Enterprise Community. This support comes with access to the additionally quality assured and hardened <b>Certified Kolab</b> edition, which like the community edition is fully available as Free Software, so has all the advantages of the Community Edition and is free of hidden lock-in.{/t}</p>
+{t}There is a wide variety of commercial support options and warranties available by <a href=\"/admin/about/kolabsystems.php\">Kolab Systems AG</a> and its network of partners, the Kolab Enterprise Community. This support comes with access to the additionally quality assured and hardened <b>Certified Kolab</b> edition, which like the community edition is fully available as Free Software, so has all the advantages of the Community Edition and is free of hidden lock-in.{/t}</p>
 
 <p>{t}Kolab Systems AG will provide limited support for the Community Edition on a case-by-case basis, but with no guaranteed response times, as availability permits, and at rates that may be adjusted due to the work load at the time of the request. <b>It is strongly recommended that for mission-critical professional deployments of the Kolab Groupware Solution you at least choose one of the partially self-supported On Demand support models.</b>{/t}
 </p>

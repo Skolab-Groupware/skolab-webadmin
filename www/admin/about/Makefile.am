@@ -11,5 +11,5 @@ WSABOUT_FILES =				\
 	$(NULL)
 
 wskolabdir = $(webserver_document_root)$(webadminui_alias)
-wsaboutdir = $(wskolabdir)/kolab
+wsaboutdir = $(wskolabdir)/about
 wsabout_DATA = $(WSABOUT_FILES)
