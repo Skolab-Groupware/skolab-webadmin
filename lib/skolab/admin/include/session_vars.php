@@ -31,6 +31,9 @@ $_SESSION['php_pw'] = "PASSWORD";
 
 $params = array();
 
+# URL to the Kolab Webmailer
+$params['kolab_wui'] = 'https://'.$_SESSION['fqdnhostname'];
+
 /*
  * Which user classes can log in to the webgui?
  * Currently 4 user classes exist: user, admin, maintainer and manager
