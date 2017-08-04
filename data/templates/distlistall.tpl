@@ -5,26 +5,26 @@
   End:
 *}
 <div class="contenttext">
-<h3>{tr msg="Distribution Lists"}</h3>
+<h3>{t}Distribution Lists{/t}</h3>
 </div>
 
 <table class="contenttable" cellpadding="0" cellspacing="1px">
 	<tr class="contentrow">
-	<th>{tr msg="Listname"}</th><th>{tr msg="Visibility"}</th><th colspan="2">{tr msg="Action"}</th>
+	<th>{t}Listname{/t}</th><th>{t}Visibility{/t}</th><th colspan="2">{t}Action{/t}</th>
 	</tr>
 {section name=id loop=$entries}
-	<tr class="contentrow{cycle values="even,odd"}">
-	   <td class="contentcell">{$entries[id].cn|escape:"html"}</td>
+	<tr class="contentrow{cycle values="even,odd{/t}">
+	   <td class="contentcell">{$entries[id].cn|escape:"html{/t}</td>
 	{if $entries[id].internal == true }
-	   <td class="actioncell">{tr msg="Internal"}</td>
+	   <td class="actioncell">{t}Internal{/t}</td>
 	{else}
-	   <td class="actioncell">{tr msg="Public"}</td>
+	   <td class="actioncell">{t}Public{/t}</td>
 	{/if}
-	{if $entries[id].deleted neq "FALSE"}
-	   <td class="actioncell" colspan="2">{tr msg="List deleted, awaiting cleanup..."}</td>
+	{if $entries[id].deleted neq "FALSE{/t}
+	   <td class="actioncell" colspan="2">{t}List deleted, awaiting cleanup...{/t}</td>
 	{else}
-	   <td class="actioncell"><a href="list.php?action=modify&amp;dn={$entries[id].dn|escape:"url"}">{tr msg="Modify"}</a></td>
-	   <td class="actioncell"><a href="list.php?action=delete&amp;dn={$entries[id].dn|escape:"url"}">{tr msg="Delete"}</a></td>
+	   <td class="actioncell"><a href="list.php?action=modify&amp;dn={$entries[id].dn|escape:"url{/t}">{t}Modify{/t}</a></td>
+	   <td class="actioncell"><a href="list.php?action=delete&amp;dn={$entries[id].dn|escape:"url{/t}">{t}Delete{/t}</a></td>
 	{/if}
 	</tr>
 {/section}

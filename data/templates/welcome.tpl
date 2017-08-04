@@ -5,6 +5,6 @@
   End:
 *}
 <div class="contenttext">
-<h1>{tr msg="Welcome to the Kolab Groupware Server Administration"}</h1>
+<h1>{t}Welcome to the Kolab Groupware Server Administration{/t}</h1>
 
 </div>

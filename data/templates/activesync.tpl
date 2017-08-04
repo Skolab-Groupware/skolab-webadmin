@@ -4,7 +4,7 @@
   buffer-file-coding-system: utf-8
   End:
 *}
-<h1>{tr msg="ActiveSync Configuration"}</h1>
+<h1>{t}ActiveSync Configuration{/t}</h1>
 <div id="wrapper" style="width:90%">
 	<div id="heading">
 					<ul id="buttons">
@@ -29,13 +29,13 @@
         <table width="100%" cellpadding="8" cellspacing="8"><tr valign="top"><td style="border-top-style:dotted;border-right-style:dotted;border-bottom-style:dotted;border-left-style:dotted;border-width:1px;">
         {foreach from=$folders key=myId item=fol}
         <table border="0" width="100%">
-        <tr bgcolor="#c8d2df"><td colspan="5"> <img src="/admin/images/{$myId}.png" style="vertical-align:middle;"> <span style="font-weight:bolder;">{tr msg=$pnames[$myId]} </span></td></tr>
+        <tr bgcolor="#c8d2df"><td colspan="5"> <img src="{$webserver_web_prefix}/images/{$myId}.png" style="vertical-align:middle;"> <span style="font-weight:bolder;">{tr msg=$pnames[$myId]} </span></td></tr>
         <tr>
         <td width="20">&nbsp;</td>
-        <td width="5"><img src="/admin/images/sync.png" align="center" style="margin-left:5px;"></td>
+        <td width="5"><img src="{$webserver_web_prefix}/images/sync.png" align="center" style="margin-left:5px;"></td>
 
         {if $myId eq 'EVENT' or $myId eq 'TASKS'}
-	        <td width="5"><img src="/admin/images/alarm.png" align="center" style="margin-left:5px;"></td>
+	        <td width="5"><img src="{$webserver_web_prefix}/images/alarm.png" align="center" style="margin-left:5px;"></td>
 	       {else}
 	       <td width="25"></td>
         {/if}
@@ -47,7 +47,7 @@
 
          <td width="20">&nbsp;</td>
         {kolabsync serial=$devices[device].name folder=$fols.realname}
-       <td width="25"><img src="/admin/images/f.png" style="vertical-align:middle;padding:4px;"></td>
+       <td width="25"><img src="{$webserver_web_prefix}/images/f.png" style="vertical-align:middle;padding:4px;"></td>
         <td>{$fols.name}</td>
        </tr>
 
@@ -59,21 +59,21 @@
 
         </td><td width="50%" style="border-top-style:dotted;border-right-style:dotted;border-bottom-style:dotted;border-left-style:dotted;border-width:1px;">
         <table width="100%" bgcolor="#c8d2df">
-        <tr bgcolor="white" style="width:100%;height:35px;"><td><span style="font-weight:bolder;"> {tr msg="Device Alias"}</td></span></tr>
+        <tr bgcolor="white" style="width:100%;height:35px;"><td><span style="font-weight:bolder;"> {t}Device Alias{/t}</td></span></tr>
         <tr><td><br/><input type="text" name="alias" maxlength="25" value="{$devices[device].alias}" /><br/><br/></td></tr>
-        <tr bgcolor="white" style="width:100%;height:35px;"><td><span style="font-weight:bolder;"> {tr msg="Device Mode"}</td></span></tr>
+        <tr bgcolor="white" style="width:100%;height:35px;"><td><span style="font-weight:bolder;"> {t}Device Mode{/t}</td></span></tr>
         <tr><td><br/>{html_options name=mode width=50 options=$modetypes selected=$devices[device].mode}<br/><br/></td></tr>
-        <tr bgcolor="white" style="width:100%;height:35px;"><td><span style="font-weight:bolder;"> {tr msg="Picture Settings"}</td></span></tr>
+        <tr bgcolor="white" style="width:100%;height:35px;"><td><span style="font-weight:bolder;"> {t}Picture Settings{/t}</td></span></tr>
 {if $laxpicdef eq -1}
-        <tr><td><br/><input type="checkbox" name="laxpic" value=1 {if $devices[device].laxpic}checked{/if}/> {tr msg="Enable PNG and GIF formats while syncing"}</td></tr>
+        <tr><td><br/><input type="checkbox" name="laxpic" value=1 {if $devices[device].laxpic}checked{/if}/> {t}Enable PNG and GIF formats while syncing{/t}</td></tr>
 {/if}
         </table>
 
         </td></tr></table>
 
-         <input type="submit" value="{tr msg="Save"}" style="float:right;padding:6px;margin-right:22px;">
-         <input type="reset" value="{tr msg="Clear"}" style="float:right;padding:6px;margin-right:22px;">
-         <input type="button" name="delme" value="{tr msg="Forget Device"}" style="float:right;padding:6px;margin-right:132px;color:#ff0000;" onclick="DeleteThisDeviceMate({$devices[device].id});">
+         <input type="submit" value="{t}Save{/t}" style="float:right;padding:6px;margin-right:22px;">
+         <input type="reset" value="{t}Clear{/t}" style="float:right;padding:6px;margin-right:22px;">
+         <input type="button" name="delme" value="{t}Forget Device{/t}" style="float:right;padding:6px;margin-right:132px;color:#ff0000;" onclick="DeleteThisDeviceMate({$devices[device].id});">
 
         </form>
        </div>
@@ -87,7 +87,7 @@
 {literal}
 <script type="text/javascript" charset="utf-8">
 		window.addEvent('load', function () {
-			myTabs = new SlidingTabs('buttons', 'panes',{startingSlide:"{/literal}tabs{$actived}{literal}"});
+			myTabs = new SlidingTabs('buttons', 'panes',{startingSlide:"{/literal}tabs{$actived}{literal}{/t});
 
 			// this sets up the previous/next buttons, if you want them
 			//$('previous').addEvent('click', myTabs.previous.bind(myTabs));
@@ -99,7 +99,7 @@
 
 		function DeleteThisDeviceMate(did)
 		{
-			if (confirm("{/literal}{tr msg="Are you sure?"}{literal}")) {
+			if (confirm("{/literal}{t}Are you sure?{/t}{literal}")) {
  			document.forms["babajaga-"+did].submit();
  			//alert("babajaga-"+did);
 		}

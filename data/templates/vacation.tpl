@@ -4,21 +4,21 @@
   buffer-file-coding-system: utf-8
   End:
 *}
-<h1>{tr msg="Vacation Notification"}</h1>
+<h1>{t}Vacation Notification{/t}</h1>
 <div class="contentform">
 <form method="post">
-<input type="checkbox" name="active" value="true" {if $active}checked{/if} /> {tr msg="Activate vacation notification"}<br />
+<input type="checkbox" name="active" value="true" {if $active}checked{/if} /> {t}Activate vacation notification{/t}<br />
 <textarea name="text" cols="80" rows="10">{$text|escape}</textarea><br />
-{tr msg="Resend notification only after"} <input type="text" size="5" name="days" value="{$days}" /> {tr msg="days"}<br />
-{tr msg="Send responses for these addresses:"}<br />
+{t}Resend notification only after{/t} <input type="text" size="5" name="days" value="{$days}" /> {t}days{/t}<br />
+{t}Send responses for these addresses:{/t}<br />
 <textarea name="addresses" cols="80" rows="3">
-{section name="id" loop="$addresses"}
+{section name="id" loop="$addresses{/t}
 {$addresses[id]}
 {/section}
 </textarea><br />
-{tr msg="(one address per line)"}<br />
-<input type="checkbox" name="reacttospam" value="true" {if $reacttospam}checked{/if} /> {tr msg="Do not send vacation replies to spam messages"}<br />
-{tr msg="Only react to mail coming from domain"} <input type="text" name="maildomain" value="{$maildomain}" /> {tr msg="(leave empty for all domains)"}<br />
-<input type="submit" name="submit" value="{tr msg="Update"}"/><br />
+{t}(one address per line){/t}<br />
+<input type="checkbox" name="reacttospam" value="true" {if $reacttospam}checked{/if} /> {t}Do not send vacation replies to spam messages{/t}<br />
+{t}Only react to mail coming from domain{/t} <input type="text" name="maildomain" value="{$maildomain}" /> {t}(leave empty for all domains){/t}<br />
+<input type="submit" name="submit" value="{t}Update{/t}"/><br />
 </form>
 </div>

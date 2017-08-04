@@ -13,8 +13,8 @@
 <meta name="robots" content="noindex" />
 <meta name="description" content="Kolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
-<link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/screen.css"}" />
-<link rel="stylesheet" type="text/css" href="{"$topdir/custom.css"}" />
+<link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$topdir/screen.css{/t}" />
+<link rel="stylesheet" type="text/css" href="{"$topdir/custom.css{/t}" />
 
 <script type="text/javascript">
 <!--
@@ -25,8 +25,8 @@ function changeLanguage(combobox) {ldelim}
 -->
 </script>
 {literal}
-<script src="/admin/images/mootools.v1.11.js" type="text/javascript"></script>
-<script src="/admin/images/sliding-tabs.js" type="text/javascript"></script>
+<script src="{$webserver_web_prefix}/images/mootools.v1.11.js" type="text/javascript"></script>
+<script src="{$webserver_web_prefix}/images/sliding-tabs.js" type="text/javascript"></script>
 <script type="text/javascript">
 function synced(a)
 {
@@ -103,13 +103,13 @@ function synced(a)
 <body>
 <div id="header" class="container">
 <div class="span-24">
-<h3><a href="{$kolab_wui}"><img src="/admin/images/klogo.png" style="vertical-align:middle;" alt="logo"></a></h3>
+<h3><a href="{$kolab_wui}"><img src="{$webserver_web_prefix}/images/klogo.png" style="vertical-align:middle;" alt="logo"></a></h3>
 <div id="menu-top">
 {if $uid}
-<img src="/admin/images/user-icon-1-20x20.gif" width="16" style="vertical-align:middle;" title="Username" alt="username icon"> {$uid} <img src="/admin/images/eye_pencil.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Role" alt="Role icon"> {$group}
+<img src="{$webserver_web_prefix}/images/user-icon-1-20x20.gif" width="16" style="vertical-align:middle;" title="Username" alt="username icon"> {$uid} <img src="{$webserver_web_prefix}/images/eye_pencil.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Role" alt="Role icon"> {$group}
 {/if}
 
-<img src="/admin/images/ul-icon.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Change Language" alt="Language icon"> <select name="lang" style="height:17px;vertical-align:middle" onchange="changeLanguage(this);">
+<img src="{$webserver_web_prefix}/images/ul-icon.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Change Language" alt="Language icon"> <select name="lang" style="height:17px;vertical-align:middle" onchange="changeLanguage(this);">
 {section name=id loop=$languages}
 {if $languages[id].code==$currentlang}
 <option value="{$languages[id].code}" selected="selected">{$languages[id].name}</option>
@@ -119,7 +119,7 @@ function synced(a)
 {/section}
 </select>
 {if $uid}
-<a id="logout" href="{$topdir}/logout.php"><img src="/admin/images/icon_grey_logout.png" width="16" style="vertical-align:middle;margin-left:90px;" title="Logout" alt="Logout icon"></a>
+<a id="logout" href="{$topdir}/logout.php"><img src="{$webserver_web_prefix}/images/icon_grey_logout.png" width="16" style="vertical-align:middle;margin-left:90px;" title="Logout" alt="Logout icon"></a>
 {/if}
 </div>
 		</div><!-- .span-24 -->
@@ -157,7 +157,7 @@ function synced(a)
 <!--start-->
 {if $errors}
 <div id="errorcontent">
-<div id="errorheader">{tr msg="Errors:"}</div>
+<div id="errorheader">{t}Errors:{/t}</div>
 {section name=id loop=$errors}
 {$errors[id]}<br/>
 {/section}
@@ -165,7 +165,7 @@ function synced(a)
 {/if}
 {if $messages}
 <div id="messagecontent">
-<div id="messageheader">{tr msg="Message:"}</div>
+<div id="messageheader">{t}Message:{/t}</div>
 {section name=id loop=$messages}
 {$messages[id]}<br/>
 {/section}

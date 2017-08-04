@@ -6,13 +6,13 @@
 </div>
 <div class="contentsimple">
 <p>
-{tr msg="The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by"} <a href="http://www.klaralvdalens-datakonsult.se">Klar&auml;lvdalens Datakonsult AB</a>.
+{t}The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed by{/t} <a href="http://www.klaralvdalens-datakonsult.se">Klar&auml;lvdalens Datakonsult AB</a>.
 </p>
 <p>
-{tr msg="Klar&auml;lvdalens Datakonsult AB is a consulting company dedicated to opensource software, Linux, and the <a href=\"http://www.trolltech.com/products/qt/\">Qt</a> library. The main tasks of KDAB within the Kolab project are design and implementation of the Kolab KDE clients and the implementation of the current Kolab 2 server."}
+{t}Klar&auml;lvdalens Datakonsult AB is a consulting company dedicated to opensource software, Linux, and the <a href=\"http://www.trolltech.com/products/qt/\">Qt</a> library. The main tasks of KDAB within the Kolab project are design and implementation of the Kolab KDE clients and the implementation of the current Kolab 2 server.{/t}
 </p>
 <p>
-{tr msg="The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:"}
+{t}The following people worked on Kolab for Klar&auml;lvdalens Datakonsult AB:{/t}
 </p>
 <p>
 Bo Thorsen<br />

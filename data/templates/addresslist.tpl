@@ -5,19 +5,19 @@
   End:
 *}
 <div class="contenttext">
-{tr msg="(only external addresses without a kolab user account)"}
+{t}(only external addresses without a kolab user account){/t}
 </div>
 
 <div class="contenttable">
 <table class="contenttable" cellpadding="0" cellspacing="1px">
 	<tr class="contentrow">
-	<th>{tr msg="Name"}</th><th colspan="2">{tr msg="Action"}</th>
+	<th>{t}Name{/t}</th><th colspan="2">{t}Action{/t}</th>
 	</tr>
 {section name=id loop=$entries}
-	<tr class="contentrow{cycle values="even,odd"}">
-	   <td class="contentcell">{$entries[id].name|escape:"html"}</td>
-	   <td class="actioncell"><a href="modify.php?dn={$entries[id].dn|escape:"url"}">{tr msg="Modify"}</a></td>
-	   <td class="actioncell"><a href="delete.php?dn={$entries[id].dn|escape:"url"}">{tr msg="Delete"}</a></td>
+	<tr class="contentrow{cycle values="even,odd{/t}">
+	   <td class="contentcell">{$entries[id].name|escape:"html{/t}</td>
+	   <td class="actioncell"><a href="modify.php?dn={$entries[id].dn|escape:"url{/t}">{t}Modify{/t}</a></td>
+	   <td class="actioncell"><a href="delete.php?dn={$entries[id].dn|escape:"url{/t}">{t}Delete{/t}</a></td>
 	</tr>
 {/section}
 </table>

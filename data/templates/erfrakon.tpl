@@ -7,7 +7,7 @@
 *}
 <div class="contentsimple">
 <p>
-{tr msg="Kolab's architecture was done by <a href=\"http://www.erfrakon.com\">erfrakon</a>; the company also designed and implemented the Kolab 1 Server and did the design and architecture for the Kolab 2 Server while providing consulting for the implementation of the Kolab 2 server and the Kolab 2 clients."}
+{t}Kolab's architecture was done by <a href=\"http://www.erfrakon.com\">erfrakon</a>; the company also designed and implemented the Kolab 1 Server and did the design and architecture for the Kolab 2 Server while providing consulting for the implementation of the Kolab 2 server and the Kolab 2 clients.{/t}
 </p>
 <div class="align_center">
  <a href="http://www.erfrakon.de">
@@ -15,10 +15,10 @@
  </a>
 </div>
 <p>
-{tr msg="<a href=\"http://www.erfrakon.com\">erfrakon</a> is a consulting company dedicated to opensource software and Linux. The main tasks of erfrakon within the Kolab project are the principle design and architecure of the Kolab groupware solution and the creation of the Kolab 1 server."}
+{t}<a href=\"http://www.erfrakon.com\">erfrakon</a> is a consulting company dedicated to opensource software and Linux. The main tasks of erfrakon within the Kolab project are the principle design and architecure of the Kolab groupware solution and the creation of the Kolab 1 server.{/t}
 </p>
 <p>
-{tr msg="The following people worked on Kolab for erfrakon:"}
+{t}The following people worked on Kolab for erfrakon:{/t}
 </p>
 <p>
 Tassilo Erlewein<br />
