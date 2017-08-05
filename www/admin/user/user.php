@@ -318,14 +318,14 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
 		  }
 		  if( $form->entries['accttype']['value'] == 1 ) {
 			  // default for groups
-			  $pol = policy2number( $pol, 3 /*ACT_MANUAL_IF_CONFLICTS*/ );
+			  $pol = policy2number( $pol, 3  ); // ACT_MANUAL_IF_CONFLICTS
 		  } else {
 			  // default for resources
-			  $pol = policy2number( $pol, 2 /*ACT_REJECT_IF_CONFLICTS*/ );
+			  $pol = policy2number( $pol, 2  ); // ACT_REJECT_IF_CONFLICTS
 		  }
 		  $policies[$user] = $pol;
 	  }
-	  if( !isset( $policies['anyone'] ) ) $policies['anyone'] = 4 /*ACT_MANUAL*/;
+	  if( !isset( $policies['anyone'] ) ) $policies['anyone'] = 4; // ACT_MANUAL
 	  $form->entries['kolabinvitationpolicy']['policies'] = $policies;
   }
 
@@ -606,7 +606,8 @@ switch( $action ) {
 		 }
 		 if ($count > 0) $ldap_object[$attr] = $args;
 		 elseif (!empty($_POST[$key])) $ldap_object[$attr] = $_POST[$key];
-		 else/*if (in_array($key,$_POST))*/ $ldap_object[$attr] = array();
+		 else //if (in_array($key,$_POST))
+			$ldap_object[$attr] = array();
        }
 	   {
 		 // Handle group/resource policies
