@@ -18,13 +18,13 @@ $sidx = 'about';
 
 require_once('skolab/admin/include/menu.php');
 
-
 /**** Submenu for current page ***/
 $menuitems[$sidx]['selected'] = 'selected';
 
 /**** Insert into template and output ***/
 $smarty = new MySmarty();
 $smarty->assign( 'topdir', $topdir );
+$smarty->assign( 'webserver_web_prefix', $webserver_web_prefix );
 $smarty->assign( 'uid', $auth->uid() );
 $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );

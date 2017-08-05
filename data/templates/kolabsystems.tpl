@@ -11,7 +11,7 @@
 
 <h2>{t}Looking for professional support for your Kolab Groupware Solution?{/t}</h2>
 
-<p>{t}Kolab Systems provides a wide range of {/t} <a href="http://kolabsys.com/index.php/solutions/101">Service Level Agreements (SLA)</a> {tr msg= "which range from fully self-supported installations to maintained installations with reaction times as low as 1 hour. These are provided exclusively on Kolab Systems' Certified Kolab edition. To upgrade your installation to Certified Kolab, please contact{/t} <a href="getkolab@kolabsys.com">getkolab@kolabsys.com</a> {t}or visit our{/t} <a href="http://kolabsys.com/index.php/component/form/Get%20Kolab?form_id=2">{t}web page{/t}</a>.
+<p>{t}Kolab Systems provides a wide range of {/t} <a href="http://kolabsys.com/index.php/solutions/101">Service Level Agreements (SLA)</a> {t}which range from fully self-supported installations to maintained installations with reaction times as low as 1 hour. These are provided exclusively on Kolab Systems' Certified Kolab edition. To upgrade your installation to Certified Kolab, please contact{/t} <a href="getkolab@kolabsys.com">getkolab@kolabsys.com</a> {t}or visit our{/t} <a href="http://kolabsys.com/index.php/component/form/Get%20Kolab?form_id=2">{t}web page{/t}</a>.
 </p>
 
 <h2>{t}Our Development Partners{/t}</h2>
