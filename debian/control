@@ -21,6 +21,7 @@ Depends:
  smarty3,
  php-net-sieve,
  php-net-ldap3,
+ php-horde-util,
  php-mail,
 Description: Skolab administration web interface
  This package contains the web GUI for the administration of the Skolab
