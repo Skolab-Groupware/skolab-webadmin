@@ -125,14 +125,14 @@ class KolabForm {
       switch( $value['type'] ) {
       case 'hidden': continue;
       case 'password':
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  // If readonly, skip it -- passwords are at most write-only
 	  break;
 	}
       case 'input':
       case 'text':
 	$str .= '<tr>';
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
 	  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($value['value']).'</p><input name="'
 	    .$key.'" type="hidden" value="'.MySmarty::htmlentities($value['value']).'" /></td>';
@@ -152,7 +152,7 @@ class KolabForm {
 	} else {
 	  list($uname,$domain) = preg_split( '/\@/',$value['value']);
 	}
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match ( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
 	  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($value['value']).'</p><input name="user_'.$key.'" type="hidden" value="'.
 	    MySmarty::htmlentities($uname).'" /><input name="domain_'.$key.'" type="hidden" value="'.
@@ -187,7 +187,7 @@ class KolabForm {
 	break;
       case 'textarea':
 	$str .= '<tr>';
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
 	  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($value['value']).'</p></td>';
 	} else {
@@ -199,7 +199,7 @@ class KolabForm {
 	break;
       case 'checkbox':
 	$str .= '<tr>';
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
 	  $str .= '<td><span class="ctrl">'.($value['value']?_('Yes'):_('No')).'</span></td>';
 	} else {
@@ -212,7 +212,7 @@ class KolabForm {
       case 'checklist':
 	$str .= '<tr>';
 	$str .= '<td><label>'.$value['name'].'</label></td>';
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><div class="ctrl">'.(join('<br/>',$value['options'])).'</div></td>';
 	} else {
 	  $str .= '<td><table class="contentform">';
@@ -230,7 +230,7 @@ class KolabForm {
 	break;
       case 'select':
 	$str .= '<tr>';
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
 	  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($value['options'][$value['value']]).
 	    '<input type="hidden" name="'.$key.'" value="'.MySmarty::htmlentities($value['value']).'" /></p></td>';
@@ -254,7 +254,7 @@ class KolabForm {
 	$entries = array ( '' => _('Unspecified'), 'mail' => _('Mails'), 'task' => _('Tasks'),
 			   'journal' => _('Journals'), 'event' => _('Events'),
 			   'contact' => _('Contacts'), 'note' => _('Notes'));
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
 	  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($entries[$value['value']]).
 	    '<input type="hidden" name="'.$key.'" value="'.MySmarty::htmlentities($value['value']).'" /></p></td>';
@@ -277,7 +277,7 @@ class KolabForm {
 	break;
       case 'aclselect': // Special Kolab entry for ACLs
 	$str .= '<tr>';
-	if( ereg( 'readonly', $value['attrs'] ) ) {
+	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
 	  if( $value['user'] ) $str .= '<td><span class="ctrl">'.MySmarty::htmlentities($value['user']).'</span> <span class="ctrl">'.$value['perm'].'</span></td>';
 	} else {
@@ -309,7 +309,7 @@ class KolabForm {
 	break;
       case 'resourcepolicy': // Special Kolab entry for group/resource policies
 	debug("resourcepolicy");
-	$ro = ereg( 'readonly', $value['attrs'] );
+	$ro = preg_match( '/readonly/', $value['attrs'] );
 	$str .= '<tr>';
 	$str .= '<td><label>'.$value['name'].'</label></td>';
 	$str .= '<td>';
@@ -379,7 +379,7 @@ class KolabForm {
   function validate() {
     $this->errors = array();
     foreach( $this->entries as $key => $value ) {
-      if( !empty( $value['validation'] ) && !ereg( 'readonly', $value['attrs'] ) ) {
+      if( !empty( $value['validation'] ) && !preg_match( '/readonly/', $value['attrs'] ) ) {
 	$vv = $value['validation'];
 	if( !is_array($vv) ) $va = array($vv);
 	else $va = $vv;

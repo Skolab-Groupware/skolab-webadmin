@@ -43,7 +43,7 @@ class KolabAdmin_Sieve_Script {
             $tmp = preg_split('/,/', $regs[1] );
             $addresses = array();
             foreach( $tmp as $a ) {
-                if( ereg('^ *"(.*)" *$', $a, $regs ) ) $addresses[] = $regs[1];
+                if( preg_match('/^ *"(.*)" *$/', $a, $regs ) ) $addresses[] = $regs[1];
                 else $addresses[] = $a;
             }
         }
@@ -93,7 +93,7 @@ class KolabAdmin_Sieve_Script {
     }
 
     static function getKeepOnServer( $script ) {
-        return ereg('"; keep;', $script, $regs ) > 0;
+        return preg_match('/"; keep;/', $script, $regs ) > 0;
     }
 
     static function getScriptInfo($script) {
@@ -108,11 +108,11 @@ class KolabAdmin_Sieve_Script {
     }
 
     static function isDeliveryEnabled($script) {
-        return ereg('## delivery enabled', $script, $regs )>0;
+        return preg_match('/## delivery enabled/', $script, $regs )>0;
     }
 
     static function isVacationEnabled($script) {
-        return ereg('## vacation enabled', $script, $regs )>0;
+        return preg_match('/## vacation enabled/', $script, $regs )>0;
     }
 
     static function createScript($scriptinfo) {

@@ -207,7 +207,7 @@ function valid_local_part($local_part) {
 function checkpolicy( $form, $key, $value ) {
   foreach( $value as $v ) {
 	$v = trim($v);
-	if( !empty($v) && !ereg('^([0-9a-zA-Z._@ ]|-)*$', $v ) ) {
+	if( !empty($v) && !preg_match('/^([0-9a-zA-Z._@ ]|-)*$/', $v ) ) {
 	  return sprintf(_("Illegal user or group %s"), $v);
 	}
   }
@@ -240,7 +240,7 @@ function apply_attributeaccess( &$entries ) {
   global $params;
   $attributeaccess =& $params['attribute_access'];
   foreach( $entries as $key=>$value ) {
-	if( ereg( '(.*)_[0-9]', $key, $regs ) ) {
+	if( preg_match( '/(.*)_[0-9]/', $key, $regs ) ) {
 	  $akey = $regs[1];
 	} else {
 	  $akey = $key;
@@ -308,7 +308,7 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
 	  for( $i = 0; $i < $ldap_object['kolabInvitationPolicy']['count']; $i++ ) {
 		  $resact = $ldap_object['kolabInvitationPolicy'][$i];
 		  debug("resact=$resact");
-		  if( ereg( '(.*):(.*)', trim($resact), $regs ) ) {
+		  if( preg_match( '/(.*):(.*)/', trim($resact), $regs ) ) {
 			  $user = trim($regs[1]);
 			  $pol  = trim($regs[2]);
 			  if( empty($user) ) continue;
