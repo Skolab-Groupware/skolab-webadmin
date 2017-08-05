@@ -87,7 +87,7 @@
 {literal}
 <script type="text/javascript" charset="utf-8">
 		window.addEvent('load', function () {
-			myTabs = new SlidingTabs('buttons', 'panes',{startingSlide:"{/literal}tabs{$actived}{literal}{/t});
+			myTabs = new SlidingTabs('buttons', 'panes',{startingSlide:"{/literal}tabs{$actived}{literal}"});
 
 			// this sets up the previous/next buttons, if you want them
 			//$('previous').addEvent('click', myTabs.previous.bind(myTabs));

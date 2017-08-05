@@ -14,10 +14,10 @@
 	<th>{t}Name{/t}</th><th colspan="2">{t}Action{/t}</th>
 	</tr>
 {section name=id loop=$entries}
-	<tr class="contentrow{cycle values="even,odd{/t}">
-	   <td class="contentcell">{$entries[id].name|escape:"html{/t}</td>
-	   <td class="actioncell"><a href="modify.php?dn={$entries[id].dn|escape:"url{/t}">{t}Modify{/t}</a></td>
-	   <td class="actioncell"><a href="delete.php?dn={$entries[id].dn|escape:"url{/t}">{t}Delete{/t}</a></td>
+	<tr class="contentrow{cycle values="even,odd"}">
+	   <td class="contentcell">{$entries[id].name|escape:"html"}</td>
+	   <td class="actioncell"><a href="modify.php?dn={$entries[id].dn|escape:"url"}">{t}Modify{/t}</a></td>
+	   <td class="actioncell"><a href="delete.php?dn={$entries[id].dn|escape:"url"}">{t}Delete{/t}</a></td>
 	</tr>
 {/section}
 </table>
