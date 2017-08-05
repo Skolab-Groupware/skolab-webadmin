@@ -12,7 +12,7 @@
 {t}Resend notification only after{/t} <input type="text" size="5" name="days" value="{$days}" /> {t}days{/t}<br />
 {t}Send responses for these addresses:{/t}<br />
 <textarea name="addresses" cols="80" rows="3">
-{section name="id" loop="$addresses{/t}
+{section name="id" loop="$addresses"}
 {$addresses[id]}
 {/section}
 </textarea><br />
