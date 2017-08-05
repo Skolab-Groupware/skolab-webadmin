@@ -1,6 +1,7 @@
 NULL =
 
 WSUSER_FILES =				\
+	activesync.php			\
 	forward.php			\
 	index.php			\
 	user.php			\
