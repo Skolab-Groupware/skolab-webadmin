@@ -189,7 +189,7 @@ class KolabForm {
 	$str .= '<tr>';
 	if( preg_match( '/readonly/', $value['attrs'] ) ) {
 	  $str .= '<td><label>'.$value['name'].'</label></td>';
-	  $str .= '<td><p class="ctrl">'.MySmarty::htmlentities($value['value']).'</p></td>';
+	  $str .= '<td><p class="ctrl">'.preg_replace('/\n/', '<br />', MySmarty::htmlentities($value['value'])).'</p></td>';
 	} else {
 	  $str .= '<td><label for="'.$key.'">'.$value['name'].'</label></td>';
 	  $str .= '<td><textarea name="'.$key.'" id="'.$key.'" rows="5" cols="'.$size.'" '.$value['attrs'].' onkeypress="javascript:textareakeypress()">'.MySmarty::htmlentities($value['value']).'</textarea></td>';
