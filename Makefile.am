@@ -1,6 +1,6 @@
 NULL =
 
-SUBDIRS = data lib test www
+SUBDIRS = data lib test htdocs
 
 EXTRA_DIST =
 
