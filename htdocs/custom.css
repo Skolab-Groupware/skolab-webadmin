@@ -72,6 +72,7 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 }
 
 	#content h2, #content h2 a, #content h1 {color: #5c5c5c; font-weight: normal;text-shadow: 0 2px 2px #FFFFFF; }
+	#content p:first-letter { font-size: 1.3em; }
 
 #footer {
 

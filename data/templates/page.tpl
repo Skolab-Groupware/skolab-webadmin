@@ -8,10 +8,10 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>Skolab Webadmin: {$page_title}</title>
+<title>Kolab: {$page_title}</title>
 <link rel="shortcut icon" type="image/png" href="{$webserver_web_prefix}/favicon.png" />
 <meta name="robots" content="noindex" />
-<meta name="description" content="Skolab Administration Webinterface" />
+<meta name="description" content="Kolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
 <link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$webserver_web_prefix/screen.css"}" />
 <link rel="stylesheet" type="text/css" href="{$webserver_web_prefix}/custom.css" />
@@ -106,6 +106,6 @@ function changeLanguage(combobox) {ldelim}
 		</div><!-- .container -->
 	</div><!-- #root -->
 <div id="footer">
-This is the <b>Skolab Groupware Server</b>. <br />It comes with absolutely <b>no warranties</b> and is typically run entirely self supported. You can find help & information on the community <a href="http://kolab.org">web site</a> & <a href="http://wiki.kolab.org">wiki</a>. <br />Professional support is available from <a href="https://das-netzwerkteam.de">DAS-NETZWERKTEAM</a>.
+This is the Community Edition of the <b>Kolab Server</b>. <br />It comes with absolutely <b>no warranties</b> and is typically run entirely self supported. You can find help & information on the community <a href="http://kolab.org">web site</a> & <a href="http://wiki.kolab.org">wiki</a>. <br />Professional support is available from <a href="http://kolabsys.com">Kolab Systems</a>.
 </body>
 </html>
