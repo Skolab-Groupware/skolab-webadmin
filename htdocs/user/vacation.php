@@ -6,23 +6,23 @@
  Read the file COPYING that comes with this packages for details.
 */
 
-require_once 'skolab/admin/include/mysmarty.php';
-require_once 'skolab/admin/include/headers.php';
-require_once('skolab/admin/include/locale.php');
-require_once 'skolab/admin/include/authenticate.php';
+require_once 'Skolab/Admin/include/mysmarty.php';
+require_once 'Skolab/Admin/include/headers.php';
+require_once('Skolab/Admin/include/locale.php');
+require_once 'Skolab/Admin/include/authenticate.php';
 require_once 'Net/Sieve.php';
 require_once 'Horde/String.php';
-require_once 'skolab/admin/Sieve.php';
-require_once 'skolab/admin/Sieve/Script.php';
-require_once 'skolab/admin/Sieve/Segment.php';
-require_once 'skolab/admin/Sieve/Segment/Delivery.php';
-require_once 'skolab/admin/Sieve/Segment/Forward.php';
-require_once 'skolab/admin/Sieve/Segment/Vacation.php';
+require_once 'Skolab/Admin/Sieve.php';
+require_once 'Skolab/Admin/Sieve/Script.php';
+require_once 'Skolab/Admin/Sieve/Segment.php';
+require_once 'Skolab/Admin/Sieve/Segment/Delivery.php';
+require_once 'Skolab/Admin/Sieve/Segment/Forward.php';
+require_once 'Skolab/Admin/Sieve/Segment/Vacation.php';
 
 /**** Authentication etc. ***/
 $sidx = 'user';
 
-require_once('skolab/admin/include/menu.php');
+require_once('Skolab/Admin/include/menu.php');
 
 /**** Submenu for current page ***/
 $menuitems[$sidx]['selected'] = 'selected';

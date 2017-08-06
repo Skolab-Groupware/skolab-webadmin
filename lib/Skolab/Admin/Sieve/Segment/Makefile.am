@@ -6,5 +6,5 @@ LIB_KOLABADMIN_SIEVE_SEGMENT_FILES =	\
 	Vacation.php			\
 	$(NULL)
 
-libkolabadminsievesegmentdir = $(phplib_dir)/skolab/admin/Sieve/Segment
+libkolabadminsievesegmentdir = $(phplib_dir)/Skolab/Admin/Sieve/Segment
 libkolabadminsievesegment_DATA = $(LIB_KOLABADMIN_SIEVE_SEGMENT_FILES)

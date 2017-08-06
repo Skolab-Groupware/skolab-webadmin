@@ -18,7 +18,7 @@ LIB_KOLABADMIN_INCLUDE_FILES =		\
     Sieve.php				\
     $(NULL)
 
-libkolabadminincludedir = $(phplib_dir)/skolab/admin/include
+libkolabadminincludedir = $(phplib_dir)/Skolab/Admin/include
 libkolabadmininclude_DATA = $(LIB_KOLABADMIN_INCLUDE_FILES)
 
 LIB_KOLABADMIN_CONFIG_FILES =		\

@@ -18,8 +18,8 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-require_once('skolab/admin/include/session_vars.php');
-require_once('skolab/admin/include/mysmarty.php');
+require_once('Skolab/Admin/include/session_vars.php');
+require_once('Skolab/Admin/include/mysmarty.php');
 
 session_start();
 session_destroy();

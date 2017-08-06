@@ -18,7 +18,7 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-require_once('skolab/admin/include/session_vars.php');
+require_once('Skolab/Admin/include/session_vars.php');
 
 class KolabLDAP {
   function __construct() {

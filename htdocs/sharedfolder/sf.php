@@ -7,11 +7,11 @@
  * Read the file COPYING that comes with this packages for details.
 */
 
-require_once('skolab/admin/include/mysmarty.php');
-require_once('skolab/admin/include/headers.php');
-require_once('skolab/admin/include/locale.php');
-require_once('skolab/admin/include/authenticate.php');
-require_once('skolab/admin/include/form.class.php');
+require_once('Skolab/Admin/include/mysmarty.php');
+require_once('Skolab/Admin/include/headers.php');
+require_once('Skolab/Admin/include/locale.php');
+require_once('Skolab/Admin/include/authenticate.php');
+require_once('Skolab/Admin/include/form.class.php');
 
 /**** Authentication etc. ***/
 $errors = array();
@@ -25,7 +25,7 @@ if( $group != 'maintainer' && $group != 'admin' && $group != 'domain-maintainer'
    array_push($errors, _("Error: You don't have Permissions to access this Menu"));
 }
 
-require_once('skolab/admin/include/menu.php');
+require_once('Skolab/Admin/include/menu.php');
 
 function fill_form_for_modify( &$form, &$ldap_object ) {
   if (is_array($ldap_object['cn'])) $cn = $ldap_object['cn'][0];

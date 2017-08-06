@@ -18,10 +18,10 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-require_once('skolab/admin/include/mysmarty.php');
-require_once('skolab/admin/include/headers.php');
-require_once('skolab/admin/include/locale.php');
-require_once('skolab/admin/include/authenticate.php');
+require_once('Skolab/Admin/include/mysmarty.php');
+require_once('Skolab/Admin/include/headers.php');
+require_once('Skolab/Admin/include/locale.php');
+require_once('Skolab/Admin/include/authenticate.php');
 
 $errors = array();
 
@@ -33,7 +33,7 @@ if( $auth->group() != 'admin' && $auth->group() != 'maintainer' ) {
   array_push($errors, _("Error: You don't have Permissions to access this Menu"));
 }
 
-require_once('skolab/admin/include/menu.php');
+require_once('Skolab/Admin/include/menu.php');
 
 /**** Submenu for current page ***/
 $menuitems[$sidx]['selected'] = 'selected';

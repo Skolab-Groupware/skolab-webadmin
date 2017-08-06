@@ -7,5 +7,5 @@ LIB_KOLABADMIN_FILES =			\
     Sieve.php				\
     $(NULL)
 
-libkolabadmindir = $(phplib_dir)/skolab/admin
+libkolabadmindir = $(phplib_dir)/Skolab/Admin
 libkolabadmin_DATA = $(LIB_KOLABADMIN_FILES)

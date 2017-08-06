@@ -10,7 +10,7 @@ MAINTAINERCLEANFILES =					\
     $(srcdir)/data/Makefile.in				\
     $(srcdir)/data/locale/Makefile.in			\
     $(srcdir)/data/templates/Makefile.in		\
-    $(srcdir)/lib/skolab/admin/Makefile.in		\
+    $(srcdir)/lib/Skolab/Admin/Makefile.in		\
     $(srcdir)/lib/Makefile.in				\
     $(srcdir)/test/Makefile.in				\
     $(srcdir)/www/Makefile.in				\
@@ -35,6 +35,6 @@ DISTCLEANFILES=$(MAINTAINERCLEANFILES)
 
 install-data-hook:
 	$(mkinstalldirs) $(DESTDIR)$(smarty_compiledir)
-	ln -s ${sysconfdir}/skolab/webadmin/session_vars.php $(DESTDIR)${phplib_dir}/skolab/admin/include/session_vars.php
-	ln -s ${sysconfdir}/skolab/webadmin/config.php       $(DESTDIR)${phplib_dir}/skolab/admin/include/config.php
+	ln -s ${sysconfdir}/skolab/webadmin/session_vars.php $(DESTDIR)${phplib_dir}/Skolab/Admin/include/session_vars.php
+	ln -s ${sysconfdir}/skolab/webadmin/config.php       $(DESTDIR)${phplib_dir}/Skolab/Admin/include/config.php
 # 	test -z "$(webserver_user)" || chown $(webserver_user) $(DESTDIR)$(phpkolabdir)/templates_c

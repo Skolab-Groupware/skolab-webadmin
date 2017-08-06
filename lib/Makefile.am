@@ -1,1 +1,1 @@
-SUBDIRS = skolab
+SUBDIRS = Skolab
