@@ -1,37 +1,43 @@
 NULL =
 
 SMARTY_TEMPLATES =			\
-	maintainerdeleted.tpl		\
-	kde.tpl				\
-	addrdeleted.tpl			\
-	userdeleted.tpl			\
-	sfdeleted.tpl			\
-	distlistdeleted.tpl		\
-	addresslist.tpl			\
-	sflistall.tpl			\
-	erfrakon.tpl			\
-	codefusion.tpl			\
-	adminlistall.tpl		\
-	login.tpl			\
-	maintainerlistall.tpl		\
-	domainmaintainerlistall.tpl	\
 	about.tpl			\
+	addrdeleted.tpl			\
+	addresslist.tpl			\
 	addrlistall.tpl			\
-	forward.tpl			\
+	admindeleted.tpl		\
+	adminlistall.tpl		\
+	codefusion.tpl			\
+	createuser.tpl			\
+	custom.css.tpl			\
 	deliver.tpl			\
 	distlistall.tpl			\
+	distlistdeleted.tpl		\
+	domainmaintainerlistall.tpl	\
+	erfrakon.tpl			\
+	formcontainer.tpl		\
+	forward.tpl			\
+	intevation.tpl			\
 	kdab.tpl			\
+	kde.tpl				\
+	kolabsystems.tpl		\
+	login.tpl			\
+	maintainerdeleted.tpl		\
+	maintainerlistall.tpl		\
+	settings.tpl			\
+	sfdeleted.tpl			\
+	sflistall.tpl			\
+	systemaliasnagscreen.tpl	\
+	technology.tpl			\
+	userdeleted.tpl			\
 	userlistall.tpl			\
 	userlisterror.tpl		\
-	settings.tpl			\
-	welcome.tpl			\
-	systemaliasnagscreen.tpl	\
-	intevation.tpl			\
 	vacation.tpl			\
-	createuser.tpl			\
-	formcontainer.tpl		\
-	admindeleted.tpl		\
-	custom.css.tpl			\
+	welcome-admin.tpl		\
+	welcome-domain-maintainer.tpl	\
+	welcome-maintainer.tpl		\
+	welcome.tpl			\
+	welcome-user.tpl		\
 	$(NULL)
 
 phptemplatesdir = $(smarty_templates_dir)
