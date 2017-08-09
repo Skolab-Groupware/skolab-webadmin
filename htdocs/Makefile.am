@@ -7,7 +7,6 @@ WSKOLAB_FILES =					\
 	logout.php				\
 	print.css				\
 	screen.css				\
-	style.css				\
 	favicon.ico				\
 	favicon.png				\
 	$(NULL)
