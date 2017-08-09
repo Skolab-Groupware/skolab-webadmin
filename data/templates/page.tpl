@@ -34,9 +34,9 @@ function changeLanguage(combobox) {ldelim}
 <div id="header" class="container">
 <div class="span-24">
 {if $uid}
-<h3><a href="{$skolab_webmailer_url}"><img src="{$webserver_web_prefix}/images/skolab-webadmin-logo.png" style="vertical-align:middle;" alt="Skolab Webadmin Logo"></a></h3>
+<h3><a href="{$skolab_url}"><img src="{$webserver_web_prefix}/images/skolab-webadmin-logo.png" style="vertical-align:middle;" alt="Skolab Webadmin Logo"></a></h3>
 {else}
-<h3><a href="{$skolab_webmailer_url}"><img src="{$webserver_web_prefix}/images/skolab-webadmin-logo-login.png" style="vertical-align:middle;" alt="Skolab Webadmin Logo"></a></h3>
+<h3><a href="{$skolab_url}"><img src="{$webserver_web_prefix}/images/skolab-webadmin-logo-login.png" style="vertical-align:middle;" alt="Skolab Webadmin Logo"></a></h3>
 {/if}
 <div id="menu-top">
 {if $uid}

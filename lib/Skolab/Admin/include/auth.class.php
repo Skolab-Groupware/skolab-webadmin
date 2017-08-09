@@ -132,7 +132,6 @@ class KolabAuth {
 		if( $this->error() ) $smarty->assign( 'errors', array( $this->error() ) );
 		$smarty->assign( 'maincontent', 'login.tpl' );
 		$smarty->assign( 'webserver_web_prefix', $webserver_web_prefix );
-		$smarty->assign( 'skolab_webmailer_url', $params['skolab_webmailer_url']);
 		$smarty->display('page.tpl');
 		exit();
 	}
