@@ -5,7 +5,7 @@
   End:
 *}
 <div class="contenttext">
-<h1>{t}Welcome to the Kolab Groupware Server Maintenance{/t}</h1>
+<h1>{t}Welcome to the Skolab Groupware Server Maintenance{/t}</h1>
 
 <table cellspacing="10" cellpadding="10" style="background:#d0e2e6">
 <tr>

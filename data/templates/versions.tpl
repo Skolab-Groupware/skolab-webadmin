@@ -5,9 +5,9 @@
   End:
 *}
 <div class="contenttext">
-<h1>{t}Kolab Groupware Server Version{/t}</h1>
+<h1>{t}Skolab Groupware Server Version{/t}</h1>
 <pre>{$kolabversion} Community Edition</pre>
-<h1>{t}Kolab Groupware Server Component Versions{/t}</h1>
+<h1>{t}Skolab Groupware Server Component Versions{/t}</h1>
 <pre>{$kolabversions}</pre>
 <h1>{t}PEAR/Horde Versions{/t}</h1>
 <pre>{$pearhordeversions}</pre>
