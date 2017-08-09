@@ -21,6 +21,25 @@
 
 require_once('locale.php');
 
+/*
+ * z-Push part for activesync
+ *
+ * */
+
+include_once '@www_dir@/z-push/config.php';
+$showasmenu=true;
+if(defined('KOLAB_LDAP_ACL') and KOLAB_LDAP_ACL !=""){
+	$showasmenu=false;
+	$filter = '(member='.$_SESSION['auth_user'].')';
+	$result = $ldap->search( KOLAB_LDAP_ACL, $filter);
+	if (ldap_count_entries($ldap->connection, $result) > 0)
+		$showasmenu=true;
+}
+
+/*
+ * end z-push activesync part
+ * */
+
 $menuitems = array();
 
 
@@ -43,6 +62,12 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group(
 												 array( 'name' => _('Vacation'),
 														'url'  => 'vacation.php' )
 																	));
+if($showasmenu){
+
+	$menuitems['activesync'] = array( 'name' => _('ActiveSync'),
+							  'url'  => $webserver_web_prefix.'/user/activesync.php',
+							  'title' => _('ActiveSync'));
+ }
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer") {
   $menuitems['addressbook'] = array( 'name' => _('Addressbook'),
