@@ -1,5 +1,12 @@
+{* Smarty Template *}
+{*
+  Local variables:
+  buffer-file-coding-system: utf-8
+  End:
+*}
+{literal}
 html {background: #e7e7e7;}
-body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:100%;}
+body {background: #ffffff url({/literal}{$webserver_web_prefix}{literal}/images/body.jpg) repeat-x top left; width:100%;}
 
 .span-24{display: block;float:none;}
 
@@ -21,19 +28,19 @@ body {background: #ffffff url(/admin/images/body.jpg) repeat-x top left; width:1
 
 	#header ul li {
 		list-style-type: none;
-		list-style-image: url(/admin/images/listitem.png);
+		list-style-image: url({/literal}{$webserver_web_prefix}{literal}/images/listitem.png);
 	}
 
 #root {
-	background: #e7e7e7 url(/admin/images/root.jpg) repeat-x top left;
+	background: #e7e7e7 url({/literal}{$webserver_web_prefix}{literal}/images/root.jpg) repeat-x top left;
 	min-height: 150px;
 
 }
 
-	#root .container {background: transparent url(/admin/images/bottom.png) no-repeat bottom left;}
+	#root .container {background: transparent url({/literal}{$webserver_web_prefix}{literal}/images/bottom.png) no-repeat bottom left;}
 
 	#root #main {
-		background: transparent url(/admin/images/bottom_all.png) no-repeat bottom left;
+		background: transparent url({/literal}{$webserver_web_prefix}{literal}/images/bottom_all.png) no-repeat bottom left;
 		margin-bottom: 10px;
 		padding-bottom: 5px;
 	}
@@ -187,3 +194,4 @@ background-color: #c6ced8;
 	font-size:12px;
 	text-align: center;
 }
+{/literal}

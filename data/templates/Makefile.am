@@ -31,6 +31,7 @@ SMARTY_TEMPLATES =			\
 	createuser.tpl			\
 	formcontainer.tpl		\
 	admindeleted.tpl		\
+	custom.css.tpl			\
 	$(NULL)
 
 phptemplatesdir = $(smarty_templates_dir)

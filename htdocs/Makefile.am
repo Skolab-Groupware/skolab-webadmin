@@ -5,7 +5,6 @@ SUBDIRS = about user administrator addressbook images settings distributionlist 
 WSKOLAB_FILES =					\
 	index.php				\
 	logout.php				\
-	custom.css				\
 	print.css				\
 	screen.css				\
 	style.css				\
