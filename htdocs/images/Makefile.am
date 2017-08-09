@@ -29,7 +29,6 @@ WSIMAGES_FILES =				\
     logo.png					\
     MAIL.png					\
     menu.jpg					\
-    mootools.v1.11.js				\
     NOTES.png					\
     office-address-book.png			\
     phone.png					\
@@ -39,7 +38,6 @@ WSIMAGES_FILES =				\
     root.jpg					\
     skolab-webadmin-logo-login.png		\
     skolab-webadmin-logo.png			\
-    sliding-tabs.js				\
     sync.png					\
     system-users.png				\
     TASKS.png					\
