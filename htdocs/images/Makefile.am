@@ -4,7 +4,6 @@ WSIMAGES_FILES =				\
     body.jpg					\
     book2.png					\
     book.png					\
-    bottom.png					\
     codefusion.png				\
     dialog-information.png			\
     erfrakon.png				\

@@ -32,12 +32,16 @@ body {background: #ffffff url({/literal}{$webserver_web_prefix}{literal}/images/
 	}
 
 #root {
+{/literal}
+{if $uid}
+{literal}
 	background: #e7e7e7 url({/literal}{$webserver_web_prefix}{literal}/images/root.jpg) repeat-x top left;
+{/literal}
+{/if}
+{literal}
 	min-height: 150px;
 
 }
-
-	#root .container {background: transparent url({/literal}{$webserver_web_prefix}{literal}/images/bottom.png) no-repeat bottom left;}
 
 	#root #main {
 		background: transparent url({/literal}{$webserver_web_prefix}{literal}/images/bottom_all.png) no-repeat bottom left;
