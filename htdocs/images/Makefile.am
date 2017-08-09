@@ -16,7 +16,6 @@ WSIMAGES_FILES =				\
     irc.png					\
     kdab.png					\
     kde.png					\
-    kolab_logo.png				\
     kolab.png					\
     kolabsystems_logo.png			\
     line.png					\
