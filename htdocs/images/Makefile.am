@@ -20,7 +20,6 @@ WSIMAGES_FILES =				\
     irc.png					\
     kdab.png					\
     kde.png					\
-    klogo.png					\
     kolab_logo.png				\
     kolab.png					\
     kolabsystems_logo.png			\
@@ -38,6 +37,8 @@ WSIMAGES_FILES =				\
     preferences-system.png			\
     resource-group.png				\
     root.jpg					\
+    skolab-webadmin-logo-login.png		\
+    skolab-webadmin-logo.png			\
     sliding-tabs.js				\
     sync.png					\
     system-users.png				\

@@ -4,14 +4,15 @@
   buffer-file-coding-system: utf-8
   End:
 *}
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>Kolab: {$page_title}</title>
+<title>Skolab Webadmin: {$page_title}</title>
 <link rel="shortcut icon" type="image/png" href="{$webserver_web_prefix}/favicon.png" />
 <meta name="robots" content="noindex" />
-<meta name="description" content="Kolab Administration Webinterface" />
+<meta name="description" content="Skolab Administration Webinterface" />
 <meta name="keywords" content="Linux, Unix, Groupware, Email, Calendar" />
 <link rel="stylesheet" type="text/css" href="{$stylesheet|default:"$webserver_web_prefix/screen.css"}" />
 <link rel="stylesheet" type="text/css" href="{$webserver_web_prefix}/custom.css" />
@@ -29,7 +30,11 @@ function changeLanguage(combobox) {ldelim}
 <body>
 <div id="header" class="container">
 <div class="span-24">
-<h3><a href="{$skolab_webmailer_url}"><img src="{$webserver_web_prefix}/images/klogo.png" style="vertical-align:middle;" alt="logo"></a></h3>
+{if $uid}
+<h3><a href="{$skolab_webmailer_url}"><img src="{$webserver_web_prefix}/images/skolab-webadmin-logo.png" style="vertical-align:middle;" alt="Skolab Webadmin Logo"></a></h3>
+{else}
+<h3><a href="{$skolab_webmailer_url}"><img src="{$webserver_web_prefix}/images/skolab-webadmin-logo-login.png" style="vertical-align:middle;" alt="Skolab Webadmin Logo"></a></h3>
+{/if}
 <div id="menu-top">
 {if $uid}
 <img src="{$webserver_web_prefix}/images/user-icon-1-20x20.gif" width="16" style="vertical-align:middle;" title="Username" alt="username icon"> {$uid} <img src="{$webserver_web_prefix}/images/eye_pencil.png" width="16" style="vertical-align:middle;margin-left:8px;" title="Role" alt="Role icon"> {$group}
@@ -106,6 +111,6 @@ function changeLanguage(combobox) {ldelim}
 		</div><!-- .container -->
 	</div><!-- #root -->
 <div id="footer">
-This is the Community Edition of the <b>Kolab Server</b>. <br />It comes with absolutely <b>no warranties</b> and is typically run entirely self supported. You can find help & information on the community <a href="http://kolab.org">web site</a> & <a href="http://wiki.kolab.org">wiki</a>. <br />Professional support is available from <a href="http://kolabsys.com">Kolab Systems</a>.
+This is the <b>Skolab Groupware Server</b>. <br />It comes with absolutely <b>no warranties</b> and is typically run entirely self supported. You can find help & information on the community <a href="http://kolab.org">web site</a> & <a href="http://wiki.kolab.org">wiki</a>. <br />Professional support is available from <a href="https://das-netzwerkteam.de">DAS-NETZWERKTEAM</a>.
 </body>
 </html>
