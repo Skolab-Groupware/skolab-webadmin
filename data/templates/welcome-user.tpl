@@ -13,7 +13,7 @@
 <a href="{$webserver_web_prefix}/user/user.php?action=modify" class="welcomelinks"><img src="{$webserver_web_prefix}/images/preferences-system.png" border="0" alt="My settings" /><br /><b>{t}My settings{/t}</b></a>
 </td>
 <td style="text-align: center;">
-<a href="{$webserver_web_prefix}/about/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/dialog-information.png" border="0" alt="About Kolab" /><br /><b>{t}About{/t}</b></a>
+<a href="{$webserver_web_prefix}/about/" class="welcomelinks"><img src="{$webserver_web_prefix}/images/dialog-information.png" border="0" alt="About Skolab" /><br /><b>{t}About{/t}</b></a>
 </td>
 </tr></table>
 </div>

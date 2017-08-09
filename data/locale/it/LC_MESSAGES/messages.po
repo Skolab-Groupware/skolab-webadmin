@@ -114,7 +114,7 @@ msgstr ""
 "con il server Kolab è <a href=\"http://www.kolab.org/kolab-plugins.html"
 "\">tenuta sul sito web di Kolab</a>."
 
-msgid "About Kolab"
+msgid "About Skolab"
 msgstr "Informazioni su Kolab"
 
 msgid "Accept Internet Mail"

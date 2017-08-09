@@ -149,7 +149,7 @@ msgstr ""
 "Kolab-Server ermöglichen, finden Sie unter <a href=\"http://www.kolab.org/"
 "kolab-plugins.html\">auf der Kolab-Website</a>."
 
-msgid "About Kolab"
+msgid "About Skolab"
 msgstr "Über Kolab"
 
 msgid "Accept Internet Mail"

@@ -111,9 +111,9 @@ if( $auth->group() == 'admin' ) {
 								 'title' => _('System Settings') );
 }
 
-$menuitems['about'] = array( 'name' => _('About Kolab'),
+$menuitems['about'] = array( 'name' => _('About Skolab'),
 							 'url'  => $webserver_web_prefix.'/about/',
-							 'title' => _('About Kolab'),
+							 'title' => _('About Skolab'),
 							 'submenu' => array(
 												array( 'name' => _('Kolab Systems'),
 													   'url'  => 'kolabsystems.php' ),

@@ -139,7 +139,7 @@ msgstr ""
 "Kolab server zijn <a href=\"http://www.kolab.org/kolab-plugins.html\">wordt "
 "onderhouden op de Kolab website</a>."
 
-msgid "About Kolab"
+msgid "About Skolab"
 msgstr "Info over Kolab"
 
 msgid "Accept Internet Mail"

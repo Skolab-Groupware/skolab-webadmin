@@ -137,7 +137,7 @@ msgstr ""
 "a Outlook con el servidor Kolab <a href=\"http://www.kolab.org/kolab-plugins."
 "html\">mantenida en el sitio web de Kolab</a>."
 
-msgid "About Kolab"
+msgid "About Skolab"
 msgstr "Sobre Kolab"
 
 msgid "Accept Internet Mail"
