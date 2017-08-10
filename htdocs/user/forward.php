@@ -40,40 +40,43 @@ require_once('Skolab/Admin/include/menu.php');
 $menuitems[$sidx]['selected'] = 'selected';
 
 /**** Sieve handling ***/
-  $obj = $ldap->read( $auth->dn() );
-  $sieve = new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
+	$obj = $ldap->read( $auth->dn() );
+	$sieve = new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
 
-  if( $sieve->getError() ) {
-    $errors[] = _('Error while connecting to Sieve service:');
-    $errors[] = $sieve->getError();
-  // Update sieve script on server in case we have submit data
-  } else {
+	if( $sieve->getError() ) {
+		$errors[] = _('Error while connecting to Sieve service:');
+		$errors[] = $sieve->getError();
+		// Update sieve script on server in case we have submit data
+} else {
 	try {
-	  $handler = new SkolabAdmin_Sieve($sieve);
+		$handler = new SkolabAdmin_Sieve($sieve);
 
-	  if ($_REQUEST['submit']) {
-		$handler->fetchForwardSegment()->setActive($_REQUEST['active']);
-		$handler->fetchForwardSegment()->setForwardAddress($_REQUEST['address']);
-		$handler->fetchForwardSegment()->setKeepOnServer($_REQUEST['keep']);
-		$handler->store();
-		if ($_REQUEST['active']) {
-		  $messages[] = sprintf(_("Forwarding to '%s' successfully activated"), $_REQUEST['address']);
+		if ($_REQUEST['submit']) {
+			$handler->fetchForwardSegment()->setActive($_REQUEST['active']);
+			$handler->fetchForwardSegment()->setForwardAddress($_REQUEST['address']);
+			$handler->fetchForwardSegment()->setKeepOnServer($_REQUEST['keep']);
+			$handler->store();
+
+			if ($_REQUEST['active']) {
+				$messages[] = sprintf(_("Forwarding to '%s' successfully activated"), $_REQUEST['address']);
+			} else {
+				$messages[] = sprintf(_("Forwarding to '%s' successfully deactivated"), $_REQUEST['address']);
+			}
+
 		} else {
-		  $messages[] = sprintf(_("Forwarding to '%s' successfully deactivated"), $_REQUEST['address']);
+			$result = $handler->checkUnknownScript();
+			if ($result) {
+				$errors[] = sprintf(_("Warning: You currently have a sieve script named %s active for your account."), $result);
+				$errors[] = _("Warning: This script will be overwritten without further warnings if you press \"Update\"!");
+			}
 		}
-	  } else {
-		$result = $handler->checkUnknownScript();
-		if ($result) {
-		  $errors[] = sprintf(_("Warning: You currently have a sieve script named %s active for your account."), $result);
-		  $errors[] = _("Warning: This script will be overwritten without further warnings if you press \"Update\"!");
-		}
-	  }
+
 	} catch (Exception $e) {
-	  $errors[] = $e->getMessage();
-	  $errors[] = 'Script was:';
-	  $errors[] = '<pre>' . $handler->getScript() . '</pre>';
+		$errors[] = $e->getMessage();
+		$errors[] = 'Script was:';
+		$errors[] = '<pre>' . $handler->getScript() . '</pre>';
 	}
-  }
+}
 
 /**** Insert into template and output ***/
 $smarty = new MySmarty();
@@ -84,13 +87,14 @@ $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems',
-				 array_key_exists('submenu',
-								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
+                                array_key_exists('submenu',
+                                $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array()
+);
 
 if (isset($handler)) {
-    $smarty->assign( 'active', $handler->fetchForwardSegment()->isActive() );
-    $smarty->assign( 'keep', $handler->fetchForwardSegment()->getKeepOnServer() );
-    $smarty->assign( 'address', $handler->fetchForwardSegment()->getForwardAddress() );
+	$smarty->assign( 'active', $handler->fetchForwardSegment()->isActive() );
+	$smarty->assign( 'keep', $handler->fetchForwardSegment()->getKeepOnServer() );
+	$smarty->assign( 'address', $handler->fetchForwardSegment()->getForwardAddress() );
 }
 
 $smarty->assign( 'maincontent', 'forward.tpl' );

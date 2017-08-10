@@ -28,53 +28,56 @@ require_once('Skolab/Admin/include/menu.php');
 $menuitems[$sidx]['selected'] = 'selected';
 
 /**** Sieve handling ***/
-  $obj = $ldap->read( $auth->dn() );
-  $sieve = new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
-  //$sieve->setDebug(true);
+	$obj = $ldap->read( $auth->dn() );
+	$sieve = new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
 
-  if( $sieve->getError() ) {
-    $errors[] = _('Error while connecting to Sieve service:');
-    $errors[] = $sieve->getError();
-  // Update sieve script on server in case we have submit data
-  } else {
-	try {
-	  $handler = new SkolabAdmin_Sieve($sieve);
+	//$sieve->setDebug(true);
 
-	  if ($_REQUEST['submit']) {
-		$handler->fetchVacationSegment()->setActive($_REQUEST['active']);
-		$handler->fetchVacationSegment()->setDomain(trim($_REQUEST['maildomain']));
-		$handler->fetchVacationSegment()->setReactToSpam(!isset($_REQUEST['reacttospam']));
-		$handler->fetchVacationSegment()->setResendAfter($_REQUEST['days']);
-		$handler->fetchVacationSegment()->setResponse(trim($_REQUEST['text']));
+	if( $sieve->getError() ) {
+		$errors[] = _('Error while connecting to Sieve service:');
+		$errors[] = $sieve->getError();
+		// Update sieve script on server in case we have submit data
+	} else {
+		try {
+		$handler = new SkolabAdmin_Sieve($sieve);
 
-		$addresses = array_unique(array_filter(array_map('trim', preg_split('/\n/', $_REQUEST['addresses'])), 'strlen'));
-		$handler->fetchVacationSegment()->setRecipientAddresses($addresses);
+		if ($_REQUEST['submit']) {
 
-		$handler->store();
-		if ($_REQUEST['active']) {
-		  $messages[] = _('Vacation message successfully activated');
+			$handler->fetchVacationSegment()->setActive($_REQUEST['active']);
+			$handler->fetchVacationSegment()->setDomain(trim($_REQUEST['maildomain']));
+			$handler->fetchVacationSegment()->setReactToSpam(!isset($_REQUEST['reacttospam']));
+			$handler->fetchVacationSegment()->setResendAfter($_REQUEST['days']);
+			$handler->fetchVacationSegment()->setResponse(trim($_REQUEST['text']));
+
+			$addresses = array_unique(array_filter(array_map('trim', preg_split('/\n/', $_REQUEST['addresses'])), 'strlen'));
+			$handler->fetchVacationSegment()->setRecipientAddresses($addresses);
+
+			$handler->store();
+			if ($_REQUEST['active']) {
+				$messages[] = _('Vacation message successfully activated');
+			} else {
+				$messages[] = _('Vacation message successfully deactivated');
+			}
+
 		} else {
-		  $messages[] = _('Vacation message successfully deactivated');
-		}
-	  } else {
-		$result = $handler->checkUnknownScript();
-		if ($result) {
-		  $errors[] = sprintf(_("Warning: You currently have a sieve script named %s active for your account."), $result);
-		  $errors[] = _("Warning: This script will be overwritten without further warnings if you press \"Update\"!");
-		}
+			$result = $handler->checkUnknownScript();
+			if ($result) {
+				$errors[] = sprintf(_("Warning: You currently have a sieve script named %s active for your account."), $result);
+				$errors[] = _("Warning: This script will be overwritten without further warnings if you press \"Update\"!");
+			}
 
-		$addresses = $handler->fetchVacationSegment()->getRecipientAddresses();
-		if (empty($addresses)) {
-		  $object = $ldap->read($auth->dn());
-		  $addresses = array_merge((array) $object['mail'], (array) $object['alias']);
+			$addresses = $handler->fetchVacationSegment()->getRecipientAddresses();
+			if (empty($addresses)) {
+				$object = $ldap->read($auth->dn());
+				$addresses = array_merge((array) $object['mail'], (array) $object['alias']);
+			}
 		}
-	  }
 	} catch (Exception $e) {
-	  $errors[] = $e->getMessage();
-	  $errors[] = 'Script was:';
-	  $errors[] = '<pre>' . $handler->getScript() . '</pre>';
+		$errors[] = $e->getMessage();
+		$errors[] = 'Script was:';
+		$errors[] = '<pre>' . $handler->getScript() . '</pre>';
 	}
-  }
+}
 
 /**** Insert into template and output ***/
 $smarty = new MySmarty();
@@ -85,15 +88,15 @@ $smarty->assign( 'group', $auth->group() );
 $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems',
-				 array_key_exists('submenu',
-								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
+                                 array_key_exists('submenu',
+                                 $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 if (isset($handler)) {
-    $smarty->assign( 'active', $handler->fetchVacationSegment()->isActive() );
-    $smarty->assign( 'text', $handler->fetchVacationSegment()->getResponse() );
-    $smarty->assign( 'addresses', $addresses );
-    $smarty->assign( 'maildomain', $handler->fetchVacationSegment()->getDomain() );
-    $smarty->assign( 'reacttospam', !$handler->fetchVacationSegment()->getReactToSpam() );
-    $smarty->assign( 'days', $handler->fetchVacationSegment()->getResendAfter() );
+	$smarty->assign( 'active', $handler->fetchVacationSegment()->isActive() );
+	$smarty->assign( 'text', $handler->fetchVacationSegment()->getResponse() );
+	$smarty->assign( 'addresses', $addresses );
+	$smarty->assign( 'maildomain', $handler->fetchVacationSegment()->getDomain() );
+	$smarty->assign( 'reacttospam', !$handler->fetchVacationSegment()->getReactToSpam() );
+	$smarty->assign( 'days', $handler->fetchVacationSegment()->getResendAfter() );
 }
 
 $smarty->assign( 'maincontent', 'vacation.tpl' );
