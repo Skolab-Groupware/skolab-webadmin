@@ -24,7 +24,7 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
   else $lastname = $ldap_object['sn'];
   if (is_array($ldap_object['cn'])) $cn = $ldap_object['cn'][0];
   else $cn = $ldap_object['cn'];
-  $firstname = KolabLDAP::getGivenName($cn, $lastname);
+  $firstname = SkolabLDAP::getGivenName($cn, $lastname);
   if (is_array($ldap_object['mail'])) $mail_0 = $ldap_object['mail'][0];
   else $mail_0 = $ldap_object['mail'];
   $form->entries['firstname']['value'] = $firstname;

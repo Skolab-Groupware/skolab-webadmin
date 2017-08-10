@@ -272,7 +272,7 @@ function fill_form_for_modify( &$form, $dn, &$ldap_object ) {
   else $sn = $ldap_object['sn'];
   if (is_array($ldap_object['cn'])) $cn = $ldap_object['cn'][0];
   else $cn = $ldap_object['cn'];
-  if ($cn && $sn) $givenname = KolabLDAP::getGivenName($cn, $sn);
+  if ($cn && $sn) $givenname = SkolabLDAP::getGivenName($cn, $sn);
   if (is_array($ldap_object['initials'])) $initials = $ldap_object['initials'][0];
   else $initials = $ldap_object['initials'];
   if (is_array($ldap_object['mail'])) $mail = $ldap_object['mail'][0];

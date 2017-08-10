@@ -142,7 +142,7 @@ if( !$errors ) {
 		$mail = $attrs['mail'][0];
 		$sn = $attrs['sn'][0];
 		$cn = $attrs['cn'][0];
-		$fn = KolabLDAP::getGivenName($cn, $sn);
+		$fn = SkolabLDAP::getGivenName($cn, $sn);
 		$dncomp = preg_split( '/,/', $dn );
 		if( in_array('cn=groups',$dncomp) ) {
 		  $type = 'G';

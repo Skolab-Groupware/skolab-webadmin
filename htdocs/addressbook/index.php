@@ -98,7 +98,7 @@ if( !$errors ) {
 		$mail = $attrs['mail'][0];
 		$sn = $attrs['sn'][0];
 		$cn = $attrs['cn'][0];
-		$fn = KolabLDAP::getGivenName($cn, $sn);
+		$fn = SkolabLDAP::getGivenName($cn, $sn);
 		$entries[] = array( 'dn' => $dn,
 							'sn' => $sn,
 							'fn' => $fn,

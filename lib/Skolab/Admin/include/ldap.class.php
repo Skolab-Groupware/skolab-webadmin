@@ -40,7 +40,7 @@ function str_rand($length = 8, $seeds = 'abcdefghijklmnopqrstuvwxyz0123456789') 
      return $str;
  }
 
-$ldap = new KolabLDAP;
+$ldap = new SkolabLDAP;
 
 /*
   Local variables:

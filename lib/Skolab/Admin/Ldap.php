@@ -20,7 +20,7 @@
 
 require_once('Skolab/Admin/include/session_vars.php');
 
-class KolabLDAP {
+class SkolabLDAP {
   function __construct() {
     $this->is_bound = false;
     $this->bind_dn = false;
@@ -91,7 +91,7 @@ class KolabLDAP {
 	  $val = str_replace('=',    '\=', $val);
 
 	  // ASCII < 32 escaping
-	  $val = KolabLDAP::asc2hex32($val);
+	  $val = SkolabLDAP::asc2hex32($val);
 
 	  // Convert all leading and trailing spaces to sequences of \20.
 	  if (preg_match('/^(\s*)(.+?)(\s*)$/', $val, $matches)) {
@@ -138,7 +138,7 @@ class KolabLDAP {
 	  $val = str_replace('\#',    '#', $val);
 	  $val = str_replace('\=',    '=', $val);
 
-	  return KolabLDAP::hex2asc($val);
+	  return SkolabLDAP::hex2asc($val);
   }
 
   // Taken from PEAR_Net_LDAP2
@@ -410,7 +410,7 @@ class KolabLDAP {
 	if( $excludedn ) {
 	  for ( $i = 0; $i < count( $entries ); $i++ ) {
 		if( !isset($entries[$i]) || is_null( $entries[$i] ) ) continue;
-		if( KolabLDAP::unescape_dn_value($entries[$i]['dn']) == KolabLDAP::unescape_dn_value($excludedn) ) continue;
+		if( SkolabLDAP::unescape_dn_value($entries[$i]['dn']) == SkolabLDAP::unescape_dn_value($excludedn) ) continue;
 		debug("found ".$entries[$i]['dn'] );
 		$count++;
 	  }

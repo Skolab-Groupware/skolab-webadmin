@@ -30,7 +30,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 /**** Extract data from LDAP ***/
 
 function prepare_domain_filter_component($str) {
-  return '(cn=*@'.KolabLDAP::escape($str).')';
+  return '(cn=*@'.SkolabLDAP::escape($str).')';
 }
 
 // Get all entries & dynamically split the letters with growing entries

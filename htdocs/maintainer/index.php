@@ -82,7 +82,7 @@ if( !$errors ) {
 		$uid = $attrs['uid'][0];
 		$sn = $attrs['sn'][0];
 		$cn = $attrs['cn'][0];
-		$fn = KolabLDAP::getGivenName($cn, $sn);
+		$fn = SkolabLDAP::getGivenName($cn, $sn);
 		// skip admins and maintainers
 		if( array_key_exists( $dn, $maintainers ) ) {
 		  $entries[] = array( 'dn' => $dn,
