@@ -139,7 +139,7 @@ if( $action == 'modify' || $action == 'delete' || $action == 'kill' ) {
   }
 }
 
-$form = new KolabForm( 'vcard', 'createaddr.tpl', $entries );
+$form = new SkolabForm( 'vcard', 'createaddr.tpl', $entries );
 
 if( !$errors ) {
   switch( $action ) {

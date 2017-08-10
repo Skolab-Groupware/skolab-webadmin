@@ -55,7 +55,7 @@ function checkphone( $form, $key, $value )
 	else return '';
 }
 
-class KolabForm {
+class SkolabForm {
   /*
    * $entries should be an array of the form:
    * array( "fieldname" => array( "name" => "uservisible text",
@@ -81,7 +81,7 @@ class KolabForm {
   }
 
   /*
-   * this function will be called if an instance of KolabForm will be treated
+   * this function will be called if an instance of SkolabForm will be treated
    * as a string
    */
   function __toString() {
@@ -141,7 +141,7 @@ class KolabForm {
 	  $str .= '<td><input name="'.$key.'" id="'.$key.'" type="'.$value['type'].'" value="'.MySmarty::htmlentities($value['value']).'" '
 	    .MySmarty::htmlentities($value['attrs']).' size="'.$size.'" /></td>';
 	}
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       case 'email':
@@ -175,14 +175,14 @@ class KolabForm {
 	    $str .= '</td>';
 	  }
 	}
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       case 'comment':
 	$str .= '<tr>';
 	$str .= '<td>'.$value['name'].'</td>';
 	$str .= '<td>'.$value['value'].'</td>';
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       case 'textarea':
@@ -194,7 +194,7 @@ class KolabForm {
 	  $str .= '<td><label for="'.$key.'">'.$value['name'].'</label></td>';
 	  $str .= '<td><textarea name="'.$key.'" id="'.$key.'" rows="5" cols="'.$size.'" '.$value['attrs'].' onkeypress="javascript:textareakeypress()">'.MySmarty::htmlentities($value['value']).'</textarea></td>';
 	}
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       case 'checkbox':
@@ -206,7 +206,7 @@ class KolabForm {
 	  $str .= '<td><label for="'.$key.'">'.$value['name'].'</label></td>';
 	  $str .= '<td><input name="'.$key.'" id="'.$key.'" type="'.$value['type'].'" value="on" '.($value['value']?'checked':'').' '.$value['attrs'].' /></td>';
 	}
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       case 'checklist':
@@ -246,7 +246,7 @@ class KolabForm {
 	  $str .= '</select>';
 	  $str .= '</td>';
 	}
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       case 'foldertypeselect':
@@ -304,7 +304,7 @@ class KolabForm {
 	  $str .= '</select>';
 	  $str .= '</td>';
 	}
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       case 'resourcepolicy': // Special Kolab entry for group/resource policies
@@ -354,7 +354,7 @@ class KolabForm {
 	  }
 	}
 	$str .= '</table></td>';
-	$str .= '<td>'.KolabForm::comment_helper($value).'</td>';
+	$str .= '<td>'.SkolabForm::comment_helper($value).'</td>';
 	$str .= '</tr>'."\n";
 	break;
       }
@@ -386,7 +386,7 @@ class KolabForm {
 	foreach( $va as $v ) {
 	  //print "validating using $v <br/>";
 	  if( $v == 'notempty' ) {
-	    debug("checking nonemptiness of $key: ".KolabForm::getRequestVar($key)." len=".strlen(trim(KolabForm::getRequestVar($key))));
+	    debug("checking nonemptiness of $key: ".SkolabForm::getRequestVar($key)." len=".strlen(trim(SkolabForm::getRequestVar($key))));
 	    if( $value['type'] == 'aclselect' ) {
 	      // ignore
 	    } else if( $value['type'] == 'email' ) {

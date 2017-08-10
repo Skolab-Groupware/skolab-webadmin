@@ -55,9 +55,9 @@ if( !$errors ) {
 
 
   $userfilter = "uid=*";
-  $filterattr = KolabForm::getRequestVar('filterattr');
-  $filtertype = KolabForm::getRequestVar('filtertype');
-  $filtervalue = KolabForm::getRequestVar('filtervalue');
+  $filterattr = SkolabForm::getRequestVar('filterattr');
+  $filtertype = SkolabForm::getRequestVar('filtertype');
+  $filtervalue = SkolabForm::getRequestVar('filtervalue');
   if( !in_array( $filterattr, array( 'cn', 'uid', 'mail' ) ) ) $filterattr = 'cn';
   if( isset( $filtervalue ) && !empty( $filtervalue ) ) {
 	switch( $filtertype ) {

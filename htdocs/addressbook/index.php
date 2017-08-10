@@ -42,9 +42,9 @@ if( !$errors ) {
   if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
   else $base_dn = 'k=kolab';
   $userfilter = "cn=*";
-  $filterattr = KolabForm::getRequestVar('filterattr');
-  $filtertype = KolabForm::getRequestVar('filtertype');
-  $filtervalue = KolabForm::getRequestVar('filtervalue');
+  $filterattr = SkolabForm::getRequestVar('filterattr');
+  $filtertype = SkolabForm::getRequestVar('filtertype');
+  $filtervalue = SkolabForm::getRequestVar('filtervalue');
   if( !in_array( $filterattr, array( 'cn', 'mail' ) ) ) $filterattr = 'cn';
   if( isset( $filtervalue ) && !empty( $filtervalue ) ) {
 	switch( $filtertype ) {

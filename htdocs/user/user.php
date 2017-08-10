@@ -553,7 +553,7 @@ if( $dn ) {
 if( $auth->group() == 'user' ) {
   apply_attributeaccess( $entries );
 }
-$form = new KolabForm( 'user', 'createuser.tpl', $entries );
+$form = new SkolabForm( 'user', 'createuser.tpl', $entries );
 /***************** Main action switch **********************/
 switch( $action ) {
  case 'firstsave':
