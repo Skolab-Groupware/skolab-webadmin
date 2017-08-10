@@ -1,13 +1,8 @@
 NULL =
 
 WSABOUT_FILES =				\
-	erfrakon.php			\
 	index.php			\
-	intevation.php			\
-	codefusion.php			\
-	kdab.php			\
-	kde.php				\
-	kolabsystems.php		\
+	skolabgroupware.php		\
 	technology.php			\
 	versions.php			\
 	$(NULL)

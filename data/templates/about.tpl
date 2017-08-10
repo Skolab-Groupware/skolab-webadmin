@@ -18,7 +18,7 @@ Software</a> Personal Information Management (PIM) solution developed by
 {t escape=no}
 The project was derived from an old version (v2) of the Kolab Groupware
 starting in 2017 at the Debian Conference in Montreal. Good and working
-solutions must be sustained, so we started working the contiuation of
+solutions must be sustained, so we started working on the contiuation of
 Kolab v2 under a slightly different name: Skolab Groupware.
 {/t}
 </p>
@@ -50,10 +50,12 @@ There is a wide variety of reasons why Skolab should be your choice. Here are on
  <li>{t}your users should be fully productive whether they are on- or offline{/t}</li>
  <li>{t}you want the flexibility to create solutions for your specialised needs{/t}</li>
  <li>{t}you want Free Software/Open Source, but also want the professional support without having to resort to proprietary lock-in{/t}</li>
+ <li>{t}you want a slim solution, that is +/- feature complete and not resource hungry on your server{/t}</li>
 </ul>
 
 <h2>{t}More Information{/t}</h2>
 <ul>
+ <li><a href="https://github.com/Skolab-Groupware">{t}Skolab Groupware Project on Github (Source Code / Development){/t}</a></li>
  <li><a href="https://das-netzwerkteam.de/site/?q=node/87">{t}Skolab Groupware Development at DAS-NETZWERKTEAM{/t}</a></li>
 </ul>
 
@@ -67,7 +69,7 @@ The Skolab Groupware Server is 100% Free Software. It is provided by DAS-NETZWER
 
 <p>
 {t escape=no 1="https://das-netzwerkteam.de"}
-There is a wide variety of commercial support optionsand warranties imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact us.
+There is a wide variety of commercial support options and warranties imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact us.
 {/t}
 </p>
 
