@@ -126,7 +126,7 @@ class KolabAuth {
 		$smarty->assign( 'group', '' );
 		$smarty->assign( 'errors', array() );
 		$smarty->assign( 'messages', array() );
-		$smarty->assign( 'page_title', _('Kolab Groupware login') );
+		$smarty->assign( 'page_title', _('Skolab Groupware Login') );
 		$smarty->assign( 'menuitems', array() );
 		$smarty->assign( 'submenuitems', array() );
 		if( $this->error() ) $smarty->assign( 'errors', array( $this->error() ) );
