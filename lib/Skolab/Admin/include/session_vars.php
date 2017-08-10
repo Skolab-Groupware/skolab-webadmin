@@ -20,7 +20,7 @@ require_once('config.php');
 
 @session_start();
 
-$_SESSION['fqdnhostname'] = "kolabserver.example.com";
+$_SESSION['fqdnhostname'] = "skolabserver.example.com";
 $_SESSION['ldap_master_uri'] = "ldap://127.0.0.1:389";
 $_SESSION['base_dn'] = "dc=example,dc=com";
 $_SESSION['php_dn'] = "cn=nobody,cn=internal,dc=example,dc=com";
@@ -38,12 +38,12 @@ $params = array();
 $params['http_protocol'] = 'http';
 
 /*
- * URL to the SKolab Webadmin Tool
+ * URL to the Skolab Webadmin Tool
  */
 $params['skolab_webadmin_url'] = $params['http_protocol'].'://'.$_SESSION['fqdnhostname'].'/'.$webserver_web_prefix;
 
 /*
- * URL to the Kolab Webmailer
+ * URL to the Skolab (i.e. Horde) Webmailer
  */
 $params['skolab_webmailer_url'] = $params['http_protocol'].'://'.$_SESSION['fqdnhostname'];
 
