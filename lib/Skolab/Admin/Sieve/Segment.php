@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
  * @link     http://www.kolab.org
@@ -21,12 +21,12 @@
  * http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
  * @link     http://www.kolab.org
  */
-abstract class KolabAdmin_Sieve_Segment
+abstract class SkolabAdmin_Sieve_Segment
 {
     /**
      * The segment type

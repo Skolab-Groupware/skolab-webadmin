@@ -5,10 +5,10 @@
  * PHP version 5
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
 
 ini_set('include_path', dirname(__FILE__) . '/../../lib' . PATH_SEPARATOR . ini_get('include_path'));

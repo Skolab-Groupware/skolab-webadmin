@@ -1,18 +1,18 @@
 <?php
 /**
- * All tests for the KolabAdmin application.
+ * All tests for the SkolabAdmin application.
  *
  * PHP version 5
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
 
 if (!defined('PHPUnit_MAIN_METHOD')) {
-    define('PHPUnit_MAIN_METHOD', 'KolabAdmin_AllTests::main');
+    define('PHPUnit_MAIN_METHOD', 'SkolabAdmin_AllTests::main');
 }
 
 /**
@@ -24,12 +24,12 @@ if (!defined('PHPUnit_MAIN_METHOD')) {
  * did not receive this file, see http://www.fsf.org/copyleft/lgpl.html.
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
-class KolabAdmin_AllTests
+class SkolabAdmin_AllTests
 {
     /**
      * Main entry point for running the suite.
@@ -52,7 +52,7 @@ class KolabAdmin_AllTests
         //error_reporting(E_ALL | E_STRICT);
 
         // Build the suite
-        $suite = new PHPUnit_Framework_TestSuite('KolabAdmin');
+        $suite = new PHPUnit_Framework_TestSuite('SkolabAdmin');
 
         $basedir = dirname(__FILE__);
         $baseregexp = preg_quote($basedir . DIRECTORY_SEPARATOR, '/');
@@ -64,7 +64,7 @@ class KolabAdmin_AllTests
 
                 $class = str_replace(DIRECTORY_SEPARATOR, '_',
                                      preg_replace("/^$baseregexp(.*)\.php/", '\\1', $pathname));
-                $suite->addTestSuite('KolabAdmin_' . $class);
+                $suite->addTestSuite('SkolabAdmin_' . $class);
             }
         }
 
@@ -73,6 +73,6 @@ class KolabAdmin_AllTests
 
 }
 
-if (PHPUnit_MAIN_METHOD == 'KolabAdmin_AllTests::main') {
-    KolabAdmin_AllTests::main();
+if (PHPUnit_MAIN_METHOD == 'SkolabAdmin_AllTests::main') {
+    SkolabAdmin_AllTests::main();
 }

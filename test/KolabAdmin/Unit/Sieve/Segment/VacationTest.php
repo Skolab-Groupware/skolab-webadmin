@@ -5,10 +5,10 @@
  * PHP version 5
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
 
 /**
@@ -25,23 +25,23 @@ require_once dirname(__FILE__) . '/../../../Autoload.php';
  * did not receive this file, see http://www.fsf.org/copyleft/lgpl.html.
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
-class KolabAdmin_Unit_Sieve_Segment_VacationTest extends PHPUnit_Framework_TestCase
+class SkolabAdmin_Unit_Sieve_Segment_VacationTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
         $this->sieve = $this->getMock('Net_Sieve');
-        $this->manager = new KolabAdmin_Sieve($this->sieve);
+        $this->manager = new SkolabAdmin_Sieve($this->sieve);
     }
 
     public function testSieveHandlerAllowsFetchingVacationSegment()
     {
         $this->assertType(
-            'KolabAdmin_Sieve_Segment_Vacation',
+            'SkolabAdmin_Sieve_Segment_Vacation',
             $this->manager->fetchVacationSegment()
         );
     }

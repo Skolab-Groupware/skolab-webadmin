@@ -49,7 +49,7 @@ $menuitems[$sidx]['selected'] = 'selected';
   // Update sieve script on server in case we have submit data
   } else {
 	try {
-	  $handler = new KolabAdmin_Sieve($sieve);
+	  $handler = new SkolabAdmin_Sieve($sieve);
 
 	  if ($_REQUEST['submit']) {
 		$handler->fetchForwardSegment()->setActive($_REQUEST['active']);

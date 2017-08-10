@@ -18,7 +18,7 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-class KolabAdmin_Sieve_Script {
+class SkolabAdmin_Sieve_Script {
 
     // Funny multiline string escaping in Sieve
     static function dotstuff( $str ) {
@@ -79,7 +79,7 @@ class KolabAdmin_Sieve_Script {
         if( preg_match("/text:(.*\r\n)\\.\r\n/s", $script, $regs ) ) {
             $text = $regs[1];
             $text = str_replace( '\n', "\r\n", $text );
-            $text = KolabAdmin_Sieve_Script::undotstuff($text);
+            $text = SkolabAdmin_Sieve_Script::undotstuff($text);
         }
         return $text;
     }
@@ -97,14 +97,14 @@ class KolabAdmin_Sieve_Script {
     }
 
     static function getScriptInfo($script) {
-        return array('maildomain'        => KolabAdmin_Sieve_Script::getMailDomain($script),
-                     'vacationaddresses' => KolabAdmin_Sieve_Script::getVacationAddresses($script),
-                     'days'              => KolabAdmin_Sieve_Script::getVacationDays($script),
-                     'reacttospam'       => KolabAdmin_Sieve_Script::getReactToSpam($script),
-                     'vacationtext'      => KolabAdmin_Sieve_Script::getVacationText($script),
-                     'vacationenabled'   => KolabAdmin_Sieve_Script::isVacationEnabled($script),
-                     'deliveryfolder'    => KolabAdmin_Sieve_Script::getDeliverFolder($script),
-                     'deliveryenabled'   => KolabAdmin_Sieve_Script::isDeliveryEnabled($script));
+        return array('maildomain'        => SkolabAdmin_Sieve_Script::getMailDomain($script),
+                     'vacationaddresses' => SkolabAdmin_Sieve_Script::getVacationAddresses($script),
+                     'days'              => SkolabAdmin_Sieve_Script::getVacationDays($script),
+                     'reacttospam'       => SkolabAdmin_Sieve_Script::getReactToSpam($script),
+                     'vacationtext'      => SkolabAdmin_Sieve_Script::getVacationText($script),
+                     'vacationenabled'   => SkolabAdmin_Sieve_Script::isVacationEnabled($script),
+                     'deliveryfolder'    => SkolabAdmin_Sieve_Script::getDeliverFolder($script),
+                     'deliveryenabled'   => SkolabAdmin_Sieve_Script::isDeliveryEnabled($script));
     }
 
     static function isDeliveryEnabled($script) {
@@ -135,7 +135,7 @@ class KolabAdmin_Sieve_Script {
             "if allof (".join(",\r\n",$tests).") {\r\n".
             "  vacation :addresses [ \"".join('", "', $scriptinfo['vacationaddresses'] )."\" ] :days ".
             $scriptinfo['days']." text:\r\n".
-            KolabAdmin_Sieve_Script::dotstuff(trim($scriptinfo['vacationtext']))."\r\n.\r\n;\r\n}\r\n";
+            SkolabAdmin_Sieve_Script::dotstuff(trim($scriptinfo['vacationtext']))."\r\n.\r\n;\r\n}\r\n";
         if($scriptinfo['deliveryfolder']) {
             if($scriptinfo['deliveryenabled']) {
                 $script .= "if allof (true, ## delivery enabled\r\n";

@@ -5,10 +5,10 @@
  * PHP version 5
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
 
 /**
@@ -25,12 +25,12 @@ require_once dirname(__FILE__) . '/../../../lib/Skolab/Admin/Ldap.php';
  * did not receive this file, see http://www.fsf.org/copyleft/lgpl.html.
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
-class KolabAdmin_Unit_BaseTest extends PHPUnit_Framework_TestCase
+class SkolabAdmin_Unit_BaseTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
@@ -96,7 +96,7 @@ class KolabAdmin_Unit_BaseTest extends PHPUnit_Framework_TestCase
             $this->ldap->countMail(
                 $_SESSION['base_dn'],
                 'kolabadmin.test.,=,@' . $_SESSION['fqdnhostname'],
-                'cn=' . $this->ldap->dn_escape('KolabAdmin TestUser,=,') . ',' . $_SESSION['base_dn']
+                'cn=' . $this->ldap->dn_escape('SkolabAdmin TestUser,=,') . ',' . $_SESSION['base_dn']
             )
         );
     }
@@ -117,7 +117,7 @@ class KolabAdmin_Unit_BaseTest extends PHPUnit_Framework_TestCase
 
     private function _getTestUser($id = null)
     {
-        $cn = 'KolabAdmin TestUser' . $id;
+        $cn = 'SkolabAdmin TestUser' . $id;
         return array(
             'dn' => 'cn=' . $this->ldap->dn_escape($cn) . ',' . $_SESSION['base_dn'],
             'attributes' => array(
@@ -127,7 +127,7 @@ class KolabAdmin_Unit_BaseTest extends PHPUnit_Framework_TestCase
                 'userPassword' => 'test',
                 'sn'           => 'TestUser' . $id,
                 'cn'           => $cn,
-                'givenName'    => 'KolabAdmin',
+                'givenName'    => 'SkolabAdmin',
                 'mail'         => 'kolabadmin.test.' . $id . '@' . $_SESSION['fqdnhostname'],
                 'uid'          => 'kolabadmin.test.' . $id,
             )

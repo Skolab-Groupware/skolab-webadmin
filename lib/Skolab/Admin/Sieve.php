@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
  * @link     http://www.kolab.org
@@ -21,12 +21,12 @@
  * http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
  * @link     http://www.kolab.org
  */
-class KolabAdmin_Sieve
+class SkolabAdmin_Sieve
 {
 
     const SCRIPT = 'kolab.siv';
@@ -70,7 +70,7 @@ class KolabAdmin_Sieve
                     );
                 } else {
                     if (in_array(self::OLD_SCRIPT_DELIVERY, $scripts)) {
-                        $this->_segments['delivery'] = new KolabAdmin_Sieve_Segment_Delivery(
+                        $this->_segments['delivery'] = new SkolabAdmin_Sieve_Segment_Delivery(
                             $this->_sieve->getScript(self::OLD_SCRIPT_DELIVERY)
                         );
                         if ($this->_sieve->getActive() == self::OLD_SCRIPT_DELIVERY) {
@@ -78,7 +78,7 @@ class KolabAdmin_Sieve
                         }
                     }
                     if (in_array(self::OLD_SCRIPT_FORWARD, $scripts)) {
-                        $this->_segments['forward'] = new KolabAdmin_Sieve_Segment_Forward(
+                        $this->_segments['forward'] = new SkolabAdmin_Sieve_Segment_Forward(
                             $this->_sieve->getScript(self::OLD_SCRIPT_FORWARD)
                         );
                         if ($this->_sieve->getActive() == self::OLD_SCRIPT_FORWARD) {
@@ -86,7 +86,7 @@ class KolabAdmin_Sieve
                         }
                     }
                     if (in_array(self::OLD_SCRIPT_VACATION, $scripts)) {
-                        $this->_segments['vacation'] = new KolabAdmin_Sieve_Segment_Vacation(
+                        $this->_segments['vacation'] = new SkolabAdmin_Sieve_Segment_Vacation(
                             $this->_sieve->getScript(self::OLD_SCRIPT_VACATION)
                         );
                         if ($this->_sieve->getActive() == self::OLD_SCRIPT_VACATION) {
@@ -96,13 +96,13 @@ class KolabAdmin_Sieve
                 }
             }
             if (!isset($this->_segments['delivery'])) {
-                $this->_segments['delivery'] = new KolabAdmin_Sieve_Segment_Delivery();
+                $this->_segments['delivery'] = new SkolabAdmin_Sieve_Segment_Delivery();
             }
             if (!isset($this->_segments['forward'])) {
-                $this->_segments['forward'] = new KolabAdmin_Sieve_Segment_Forward();
+                $this->_segments['forward'] = new SkolabAdmin_Sieve_Segment_Forward();
             }
             if (!isset($this->_segments['vacation'])) {
-                $this->_segments['vacation'] = new KolabAdmin_Sieve_Segment_Vacation();
+                $this->_segments['vacation'] = new SkolabAdmin_Sieve_Segment_Vacation();
             }
         }
     }
@@ -115,7 +115,7 @@ class KolabAdmin_Sieve
             preg_match('/### SEGMENT START ([^# ]*) ?(ENABLED)?/s', $match, $id);
             if (!empty($id[1])) {
                 $type = strtolower($id[1]);
-                $class = 'KolabAdmin_Sieve_Segment_' . ucfirst($type);
+                $class = 'SkolabAdmin_Sieve_Segment_' . ucfirst($type);
                 if (!isset($id[2])) {
                     $match = preg_replace('/^#/m', '', $match);
                 }

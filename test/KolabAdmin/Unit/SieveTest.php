@@ -5,10 +5,10 @@
  * PHP version 5
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
 
 /**
@@ -25,38 +25,38 @@ require_once dirname(__FILE__) . '/../Autoload.php';
  * did not receive this file, see http://www.fsf.org/copyleft/lgpl.html.
  *
  * @category Kolab
- * @package  KolabAdmin
+ * @package  SkolabAdmin
  * @author   Gunnar Wrobel <wrobel@pardus.de>
  * @license  http://www.fsf.org/copyleft/lgpl.html LGPL
- * @link     http://pear.horde.org/index.php?package=KolabAdmin
+ * @link     http://pear.horde.org/index.php?package=SkolabAdmin
  */
-class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
+class SkolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
 {
     public function testMultiLineDotEscaping()
     {
-        $this->assertEquals("abc\n..xyz", KolabAdmin_Sieve_Script::dotstuff("abc\n.xyz"));
+        $this->assertEquals("abc\n..xyz", SkolabAdmin_Sieve_Script::dotstuff("abc\n.xyz"));
     }
 
     public function testMultiLineDotUnscaping()
     {
-        $this->assertEquals("abc\n.xyz", KolabAdmin_Sieve_Script::undotstuff("abc\n..xyz"));
+        $this->assertEquals("abc\n.xyz", SkolabAdmin_Sieve_Script::undotstuff("abc\n..xyz"));
     }
 
     public function testGetDeliveryFolder()
     {
-        $this->assertEquals('Test', KolabAdmin_Sieve_Script::getDeliverFolder($this->_getScript()));
+        $this->assertEquals('Test', SkolabAdmin_Sieve_Script::getDeliverFolder($this->_getScript()));
     }
 
     public function testEmptyDeliveryFolder()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getDeliverFolder(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getDeliverFolder(''));
     }
 
     public function testGetVacationAddresses()
     {
         $this->assertEquals(
             array('a@example.com', 'b@example.com'),
-            KolabAdmin_Sieve_Script::getVacationAddresses($this->_getScript())
+            SkolabAdmin_Sieve_Script::getVacationAddresses($this->_getScript())
         );
     }
 
@@ -64,7 +64,7 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals(
             array('a@example.com'),
-            KolabAdmin_Sieve_Script::getVacationAddresses(
+            SkolabAdmin_Sieve_Script::getVacationAddresses(
                 'vacation :addresses [a@example.com]'
             )
         );
@@ -72,87 +72,87 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
 
     public function testEmptyVacationAddresses()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getVacationAddresses(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getVacationAddresses(''));
     }
 
     public function testGetMailDomain()
     {
-        $this->assertEquals('example.org', KolabAdmin_Sieve_Script::getMailDomain($this->_getScript()));
+        $this->assertEquals('example.org', SkolabAdmin_Sieve_Script::getMailDomain($this->_getScript()));
     }
 
     public function testEmptyMailDomain()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getMailDomain(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getMailDomain(''));
     }
 
     public function testGetReactToSpam()
     {
-        $this->assertTrue(KolabAdmin_Sieve_Script::getReactToSpam($this->_getScript()));
+        $this->assertTrue(SkolabAdmin_Sieve_Script::getReactToSpam($this->_getScript()));
     }
 
     public function testEmptyReactToSpam()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getReactToSpam(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getReactToSpam(''));
     }
 
     public function testGetVacationDays()
     {
-        $this->assertEquals(60, KolabAdmin_Sieve_Script::getVacationDays($this->_getScript()));
+        $this->assertEquals(60, SkolabAdmin_Sieve_Script::getVacationDays($this->_getScript()));
     }
 
     public function testEmptyVacationDays()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getVacationDays(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getVacationDays(''));
     }
 
     public function testGetVacationText()
     {
-        $this->assertEquals("\r\nI'm on vacation\r\n", KolabAdmin_Sieve_Script::getVacationText($this->_getScript()));
+        $this->assertEquals("\r\nI'm on vacation\r\n", SkolabAdmin_Sieve_Script::getVacationText($this->_getScript()));
     }
 
     public function testEmptyVacationText()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getVacationText(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getVacationText(''));
     }
 
     public function testGetForwardAddress()
     {
-        $this->assertEquals("test@example.com", KolabAdmin_Sieve_Script::getForwardAddress($this->_getScript()));
+        $this->assertEquals("test@example.com", SkolabAdmin_Sieve_Script::getForwardAddress($this->_getScript()));
     }
 
     public function testEmptyForwardAddress()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getForwardAddress(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getForwardAddress(''));
     }
 
     public function testGetKeepOnServer()
     {
-        $this->assertTrue(KolabAdmin_Sieve_Script::getKeepOnServer($this->_getScript()));
+        $this->assertTrue(SkolabAdmin_Sieve_Script::getKeepOnServer($this->_getScript()));
     }
 
     public function testEmptyKeepOnServer()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::getKeepOnServer(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::getKeepOnServer(''));
     }
 
     public function testIsDeliveryEnabled()
     {
-        $this->assertTrue(KolabAdmin_Sieve_Script::isDeliveryEnabled($this->_getScript()));
+        $this->assertTrue(SkolabAdmin_Sieve_Script::isDeliveryEnabled($this->_getScript()));
     }
 
     public function testDeliveryNotEnables()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::isDeliveryEnabled(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::isDeliveryEnabled(''));
     }
 
     public function testIsVacationEnabled()
     {
-        $this->assertTrue(KolabAdmin_Sieve_Script::isVacationEnabled($this->_getScript()));
+        $this->assertTrue(SkolabAdmin_Sieve_Script::isVacationEnabled($this->_getScript()));
     }
 
     public function testVacationNotEnables()
     {
-        $this->assertFalse(KolabAdmin_Sieve_Script::isVacationEnabled(''));
+        $this->assertFalse(SkolabAdmin_Sieve_Script::isVacationEnabled(''));
     }
 
     public function testGetScriptInfo()
@@ -168,7 +168,7 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
                 'deliveryfolder'    => 'Test',
                 'deliveryenabled'   => true
             ),
-            KolabAdmin_Sieve_Script::getScriptInfo($this->_getScript())
+            SkolabAdmin_Sieve_Script::getScriptInfo($this->_getScript())
         );
     }
 
@@ -185,7 +185,7 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
                 'deliveryfolder'    => false,
                 'deliveryenabled'   => false
             ),
-            KolabAdmin_Sieve_Script::getScriptInfo('')
+            SkolabAdmin_Sieve_Script::getScriptInfo('')
         );
     }
 
@@ -193,7 +193,7 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals(
             $this->_getScript2(),
-            KolabAdmin_Sieve_Script::createScript(
+            SkolabAdmin_Sieve_Script::createScript(
                 array(
                     'maildomain'        => 'example.org',
                     'vacationaddresses' => array('a@example.com', 'b@example.com'),
@@ -222,8 +222,8 @@ class KolabAdmin_Unit_SieveTest extends PHPUnit_Framework_TestCase
         );
         $this->assertEquals(
             $info,
-            KolabAdmin_Sieve_Script::getScriptInfo(
-                KolabAdmin_Sieve_Script::createScript(
+            SkolabAdmin_Sieve_Script::getScriptInfo(
+                SkolabAdmin_Sieve_Script::createScript(
                     $info
                 )
             )
