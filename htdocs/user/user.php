@@ -667,8 +667,12 @@ switch( $action ) {
            // We need the unmodified uid rdn for renaming
            $new_uid = "uid=" . $ldap->dn_escape($ldap_object['uid']);
 
-		   if (!empty($ldap_object['uid'])) $newdn = "uid=".$ldap->dn_escape($ldap_object['uid']).",".$domain_dn;
-		   else $newdn = $dn;
+		    if ((!empty($ldap_object['uid'])) && $params['rename_to_uid_acccounts']) {
+			$newdn = "uid=".$ldap->dn_escape($ldap_object['uid']).",".$domain_dn;
+		    }
+		    else {
+			$newdn = $dn;
+		    }
 		   if (strcmp($dn,$newdn) != 0) {
 			 // Check for distribution lists with this user as member
 			 $ldap->search( $_SESSION['base_dn'],

@@ -60,6 +60,11 @@ $params['return_to_login_after_logout'] = true;
 $params['allow_user_classes'] = array( 'user', 'admin', 'maintainer', 'manager', 'domain-maintainer' );
 
 /*
+ * Control if accouts with CN= DNs shall be renamed to accounts with uid= DNs
+ */
+$params['rename_to_uid_accounts'] = false;
+
+/*
  * Array to configure visibility/access of LDAP attributes to user's account object
  *
  * Possible values for attribute is
