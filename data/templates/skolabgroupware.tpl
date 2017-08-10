@@ -9,7 +9,7 @@
 <p>
 {t escape="no"}
 
-The Skolab Groupware was derived from Kolab (versio 2) to provide legacy
+The Skolab Groupware was derived from Kolab (version2) to provide legacy
 support for groupware servers that started with Kolab (version 2). For some of
 these installations, migrating the systems from non-supported Kolab v2 to
 a higher version of Kolab or some other groupware may not make sense.
