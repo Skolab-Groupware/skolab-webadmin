@@ -24,7 +24,7 @@ require_once('mysmarty.php');
 require_once('locale.php');
 require_once('session_vars.php');
 
-class KolabAuth {
+class SkolabAuth {
 	function __construct ( $do_auth = true, $params = array() ) {
 		global $params;
 		$this->params = $params;

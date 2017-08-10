@@ -23,7 +23,7 @@ require_once('auth.class.php');
 global $auth;
 global $params;
 if( !isset($auth) ) {
-	$auth = new KolabAuth(true,$params);
+	$auth = new SkolabAuth(true,$params);
 }
 
 /*
