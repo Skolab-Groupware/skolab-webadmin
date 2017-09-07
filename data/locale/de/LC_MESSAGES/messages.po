@@ -2,14 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-08 11:23+0200\n"
-"PO-Revision-Date: 2008-06-02 17:40+0200\n"
-"Last-Translator: Thomas Arendsen Hein <thomas@intevation.de>\n"
-"Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2017-09-07 17:06+0200\n"
+"PO-Revision-Date: 2017-09-08 09:25+0000\n"
+"Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/skolab-"
+"groupware/webadmin/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.17-dev\n"
 
 #: data/templates/createuser.tpl:10
 msgid "Attribute"
@@ -46,9 +49,8 @@ msgid "Required"
 msgstr "Pflichtfeld"
 
 #: data/templates/createuser.tpl:20 htdocs/user/user.php:464
-#, fuzzy
 msgid "Middle Name"
-msgstr "Ordnername"
+msgstr "Mittelname"
 
 #: data/templates/createuser.tpl:25 htdocs/user/user.php:465
 #: htdocs/administrator/admin.php:142 htdocs/addressbook/addr.php:91
@@ -147,7 +149,6 @@ msgid "Addressbook"
 msgstr "Adressbuch"
 
 #: data/templates/createuser.tpl:107
-#, fuzzy
 msgid "check here to make this users address <br/> visible in the address book"
 msgstr ""
 "Wählen Sie diese Option an, um die Adresse dieses Benutzers <br/> im "
