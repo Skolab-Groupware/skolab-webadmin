@@ -1,0 +1,162 @@
+#!/usr/bin/perl
+
+# Copyright (c) 2000 Romain Pokrzywka <romain@kdab.net>
+# Copyright (c) 2017 Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+#
+#  This  program is free  software; you can redistribute  it and/or
+#  modify it  under the terms of the GNU  General Public License as
+#  published by the  Free Software Foundation; either version 2, or
+#  (at your option) any later version.
+#
+#  This program is  distributed in the hope that it will be useful,
+#  but WITHOUT  ANY WARRANTY; without even the  implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+#  General Public License for more details.
+#
+#  You can view the  GNU General Public License, online, at the GNU
+#  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
+#
+
+# This script extracts messages from the TPL files to pass along with
+# the PHP files to xgettext. It also manages the data/locale files and
+# directory structure
+
+use strict;
+use Cwd;
+use File::Basename;
+use File::Spec::Functions qw/ catfile /;
+use File::Temp qw/ tempdir /;
+
+#
+# print usage info
+#
+if($ARGV[0] eq "-h" || $ARGV[0] eq "--help") {
+	print "Usage: extract_messages [create|update] languages...\n\n";
+	print "This scripts extracts messages from the .php and .tpl files into the file messages.pot. ";
+	print "Then it copies this file to every language subdirectory, where appropriate translations can be inserted.\n\n";
+	print "There are two working modes : create and update. In create mode, the file messages.po is simply copied from the template file (messages.pot) in each language subdirectory (which is created if needed). In update mode, the already existing file messages.po is merged with the new template file, which may contain new messages, modified and even deleted ones. Note that using create mode on languages with existing messages.po files will fail, just like using update mode on languages without messages.po files.\n";
+	print "If you don't specify any mode, then the script will automatically chose the appropriate mode for each language, depending on the existence of the file messages.po.\n\n";
+	print "You can specify as many languages as you want, using their locale code, e.g. : fr, de, sv... You can also specify sublanguage codes for finer translations, e.g. : en_GB, en_US, pt_BR... For every language specified, a corresponding subdirectory is created. This directory contains a directory LC_MESSAGES, in which the file messages.po is created. This is also where the file messages.mo (the binary version actually used by xgettext) should be put.\n";
+	print "If you don't specify any language, then the script will use all the already existing languages, based on the existing subdirectories.\n";
+	exit(0);
+}
+
+print ("\n");
+print ("Skolab Webadmin --- Updating locale / translation files\n");
+print ("=======================================================\n");
+print ("\n");
+
+#
+# retrieve command line arguments
+#
+my $action = "auto";
+if($ARGV[0] eq "update" || $ARGV[0] eq "create") {
+	$action = $ARGV[0];
+	shift(@ARGV);
+}
+my @languages = @ARGV;
+
+my $cwDir = getcwd."/";
+my $relTemplatesDir = "data/templates/";
+my $templatesDir = $cwDir.$relTemplatesDir;
+my $relPhpDir = "htdocs/";
+my $phpDir = $cwDir.$relPhpDir;
+my $relIncludeDir = "lib/Skolab/Admin/include/";
+my $includeDir = $cwDir.$relIncludeDir;
+my $relLocaleDir = "data/locale/";
+my $localeDir = $cwDir.$relLocaleDir;
+my $tmpDir = tempdir( CLEANUP => 1 )."/";
+
+my @TEMPLATES = do { my @x = glob "$templatesDir/*.tpl"; @x };
+for my $tplFile (@TEMPLATES) {
+	print (" * pre-processing .tpl files: ".basename($tplFile)." (in ".$tmpDir.")\n");
+	open(TPLINFILE, "<", "$tplFile") or die("unable to open input file $tplFile");
+	open(TPLOUTFILE, ">", $tmpDir.basename("$tplFile")) or die("unable to open output file ".$tmpDir.basename("$tplFile"));
+	while ( <TPLINFILE> ) {
+		$_ =~ s/\{t[^\}]*\}/<?php \$t=_(\'/g;
+		$_ =~ s/\{\/t\}/\');?>/g;
+		print TPLOUTFILE $_;
+	}
+	close(TPLINFILE);
+	close(TPLOUTFILE);
+}
+
+print ("\n");
+
+#
+# get all the PHP files recursively in htdocs/ and in the includes
+#
+my @tplFiles = `find $tmpDir -name "*.tpl" 2> /dev/null`;
+foreach (@tplFiles) { chomp; }
+my @phpFiles = `find $phpDir -name "*.php" 2> /dev/null`;
+foreach (@phpFiles) { chomp; }
+my @includeFiles = `find $includeDir -name "*.php" 2> /dev/null`;
+foreach (@includeFiles) { chomp; }
+
+#
+# call xgettext on all the PHP files (including the one generated from templates)
+#
+
+my $allFiles = join(" ", @tplFiles) . " " . join(" ", @phpFiles) . " " . join(" ",@includeFiles);
+
+print (" **********\n");
+print (" * creating ".$localeDir."/messages.pot file\n");
+print (" **********\n");
+print ("\n");
+
+print `xgettext --language=PHP -o $localeDir/messages.pot $allFiles`;
+
+system ("sed -i ".$localeDir."/messages.pot -e \'s\@#: ".$tmpDir."\@#: ".$relTemplatesDir."\@g\'");
+system ("sed -i ".$localeDir."/messages.pot -e \'s\@#: ".$cwDir."\@#: \@g\'");
+
+#
+# if no language is specified on the command line, get all the already installed languages
+#
+
+if(@languages == 0) {
+	print (" **********\n");
+	@languages = `cd $localeDir && find . -type d -mindepth 1 -maxdepth 1 2> /dev/null`;
+	foreach (@languages) {
+		chomp;
+		$_ =~ s@./@@;
+	}
+	print " * languages: " . join(" ", @languages) . "\n";
+	print (" **********\n");
+	print ("\n");
+}
+
+#
+# Create directory structure (if needed) then do the proper action
+#
+foreach my $lang (@languages)
+{
+    `mkdir -p $localeDir/$lang/LC_MESSAGES`;
+    #print "current language : $lang\n";
+    my $initialaction = $action;
+
+    if($action eq "auto") {
+        if(-e "$localeDir/$lang/LC_MESSAGES/messages.po") {
+            $action = "update";
+        } else {
+            $action = "create";
+        }
+        print " * Using $action mode for language $lang\n";
+    }
+
+    if($action eq "create") {
+        if(-e "$localeDir/$lang/LC_MESSAGES/messages.po") {
+            print " * WARNING: messages.po already exists for language $lang. Skipping. (did you intend to update ?)\n";
+        } else {
+            print " ".`cp -v $localeDir/messages.pot $localeDir/$lang/LC_MESSAGES/messages.po`;
+        }
+    } else {
+        if( ! -e "$localeDir/$lang/LC_MESSAGES/messages.po" ) {
+            print " * WARNING: messages.po doesn't exist for language $lang. Skipping. (did you intend to create ?)\n";
+        } else {
+            print " ".`msgmerge --update --backup=simple $localeDir/$lang/LC_MESSAGES/messages.po $localeDir/messages.pot 2>&1`;
+        }
+    }
+    $action = $initialaction;
+}
+
+print ("\n");
