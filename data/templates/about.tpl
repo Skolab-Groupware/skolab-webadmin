@@ -76,11 +76,15 @@ There is a wide variety of commercial support options and warranties imaginable 
 <hr>
 <small>
   <p>
+    {t escape=no 1="http://www.php.net/"}
     This product includes PHP, freely available from
-    http://www.php.net/
+    <a href="%1">%1</a>
+    {/t}
   </p><p>
+    {t escape=no 1="http://www.openssl.org/"}
     This product includes software developed by the OpenSSL Project
-    for use in the OpenSSL Toolkit (http://www.openssl.org/)
+    for use in the OpenSSL Toolkit (<a href="%1">%1</a>)
+    {/t}
   </p>
 </small>
 
