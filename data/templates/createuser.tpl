@@ -107,7 +107,7 @@
 	<td>{t}check here to make this users address <br/> visible in the address book{/t}</td>
 </tr>
 <tr>
-	<td>{t}User Quota in KB{/t}</td>
+	<td>{t}User Quota in MB{/t}</td>
 	<td><input name="userquota" type="text" value=""  size="50" onfocus="javascript:this.select()" /></td>
 	<td>{t}Leave blank for unlimited{/t}</td>
 </tr>
