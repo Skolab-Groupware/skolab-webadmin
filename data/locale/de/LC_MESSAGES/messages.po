@@ -1,34 +1,40 @@
+# German translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Kolab-Webadmin German\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-08 11:23+0200\n"
-"PO-Revision-Date: 2008-06-02 17:40+0200\n"
-"Last-Translator: Thomas Arendsen Hein <thomas@intevation.de>\n"
-"Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-09-08 11:23+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=ASCII\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/templates/createuser.tpl:10
 msgid "Attribute"
-msgstr "Attribut"
+msgstr ""
 
 #: data/templates/createuser.tpl:11
 msgid "Value"
-msgstr "Wert"
+msgstr ""
 
 #: data/templates/createuser.tpl:12
 msgid "Comment"
-msgstr "Kommentar"
+msgstr ""
 
 #: data/templates/createuser.tpl:15 htdocs/user/user.php:461
 #: htdocs/administrator/admin.php:139 htdocs/addressbook/addr.php:88
 #: htdocs/domainmaintainer/domainmaintainer.php:114
 #: htdocs/maintainer/maintainer.php:136
 msgid "First Name"
-msgstr "Vorname"
+msgstr ""
 
 #: data/templates/createuser.tpl:17 data/templates/createuser.tpl:27
 #: data/templates/createuser.tpl:32 data/templates/createuser.tpl:37
@@ -43,37 +49,36 @@ msgstr "Vorname"
 #: htdocs/maintainer/maintainer.php:130 htdocs/maintainer/maintainer.php:138
 #: htdocs/maintainer/maintainer.php:141
 msgid "Required"
-msgstr "Pflichtfeld"
+msgstr ""
 
 #: data/templates/createuser.tpl:20 htdocs/user/user.php:464
-#, fuzzy
 msgid "Middle Name"
-msgstr "Ordnername"
+msgstr ""
 
 #: data/templates/createuser.tpl:25 htdocs/user/user.php:465
 #: htdocs/administrator/admin.php:142 htdocs/addressbook/addr.php:91
 #: htdocs/domainmaintainer/domainmaintainer.php:117
 #: htdocs/maintainer/maintainer.php:139
 msgid "Last Name"
-msgstr "Nachname"
+msgstr ""
 
 #: data/templates/createuser.tpl:30 htdocs/user/user.php:468
 #: htdocs/administrator/admin.php:145
 #: htdocs/domainmaintainer/domainmaintainer.php:120
 #: htdocs/maintainer/maintainer.php:142
 msgid "Password"
-msgstr "Passwort"
+msgstr ""
 
 #: data/templates/createuser.tpl:35 htdocs/user/user.php:472
 #: htdocs/administrator/admin.php:149
 #: htdocs/domainmaintainer/domainmaintainer.php:124
 #: htdocs/maintainer/maintainer.php:146
 msgid "Verify Password"
-msgstr "Passwort bestätigen"
+msgstr ""
 
 #: data/templates/createuser.tpl:40 htdocs/user/user.php:476
 msgid "Primary Email Address"
-msgstr "Primäre E-Mail-Adresse"
+msgstr ""
 
 #: data/templates/createuser.tpl:42 htdocs/user/user.php:452
 #: htdocs/user/user.php:454 htdocs/administrator/admin.php:132
@@ -81,122 +86,115 @@ msgstr "Primäre E-Mail-Adresse"
 #: htdocs/domainmaintainer/domainmaintainer.php:107
 #: htdocs/maintainer/maintainer.php:129
 msgid "Required, non volatile"
-msgstr "Pflichtfeld, unveränderlich"
+msgstr ""
 
 #: data/templates/createuser.tpl:45 htdocs/user/user.php:517
 #: htdocs/addressbook/addr.php:94
 msgid "Title"
-msgstr "Titel"
+msgstr ""
 
 #: data/templates/createuser.tpl:50
 msgid "Email Alias"
-msgstr "E-Mail-Aliasnamen"
+msgstr ""
 
 #: data/templates/createuser.tpl:55 htdocs/user/user.php:518
 #: htdocs/addressbook/addr.php:101
 msgid "Organisation"
-msgstr "Organisation"
+msgstr ""
 
 #: data/templates/createuser.tpl:60 htdocs/user/user.php:519
 #: htdocs/addressbook/addr.php:102
 msgid "Organisational Unit"
-msgstr "Organisationseinheit"
+msgstr ""
 
 #: data/templates/createuser.tpl:65 htdocs/user/user.php:520
 #: htdocs/addressbook/addr.php:103
 msgid "Room Number"
-msgstr "Zimmernummer"
+msgstr ""
 
 #: data/templates/createuser.tpl:70 htdocs/user/user.php:521
 #: htdocs/addressbook/addr.php:104
 msgid "Street Address"
-msgstr "Straßenanschrift"
+msgstr ""
 
 #: data/templates/createuser.tpl:75 htdocs/user/user.php:522
 msgid "Postbox"
-msgstr "Postfach"
+msgstr ""
 
 #: data/templates/createuser.tpl:80 htdocs/user/user.php:523
 #: htdocs/addressbook/addr.php:106
 msgid "Postal Code"
-msgstr "Postleitzahl"
+msgstr ""
 
 #: data/templates/createuser.tpl:85 htdocs/user/user.php:524
 #: htdocs/addressbook/addr.php:107
 msgid "City"
-msgstr "Stadt"
+msgstr ""
 
 #: data/templates/createuser.tpl:90 htdocs/user/user.php:525
 #: htdocs/addressbook/addr.php:108
 msgid "Country"
-msgstr "Land"
+msgstr ""
 
 #: data/templates/createuser.tpl:95 htdocs/user/user.php:527
 #: htdocs/addressbook/addr.php:109
 msgid "Telephone Number"
-msgstr "Telefonnummer"
+msgstr ""
 
 #: data/templates/createuser.tpl:100 htdocs/user/user.php:529
 #: htdocs/addressbook/addr.php:111
 msgid "Fax Number"
-msgstr "Faxnummer"
+msgstr ""
 
 #: data/templates/createuser.tpl:105 data/templates/welcome-maintainer.tpl:16
 #: data/templates/welcome-admin.tpl:16 lib/Skolab/Admin/include/menu.php:48
 msgid "Addressbook"
-msgstr "Adressbuch"
+msgstr ""
 
 #: data/templates/createuser.tpl:107
-#, fuzzy
 msgid "check here to make this users address <br/> visible in the address book"
 msgstr ""
-"Wählen Sie diese Option an, um die Adresse dieses Benutzers <br/> im "
-"Adressbuch anzuzeigen"
 
 #: data/templates/createuser.tpl:110
-#, fuzzy
 msgid "User Quota in MB"
-msgstr "Plattenplatz-Kontingent des Benutzers in MBytes"
+msgstr ""
 
 #: data/templates/createuser.tpl:112 htdocs/user/user.php:533
 msgid "Leave blank for unlimited"
-msgstr "Freilassen für unbegrenzten Platz"
+msgstr ""
 
 #: data/templates/createuser.tpl:115 lib/Skolab/Admin/include/form.class.php:75
 msgid "Submit"
-msgstr "Absenden"
+msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab Groupware Server Maintenance"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:13
 #: data/templates/welcome-domain-maintainer.tpl:13
 #: data/templates/welcome-admin.tpl:13
-#, fuzzy
 msgid "Manage Users"
-msgstr "E-Mail-Benutzer verwalten"
+msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:19
 #: data/templates/welcome-domain-maintainer.tpl:16
 #: data/templates/welcome-admin.tpl:19
-#, fuzzy
 msgid "Shared Folders"
-msgstr "Gemeinsam genutzter Ordner"
+msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:22 data/templates/distlistall.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:19
 #: data/templates/welcome-admin.tpl:22 lib/Skolab/Admin/include/menu.php:65
 msgid "Distribution Lists"
-msgstr "Verteilerlisten"
+msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:25
 #: data/templates/maintainerlistall.tpl:8 data/templates/welcome-admin.tpl:28
 #: lib/Skolab/Admin/include/menu.php:85 lib/Skolab/Admin/include/menu.php:93
 msgid "Maintainers"
-msgstr "Verwalter"
+msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:28
 #: data/templates/welcome-domain-maintainer.tpl:22
@@ -204,7 +202,7 @@ msgstr "Verwalter"
 #: data/templates/welcome-admin.tpl:31 lib/Skolab/Admin/include/menu.php:79
 #: lib/Skolab/Admin/include/menu.php:96 lib/Skolab/Admin/include/menu.php:104
 msgid "Domain Maintainers"
-msgstr "Domänenverwalter"
+msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:31
 #: data/templates/welcome-domain-maintainer.tpl:25
@@ -234,9 +232,8 @@ msgid ""
 msgstr ""
 
 #: data/templates/skolabgroupware.tpl:28
-#, fuzzy
 msgid "How To Contribute to Skolab Groupware"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr ""
 
 #: data/templates/skolabgroupware.tpl:31
 msgid ""
@@ -249,9 +246,8 @@ msgid ""
 msgstr ""
 
 #: data/templates/skolabgroupware.tpl:40
-#, fuzzy
 msgid "Professional Skolab Groupware Support"
-msgstr "Kolab Groupware login"
+msgstr ""
 
 #: data/templates/skolabgroupware.tpl:43
 msgid ""
@@ -263,9 +259,8 @@ msgid ""
 msgstr ""
 
 #: data/templates/skolabgroupware.tpl:51
-#, fuzzy
 msgid "Former Kolab Development"
-msgstr "Weitere Mitwirkende:"
+msgstr ""
 
 #: data/templates/skolabgroupware.tpl:54
 msgid ""
@@ -294,9 +289,8 @@ msgid ""
 msgstr ""
 
 #: data/templates/skolabgroupware.tpl:80
-#, fuzzy
 msgid "Former Kolab Contributors"
-msgstr "Weitere Mitwirkende:"
+msgstr ""
 
 #: data/templates/skolabgroupware.tpl:83
 msgid ""
@@ -312,17 +306,16 @@ msgid "...and many many contributors from the Kolab v2 community."
 msgstr ""
 
 #: data/templates/login.tpl:7
-#, fuzzy
 msgid "Enter UID and password to login"
-msgstr "Geben Sie Ihre UID und Ihr Passwort ein, um sich anzumelden"
+msgstr ""
 
 #: data/templates/login.tpl:14
 msgid "Username:"
-msgstr "Benutzername:"
+msgstr ""
 
 #: data/templates/login.tpl:23
 msgid "Password:"
-msgstr "Passwort:"
+msgstr ""
 
 #: data/templates/login.tpl:23
 msgid "Login"
@@ -330,40 +323,39 @@ msgstr ""
 
 #: data/templates/vacation.tpl:7
 msgid "Vacation Notification"
-msgstr "Benachrichtigungen bei Abwesenheit"
+msgstr ""
 
 #: data/templates/vacation.tpl:10
-#, fuzzy
 msgid "Activate vacation notification"
-msgstr "Benachrichtigungen bei Abwesenheit"
+msgstr ""
 
 #: data/templates/vacation.tpl:12
 msgid "Resend notification only after"
-msgstr "Benachrichtigung erst nach"
+msgstr ""
 
 #: data/templates/vacation.tpl:12
 msgid "days"
-msgstr "Tagen erneut senden"
+msgstr ""
 
 #: data/templates/vacation.tpl:13
 msgid "Send responses for these addresses:"
-msgstr "Antworten für diese Adressen schicken:"
+msgstr ""
 
 #: data/templates/vacation.tpl:19
 msgid "(one address per line)"
-msgstr "(Eine Adresse pro Zeile)"
+msgstr ""
 
 #: data/templates/vacation.tpl:20
 msgid "Do not send vacation replies to spam messages"
-msgstr "Keine Abwesenheitsbenachrichtigungen auf Spamnachrichten senden"
+msgstr ""
 
 #: data/templates/vacation.tpl:21
 msgid "Only react to mail coming from domain"
-msgstr "Nur auf Nachrichten reagieren, die aus dieser Domäne kommen"
+msgstr ""
 
 #: data/templates/vacation.tpl:21
 msgid "(leave empty for all domains)"
-msgstr "(freilassen für alle Domänen)"
+msgstr ""
 
 #: data/templates/vacation.tpl:22 data/templates/forward.tpl:13
 #: data/templates/settings.tpl:43 data/templates/settings.tpl:54
@@ -371,34 +363,33 @@ msgstr "(freilassen für alle Domänen)"
 #: data/templates/settings.tpl:88 data/templates/settings.tpl:100
 #: data/templates/settings.tpl:117 data/templates/deliver.tpl:12
 msgid "Update"
-msgstr "Aktualisieren"
+msgstr ""
 
 #: data/templates/maintainerdeleted.tpl:10
 msgid "The maintainer with DN"
-msgstr "Der Verwalter mit DN"
+msgstr ""
 
 #: data/templates/maintainerdeleted.tpl:10 data/templates/sfdeleted.tpl:10
 #: data/templates/admindeleted.tpl:10 data/templates/distlistdeleted.tpl:10
 #: data/templates/userdeleted.tpl:10 data/templates/addrdeleted.tpl:10
 msgid "has been deleted"
-msgstr "wurde gelöscht"
+msgstr ""
 
 #: data/templates/maintainerdeleted.tpl:11
 msgid "Back to list of maintainers"
-msgstr "Zurück zur Liste der Verwalter"
+msgstr ""
 
 #: data/templates/sfdeleted.tpl:10
 msgid "The shared folder with DN"
-msgstr "Der gemeinsam genutzte Ordner mit DN"
+msgstr ""
 
 #: data/templates/sfdeleted.tpl:11
 msgid "Back to list of shared folders"
-msgstr "Zurück zur Liste der gemeinsam genutzten Ordner"
+msgstr ""
 
 #: data/templates/addresslist.tpl:8 data/templates/addrlistall.tpl:8
-#, fuzzy
 msgid "(only external addresses without a kolab user account)"
-msgstr "(nur externe Adresse ohne Kolab-Benutzerkonto)"
+msgstr ""
 
 #: data/templates/addresslist.tpl:14 data/templates/maintainerlistall.tpl:13
 #: data/templates/sflistall.tpl:13
@@ -407,7 +398,7 @@ msgstr "(nur externe Adresse ohne Kolab-Benutzerkonto)"
 #: data/templates/adminlistall.tpl:13 htdocs/user/index.php:203
 #: htdocs/addressbook/index.php:121
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: data/templates/addresslist.tpl:14 data/templates/settings.tpl:128
 #: data/templates/distlistall.tpl:13 data/templates/maintainerlistall.tpl:13
@@ -415,9 +406,8 @@ msgstr "Name"
 #: data/templates/domainmaintainerlistall.tpl:13
 #: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
 #: data/templates/adminlistall.tpl:13
-#, fuzzy
 msgid "Action"
-msgstr "Abwesenheit"
+msgstr ""
 
 #: data/templates/addresslist.tpl:19 data/templates/distlistall.tpl:26
 #: data/templates/maintainerlistall.tpl:22 data/templates/sflistall.tpl:23
@@ -425,7 +415,7 @@ msgstr "Abwesenheit"
 #: data/templates/userlistall.tpl:73 data/templates/addrlistall.tpl:55
 #: data/templates/adminlistall.tpl:22
 msgid "Modify"
-msgstr "Bearbeiten"
+msgstr ""
 
 #: data/templates/addresslist.tpl:20 data/templates/settings.tpl:136
 #: data/templates/distlistall.tpl:27 data/templates/maintainerlistall.tpl:23
@@ -438,12 +428,11 @@ msgstr "Bearbeiten"
 #: htdocs/sharedfolder/sf.php:316
 #: htdocs/domainmaintainer/domainmaintainer.php:314
 msgid "Delete"
-msgstr "Löschen"
+msgstr ""
 
 #: data/templates/technology.tpl:8
-#, fuzzy
 msgid "Skolab Groupware Solution - Technologies"
-msgstr "Kolab Groupware login"
+msgstr ""
 
 #: data/templates/technology.tpl:10
 msgid ""
@@ -464,15 +453,15 @@ msgstr ""
 
 #: data/templates/technology.tpl:23
 msgid "(Mail Scanner)"
-msgstr "(E-Mail-Scanner)"
+msgstr ""
 
 #: data/templates/technology.tpl:24
 msgid "(HTTP Server)"
-msgstr "(HTTP-Server)"
+msgstr ""
 
 #: data/templates/technology.tpl:25
 msgid "(Virus Scanner)"
-msgstr "(Virenscanner)"
+msgstr ""
 
 #: data/templates/technology.tpl:26
 msgid "(IMAP Server &amp; Database)"
@@ -480,15 +469,15 @@ msgstr ""
 
 #: data/templates/technology.tpl:27
 msgid "(LDAP Server)"
-msgstr "LDAP-Server"
+msgstr ""
 
 #: data/templates/technology.tpl:28
 msgid "(MTA)"
-msgstr "(MTA)"
+msgstr ""
 
 #: data/templates/technology.tpl:29
 msgid "(SPAM Filter)"
-msgstr "(Spamfilter)"
+msgstr ""
 
 #: data/templates/technology.tpl:30
 msgid "(Web client)"
@@ -524,9 +513,8 @@ msgid ""
 msgstr ""
 
 #: data/templates/about.tpl:8
-#, fuzzy
 msgid "Skolab Groupware Solution"
-msgstr "Kolab Groupware login"
+msgstr ""
 
 #: data/templates/about.tpl:10
 msgid ""
@@ -555,9 +543,8 @@ msgid ""
 msgstr ""
 
 #: data/templates/about.tpl:35
-#, fuzzy
 msgid "Why Skolab?"
-msgstr "Über Kolab"
+msgstr ""
 
 #: data/templates/about.tpl:38
 msgid ""
@@ -667,60 +654,50 @@ msgid ""
 msgstr ""
 
 #: data/templates/versions.tpl:8
-#, fuzzy
 msgid "Skolab Groupware Server Version"
-msgstr "Kolab Groupware login"
+msgstr ""
 
 #: data/templates/versions.tpl:10
-#, fuzzy
 msgid "Skolab Groupware Server Component Versions"
-msgstr "Kolab Groupware login"
+msgstr ""
 
 #: data/templates/versions.tpl:12
 msgid "PEAR/Horde Versions"
-msgstr "PEAR/Horde-Versionen"
+msgstr ""
 
 #: data/templates/versions.tpl:15
-#, fuzzy
 msgid "Kolab2 Patched OpenPKG Package Versions"
-msgstr "Kolab2-Gepatchte-OpenPKG-Paket-Versionen"
+msgstr ""
 
 #: data/templates/versions.tpl:17
-#, fuzzy
 msgid "OpenPKG Version"
-msgstr "OpenPKG-Version"
+msgstr ""
 
 #: data/templates/forward.tpl:7
-#, fuzzy
 msgid "Email Forwarding"
-msgstr "E-Mail-Weiterleitung"
+msgstr ""
 
 #: data/templates/forward.tpl:10
-#, fuzzy
 msgid "Activate email forwarding"
-msgstr "E-Mail-Weiterleitung"
+msgstr ""
 
 #: data/templates/forward.tpl:11
-#, fuzzy
 msgid "Forward mail to"
-msgstr "E-Mail weiterleiten"
+msgstr ""
 
 #: data/templates/forward.tpl:12
 msgid "Keep copy on server"
-msgstr "Kopie auf dem Server belassen"
+msgstr ""
 
 #: data/templates/settings.tpl:7
-#, fuzzy
 msgid "Kolab Server Settings"
-msgstr "Kolab-Server-Einstellungen"
+msgstr ""
 
 #: data/templates/settings.tpl:11
-#, fuzzy
 msgid "Administrative email addresses"
-msgstr "Administrative E-Mail-Adressen"
+msgstr ""
 
 #: data/templates/settings.tpl:13
-#, fuzzy
 msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
@@ -729,385 +706,323 @@ msgid ""
 "create a distribution list for each of those addresses. Later you can add or "
 "remove people from the lists like any other distribution list"
 msgstr ""
-"Sie haben noch kein Konto zum Empfang von Nachrichten an die administrativen "
-"E-Mail-Adressen hostmaster@ihredomaene.tld, postmaster@ihredomaene.tld und "
-"abuse@ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse des "
-"Kolab-Kontos unten ein und betätigen Sie die Schaltfläche, um eine "
-"Verteilerliste für jede dieser Adressen zu erzeugen. Sie können dann später "
-"Adressaten diesen Listen hinzufügen oder davon entfernen wie mit jeder "
-"anderen Verteilerliste"
 
 #: data/templates/settings.tpl:18
-#, fuzzy
 msgid ""
 "Email address of account that should receive administrative mail for domain"
 msgstr ""
-"E-Mail-Adresse des Kontos, das die administrativen Nachrichten empfangen "
-"soll:"
 
 #: data/templates/settings.tpl:20
 msgid "Create Distribution Lists"
-msgstr "Verteilerlisten anlegen"
+msgstr ""
 
 #: data/templates/settings.tpl:29
-#, fuzzy
 msgid "Enable or Disable individual Services"
-msgstr "Einzelne Dienste einschalten oder abschalten"
+msgstr ""
 
 #: data/templates/settings.tpl:34
 msgid "Service"
-msgstr "Dienst"
+msgstr ""
 
 #: data/templates/settings.tpl:34
 msgid "Enabled"
-msgstr "Eingeschaltet"
+msgstr ""
 
 #: data/templates/settings.tpl:48
-#, fuzzy
 msgid "Quota settings"
-msgstr "Plattenplatz-Kontingent-Einstellungen"
+msgstr ""
 
 #: data/templates/settings.tpl:53
-#, fuzzy
 msgid "Warn users when they have used"
-msgstr "Benutzer warnen, wenn der Verbrauch"
+msgstr ""
 
 #: data/templates/settings.tpl:53
 #, php-format
 msgid "% of their quota"
-msgstr "% des zugestandenen Kontingents beträgt"
+msgstr ""
 
 #: data/templates/settings.tpl:59
-#, fuzzy
 msgid "Free/Busy settings"
-msgstr "Frei/Belegt-Einstellungen"
+msgstr ""
 
 #: data/templates/settings.tpl:65
-#, fuzzy
 msgid "Allow unauthenticated downloading of Free/Busy information"
 msgstr ""
-"Unauthentifiziertes Herunterladen von Frei/Belegt-Informationen erlauben"
 
 #: data/templates/settings.tpl:76
-#, fuzzy
 msgid "When creating free/busy lists, include data from"
-msgstr "Beim Erzeugen von Frei/Belegt-Listen, Daten aus "
+msgstr ""
 
 #: data/templates/settings.tpl:76
 msgid "days in the past"
-msgstr "vergangenen Tagen verwenden"
+msgstr ""
 
 #: data/templates/settings.tpl:82
-#, fuzzy
 msgid "Privileged Networks"
-msgstr "Privilegierte Netzwerke"
+msgstr ""
 
 #: data/templates/settings.tpl:86
-#, fuzzy
 msgid ""
 "Networks allowed to relay and send mail through unauthenticated SMTP "
 "connections to the Kolab server (comma separated networks in x.x.x.x/y "
 "format):"
 msgstr ""
-"Netzwerke, die Nachrichten über unauthentifizierte SMTP-Verbindungen an den "
-"Kolab-Server weiterleiten und damit verschicken dürfen (durch Kommata "
-"getrennte Liste von Netzwerken im Format x.x.x.x/y):"
 
 #: data/templates/settings.tpl:93
-#, fuzzy
 msgid "SMTP \\\"smarthost/relayhost\\\""
-msgstr "SMTP-\"Smarthost/Relayhost\""
+msgstr ""
 
 #: data/templates/settings.tpl:97
-#, fuzzy
 msgid ""
 "Smarthost (and optional port) to use to send outgoing mail (host.domain."
 "tld). Leave empty for no relayhost."
 msgstr ""
-"Smarthost (und optionaler Port) wird zum Verschicken ausgehender Nachrichten "
-"verwendet (host.domain.tld). Wenn Sie keinen solchen verwenden wollen, "
-"lassen Sie dieses Feld leer."
 
 #: data/templates/settings.tpl:105
-#, fuzzy
 msgid "Accept Internet Mail"
-msgstr "Nachrichten aus dem Internet akzeptieren"
+msgstr ""
 
 #: data/templates/settings.tpl:113
-#, fuzzy
 msgid ""
 "Accept mail from other domains over unauthenticated SMTP. This must be "
 "enabled if you want to use the Kolab Server to receive mail from other "
 "internet domains directly. Leave disabled to accept mail only from SMTP "
 "gateways that are within the privileged network."
 msgstr ""
-"Nachrichten aus anderen Domänen über nicht-authentifiziertes SMTP "
-"akzeptieren. Dies muß eingeschaltet werden, wenn der Kolab-Server "
-"Nachrichten aus anderen Internet-Domänen empfangen können soll. Wenn dies "
-"ausgeschaltet ist, werden E-Mails nur von SMTP-Servern in den privilegierten "
-"Netzwerken angenommen."
 
 #: data/templates/settings.tpl:125
 #: htdocs/domainmaintainer/domainmaintainer.php:134
 msgid "Domains"
-msgstr "Domänen"
+msgstr ""
 
 #: data/templates/settings.tpl:128
 msgid "Domain"
-msgstr "Domäne"
+msgstr ""
 
 #: data/templates/settings.tpl:145
 msgid "Add"
-msgstr "Hinzufügen"
+msgstr ""
 
 #: data/templates/settings.tpl:150
-#, fuzzy
 msgid "Mail Filter Settings"
-msgstr "Meine Benutzereinstellungen"
+msgstr ""
 
 #: data/templates/settings.tpl:155
-#, fuzzy
 msgid "Check messages for mismatching From header and envelope from."
 msgstr ""
-"Nachrichten darauf überprüfen, ob From-Kopfzeile und Umschlag (\"envelope\") "
-"nicht übereinstimmen."
 
 #: data/templates/settings.tpl:158
-#, fuzzy
 msgid ""
 "Use the Sender header instead of From for the above checks if Sender is "
 "present."
 msgstr ""
-"Falls eine Sender-Kopfzeile existiert, diese anstelle der From-Zeile für die "
-"obigen Überprüfungen verwenden."
 
 #: data/templates/settings.tpl:160
-#, fuzzy
 msgid "Action to take for messages that fail the check:"
-msgstr "Maßname für Nachrichten, deren Überprüfung fehlschlägt:"
+msgstr ""
 
 #: data/templates/settings.tpl:165
-#, fuzzy
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
 "header matches one of Kolab server"
 msgstr ""
-"Nachricht zurückweisen, sofern sie nicht von außen kommt, aber eine From-"
-"Kopfzeile enthält, die mit der Domäne des Kolab-Servers übereinstimmt. In "
-"diesem Fall die From-Kopfzeile umschreiben, damit der Empfänger die mögliche "
-"Fälschung erkennen kann."
 
 #: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab Groupware Server Administration"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr ""
 
 #: data/templates/distlistall.tpl:13
 msgid "Listname"
-msgstr "Listenname"
+msgstr ""
 
 #: data/templates/distlistall.tpl:13
 msgid "Visibility"
-msgstr "Sichtbarkeit"
+msgstr ""
 
 #: data/templates/distlistall.tpl:19
 msgid "Internal"
-msgstr "Intern"
+msgstr ""
 
 #: data/templates/distlistall.tpl:21
 msgid "Public"
-msgstr "Öffentlich"
+msgstr ""
 
 #: data/templates/distlistall.tpl:24
 msgid "List deleted, awaiting cleanup..."
-msgstr "Liste gelöscht, warte auf Aufräumaktion..."
+msgstr ""
 
 #: data/templates/userlisterror.tpl:7 data/templates/userlistall.tpl:7
 msgid "Email Users"
-msgstr "E-Mail-Benutzer"
+msgstr ""
 
 #: data/templates/userlisterror.tpl:9 data/templates/userlistall.tpl:9
 #: data/templates/addrlistall.tpl:11
 msgid "[ ALL ]"
-msgstr "[ ALLE ]"
+msgstr ""
 
 #: data/templates/userlisterror.tpl:14 data/templates/userlistall.tpl:14
 #: data/templates/addrlistall.tpl:16
 msgid "[ OTHER ]"
-msgstr "[ ANDERE ]"
+msgstr ""
 
 #: data/templates/userlisterror.tpl:18 data/templates/userlistall.tpl:20
 #: data/templates/addrlistall.tpl:21
-#, fuzzy
 msgid "Filter:"
-msgstr "Filter"
+msgstr ""
 
 #: data/templates/userlisterror.tpl:37 data/templates/addrlistall.tpl:40
 msgid "Filter"
-msgstr "Filter"
+msgstr ""
 
 #: data/templates/maintainerlistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
 #: data/templates/adminlistall.tpl:13 htdocs/user/index.php:205
 msgid "UID"
-msgstr "UID"
+msgstr ""
 
 #: data/templates/maintainerlistall.tpl:20
 #: data/templates/domainmaintainerlistall.tpl:21
 #: data/templates/adminlistall.tpl:20
 msgid "Object Deleted, awaiting cleanup..."
-msgstr "Objekt gelöscht, warte auf Aufräumaktion..."
+msgstr ""
 
 #: data/templates/admindeleted.tpl:10
 msgid "The administrator with DN"
-msgstr "Der Administrator mit DN"
+msgstr ""
 
 #: data/templates/admindeleted.tpl:11
 msgid "Back to list of administrators"
-msgstr "Zurück zur Liste der Administratoren"
+msgstr ""
 
 #: data/templates/distlistdeleted.tpl:10
 msgid "The distribution list with DN"
-msgstr "Die Verteilerliste mit DN"
+msgstr ""
 
 #: data/templates/distlistdeleted.tpl:11
 msgid "Back to list of distribution lists"
-msgstr "Zurück zur Liste der Verteilerlisten"
+msgstr ""
 
 #: data/templates/sflistall.tpl:8
-#, fuzzy
 msgid "Shared folders"
-msgstr "Gemeinsam genutzter Ordner "
+msgstr ""
 
 #: data/templates/sflistall.tpl:13
 msgid "Server"
-msgstr "Server"
+msgstr ""
 
 #: data/templates/sflistall.tpl:13 data/templates/userlistall.tpl:51
 msgid "Type"
-msgstr "Typ"
+msgstr ""
 
 #: data/templates/sflistall.tpl:21
 msgid "Folder deleted, awaiting cleanup..."
-msgstr "Ordner gelöscht, warte auf Aufräumaktion..."
+msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:8
-#, fuzzy
 msgid "Welcome to the Kolab administration interface"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:11
 msgid "NOTE:"
-msgstr "ANMERKUNG:"
+msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:12
-#, fuzzy
 msgid ""
 "No account is configured to receive mail for administrative addresses. If "
 "you have not yet created an account for this, "
 msgstr ""
-"Es wurde kein Konto zum Empfang von Nachrichten an administrative Adressen "
-"konfiguriert. Wenn Sie hierfür noch kein Konto angelegt haben, "
 
 #: data/templates/systemaliasnagscreen.tpl:13
 msgid "please do so"
-msgstr "dann tun Sie das bitte jetzt"
+msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:13
 msgid "and then go"
-msgstr "und richten Sie danach"
+msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:14
-#, fuzzy
 msgid "here"
-msgstr "hier"
+msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:14
 msgid "to set up forwarding of mail to administrative email addresses."
 msgstr ""
-"die Weiterleitung von Nachrichten an administrative E-Mail-Adressen ein."
 
 #: data/templates/userdeleted.tpl:10
 msgid "The user with DN"
-msgstr "Der Benutzer mit DN"
+msgstr ""
 
 #: data/templates/userdeleted.tpl:11
 msgid "Back to list of users"
-msgstr "Zurück zur Liste der Benutzer"
+msgstr ""
 
 #: data/templates/deliver.tpl:7
-#, fuzzy
 msgid "Email Delivery"
-msgstr "E-Mail-Zustellung"
+msgstr ""
 
 #: data/templates/deliver.tpl:10
 msgid "Activate delivery to folder"
 msgstr ""
 
 #: data/templates/deliver.tpl:11
-#, fuzzy
 msgid "Deliver regular mail to folder"
-msgstr "Normale Nachrichten an den Ordner zustellen"
+msgstr ""
 
 #: data/templates/userlistall.tpl:43
-#, fuzzy
 msgid "Filter\""
-msgstr "Filter"
+msgstr ""
 
 #: data/templates/userlistall.tpl:51
 msgid "E-mail"
-msgstr "E-Mail"
+msgstr ""
 
 #: data/templates/userlistall.tpl:51
 msgid "uid"
-msgstr "uid"
+msgstr ""
 
 #: data/templates/userlistall.tpl:71
 msgid "User Deleted, awaiting cleanup..."
-msgstr "Benutzer gelöscht, warte auf Aufräumaktion..."
+msgstr ""
 
 #: data/templates/welcome-admin.tpl:25
-#, fuzzy
 msgid "Administrator"
-msgstr "Administrator "
+msgstr ""
 
 #: data/templates/welcome-admin.tpl:34 lib/Skolab/Admin/include/menu.php:109
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr ""
 
 #: data/templates/welcome-user.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab Groupware Server"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr ""
 
 #: data/templates/welcome-user.tpl:13
-#, fuzzy
 msgid "My settings"
-msgstr "Meine Benutzereinstellungen"
+msgstr ""
 
 #: data/templates/addrlistall.tpl:53
 msgid "Entry deleted, awaiting cleanup..."
-msgstr "Eintrag gelöscht, warte auf Aufräumaktion..."
+msgstr ""
 
 #: data/templates/page.tpl:94
 msgid "Errors:"
-msgstr "Fehler:"
+msgstr ""
 
 #: data/templates/page.tpl:102
 msgid "Message:"
-msgstr "Nachricht:"
+msgstr ""
 
 #: data/templates/adminlistall.tpl:8 lib/Skolab/Admin/include/menu.php:73
 msgid "Administrators"
-msgstr "Administratoren"
+msgstr ""
 
 #: data/templates/addrdeleted.tpl:10
 msgid "The address with DN"
-msgstr "Die Adresse mit DN"
+msgstr ""
 
 #: data/templates/addrdeleted.tpl:11
 msgid "Back to list of addresses"
-msgstr "Zurück zur Adressliste"
+msgstr ""
 
 #: htdocs/user/forward.php:47 htdocs/user/deliver.php:46
 #: htdocs/user/vacation.php:37
@@ -1117,12 +1032,12 @@ msgstr ""
 #: htdocs/user/forward.php:61
 #, php-format
 msgid "Forwarding to '%s' successfully activated"
-msgstr "Weiterleitung an '%s' erfolgreich aktiviert"
+msgstr ""
 
 #: htdocs/user/forward.php:63
 #, php-format
 msgid "Forwarding to '%s' successfully deactivated"
-msgstr "Weiterleiten an '%s' erfolgreich deaktiviert"
+msgstr ""
 
 #: htdocs/user/forward.php:69 htdocs/user/deliver.php:67
 #: htdocs/user/vacation.php:65
@@ -1141,12 +1056,12 @@ msgstr ""
 #: htdocs/user/deliver.php:59
 #, php-format
 msgid "Delivery to '%s' successfully activated"
-msgstr "Versand an '%s' erfolgreich aktiviert"
+msgstr ""
 
 #: htdocs/user/deliver.php:61
 #, php-format
 msgid "Delivery to '%s' successfully deactivated"
-msgstr "Versand an '%s' erfolgreich deaktiviert"
+msgstr ""
 
 #: htdocs/user/index.php:34 htdocs/administrator/index.php:33
 #: htdocs/addressbook/addr.php:17 htdocs/addressbook/index.php:23
@@ -1155,64 +1070,60 @@ msgstr "Versand an '%s' erfolgreich deaktiviert"
 #: htdocs/sharedfolder/index.php:22 htdocs/domainmaintainer/index.php:33
 #: htdocs/maintainer/index.php:33
 msgid "Error: You don't have Permissions to access this Menu"
-msgstr "Fehler: Sie haben keine Zugriffsrechte auf dieses Menü"
+msgstr ""
 
 #: htdocs/user/index.php:134
 #, php-format
 msgid "Manage Email User (%d Users)"
-msgstr "E-Mail-Benutzer verwalten (%d Benutzer)"
+msgstr ""
 
 #: htdocs/user/index.php:204 htdocs/addressbook/index.php:122
 msgid "Email"
-msgstr "E-Mail"
+msgstr ""
 
 #: htdocs/user/index.php:206 htdocs/addressbook/index.php:123
 msgid "contains"
-msgstr "enthält"
+msgstr ""
 
 #: htdocs/user/index.php:207 htdocs/addressbook/index.php:124
 msgid "is"
-msgstr "ist gleich"
+msgstr ""
 
 #: htdocs/user/index.php:208 htdocs/addressbook/index.php:125
 msgid "begins with"
-msgstr "beginnt mit"
+msgstr ""
 
 #: htdocs/user/index.php:209 htdocs/addressbook/index.php:126
 msgid "ends with"
-msgstr "endet mit"
+msgstr ""
 
 #: htdocs/user/user.php:95
 msgid "Please enter an email address"
-msgstr "Bitte geben Sie eine E-Mail-Adresse ein"
+msgstr ""
 
 #: htdocs/user/user.php:114
 #, php-format
 msgid "Email address %1$s not in domains %2$s"
-msgstr "E-Mail-Adresse %1$s nicht in Domänen %2$s vorhanden"
+msgstr ""
 
 #: htdocs/user/user.php:117 htdocs/addressbook/addr.php:65
 msgid "User, vCard or distribution list with this email address already exists"
 msgstr ""
-"Es existiert bereits ein Benutzer, eine vCard, oder eine Verteilerliste mit "
-"dieser E-Mail-Adresse"
 
 #: htdocs/user/user.php:135
 msgid "UID "
-msgstr "UID "
+msgstr ""
 
 #: htdocs/user/user.php:135 lib/Skolab/Admin/include/form.class.php:34
 msgid ""
 " collides with an address already used for another user, a vCard or a "
 "distribution list.<br />"
 msgstr ""
-" kollidiert mit einer Adresse, die bereits für einen anderen Benutzer, eine "
-"Visitenkarte oder eine Verteilerliste verwendet wird.<br />"
 
 #: htdocs/user/user.php:150
 #, php-format
 msgid "Email-Delegate %s does not exist"
-msgstr "Bevollmächtigter %s existiert nicht"
+msgstr ""
 
 #: htdocs/user/user.php:171
 #, php-format
@@ -1222,19 +1133,19 @@ msgstr ""
 #: htdocs/user/user.php:217
 #, php-format
 msgid "Illegal user or group %s"
-msgstr "Ungültiger Benutzer oder Gruppe %s"
+msgstr ""
 
 #: htdocs/user/user.php:226
 msgid "Free/Busy interval can not be negative"
-msgstr "Frei/Belegt-Intervall kann nicht negativ sein"
+msgstr ""
 
 #: htdocs/user/user.php:227
 msgid "Free/Busy interval must be a number"
-msgstr "Frei/Belegt-Intervall muss eine Zahl sein"
+msgstr ""
 
 #: htdocs/user/user.php:228
 msgid "Free/Busy interval must be an integer"
-msgstr "Frei/Belegt-Intervall muss eine ganze Zahl sein"
+msgstr ""
 
 #: htdocs/user/user.php:427 htdocs/administrator/admin.php:121
 #: htdocs/addressbook/addr.php:78 htdocs/distributionlist/list.php:109
@@ -1242,7 +1153,7 @@ msgstr "Frei/Belegt-Intervall muss eine ganze Zahl sein"
 #: htdocs/domainmaintainer/domainmaintainer.php:96
 #: htdocs/maintainer/maintainer.php:118
 msgid "Error: need valid action to proceed"
-msgstr "Fehler: Kann nicht weitermachen ohne zulässige Aktion"
+msgstr ""
 
 #: htdocs/user/user.php:439 htdocs/user/user.php:442 htdocs/user/user.php:447
 #: htdocs/user/user.php:909 htdocs/administrator/admin.php:127
@@ -1250,95 +1161,89 @@ msgstr "Fehler: Kann nicht weitermachen ohne zulässige Aktion"
 #: htdocs/domainmaintainer/domainmaintainer.php:102
 #: htdocs/maintainer/maintainer.php:124
 msgid "Error: You don't have the required Permissions"
-msgstr "Fehler: Sie haben nicht die erforderlichen Zugriffsrechte"
+msgstr ""
 
 #: htdocs/user/user.php:456 htdocs/user/user.php:458
 #: htdocs/sharedfolder/sf.php:130
 msgid "Non volatile"
-msgstr "unveränderlich"
+msgstr ""
 
 #: htdocs/user/user.php:457 htdocs/administrator/admin.php:136
 #: htdocs/domainmaintainer/domainmaintainer.php:111
 #: htdocs/maintainer/maintainer.php:133
 msgid "Leave blank to keep password unchanged"
-msgstr "Frei lassen, um das alte Passwort beizubehalten"
+msgstr ""
 
 #: htdocs/user/user.php:481
 msgid "Unique Identity (UID)"
-msgstr "Eindeutige Identität (UID)"
+msgstr ""
 
 #: htdocs/user/user.php:483
 msgid "Optional - Defaults to Primary Email Address"
-msgstr "Optional - Default ist die primäre E-Mail-Adresse"
+msgstr ""
 
 #: htdocs/user/user.php:484
 msgid "Mailbox Home Server"
-msgstr "Home-Server des E-Mail-Kontos"
+msgstr ""
 
 #: htdocs/user/user.php:488
 msgid "Account Type"
-msgstr "Kontotyp"
+msgstr ""
 
 #: htdocs/user/user.php:490
 msgid "User Account"
-msgstr "Benutzerkonto"
+msgstr ""
 
 #: htdocs/user/user.php:490
 msgid "Internal User Account"
-msgstr "Internes Benutzerkonto"
+msgstr ""
 
 #: htdocs/user/user.php:490
 msgid "Group Account"
-msgstr "Gruppenkonto"
+msgstr ""
 
 #: htdocs/user/user.php:490
 msgid "Resource Account"
-msgstr "Ressourcenkonto"
+msgstr ""
 
 #: htdocs/user/user.php:492
 msgid ""
 "NOTE: An internal user is a user that will not be visible in the address book"
 msgstr ""
-"ANMERKUNG: Ein interner Benutzer ist ein Benutzer, der nicht im Adressbuch "
-"angezeigt wird"
 
 #: htdocs/user/user.php:493
 msgid "Invitation Policy"
-msgstr "Einladungs-Richtlinie"
+msgstr ""
 
 #: htdocs/user/user.php:497
 msgid "For automatic invitation handling"
-msgstr "Für das automatische Bearbeiten von Einladungen"
+msgstr ""
 
 #: htdocs/user/user.php:498
 msgid ""
 "NOTE: For regular accounts to use this feature, give the 'calendar' user "
 "access to the Calendar folder"
 msgstr ""
-"ANMERKUNG: Damit normale Konten diese Funktion verwenden können, muss der "
-"Benutzer 'calendar' Zugriff auf den Kalender-Ordner haben"
 
 #: htdocs/user/user.php:500
 msgid "Email Aliases"
-msgstr "E-Mail-Aliasnamen"
+msgstr ""
 
 #: htdocs/user/user.php:503 htdocs/addressbook/addr.php:100
 msgid "One address per line"
-msgstr "Eine Adresse pro Zeile"
+msgstr ""
 
 #: htdocs/user/user.php:505
 msgid "Email-Delegates"
-msgstr "Bevollmächtigte"
+msgstr ""
 
 #: htdocs/user/user.php:508
 msgid "Others allowed to send emails with a \"from\" address of this account."
 msgstr ""
-"Andere, denen erlaubt ist, E-Mails mit einer \"From:\"-Adresse dieses Kontos "
-"zu verschicken."
 
 #: htdocs/user/user.php:509
 msgid "One email address per line."
-msgstr "Eine E-Mail-Adresse pro Zeile."
+msgstr ""
 
 #: htdocs/user/user.php:511
 msgid "Allowed Recipients"
@@ -1349,9 +1254,8 @@ msgid "Restrict allowed recipients of SMTP messages"
 msgstr ""
 
 #: htdocs/user/user.php:515
-#, fuzzy
 msgid "One entry per line."
-msgstr "Eine Adresse pro Zeile"
+msgstr ""
 
 #: htdocs/user/user.php:526
 msgid ""
@@ -1361,22 +1265,22 @@ msgstr ""
 
 #: htdocs/user/user.php:532
 msgid "User Quota in MBytes"
-msgstr "Plattenplatz-Kontingent des Benutzers in MBytes"
+msgstr ""
 
 #: htdocs/user/user.php:548
 msgid "Free/Busy interval in days"
-msgstr "Frei/Belegt-Intervall in Tagen"
+msgstr ""
 
 #: htdocs/user/user.php:549
 msgid "Leave blank for default (60 days)"
-msgstr "Freilassen für die Voreinstellung (60 Tage)"
+msgstr ""
 
 #: htdocs/user/user.php:559 htdocs/administrator/admin.php:165
 #: htdocs/domainmaintainer/domainmaintainer.php:149
 #: htdocs/maintainer/maintainer.php:162
 #, php-format
 msgid "LDAP Error: No such dn: %s: %s"
-msgstr "LDAP-Fehler: DN %s existiert nicht: %s"
+msgstr ""
 
 #: htdocs/user/user.php:737 htdocs/administrator/admin.php:217
 #: htdocs/addressbook/addr.php:189 htdocs/distributionlist/list.php:200
@@ -1385,12 +1289,12 @@ msgstr "LDAP-Fehler: DN %s existiert nicht: %s"
 #: htdocs/maintainer/maintainer.php:215
 #, php-format
 msgid "LDAP Error: could not rename %s to %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht in %s umbenennen: %s"
+msgstr ""
 
 #: htdocs/user/user.php:746
-#, fuzzy, php-format
+#, php-format
 msgid "LDAP Error: could not modify %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht in %s ändern: %s"
+msgstr ""
 
 #: htdocs/user/user.php:752 htdocs/administrator/admin.php:231
 #: htdocs/addressbook/addr.php:203 htdocs/addressbook/addr.php:218
@@ -1398,35 +1302,33 @@ msgstr "LDAP-Fehler: Konnte %s nicht in %s ändern: %s"
 #: htdocs/maintainer/maintainer.php:229
 #, php-format
 msgid "%s successfully updated"
-msgstr "%s erfolgreich aktualisiert"
+msgstr ""
 
 #: htdocs/user/user.php:758 htdocs/distributionlist/list.php:220
 #, php-format
 msgid "LDAP Error: Could not read %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht lesen: %s"
+msgstr ""
 
 #: htdocs/user/user.php:772 htdocs/user/user.php:787 htdocs/user/user.php:827
 #: htdocs/user/user.php:842 htdocs/distributionlist/list.php:224
 #: htdocs/distributionlist/list.php:253
 #, php-format
 msgid "LDAP Error: Could not modify object %s: %s"
-msgstr "LDAP-Fehler: Konnte Objekt %s nicht ändern: %s"
+msgstr ""
 
 #: htdocs/user/user.php:790 htdocs/user/user.php:845
 #, php-format
 msgid "Mid-air collision detected, alias %1$s renamed to %2$s"
 msgstr ""
-"Miteinander in Konflikt stehende Änderungen aufgetreten; der Aliasname %1$s "
-"wurde in %2$s umbenannt"
 
 #: htdocs/user/user.php:795 htdocs/user/user.php:883
 msgid "Modify User"
-msgstr "Benutzer bearbeiten"
+msgstr ""
 
 #: htdocs/user/user.php:796
 #, php-format
 msgid "User '%s' successfully modified"
-msgstr "Benutzer '%s' erfolgreich geändert"
+msgstr ""
 
 #: htdocs/user/user.php:816 htdocs/administrator/admin.php:260
 #: htdocs/addressbook/addr.php:227 htdocs/sharedfolder/sf.php:267
@@ -1434,55 +1336,51 @@ msgstr "Benutzer '%s' erfolgreich geändert"
 #: htdocs/maintainer/maintainer.php:261
 #, php-format
 msgid "LDAP Error: could not add object %s: %s"
-msgstr "LDAP-Fehler: Konnte Objekt %s nicht hinzufügen: %s"
+msgstr ""
 
 #: htdocs/user/user.php:830 htdocs/distributionlist/list.php:256
 #, php-format
 msgid "Mid-air collision detected, email address %1$s renamed to %2$s"
 msgstr ""
-"Miteinander in Konflikt stehende Änderungen entdeckt: E-Mail-Adresse %1$s "
-"wurde in %2$s umbenannt"
 
 #: htdocs/user/user.php:851
 msgid "User "
-msgstr "Benutzer "
+msgstr ""
 
 #: htdocs/user/user.php:851 htdocs/administrator/admin.php:270
 #: htdocs/domainmaintainer/domainmaintainer.php:276
 #: htdocs/maintainer/maintainer.php:269
 msgid " successfully created"
-msgstr " erfolgreich erzeugt"
+msgstr ""
 
 #: htdocs/user/user.php:852 htdocs/user/user.php:858 htdocs/user/user.php:872
 #: lib/Skolab/Admin/include/menu.php:32
 msgid "Create New User"
-msgstr "Neuen Benutzer anlegen"
+msgstr ""
 
 #: htdocs/user/user.php:891 htdocs/user/user.php:951
 msgid "Delete User"
-msgstr "Benutzer löschen"
+msgstr ""
 
 #: htdocs/user/user.php:906 htdocs/administrator/admin.php:315
 #: htdocs/domainmaintainer/domainmaintainer.php:318
 #: htdocs/maintainer/maintainer.php:314
 msgid "Error: need DN for delete operation"
-msgstr "Fehler: DN wird für Löschoperation benötigt"
+msgstr ""
 
 #: htdocs/user/user.php:912 htdocs/maintainer/maintainer.php:316
 msgid "Error: you need administrative permissions to delete users"
-msgstr "Fehler: Sie benötigen Administratorrechte, um Benutzer zu löschen"
+msgstr ""
 
 #: htdocs/user/user.php:925 htdocs/addressbook/addr.php:295
 #, php-format
 msgid "Account could not be deleted, distribution list '%s' depends on it."
 msgstr ""
-"Das Konto konnte nicht gelöscht werden; die Verteilerliste '%s' hängt davon "
-"ab."
 
 #: htdocs/user/user.php:932
 #, php-format
 msgid "Account removed from distribution list '%s'."
-msgstr "Das Konto wurde von der Verteilerliste '%s' entfernt."
+msgstr ""
 
 #: htdocs/user/user.php:934
 #, php-format
@@ -1490,48 +1388,45 @@ msgid ""
 "Failure to remove account from distribution list '%s', account will not be "
 "deleted."
 msgstr ""
-"Konnte das Konto nicht aus der Verteilerliste '%s' entfernen; das Konto wird "
-"nicht gelöscht."
 
 #: htdocs/user/user.php:942
 #, php-format
 msgid "LDAP Error: could not mark '%s' for deletion: %s"
-msgstr "LDAP-Fehler: Konnte '%s' nicht zum Löschen vormerken: %s"
+msgstr ""
 
 #: htdocs/user/user.php:945
 msgid "User Deleted"
-msgstr "Benutzer gelöscht"
+msgstr ""
 
 #: htdocs/user/vacation.php:57
 msgid "Vacation message successfully activated"
-msgstr "Abwesenheitsnachricht erfolgreich aktiviert"
+msgstr ""
 
 #: htdocs/user/vacation.php:59
 msgid "Vacation message successfully deactivated"
-msgstr "Abwesenheitsnachricht erfolgreich deaktiviert"
+msgstr ""
 
 #: htdocs/administrator/admin.php:52
 #: htdocs/domainmaintainer/domainmaintainer.php:53
 #: htdocs/maintainer/maintainer.php:52
 msgid "Account with this UID already exists"
-msgstr "Konto mit dieser UID existiert bereits"
+msgstr ""
 
 #: htdocs/administrator/admin.php:75
 msgid "Manager's password can't be changed from the webgui"
 msgstr ""
-"Das Passwort des Managers kann nicht in der Web-Schnittstelle geändert werden"
 
 #: htdocs/administrator/admin.php:135
 #: htdocs/domainmaintainer/domainmaintainer.php:110
 #: htdocs/maintainer/maintainer.php:132
 msgid "non volatile"
-msgstr "unveränderlich"
+msgstr ""
 
 #: htdocs/administrator/admin.php:153
 #: htdocs/domainmaintainer/domainmaintainer.php:128
 #: htdocs/maintainer/maintainer.php:150
 msgid "Unique User ID"
-msgstr "Eindeutige Benutzer-ID"
+msgstr ""
 
 #: htdocs/administrator/admin.php:225 htdocs/addressbook/addr.php:197
 #: htdocs/distributionlist/list.php:208 htdocs/sharedfolder/sf.php:241
@@ -1539,7 +1434,7 @@ msgstr "Eindeutige Benutzer-ID"
 #: htdocs/maintainer/maintainer.php:223
 #, php-format
 msgid "LDAP Error: could not modify %s to %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht in %s ändern: %s"
+msgstr ""
 
 #: htdocs/administrator/admin.php:235 htdocs/addressbook/addr.php:209
 #: htdocs/sharedfolder/sf.php:253
@@ -1547,7 +1442,7 @@ msgstr "LDAP-Fehler: Konnte %s nicht in %s ändern: %s"
 #: htdocs/maintainer/maintainer.php:233
 #, php-format
 msgid "LDAP Error: could not read %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht lesen: %s"
+msgstr ""
 
 #: htdocs/administrator/admin.php:239 htdocs/addressbook/addr.php:215
 #: htdocs/sharedfolder/sf.php:257
@@ -1555,118 +1450,115 @@ msgstr "LDAP-Fehler: Konnte %s nicht lesen: %s"
 #: htdocs/maintainer/maintainer.php:237
 #, php-format
 msgid "LDAP Error: could not modify object %s: %s"
-msgstr "LDAP-Fehler: Konnte Objekt %s nicht ändern: %s"
+msgstr ""
 
 #: htdocs/administrator/admin.php:244 htdocs/administrator/admin.php:297
 msgid "Modify Administrator"
-msgstr "Administrator bearbeiten"
+msgstr ""
 
 #: htdocs/administrator/admin.php:245 htdocs/administrator/admin.php:270
 msgid "Administrator "
-msgstr "Administrator "
+msgstr ""
 
 #: htdocs/administrator/admin.php:245
 #: htdocs/domainmaintainer/domainmaintainer.php:246
 #: htdocs/maintainer/maintainer.php:243
 msgid " successfully modified"
-msgstr " erfolgreich geändert"
+msgstr ""
 
 #: htdocs/administrator/admin.php:266
 #: htdocs/domainmaintainer/domainmaintainer.php:269
 #: htdocs/maintainer/maintainer.php:265
 #, php-format
 msgid "LDAP Error: could not add object %s to maintainer group: %s"
-msgstr "LDAP-Fehler: Konnte Objekt %s nicht zur Verwaltergruppe hinzufügen: %s"
+msgstr ""
 
 #: htdocs/administrator/admin.php:271 htdocs/administrator/admin.php:277
 #: htdocs/administrator/admin.php:288 lib/Skolab/Admin/include/menu.php:77
 msgid "Create New Administrator"
-msgstr "Neuen Administrator anlegen"
+msgstr ""
 
 #: htdocs/administrator/admin.php:303
 msgid "Delete Administrator"
-msgstr "Administrator löschen"
+msgstr ""
 
 #: htdocs/administrator/admin.php:317
 msgid "Error: you need administrative permissions to delete administrators"
 msgstr ""
-"Fehler: Sie benötigen Administratorrechte, um Administratoren löschen zu "
-"dürfen"
 
 #: htdocs/administrator/admin.php:321
 #, php-format
 msgid "LDAP Error: Could not remove %s from admin group: %s"
 msgstr ""
-"LDAP-Fehler: Konnte %s nicht aus der Administratoren-Gruppe entfernen: %s"
 
 #: htdocs/administrator/admin.php:326
 #: htdocs/domainmaintainer/domainmaintainer.php:330
 #: htdocs/maintainer/maintainer.php:326
 #, php-format
 msgid "LDAP Error: could not mark %s for deletion: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht zum Löschen vormerken: %s"
+msgstr ""
 
 #: htdocs/administrator/admin.php:332
 msgid "Administrator Deleted"
-msgstr "Administrator gelöscht"
+msgstr ""
 
 #: htdocs/administrator/index.php:62
 msgid "Manage Administrators ("
-msgstr "Administratoren verwalten ("
+msgstr ""
 
 #: htdocs/administrator/index.php:62
 msgid " Administrators)"
-msgstr " Administratoren)"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:95
 msgid "Primary E-Mail Address"
-msgstr "Primäre E-Mail-Adresse"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:97
 msgid "E-Mail Aliases"
-msgstr "E-Mail-Aliasnamen"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:105
 msgid "Post Box"
-msgstr "Postfach"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:121 htdocs/distributionlist/list.php:138
 #: htdocs/sharedfolder/sf.php:151
 #, php-format
 msgid "Error: DN required for %s operation"
-msgstr "Fehler: dn wird für die Operation %s benötigt"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:131
 msgid "Add External Address"
-msgstr "Externe Adresse hinzufügen"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:178
-#, fuzzy, php-format
+#, php-format
 msgid "Addressbook entry DN could not be modified, distribution list <a href='"
-msgstr "Die Adresse wurde von der Verteilerliste '%s' entfernt."
+msgstr ""
 
 #: htdocs/addressbook/addr.php:230
 #, php-format
 msgid "%s successfully added"
-msgstr "%s erfolgreich hinzugefügt"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:240 htdocs/addressbook/addr.php:258
 msgid "Modify External Address"
-msgstr "Externe Adresse bearbeiten"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:261 htdocs/addressbook/addr.php:281
 #, php-format
 msgid "Error: No entry with DN %s found"
-msgstr "Fehler: Kein Eintrag mit DN %s gefunden"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:278
 msgid "Delete External Address"
-msgstr "Externe Adresse löschen"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:302
 #, php-format
 msgid "Addressbook entry removed from distribution list '%s'."
-msgstr "Die Adresse wurde von der Verteilerliste '%s' entfernt."
+msgstr ""
 
 #: htdocs/addressbook/addr.php:304
 #, php-format
@@ -1674,38 +1566,36 @@ msgid ""
 "Failure to remove addressbook entry from distribution list '%s', entry will "
 "not be deleted."
 msgstr ""
-"Konnte die Adresse nicht aus der Verteilerliste '%s' entfernen; der Eintrag "
-"wird nicht gelöscht."
 
 #: htdocs/addressbook/addr.php:312
 #, php-format
 msgid "LDAP Error: could not delete %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht löschen: %s"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:315 htdocs/distributionlist/list.php:316
 #: htdocs/sharedfolder/sf.php:327
 msgid "Entry Deleted"
-msgstr "Eintrag gelöscht"
+msgstr ""
 
 #: htdocs/addressbook/addr.php:316
 #, php-format
 msgid "Address book entry with DN %s was deleted"
-msgstr "Adressbucheintrag mit DN %s wurde gelöscht"
+msgstr ""
 
 #: htdocs/settings/index.php:99
 #, php-format
 msgid "No account found for email address %s"
-msgstr "Für die E-Mail-Adresse %s wurde kein Konto gefunden"
+msgstr ""
 
 #: htdocs/settings/index.php:108
 #, php-format
 msgid "LDAP Error: Failed to add distribution list %s: %s"
-msgstr "LDAP-Fehler: Konnte die Verteilerliste %s nicht hinzufügen: %s"
+msgstr ""
 
 #: htdocs/settings/index.php:110
 #, php-format
 msgid "Successfully created distribution list %s"
-msgstr "Verteilerliste %s erfolgreich angelegt"
+msgstr ""
 
 #: htdocs/settings/index.php:129 htdocs/settings/index.php:138
 #: htdocs/settings/index.php:147 htdocs/settings/index.php:158
@@ -1715,405 +1605,396 @@ msgstr "Verteilerliste %s erfolgreich angelegt"
 #: htdocs/settings/index.php:255 htdocs/settings/index.php:268
 #, php-format
 msgid "LDAP Error: failed to modify kolab configuration object: %s"
-msgstr "LDAP-Fehler: Konnte das Kolab-Konfigurationsobjekt nicht verändern: %s"
+msgstr ""
 
 #: htdocs/settings/index.php:226
 #, php-format
 msgid "LDAP Error: Failed to delete domain object %s: %s"
-msgstr "LDAP-Fehler: Konnte das Domänen-Objekt %s nicht löschen: %s"
+msgstr ""
 
 #: htdocs/settings/index.php:276
 msgid "POP3 Service"
-msgstr "POP3-Dienst"
+msgstr ""
 
 #: htdocs/settings/index.php:277
 msgid "POP3/SSL service (TCP port 995)"
-msgstr "POP3/SSL-Dienst (TCP-Port 995)"
+msgstr ""
 
 #: htdocs/settings/index.php:278
 msgid "IMAP Service"
-msgstr "IMAP-Dienst"
+msgstr ""
 
 #: htdocs/settings/index.php:279
 msgid "IMAP/SSL Service (TCP port 993)"
-msgstr "IMAP/SSL-Dienst (TCP-Port 993)"
+msgstr ""
 
 #: htdocs/settings/index.php:280
 #, php-format
 msgid "Sieve service (TCP port %s)"
-msgstr "Sieve-Dienst (TCP-Port %s)"
+msgstr ""
 
 #: htdocs/settings/index.php:281
 msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
-msgstr "Frei/Belegt-Dienst über HTTP (zusätzlich zu HTTPS)"
+msgstr ""
 
 #: htdocs/settings/index.php:282
 msgid "Amavis Email Scanning (Virus/Spam)"
-msgstr "Amavis-Scannen von E-Mail-Nachrichten (Viren/Spam)"
+msgstr ""
 
 #: htdocs/distributionlist/index.php:63
 #, php-format
 msgid "Manage Distribution Lists (%d Lists)"
-msgstr "Verteilerlisten verwalten (%d Listen)"
+msgstr ""
 
 #: htdocs/distributionlist/index.php:74
 msgid "not yet implemented"
-msgstr "noch nicht implementiert"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:46
 msgid "Please add at least one member"
-msgstr "Bitte fügen Sie wenigstens einen Eintrag hinzu"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:50
 #, php-format
 msgid "No user with email address, UID or alias %s"
-msgstr "Kein Benutzer mit dieser E-Mail-Adresse, UID oder Alias: %s"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:62
 msgid "User or distribution list with this email address already exists"
 msgstr ""
-"Es existiert bereits ein Benutzer oder eine Verteilerliste mit dieser E-Mail-"
-"Adresse"
 
 #: htdocs/distributionlist/list.php:114
 msgid "List Name"
-msgstr "Listenname"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:121
 msgid "Members"
-msgstr "Teilnehmer"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:123
 msgid "One email address per line"
-msgstr "Eine E-Mail-Adresse pro Zeile"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:126
 msgid "Hidden"
-msgstr "Verborgen"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:129
 msgid ""
 "Check here to make this distribution list available only to authenticated "
 "users"
 msgstr ""
-"Kreuzen Sie diese Option an, wenn diese Verteilerliste nur authentifizierten "
-"Benutzern zur Verfügung stehen soll"
 
 #: htdocs/distributionlist/list.php:148
 msgid "Add Distribution List"
-msgstr "Verteilerliste hinzufügen"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:183
 #, php-format
 msgid "No user with address %s"
-msgstr "Es existiert kein Benutzer mit der Adresse %s"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:214 htdocs/distributionlist/list.php:226
 msgid "Distribution List updated"
-msgstr "Verteilerliste aktualisiert"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:235
 #, php-format
 msgid "LDAP Error: Could not add object %s: %s"
-msgstr "LDAP-Fehler: Konnte Objekt %s nicht hinzufügen: %s"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:264
 #, php-format
 msgid "Distribution List '%s' added"
-msgstr "Verteilerliste '%s' wurde hinzugefügt"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:276 htdocs/distributionlist/list.php:290
 msgid "Modify Distribution List"
-msgstr "Verteilerliste bearbeiten"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:293 htdocs/distributionlist/list.php:308
 #: htdocs/sharedfolder/sf.php:304 htdocs/sharedfolder/sf.php:320
 #, php-format
 msgid "Error: No results returned for DN '%s'"
-msgstr "Fehler: Für DN '%s' wurden keine Ergebnisse zurückgegeben"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:305
 msgid "Delete Distribution List"
-msgstr "Verteilerliste löschen"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:315
 msgid "Distribution List "
-msgstr "Verteilerliste "
+msgstr ""
 
 #: htdocs/distributionlist/list.php:315
 msgid " deleted"
-msgstr " gelöscht"
+msgstr ""
 
 #: htdocs/distributionlist/list.php:319
 #, php-format
 msgid "LDAP Error: Could not delete %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht löschen: %s"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:64 htdocs/sharedfolder/sf.php:71
 msgid "Permission for UID/email/GID"
-msgstr "Zugriffsrechte für UID/E-Mail/GID"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:105
 #, php-format
 msgid "No UID or GID %s"
-msgstr "Keine UID oder GID %s"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:121
 msgid "Folder Name"
-msgstr "Ordnername"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:128
 msgid "Folder Location"
-msgstr "Ordnerposition"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:132
 msgid "Folder Type"
-msgstr "Ordnertyp"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:135
 msgid "Quota Limit"
-msgstr "Plattenplatz-Kontingent"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:136
 msgid "MBytes (empty for unlimited)"
-msgstr "MBytes (leer lassen für unbegrenzten Plattenplatz)"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:138
 msgid "Permission for UID/GID"
-msgstr "Zugriffsrechte für UID/GID"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:161 lib/Skolab/Admin/include/menu.php:61
 msgid "Add Shared Folder"
-msgstr "Gemeinsam genutzten Ordner hinzufügen"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:247 htdocs/sharedfolder/sf.php:259
 msgid "Shared folder updated"
-msgstr "Gemeinsam genutzter Ordner aktualisiert"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:269
 #, php-format
 msgid "Shared folder '%s' added"
-msgstr "Gemeinsam genutzter Ordner '%s' hinzugefügt"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:281 htdocs/sharedfolder/sf.php:301
 msgid "Modify Shared Folder"
-msgstr "Gemeinsam genutzten Ordner bearbeiten"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:317
 msgid "Delete Shared Folder"
-msgstr "Gemeinsam genutzten Ordner löschen"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:326
 msgid "Shared folder "
-msgstr "Gemeinsam genutzter Ordner "
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:326
 msgid " marked for deletion"
-msgstr " zum Löschen vorgemerkt"
+msgstr ""
 
 #: htdocs/sharedfolder/sf.php:330
 #, php-format
 msgid "LDAP Error: Could not mark %s for deletion: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht zum Löschen vormerken: %s"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:52
 #, php-format
 msgid "Manage Shared Folders (%d Folders)"
-msgstr "Gemeinsam genutzte Ordner verwalten (%d Ordner)"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:62 lib/Skolab/Admin/include/form.class.php:254
 msgid "Unspecified"
-msgstr "Unspezifiziert"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:63 lib/Skolab/Admin/include/form.class.php:254
 msgid "Mails"
-msgstr "E-Mail"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:64 lib/Skolab/Admin/include/form.class.php:254
 msgid "Tasks"
-msgstr "Aufgaben"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:65 lib/Skolab/Admin/include/form.class.php:255
 msgid "Journals"
-msgstr "Journal"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:66 lib/Skolab/Admin/include/form.class.php:255
 msgid "Events"
-msgstr "Kalender"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:67 lib/Skolab/Admin/include/form.class.php:256
 msgid "Contacts"
-msgstr "Kontakte"
+msgstr ""
 
 #: htdocs/sharedfolder/index.php:68 lib/Skolab/Admin/include/form.class.php:256
 msgid "Notes"
-msgstr "Notizen"
+msgstr ""
 
 #: htdocs/domainmaintainer/index.php:62 htdocs/maintainer/index.php:62
 msgid "Manage Maintainers ("
-msgstr "Verwalter verwalten ("
+msgstr ""
 
 #: htdocs/domainmaintainer/index.php:62 htdocs/maintainer/index.php:62
 msgid " Maintainers)"
-msgstr " Verwalter)"
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:49
 msgid "Please enter a uid value"
-msgstr "Bitte geben Sie eine UID ein"
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:137
 msgid "Check domains this domain maintainer should be able to maintain"
 msgstr ""
-"Kreuzen Sie die Domänen an, die dieser Domänenverwalter verwalten können "
-"sollte"
 
 #: htdocs/domainmaintainer/domainmaintainer.php:245
 #: htdocs/domainmaintainer/domainmaintainer.php:300
 msgid "Modify Domain Maintainer"
-msgstr "Domänenverwalter bearbeiten"
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:246
 #: htdocs/maintainer/maintainer.php:243 htdocs/maintainer/maintainer.php:269
 msgid "Maintainer "
-msgstr "Verwalter "
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:276
 msgid "Domain maintainer "
-msgstr "Domänenverwalter "
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:277
 #: htdocs/domainmaintainer/domainmaintainer.php:281
 #: htdocs/domainmaintainer/domainmaintainer.php:291
 #: lib/Skolab/Admin/include/menu.php:83 lib/Skolab/Admin/include/menu.php:100
 msgid "Create New Domain Maintainer"
-msgstr "Neuen Domänenverwalter anlegen"
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:306
 msgid "Delete Domain Maintainer"
-msgstr "Domänenverwalter löschen"
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:320
 msgid "Error: you need administrative permissions to delete domain maintainers"
 msgstr ""
-"Fehler: Sie benötigen Administratorrechte, um Domänenverwalter löschen zu "
-"dürfen"
 
 #: htdocs/domainmaintainer/domainmaintainer.php:324
 #: htdocs/maintainer/maintainer.php:320
 #, php-format
 msgid "LDAP Error: Could not remove %s from maintainer group: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht aus der Verwalter-Gruppe entfernen: %s"
+msgstr ""
 
 #: htdocs/domainmaintainer/domainmaintainer.php:336
 msgid "Domain Maintainer Deleted"
-msgstr "Domänenverwalter gelöscht"
+msgstr ""
 
 #: htdocs/maintainer/maintainer.php:242 htdocs/maintainer/maintainer.php:296
 msgid "Modify Maintainer"
-msgstr "Verwalter bearbeiten"
+msgstr ""
 
 #: htdocs/maintainer/maintainer.php:270 htdocs/maintainer/maintainer.php:276
 #: htdocs/maintainer/maintainer.php:287 lib/Skolab/Admin/include/menu.php:89
 msgid "Create New Maintainer"
-msgstr "Neuen Verwalter anlegen"
+msgstr ""
 
 #: htdocs/maintainer/maintainer.php:302
 msgid "Delete Maintainer"
-msgstr "Verwalter löschen"
+msgstr ""
 
 #: htdocs/maintainer/maintainer.php:332
 msgid "Maintainer Deleted"
-msgstr "Verwalter gelöscht"
+msgstr ""
 
 #: lib/Skolab/Admin/include/passwd.php:33
 msgid "Password is empty"
-msgstr "Passwort ist leer"
+msgstr ""
 
 #: lib/Skolab/Admin/include/passwd.php:36
 #: lib/Skolab/Admin/include/passwd.php:41
 msgid "Passwords dont match"
-msgstr "Passwörter stimmen nicht überein"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:28
 msgid "Users"
-msgstr "Benutzer"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:30
 msgid "Manage Email Users"
-msgstr "E-Mail-Benutzer verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:35 lib/Skolab/Admin/include/menu.php:37
 msgid "My User Settings"
-msgstr "Meine Benutzereinstellungen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:39
 msgid "Mail Delivery"
-msgstr "E-Mail-Zustellung"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:41
 msgid "Forward Email"
-msgstr "E-Mail weiterleiten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:43
 msgid "Vacation"
-msgstr "Abwesenheit"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:50
 msgid "Manage Address Book"
-msgstr "Adressbuch verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:52
 msgid "Create New vCard"
-msgstr "Neue Visitenkarte (vCard) erzeugen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:57
 msgid "Shared Folder"
-msgstr "Gemeinsam genutzter Ordner"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:59
 msgid "Manage Shared Folders"
-msgstr "Gemeinsam genutzte Ordner verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:67
 msgid "Manage Distribution Lists"
-msgstr "Verteilerlisten verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:69
 msgid "Create New List"
-msgstr "Neue Liste anlegen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:75
 msgid "Manage Administrators"
-msgstr "Administratoren verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:81 lib/Skolab/Admin/include/menu.php:98
 msgid "Manage Domain Maintainers"
-msgstr "Domänenverwalter verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:87
 msgid "Manage Maintainers"
-msgstr "Verwalter verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:95
 msgid "Manage Maintainer"
-msgstr "Verwalter verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:106
 msgid "Manage Domain Maintainer"
-msgstr "Domänenverwalter verwalten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:111
 msgid "System Settings"
-msgstr "Systemeinstellungen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:114 lib/Skolab/Admin/include/menu.php:116
 msgid "About Skolab"
-msgstr "Über Kolab"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:118
-#, fuzzy
 msgid "Skolab Groupware Project"
-msgstr "Kolab Groupware login"
+msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:120
 msgid "Technology"
@@ -2121,438 +2002,98 @@ msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:124
 msgid "Versions"
-msgstr "Versionen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:34
 msgid "Email address "
-msgstr "E-Mail-Adresse"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:45
 msgid "Quota can not be negative"
-msgstr "Plattenplatz kann nicht negativ sein"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:46
 msgid "Quota must be a number"
-msgstr "Plattenplatz-Kontingent muss eine Zahl sein"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:47
 msgid "Quota must be an integer"
-msgstr "Plattenplatz-Kontingent muss eine ganze Zahl sein"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:54
 msgid ""
 "Phone entries may only contain a-z, numbers, spaces and the characters ()-+/."
 "=?:"
 msgstr ""
-"Telefonnummern dürfen nur a-z, Ziffern, Leerzeichen und die Zeichen ()-+/."
-"=?: enthalten."
 
 #: lib/Skolab/Admin/include/form.class.php:117
 msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
-msgstr "<tr><th>Attribut</th><th>Wert</th><th>Kommentar</th></tr>"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:204
 msgid "Yes"
-msgstr "Ja"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:204
 msgid "No"
-msgstr "Nein"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:322
 msgid "Always accept"
-msgstr "Immer annehmen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:323
 msgid "Always reject"
-msgstr "Immer ablehnen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:324
 msgid "Reject if conflicts"
-msgstr "Ablehnen im Konfliktfall"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:325
 msgid "Manual if conflicts"
-msgstr "Im Konfliktfall manuell bearbeiten"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:326
 msgid "Manual"
-msgstr "Manuell"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:332
 #: lib/Skolab/Admin/include/form.class.php:338
 msgid "Anyone"
-msgstr "Alle"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:374
 msgid "* Required field."
-msgstr "* Pflichtfeld"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:395
 #: lib/Skolab/Admin/include/form.class.php:398
 msgid "Required field "
-msgstr "Pflichtfeld "
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:395
 #: lib/Skolab/Admin/include/form.class.php:398
 msgid " is empty"
-msgstr " ist leer"
+msgstr ""
 
 #: lib/Skolab/Admin/include/auth.class.php:42
 msgid "Server error, no ldap object!"
-msgstr "Server-Fehler, kein LDAP-Objekt!"
+msgstr ""
 
 #: lib/Skolab/Admin/include/auth.class.php:48
 msgid "Could not bind to LDAP server: "
-msgstr "Anmeldung am LDAP-Server fehlgeschlagen: "
+msgstr ""
 
 #: lib/Skolab/Admin/include/auth.class.php:59
 msgid "Could not bind to LDAP server"
-msgstr "Anmeldung am LDAP-Server fehlgeschlagen"
+msgstr ""
 
 #: lib/Skolab/Admin/include/auth.class.php:86
 #: lib/Skolab/Admin/include/auth.class.php:90
 msgid "Wrong username or password"
-msgstr "Falscher Benutzername oder falsches Passwort"
+msgstr ""
 
 #: lib/Skolab/Admin/include/auth.class.php:129
-#, fuzzy
 msgid "Skolab Groupware Login"
-msgstr "Kolab Groupware login"
-
-#, fuzzy
-#~ msgid "Always reject the message."
-#~ msgstr "Die Nachricht immer ablehnen."
-
-#, fuzzy
-#~ msgid ""
-#~ "Note that enabling this setting will make the server reject any mail with "
-#~ "non-matching sender and From header if the sender is an account on this "
-#~ "server. This is known to cause trouble for example with mailinglists."
-#~ msgstr ""
-#~ "Beachten Sie, dass der Server mit dieser Einstellung alle Nachrichten, "
-#~ "bei denen Absender und From-Zeile nicht übereinstimmen, zurückweisen "
-#~ "wird, wenn der Absender über ein Konto auf diesem Server verfügt. Dies "
-#~ "kann beispielsweise bei Nachrichtenlisten zu Problemen führen."
-
-#, fuzzy
-#~ msgid "Kolab Hostnames (for Master and Slaves)"
-#~ msgstr "Kolab-Rechnernamen (für Master- und Slaveserver)"
-
-#~ msgid "Host"
-#~ msgstr "Host"
-
-#, fuzzy
-#~ msgid "{/section}"
-#~ msgstr "Aktion"
-
-#, fuzzy
-#~ msgid ""
-#~ "<h3>{t}(only external addresses without a kolab user account){/t}</h3>"
-#~ msgstr "(nur externe Adresse ohne Kolab-Benutzerkonto)"
-
-#, fuzzy
-#~ msgid "<h3>{t}Administrators{/t}</h3>"
-#~ msgstr "Administratoren"
-
-#, fuzzy
-#~ msgid "\t<td>{t}Verify Password{/t}</td>"
-#~ msgstr "Passwort bestätigen"
-
-#, fuzzy
-#~ msgid "\t<td>{t}Primary Email Address{/t}</td>"
-#~ msgstr "Primäre E-Mail-Adresse"
-
-#, fuzzy
-#~ msgid "\t<td>{t}Required, non volatile{/t}</td>"
-#~ msgstr "Pflichtfeld, unveränderlich"
-
-#, fuzzy
-#~ msgid "\t<td>{t}Organisational Unit{/t}</td>"
-#~ msgstr "Organisationseinheit"
-
-#, fuzzy
-#~ msgid "\t<td>{t}Street Address{/t}</td>"
-#~ msgstr "Straßenanschrift"
-
-#, fuzzy
-#~ msgid "\t<td>{t}Telephone Number{/t}</td>"
-#~ msgstr "Telefonnummer"
-
-#, fuzzy
-#~ msgid "\t<td>{t}User Quota in KB{/t}</td>"
-#~ msgstr "Kontingent des Benutzers in KBytes"
-
-#, fuzzy
-#~ msgid "\t<td>{t}Leave blank for unlimited{/t}</td>"
-#~ msgstr "Freilassen für unbegrenzten Platz"
-
-#, fuzzy
-#~ msgid "<h1>{t}Email Delivery{/t}</h1>"
-#~ msgstr "E-Mail-Zustellung"
-
-#, fuzzy
-#~ msgid "<h3>{t}Distribution Lists{/t}</h3>"
-#~ msgstr "Verteilerlisten"
-
-#, fuzzy
-#~ msgid "<h3>{t}Domain Maintainers{/t}</h3>"
-#~ msgstr "Domänenverwalter"
-
-#, fuzzy
-#~ msgid "{t}Forward mail to{/t} <input type="
-#~ msgstr "E-Mail weiterleiten an"
-
-#, fuzzy
-#~ msgid "<h2>{t}Mail Filter Settings{/t}</h2>"
-#~ msgstr "Einstellungen für Nachrichtenfilter"
-
-#, fuzzy
-#~ msgid "<h3>{t}Shared folders{/t}</h3>"
-#~ msgstr "Gemeinsam genutzte Ordner"
-
-#, fuzzy
-#~ msgid "{t}Filter:{/t}"
-#~ msgstr "Filter:"
-
-#~ msgid ""
-#~ "<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> is a "
-#~ "specialist email solution provider based in Johannesburg, South Africa "
-#~ "specialising in the deployment and support of Kolab."
-#~ msgstr ""
-#~ "<a href=\"http://www.codefusion.co.za/\">Code Fusion cc</a> ist ein auf E-"
-#~ "Mail-Lösungen spezialisierter Dienstleister in Johannesburg, Südafrika, "
-#~ "der besonders an Inbetriebnahme und Support für Kolab arbeitet."
-
-#~ msgid ""
-#~ "<a href=\"http://www.erfrakon.com\">erfrakon</a> is a consulting company "
-#~ "dedicated to opensource software and Linux. The main tasks of erfrakon "
-#~ "within the Kolab project are the principle design and architecure of the "
-#~ "Kolab groupware solution and the creation of the Kolab 1 server."
-#~ msgstr ""
-#~ "<a href=\"http://www.erfrakon.com\">erfrakon</a> ist eine Consulting-"
-#~ "Firma, die sich Open Source Software und Linux verschrieben hat. Die "
-#~ "Hauptaufgaben von erfrakon im Kolab-Projekt sind das grundlegende Design "
-#~ "und die Architektur der Kolab-Groupware-Lösung und die Erstellung des "
-#~ "Kolab 1-Servers."
-
-#~ msgid ""
-#~ "<a href=\"http://www.kde.org\">KDE</a> is a powerful <a href=\"http://www."
-#~ "gnu.org/philosophy/free-sw.html\">Free Software</a> graphical desktop "
-#~ "environment for Linux and Unix workstations. It combines ease of use, "
-#~ "contemporary functionality, and outstanding graphical design with the "
-#~ "technological superiority of the Unix operating system."
-#~ msgstr ""
-#~ "<a href=\"http://www.kde.org\">KDE</a> ist eine mächtige <a href=\"http://"
-#~ "www.gnu.org/philosophy/free-sw.html\">Open Source</a> grafische "
-#~ "Schreibtischumgebung für Linux- und UNIX-Workstations. Sie kombiniert "
-#~ "einfachste Bedienung mit zeitgemäßer Funktionalität und herausragendes "
-#~ "grafisches Design mit der technologischen Überlegenheit des "
-#~ "Betriebssystems UNIX."
-
-#~ msgid ""
-#~ "<b>KDE</b> is a mature desktop suite providing a solid basis to an ever "
-#~ "growing number of <a href=\"http://www.kde-apps.org\">applications</a> "
-#~ "for Unix workstations.  KDE has developed a high quality development "
-#~ "framework for Unix, which allows for the rapid and efficient creation of "
-#~ "applications."
-#~ msgstr ""
-#~ "<b>KDE</b> ist eine reife Schreibtischumgebung, die einer ständig "
-#~ "wachsenden Anzahl von <a href=\"http://apps.kde.com\">Applikationen</a> "
-#~ "für Unix-Umgebungen eine solide Basis bietet. KDE hat ein "
-#~ "hochqualitatives Entwicklungs-Framework für Unix entwickelt, mit dem "
-#~ "Applikationen schnell und effizient entwickelt werden können."
-
-#~ msgid ""
-#~ "<b>KDE</b> is an Internet project that is truly open in every sense. "
-#~ "Development takes place on the Internet and is discussed on our <a href="
-#~ "\"http://www.kde.org/mailinglists.html\">mailing lists</a>, USENET news "
-#~ "groups, and IRC channels to which we invite and welcome everyone."
-#~ msgstr ""
-#~ "<b>KDE</b> ist ein Internet-Projekt, das in jeder Hinsicht wahrhaft offen "
-#~ "ist. Die Entwicklung findet im Internet statt und wird auf unseren <a "
-#~ "href=\"http://www.kde.org/mailinglists.html\">Mailing-Listen</a>, USENET-"
-#~ "Newsgruppen und IRC-Kanälen diskutiert, zu denen wir alle einladen und "
-#~ "willkommen heißen."
-
-#~ msgid ""
-#~ "A list of additional Outlook plug-ins that provide interoperability with "
-#~ "the Kolab server is <a href=\"http://www.kolab.org/kolab-plugins.html"
-#~ "\">maintained on the Kolab website</a>."
-#~ msgstr ""
-#~ "Eine Liste der weiteren Outlook-Plug-Ins, die Interoperabilität mit dem "
-#~ "Kolab-Server ermöglichen, finden Sie unter <a href=\"http://www.kolab.org/"
-#~ "kolab-plugins.html\">auf der Kolab-Website</a>."
-
-#~ msgid ""
-#~ "As Kolab is a Free Software project, anyone can help to extend the "
-#~ "functionality of the software. An active community has developed around "
-#~ "the software with many people throughout the world contributing. The "
-#~ "project was originally started in 2002 by a joint-venture of three "
-#~ "companies: <a href=\"http://www.erfrakon.com/\">erfrakon</a> (design, "
-#~ "architecture and server); <a href=\"http://www.intevation.de"
-#~ "\">Intevation</a> (project management) and <a href=\"http://www."
-#~ "klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens Datakonsult</a> "
-#~ "(client)."
-#~ msgstr ""
-#~ "Da Kolab ein Freie Software-Projekt ist, kann jeder dabei mithelfen, die "
-#~ "Funktionalität der Software zu erweitern. Eine aktive Gemeinde hat sich "
-#~ "um die Software herum gebildet, zu der viele Leute auf der ganzen Welt "
-#~ "beitragen. Das Projekt wurde ursprünglich im Jahre 2002 durch ein Joint "
-#~ "Venture der drei Firmen <a href=\"http://www.erfrakon.com/\">erfrakon</a> "
-#~ "(Design, Architektur und Server), <a href=\"http://www.intevation.de"
-#~ "\">Intevation</a> (Projektmanagement) und <a href=\"http://www."
-#~ "klaralvdalens-datakonsult.se/\">Klar&auml;lvdalens Datakonsult AB</a> "
-#~ "(Klient) ins Leben gerufen."
-
-#~ msgid "CSSified the Kolab1 web admin GUI"
-#~ msgstr "Hat das Web-Administrations-GUI von Kolab1 auf CSS umgestellt"
-
-#~ msgid ""
-#~ "Code Fusion has played, and continues to play, an integral part in "
-#~ "developing and extending the Kolab server; specifically with regards to "
-#~ "enhancing the base Kolab engine, adding in support for Microsoft Active "
-#~ "Directory &reg; as an LDAP backend, as well as extending the <a href="
-#~ "\"http://www.horde.org/\">Horde project</a> to provide a web-based "
-#~ "groupware client for the Kolab server."
-#~ msgstr ""
-#~ "Code Fusion hat eine zentrale Rolle in der Entwicklung und Erweiterung "
-#~ "des Kolab-Servers gespielt und wird das auch in Zukunft tun; insbesondere "
-#~ "hinsichtlich Erweiterungen der zugrundeliegenden Kolab-Engine, der "
-#~ "Unterstützung von Microsoft Active Directory &reg; als LDAP-Backend und "
-#~ "der Erweiterung des <a href=\"http://www.horde.org/\">Horde-Projekts</a> "
-#~ "als Web-basierter Groupware-Client für den Kolab-Server."
-
-#~ msgid ""
-#~ "Intevation GmbH coordinated the Projects: Kroupware and Proko2, which are "
-#~ "the main driving force behind Kolab1&2. In addition to project management "
-#~ "Intevation did most of the quality assurance."
-#~ msgstr ""
-#~ "Intevation GmbH hat die Projekte Kroupware und Proko2 koordiniert, die "
-#~ "die Haupt-Triebkraft hinter Kolab1&2 waren. Neben dem Projektmanagement "
-#~ "hat Intevation auch den größten Teil der Qualitätssicherung übernommen."
-
-#~ msgid ""
-#~ "Intevation GmbH is a IT-company exclusively focusing on Free Software. "
-#~ "Its business units are strategic consulting, project management and "
-#~ "geographic information systems."
-#~ msgstr ""
-#~ "Intevation GmbH ist eine IT-Firma, die sich ausschließlich mit Freier "
-#~ "Software befaßt. Ihre Geschäftseinheiten sind die strategische Beratung, "
-#~ "Projektmanagement und geografische Informationssysteme."
-
-#~ msgid ""
-#~ "Klar&auml;lvdalens Datakonsult AB is a consulting company dedicated to "
-#~ "opensource software, Linux, and the <a href=\"http://www.trolltech.com/"
-#~ "products/qt/\">Qt</a> library. The main tasks of KDAB within the Kolab "
-#~ "project are design and implementation of the Kolab KDE clients and the "
-#~ "implementation of the current Kolab 2 server."
-#~ msgstr ""
-#~ "Klar&auml;lvdalens Datakonsult AB ist eine Consulting-Firma, die sich "
-#~ "Open Source-Software, Linux, und der <a href=\"http://www.trolltech.com/"
-#~ "products/qt/\">Qt</a>-Bibliothek verschrieben hat. Die Hauptaufgaben von "
-#~ "KDAB im Kolab-Projekt sind das Design und die Implementation der Kolab-"
-#~ "KDE-Klienten und die Implementation des derzeitigen Kolab2-Servers."
-
-#~ msgid ""
-#~ "Kolab's architecture was done by <a href=\"http://www.erfrakon.com"
-#~ "\">erfrakon</a>; the company also designed and implemented the Kolab 1 "
-#~ "Server and did the design and architecture for the Kolab 2 Server while "
-#~ "providing consulting for the implementation of the Kolab 2 server and the "
-#~ "Kolab 2 clients."
-#~ msgstr ""
-#~ "Das Kolab-Konzept wurde von <a href=\"http://www.erfrakon.com\">erfrakon</"
-#~ "a> erstellt, der Firma, die auch den Kolab 1-Server entworfen und "
-#~ "implementiert hat und das Design und die Architektur für den Kolab 2-"
-#~ "Server erstellt und bei der Implementation des Kolab 2-Servers und der "
-#~ "Kolab 2-Klienten beraten hat."
-
-#~ msgid ""
-#~ "The Kolab 1 KDE client and the Kolab 2 KDE Client (Kontact) was developed "
-#~ "by"
-#~ msgstr ""
-#~ "Der Kolab 1-KDE-Klient und der Kolab 2-KDE-Klient (Kontact) wurden "
-#~ "entwickelt von"
-
-#~ msgid ""
-#~ "The Kolab project owes a great deal of thanks to the people of the <a "
-#~ "href=\"http://www.openpkg.org/\">OpenPKG</a> project. OpenPKG allows "
-#~ "Kolab to run on many diverse platforms in a reliable and predictable "
-#~ "manner, by providing a common, easy-to-install, cross-platform base on "
-#~ "which to build the server."
-#~ msgstr ""
-#~ "Das Kolab-Projekt schuldet den Mitarbeitern des <a href=\"http://www."
-#~ "openpkg.org/\">OpenPKG</a>-Projekts großen Dank. Dank OpenPKG kann Kolab "
-#~ "auf vielen verschiedenen Plattformen zuverlässig und konsistent "
-#~ "ausgeführt werden, indem eine gemeinsame, leicht zu installierende, "
-#~ "plattformübergreifende Basis bereitgestellt wird, auf der der Server "
-#~ "aufsetzt."
-
-#~ msgid ""
-#~ "The following people from Code Fusion are involved in the Kolab project "
-#~ "(in alphabetical order):"
-#~ msgstr ""
-#~ "The folgenden Mitarbeiter von Code Fusion haben am Kolab-Projekt "
-#~ "mitgewirkt (in alphabetischer Reihenfolge):"
-
-#~ msgid "The following people worked on Kolab for Intevation:"
-#~ msgstr "Die folgenden Mitarbeiter von Intevation haben an Kolab mitgewirkt:"
-
-#~ msgid ""
-#~ "The following people worked on Kolab for Klar&auml;lvdalens Datakonsult "
-#~ "AB:"
-#~ msgstr ""
-#~ "Die folgenden Mitarbeiter von Klar&auml;lvdalens Datakonsult AB haben an "
-#~ "Kolab mitgearbeitet:"
-
-#~ msgid "The following people worked on Kolab for erfrakon:"
-#~ msgstr "Die folgenden Mitarbeiter von erfrakon haben an Kolab mitgewirkt:"
-
-#~ msgid ""
-#~ "There is also a <a href=\"http://www.kolab.org/webclient.html\">web-based "
-#~ "client</a> in development which provides full groupware functionality to "
-#~ "mobile users through a web interface. It allows users to access their "
-#~ "email, calendars, tasks, etc. from anywhere in the world, by simply "
-#~ "connecting through a standard web browser. The web client would not have "
-#~ "been possible without the excellent <a href=\"http://www.horde.org/"
-#~ "\">Horde project</a> on which to build."
-#~ msgstr ""
-#~ "Es wird auch an einem <a href=\"http://www.kolab.org/webclient.html\">Web-"
-#~ "basierten Klienten</a> gearbeitet, der mobilen Anwendern eine "
-#~ "vollständige Groupware-Funktionalität über eine Web-Schnittstelle "
-#~ "ermöglichen wird. Damit können Benutzer von beliebigen Orten ihre E-Mail "
-#~ "abfragen und Kalender und Aufgaben einsehen, indem sie sich einfach mit "
-#~ "einem handelsüblichen Web-Browser verbinden. Der Web-Klient wäre ohne das "
-#~ "ausgezeichnete <a href=\"http://www.horde.org/\">Horde-Projekt</a> als "
-#~ "Grundlage nicht möglich gewesen."
-
-#~ msgid ""
-#~ "To use all Kolab2 features you need an interoperable client. The KDE "
-#~ "Kolab Client was the first such client to be developed and is still "
-#~ "considered the reference platform for others to follow. The KDE groupware "
-#~ "component Kontact can act as Kolab2 Client. Many thanks to the <a href="
-#~ "\"http://www.kde.org\">KDE Project</a> for providing such a powerful base "
-#~ "on which to build this client solution."
-#~ msgstr ""
-#~ "Um alle Kolab2-Funktionen benutzen zu können, benötigen Sie einen "
-#~ "interoperablen Klienten. Der KDE-Kolab-Klient war der erste derartige "
-#~ "Klient, der entwickelt wurde, und gilt immer noch als die "
-#~ "Referenzplattform, an der sich die anderen Klienten orientieren. Die KDE-"
-#~ "Groupware-Komponente Kontact kann als Kolab2-Klient dienen. Vielen Dank "
-#~ "an das <a href=\"http://www.kde.org\">KDE-Projekt</a>, das eine derart "
-#~ "mächtige Grundlage für die Entwicklung dieser Klientenlösung "
-#~ "bereitgestellt hat."
-
-#~ msgid ""
-#~ "Users of Outlook on Microsoft Windows are able to use a proprietary plug-"
-#~ "in to inter-operate with the Kolab server. For Kolab2 the preferred plug-"
-#~ "in is the <a href=\"http://www.toltec.co.za/\">Toltec Plug-in</a> by "
-#~ "Radley Network Technologies CC. Radley has worked closely with the Kolab "
-#~ "community to help develop the Kolab2 storage format."
-#~ msgstr ""
-#~ "Benutzer von Outlook unter Microsoft-Windows können ein proprietäres Plug-"
-#~ "In verwenden, um mit dem Kolab-Server zusammenzuarbeiten. Für Kolab2 ist "
-#~ "das empfohlene Plug-In das <a href=\"http://www.toltec.co.za/\">Toltec-"
-#~ "Plug-In</a> von Radley Network Technologies CC. Radley hat mit der Kolab-"
-#~ "Gemeinde eng zusammengearbeitet, um das Speicherformat von Kolab2 zu "
-#~ "definieren."
+msgstr ""

@@ -1,0 +1,2250 @@
+# English translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-08 11:23+0200\n"
+"PO-Revision-Date: 2017-09-08 11:23+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/templates/createuser.tpl:10
+msgid "Attribute"
+msgstr "Attribute"
+
+#: data/templates/createuser.tpl:11
+msgid "Value"
+msgstr "Value"
+
+#: data/templates/createuser.tpl:12
+msgid "Comment"
+msgstr "Comment"
+
+#: data/templates/createuser.tpl:15 htdocs/user/user.php:461
+#: htdocs/administrator/admin.php:139 htdocs/addressbook/addr.php:88
+#: htdocs/domainmaintainer/domainmaintainer.php:114
+#: htdocs/maintainer/maintainer.php:136
+msgid "First Name"
+msgstr "First Name"
+
+#: data/templates/createuser.tpl:17 data/templates/createuser.tpl:27
+#: data/templates/createuser.tpl:32 data/templates/createuser.tpl:37
+#: htdocs/user/user.php:453 htdocs/user/user.php:463 htdocs/user/user.php:467
+#: htdocs/administrator/admin.php:133 htdocs/administrator/admin.php:141
+#: htdocs/administrator/admin.php:144 htdocs/addressbook/addr.php:90
+#: htdocs/addressbook/addr.php:93 htdocs/distributionlist/list.php:120
+#: htdocs/sharedfolder/sf.php:127
+#: htdocs/domainmaintainer/domainmaintainer.php:108
+#: htdocs/domainmaintainer/domainmaintainer.php:116
+#: htdocs/domainmaintainer/domainmaintainer.php:119
+#: htdocs/maintainer/maintainer.php:130 htdocs/maintainer/maintainer.php:138
+#: htdocs/maintainer/maintainer.php:141
+msgid "Required"
+msgstr "Required"
+
+#: data/templates/createuser.tpl:20 htdocs/user/user.php:464
+msgid "Middle Name"
+msgstr "Middle Name"
+
+#: data/templates/createuser.tpl:25 htdocs/user/user.php:465
+#: htdocs/administrator/admin.php:142 htdocs/addressbook/addr.php:91
+#: htdocs/domainmaintainer/domainmaintainer.php:117
+#: htdocs/maintainer/maintainer.php:139
+msgid "Last Name"
+msgstr "Last Name"
+
+#: data/templates/createuser.tpl:30 htdocs/user/user.php:468
+#: htdocs/administrator/admin.php:145
+#: htdocs/domainmaintainer/domainmaintainer.php:120
+#: htdocs/maintainer/maintainer.php:142
+msgid "Password"
+msgstr "Password"
+
+#: data/templates/createuser.tpl:35 htdocs/user/user.php:472
+#: htdocs/administrator/admin.php:149
+#: htdocs/domainmaintainer/domainmaintainer.php:124
+#: htdocs/maintainer/maintainer.php:146
+msgid "Verify Password"
+msgstr "Verify Password"
+
+#: data/templates/createuser.tpl:40 htdocs/user/user.php:476
+msgid "Primary Email Address"
+msgstr "Primary Email Address"
+
+#: data/templates/createuser.tpl:42 htdocs/user/user.php:452
+#: htdocs/user/user.php:454 htdocs/administrator/admin.php:132
+#: htdocs/sharedfolder/sf.php:130
+#: htdocs/domainmaintainer/domainmaintainer.php:107
+#: htdocs/maintainer/maintainer.php:129
+msgid "Required, non volatile"
+msgstr "Required, non volatile"
+
+#: data/templates/createuser.tpl:45 htdocs/user/user.php:517
+#: htdocs/addressbook/addr.php:94
+msgid "Title"
+msgstr "Title"
+
+#: data/templates/createuser.tpl:50
+msgid "Email Alias"
+msgstr "Email Alias"
+
+#: data/templates/createuser.tpl:55 htdocs/user/user.php:518
+#: htdocs/addressbook/addr.php:101
+msgid "Organisation"
+msgstr "Organisation"
+
+#: data/templates/createuser.tpl:60 htdocs/user/user.php:519
+#: htdocs/addressbook/addr.php:102
+msgid "Organisational Unit"
+msgstr "Organisational Unit"
+
+#: data/templates/createuser.tpl:65 htdocs/user/user.php:520
+#: htdocs/addressbook/addr.php:103
+msgid "Room Number"
+msgstr "Room Number"
+
+#: data/templates/createuser.tpl:70 htdocs/user/user.php:521
+#: htdocs/addressbook/addr.php:104
+msgid "Street Address"
+msgstr "Street Address"
+
+#: data/templates/createuser.tpl:75 htdocs/user/user.php:522
+msgid "Postbox"
+msgstr "Postbox"
+
+#: data/templates/createuser.tpl:80 htdocs/user/user.php:523
+#: htdocs/addressbook/addr.php:106
+msgid "Postal Code"
+msgstr "Postal Code"
+
+#: data/templates/createuser.tpl:85 htdocs/user/user.php:524
+#: htdocs/addressbook/addr.php:107
+msgid "City"
+msgstr "City"
+
+#: data/templates/createuser.tpl:90 htdocs/user/user.php:525
+#: htdocs/addressbook/addr.php:108
+msgid "Country"
+msgstr "Country"
+
+#: data/templates/createuser.tpl:95 htdocs/user/user.php:527
+#: htdocs/addressbook/addr.php:109
+msgid "Telephone Number"
+msgstr "Telephone Number"
+
+#: data/templates/createuser.tpl:100 htdocs/user/user.php:529
+#: htdocs/addressbook/addr.php:111
+msgid "Fax Number"
+msgstr "Fax Number"
+
+#: data/templates/createuser.tpl:105 data/templates/welcome-maintainer.tpl:16
+#: data/templates/welcome-admin.tpl:16 lib/Skolab/Admin/include/menu.php:48
+msgid "Addressbook"
+msgstr "Addressbook"
+
+#: data/templates/createuser.tpl:107
+msgid "check here to make this users address <br/> visible in the address book"
+msgstr ""
+"check here to make this users address <br/> visible in the address book"
+
+#: data/templates/createuser.tpl:110
+msgid "User Quota in MB"
+msgstr "User Quota in MB"
+
+#: data/templates/createuser.tpl:112 htdocs/user/user.php:533
+msgid "Leave blank for unlimited"
+msgstr "Leave blank for unlimited"
+
+#: data/templates/createuser.tpl:115 lib/Skolab/Admin/include/form.class.php:75
+msgid "Submit"
+msgstr "Submit"
+
+#: data/templates/welcome-maintainer.tpl:8
+#: data/templates/welcome-domain-maintainer.tpl:8
+msgid "Welcome to the Skolab Groupware Server Maintenance"
+msgstr "Welcome to the Skolab Groupware Server Maintenance"
+
+#: data/templates/welcome-maintainer.tpl:13
+#: data/templates/welcome-domain-maintainer.tpl:13
+#: data/templates/welcome-admin.tpl:13
+msgid "Manage Users"
+msgstr "Manage Users"
+
+#: data/templates/welcome-maintainer.tpl:19
+#: data/templates/welcome-domain-maintainer.tpl:16
+#: data/templates/welcome-admin.tpl:19
+msgid "Shared Folders"
+msgstr "Shared Folders"
+
+#: data/templates/welcome-maintainer.tpl:22 data/templates/distlistall.tpl:8
+#: data/templates/welcome-domain-maintainer.tpl:19
+#: data/templates/welcome-admin.tpl:22 lib/Skolab/Admin/include/menu.php:65
+msgid "Distribution Lists"
+msgstr "Distribution Lists"
+
+#: data/templates/welcome-maintainer.tpl:25
+#: data/templates/maintainerlistall.tpl:8 data/templates/welcome-admin.tpl:28
+#: lib/Skolab/Admin/include/menu.php:85 lib/Skolab/Admin/include/menu.php:93
+msgid "Maintainers"
+msgstr "Maintainers"
+
+#: data/templates/welcome-maintainer.tpl:28
+#: data/templates/welcome-domain-maintainer.tpl:22
+#: data/templates/domainmaintainerlistall.tpl:8
+#: data/templates/welcome-admin.tpl:31 lib/Skolab/Admin/include/menu.php:79
+#: lib/Skolab/Admin/include/menu.php:96 lib/Skolab/Admin/include/menu.php:104
+msgid "Domain Maintainers"
+msgstr "Domain Maintainers"
+
+#: data/templates/welcome-maintainer.tpl:31
+#: data/templates/welcome-domain-maintainer.tpl:25
+#: data/templates/welcome-admin.tpl:37 data/templates/welcome-user.tpl:16
+msgid "About"
+msgstr "About"
+
+#: data/templates/skolabgroupware.tpl:10
+msgid ""
+"\n"
+"\n"
+"The Skolab Groupware was derived from Kolab (version2) to provide legacy\n"
+"support for groupware servers that started with Kolab (version 2). For some "
+"of\n"
+"these installations, migrating the systems from non-supported Kolab v2 to\n"
+"a higher version of Kolab or some other groupware may not make sense.\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"The Skolab Groupware was derived from Kolab (version2) to provide legacy\n"
+"support for groupware servers that started with Kolab (version 2). For some "
+"of\n"
+"these installations, migrating the systems from non-supported Kolab v2 to\n"
+"a higher version of Kolab or some other groupware may not make sense.\n"
+"\n"
+
+#: data/templates/skolabgroupware.tpl:21
+msgid ""
+"\n"
+"\n"
+"This is where the <b>Skolab Groupware</b> comes in for you...\n"
+"\n"
+"</p>\n"
+msgstr ""
+"\n"
+"\n"
+"This is where the <b>Skolab Groupware</b> comes in for you...\n"
+"\n"
+"</p>\n"
+
+#: data/templates/skolabgroupware.tpl:28
+msgid "How To Contribute to Skolab Groupware"
+msgstr "How To Contribute to Skolab Groupware"
+
+#: data/templates/skolabgroupware.tpl:31
+msgid ""
+"\n"
+"\n"
+"The Skolab Groupware is maintained on <a href=\"%1\">Github</a>. Please\n"
+"browse the Git repositories related to our project and provide issue\n"
+"reports and code contributions there.\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"The Skolab Groupware is maintained on <a href=\"%1\">Github</a>. Please\n"
+"browse the Git repositories related to our project and provide issue\n"
+"reports and code contributions there.\n"
+"\n"
+
+#: data/templates/skolabgroupware.tpl:40
+msgid "Professional Skolab Groupware Support"
+msgstr "Professional Skolab Groupware Support"
+
+#: data/templates/skolabgroupware.tpl:43
+msgid ""
+"\n"
+"\n"
+"DAS-NETZWERKTEAM provides basic support for the Skolab Groupware. Please\n"
+"visit our <a href=\"%1\">web page</a> to get in touch.\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"DAS-NETZWERKTEAM provides basic support for the Skolab Groupware. Please\n"
+"visit our <a href=\"%1\">web page</a> to get in touch.\n"
+"\n"
+
+#: data/templates/skolabgroupware.tpl:51
+msgid "Former Kolab Development"
+msgstr "Former Kolab Development"
+
+#: data/templates/skolabgroupware.tpl:54
+msgid ""
+"\n"
+"\n"
+"The original Kolab Groupware (version 2) has been developed at Kolab\n"
+"Systems AG. The company was founded in Z&uuml;rich in 2010, <a\n"
+"href=\"%1\">Kolab Systems AG</a>. The text below applies to the latest\n"
+"version of Kolab. The Kolab v2 legacy support is now provided by "
+msgstr ""
+"\n"
+"\n"
+"The original Kolab Groupware (version 2) has been developed at Kolab\n"
+"Systems AG. The company was founded in Z&uuml;rich in 2010, <a\n"
+"href=\"%1\">Kolab Systems AG</a>. The text below applies to the latest\n"
+"version of Kolab. The Kolab v2 legacy support is now provided by "
+
+#: data/templates/skolabgroupware.tpl:65
+msgid ""
+"\n"
+"\n"
+"<a href=\"%1\">Kolab Systems AG</a> is the global leader\n"
+"in Kolab Technology. Together with its partners in the Kolab Enterprise\n"
+"Community, Kolab Systems provides quality assurance, integration,\n"
+"support, training, certification of individuals and third-party products,\n"
+"as well as ongoing development for the Kolab Groupware Solution. The\n"
+"strong partnering model and a highly competent enterprise community\n"
+"provides users of the Kolab Groupware Solution with the right level of\n"
+"professional consulting, support and warranties to enable productivity\n"
+"and collaboration.\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"<a href=\"%1\">Kolab Systems AG</a> is the global leader\n"
+"in Kolab Technology. Together with its partners in the Kolab Enterprise\n"
+"Community, Kolab Systems provides quality assurance, integration,\n"
+"support, training, certification of individuals and third-party products,\n"
+"as well as ongoing development for the Kolab Groupware Solution. The\n"
+"strong partnering model and a highly competent enterprise community\n"
+"provides users of the Kolab Groupware Solution with the right level of\n"
+"professional consulting, support and warranties to enable productivity\n"
+"and collaboration.\n"
+"\n"
+
+#: data/templates/skolabgroupware.tpl:80
+msgid "Former Kolab Contributors"
+msgstr "Former Kolab Contributors"
+
+#: data/templates/skolabgroupware.tpl:83
+msgid ""
+"\n"
+"\n"
+"The former Kolab Groupware (version 2) development was mainly driven by\n"
+"the companies listed below (in alphabetical order):\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"The former Kolab Groupware (version 2) development was mainly driven by\n"
+"the companies listed below (in alphabetical order):\n"
+"\n"
+
+#: data/templates/skolabgroupware.tpl:97
+msgid "...and many many contributors from the Kolab v2 community."
+msgstr "...and many many contributors from the Kolab v2 community."
+
+#: data/templates/login.tpl:7
+msgid "Enter UID and password to login"
+msgstr "Enter UID and password to login"
+
+#: data/templates/login.tpl:14
+msgid "Username:"
+msgstr "Username:"
+
+#: data/templates/login.tpl:23
+msgid "Password:"
+msgstr "Password:"
+
+#: data/templates/login.tpl:23
+msgid "Login"
+msgstr "Login"
+
+#: data/templates/vacation.tpl:7
+msgid "Vacation Notification"
+msgstr "Vacation Notification"
+
+#: data/templates/vacation.tpl:10
+msgid "Activate vacation notification"
+msgstr "Activate vacation notification"
+
+#: data/templates/vacation.tpl:12
+msgid "Resend notification only after"
+msgstr "Resend notification only after"
+
+#: data/templates/vacation.tpl:12
+msgid "days"
+msgstr "days"
+
+#: data/templates/vacation.tpl:13
+msgid "Send responses for these addresses:"
+msgstr "Send responses for these addresses:"
+
+#: data/templates/vacation.tpl:19
+msgid "(one address per line)"
+msgstr "(one address per line)"
+
+#: data/templates/vacation.tpl:20
+msgid "Do not send vacation replies to spam messages"
+msgstr "Do not send vacation replies to spam messages"
+
+#: data/templates/vacation.tpl:21
+msgid "Only react to mail coming from domain"
+msgstr "Only react to mail coming from domain"
+
+#: data/templates/vacation.tpl:21
+msgid "(leave empty for all domains)"
+msgstr "(leave empty for all domains)"
+
+#: data/templates/vacation.tpl:22 data/templates/forward.tpl:13
+#: data/templates/settings.tpl:43 data/templates/settings.tpl:54
+#: data/templates/settings.tpl:67 data/templates/settings.tpl:77
+#: data/templates/settings.tpl:88 data/templates/settings.tpl:100
+#: data/templates/settings.tpl:117 data/templates/deliver.tpl:12
+msgid "Update"
+msgstr "Update"
+
+#: data/templates/maintainerdeleted.tpl:10
+msgid "The maintainer with DN"
+msgstr "The maintainer with DN"
+
+#: data/templates/maintainerdeleted.tpl:10 data/templates/sfdeleted.tpl:10
+#: data/templates/admindeleted.tpl:10 data/templates/distlistdeleted.tpl:10
+#: data/templates/userdeleted.tpl:10 data/templates/addrdeleted.tpl:10
+msgid "has been deleted"
+msgstr "has been deleted"
+
+#: data/templates/maintainerdeleted.tpl:11
+msgid "Back to list of maintainers"
+msgstr "Back to list of maintainers"
+
+#: data/templates/sfdeleted.tpl:10
+msgid "The shared folder with DN"
+msgstr "The shared folder with DN"
+
+#: data/templates/sfdeleted.tpl:11
+msgid "Back to list of shared folders"
+msgstr "Back to list of shared folders"
+
+#: data/templates/addresslist.tpl:8 data/templates/addrlistall.tpl:8
+msgid "(only external addresses without a kolab user account)"
+msgstr "(only external addresses without a kolab user account)"
+
+#: data/templates/addresslist.tpl:14 data/templates/maintainerlistall.tpl:13
+#: data/templates/sflistall.tpl:13
+#: data/templates/domainmaintainerlistall.tpl:13
+#: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
+#: data/templates/adminlistall.tpl:13 htdocs/user/index.php:203
+#: htdocs/addressbook/index.php:121
+msgid "Name"
+msgstr "Name"
+
+#: data/templates/addresslist.tpl:14 data/templates/settings.tpl:128
+#: data/templates/distlistall.tpl:13 data/templates/maintainerlistall.tpl:13
+#: data/templates/sflistall.tpl:13
+#: data/templates/domainmaintainerlistall.tpl:13
+#: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
+#: data/templates/adminlistall.tpl:13
+msgid "Action"
+msgstr "Action"
+
+#: data/templates/addresslist.tpl:19 data/templates/distlistall.tpl:26
+#: data/templates/maintainerlistall.tpl:22 data/templates/sflistall.tpl:23
+#: data/templates/domainmaintainerlistall.tpl:23
+#: data/templates/userlistall.tpl:73 data/templates/addrlistall.tpl:55
+#: data/templates/adminlistall.tpl:22
+msgid "Modify"
+msgstr "Modify"
+
+#: data/templates/addresslist.tpl:20 data/templates/settings.tpl:136
+#: data/templates/distlistall.tpl:27 data/templates/maintainerlistall.tpl:23
+#: data/templates/sflistall.tpl:24
+#: data/templates/domainmaintainerlistall.tpl:24
+#: data/templates/userlistall.tpl:74 data/templates/addrlistall.tpl:56
+#: data/templates/adminlistall.tpl:23 htdocs/user/user.php:899
+#: htdocs/user/user.php:959 htdocs/administrator/admin.php:311
+#: htdocs/addressbook/addr.php:277 htdocs/distributionlist/list.php:304
+#: htdocs/sharedfolder/sf.php:316
+#: htdocs/domainmaintainer/domainmaintainer.php:314
+msgid "Delete"
+msgstr "Delete"
+
+#: data/templates/technology.tpl:8
+msgid "Skolab Groupware Solution - Technologies"
+msgstr "Skolab Groupware Solution - Technologies"
+
+#: data/templates/technology.tpl:10
+msgid ""
+"\n"
+"This is the server of the Skolab Groupware Solution. It is <a\n"
+"href=\"%1\">Free Software</a> developed by the <a\n"
+"href=\"%2\">DAS-NETZWERKTEAM</a>, which works in collaboration with and as\n"
+"part of many other communities and projects to bring you this software.\n"
+msgstr ""
+"\n"
+"This is the server of the Skolab Groupware Solution. It is <a\n"
+"href=\"%1\">Free Software</a> developed by the <a\n"
+"href=\"%2\">DAS-NETZWERKTEAM</a>, which works in collaboration with and as\n"
+"part of many other communities and projects to bring you this software.\n"
+
+#: data/templates/technology.tpl:18
+msgid ""
+"\n"
+"For this server, Free Software communities and projects that the Skolab "
+"Groupware\n"
+"Project is a part of and builds upon include:\n"
+msgstr ""
+"\n"
+"For this server, Free Software communities and projects that the Skolab "
+"Groupware\n"
+"Project is a part of and builds upon include:\n"
+
+#: data/templates/technology.tpl:23
+msgid "(Mail Scanner)"
+msgstr "(Mail Scanner)"
+
+#: data/templates/technology.tpl:24
+msgid "(HTTP Server)"
+msgstr "(HTTP Server)"
+
+#: data/templates/technology.tpl:25
+msgid "(Virus Scanner)"
+msgstr "(Virus Scanner)"
+
+#: data/templates/technology.tpl:26
+msgid "(IMAP Server &amp; Database)"
+msgstr "(IMAP Server &amp; Database)"
+
+#: data/templates/technology.tpl:27
+msgid "(LDAP Server)"
+msgstr "(LDAP Server)"
+
+#: data/templates/technology.tpl:28
+msgid "(MTA)"
+msgstr "(MTA)"
+
+#: data/templates/technology.tpl:29
+msgid "(SPAM Filter)"
+msgstr "(SPAM Filter)"
+
+#: data/templates/technology.tpl:30
+msgid "(Web client)"
+msgstr "(Web client)"
+
+#: data/templates/technology.tpl:31 data/templates/technology.tpl:32
+msgid "(Server side scripting & glue)"
+msgstr "(Server side scripting & glue)"
+
+#: data/templates/technology.tpl:33
+msgid "(This interface)"
+msgstr "(This interface)"
+
+#: data/templates/technology.tpl:36
+msgid "Kudos to Contributors of Skolab Groupware"
+msgstr "Kudos to Contributors of Skolab Groupware"
+
+#: data/templates/technology.tpl:41 data/templates/technology.tpl:78
+msgid ""
+"...and anyone we forgot. Please let us know at <a href=\"%1\">Skolab "
+"Groupware Project</a> on Github, so we can add you to this list."
+msgstr ""
+"...and anyone we forgot. Please let us know at <a href=\"%1\">Skolab "
+"Groupware Project</a> on Github, so we can add you to this list."
+
+#: data/templates/technology.tpl:44
+msgid "Kudos to the original Kolab (version 2) Authors"
+msgstr "Kudos to the original Kolab (version 2) Authors"
+
+#: data/templates/technology.tpl:46
+msgid ""
+"\n"
+"Principal contributors of the Kolab Groupware Solution (which Skolab\n"
+"Groupware has been derived from) are (in alphabetical order):\n"
+msgstr ""
+"\n"
+"Principal contributors of the Kolab Groupware Solution (which Skolab\n"
+"Groupware has been derived from) are (in alphabetical order):\n"
+
+#: data/templates/about.tpl:8
+msgid "Skolab Groupware Solution"
+msgstr "Skolab Groupware Solution"
+
+#: data/templates/about.tpl:10
+msgid ""
+"\n"
+"This is the server of the Skolab Groupware Solution, a <a href=%1>Free\n"
+"Software</a> Personal Information Management (PIM) solution developed by\n"
+"<a href=%2>DAS-NETZWERKTEAM</a>.\n"
+msgstr ""
+"\n"
+"This is the server of the Skolab Groupware Solution, a <a href=%1>Free\n"
+"Software</a> Personal Information Management (PIM) solution developed by\n"
+"<a href=%2>DAS-NETZWERKTEAM</a>.\n"
+
+#: data/templates/about.tpl:18
+msgid ""
+"\n"
+"The project was derived from an old version (v2) of the Kolab Groupware\n"
+"starting in 2017 at the Debian Conference in Montreal. Good and working\n"
+"solutions must be sustained, so we started working on the contiuation of\n"
+"Kolab v2 under a slightly different name: Skolab Groupware.\n"
+msgstr ""
+"\n"
+"The project was derived from an old version (v2) of the Kolab Groupware\n"
+"starting in 2017 at the Debian Conference in Montreal. Good and working\n"
+"solutions must be sustained, so we started working on the contiuation of\n"
+"Kolab v2 under a slightly different name: Skolab Groupware.\n"
+
+#: data/templates/about.tpl:27
+msgid ""
+"\n"
+"Any installation of the Skolab Groupware Solution would normally include\n"
+"one or more of these servers, in combination with a variety of clients\n"
+"for its users. If you are interested in the technology, you can read\n"
+"more about it <a href=%1>here</a>.\n"
+msgstr ""
+"\n"
+"Any installation of the Skolab Groupware Solution would normally include\n"
+"one or more of these servers, in combination with a variety of clients\n"
+"for its users. If you are interested in the technology, you can read\n"
+"more about it <a href=%1>here</a>.\n"
+
+#: data/templates/about.tpl:35
+msgid "Why Skolab?"
+msgstr "Why Skolab?"
+
+#: data/templates/about.tpl:38
+msgid ""
+"\n"
+"There is a wide variety of reasons why Skolab should be your choice. Here "
+"are only listed several of them...\n"
+msgstr ""
+"\n"
+"There is a wide variety of reasons why Skolab should be your choice. Here "
+"are only listed several of them...\n"
+
+#: data/templates/about.tpl:44
+msgid ""
+"you want a solution that seamlessly integrates into your existing environment"
+msgstr ""
+"you want a solution that seamlessly integrates into your existing environment"
+
+#: data/templates/about.tpl:45
+msgid ""
+"you want full control over your data, with all the convenience of the cloud"
+msgstr ""
+"you want full control over your data, with all the convenience of the cloud"
+
+#: data/templates/about.tpl:46
+msgid "you have elevated security needs for your data"
+msgstr "you have elevated security needs for your data"
+
+#: data/templates/about.tpl:47
+msgid ""
+"you have a very large installation, or want to reduce your hardware footprint"
+msgstr ""
+"you have a very large installation, or want to reduce your hardware footprint"
+
+#: data/templates/about.tpl:48
+msgid "you have to operate in diverse environments and installations"
+msgstr "you have to operate in diverse environments and installations"
+
+#: data/templates/about.tpl:49
+msgid ""
+"strategic issues are important to you, e.g. you need sovereignty of the "
+"software you deploy"
+msgstr ""
+"strategic issues are important to you, e.g. you need sovereignty of the "
+"software you deploy"
+
+#: data/templates/about.tpl:50
+msgid "your users should be fully productive whether they are on- or offline"
+msgstr "your users should be fully productive whether they are on- or offline"
+
+#: data/templates/about.tpl:51
+msgid "you want the flexibility to create solutions for your specialised needs"
+msgstr ""
+"you want the flexibility to create solutions for your specialised needs"
+
+#: data/templates/about.tpl:52
+msgid ""
+"you want Free Software/Open Source, but also want the professional support "
+"without having to resort to proprietary lock-in"
+msgstr ""
+"you want Free Software/Open Source, but also want the professional support "
+"without having to resort to proprietary lock-in"
+
+#: data/templates/about.tpl:53
+msgid ""
+"you want a slim solution, that is +/- feature complete and not resource "
+"hungry on your server"
+msgstr ""
+"you want a slim solution, that is +/- feature complete and not resource "
+"hungry on your server"
+
+#: data/templates/about.tpl:56
+msgid "More Information"
+msgstr "More Information"
+
+#: data/templates/about.tpl:58
+msgid "Skolab Groupware Project on Github (Source Code / Development)"
+msgstr "Skolab Groupware Project on Github (Source Code / Development)"
+
+#: data/templates/about.tpl:59
+msgid "Skolab Groupware Development at DAS-NETZWERKTEAM"
+msgstr "Skolab Groupware Development at DAS-NETZWERKTEAM"
+
+#: data/templates/about.tpl:62
+msgid "Warranties &amp; Commercial Support"
+msgstr "Warranties &amp; Commercial Support"
+
+#: data/templates/about.tpl:65
+msgid ""
+"\n"
+"The Skolab Groupware Server is 100% Free Software. It is provided by DAS-"
+"NETZWERKTEAM and you can use it to the fullest extent and any purpose. There "
+"are no license costs or other obligations other than those set forth in the "
+"respective Free Software licenses of the various components. <b>There are no "
+"warranties or guarantees of any kind, nor is there any guaranteed support. "
+"You are running this software entirely at your own risk.</b>\n"
+msgstr ""
+"\n"
+"The Skolab Groupware Server is 100% Free Software. It is provided by DAS-"
+"NETZWERKTEAM and you can use it to the fullest extent and any purpose. There "
+"are no license costs or other obligations other than those set forth in the "
+"respective Free Software licenses of the various components. <b>There are no "
+"warranties or guarantees of any kind, nor is there any guaranteed support. "
+"You are running this software entirely at your own risk.</b>\n"
+
+#: data/templates/about.tpl:71
+msgid ""
+"\n"
+"There is a wide variety of commercial support options and warranties "
+"imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of "
+"partners. Please contact us.\n"
+msgstr ""
+"\n"
+"There is a wide variety of commercial support options and warranties "
+"imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of "
+"partners. Please contact us.\n"
+
+#: data/templates/about.tpl:79
+msgid ""
+"\n"
+"    This product includes PHP, freely available from\n"
+"    <a href=\"%1\">%1</a>\n"
+"    "
+msgstr ""
+"\n"
+"    This product includes PHP, freely available from\n"
+"    <a href=\"%1\">%1</a>\n"
+"    "
+
+#: data/templates/about.tpl:84
+msgid ""
+"\n"
+"    This product includes software developed by the OpenSSL Project\n"
+"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+"    "
+msgstr ""
+"\n"
+"    This product includes software developed by the OpenSSL Project\n"
+"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+"    "
+
+#: data/templates/versions.tpl:8
+msgid "Skolab Groupware Server Version"
+msgstr "Skolab Groupware Server Version"
+
+#: data/templates/versions.tpl:10
+msgid "Skolab Groupware Server Component Versions"
+msgstr "Skolab Groupware Server Component Versions"
+
+#: data/templates/versions.tpl:12
+msgid "PEAR/Horde Versions"
+msgstr "PEAR/Horde Versions"
+
+#: data/templates/versions.tpl:15
+msgid "Kolab2 Patched OpenPKG Package Versions"
+msgstr "Kolab2 Patched OpenPKG Package Versions"
+
+#: data/templates/versions.tpl:17
+msgid "OpenPKG Version"
+msgstr "OpenPKG Version"
+
+#: data/templates/forward.tpl:7
+msgid "Email Forwarding"
+msgstr "Email Forwarding"
+
+#: data/templates/forward.tpl:10
+msgid "Activate email forwarding"
+msgstr "Activate email forwarding"
+
+#: data/templates/forward.tpl:11
+msgid "Forward mail to"
+msgstr "Forward mail to"
+
+#: data/templates/forward.tpl:12
+msgid "Keep copy on server"
+msgstr "Keep copy on server"
+
+#: data/templates/settings.tpl:7
+msgid "Kolab Server Settings"
+msgstr "Kolab Server Settings"
+
+#: data/templates/settings.tpl:11
+msgid "Administrative email addresses"
+msgstr "Administrative email addresses"
+
+#: data/templates/settings.tpl:13
+msgid ""
+"You have not yet set up a receiving account for the administrative email "
+"addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
+"DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
+"Enter the email address of a kolab account below and press the button to "
+"create a distribution list for each of those addresses. Later you can add or "
+"remove people from the lists like any other distribution list"
+msgstr ""
+"You have not yet set up a receiving account for the administrative email "
+"addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
+"DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
+"Enter the email address of a kolab account below and press the button to "
+"create a distribution list for each of those addresses. Later you can add or "
+"remove people from the lists like any other distribution list"
+
+#: data/templates/settings.tpl:18
+msgid ""
+"Email address of account that should receive administrative mail for domain"
+msgstr ""
+"Email address of account that should receive administrative mail for domain"
+
+#: data/templates/settings.tpl:20
+msgid "Create Distribution Lists"
+msgstr "Create Distribution Lists"
+
+#: data/templates/settings.tpl:29
+msgid "Enable or Disable individual Services"
+msgstr "Enable or Disable individual Services"
+
+#: data/templates/settings.tpl:34
+msgid "Service"
+msgstr "Service"
+
+#: data/templates/settings.tpl:34
+msgid "Enabled"
+msgstr "Enabled"
+
+#: data/templates/settings.tpl:48
+msgid "Quota settings"
+msgstr "Quota settings"
+
+#: data/templates/settings.tpl:53
+msgid "Warn users when they have used"
+msgstr "Warn users when they have used"
+
+#: data/templates/settings.tpl:53
+#, php-format
+msgid "% of their quota"
+msgstr "% of their quota"
+
+#: data/templates/settings.tpl:59
+msgid "Free/Busy settings"
+msgstr "Free/Busy settings"
+
+#: data/templates/settings.tpl:65
+msgid "Allow unauthenticated downloading of Free/Busy information"
+msgstr "Allow unauthenticated downloading of Free/Busy information"
+
+#: data/templates/settings.tpl:76
+msgid "When creating free/busy lists, include data from"
+msgstr "When creating free/busy lists, include data from"
+
+#: data/templates/settings.tpl:76
+msgid "days in the past"
+msgstr "days in the past"
+
+#: data/templates/settings.tpl:82
+msgid "Privileged Networks"
+msgstr "Privileged Networks"
+
+#: data/templates/settings.tpl:86
+msgid ""
+"Networks allowed to relay and send mail through unauthenticated SMTP "
+"connections to the Kolab server (comma separated networks in x.x.x.x/y "
+"format):"
+msgstr ""
+"Networks allowed to relay and send mail through unauthenticated SMTP "
+"connections to the Kolab server (comma separated networks in x.x.x.x/y "
+"format):"
+
+#: data/templates/settings.tpl:93
+msgid "SMTP \\\"smarthost/relayhost\\\""
+msgstr "SMTP \\\"smarthost/relayhost\\\""
+
+#: data/templates/settings.tpl:97
+msgid ""
+"Smarthost (and optional port) to use to send outgoing mail (host.domain."
+"tld). Leave empty for no relayhost."
+msgstr ""
+"Smarthost (and optional port) to use to send outgoing mail (host.domain."
+"tld). Leave empty for no relayhost."
+
+#: data/templates/settings.tpl:105
+msgid "Accept Internet Mail"
+msgstr "Accept Internet Mail"
+
+#: data/templates/settings.tpl:113
+msgid ""
+"Accept mail from other domains over unauthenticated SMTP. This must be "
+"enabled if you want to use the Kolab Server to receive mail from other "
+"internet domains directly. Leave disabled to accept mail only from SMTP "
+"gateways that are within the privileged network."
+msgstr ""
+"Accept mail from other domains over unauthenticated SMTP. This must be "
+"enabled if you want to use the Kolab Server to receive mail from other "
+"internet domains directly. Leave disabled to accept mail only from SMTP "
+"gateways that are within the privileged network."
+
+#: data/templates/settings.tpl:125
+#: htdocs/domainmaintainer/domainmaintainer.php:134
+msgid "Domains"
+msgstr "Domains"
+
+#: data/templates/settings.tpl:128
+msgid "Domain"
+msgstr "Domain"
+
+#: data/templates/settings.tpl:145
+msgid "Add"
+msgstr "Add"
+
+#: data/templates/settings.tpl:150
+msgid "Mail Filter Settings"
+msgstr "Mail Filter Settings"
+
+#: data/templates/settings.tpl:155
+msgid "Check messages for mismatching From header and envelope from."
+msgstr "Check messages for mismatching From header and envelope from."
+
+#: data/templates/settings.tpl:158
+msgid ""
+"Use the Sender header instead of From for the above checks if Sender is "
+"present."
+msgstr ""
+"Use the Sender header instead of From for the above checks if Sender is "
+"present."
+
+#: data/templates/settings.tpl:160
+msgid "Action to take for messages that fail the check:"
+msgstr "Action to take for messages that fail the check:"
+
+#: data/templates/settings.tpl:165
+msgid ""
+"Reject the message, except if it originates from the outside and the From "
+"header matches one of Kolab server"
+msgstr ""
+"Reject the message, except if it originates from the outside and the From "
+"header matches one of Kolab server"
+
+#: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
+msgid "Welcome to the Skolab Groupware Server Administration"
+msgstr "Welcome to the Skolab Groupware Server Administration"
+
+#: data/templates/distlistall.tpl:13
+msgid "Listname"
+msgstr "Listname"
+
+#: data/templates/distlistall.tpl:13
+msgid "Visibility"
+msgstr "Visibility"
+
+#: data/templates/distlistall.tpl:19
+msgid "Internal"
+msgstr "Internal"
+
+#: data/templates/distlistall.tpl:21
+msgid "Public"
+msgstr "Public"
+
+#: data/templates/distlistall.tpl:24
+msgid "List deleted, awaiting cleanup..."
+msgstr "List deleted, awaiting cleanup..."
+
+#: data/templates/userlisterror.tpl:7 data/templates/userlistall.tpl:7
+msgid "Email Users"
+msgstr "Email Users"
+
+#: data/templates/userlisterror.tpl:9 data/templates/userlistall.tpl:9
+#: data/templates/addrlistall.tpl:11
+msgid "[ ALL ]"
+msgstr "[ ALL ]"
+
+#: data/templates/userlisterror.tpl:14 data/templates/userlistall.tpl:14
+#: data/templates/addrlistall.tpl:16
+msgid "[ OTHER ]"
+msgstr "[ OTHER ]"
+
+#: data/templates/userlisterror.tpl:18 data/templates/userlistall.tpl:20
+#: data/templates/addrlistall.tpl:21
+msgid "Filter:"
+msgstr "Filter:"
+
+#: data/templates/userlisterror.tpl:37 data/templates/addrlistall.tpl:40
+msgid "Filter"
+msgstr "Filter"
+
+#: data/templates/maintainerlistall.tpl:13
+#: data/templates/domainmaintainerlistall.tpl:13
+#: data/templates/adminlistall.tpl:13 htdocs/user/index.php:205
+msgid "UID"
+msgstr "UID"
+
+#: data/templates/maintainerlistall.tpl:20
+#: data/templates/domainmaintainerlistall.tpl:21
+#: data/templates/adminlistall.tpl:20
+msgid "Object Deleted, awaiting cleanup..."
+msgstr "Object Deleted, awaiting cleanup..."
+
+#: data/templates/admindeleted.tpl:10
+msgid "The administrator with DN"
+msgstr "The administrator with DN"
+
+#: data/templates/admindeleted.tpl:11
+msgid "Back to list of administrators"
+msgstr "Back to list of administrators"
+
+#: data/templates/distlistdeleted.tpl:10
+msgid "The distribution list with DN"
+msgstr "The distribution list with DN"
+
+#: data/templates/distlistdeleted.tpl:11
+msgid "Back to list of distribution lists"
+msgstr "Back to list of distribution lists"
+
+#: data/templates/sflistall.tpl:8
+msgid "Shared folders"
+msgstr "Shared folders"
+
+#: data/templates/sflistall.tpl:13
+msgid "Server"
+msgstr "Server"
+
+#: data/templates/sflistall.tpl:13 data/templates/userlistall.tpl:51
+msgid "Type"
+msgstr "Type"
+
+#: data/templates/sflistall.tpl:21
+msgid "Folder deleted, awaiting cleanup..."
+msgstr "Folder deleted, awaiting cleanup..."
+
+#: data/templates/systemaliasnagscreen.tpl:8
+msgid "Welcome to the Kolab administration interface"
+msgstr "Welcome to the Kolab administration interface"
+
+#: data/templates/systemaliasnagscreen.tpl:11
+msgid "NOTE:"
+msgstr "NOTE:"
+
+#: data/templates/systemaliasnagscreen.tpl:12
+msgid ""
+"No account is configured to receive mail for administrative addresses. If "
+"you have not yet created an account for this, "
+msgstr ""
+"No account is configured to receive mail for administrative addresses. If "
+"you have not yet created an account for this, "
+
+#: data/templates/systemaliasnagscreen.tpl:13
+msgid "please do so"
+msgstr "please do so"
+
+#: data/templates/systemaliasnagscreen.tpl:13
+msgid "and then go"
+msgstr "and then go"
+
+#: data/templates/systemaliasnagscreen.tpl:14
+msgid "here"
+msgstr "here"
+
+#: data/templates/systemaliasnagscreen.tpl:14
+msgid "to set up forwarding of mail to administrative email addresses."
+msgstr "to set up forwarding of mail to administrative email addresses."
+
+#: data/templates/userdeleted.tpl:10
+msgid "The user with DN"
+msgstr "The user with DN"
+
+#: data/templates/userdeleted.tpl:11
+msgid "Back to list of users"
+msgstr "Back to list of users"
+
+#: data/templates/deliver.tpl:7
+msgid "Email Delivery"
+msgstr "Email Delivery"
+
+#: data/templates/deliver.tpl:10
+msgid "Activate delivery to folder"
+msgstr "Activate delivery to folder"
+
+#: data/templates/deliver.tpl:11
+msgid "Deliver regular mail to folder"
+msgstr "Deliver regular mail to folder"
+
+#: data/templates/userlistall.tpl:43
+msgid "Filter\""
+msgstr "Filter\""
+
+#: data/templates/userlistall.tpl:51
+msgid "E-mail"
+msgstr "E-mail"
+
+#: data/templates/userlistall.tpl:51
+msgid "uid"
+msgstr "uid"
+
+#: data/templates/userlistall.tpl:71
+msgid "User Deleted, awaiting cleanup..."
+msgstr "User Deleted, awaiting cleanup..."
+
+#: data/templates/welcome-admin.tpl:25
+msgid "Administrator"
+msgstr "Administrator"
+
+#: data/templates/welcome-admin.tpl:34 lib/Skolab/Admin/include/menu.php:109
+msgid "Settings"
+msgstr "Settings"
+
+#: data/templates/welcome-user.tpl:8
+msgid "Welcome to the Skolab Groupware Server"
+msgstr "Welcome to the Skolab Groupware Server"
+
+#: data/templates/welcome-user.tpl:13
+msgid "My settings"
+msgstr "My settings"
+
+#: data/templates/addrlistall.tpl:53
+msgid "Entry deleted, awaiting cleanup..."
+msgstr "Entry deleted, awaiting cleanup..."
+
+#: data/templates/page.tpl:94
+msgid "Errors:"
+msgstr "Errors:"
+
+#: data/templates/page.tpl:102
+msgid "Message:"
+msgstr "Message:"
+
+#: data/templates/adminlistall.tpl:8 lib/Skolab/Admin/include/menu.php:73
+msgid "Administrators"
+msgstr "Administrators"
+
+#: data/templates/addrdeleted.tpl:10
+msgid "The address with DN"
+msgstr "The address with DN"
+
+#: data/templates/addrdeleted.tpl:11
+msgid "Back to list of addresses"
+msgstr "Back to list of addresses"
+
+#: htdocs/user/forward.php:47 htdocs/user/deliver.php:46
+#: htdocs/user/vacation.php:37
+msgid "Error while connecting to Sieve service:"
+msgstr "Error while connecting to Sieve service:"
+
+#: htdocs/user/forward.php:61
+#, php-format
+msgid "Forwarding to '%s' successfully activated"
+msgstr "Forwarding to '%s' successfully activated"
+
+#: htdocs/user/forward.php:63
+#, php-format
+msgid "Forwarding to '%s' successfully deactivated"
+msgstr "Forwarding to '%s' successfully deactivated"
+
+#: htdocs/user/forward.php:69 htdocs/user/deliver.php:67
+#: htdocs/user/vacation.php:65
+#, php-format
+msgid ""
+"Warning: You currently have a sieve script named %s active for your account."
+msgstr ""
+"Warning: You currently have a sieve script named %s active for your account."
+
+#: htdocs/user/forward.php:70 htdocs/user/deliver.php:68
+#: htdocs/user/vacation.php:66
+msgid ""
+"Warning: This script will be overwritten without further warnings if you "
+"press \"Update\"!"
+msgstr ""
+"Warning: This script will be overwritten without further warnings if you "
+"press \"Update\"!"
+
+#: htdocs/user/deliver.php:59
+#, php-format
+msgid "Delivery to '%s' successfully activated"
+msgstr "Delivery to '%s' successfully activated"
+
+#: htdocs/user/deliver.php:61
+#, php-format
+msgid "Delivery to '%s' successfully deactivated"
+msgstr "Delivery to '%s' successfully deactivated"
+
+#: htdocs/user/index.php:34 htdocs/administrator/index.php:33
+#: htdocs/addressbook/addr.php:17 htdocs/addressbook/index.php:23
+#: htdocs/settings/index.php:13 htdocs/distributionlist/index.php:35
+#: htdocs/distributionlist/list.php:37 htdocs/sharedfolder/sf.php:25
+#: htdocs/sharedfolder/index.php:22 htdocs/domainmaintainer/index.php:33
+#: htdocs/maintainer/index.php:33
+msgid "Error: You don't have Permissions to access this Menu"
+msgstr "Error: You don't have Permissions to access this Menu"
+
+#: htdocs/user/index.php:134
+#, php-format
+msgid "Manage Email User (%d Users)"
+msgstr "Manage Email User (%d Users)"
+
+#: htdocs/user/index.php:204 htdocs/addressbook/index.php:122
+msgid "Email"
+msgstr "Email"
+
+#: htdocs/user/index.php:206 htdocs/addressbook/index.php:123
+msgid "contains"
+msgstr "contains"
+
+#: htdocs/user/index.php:207 htdocs/addressbook/index.php:124
+msgid "is"
+msgstr "is"
+
+#: htdocs/user/index.php:208 htdocs/addressbook/index.php:125
+msgid "begins with"
+msgstr "begins with"
+
+#: htdocs/user/index.php:209 htdocs/addressbook/index.php:126
+msgid "ends with"
+msgstr "ends with"
+
+#: htdocs/user/user.php:95
+msgid "Please enter an email address"
+msgstr "Please enter an email address"
+
+#: htdocs/user/user.php:114
+#, php-format
+msgid "Email address %1$s not in domains %2$s"
+msgstr "Email address %1$s not in domains %2$s"
+
+#: htdocs/user/user.php:117 htdocs/addressbook/addr.php:65
+msgid "User, vCard or distribution list with this email address already exists"
+msgstr ""
+"User, vCard or distribution list with this email address already exists"
+
+#: htdocs/user/user.php:135
+msgid "UID "
+msgstr "UID "
+
+#: htdocs/user/user.php:135 lib/Skolab/Admin/include/form.class.php:34
+msgid ""
+" collides with an address already used for another user, a vCard or a "
+"distribution list.<br />"
+msgstr ""
+" collides with an address already used for another user, a vCard or a "
+"distribution list.<br />"
+
+#: htdocs/user/user.php:150
+#, php-format
+msgid "Email-Delegate %s does not exist"
+msgstr "Email-Delegate %s does not exist"
+
+#: htdocs/user/user.php:171
+#, php-format
+msgid "Syntax for Recipient %s is invalid"
+msgstr "Syntax for Recipient %s is invalid"
+
+#: htdocs/user/user.php:217
+#, php-format
+msgid "Illegal user or group %s"
+msgstr "Illegal user or group %s"
+
+#: htdocs/user/user.php:226
+msgid "Free/Busy interval can not be negative"
+msgstr "Free/Busy interval can not be negative"
+
+#: htdocs/user/user.php:227
+msgid "Free/Busy interval must be a number"
+msgstr "Free/Busy interval must be a number"
+
+#: htdocs/user/user.php:228
+msgid "Free/Busy interval must be an integer"
+msgstr "Free/Busy interval must be an integer"
+
+#: htdocs/user/user.php:427 htdocs/administrator/admin.php:121
+#: htdocs/addressbook/addr.php:78 htdocs/distributionlist/list.php:109
+#: htdocs/sharedfolder/sf.php:116
+#: htdocs/domainmaintainer/domainmaintainer.php:96
+#: htdocs/maintainer/maintainer.php:118
+msgid "Error: need valid action to proceed"
+msgstr "Error: need valid action to proceed"
+
+#: htdocs/user/user.php:439 htdocs/user/user.php:442 htdocs/user/user.php:447
+#: htdocs/user/user.php:909 htdocs/administrator/admin.php:127
+#: htdocs/addressbook/addr.php:81
+#: htdocs/domainmaintainer/domainmaintainer.php:102
+#: htdocs/maintainer/maintainer.php:124
+msgid "Error: You don't have the required Permissions"
+msgstr "Error: You don't have the required Permissions"
+
+#: htdocs/user/user.php:456 htdocs/user/user.php:458
+#: htdocs/sharedfolder/sf.php:130
+msgid "Non volatile"
+msgstr "Non volatile"
+
+#: htdocs/user/user.php:457 htdocs/administrator/admin.php:136
+#: htdocs/domainmaintainer/domainmaintainer.php:111
+#: htdocs/maintainer/maintainer.php:133
+msgid "Leave blank to keep password unchanged"
+msgstr "Leave blank to keep password unchanged"
+
+#: htdocs/user/user.php:481
+msgid "Unique Identity (UID)"
+msgstr "Unique Identity (UID)"
+
+#: htdocs/user/user.php:483
+msgid "Optional - Defaults to Primary Email Address"
+msgstr "Optional - Defaults to Primary Email Address"
+
+#: htdocs/user/user.php:484
+msgid "Mailbox Home Server"
+msgstr "Mailbox Home Server"
+
+#: htdocs/user/user.php:488
+msgid "Account Type"
+msgstr "Account Type"
+
+#: htdocs/user/user.php:490
+msgid "User Account"
+msgstr "User Account"
+
+#: htdocs/user/user.php:490
+msgid "Internal User Account"
+msgstr "Internal User Account"
+
+#: htdocs/user/user.php:490
+msgid "Group Account"
+msgstr "Group Account"
+
+#: htdocs/user/user.php:490
+msgid "Resource Account"
+msgstr "Resource Account"
+
+#: htdocs/user/user.php:492
+msgid ""
+"NOTE: An internal user is a user that will not be visible in the address book"
+msgstr ""
+"NOTE: An internal user is a user that will not be visible in the address book"
+
+#: htdocs/user/user.php:493
+msgid "Invitation Policy"
+msgstr "Invitation Policy"
+
+#: htdocs/user/user.php:497
+msgid "For automatic invitation handling"
+msgstr "For automatic invitation handling"
+
+#: htdocs/user/user.php:498
+msgid ""
+"NOTE: For regular accounts to use this feature, give the 'calendar' user "
+"access to the Calendar folder"
+msgstr ""
+"NOTE: For regular accounts to use this feature, give the 'calendar' user "
+"access to the Calendar folder"
+
+#: htdocs/user/user.php:500
+msgid "Email Aliases"
+msgstr "Email Aliases"
+
+#: htdocs/user/user.php:503 htdocs/addressbook/addr.php:100
+msgid "One address per line"
+msgstr "One address per line"
+
+#: htdocs/user/user.php:505
+msgid "Email-Delegates"
+msgstr "Email-Delegates"
+
+#: htdocs/user/user.php:508
+msgid "Others allowed to send emails with a \"from\" address of this account."
+msgstr "Others allowed to send emails with a \"from\" address of this account."
+
+#: htdocs/user/user.php:509
+msgid "One email address per line."
+msgstr "One email address per line."
+
+#: htdocs/user/user.php:511
+msgid "Allowed Recipients"
+msgstr "Allowed Recipients"
+
+#: htdocs/user/user.php:514
+msgid "Restrict allowed recipients of SMTP messages"
+msgstr "Restrict allowed recipients of SMTP messages"
+
+#: htdocs/user/user.php:515
+msgid "One entry per line."
+msgstr "One entry per line."
+
+#: htdocs/user/user.php:526
+msgid ""
+"2 letter code from <a href=\"http://www.iso.org/iso/"
+"english_country_names_and_code_elements\" target=\"_blank\">ISO 3166</a>"
+msgstr ""
+"2 letter code from <a href=\"http://www.iso.org/iso/"
+"english_country_names_and_code_elements\" target=\"_blank\">ISO 3166</a>"
+
+#: htdocs/user/user.php:532
+msgid "User Quota in MBytes"
+msgstr "User Quota in MBytes"
+
+#: htdocs/user/user.php:548
+msgid "Free/Busy interval in days"
+msgstr "Free/Busy interval in days"
+
+#: htdocs/user/user.php:549
+msgid "Leave blank for default (60 days)"
+msgstr "Leave blank for default (60 days)"
+
+#: htdocs/user/user.php:559 htdocs/administrator/admin.php:165
+#: htdocs/domainmaintainer/domainmaintainer.php:149
+#: htdocs/maintainer/maintainer.php:162
+#, php-format
+msgid "LDAP Error: No such dn: %s: %s"
+msgstr "LDAP Error: No such dn: %s: %s"
+
+#: htdocs/user/user.php:737 htdocs/administrator/admin.php:217
+#: htdocs/addressbook/addr.php:189 htdocs/distributionlist/list.php:200
+#: htdocs/sharedfolder/sf.php:233
+#: htdocs/domainmaintainer/domainmaintainer.php:202
+#: htdocs/maintainer/maintainer.php:215
+#, php-format
+msgid "LDAP Error: could not rename %s to %s: %s"
+msgstr "LDAP Error: could not rename %s to %s: %s"
+
+#: htdocs/user/user.php:746
+#, php-format
+msgid "LDAP Error: could not modify %s: %s"
+msgstr "LDAP Error: could not modify %s: %s"
+
+#: htdocs/user/user.php:752 htdocs/administrator/admin.php:231
+#: htdocs/addressbook/addr.php:203 htdocs/addressbook/addr.php:218
+#: htdocs/domainmaintainer/domainmaintainer.php:216
+#: htdocs/maintainer/maintainer.php:229
+#, php-format
+msgid "%s successfully updated"
+msgstr "%s successfully updated"
+
+#: htdocs/user/user.php:758 htdocs/distributionlist/list.php:220
+#, php-format
+msgid "LDAP Error: Could not read %s: %s"
+msgstr "LDAP Error: Could not read %s: %s"
+
+#: htdocs/user/user.php:772 htdocs/user/user.php:787 htdocs/user/user.php:827
+#: htdocs/user/user.php:842 htdocs/distributionlist/list.php:224
+#: htdocs/distributionlist/list.php:253
+#, php-format
+msgid "LDAP Error: Could not modify object %s: %s"
+msgstr "LDAP Error: Could not modify object %s: %s"
+
+#: htdocs/user/user.php:790 htdocs/user/user.php:845
+#, php-format
+msgid "Mid-air collision detected, alias %1$s renamed to %2$s"
+msgstr "Mid-air collision detected, alias %1$s renamed to %2$s"
+
+#: htdocs/user/user.php:795 htdocs/user/user.php:883
+msgid "Modify User"
+msgstr "Modify User"
+
+#: htdocs/user/user.php:796
+#, php-format
+msgid "User '%s' successfully modified"
+msgstr "User '%s' successfully modified"
+
+#: htdocs/user/user.php:816 htdocs/administrator/admin.php:260
+#: htdocs/addressbook/addr.php:227 htdocs/sharedfolder/sf.php:267
+#: htdocs/domainmaintainer/domainmaintainer.php:265
+#: htdocs/maintainer/maintainer.php:261
+#, php-format
+msgid "LDAP Error: could not add object %s: %s"
+msgstr "LDAP Error: could not add object %s: %s"
+
+#: htdocs/user/user.php:830 htdocs/distributionlist/list.php:256
+#, php-format
+msgid "Mid-air collision detected, email address %1$s renamed to %2$s"
+msgstr "Mid-air collision detected, email address %1$s renamed to %2$s"
+
+#: htdocs/user/user.php:851
+msgid "User "
+msgstr "User "
+
+#: htdocs/user/user.php:851 htdocs/administrator/admin.php:270
+#: htdocs/domainmaintainer/domainmaintainer.php:276
+#: htdocs/maintainer/maintainer.php:269
+msgid " successfully created"
+msgstr " successfully created"
+
+#: htdocs/user/user.php:852 htdocs/user/user.php:858 htdocs/user/user.php:872
+#: lib/Skolab/Admin/include/menu.php:32
+msgid "Create New User"
+msgstr "Create New User"
+
+#: htdocs/user/user.php:891 htdocs/user/user.php:951
+msgid "Delete User"
+msgstr "Delete User"
+
+#: htdocs/user/user.php:906 htdocs/administrator/admin.php:315
+#: htdocs/domainmaintainer/domainmaintainer.php:318
+#: htdocs/maintainer/maintainer.php:314
+msgid "Error: need DN for delete operation"
+msgstr "Error: need DN for delete operation"
+
+#: htdocs/user/user.php:912 htdocs/maintainer/maintainer.php:316
+msgid "Error: you need administrative permissions to delete users"
+msgstr "Error: you need administrative permissions to delete users"
+
+#: htdocs/user/user.php:925 htdocs/addressbook/addr.php:295
+#, php-format
+msgid "Account could not be deleted, distribution list '%s' depends on it."
+msgstr "Account could not be deleted, distribution list '%s' depends on it."
+
+#: htdocs/user/user.php:932
+#, php-format
+msgid "Account removed from distribution list '%s'."
+msgstr "Account removed from distribution list '%s'."
+
+#: htdocs/user/user.php:934
+#, php-format
+msgid ""
+"Failure to remove account from distribution list '%s', account will not be "
+"deleted."
+msgstr ""
+"Failure to remove account from distribution list '%s', account will not be "
+"deleted."
+
+#: htdocs/user/user.php:942
+#, php-format
+msgid "LDAP Error: could not mark '%s' for deletion: %s"
+msgstr "LDAP Error: could not mark '%s' for deletion: %s"
+
+#: htdocs/user/user.php:945
+msgid "User Deleted"
+msgstr "User Deleted"
+
+#: htdocs/user/vacation.php:57
+msgid "Vacation message successfully activated"
+msgstr "Vacation message successfully activated"
+
+#: htdocs/user/vacation.php:59
+msgid "Vacation message successfully deactivated"
+msgstr "Vacation message successfully deactivated"
+
+#: htdocs/administrator/admin.php:52
+#: htdocs/domainmaintainer/domainmaintainer.php:53
+#: htdocs/maintainer/maintainer.php:52
+msgid "Account with this UID already exists"
+msgstr "Account with this UID already exists"
+
+#: htdocs/administrator/admin.php:75
+msgid "Manager's password can't be changed from the webgui"
+msgstr "Manager's password can't be changed from the webgui"
+
+#: htdocs/administrator/admin.php:135
+#: htdocs/domainmaintainer/domainmaintainer.php:110
+#: htdocs/maintainer/maintainer.php:132
+msgid "non volatile"
+msgstr "non volatile"
+
+#: htdocs/administrator/admin.php:153
+#: htdocs/domainmaintainer/domainmaintainer.php:128
+#: htdocs/maintainer/maintainer.php:150
+msgid "Unique User ID"
+msgstr "Unique User ID"
+
+#: htdocs/administrator/admin.php:225 htdocs/addressbook/addr.php:197
+#: htdocs/distributionlist/list.php:208 htdocs/sharedfolder/sf.php:241
+#: htdocs/domainmaintainer/domainmaintainer.php:210
+#: htdocs/maintainer/maintainer.php:223
+#, php-format
+msgid "LDAP Error: could not modify %s to %s: %s"
+msgstr "LDAP Error: could not modify %s to %s: %s"
+
+#: htdocs/administrator/admin.php:235 htdocs/addressbook/addr.php:209
+#: htdocs/sharedfolder/sf.php:253
+#: htdocs/domainmaintainer/domainmaintainer.php:228
+#: htdocs/maintainer/maintainer.php:233
+#, php-format
+msgid "LDAP Error: could not read %s: %s"
+msgstr "LDAP Error: could not read %s: %s"
+
+#: htdocs/administrator/admin.php:239 htdocs/addressbook/addr.php:215
+#: htdocs/sharedfolder/sf.php:257
+#: htdocs/domainmaintainer/domainmaintainer.php:232
+#: htdocs/maintainer/maintainer.php:237
+#, php-format
+msgid "LDAP Error: could not modify object %s: %s"
+msgstr "LDAP Error: could not modify object %s: %s"
+
+#: htdocs/administrator/admin.php:244 htdocs/administrator/admin.php:297
+msgid "Modify Administrator"
+msgstr "Modify Administrator"
+
+#: htdocs/administrator/admin.php:245 htdocs/administrator/admin.php:270
+msgid "Administrator "
+msgstr "Administrator "
+
+#: htdocs/administrator/admin.php:245
+#: htdocs/domainmaintainer/domainmaintainer.php:246
+#: htdocs/maintainer/maintainer.php:243
+msgid " successfully modified"
+msgstr " successfully modified"
+
+#: htdocs/administrator/admin.php:266
+#: htdocs/domainmaintainer/domainmaintainer.php:269
+#: htdocs/maintainer/maintainer.php:265
+#, php-format
+msgid "LDAP Error: could not add object %s to maintainer group: %s"
+msgstr "LDAP Error: could not add object %s to maintainer group: %s"
+
+#: htdocs/administrator/admin.php:271 htdocs/administrator/admin.php:277
+#: htdocs/administrator/admin.php:288 lib/Skolab/Admin/include/menu.php:77
+msgid "Create New Administrator"
+msgstr "Create New Administrator"
+
+#: htdocs/administrator/admin.php:303
+msgid "Delete Administrator"
+msgstr "Delete Administrator"
+
+#: htdocs/administrator/admin.php:317
+msgid "Error: you need administrative permissions to delete administrators"
+msgstr "Error: you need administrative permissions to delete administrators"
+
+#: htdocs/administrator/admin.php:321
+#, php-format
+msgid "LDAP Error: Could not remove %s from admin group: %s"
+msgstr "LDAP Error: Could not remove %s from admin group: %s"
+
+#: htdocs/administrator/admin.php:326
+#: htdocs/domainmaintainer/domainmaintainer.php:330
+#: htdocs/maintainer/maintainer.php:326
+#, php-format
+msgid "LDAP Error: could not mark %s for deletion: %s"
+msgstr "LDAP Error: could not mark %s for deletion: %s"
+
+#: htdocs/administrator/admin.php:332
+msgid "Administrator Deleted"
+msgstr "Administrator Deleted"
+
+#: htdocs/administrator/index.php:62
+msgid "Manage Administrators ("
+msgstr "Manage Administrators ("
+
+#: htdocs/administrator/index.php:62
+msgid " Administrators)"
+msgstr " Administrators)"
+
+#: htdocs/addressbook/addr.php:95
+msgid "Primary E-Mail Address"
+msgstr "Primary E-Mail Address"
+
+#: htdocs/addressbook/addr.php:97
+msgid "E-Mail Aliases"
+msgstr "E-Mail Aliases"
+
+#: htdocs/addressbook/addr.php:105
+msgid "Post Box"
+msgstr "Post Box"
+
+#: htdocs/addressbook/addr.php:121 htdocs/distributionlist/list.php:138
+#: htdocs/sharedfolder/sf.php:151
+#, php-format
+msgid "Error: DN required for %s operation"
+msgstr "Error: DN required for %s operation"
+
+#: htdocs/addressbook/addr.php:131
+msgid "Add External Address"
+msgstr "Add External Address"
+
+#: htdocs/addressbook/addr.php:178
+#, php-format
+msgid "Addressbook entry DN could not be modified, distribution list <a href='"
+msgstr ""
+"Addressbook entry DN could not be modified, distribution list <a href='"
+
+#: htdocs/addressbook/addr.php:230
+#, php-format
+msgid "%s successfully added"
+msgstr "%s successfully added"
+
+#: htdocs/addressbook/addr.php:240 htdocs/addressbook/addr.php:258
+msgid "Modify External Address"
+msgstr "Modify External Address"
+
+#: htdocs/addressbook/addr.php:261 htdocs/addressbook/addr.php:281
+#, php-format
+msgid "Error: No entry with DN %s found"
+msgstr "Error: No entry with DN %s found"
+
+#: htdocs/addressbook/addr.php:278
+msgid "Delete External Address"
+msgstr "Delete External Address"
+
+#: htdocs/addressbook/addr.php:302
+#, php-format
+msgid "Addressbook entry removed from distribution list '%s'."
+msgstr "Addressbook entry removed from distribution list '%s'."
+
+#: htdocs/addressbook/addr.php:304
+#, php-format
+msgid ""
+"Failure to remove addressbook entry from distribution list '%s', entry will "
+"not be deleted."
+msgstr ""
+"Failure to remove addressbook entry from distribution list '%s', entry will "
+"not be deleted."
+
+#: htdocs/addressbook/addr.php:312
+#, php-format
+msgid "LDAP Error: could not delete %s: %s"
+msgstr "LDAP Error: could not delete %s: %s"
+
+#: htdocs/addressbook/addr.php:315 htdocs/distributionlist/list.php:316
+#: htdocs/sharedfolder/sf.php:327
+msgid "Entry Deleted"
+msgstr "Entry Deleted"
+
+#: htdocs/addressbook/addr.php:316
+#, php-format
+msgid "Address book entry with DN %s was deleted"
+msgstr "Address book entry with DN %s was deleted"
+
+#: htdocs/settings/index.php:99
+#, php-format
+msgid "No account found for email address %s"
+msgstr "No account found for email address %s"
+
+#: htdocs/settings/index.php:108
+#, php-format
+msgid "LDAP Error: Failed to add distribution list %s: %s"
+msgstr "LDAP Error: Failed to add distribution list %s: %s"
+
+#: htdocs/settings/index.php:110
+#, php-format
+msgid "Successfully created distribution list %s"
+msgstr "Successfully created distribution list %s"
+
+#: htdocs/settings/index.php:129 htdocs/settings/index.php:138
+#: htdocs/settings/index.php:147 htdocs/settings/index.php:158
+#: htdocs/settings/index.php:168 htdocs/settings/index.php:177
+#: htdocs/settings/index.php:188 htdocs/settings/index.php:202
+#: htdocs/settings/index.php:220 htdocs/settings/index.php:238
+#: htdocs/settings/index.php:255 htdocs/settings/index.php:268
+#, php-format
+msgid "LDAP Error: failed to modify kolab configuration object: %s"
+msgstr "LDAP Error: failed to modify kolab configuration object: %s"
+
+#: htdocs/settings/index.php:226
+#, php-format
+msgid "LDAP Error: Failed to delete domain object %s: %s"
+msgstr "LDAP Error: Failed to delete domain object %s: %s"
+
+#: htdocs/settings/index.php:276
+msgid "POP3 Service"
+msgstr "POP3 Service"
+
+#: htdocs/settings/index.php:277
+msgid "POP3/SSL service (TCP port 995)"
+msgstr "POP3/SSL service (TCP port 995)"
+
+#: htdocs/settings/index.php:278
+msgid "IMAP Service"
+msgstr "IMAP Service"
+
+#: htdocs/settings/index.php:279
+msgid "IMAP/SSL Service (TCP port 993)"
+msgstr "IMAP/SSL Service (TCP port 993)"
+
+#: htdocs/settings/index.php:280
+#, php-format
+msgid "Sieve service (TCP port %s)"
+msgstr "Sieve service (TCP port %s)"
+
+#: htdocs/settings/index.php:281
+msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
+msgstr "FreeBusy Service via HTTP (in addition to HTTPS)"
+
+#: htdocs/settings/index.php:282
+msgid "Amavis Email Scanning (Virus/Spam)"
+msgstr "Amavis Email Scanning (Virus/Spam)"
+
+#: htdocs/distributionlist/index.php:63
+#, php-format
+msgid "Manage Distribution Lists (%d Lists)"
+msgstr "Manage Distribution Lists (%d Lists)"
+
+#: htdocs/distributionlist/index.php:74
+msgid "not yet implemented"
+msgstr "not yet implemented"
+
+#: htdocs/distributionlist/list.php:46
+msgid "Please add at least one member"
+msgstr "Please add at least one member"
+
+#: htdocs/distributionlist/list.php:50
+#, php-format
+msgid "No user with email address, UID or alias %s"
+msgstr "No user with email address, UID or alias %s"
+
+#: htdocs/distributionlist/list.php:62
+msgid "User or distribution list with this email address already exists"
+msgstr "User or distribution list with this email address already exists"
+
+#: htdocs/distributionlist/list.php:114
+msgid "List Name"
+msgstr "List Name"
+
+#: htdocs/distributionlist/list.php:121
+msgid "Members"
+msgstr "Members"
+
+#: htdocs/distributionlist/list.php:123
+msgid "One email address per line"
+msgstr "One email address per line"
+
+#: htdocs/distributionlist/list.php:126
+msgid "Hidden"
+msgstr "Hidden"
+
+#: htdocs/distributionlist/list.php:129
+msgid ""
+"Check here to make this distribution list available only to authenticated "
+"users"
+msgstr ""
+"Check here to make this distribution list available only to authenticated "
+"users"
+
+#: htdocs/distributionlist/list.php:148
+msgid "Add Distribution List"
+msgstr "Add Distribution List"
+
+#: htdocs/distributionlist/list.php:183
+#, php-format
+msgid "No user with address %s"
+msgstr "No user with address %s"
+
+#: htdocs/distributionlist/list.php:214 htdocs/distributionlist/list.php:226
+msgid "Distribution List updated"
+msgstr "Distribution List updated"
+
+#: htdocs/distributionlist/list.php:235
+#, php-format
+msgid "LDAP Error: Could not add object %s: %s"
+msgstr "LDAP Error: Could not add object %s: %s"
+
+#: htdocs/distributionlist/list.php:264
+#, php-format
+msgid "Distribution List '%s' added"
+msgstr "Distribution List '%s' added"
+
+#: htdocs/distributionlist/list.php:276 htdocs/distributionlist/list.php:290
+msgid "Modify Distribution List"
+msgstr "Modify Distribution List"
+
+#: htdocs/distributionlist/list.php:293 htdocs/distributionlist/list.php:308
+#: htdocs/sharedfolder/sf.php:304 htdocs/sharedfolder/sf.php:320
+#, php-format
+msgid "Error: No results returned for DN '%s'"
+msgstr "Error: No results returned for DN '%s'"
+
+#: htdocs/distributionlist/list.php:305
+msgid "Delete Distribution List"
+msgstr "Delete Distribution List"
+
+#: htdocs/distributionlist/list.php:315
+msgid "Distribution List "
+msgstr "Distribution List "
+
+#: htdocs/distributionlist/list.php:315
+msgid " deleted"
+msgstr " deleted"
+
+#: htdocs/distributionlist/list.php:319
+#, php-format
+msgid "LDAP Error: Could not delete %s: %s"
+msgstr "LDAP Error: Could not delete %s: %s"
+
+#: htdocs/sharedfolder/sf.php:64 htdocs/sharedfolder/sf.php:71
+msgid "Permission for UID/email/GID"
+msgstr "Permission for UID/email/GID"
+
+#: htdocs/sharedfolder/sf.php:105
+#, php-format
+msgid "No UID or GID %s"
+msgstr "No UID or GID %s"
+
+#: htdocs/sharedfolder/sf.php:121
+msgid "Folder Name"
+msgstr "Folder Name"
+
+#: htdocs/sharedfolder/sf.php:128
+msgid "Folder Location"
+msgstr "Folder Location"
+
+#: htdocs/sharedfolder/sf.php:132
+msgid "Folder Type"
+msgstr "Folder Type"
+
+#: htdocs/sharedfolder/sf.php:135
+msgid "Quota Limit"
+msgstr "Quota Limit"
+
+#: htdocs/sharedfolder/sf.php:136
+msgid "MBytes (empty for unlimited)"
+msgstr "MBytes (empty for unlimited)"
+
+#: htdocs/sharedfolder/sf.php:138
+msgid "Permission for UID/GID"
+msgstr "Permission for UID/GID"
+
+#: htdocs/sharedfolder/sf.php:161 lib/Skolab/Admin/include/menu.php:61
+msgid "Add Shared Folder"
+msgstr "Add Shared Folder"
+
+#: htdocs/sharedfolder/sf.php:247 htdocs/sharedfolder/sf.php:259
+msgid "Shared folder updated"
+msgstr "Shared folder updated"
+
+#: htdocs/sharedfolder/sf.php:269
+#, php-format
+msgid "Shared folder '%s' added"
+msgstr "Shared folder '%s' added"
+
+#: htdocs/sharedfolder/sf.php:281 htdocs/sharedfolder/sf.php:301
+msgid "Modify Shared Folder"
+msgstr "Modify Shared Folder"
+
+#: htdocs/sharedfolder/sf.php:317
+msgid "Delete Shared Folder"
+msgstr "Delete Shared Folder"
+
+#: htdocs/sharedfolder/sf.php:326
+msgid "Shared folder "
+msgstr "Shared folder "
+
+#: htdocs/sharedfolder/sf.php:326
+msgid " marked for deletion"
+msgstr " marked for deletion"
+
+#: htdocs/sharedfolder/sf.php:330
+#, php-format
+msgid "LDAP Error: Could not mark %s for deletion: %s"
+msgstr "LDAP Error: Could not mark %s for deletion: %s"
+
+#: htdocs/sharedfolder/index.php:52
+#, php-format
+msgid "Manage Shared Folders (%d Folders)"
+msgstr "Manage Shared Folders (%d Folders)"
+
+#: htdocs/sharedfolder/index.php:62 lib/Skolab/Admin/include/form.class.php:254
+msgid "Unspecified"
+msgstr "Unspecified"
+
+#: htdocs/sharedfolder/index.php:63 lib/Skolab/Admin/include/form.class.php:254
+msgid "Mails"
+msgstr "Mails"
+
+#: htdocs/sharedfolder/index.php:64 lib/Skolab/Admin/include/form.class.php:254
+msgid "Tasks"
+msgstr "Tasks"
+
+#: htdocs/sharedfolder/index.php:65 lib/Skolab/Admin/include/form.class.php:255
+msgid "Journals"
+msgstr "Journals"
+
+#: htdocs/sharedfolder/index.php:66 lib/Skolab/Admin/include/form.class.php:255
+msgid "Events"
+msgstr "Events"
+
+#: htdocs/sharedfolder/index.php:67 lib/Skolab/Admin/include/form.class.php:256
+msgid "Contacts"
+msgstr "Contacts"
+
+#: htdocs/sharedfolder/index.php:68 lib/Skolab/Admin/include/form.class.php:256
+msgid "Notes"
+msgstr "Notes"
+
+#: htdocs/domainmaintainer/index.php:62 htdocs/maintainer/index.php:62
+msgid "Manage Maintainers ("
+msgstr "Manage Maintainers ("
+
+#: htdocs/domainmaintainer/index.php:62 htdocs/maintainer/index.php:62
+msgid " Maintainers)"
+msgstr " Maintainers)"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:49
+msgid "Please enter a uid value"
+msgstr "Please enter a uid value"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:137
+msgid "Check domains this domain maintainer should be able to maintain"
+msgstr "Check domains this domain maintainer should be able to maintain"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:245
+#: htdocs/domainmaintainer/domainmaintainer.php:300
+msgid "Modify Domain Maintainer"
+msgstr "Modify Domain Maintainer"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:246
+#: htdocs/maintainer/maintainer.php:243 htdocs/maintainer/maintainer.php:269
+msgid "Maintainer "
+msgstr "Maintainer "
+
+#: htdocs/domainmaintainer/domainmaintainer.php:276
+msgid "Domain maintainer "
+msgstr "Domain maintainer "
+
+#: htdocs/domainmaintainer/domainmaintainer.php:277
+#: htdocs/domainmaintainer/domainmaintainer.php:281
+#: htdocs/domainmaintainer/domainmaintainer.php:291
+#: lib/Skolab/Admin/include/menu.php:83 lib/Skolab/Admin/include/menu.php:100
+msgid "Create New Domain Maintainer"
+msgstr "Create New Domain Maintainer"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:306
+msgid "Delete Domain Maintainer"
+msgstr "Delete Domain Maintainer"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:320
+msgid "Error: you need administrative permissions to delete domain maintainers"
+msgstr ""
+"Error: you need administrative permissions to delete domain maintainers"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:324
+#: htdocs/maintainer/maintainer.php:320
+#, php-format
+msgid "LDAP Error: Could not remove %s from maintainer group: %s"
+msgstr "LDAP Error: Could not remove %s from maintainer group: %s"
+
+#: htdocs/domainmaintainer/domainmaintainer.php:336
+msgid "Domain Maintainer Deleted"
+msgstr "Domain Maintainer Deleted"
+
+#: htdocs/maintainer/maintainer.php:242 htdocs/maintainer/maintainer.php:296
+msgid "Modify Maintainer"
+msgstr "Modify Maintainer"
+
+#: htdocs/maintainer/maintainer.php:270 htdocs/maintainer/maintainer.php:276
+#: htdocs/maintainer/maintainer.php:287 lib/Skolab/Admin/include/menu.php:89
+msgid "Create New Maintainer"
+msgstr "Create New Maintainer"
+
+#: htdocs/maintainer/maintainer.php:302
+msgid "Delete Maintainer"
+msgstr "Delete Maintainer"
+
+#: htdocs/maintainer/maintainer.php:332
+msgid "Maintainer Deleted"
+msgstr "Maintainer Deleted"
+
+#: lib/Skolab/Admin/include/passwd.php:33
+msgid "Password is empty"
+msgstr "Password is empty"
+
+#: lib/Skolab/Admin/include/passwd.php:36
+#: lib/Skolab/Admin/include/passwd.php:41
+msgid "Passwords dont match"
+msgstr "Passwords dont match"
+
+#: lib/Skolab/Admin/include/menu.php:28
+msgid "Users"
+msgstr "Users"
+
+#: lib/Skolab/Admin/include/menu.php:30
+msgid "Manage Email Users"
+msgstr "Manage Email Users"
+
+#: lib/Skolab/Admin/include/menu.php:35 lib/Skolab/Admin/include/menu.php:37
+msgid "My User Settings"
+msgstr "My User Settings"
+
+#: lib/Skolab/Admin/include/menu.php:39
+msgid "Mail Delivery"
+msgstr "Mail Delivery"
+
+#: lib/Skolab/Admin/include/menu.php:41
+msgid "Forward Email"
+msgstr "Forward Email"
+
+#: lib/Skolab/Admin/include/menu.php:43
+msgid "Vacation"
+msgstr "Vacation"
+
+#: lib/Skolab/Admin/include/menu.php:50
+msgid "Manage Address Book"
+msgstr "Manage Address Book"
+
+#: lib/Skolab/Admin/include/menu.php:52
+msgid "Create New vCard"
+msgstr "Create New vCard"
+
+#: lib/Skolab/Admin/include/menu.php:57
+msgid "Shared Folder"
+msgstr "Shared Folder"
+
+#: lib/Skolab/Admin/include/menu.php:59
+msgid "Manage Shared Folders"
+msgstr "Manage Shared Folders"
+
+#: lib/Skolab/Admin/include/menu.php:67
+msgid "Manage Distribution Lists"
+msgstr "Manage Distribution Lists"
+
+#: lib/Skolab/Admin/include/menu.php:69
+msgid "Create New List"
+msgstr "Create New List"
+
+#: lib/Skolab/Admin/include/menu.php:75
+msgid "Manage Administrators"
+msgstr "Manage Administrators"
+
+#: lib/Skolab/Admin/include/menu.php:81 lib/Skolab/Admin/include/menu.php:98
+msgid "Manage Domain Maintainers"
+msgstr "Manage Domain Maintainers"
+
+#: lib/Skolab/Admin/include/menu.php:87
+msgid "Manage Maintainers"
+msgstr "Manage Maintainers"
+
+#: lib/Skolab/Admin/include/menu.php:95
+msgid "Manage Maintainer"
+msgstr "Manage Maintainer"
+
+#: lib/Skolab/Admin/include/menu.php:106
+msgid "Manage Domain Maintainer"
+msgstr "Manage Domain Maintainer"
+
+#: lib/Skolab/Admin/include/menu.php:111
+msgid "System Settings"
+msgstr "System Settings"
+
+#: lib/Skolab/Admin/include/menu.php:114 lib/Skolab/Admin/include/menu.php:116
+msgid "About Skolab"
+msgstr "About Skolab"
+
+#: lib/Skolab/Admin/include/menu.php:118
+msgid "Skolab Groupware Project"
+msgstr "Skolab Groupware Project"
+
+#: lib/Skolab/Admin/include/menu.php:120
+msgid "Technology"
+msgstr "Technology"
+
+#: lib/Skolab/Admin/include/menu.php:124
+msgid "Versions"
+msgstr "Versions"
+
+#: lib/Skolab/Admin/include/form.class.php:34
+msgid "Email address "
+msgstr "Email address "
+
+#: lib/Skolab/Admin/include/form.class.php:45
+msgid "Quota can not be negative"
+msgstr "Quota can not be negative"
+
+#: lib/Skolab/Admin/include/form.class.php:46
+msgid "Quota must be a number"
+msgstr "Quota must be a number"
+
+#: lib/Skolab/Admin/include/form.class.php:47
+msgid "Quota must be an integer"
+msgstr "Quota must be an integer"
+
+#: lib/Skolab/Admin/include/form.class.php:54
+msgid ""
+"Phone entries may only contain a-z, numbers, spaces and the characters ()-+/."
+"=?:"
+msgstr ""
+"Phone entries may only contain a-z, numbers, spaces and the characters ()-+/."
+"=?:"
+
+#: lib/Skolab/Admin/include/form.class.php:117
+msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
+msgstr "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
+
+#: lib/Skolab/Admin/include/form.class.php:204
+msgid "Yes"
+msgstr "Yes"
+
+#: lib/Skolab/Admin/include/form.class.php:204
+msgid "No"
+msgstr "No"
+
+#: lib/Skolab/Admin/include/form.class.php:322
+msgid "Always accept"
+msgstr "Always accept"
+
+#: lib/Skolab/Admin/include/form.class.php:323
+msgid "Always reject"
+msgstr "Always reject"
+
+#: lib/Skolab/Admin/include/form.class.php:324
+msgid "Reject if conflicts"
+msgstr "Reject if conflicts"
+
+#: lib/Skolab/Admin/include/form.class.php:325
+msgid "Manual if conflicts"
+msgstr "Manual if conflicts"
+
+#: lib/Skolab/Admin/include/form.class.php:326
+msgid "Manual"
+msgstr "Manual"
+
+#: lib/Skolab/Admin/include/form.class.php:332
+#: lib/Skolab/Admin/include/form.class.php:338
+msgid "Anyone"
+msgstr "Anyone"
+
+#: lib/Skolab/Admin/include/form.class.php:374
+msgid "* Required field."
+msgstr "* Required field."
+
+#: lib/Skolab/Admin/include/form.class.php:395
+#: lib/Skolab/Admin/include/form.class.php:398
+msgid "Required field "
+msgstr "Required field "
+
+#: lib/Skolab/Admin/include/form.class.php:395
+#: lib/Skolab/Admin/include/form.class.php:398
+msgid " is empty"
+msgstr " is empty"
+
+#: lib/Skolab/Admin/include/auth.class.php:42
+msgid "Server error, no ldap object!"
+msgstr "Server error, no ldap object!"
+
+#: lib/Skolab/Admin/include/auth.class.php:48
+msgid "Could not bind to LDAP server: "
+msgstr "Could not bind to LDAP server: "
+
+#: lib/Skolab/Admin/include/auth.class.php:59
+msgid "Could not bind to LDAP server"
+msgstr "Could not bind to LDAP server"
+
+#: lib/Skolab/Admin/include/auth.class.php:86
+#: lib/Skolab/Admin/include/auth.class.php:90
+msgid "Wrong username or password"
+msgstr "Wrong username or password"
+
+#: lib/Skolab/Admin/include/auth.class.php:129
+msgid "Skolab Groupware Login"
+msgstr "Skolab Groupware Login"
