@@ -18,8 +18,8 @@ $errors = array();
 $sidx = 'sf';
 
 if( $auth->group() != 'maintainer' && $auth->group() != 'admin' && $auth->group() != 'domain-maintainer' ) {
-	debug("auth->group=".$auth->group());
-	array_push($errors, _("Error: You don't have Permissions to access this Menu"));
+  debug("auth->group=".$auth->group());
+  array_push($errors, _("Error: You don't have Permissions to access this Menu"));
 }
 
 require_once('Skolab/Admin/include/menu.php');
@@ -30,53 +30,54 @@ $menuitems[$sidx]['selected'] = 'selected';
 /**** Extract data from LDAP ***/
 
 function prepare_domain_filter_component($str) {
-	return '(cn=*@'.SkolabLDAP::escape($str).')';
+  return '(cn=*@'.SkolabLDAP::escape($str).')';
 }
 
 // Get all entries & dynamically split the letters with growing entries
 $entries = array();
 if( !$errors ) {
-	if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
-	else $base_dn = 'k=kolab';
-	if( $group == 'domain-maintainer' ) {
-		$domainfilter = '(|'.join('', array_map( 'prepare_domain_filter_component',
-		                 $ldap->domainsForMaintainerDn($auth->dn()))).')';
-	} else {
-		$domainfilter = '(cn=*)';
-	}
-	debug("domainfilter=$domainfilter");
-	$filter = "(&$domainfilter(objectclass=kolabSharedFolder))";
-	$result = ldap_search($ldap->connection, $base_dn, $filter);
-	if( $result ) {
-		$count = ldap_count_entries($ldap->connection, $result);
-		$title = sprintf(_("Manage Shared Folders (%d Folders)"), $count);
-		$template = 'sflistall.tpl';
-		ldap_sort($ldap->connection,$result,'cn');
-		$entry = ldap_first_entry($ldap->connection, $result);
-		while( $entry ) {
-			$attrs = ldap_get_attributes($ldap->connection, $entry);
-			$dn = ldap_get_dn($ldap->connection,$entry);
-			$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
-			$cn = $attrs['cn'][0];
-			$kolabhomeserver = $attrs['kolabHomeServer'][0];
-			$folderTypeMap = array ( '' => _('Unspecified'),
-			                               'mail' => _('Mails'),
-			                               'task' => _('Tasks'),
-			                               'journal' => _('Journals'),
-			                               'event' => _('Events'),
-			                               'contact' => _('Contacts'),
-			                               'note' => _('Notes'));
-			if( in_array('kolabFolderType',$attrs) ) $folderType = $folderTypeMap[$attrs['kolabFolderType'][0]];
-			else $folderType = $folderTypeMap[''];
+  if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
+  else $base_dn = 'k=kolab';
+  if( $group == 'domain-maintainer' ) {
+	$domainfilter = '(|'.join('', array_map( 'prepare_domain_filter_component',
+											 $ldap->domainsForMaintainerDn($auth->dn()))).')';
 
-			$entries[] = array( 'dn' => $dn,
-			                                 'cn' => $cn,
-			                                 'kolabhomeserver' => $kolabhomeserver,
-			                                 'foldertype' => $folderType,
-			                                 'deleted' => $deleted );
-			$entry = ldap_next_entry( $ldap->connection,$entry );
-		}
+  } else {
+	$domainfilter = '(cn=*)';
+  }
+  debug("domainfilter=$domainfilter");
+  $filter = "(&$domainfilter(objectclass=kolabSharedFolder))";
+  $result = ldap_search($ldap->connection, $base_dn, $filter);
+  if( $result ) {
+	$count = ldap_count_entries($ldap->connection, $result);
+	$title = sprintf(_("Manage Shared Folders (%d Folders)"), $count);
+	$template = 'sflistall.tpl';
+	ldap_sort($ldap->connection,$result,'cn');
+	  $entry = ldap_first_entry($ldap->connection, $result);
+	  while( $entry ) {
+		$attrs = ldap_get_attributes($ldap->connection, $entry);
+		$dn = ldap_get_dn($ldap->connection,$entry);
+		$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
+		$cn = $attrs['cn'][0];
+		$kolabhomeserver = $attrs['kolabHomeServer'][0];
+		$folderTypeMap = array ( '' => _('Unspecified'),
+								 'mail' => _('Mails'),
+								 'task' => _('Tasks'),
+								 'journal' => _('Journals'),
+								 'event' => _('Events'),
+								 'contact' => _('Contacts'),
+								 'note' => _('Notes'));
+		if( in_array('kolabFolderType',$attrs) ) $folderType = $folderTypeMap[$attrs['kolabFolderType'][0]];
+		else $folderType = $folderTypeMap[''];
+
+		  $entries[] = array( 'dn' => $dn,
+							  'cn' => $cn,
+							  'kolabhomeserver' => $kolabhomeserver,
+							  'foldertype' => $folderType,
+							  'deleted' => $deleted );
+		$entry = ldap_next_entry( $ldap->connection,$entry );
 	}
+  }
 }
 
 /**** Insert into template and output ***/
