@@ -106,8 +106,8 @@ print ("\n");
 
 print `xgettext --language=PHP -o $localeDir/messages.pot $allFiles`;
 
-system ("sed -i ".$localeDir."/messages.pot -e \'s\@#: ".$tmpDir."\@#: ".$relTemplatesDir."\@g\'");
-system ("sed -i ".$localeDir."/messages.pot -e \'s\@#: ".$cwDir."\@#: \@g\'");
+system ("sed -i ".$localeDir."/messages.pot -e \'s\@ ".$tmpDir."\@ ".$relTemplatesDir."\@g\'");
+system ("sed -i ".$localeDir."/messages.pot -e \'s\@ ".$cwDir."\@ \@g\'");
 
 #
 # if no language is specified on the command line, get all the already installed languages
