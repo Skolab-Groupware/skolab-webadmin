@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin French\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-07 17:06+0200\n"
+"POT-Creation-Date: 2017-09-08 11:23+0200\n"
 "PO-Revision-Date: 2009-04-25 11:45+0200\n"
 "Last-Translator: Benoit Mortier <benoit.mortier@opensides.be>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -32,8 +32,8 @@ msgstr "Commentaire"
 msgid "First Name"
 msgstr "Prénom"
 
-#: data/templates/createuser.tpl:17 /tmp/lV251PFB7d/createuser.tpl:27
-#: data/templates/createuser.tpl:32 /tmp/lV251PFB7d/createuser.tpl:37
+#: data/templates/createuser.tpl:17 data/templates/createuser.tpl:27
+#: data/templates/createuser.tpl:32 data/templates/createuser.tpl:37
 #: htdocs/user/user.php:453 htdocs/user/user.php:463 htdocs/user/user.php:467
 #: htdocs/administrator/admin.php:133 htdocs/administrator/admin.php:141
 #: htdocs/administrator/admin.php:144 htdocs/addressbook/addr.php:90
@@ -143,7 +143,7 @@ msgstr "Numéro de téléphone"
 msgid "Fax Number"
 msgstr "Numéro de fax"
 
-#: data/templates/createuser.tpl:105 /tmp/lV251PFB7d/welcome-maintainer.tpl:16
+#: data/templates/createuser.tpl:105 data/templates/welcome-maintainer.tpl:16
 #: data/templates/welcome-admin.tpl:16 lib/Skolab/Admin/include/menu.php:48
 msgid "Addressbook"
 msgstr "Carnet d'adresses"
@@ -157,7 +157,7 @@ msgstr ""
 
 #: data/templates/createuser.tpl:110
 #, fuzzy
-msgid "User Quota in KB"
+msgid "User Quota in MB"
 msgstr "Quota utilisateur en MBytes"
 
 #: data/templates/createuser.tpl:112 htdocs/user/user.php:533
@@ -188,14 +188,14 @@ msgstr "Gérer les utilisateurs de messagerie"
 msgid "Shared Folders"
 msgstr "Dossier partagé"
 
-#: data/templates/welcome-maintainer.tpl:22 /tmp/lV251PFB7d/distlistall.tpl:8
+#: data/templates/welcome-maintainer.tpl:22 data/templates/distlistall.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:19
 #: data/templates/welcome-admin.tpl:22 lib/Skolab/Admin/include/menu.php:65
 msgid "Distribution Lists"
 msgstr "Listes de distributions"
 
 #: data/templates/welcome-maintainer.tpl:25
-#: data/templates/maintainerlistall.tpl:8 /tmp/lV251PFB7d/welcome-admin.tpl:28
+#: data/templates/maintainerlistall.tpl:8 data/templates/welcome-admin.tpl:28
 #: lib/Skolab/Admin/include/menu.php:85 lib/Skolab/Admin/include/menu.php:93
 msgid "Maintainers"
 msgstr "Mainteneurs"
@@ -210,7 +210,7 @@ msgstr "Administrateurs de domaines"
 
 #: data/templates/welcome-maintainer.tpl:31
 #: data/templates/welcome-domain-maintainer.tpl:25
-#: data/templates/welcome-admin.tpl:37 /tmp/lV251PFB7d/welcome-user.tpl:16
+#: data/templates/welcome-admin.tpl:37 data/templates/welcome-user.tpl:16
 msgid "About"
 msgstr ""
 
@@ -368,11 +368,11 @@ msgstr "Réagir seulement au messages venant du domaine"
 msgid "(leave empty for all domains)"
 msgstr "(laisser vide pour tout les domaines)"
 
-#: data/templates/vacation.tpl:22 /tmp/lV251PFB7d/forward.tpl:13
-#: data/templates/settings.tpl:43 /tmp/lV251PFB7d/settings.tpl:54
-#: data/templates/settings.tpl:67 /tmp/lV251PFB7d/settings.tpl:77
-#: data/templates/settings.tpl:88 /tmp/lV251PFB7d/settings.tpl:100
-#: data/templates/settings.tpl:117 /tmp/lV251PFB7d/deliver.tpl:12
+#: data/templates/vacation.tpl:22 data/templates/forward.tpl:13
+#: data/templates/settings.tpl:43 data/templates/settings.tpl:54
+#: data/templates/settings.tpl:67 data/templates/settings.tpl:77
+#: data/templates/settings.tpl:88 data/templates/settings.tpl:100
+#: data/templates/settings.tpl:117 data/templates/deliver.tpl:12
 msgid "Update"
 msgstr "Mise a jour"
 
@@ -380,9 +380,9 @@ msgstr "Mise a jour"
 msgid "The maintainer with DN"
 msgstr "Le mainteneur avec le DN"
 
-#: data/templates/maintainerdeleted.tpl:10 /tmp/lV251PFB7d/sfdeleted.tpl:10
-#: data/templates/admindeleted.tpl:10 /tmp/lV251PFB7d/distlistdeleted.tpl:10
-#: data/templates/userdeleted.tpl:10 /tmp/lV251PFB7d/addrdeleted.tpl:10
+#: data/templates/maintainerdeleted.tpl:10 data/templates/sfdeleted.tpl:10
+#: data/templates/admindeleted.tpl:10 data/templates/distlistdeleted.tpl:10
+#: data/templates/userdeleted.tpl:10 data/templates/addrdeleted.tpl:10
 msgid "has been deleted"
 msgstr "à été effacé"
 
@@ -398,43 +398,43 @@ msgstr "Le dossier partagé avec le DN"
 msgid "Back to list of shared folders"
 msgstr "Retour à la liste des dossiers partagés"
 
-#: data/templates/addresslist.tpl:8 /tmp/lV251PFB7d/addrlistall.tpl:8
+#: data/templates/addresslist.tpl:8 data/templates/addrlistall.tpl:8
 #, fuzzy
 msgid "(only external addresses without a kolab user account)"
 msgstr "(seulement les adresses externes sans un compte de messagerie Kolab)"
 
-#: data/templates/addresslist.tpl:14 /tmp/lV251PFB7d/maintainerlistall.tpl:13
+#: data/templates/addresslist.tpl:14 data/templates/maintainerlistall.tpl:13
 #: data/templates/sflistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
-#: data/templates/userlistall.tpl:51 /tmp/lV251PFB7d/addrlistall.tpl:47
+#: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
 #: data/templates/adminlistall.tpl:13 htdocs/user/index.php:203
 #: htdocs/addressbook/index.php:121
 msgid "Name"
 msgstr "Nom"
 
-#: data/templates/addresslist.tpl:14 /tmp/lV251PFB7d/settings.tpl:128
-#: data/templates/distlistall.tpl:13 /tmp/lV251PFB7d/maintainerlistall.tpl:13
+#: data/templates/addresslist.tpl:14 data/templates/settings.tpl:128
+#: data/templates/distlistall.tpl:13 data/templates/maintainerlistall.tpl:13
 #: data/templates/sflistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
-#: data/templates/userlistall.tpl:51 /tmp/lV251PFB7d/addrlistall.tpl:47
+#: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
 #: data/templates/adminlistall.tpl:13
 #, fuzzy
 msgid "Action"
 msgstr "Message d'absence"
 
-#: data/templates/addresslist.tpl:19 /tmp/lV251PFB7d/distlistall.tpl:26
-#: data/templates/maintainerlistall.tpl:22 /tmp/lV251PFB7d/sflistall.tpl:23
+#: data/templates/addresslist.tpl:19 data/templates/distlistall.tpl:26
+#: data/templates/maintainerlistall.tpl:22 data/templates/sflistall.tpl:23
 #: data/templates/domainmaintainerlistall.tpl:23
-#: data/templates/userlistall.tpl:73 /tmp/lV251PFB7d/addrlistall.tpl:55
+#: data/templates/userlistall.tpl:73 data/templates/addrlistall.tpl:55
 #: data/templates/adminlistall.tpl:22
 msgid "Modify"
 msgstr "Modifier"
 
-#: data/templates/addresslist.tpl:20 /tmp/lV251PFB7d/settings.tpl:136
-#: data/templates/distlistall.tpl:27 /tmp/lV251PFB7d/maintainerlistall.tpl:23
+#: data/templates/addresslist.tpl:20 data/templates/settings.tpl:136
+#: data/templates/distlistall.tpl:27 data/templates/maintainerlistall.tpl:23
 #: data/templates/sflistall.tpl:24
 #: data/templates/domainmaintainerlistall.tpl:24
-#: data/templates/userlistall.tpl:74 /tmp/lV251PFB7d/addrlistall.tpl:56
+#: data/templates/userlistall.tpl:74 data/templates/addrlistall.tpl:56
 #: data/templates/adminlistall.tpl:23 htdocs/user/user.php:899
 #: htdocs/user/user.php:959 htdocs/administrator/admin.php:311
 #: htdocs/addressbook/addr.php:277 htdocs/distributionlist/list.php:304
@@ -497,7 +497,7 @@ msgstr "(Filtre anti-spam)"
 msgid "(Web client)"
 msgstr ""
 
-#: data/templates/technology.tpl:31 /tmp/lV251PFB7d/technology.tpl:32
+#: data/templates/technology.tpl:31 data/templates/technology.tpl:32
 msgid "(Server side scripting & glue)"
 msgstr ""
 
@@ -509,7 +509,7 @@ msgstr ""
 msgid "Kudos to Contributors of Skolab Groupware"
 msgstr ""
 
-#: data/templates/technology.tpl:41 /tmp/lV251PFB7d/technology.tpl:78
+#: data/templates/technology.tpl:41 data/templates/technology.tpl:78
 msgid ""
 "...and anyone we forgot. Please let us know at <a href=\"%1\">Skolab "
 "Groupware Project</a> on Github, so we can add you to this list."
@@ -900,7 +900,7 @@ msgstr ""
 "d'expéditeur qui correspond au domaine de Kolab. Si c'est le cas, l'en-tête "
 "est récrite pour en informer le destinataire."
 
-#: data/templates/welcome.tpl:8 /tmp/lV251PFB7d/welcome-admin.tpl:8
+#: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
 #, fuzzy
 msgid "Welcome to the Skolab Groupware Server Administration"
 msgstr "Bienvenue dans l'interface d'administration de Kolab"
@@ -925,27 +925,27 @@ msgstr "Publique"
 msgid "List deleted, awaiting cleanup..."
 msgstr "Liste effacée, en attente du nettoyage..."
 
-#: data/templates/userlisterror.tpl:7 /tmp/lV251PFB7d/userlistall.tpl:7
+#: data/templates/userlisterror.tpl:7 data/templates/userlistall.tpl:7
 msgid "Email Users"
 msgstr "Adresse de messagerie des utilisateurs"
 
-#: data/templates/userlisterror.tpl:9 /tmp/lV251PFB7d/userlistall.tpl:9
+#: data/templates/userlisterror.tpl:9 data/templates/userlistall.tpl:9
 #: data/templates/addrlistall.tpl:11
 msgid "[ ALL ]"
 msgstr "[ Tous ]"
 
-#: data/templates/userlisterror.tpl:14 /tmp/lV251PFB7d/userlistall.tpl:14
+#: data/templates/userlisterror.tpl:14 data/templates/userlistall.tpl:14
 #: data/templates/addrlistall.tpl:16
 msgid "[ OTHER ]"
 msgstr "[ Autres ]"
 
-#: data/templates/userlisterror.tpl:18 /tmp/lV251PFB7d/userlistall.tpl:20
+#: data/templates/userlisterror.tpl:18 data/templates/userlistall.tpl:20
 #: data/templates/addrlistall.tpl:21
 #, fuzzy
 msgid "Filter:"
 msgstr "Filtre"
 
-#: data/templates/userlisterror.tpl:37 /tmp/lV251PFB7d/addrlistall.tpl:40
+#: data/templates/userlisterror.tpl:37 data/templates/addrlistall.tpl:40
 msgid "Filter"
 msgstr "Filtre"
 
@@ -986,7 +986,7 @@ msgstr "Dossier partagé"
 msgid "Server"
 msgstr "Serveur"
 
-#: data/templates/sflistall.tpl:13 /tmp/lV251PFB7d/userlistall.tpl:51
+#: data/templates/sflistall.tpl:13 data/templates/userlistall.tpl:51
 msgid "Type"
 msgstr "Type"
 
