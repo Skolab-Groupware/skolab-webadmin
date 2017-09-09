@@ -42,13 +42,13 @@ $pearhordeversions = shell_exec('
 # This is an openpkg test, difficult to see after make.
 # but visible in the vanilla sources.
 if ($WITHOPENPKG == "yes") {
-  $openpkgversion = shell_exec("$RPM -q openpkg");
-  $kolabpatchedversions = shell_exec("$RPM -qa|grep 'kolab[0-9]*$'" );
+	$openpkgversion = shell_exec("$RPM -q openpkg");
+	$kolabpatchedversions = shell_exec("$RPM -qa|grep 'kolab[0-9]*$'" );
 }
 
 if( $kolabversion[0] == '@' ) {
-  // Unofficial/non-openpkg package
-  $kolabversion = 'unknown';
+	// Unofficial/non-openpkg package
+	$kolabversion = 'unknown';
 }
 
 /**** Insert into template and output ***/
