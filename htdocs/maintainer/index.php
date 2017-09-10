@@ -29,8 +29,8 @@ $errors = array();
 $sidx = 'maintainer';
 
 if( $auth->group() != 'admin' ) {
-  debug("auth->group=".$auth->group());
-  array_push($errors, _("Error: You don't have Permissions to access this Menu"));
+	debug("auth->group=".$auth->group());
+	array_push($errors, _("Error: You don't have Permissions to access this Menu"));
 }
 
 require_once('Skolab/Admin/include/menu.php');
@@ -49,52 +49,53 @@ else $page = "1";
 // Get all entries & dynamically split the letters with growing entries
 $entries = array();
 if( !$errors ) {
-  if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
-  else $base_dn = 'k=kolab';
+	if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
+	else $base_dn = 'k=kolab';
 
-  $maintainers = $ldap->groupMembers( "cn=internal,$base_dn", 'maintainer' );
+	$maintainers = $ldap->groupMembers( "cn=internal,$base_dn", 'maintainer' );
 
-  $filter = "(&(cn=*)(objectclass=inetOrgPerson)(!(uid=manager))(sn=*)(uid=*))";
-  $result = ldap_search($ldap->connection, $base_dn, $filter, array( 'uid', 'sn', 'cn', 'kolabDeleteflag' ));
+	$filter = "(&(cn=*)(objectclass=inetOrgPerson)(!(uid=manager))(sn=*)(uid=*))";
+	$result = ldap_search($ldap->connection, $base_dn, $filter, array( 'uid', 'sn', 'cn', 'kolabDeleteflag' ));
 
-  if( $result ) {
-	$count = count($maintainers)-1;
-	$title = _('Manage Maintainers (').$count._(' Maintainers)');
-	// if there are more than 2000 entries, split in 26 categories for every letter,
-	// or if more than 50, put in groups, or else just show all.
-	if (false && $count > 2000) {
-	  // ... TODO
-	  $template = 'maintainerlistalpha.tpl';
-	} else if( false && $count > 50 ) {
-	  // ... TODO
-	  $template = 'maintainerlistgroup.tpl';
-	}  else {
-	  $template = 'maintainerlistall.tpl';
-	  $starttime = getmicrotime();
-	  ldap_sort($ldap->connection,$result,'sn');
-	  $endtime = getmicrotime();
-	  //print "sorting took ".($endtime-$starttime)."<br/>";
-	  $entry = ldap_first_entry($ldap->connection, $result);
-	  while( $entry ) {
-		$attrs = ldap_get_attributes($ldap->connection, $entry);
-		$dn = ldap_get_dn($ldap->connection,$entry);
-		$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
-		$uid = $attrs['uid'][0];
-		$sn = $attrs['sn'][0];
-		$cn = $attrs['cn'][0];
-		$fn = SkolabLDAP::getGivenName($cn, $sn);
-		// skip admins and maintainers
-		if( array_key_exists( $dn, $maintainers ) ) {
-		  $entries[] = array( 'dn' => $dn,
-							  'sn' => $sn,
-							  'fn' => $fn,
-							  'uid' => $uid,
-							  'deleted' => $deleted );
+	if( $result ) {
+		$count = count($maintainers)-1;
+		$title = _('Manage Maintainers (').$count._(' Maintainers)');
+
+		// if there are more than 2000 entries, split in 26 categories for every letter,
+		// or if more than 50, put in groups, or else just show all.
+		if (false && $count > 2000) {
+			// ... TODO
+			$template = 'maintainerlistalpha.tpl';
+		} else if( false && $count > 50 ) {
+			// ... TODO
+			$template = 'maintainerlistgroup.tpl';
+		} else {
+			$template = 'maintainerlistall.tpl';
+			$starttime = getmicrotime();
+			ldap_sort($ldap->connection,$result,'sn');
+			$endtime = getmicrotime();
+			//print "sorting took ".($endtime-$starttime)."<br/>";
+			$entry = ldap_first_entry($ldap->connection, $result);
+			while( $entry ) {
+				$attrs = ldap_get_attributes($ldap->connection, $entry);
+				$dn = ldap_get_dn($ldap->connection,$entry);
+				$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
+				$uid = $attrs['uid'][0];
+				$sn = $attrs['sn'][0];
+				$cn = $attrs['cn'][0];
+				$fn = SkolabLDAP::getGivenName($cn, $sn);
+				// skip admins and maintainers
+				if( array_key_exists( $dn, $maintainers ) ) {
+					$entries[] = array( 'dn' => $dn,
+					                    'sn' => $sn,
+					                    'fn' => $fn,
+					                    'uid' => $uid,
+					                    'deleted' => $deleted );
+				}
+				$entry = ldap_next_entry( $ldap->connection,$entry );
+			}
 		}
-		$entry = ldap_next_entry( $ldap->connection,$entry );
-	  }
 	}
-  }
 }
 
 /**** Insert into template and output ***/
@@ -106,8 +107,8 @@ $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'entries', $entries );
 $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems',
-				 array_key_exists('submenu',
-								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
+                                 array_key_exists('submenu',
+                                                             $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', $template );
 $smarty->display('page.tpl');
 
