@@ -88,8 +88,8 @@ $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'entries', $entries );
 $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems',
-				 array_key_exists('submenu',
-								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
+                                 array_key_exists('submenu',
+                                                             $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', $template );
 $smarty->display('page.tpl');
 
