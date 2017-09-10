@@ -75,33 +75,6 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
 		$form->entries['password_0']['type'] = 'comment';
 		$form->entries['password_0']['value'] = _("Manager's password can't be changed from the webgui");
 	}
-
-	/*
-	foreach( array( 'title', 'o', 'ou', 'street', 'postOfficeBox',
-	                'postalCode', 'l', 'c', 'telephoneNumber',
-	                'facsimileTelephoneNumber' ) as $attr ) {
-	  if (is_array($ldap_object[$attr])) $v = $ldap_object[$attr][0];
-	  else $v = $ldap_object[$attr];
-	  $form->entries[$attr.'_0']['value'] = $v;
-	}
-	if (is_array($ldap_object['alias'])) {
-	$arr = $ldap_object['alias'];
-	unset( $arr['count'] );
-	$v = join("\n", $arr );
-	}
-	else $v = $ldap_object[$attr];
-	$form->entries['alias']['value'] = $v;
-	$form->entries['action']['value'] = 'save';
-	if( isset( $form->entries['userquota'] ) ) {
-	  if (is_array($ldap_object['userquota'])) $userquota = $ldap_object['userquota'][0];
-	  else $userquota = $ldap_object['userquota'];
-	  if( $userquota > 0 ) {
-	    $form->entries['userquota']['value'] = $userquota;
-	  } else {
-	    $form->entries['userquota']['value'] = '';
-	  }
-	}
-	*/
 }
 
 /**** Authentication etc. ***/
