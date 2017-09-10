@@ -32,7 +32,7 @@ $sidx = 'distlist';
 
 $group = $auth->group();
 if( $group != 'maintainer' && $group != 'admin' && $group != 'domain-maintainer' ) {
-   array_push($errors, _("Error: You don't have Permissions to access this Menu") );
+	array_push($errors, _("Error: You don't have Permissions to access this Menu") );
 }
 
 require_once('Skolab/Admin/include/menu.php');
@@ -44,43 +44,43 @@ $menuitems[$sidx]['selected'] = 'selected';
 
 // Get all entries & dynamically split the letters with growing entries
 if( !$errors ) {
-  if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
-  else $base_dn = 'k=kolab';
-  $domains = $ldap->domainsForMaintainerDn($auth->dn());
-  if( is_array($domains) ) {
-  	$domainfilter='';
-  	foreach( $domains as $dom ) {
-  	  $domainfilter .= '(cn=*@'.$ldap->escape($dom).')';
-  	}
-  	if( $domainfilter ) $domainfilter = "(|$domainfilter)";
-  } else {
-  	$domainfilter= "";
-  }
-  $filter = "(&(!(cn=domains))$domainfilter(objectclass=kolabGroupOfNames))";
-  $result = ldap_search($ldap->connection, $base_dn, $filter);
-  if( $result ) {
-	$count = ldap_count_entries($ldap->connection, $result);
-	$title = sprintf( _("Manage Distribution Lists (%d Lists)"), $count);
-	$template = 'distlistall.tpl';
-	ldap_sort($ldap->connection,$result,'cn');
-	$entry = ldap_first_entry($ldap->connection, $result);
-	while( $entry ) {
-	  $attrs = ldap_get_attributes($ldap->connection, $entry);
-	  $dn = ldap_get_dn($ldap->connection,$entry);
-	  $cn = $attrs['cn'][0];
-	  if( $cn != 'admin' && $cn != 'maintainer' && $cn != 'domain-maintainer'
-		  && !preg_match('/.*,cn=domains,cn=internal,'.$_SESSION['base_dn'].'/', $dn ) ) {
-		$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
-		$kolabhomeserver = _('not yet implemented');
-		$internal = (strpos($dn,"cn=internal")!==false);
-		$entries[] = array( 'dn' => $dn,
-							'cn' => $cn,
-							'deleted' => $deleted,
-							'internal' => $internal );
-	  }
-	  $entry = ldap_next_entry( $ldap->connection,$entry );
+	if (isset($_SESSION['base_dn'])) $base_dn = $_SESSION['base_dn'];
+	else $base_dn = 'k=kolab';
+	$domains = $ldap->domainsForMaintainerDn($auth->dn());
+	if( is_array($domains) ) {
+		$domainfilter='';
+		foreach( $domains as $dom ) {
+			$domainfilter .= '(cn=*@'.$ldap->escape($dom).')';
+		}
+		if( $domainfilter ) $domainfilter = "(|$domainfilter)";
+	} else {
+		$domainfilter= "";
 	}
-  }
+	$filter = "(&(!(cn=domains))$domainfilter(objectclass=kolabGroupOfNames))";
+	$result = ldap_search($ldap->connection, $base_dn, $filter);
+	if( $result ) {
+		$count = ldap_count_entries($ldap->connection, $result);
+		$title = sprintf( _("Manage Distribution Lists (%d Lists)"), $count);
+		$template = 'distlistall.tpl';
+		ldap_sort($ldap->connection,$result,'cn');
+		$entry = ldap_first_entry($ldap->connection, $result);
+		while( $entry ) {
+			$attrs = ldap_get_attributes($ldap->connection, $entry);
+			$dn = ldap_get_dn($ldap->connection,$entry);
+			$cn = $attrs['cn'][0];
+			if( $cn != 'admin' && $cn != 'maintainer' && $cn != 'domain-maintainer' &&
+			    !preg_match('/.*,cn=domains,cn=internal,'.$_SESSION['base_dn'].'/', $dn ) ) {
+				$deleted = array_key_exists('kolabDeleteflag',$attrs)?$attrs['kolabDeleteflag'][0]:"FALSE";
+				$kolabhomeserver = _('not yet implemented');
+				$internal = (strpos($dn,"cn=internal")!==false);
+				$entries[] = array( 'dn' => $dn,
+				                    'cn' => $cn,
+				                    'deleted' => $deleted,
+				                    'internal' => $internal );
+			}
+			$entry = ldap_next_entry( $ldap->connection,$entry );
+		}
+	}
 }
 
 
@@ -93,8 +93,8 @@ $smarty->assign( 'page_title', $menuitems[$sidx]['title'] );
 $smarty->assign( 'entries', $entries );
 $smarty->assign( 'menuitems', $menuitems );
 $smarty->assign( 'submenuitems',
-				 array_key_exists('submenu',
-								  $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
+                                 array_key_exists('submenu',
+                                                             $menuitems[$sidx])?$menuitems[$sidx]['submenu']:array() );
 $smarty->assign( 'maincontent', $template );
 $smarty->display('page.tpl');
 
