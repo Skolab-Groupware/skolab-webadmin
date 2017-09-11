@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin Dutch\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-08 11:23+0200\n"
+"POT-Creation-Date: 2017-09-11 13:59+0200\n"
 "PO-Revision-Date: 2007-11-21 14:56+0100\n"
 "Last-Translator: Richard Bos <richard@radoeka.nl>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -23,68 +23,68 @@ msgstr "Waarde"
 msgid "Comment"
 msgstr "Commentaar"
 
-#: data/templates/createuser.tpl:15 htdocs/user/user.php:461
-#: htdocs/administrator/admin.php:139 htdocs/addressbook/addr.php:88
-#: htdocs/domainmaintainer/domainmaintainer.php:114
-#: htdocs/maintainer/maintainer.php:136
+#: data/templates/createuser.tpl:15 htdocs/user/user.php:473
+#: htdocs/administrator/admin.php:115 htdocs/addressbook/addr.php:110
+#: htdocs/domainmaintainer/domainmaintainer.php:120
+#: htdocs/maintainer/maintainer.php:112
 msgid "First Name"
 msgstr "Voornaam"
 
 #: data/templates/createuser.tpl:17 data/templates/createuser.tpl:27
 #: data/templates/createuser.tpl:32 data/templates/createuser.tpl:37
-#: htdocs/user/user.php:453 htdocs/user/user.php:463 htdocs/user/user.php:467
-#: htdocs/administrator/admin.php:133 htdocs/administrator/admin.php:141
-#: htdocs/administrator/admin.php:144 htdocs/addressbook/addr.php:90
-#: htdocs/addressbook/addr.php:93 htdocs/distributionlist/list.php:120
-#: htdocs/sharedfolder/sf.php:127
-#: htdocs/domainmaintainer/domainmaintainer.php:108
-#: htdocs/domainmaintainer/domainmaintainer.php:116
-#: htdocs/domainmaintainer/domainmaintainer.php:119
-#: htdocs/maintainer/maintainer.php:130 htdocs/maintainer/maintainer.php:138
-#: htdocs/maintainer/maintainer.php:141
+#: htdocs/user/user.php:465 htdocs/user/user.php:475 htdocs/user/user.php:479
+#: htdocs/administrator/admin.php:109 htdocs/administrator/admin.php:117
+#: htdocs/administrator/admin.php:120 htdocs/addressbook/addr.php:112
+#: htdocs/addressbook/addr.php:115 htdocs/distributionlist/list.php:122
+#: htdocs/sharedfolder/sf.php:140
+#: htdocs/domainmaintainer/domainmaintainer.php:114
+#: htdocs/domainmaintainer/domainmaintainer.php:122
+#: htdocs/domainmaintainer/domainmaintainer.php:125
+#: htdocs/maintainer/maintainer.php:106 htdocs/maintainer/maintainer.php:114
+#: htdocs/maintainer/maintainer.php:117
 msgid "Required"
 msgstr "Vereist"
 
-#: data/templates/createuser.tpl:20 htdocs/user/user.php:464
+#: data/templates/createuser.tpl:20 htdocs/user/user.php:476
 #, fuzzy
 msgid "Middle Name"
 msgstr "Map naam"
 
-#: data/templates/createuser.tpl:25 htdocs/user/user.php:465
-#: htdocs/administrator/admin.php:142 htdocs/addressbook/addr.php:91
-#: htdocs/domainmaintainer/domainmaintainer.php:117
-#: htdocs/maintainer/maintainer.php:139
+#: data/templates/createuser.tpl:25 htdocs/user/user.php:477
+#: htdocs/administrator/admin.php:118 htdocs/addressbook/addr.php:113
+#: htdocs/domainmaintainer/domainmaintainer.php:123
+#: htdocs/maintainer/maintainer.php:115
 msgid "Last Name"
 msgstr "Achternaam"
 
-#: data/templates/createuser.tpl:30 htdocs/user/user.php:468
-#: htdocs/administrator/admin.php:145
-#: htdocs/domainmaintainer/domainmaintainer.php:120
-#: htdocs/maintainer/maintainer.php:142
+#: data/templates/createuser.tpl:30 htdocs/user/user.php:480
+#: htdocs/administrator/admin.php:121
+#: htdocs/domainmaintainer/domainmaintainer.php:126
+#: htdocs/maintainer/maintainer.php:118
 msgid "Password"
 msgstr "Wachtwoord"
 
-#: data/templates/createuser.tpl:35 htdocs/user/user.php:472
-#: htdocs/administrator/admin.php:149
-#: htdocs/domainmaintainer/domainmaintainer.php:124
-#: htdocs/maintainer/maintainer.php:146
+#: data/templates/createuser.tpl:35 htdocs/user/user.php:484
+#: htdocs/administrator/admin.php:125
+#: htdocs/domainmaintainer/domainmaintainer.php:130
+#: htdocs/maintainer/maintainer.php:122
 msgid "Verify Password"
 msgstr "Wachtwoord controleren"
 
-#: data/templates/createuser.tpl:40 htdocs/user/user.php:476
+#: data/templates/createuser.tpl:40 htdocs/user/user.php:488
 msgid "Primary Email Address"
 msgstr "Primair E-mailadres"
 
-#: data/templates/createuser.tpl:42 htdocs/user/user.php:452
-#: htdocs/user/user.php:454 htdocs/administrator/admin.php:132
-#: htdocs/sharedfolder/sf.php:130
-#: htdocs/domainmaintainer/domainmaintainer.php:107
-#: htdocs/maintainer/maintainer.php:129
+#: data/templates/createuser.tpl:42 htdocs/user/user.php:464
+#: htdocs/user/user.php:466 htdocs/administrator/admin.php:108
+#: htdocs/sharedfolder/sf.php:143
+#: htdocs/domainmaintainer/domainmaintainer.php:113
+#: htdocs/maintainer/maintainer.php:105
 msgid "Required, non volatile"
 msgstr "Vereist, permanent"
 
-#: data/templates/createuser.tpl:45 htdocs/user/user.php:517
-#: htdocs/addressbook/addr.php:94
+#: data/templates/createuser.tpl:45 htdocs/user/user.php:529
+#: htdocs/addressbook/addr.php:116
 msgid "Title"
 msgstr "Titel"
 
@@ -92,52 +92,52 @@ msgstr "Titel"
 msgid "Email Alias"
 msgstr "E-mail Alias"
 
-#: data/templates/createuser.tpl:55 htdocs/user/user.php:518
-#: htdocs/addressbook/addr.php:101
+#: data/templates/createuser.tpl:55 htdocs/user/user.php:530
+#: htdocs/addressbook/addr.php:123
 msgid "Organisation"
 msgstr "Organisatie"
 
-#: data/templates/createuser.tpl:60 htdocs/user/user.php:519
-#: htdocs/addressbook/addr.php:102
+#: data/templates/createuser.tpl:60 htdocs/user/user.php:531
+#: htdocs/addressbook/addr.php:124
 msgid "Organisational Unit"
 msgstr "Organisatorische unit"
 
-#: data/templates/createuser.tpl:65 htdocs/user/user.php:520
-#: htdocs/addressbook/addr.php:103
+#: data/templates/createuser.tpl:65 htdocs/user/user.php:532
+#: htdocs/addressbook/addr.php:125
 msgid "Room Number"
 msgstr "Kantoornummer"
 
-#: data/templates/createuser.tpl:70 htdocs/user/user.php:521
-#: htdocs/addressbook/addr.php:104
+#: data/templates/createuser.tpl:70 htdocs/user/user.php:533
+#: htdocs/addressbook/addr.php:126
 msgid "Street Address"
 msgstr "Straat + Adres"
 
-#: data/templates/createuser.tpl:75 htdocs/user/user.php:522
+#: data/templates/createuser.tpl:75 htdocs/user/user.php:534
 msgid "Postbox"
 msgstr "Nummer"
 
-#: data/templates/createuser.tpl:80 htdocs/user/user.php:523
-#: htdocs/addressbook/addr.php:106
+#: data/templates/createuser.tpl:80 htdocs/user/user.php:535
+#: htdocs/addressbook/addr.php:128
 msgid "Postal Code"
 msgstr "Postcode"
 
-#: data/templates/createuser.tpl:85 htdocs/user/user.php:524
-#: htdocs/addressbook/addr.php:107
+#: data/templates/createuser.tpl:85 htdocs/user/user.php:536
+#: htdocs/addressbook/addr.php:129
 msgid "City"
 msgstr "Stad"
 
-#: data/templates/createuser.tpl:90 htdocs/user/user.php:525
-#: htdocs/addressbook/addr.php:108
+#: data/templates/createuser.tpl:90 htdocs/user/user.php:537
+#: htdocs/addressbook/addr.php:130
 msgid "Country"
 msgstr "Land"
 
-#: data/templates/createuser.tpl:95 htdocs/user/user.php:527
-#: htdocs/addressbook/addr.php:109
+#: data/templates/createuser.tpl:95 htdocs/user/user.php:539
+#: htdocs/addressbook/addr.php:131
 msgid "Telephone Number"
 msgstr "Telefoonnummer"
 
-#: data/templates/createuser.tpl:100 htdocs/user/user.php:529
-#: htdocs/addressbook/addr.php:111
+#: data/templates/createuser.tpl:100 htdocs/user/user.php:541
+#: htdocs/addressbook/addr.php:133
 msgid "Fax Number"
 msgstr "Faxnummer"
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "User Quota in MB"
 msgstr "Beschikbare schijfruimte in MBytes per gebruiker "
 
-#: data/templates/createuser.tpl:112 htdocs/user/user.php:533
+#: data/templates/createuser.tpl:112 htdocs/user/user.php:545
 msgid "Leave blank for unlimited"
 msgstr "Laat leeg indien onbeperkt"
 
@@ -403,8 +403,8 @@ msgstr " (alleen externe adressen zonder Kolab gebruikersaccount) "
 #: data/templates/sflistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
 #: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
-#: data/templates/adminlistall.tpl:13 htdocs/user/index.php:203
-#: htdocs/addressbook/index.php:121
+#: data/templates/adminlistall.tpl:13 htdocs/user/index.php:205
+#: htdocs/addressbook/index.php:140
 msgid "Name"
 msgstr "Naam"
 
@@ -431,11 +431,11 @@ msgstr "Wijzigen"
 #: data/templates/sflistall.tpl:24
 #: data/templates/domainmaintainerlistall.tpl:24
 #: data/templates/userlistall.tpl:74 data/templates/addrlistall.tpl:56
-#: data/templates/adminlistall.tpl:23 htdocs/user/user.php:899
-#: htdocs/user/user.php:959 htdocs/administrator/admin.php:311
-#: htdocs/addressbook/addr.php:277 htdocs/distributionlist/list.php:304
-#: htdocs/sharedfolder/sf.php:316
-#: htdocs/domainmaintainer/domainmaintainer.php:314
+#: data/templates/adminlistall.tpl:23 htdocs/user/user.php:911
+#: htdocs/user/user.php:971 htdocs/administrator/admin.php:295
+#: htdocs/addressbook/addr.php:307 htdocs/distributionlist/list.php:310
+#: htdocs/sharedfolder/sf.php:329
+#: htdocs/domainmaintainer/domainmaintainer.php:325
 msgid "Delete"
 msgstr "Verwijderen"
 
@@ -710,7 +710,7 @@ msgstr "Bewaar een kopie op de server"
 
 #: data/templates/settings.tpl:7
 #, fuzzy
-msgid "Kolab Server Settings"
+msgid "Skolab Server Settings"
 msgstr "Kolab Server Instellingen"
 
 #: data/templates/settings.tpl:11
@@ -805,7 +805,7 @@ msgstr "Bevoorrechte netwerken"
 #, fuzzy
 msgid ""
 "Networks allowed to relay and send mail through unauthenticated SMTP "
-"connections to the Kolab server (comma separated networks in x.x.x.x/y "
+"connections to the Skolab server (comma separated networks in x.x.x.x/y "
 "format):"
 msgstr ""
 "Netwerken die toestemming hebben om mail te zenden en door te sturen via een "
@@ -835,7 +835,7 @@ msgstr "Internet mail aanvaarden"
 #, fuzzy
 msgid ""
 "Accept mail from other domains over unauthenticated SMTP. This must be "
-"enabled if you want to use the Kolab Server to receive mail from other "
+"enabled if you want to use the Skolab Server to receive mail from other "
 "internet domains directly. Leave disabled to accept mail only from SMTP "
 "gateways that are within the privileged network."
 msgstr ""
@@ -844,7 +844,7 @@ msgstr ""
 "ontvangen via andere internetdomeinen. "
 
 #: data/templates/settings.tpl:125
-#: htdocs/domainmaintainer/domainmaintainer.php:134
+#: htdocs/domainmaintainer/domainmaintainer.php:140
 msgid "Domains"
 msgstr "Domeinen"
 
@@ -885,7 +885,7 @@ msgstr "Welke actie uitvoeren voor berichten die de test falen"
 #, fuzzy
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
-"header matches one of Kolab server"
+"header matches one of Skolab server"
 msgstr ""
 "Weiger het bericht, behalve als deze van buiten komt en een From header "
 "heeft overeenkomstig met 1 van de Kolab server domeinen.  In dit geval wordt "
@@ -943,7 +943,7 @@ msgstr "Filter"
 
 #: data/templates/maintainerlistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
-#: data/templates/adminlistall.tpl:13 htdocs/user/index.php:205
+#: data/templates/adminlistall.tpl:13 htdocs/user/index.php:207
 msgid "UID"
 msgstr "UID"
 
@@ -1105,205 +1105,205 @@ msgstr "Het adres met DN"
 msgid "Back to list of addresses"
 msgstr "Terug naar de lijst van adressen"
 
-#: htdocs/user/forward.php:47 htdocs/user/deliver.php:46
-#: htdocs/user/vacation.php:37
+#: htdocs/user/forward.php:49 htdocs/user/deliver.php:48
+#: htdocs/user/vacation.php:51
 msgid "Error while connecting to Sieve service:"
 msgstr ""
 
-#: htdocs/user/forward.php:61
+#: htdocs/user/forward.php:63
 #, php-format
 msgid "Forwarding to '%s' successfully activated"
 msgstr "Doorsturen naar '%s' succesvol geactiveerd"
 
-#: htdocs/user/forward.php:63
+#: htdocs/user/forward.php:65
 #, php-format
 msgid "Forwarding to '%s' successfully deactivated"
 msgstr "Doorsturen naar '%s' succesvol uitgeschakeld"
 
-#: htdocs/user/forward.php:69 htdocs/user/deliver.php:67
-#: htdocs/user/vacation.php:65
+#: htdocs/user/forward.php:71 htdocs/user/deliver.php:69
+#: htdocs/user/vacation.php:79
 #, php-format
 msgid ""
 "Warning: You currently have a sieve script named %s active for your account."
 msgstr ""
 
-#: htdocs/user/forward.php:70 htdocs/user/deliver.php:68
-#: htdocs/user/vacation.php:66
+#: htdocs/user/forward.php:72 htdocs/user/deliver.php:70
+#: htdocs/user/vacation.php:80
 msgid ""
 "Warning: This script will be overwritten without further warnings if you "
 "press \"Update\"!"
 msgstr ""
 
-#: htdocs/user/deliver.php:59
+#: htdocs/user/deliver.php:61
 #, php-format
 msgid "Delivery to '%s' successfully activated"
 msgstr "Afleveren aan '%s' succesvol geactiveerd"
 
-#: htdocs/user/deliver.php:61
+#: htdocs/user/deliver.php:63
 #, php-format
 msgid "Delivery to '%s' successfully deactivated"
 msgstr "Afleveren aan '%s' succesvol uitgeschakeld"
 
-#: htdocs/user/index.php:34 htdocs/administrator/index.php:33
-#: htdocs/addressbook/addr.php:17 htdocs/addressbook/index.php:23
-#: htdocs/settings/index.php:13 htdocs/distributionlist/index.php:35
-#: htdocs/distributionlist/list.php:37 htdocs/sharedfolder/sf.php:25
-#: htdocs/sharedfolder/index.php:22 htdocs/domainmaintainer/index.php:33
-#: htdocs/maintainer/index.php:33
+#: htdocs/user/index.php:36 htdocs/administrator/index.php:35
+#: htdocs/addressbook/addr.php:37 htdocs/addressbook/index.php:35
+#: htdocs/settings/index.php:35 htdocs/distributionlist/index.php:37
+#: htdocs/distributionlist/list.php:39 htdocs/sharedfolder/sf.php:38
+#: htdocs/sharedfolder/index.php:34 htdocs/domainmaintainer/index.php:35
+#: htdocs/maintainer/index.php:35
 msgid "Error: You don't have Permissions to access this Menu"
 msgstr "Fout: je hebt geen toegangsrechten voor dit menu "
 
-#: htdocs/user/index.php:134
+#: htdocs/user/index.php:136
 #, php-format
 msgid "Manage Email User (%d Users)"
 msgstr "Beheer gebruikers E-mails (%d gebruikers)"
 
-#: htdocs/user/index.php:204 htdocs/addressbook/index.php:122
+#: htdocs/user/index.php:206 htdocs/addressbook/index.php:141
 msgid "Email"
 msgstr "E-mail"
 
-#: htdocs/user/index.php:206 htdocs/addressbook/index.php:123
+#: htdocs/user/index.php:208 htdocs/addressbook/index.php:142
 msgid "contains"
 msgstr "bevat"
 
-#: htdocs/user/index.php:207 htdocs/addressbook/index.php:124
+#: htdocs/user/index.php:209 htdocs/addressbook/index.php:143
 msgid "is"
 msgstr "is"
 
-#: htdocs/user/index.php:208 htdocs/addressbook/index.php:125
+#: htdocs/user/index.php:210 htdocs/addressbook/index.php:144
 msgid "begins with"
 msgstr "begint met"
 
-#: htdocs/user/index.php:209 htdocs/addressbook/index.php:126
+#: htdocs/user/index.php:211 htdocs/addressbook/index.php:145
 msgid "ends with"
 msgstr "Eindigt met"
 
-#: htdocs/user/user.php:95
+#: htdocs/user/user.php:107
 msgid "Please enter an email address"
 msgstr "Gelieve een E-mailadres in te geven"
 
-#: htdocs/user/user.php:114
+#: htdocs/user/user.php:126
 #, php-format
 msgid "Email address %1$s not in domains %2$s"
 msgstr "E-mail adres  %1$s niet in domeinen %2$s"
 
-#: htdocs/user/user.php:117 htdocs/addressbook/addr.php:65
+#: htdocs/user/user.php:129 htdocs/addressbook/addr.php:86
 msgid "User, vCard or distribution list with this email address already exists"
 msgstr "Gebruiker, vCard of distributielijst met dit E-mailadres bestaat al"
 
-#: htdocs/user/user.php:135
+#: htdocs/user/user.php:147
 msgid "UID "
 msgstr "UID"
 
-#: htdocs/user/user.php:135 lib/Skolab/Admin/include/form.class.php:34
+#: htdocs/user/user.php:147 lib/Skolab/Admin/include/form.class.php:34
 msgid ""
 " collides with an address already used for another user, a vCard or a "
 "distribution list.<br />"
 msgstr ""
 
-#: htdocs/user/user.php:150
+#: htdocs/user/user.php:162
 #, php-format
 msgid "Email-Delegate %s does not exist"
 msgstr "Delegate %s bestaat niet"
 
-#: htdocs/user/user.php:171
+#: htdocs/user/user.php:183
 #, php-format
 msgid "Syntax for Recipient %s is invalid"
 msgstr ""
 
-#: htdocs/user/user.php:217
+#: htdocs/user/user.php:229
 #, php-format
 msgid "Illegal user or group %s"
 msgstr "Illegale gebruiker of groep %s"
 
-#: htdocs/user/user.php:226
+#: htdocs/user/user.php:238
 #, fuzzy
 msgid "Free/Busy interval can not be negative"
 msgstr "Quota kan niet negatief zijn"
 
-#: htdocs/user/user.php:227
+#: htdocs/user/user.php:239
 #, fuzzy
 msgid "Free/Busy interval must be a number"
 msgstr "Vrij/bezet interval in dagen"
 
-#: htdocs/user/user.php:228
+#: htdocs/user/user.php:240
 #, fuzzy
 msgid "Free/Busy interval must be an integer"
 msgstr "Vrij/bezet interval in dagen"
 
-#: htdocs/user/user.php:427 htdocs/administrator/admin.php:121
-#: htdocs/addressbook/addr.php:78 htdocs/distributionlist/list.php:109
-#: htdocs/sharedfolder/sf.php:116
-#: htdocs/domainmaintainer/domainmaintainer.php:96
-#: htdocs/maintainer/maintainer.php:118
+#: htdocs/user/user.php:439 htdocs/administrator/admin.php:97
+#: htdocs/addressbook/addr.php:99 htdocs/distributionlist/list.php:111
+#: htdocs/sharedfolder/sf.php:129
+#: htdocs/domainmaintainer/domainmaintainer.php:102
+#: htdocs/maintainer/maintainer.php:94
 msgid "Error: need valid action to proceed"
 msgstr "Fout: heeft een geldige actie nodig om door te gaan"
 
-#: htdocs/user/user.php:439 htdocs/user/user.php:442 htdocs/user/user.php:447
-#: htdocs/user/user.php:909 htdocs/administrator/admin.php:127
-#: htdocs/addressbook/addr.php:81
-#: htdocs/domainmaintainer/domainmaintainer.php:102
-#: htdocs/maintainer/maintainer.php:124
+#: htdocs/user/user.php:451 htdocs/user/user.php:454 htdocs/user/user.php:459
+#: htdocs/user/user.php:921 htdocs/administrator/admin.php:103
+#: htdocs/addressbook/addr.php:102
+#: htdocs/domainmaintainer/domainmaintainer.php:108
+#: htdocs/maintainer/maintainer.php:100
 msgid "Error: You don't have the required Permissions"
 msgstr "Fout: je hebt de nodige toegangsrechten niet"
 
-#: htdocs/user/user.php:456 htdocs/user/user.php:458
-#: htdocs/sharedfolder/sf.php:130
+#: htdocs/user/user.php:468 htdocs/user/user.php:470
+#: htdocs/sharedfolder/sf.php:143
 msgid "Non volatile"
 msgstr "Permanent"
 
-#: htdocs/user/user.php:457 htdocs/administrator/admin.php:136
-#: htdocs/domainmaintainer/domainmaintainer.php:111
-#: htdocs/maintainer/maintainer.php:133
+#: htdocs/user/user.php:469 htdocs/administrator/admin.php:112
+#: htdocs/domainmaintainer/domainmaintainer.php:117
+#: htdocs/maintainer/maintainer.php:109
 msgid "Leave blank to keep password unchanged"
 msgstr "Laat leeg om wachtwoord niet te wijzigen"
 
-#: htdocs/user/user.php:481
+#: htdocs/user/user.php:493
 msgid "Unique Identity (UID)"
 msgstr "Unieke identiteit (UID)"
 
-#: htdocs/user/user.php:483
+#: htdocs/user/user.php:495
 msgid "Optional - Defaults to Primary Email Address"
 msgstr "Optioneel - standaard voor hoofd E-mailadres"
 
-#: htdocs/user/user.php:484
+#: htdocs/user/user.php:496
 msgid "Mailbox Home Server"
 msgstr "Postvak Home Server"
 
-#: htdocs/user/user.php:488
+#: htdocs/user/user.php:500
 msgid "Account Type"
 msgstr "Account Type"
 
-#: htdocs/user/user.php:490
+#: htdocs/user/user.php:502
 msgid "User Account"
 msgstr "Gebruikersaccount"
 
-#: htdocs/user/user.php:490
+#: htdocs/user/user.php:502
 msgid "Internal User Account"
 msgstr "Interne gebruikersaccount"
 
-#: htdocs/user/user.php:490
+#: htdocs/user/user.php:502
 msgid "Group Account"
 msgstr "Group account"
 
-#: htdocs/user/user.php:490
+#: htdocs/user/user.php:502
 msgid "Resource Account"
 msgstr "Hulpbron account"
 
-#: htdocs/user/user.php:492
+#: htdocs/user/user.php:504
 msgid ""
 "NOTE: An internal user is a user that will not be visible in the address book"
 msgstr "Opmerking: een interne gebruiker is niet zichtbaar in het adresboek"
 
-#: htdocs/user/user.php:493
+#: htdocs/user/user.php:505
 msgid "Invitation Policy"
 msgstr "Uitnodigingsbeleid"
 
-#: htdocs/user/user.php:497
+#: htdocs/user/user.php:509
 msgid "For automatic invitation handling"
 msgstr "Voor automatische uitnodigingsafhandeling"
 
-#: htdocs/user/user.php:498
+#: htdocs/user/user.php:510
 msgid ""
 "NOTE: For regular accounts to use this feature, give the 'calendar' user "
 "access to the Calendar folder"
@@ -1311,169 +1311,169 @@ msgstr ""
 "Opmerking: reguliere accounts die deze functie willen gebruiken, moeten "
 "toegang hebben tot de kalendermap"
 
-#: htdocs/user/user.php:500
+#: htdocs/user/user.php:512
 msgid "Email Aliases"
 msgstr "E-mail Aliases"
 
-#: htdocs/user/user.php:503 htdocs/addressbook/addr.php:100
+#: htdocs/user/user.php:515 htdocs/addressbook/addr.php:122
 msgid "One address per line"
 msgstr "Eén adres per lijn"
 
-#: htdocs/user/user.php:505
+#: htdocs/user/user.php:517
 msgid "Email-Delegates"
 msgstr "Gemachtigde"
 
-#: htdocs/user/user.php:508
+#: htdocs/user/user.php:520
 msgid "Others allowed to send emails with a \"from\" address of this account."
 msgstr ""
 "Anderen toestaan om email te sturen met een \"from\" adres van dit account."
 
-#: htdocs/user/user.php:509
+#: htdocs/user/user.php:521
 msgid "One email address per line."
 msgstr "Eén E-mailadres per lijn"
 
-#: htdocs/user/user.php:511
+#: htdocs/user/user.php:523
 msgid "Allowed Recipients"
 msgstr ""
 
-#: htdocs/user/user.php:514
+#: htdocs/user/user.php:526
 msgid "Restrict allowed recipients of SMTP messages"
 msgstr ""
 
-#: htdocs/user/user.php:515
+#: htdocs/user/user.php:527
 #, fuzzy
 msgid "One entry per line."
 msgstr "Eén adres per lijn"
 
-#: htdocs/user/user.php:526
+#: htdocs/user/user.php:538
 msgid ""
 "2 letter code from <a href=\"http://www.iso.org/iso/"
 "english_country_names_and_code_elements\" target=\"_blank\">ISO 3166</a>"
 msgstr ""
 
-#: htdocs/user/user.php:532
+#: htdocs/user/user.php:544
 msgid "User Quota in MBytes"
 msgstr "Beschikbare schijfruimte in MBytes per gebruiker "
 
-#: htdocs/user/user.php:548
+#: htdocs/user/user.php:560
 msgid "Free/Busy interval in days"
 msgstr "Vrij/bezet interval in dagen"
 
-#: htdocs/user/user.php:549
+#: htdocs/user/user.php:561
 msgid "Leave blank for default (60 days)"
 msgstr "Laat leeg voor standaard (60 dagen)"
 
-#: htdocs/user/user.php:559 htdocs/administrator/admin.php:165
-#: htdocs/domainmaintainer/domainmaintainer.php:149
-#: htdocs/maintainer/maintainer.php:162
+#: htdocs/user/user.php:571 htdocs/administrator/admin.php:141
+#: htdocs/domainmaintainer/domainmaintainer.php:157
+#: htdocs/maintainer/maintainer.php:138
 #, php-format
 msgid "LDAP Error: No such dn: %s: %s"
 msgstr "LDAP fout: er is geen dn %s: %s"
 
-#: htdocs/user/user.php:737 htdocs/administrator/admin.php:217
-#: htdocs/addressbook/addr.php:189 htdocs/distributionlist/list.php:200
-#: htdocs/sharedfolder/sf.php:233
-#: htdocs/domainmaintainer/domainmaintainer.php:202
-#: htdocs/maintainer/maintainer.php:215
+#: htdocs/user/user.php:749 htdocs/administrator/admin.php:195
+#: htdocs/addressbook/addr.php:216 htdocs/distributionlist/list.php:204
+#: htdocs/sharedfolder/sf.php:246
+#: htdocs/domainmaintainer/domainmaintainer.php:211
+#: htdocs/maintainer/maintainer.php:190
 #, php-format
 msgid "LDAP Error: could not rename %s to %s: %s"
 msgstr "LDAP fout: kon naam niet wijzigen van %s naar %s: %s"
 
-#: htdocs/user/user.php:746
+#: htdocs/user/user.php:758
 #, fuzzy, php-format
 msgid "LDAP Error: could not modify %s: %s"
 msgstr "LDAP fout: kon het object %s: %s niet aanpassen"
 
-#: htdocs/user/user.php:752 htdocs/administrator/admin.php:231
-#: htdocs/addressbook/addr.php:203 htdocs/addressbook/addr.php:218
-#: htdocs/domainmaintainer/domainmaintainer.php:216
-#: htdocs/maintainer/maintainer.php:229
+#: htdocs/user/user.php:764 htdocs/administrator/admin.php:209
+#: htdocs/addressbook/addr.php:230 htdocs/addressbook/addr.php:245
+#: htdocs/domainmaintainer/domainmaintainer.php:225
+#: htdocs/maintainer/maintainer.php:204
 #, php-format
 msgid "%s successfully updated"
 msgstr "%s succesvol bijgewerkt"
 
-#: htdocs/user/user.php:758 htdocs/distributionlist/list.php:220
+#: htdocs/user/user.php:770 htdocs/distributionlist/list.php:224
 #, php-format
 msgid "LDAP Error: Could not read %s: %s"
 msgstr "LDAP fout: leesfout %s: %s"
 
-#: htdocs/user/user.php:772 htdocs/user/user.php:787 htdocs/user/user.php:827
-#: htdocs/user/user.php:842 htdocs/distributionlist/list.php:224
-#: htdocs/distributionlist/list.php:253
+#: htdocs/user/user.php:784 htdocs/user/user.php:799 htdocs/user/user.php:839
+#: htdocs/user/user.php:854 htdocs/distributionlist/list.php:228
+#: htdocs/distributionlist/list.php:257
 #, php-format
 msgid "LDAP Error: Could not modify object %s: %s"
 msgstr "LDAP fout: kon het object niet aanpassen %s: %s"
 
-#: htdocs/user/user.php:790 htdocs/user/user.php:845
+#: htdocs/user/user.php:802 htdocs/user/user.php:857
 #, php-format
 msgid "Mid-air collision detected, alias %1$s renamed to %2$s"
 msgstr "Opmerking; alias %1$s hernoemd naar %2$s"
 
-#: htdocs/user/user.php:795 htdocs/user/user.php:883
+#: htdocs/user/user.php:807 htdocs/user/user.php:895
 msgid "Modify User"
 msgstr "Gebruiker wijzigen"
 
-#: htdocs/user/user.php:796
+#: htdocs/user/user.php:808
 #, php-format
 msgid "User '%s' successfully modified"
 msgstr "Gebruiker '%s' succesvol gewijzigd"
 
-#: htdocs/user/user.php:816 htdocs/administrator/admin.php:260
-#: htdocs/addressbook/addr.php:227 htdocs/sharedfolder/sf.php:267
-#: htdocs/domainmaintainer/domainmaintainer.php:265
-#: htdocs/maintainer/maintainer.php:261
+#: htdocs/user/user.php:828 htdocs/administrator/admin.php:240
+#: htdocs/addressbook/addr.php:254 htdocs/sharedfolder/sf.php:280
+#: htdocs/domainmaintainer/domainmaintainer.php:274
+#: htdocs/maintainer/maintainer.php:237
 #, php-format
 msgid "LDAP Error: could not add object %s: %s"
 msgstr "LDAP fout: kon object %s: %s niet toevoegen"
 
-#: htdocs/user/user.php:830 htdocs/distributionlist/list.php:256
+#: htdocs/user/user.php:842 htdocs/distributionlist/list.php:260
 #, php-format
 msgid "Mid-air collision detected, email address %1$s renamed to %2$s"
 msgstr "Opmerking; E-mail adres %1$s hernoemd naar %2$s"
 
-#: htdocs/user/user.php:851
+#: htdocs/user/user.php:863
 msgid "User "
 msgstr "Gebruiker"
 
-#: htdocs/user/user.php:851 htdocs/administrator/admin.php:270
-#: htdocs/domainmaintainer/domainmaintainer.php:276
-#: htdocs/maintainer/maintainer.php:269
+#: htdocs/user/user.php:863 htdocs/administrator/admin.php:251
+#: htdocs/domainmaintainer/domainmaintainer.php:284
+#: htdocs/maintainer/maintainer.php:245
 msgid " successfully created"
 msgstr " aanmaken gelukt"
 
-#: htdocs/user/user.php:852 htdocs/user/user.php:858 htdocs/user/user.php:872
+#: htdocs/user/user.php:864 htdocs/user/user.php:870 htdocs/user/user.php:884
 #: lib/Skolab/Admin/include/menu.php:32
 msgid "Create New User"
 msgstr "Creëer nieuwe gebruiker"
 
-#: htdocs/user/user.php:891 htdocs/user/user.php:951
+#: htdocs/user/user.php:903 htdocs/user/user.php:963
 msgid "Delete User"
 msgstr "Gebruiker verwijderen"
 
-#: htdocs/user/user.php:906 htdocs/administrator/admin.php:315
-#: htdocs/domainmaintainer/domainmaintainer.php:318
-#: htdocs/maintainer/maintainer.php:314
+#: htdocs/user/user.php:918 htdocs/administrator/admin.php:300
+#: htdocs/domainmaintainer/domainmaintainer.php:330
+#: htdocs/maintainer/maintainer.php:294
 msgid "Error: need DN for delete operation"
 msgstr "Fout: DN is nodig voor het verwijderen"
 
-#: htdocs/user/user.php:912 htdocs/maintainer/maintainer.php:316
+#: htdocs/user/user.php:924 htdocs/maintainer/maintainer.php:296
 msgid "Error: you need administrative permissions to delete users"
 msgstr ""
 "Fout: er zijn administratieve rechten nodig om gebruikers te verwijderen"
 
-#: htdocs/user/user.php:925 htdocs/addressbook/addr.php:295
+#: htdocs/user/user.php:937 htdocs/addressbook/addr.php:327
 #, php-format
 msgid "Account could not be deleted, distribution list '%s' depends on it."
 msgstr ""
 "Account kan niet worden verwijderd, distributielijst %s is er van "
 "afhankelijk."
 
-#: htdocs/user/user.php:932
+#: htdocs/user/user.php:944
 #, php-format
 msgid "Account removed from distribution list '%s'."
 msgstr "Account is verwijderd van distributielijst '%s'."
 
-#: htdocs/user/user.php:934
+#: htdocs/user/user.php:946
 #, fuzzy, php-format
 msgid ""
 "Failure to remove account from distribution list '%s', account will not be "
@@ -1482,180 +1482,180 @@ msgstr ""
 "De account kon niet van de distributielijst worden verwijderd.  De account "
 "is niet verwijderd."
 
-#: htdocs/user/user.php:942
+#: htdocs/user/user.php:954
 #, php-format
 msgid "LDAP Error: could not mark '%s' for deletion: %s"
 msgstr "LDAP fout: kon '%s' niet voor verwijdering markeren: %s"
 
-#: htdocs/user/user.php:945
+#: htdocs/user/user.php:957
 msgid "User Deleted"
 msgstr "Gebruiker verwijderd"
 
-#: htdocs/user/vacation.php:57
+#: htdocs/user/vacation.php:71
 msgid "Vacation message successfully activated"
 msgstr "Vakantiemededeling succesvol geactiveerd"
 
-#: htdocs/user/vacation.php:59
+#: htdocs/user/vacation.php:73
 msgid "Vacation message successfully deactivated"
 msgstr "Vakantiemededeling succesvol uitgeschakeld"
 
-#: htdocs/administrator/admin.php:52
-#: htdocs/domainmaintainer/domainmaintainer.php:53
-#: htdocs/maintainer/maintainer.php:52
+#: htdocs/administrator/admin.php:55
+#: htdocs/domainmaintainer/domainmaintainer.php:55
+#: htdocs/maintainer/maintainer.php:54
 msgid "Account with this UID already exists"
 msgstr "Account met deze UID bestaat reeds"
 
-#: htdocs/administrator/admin.php:75
+#: htdocs/administrator/admin.php:78
 msgid "Manager's password can't be changed from the webgui"
 msgstr "Managers wachtwoord kan niet gewijzigd worden via de webgui"
 
-#: htdocs/administrator/admin.php:135
-#: htdocs/domainmaintainer/domainmaintainer.php:110
-#: htdocs/maintainer/maintainer.php:132
+#: htdocs/administrator/admin.php:111
+#: htdocs/domainmaintainer/domainmaintainer.php:116
+#: htdocs/maintainer/maintainer.php:108
 msgid "non volatile"
 msgstr "permanent"
 
-#: htdocs/administrator/admin.php:153
-#: htdocs/domainmaintainer/domainmaintainer.php:128
-#: htdocs/maintainer/maintainer.php:150
+#: htdocs/administrator/admin.php:129
+#: htdocs/domainmaintainer/domainmaintainer.php:134
+#: htdocs/maintainer/maintainer.php:126
 msgid "Unique User ID"
 msgstr "Unieke gebruikers ID"
 
-#: htdocs/administrator/admin.php:225 htdocs/addressbook/addr.php:197
-#: htdocs/distributionlist/list.php:208 htdocs/sharedfolder/sf.php:241
-#: htdocs/domainmaintainer/domainmaintainer.php:210
-#: htdocs/maintainer/maintainer.php:223
+#: htdocs/administrator/admin.php:203 htdocs/addressbook/addr.php:224
+#: htdocs/distributionlist/list.php:212 htdocs/sharedfolder/sf.php:254
+#: htdocs/domainmaintainer/domainmaintainer.php:219
+#: htdocs/maintainer/maintainer.php:198
 #, fuzzy, php-format
 msgid "LDAP Error: could not modify %s to %s: %s"
 msgstr "LDAP fout: kon het object %s: %s niet aanpassen"
 
-#: htdocs/administrator/admin.php:235 htdocs/addressbook/addr.php:209
-#: htdocs/sharedfolder/sf.php:253
-#: htdocs/domainmaintainer/domainmaintainer.php:228
-#: htdocs/maintainer/maintainer.php:233
+#: htdocs/administrator/admin.php:214 htdocs/addressbook/addr.php:236
+#: htdocs/sharedfolder/sf.php:266
+#: htdocs/domainmaintainer/domainmaintainer.php:237
+#: htdocs/maintainer/maintainer.php:209
 #, php-format
 msgid "LDAP Error: could not read %s: %s"
 msgstr "LDAP fout: kon %s: %s niet lezen"
 
-#: htdocs/administrator/admin.php:239 htdocs/addressbook/addr.php:215
-#: htdocs/sharedfolder/sf.php:257
-#: htdocs/domainmaintainer/domainmaintainer.php:232
-#: htdocs/maintainer/maintainer.php:237
+#: htdocs/administrator/admin.php:219 htdocs/addressbook/addr.php:242
+#: htdocs/sharedfolder/sf.php:270
+#: htdocs/domainmaintainer/domainmaintainer.php:241
+#: htdocs/maintainer/maintainer.php:213
 #, php-format
 msgid "LDAP Error: could not modify object %s: %s"
 msgstr "LDAP fout: kon het object %s: %s niet aanpassen"
 
-#: htdocs/administrator/admin.php:244 htdocs/administrator/admin.php:297
+#: htdocs/administrator/admin.php:224 htdocs/administrator/admin.php:280
 msgid "Modify Administrator"
 msgstr "Wijzig administrator"
 
-#: htdocs/administrator/admin.php:245 htdocs/administrator/admin.php:270
+#: htdocs/administrator/admin.php:225 htdocs/administrator/admin.php:251
 msgid "Administrator "
 msgstr "Administrator "
 
-#: htdocs/administrator/admin.php:245
-#: htdocs/domainmaintainer/domainmaintainer.php:246
-#: htdocs/maintainer/maintainer.php:243
+#: htdocs/administrator/admin.php:225
+#: htdocs/domainmaintainer/domainmaintainer.php:255
+#: htdocs/maintainer/maintainer.php:219
 msgid " successfully modified"
 msgstr "Wijziging succesvol"
 
-#: htdocs/administrator/admin.php:266
-#: htdocs/domainmaintainer/domainmaintainer.php:269
-#: htdocs/maintainer/maintainer.php:265
+#: htdocs/administrator/admin.php:246
+#: htdocs/domainmaintainer/domainmaintainer.php:277
+#: htdocs/maintainer/maintainer.php:241
 #, php-format
 msgid "LDAP Error: could not add object %s to maintainer group: %s"
 msgstr "LDAP fout: kon object %s niet aan e beheerders groep %s toevoegen"
 
-#: htdocs/administrator/admin.php:271 htdocs/administrator/admin.php:277
-#: htdocs/administrator/admin.php:288 lib/Skolab/Admin/include/menu.php:77
+#: htdocs/administrator/admin.php:252 htdocs/administrator/admin.php:258
+#: htdocs/administrator/admin.php:270 lib/Skolab/Admin/include/menu.php:77
 msgid "Create New Administrator"
 msgstr "Nieuwe administrator aanmaken"
 
-#: htdocs/administrator/admin.php:303
+#: htdocs/administrator/admin.php:287
 msgid "Delete Administrator"
 msgstr "Verwijder administrator"
 
-#: htdocs/administrator/admin.php:317
+#: htdocs/administrator/admin.php:302
 msgid "Error: you need administrative permissions to delete administrators"
 msgstr ""
 "Fout: je hebt administratieve toegangsrechten nodig om administrators te "
 "verwijderen"
 
-#: htdocs/administrator/admin.php:321
+#: htdocs/administrator/admin.php:306
 #, php-format
 msgid "LDAP Error: Could not remove %s from admin group: %s"
 msgstr "LDAP fout: kan %s van admin groep %s niet verwijderen"
 
-#: htdocs/administrator/admin.php:326
-#: htdocs/domainmaintainer/domainmaintainer.php:330
-#: htdocs/maintainer/maintainer.php:326
+#: htdocs/administrator/admin.php:311
+#: htdocs/domainmaintainer/domainmaintainer.php:341
+#: htdocs/maintainer/maintainer.php:307
 #, php-format
 msgid "LDAP Error: could not mark %s for deletion: %s"
 msgstr "LDAP fout: kon %s niet voor verwijdering markeren: %s"
 
-#: htdocs/administrator/admin.php:332
+#: htdocs/administrator/admin.php:317
 msgid "Administrator Deleted"
 msgstr "Administrator verwijderd"
 
-#: htdocs/administrator/index.php:62
+#: htdocs/administrator/index.php:65
 msgid "Manage Administrators ("
 msgstr "Beheer administrators ("
 
-#: htdocs/administrator/index.php:62
+#: htdocs/administrator/index.php:65
 msgid " Administrators)"
 msgstr "Administrators)"
 
-#: htdocs/addressbook/addr.php:95
+#: htdocs/addressbook/addr.php:117
 msgid "Primary E-Mail Address"
 msgstr "Hoofd E-mailadres"
 
-#: htdocs/addressbook/addr.php:97
+#: htdocs/addressbook/addr.php:119
 msgid "E-Mail Aliases"
 msgstr "E-Mail Aliassen"
 
-#: htdocs/addressbook/addr.php:105
+#: htdocs/addressbook/addr.php:127
 msgid "Post Box"
 msgstr "Postbus"
 
-#: htdocs/addressbook/addr.php:121 htdocs/distributionlist/list.php:138
-#: htdocs/sharedfolder/sf.php:151
+#: htdocs/addressbook/addr.php:145 htdocs/distributionlist/list.php:140
+#: htdocs/sharedfolder/sf.php:164
 #, php-format
 msgid "Error: DN required for %s operation"
 msgstr "Fout: dn nodig voor %s handeling"
 
-#: htdocs/addressbook/addr.php:131
+#: htdocs/addressbook/addr.php:156
 msgid "Add External Address"
 msgstr "Extern adres toevoegen"
 
-#: htdocs/addressbook/addr.php:178
+#: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
 msgid "Addressbook entry DN could not be modified, distribution list <a href='"
 msgstr "Account is verwijderd van distributielijst '%s'."
 
-#: htdocs/addressbook/addr.php:230
+#: htdocs/addressbook/addr.php:257
 #, php-format
 msgid "%s successfully added"
 msgstr "%s succesvol aangemaakt"
 
-#: htdocs/addressbook/addr.php:240 htdocs/addressbook/addr.php:258
+#: htdocs/addressbook/addr.php:267 htdocs/addressbook/addr.php:287
 msgid "Modify External Address"
 msgstr "Pas extern adres aan"
 
-#: htdocs/addressbook/addr.php:261 htdocs/addressbook/addr.php:281
+#: htdocs/addressbook/addr.php:290 htdocs/addressbook/addr.php:311
 #, php-format
 msgid "Error: No entry with DN %s found"
 msgstr "Fout: geen ingang met DN %s gevonden"
 
-#: htdocs/addressbook/addr.php:278
+#: htdocs/addressbook/addr.php:308
 msgid "Delete External Address"
 msgstr "Verwijder extern adres "
 
-#: htdocs/addressbook/addr.php:302
+#: htdocs/addressbook/addr.php:334
 #, php-format
 msgid "Addressbook entry removed from distribution list '%s'."
 msgstr "Account is verwijderd van distributielijst '%s'."
 
-#: htdocs/addressbook/addr.php:304
+#: htdocs/addressbook/addr.php:336
 #, fuzzy, php-format
 msgid ""
 "Failure to remove addressbook entry from distribution list '%s', entry will "
@@ -1664,119 +1664,119 @@ msgstr ""
 "De account kon niet van de distributielijst worden verwijderd.  De account "
 "is niet verwijderd."
 
-#: htdocs/addressbook/addr.php:312
+#: htdocs/addressbook/addr.php:342
 #, php-format
 msgid "LDAP Error: could not delete %s: %s"
 msgstr "LDAP fout: kon %s: %s niet verwijderen"
 
-#: htdocs/addressbook/addr.php:315 htdocs/distributionlist/list.php:316
-#: htdocs/sharedfolder/sf.php:327
+#: htdocs/addressbook/addr.php:345 htdocs/distributionlist/list.php:323
+#: htdocs/sharedfolder/sf.php:340
 msgid "Entry Deleted"
 msgstr "Entry verwijderd"
 
-#: htdocs/addressbook/addr.php:316
+#: htdocs/addressbook/addr.php:346
 #, php-format
 msgid "Address book entry with DN %s was deleted"
 msgstr "Adresboek entry met DN %s is verwijderd"
 
-#: htdocs/settings/index.php:99
+#: htdocs/settings/index.php:123
 #, php-format
 msgid "No account found for email address %s"
 msgstr "Er is geen account voor E-mailadres %s"
 
-#: htdocs/settings/index.php:108
+#: htdocs/settings/index.php:133
 #, php-format
 msgid "LDAP Error: Failed to add distribution list %s: %s"
 msgstr "LDAP fout: het toevoegen van de distributielijst %s: %s is gefaald"
 
-#: htdocs/settings/index.php:110
+#: htdocs/settings/index.php:135
 #, php-format
 msgid "Successfully created distribution list %s"
 msgstr "Het aanmaken van de distributielijst %s is geslaagd"
 
-#: htdocs/settings/index.php:129 htdocs/settings/index.php:138
-#: htdocs/settings/index.php:147 htdocs/settings/index.php:158
-#: htdocs/settings/index.php:168 htdocs/settings/index.php:177
-#: htdocs/settings/index.php:188 htdocs/settings/index.php:202
-#: htdocs/settings/index.php:220 htdocs/settings/index.php:238
-#: htdocs/settings/index.php:255 htdocs/settings/index.php:268
+#: htdocs/settings/index.php:154 htdocs/settings/index.php:163
+#: htdocs/settings/index.php:172 htdocs/settings/index.php:183
+#: htdocs/settings/index.php:193 htdocs/settings/index.php:202
+#: htdocs/settings/index.php:213 htdocs/settings/index.php:227
+#: htdocs/settings/index.php:245 htdocs/settings/index.php:263
+#: htdocs/settings/index.php:280 htdocs/settings/index.php:293
 #, php-format
 msgid "LDAP Error: failed to modify kolab configuration object: %s"
 msgstr "LDAP fout: het bijwerken van Kolab configuratie object %s is gefaald"
 
-#: htdocs/settings/index.php:226
+#: htdocs/settings/index.php:251
 #, php-format
 msgid "LDAP Error: Failed to delete domain object %s: %s"
 msgstr "LDAP fout: het verwijderen van domein object %s: %s is gefaald"
 
-#: htdocs/settings/index.php:276
+#: htdocs/settings/index.php:301
 msgid "POP3 Service"
 msgstr "POP3 Service"
 
-#: htdocs/settings/index.php:277
+#: htdocs/settings/index.php:302
 msgid "POP3/SSL service (TCP port 995)"
 msgstr "POP3/SSL service (TCP poort 995)"
 
-#: htdocs/settings/index.php:278
+#: htdocs/settings/index.php:303
 msgid "IMAP Service"
 msgstr "IMAP Service"
 
-#: htdocs/settings/index.php:279
+#: htdocs/settings/index.php:304
 msgid "IMAP/SSL Service (TCP port 993)"
 msgstr "IMAP/SSL Service (TCP poort 993)"
 
-#: htdocs/settings/index.php:280
+#: htdocs/settings/index.php:305
 #, php-format
 msgid "Sieve service (TCP port %s)"
 msgstr "Sieve service (TCP poort %s)"
 
-#: htdocs/settings/index.php:281
+#: htdocs/settings/index.php:306
 msgid "FreeBusy Service via HTTP (in addition to HTTPS)"
 msgstr ""
 
-#: htdocs/settings/index.php:282
+#: htdocs/settings/index.php:307
 msgid "Amavis Email Scanning (Virus/Spam)"
 msgstr "Amavis E-mail scannen (virus/anti-spam)"
 
-#: htdocs/distributionlist/index.php:63
+#: htdocs/distributionlist/index.php:65
 #, php-format
 msgid "Manage Distribution Lists (%d Lists)"
 msgstr "Beheer distributielijsten (%d lijsten)"
 
-#: htdocs/distributionlist/index.php:74
+#: htdocs/distributionlist/index.php:76
 msgid "not yet implemented"
 msgstr "nog niet geïmplementeerd"
 
-#: htdocs/distributionlist/list.php:46
+#: htdocs/distributionlist/list.php:48
 msgid "Please add at least one member"
 msgstr "Gelieve tenminste één lid toe te voegen"
 
-#: htdocs/distributionlist/list.php:50
+#: htdocs/distributionlist/list.php:52
 #, php-format
 msgid "No user with email address, UID or alias %s"
 msgstr "Er is geen gebruiker met E-mailadres, UID of alias %s"
 
-#: htdocs/distributionlist/list.php:62
+#: htdocs/distributionlist/list.php:64
 msgid "User or distribution list with this email address already exists"
 msgstr "Gebruiker of distributielijst met dit E-mailadres bestaat al"
 
-#: htdocs/distributionlist/list.php:114
+#: htdocs/distributionlist/list.php:116
 msgid "List Name"
 msgstr "Lijstnaam"
 
-#: htdocs/distributionlist/list.php:121
+#: htdocs/distributionlist/list.php:123
 msgid "Members"
 msgstr "Leden"
 
-#: htdocs/distributionlist/list.php:123
+#: htdocs/distributionlist/list.php:125
 msgid "One email address per line"
 msgstr "Eén E-mailadres per lijn"
 
-#: htdocs/distributionlist/list.php:126
+#: htdocs/distributionlist/list.php:128
 msgid "Hidden"
 msgstr "Verborgen"
 
-#: htdocs/distributionlist/list.php:129
+#: htdocs/distributionlist/list.php:131
 msgid ""
 "Check here to make this distribution list available only to authenticated "
 "users"
@@ -1784,229 +1784,229 @@ msgstr ""
 "Kruis hier aan om de distribitielijst alleen beschikbaar te maken voor ge-"
 "authoriseerde gebruikers"
 
-#: htdocs/distributionlist/list.php:148
+#: htdocs/distributionlist/list.php:150
 msgid "Add Distribution List"
 msgstr "Voeg distributielijst toe"
 
-#: htdocs/distributionlist/list.php:183
+#: htdocs/distributionlist/list.php:187
 #, php-format
 msgid "No user with address %s"
 msgstr "Geen gebruiker met adres %s"
 
-#: htdocs/distributionlist/list.php:214 htdocs/distributionlist/list.php:226
+#: htdocs/distributionlist/list.php:218 htdocs/distributionlist/list.php:230
 msgid "Distribution List updated"
 msgstr "Distributielijst bijgewerkt"
 
-#: htdocs/distributionlist/list.php:235
+#: htdocs/distributionlist/list.php:239
 #, php-format
 msgid "LDAP Error: Could not add object %s: %s"
 msgstr "LDAP fout: kon object %s: %s niet toevoegen"
 
-#: htdocs/distributionlist/list.php:264
+#: htdocs/distributionlist/list.php:268
 #, php-format
 msgid "Distribution List '%s' added"
 msgstr "Distributielijst %s toegevoegd"
 
-#: htdocs/distributionlist/list.php:276 htdocs/distributionlist/list.php:290
+#: htdocs/distributionlist/list.php:280 htdocs/distributionlist/list.php:295
 msgid "Modify Distribution List"
 msgstr "Distributielijst wijzigen"
 
-#: htdocs/distributionlist/list.php:293 htdocs/distributionlist/list.php:308
-#: htdocs/sharedfolder/sf.php:304 htdocs/sharedfolder/sf.php:320
+#: htdocs/distributionlist/list.php:298 htdocs/distributionlist/list.php:314
+#: htdocs/sharedfolder/sf.php:317 htdocs/sharedfolder/sf.php:333
 #, php-format
 msgid "Error: No results returned for DN '%s'"
 msgstr "Fout: geen resultaten voor DN %s"
 
-#: htdocs/distributionlist/list.php:305
+#: htdocs/distributionlist/list.php:311
 msgid "Delete Distribution List"
 msgstr "Distributielijst verwijderen"
 
-#: htdocs/distributionlist/list.php:315
+#: htdocs/distributionlist/list.php:322
 msgid "Distribution List "
 msgstr "Distributielijst "
 
-#: htdocs/distributionlist/list.php:315
+#: htdocs/distributionlist/list.php:322
 msgid " deleted"
 msgstr " verwijderd"
 
-#: htdocs/distributionlist/list.php:319
+#: htdocs/distributionlist/list.php:326
 #, php-format
 msgid "LDAP Error: Could not delete %s: %s"
 msgstr "LDAP fout: kon %s: %s niet verwijderen"
 
-#: htdocs/sharedfolder/sf.php:64 htdocs/sharedfolder/sf.php:71
+#: htdocs/sharedfolder/sf.php:77 htdocs/sharedfolder/sf.php:84
 msgid "Permission for UID/email/GID"
 msgstr "Toestemming voor UID/E-mail/GID"
 
-#: htdocs/sharedfolder/sf.php:105
+#: htdocs/sharedfolder/sf.php:118
 #, php-format
 msgid "No UID or GID %s"
 msgstr "Geen UID of GID %s"
 
-#: htdocs/sharedfolder/sf.php:121
+#: htdocs/sharedfolder/sf.php:134
 msgid "Folder Name"
 msgstr "Map naam"
 
-#: htdocs/sharedfolder/sf.php:128
+#: htdocs/sharedfolder/sf.php:141
 msgid "Folder Location"
 msgstr "Map locatie"
 
-#: htdocs/sharedfolder/sf.php:132
+#: htdocs/sharedfolder/sf.php:145
 msgid "Folder Type"
 msgstr "Map naam "
 
-#: htdocs/sharedfolder/sf.php:135
+#: htdocs/sharedfolder/sf.php:148
 msgid "Quota Limit"
 msgstr "Quota limiet"
 
-#: htdocs/sharedfolder/sf.php:136
+#: htdocs/sharedfolder/sf.php:149
 msgid "MBytes (empty for unlimited)"
 msgstr "MBytes (leeg voor onbeperkt)"
 
-#: htdocs/sharedfolder/sf.php:138
+#: htdocs/sharedfolder/sf.php:151
 msgid "Permission for UID/GID"
 msgstr "Toestemming voor UID/GID"
 
-#: htdocs/sharedfolder/sf.php:161 lib/Skolab/Admin/include/menu.php:61
+#: htdocs/sharedfolder/sf.php:174 lib/Skolab/Admin/include/menu.php:61
 msgid "Add Shared Folder"
 msgstr "Voeg gedeelde map toe"
 
-#: htdocs/sharedfolder/sf.php:247 htdocs/sharedfolder/sf.php:259
+#: htdocs/sharedfolder/sf.php:260 htdocs/sharedfolder/sf.php:272
 msgid "Shared folder updated"
 msgstr "Gedeelde map bijgewerkt"
 
-#: htdocs/sharedfolder/sf.php:269
+#: htdocs/sharedfolder/sf.php:282
 #, php-format
 msgid "Shared folder '%s' added"
 msgstr "Gedeelde map %s toegevoegd"
 
-#: htdocs/sharedfolder/sf.php:281 htdocs/sharedfolder/sf.php:301
+#: htdocs/sharedfolder/sf.php:294 htdocs/sharedfolder/sf.php:314
 msgid "Modify Shared Folder"
 msgstr "Gedeelde map wijzigen"
 
-#: htdocs/sharedfolder/sf.php:317
+#: htdocs/sharedfolder/sf.php:330
 msgid "Delete Shared Folder"
 msgstr "Gedeelde map verwijderen"
 
-#: htdocs/sharedfolder/sf.php:326
+#: htdocs/sharedfolder/sf.php:339
 msgid "Shared folder "
 msgstr "Gedeelde map "
 
-#: htdocs/sharedfolder/sf.php:326
+#: htdocs/sharedfolder/sf.php:339
 msgid " marked for deletion"
 msgstr " aangemerkt voor verwijdering"
 
-#: htdocs/sharedfolder/sf.php:330
+#: htdocs/sharedfolder/sf.php:343
 #, php-format
 msgid "LDAP Error: Could not mark %s for deletion: %s"
 msgstr "LDAP fout: kon %s niet voor verwijdereing markeren: %s"
 
-#: htdocs/sharedfolder/index.php:52
+#: htdocs/sharedfolder/index.php:64
 #, php-format
 msgid "Manage Shared Folders (%d Folders)"
 msgstr "Beheer gedeelde mappen (%d mappen)"
 
-#: htdocs/sharedfolder/index.php:62 lib/Skolab/Admin/include/form.class.php:254
+#: htdocs/sharedfolder/index.php:74 lib/Skolab/Admin/include/form.class.php:254
 msgid "Unspecified"
 msgstr "Niet gespecificeerd"
 
-#: htdocs/sharedfolder/index.php:63 lib/Skolab/Admin/include/form.class.php:254
+#: htdocs/sharedfolder/index.php:75 lib/Skolab/Admin/include/form.class.php:254
 msgid "Mails"
 msgstr "E-mails"
 
-#: htdocs/sharedfolder/index.php:64 lib/Skolab/Admin/include/form.class.php:254
+#: htdocs/sharedfolder/index.php:76 lib/Skolab/Admin/include/form.class.php:254
 msgid "Tasks"
 msgstr "Taken"
 
-#: htdocs/sharedfolder/index.php:65 lib/Skolab/Admin/include/form.class.php:255
+#: htdocs/sharedfolder/index.php:77 lib/Skolab/Admin/include/form.class.php:255
 msgid "Journals"
 msgstr "Journalen"
 
-#: htdocs/sharedfolder/index.php:66 lib/Skolab/Admin/include/form.class.php:255
+#: htdocs/sharedfolder/index.php:78 lib/Skolab/Admin/include/form.class.php:255
 msgid "Events"
 msgstr "Gebeurtenissen"
 
-#: htdocs/sharedfolder/index.php:67 lib/Skolab/Admin/include/form.class.php:256
+#: htdocs/sharedfolder/index.php:79 lib/Skolab/Admin/include/form.class.php:256
 msgid "Contacts"
 msgstr "Contacten"
 
-#: htdocs/sharedfolder/index.php:68 lib/Skolab/Admin/include/form.class.php:256
+#: htdocs/sharedfolder/index.php:80 lib/Skolab/Admin/include/form.class.php:256
 msgid "Notes"
 msgstr "Aantekeningen"
 
-#: htdocs/domainmaintainer/index.php:62 htdocs/maintainer/index.php:62
+#: htdocs/domainmaintainer/index.php:64 htdocs/maintainer/index.php:64
 msgid "Manage Maintainers ("
 msgstr "Beheer van de Maintainers("
 
-#: htdocs/domainmaintainer/index.php:62 htdocs/maintainer/index.php:62
+#: htdocs/domainmaintainer/index.php:64 htdocs/maintainer/index.php:64
 msgid " Maintainers)"
 msgstr "Maintainers)"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:49
+#: htdocs/domainmaintainer/domainmaintainer.php:51
 #, fuzzy
 msgid "Please enter a uid value"
 msgstr "Gelieve een E-mailadres in te geven"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:137
+#: htdocs/domainmaintainer/domainmaintainer.php:143
 msgid "Check domains this domain maintainer should be able to maintain"
 msgstr ""
 "Controleer domein, deze domein beheerder moet in staat zijn om te onderhouden"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:245
-#: htdocs/domainmaintainer/domainmaintainer.php:300
+#: htdocs/domainmaintainer/domainmaintainer.php:254
+#: htdocs/domainmaintainer/domainmaintainer.php:310
 msgid "Modify Domain Maintainer"
 msgstr "Domein beheerders wijzigen"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:246
-#: htdocs/maintainer/maintainer.php:243 htdocs/maintainer/maintainer.php:269
+#: htdocs/domainmaintainer/domainmaintainer.php:255
+#: htdocs/maintainer/maintainer.php:219 htdocs/maintainer/maintainer.php:245
 msgid "Maintainer "
 msgstr "Maintainer "
 
-#: htdocs/domainmaintainer/domainmaintainer.php:276
+#: htdocs/domainmaintainer/domainmaintainer.php:284
 msgid "Domain maintainer "
 msgstr "Domein beheerder"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:277
-#: htdocs/domainmaintainer/domainmaintainer.php:281
-#: htdocs/domainmaintainer/domainmaintainer.php:291
+#: htdocs/domainmaintainer/domainmaintainer.php:285
+#: htdocs/domainmaintainer/domainmaintainer.php:289
+#: htdocs/domainmaintainer/domainmaintainer.php:300
 #: lib/Skolab/Admin/include/menu.php:83 lib/Skolab/Admin/include/menu.php:100
 msgid "Create New Domain Maintainer"
 msgstr "Nieuwe domein beheerder aanmaken"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:306
+#: htdocs/domainmaintainer/domainmaintainer.php:317
 msgid "Delete Domain Maintainer"
 msgstr "Domein beheerder verwijderen"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:320
+#: htdocs/domainmaintainer/domainmaintainer.php:332
 msgid "Error: you need administrative permissions to delete domain maintainers"
 msgstr ""
 "Fout :  je hebt administratieve toegangsrechten nodig om administrators te "
 "verwijderen"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:324
-#: htdocs/maintainer/maintainer.php:320
+#: htdocs/domainmaintainer/domainmaintainer.php:335
+#: htdocs/maintainer/maintainer.php:300
 #, php-format
 msgid "LDAP Error: Could not remove %s from maintainer group: %s"
 msgstr "LDAP fout: kan %s niet van beheerders groep: %s verwijderen"
 
-#: htdocs/domainmaintainer/domainmaintainer.php:336
+#: htdocs/domainmaintainer/domainmaintainer.php:347
 msgid "Domain Maintainer Deleted"
 msgstr "Domein beheerder verwijderd"
 
-#: htdocs/maintainer/maintainer.php:242 htdocs/maintainer/maintainer.php:296
+#: htdocs/maintainer/maintainer.php:218 htdocs/maintainer/maintainer.php:274
 msgid "Modify Maintainer"
 msgstr "Maintainers wijzigen"
 
-#: htdocs/maintainer/maintainer.php:270 htdocs/maintainer/maintainer.php:276
-#: htdocs/maintainer/maintainer.php:287 lib/Skolab/Admin/include/menu.php:89
+#: htdocs/maintainer/maintainer.php:246 htdocs/maintainer/maintainer.php:252
+#: htdocs/maintainer/maintainer.php:264 lib/Skolab/Admin/include/menu.php:89
 msgid "Create New Maintainer"
 msgstr "Nieuwe beheerder aanmaken"
 
-#: htdocs/maintainer/maintainer.php:302
+#: htdocs/maintainer/maintainer.php:281
 msgid "Delete Maintainer"
 msgstr "Beheerder verwijderen"
 
-#: htdocs/maintainer/maintainer.php:332
+#: htdocs/maintainer/maintainer.php:313
 msgid "Maintainer Deleted"
 msgstr "Beheerder verwijderd"
 
