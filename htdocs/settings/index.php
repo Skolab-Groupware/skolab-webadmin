@@ -2,8 +2,10 @@
 
 /*
  *  Copyright (c) 2004-2005 Klarälvdalens Datakonsult AB
+ *  Copyright (c) 2017 Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  *
- *    Written by Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
+ *    Originally written by
+ *    Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
  *
  *  This  program is free  software; you can redistribute  it and/or
  *  modify it  under the terms of the GNU  General Public License as
