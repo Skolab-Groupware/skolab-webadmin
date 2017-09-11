@@ -148,7 +148,7 @@ function checkdelegate( $form, $key, $value ) {
 	foreach( $lst as $delegate ) {
 		if( $ldap->count( $ldap->search( $_SESSION['base_dn'], '(mail='.$ldap->escape($delegate).')' ) ) == 0 ) {
 			return sprintf(_("Email-Delegate %s does not exist"), $delegate);
-		}	
+		}
 	}
 	return '';
 }
