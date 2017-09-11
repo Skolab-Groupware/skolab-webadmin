@@ -4,7 +4,7 @@
   buffer-file-coding-system: utf-8
   End:
 *}
-<h1>{t}Kolab Server Settings{/t}</h1>
+<h1>{t}Skolab Server Settings{/t}</h1>
 
 {if count($systemaliasconf)>0 }
 <a name="systemaliasconf"></a>
@@ -83,7 +83,7 @@
 <div class="contentform">
 <form id="postfixmynetworksform" method="post" action="">
 <div>
-{t}Networks allowed to relay and send mail through unauthenticated SMTP connections to the Kolab server (comma separated networks in x.x.x.x/y format):{/t}
+{t}Networks allowed to relay and send mail through unauthenticated SMTP connections to the Skolab server (comma separated networks in x.x.x.x/y format):{/t}
 <input type="text" name="postfixmynetworks" size="80"  value="{$postfixmynetworks|escape:"html"}" />
 <div class="align_right"><input type="submit" name="submitpostfixmynetworks" value="{t}Update{/t}" /></div>
 </div>
@@ -110,7 +110,7 @@
     <tr>
      <td valign="top"><input type="checkbox" name="postfixallowunauth" {if $postfixallowunauth == 'true' }checked="checked"{/if} />
      </td>
-     <td>{t}Accept mail from other domains over unauthenticated SMTP. This must be enabled if you want to use the Kolab Server to receive mail from other internet domains directly. Leave disabled to accept mail only from SMTP gateways that are within the privileged network.{/t}
+     <td>{t}Accept mail from other domains over unauthenticated SMTP. This must be enabled if you want to use the Skolab Server to receive mail from other internet domains directly. Leave disabled to accept mail only from SMTP gateways that are within the privileged network.{/t}
      </td>
     </tr>
     <tr>
@@ -162,7 +162,7 @@
  <tr>
   <td valign="top"><input type="radio" name="kolabfilterrejectforgedfrom" value="FALSE" {if $kolabfilterrejectforgedfrom == 'false' }checked="checked"{/if} />
   </td>
-  <td>{t}Reject the message, except if it originates from the outside and the From header matches one of Kolab server's domains. In that case rewrite the From header so the recipient can see the potential forgery.{/t}<br/>
+  <td>{t}Reject the message, except if it originates from the outside and the From header matches one of Skolab server's domains. In that case rewrite the From header so the recipient can see the potential forgery.{/t}<br/>
   </td>
  </tr>
  <tr>
@@ -179,7 +179,7 @@
 </div>
 <br />
 
-<h2>{t}Kolab Hostnames (for Master and Slaves){/t}</h2>
+<h2>{t}Skolab Hostnames (for Master and Slaves){/t}</h2>
 <table class="contenttable" cellpadding="0" cellspacing="1px">
 	<tr class="contentrow">
 	<th>{t}Host{/t}</th><th>{t}Action{/t}</th>
