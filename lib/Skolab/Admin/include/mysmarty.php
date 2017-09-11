@@ -19,9 +19,10 @@
  */
 
 require_once('config.php');
-require_once('locale.php');
 
 include_once('smarty3/Smarty.class.php');
+
+require_once('locale.php');
 
 // PENDING: Remove this before production(!)
 //function count_bytes($tpl_output, &$smarty) {
