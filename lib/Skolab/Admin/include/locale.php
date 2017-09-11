@@ -18,94 +18,92 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-  //require_once("mysmarty.php");
-
-// PENDING(romain,steffen): Clean up so this is not a mix of code and global functions
+//require_once("mysmarty.php");
 
 function supported_lang($lang) {
 
-    // REMEMBER TO UPDATE THIS WHEN ADDING NEW LANGUAGES
-    $a = array("de"    => "de_DE",
-			   "de_de" => "de_DE",
-			   "fr"    => "fr_FR",
-			   "fr_fr" => "fr_FR",
-			   "it"    => "it_IT",
-			   "it_it" => "it_IT",
-			   "nl"    => "nl_NL",
-			   "nl_nl" => "nl_NL",
-			   "en"    => "en_US",
-			   "en_gb" => "en_US",
-			   "en_us" => "en_US",
-			   "es"    => "es_ES",
-			   "es_es" => "es_ES");
+	// REMEMBER TO UPDATE THIS WHEN ADDING NEW LANGUAGES
+	$a = array(        "de"    => "de_DE",
+	                   "de_de" => "de_DE",
+	                   "fr"    => "fr_FR",
+	                   "fr_fr" => "fr_FR",
+	                   "it"    => "it_IT",
+	                   "it_it" => "it_IT",
+	                   "nl"    => "nl_NL",
+	                   "nl_nl" => "nl_NL",
+	                   "en"    => "en_US",
+	                   "en_gb" => "en_US",
+	                   "en_us" => "en_US",
+	                   "es"    => "es_ES",
+	                   "es_es" => "es_ES"
+	);
 
-    // Locales must be in the format xx_YY to be recognized by xgettext
-    $lang = strtolower(str_replace('-','_',$lang));
-    if( !array_key_exists( $lang, $a ) ) return false;
-    else return $a[$lang];
+	// Locales must be in the format xx_YY to be recognized by xgettext
+	$lang = strtolower(str_replace('-','_',$lang));
+	if( !array_key_exists( $lang, $a ) ) return false;
+	else return $a[$lang];
 }
 
 // This function is called in templates my Smarty
 function translate($params)
 {
-    $msg = $params["msg"];
-    $domain = $params["domain"];
-    if(empty($domain)) {
-        return gettext($msg);
-    } else {
-        return dgettext($domain, $msg);
-    }
+	$msg = $params["msg"];
+	$domain = $params["domain"];
+	if(empty($domain)) {
+		return gettext($msg);
+	} else {
+		return dgettext($domain, $msg);
+	}
 }
 
 # Returns the currently selected language
 function getLanguage()
 {
-    if(empty($_SESSION["lang"]))
-    {
-	    $acceptList = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
-        if(empty($acceptList)) {
+	if(empty($_SESSION["lang"]))
+	{
+		$acceptList = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
+		if(empty($acceptList)) {
 			$lang = "en";
-        } else {
+		} else {
 			// In case of multiple accept languages, keep the first one
 			$acceptList = explode(",", $acceptList);
 			foreach($acceptList as $l) {
 				$pos = strpos($l, ';' );
 				if( $pos !== false ) {
-				    $l = explode(';',$l);
+					$l = explode(';',$l);
 					$l = $l[0];
 				}
 				if( $tmp = supported_lang($l) ) {
-				    $lang = $tmp;
-				    break;
+					$lang = $tmp;
+					break;
 				}
 			}
-        }
+		}
 		if( !$lang ) $lang = "en";
-        setLanguage($lang);
-    }
-    return supported_lang($_SESSION["lang"]);
+		setLanguage($lang);
+	}
+	return supported_lang($_SESSION["lang"]);
 }
 
 # Allows languages to be set by users
 function setLanguage($lang)
 {
-    $lang = supported_lang($lang);
-    $_SESSION["lang"] = $lang;
+	$lang = supported_lang($lang);
+	$_SESSION["lang"] = $lang;
 }
 
 // Check if language was changed
 if(!empty($_REQUEST["lang"])) {
-    setLanguage($_REQUEST["lang"]);
+	setLanguage($_REQUEST["lang"]);
 }
 //reset the Locale BEFORE adding a new one:
 setlocale(LC_ALL,null);
-
 
 // I18N support information
 $language = getLanguage();
 putenv("LANG=$language");
 putenv("LANGUAGE=$language");
-setlocale(LC_ALL, $language);
+setlocale(LC_ALL, $language.".UTF-8");
 
 $domain = "messages";
 //$tmpSmarty = new MySmarty();
