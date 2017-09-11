@@ -30,37 +30,38 @@ require_once('Skolab/Admin/include/authenticate.php');
 require_once('Skolab/Admin/include/menu.php');
 
 function exists_group( $group ) {
-  global $ldap;
-  $filter = '(&(objectClass=kolabGroupOfNames)(mail='.$ldap->escape($group).'))';
-  $res = $ldap->search( $_SESSION['base_dn'], $filter, array( 'dn' ) );
-  return ( $ldap->count($res) > 0 );
+	global $ldap;
+	$filter = '(&(objectClass=kolabGroupOfNames)(mail='.$ldap->escape($group).'))';
+	$res = $ldap->search( $_SESSION['base_dn'], $filter, array( 'dn' ) );
+	return ( $ldap->count($res) > 0 );
 }
 
 /**** Check for system aliases ****/
 $maincontent = 'welcome.tpl';
 if( $auth->group() == 'admin' ) {
-  $maincontent = 'welcome-admin.tpl';
-  $domains = $ldap->domains();
-  foreach( $domains as $domain ) {
-	if( (!exists_group( 'hostmaster@'.$domain ) ||
-		 !exists_group( 'postmaster@'.$domain ) ||
-		 !exists_group( 'abuse@'.$domain ) ||
-		 !exists_group( 'virusalert@'.$domain ) ||
-		 !exists_group( 'MAILER-DAEMON@'.$domain ))
-		 && !HIDE_ADMINISTRATIVE_EMAILSETTINGS) {
-	  // Ok, user did not set up system aliases
-	  $maincontent = 'systemaliasnagscreen.tpl';
+	$maincontent = 'welcome-admin.tpl';
+	$domains = $ldap->domains();
+	foreach( $domains as $domain ) {
+		if( (!exists_group( 'hostmaster@'.$domain ) ||
+		     !exists_group( 'postmaster@'.$domain ) ||
+		     !exists_group( 'abuse@'.$domain ) ||
+		     !exists_group( 'virusalert@'.$domain ) ||
+		     !exists_group( 'MAILER-DAEMON@'.$domain ))
+		     && !HIDE_ADMINISTRATIVE_EMAILSETTINGS) {
+			// Ok, user did not set up system aliases
+			$maincontent = 'systemaliasnagscreen.tpl';
+		}
 	}
-  }
 }
+
 if ($auth->group() == 'user') {
-  $maincontent = 'welcome-user.tpl';
+	$maincontent = 'welcome-user.tpl';
 }
 if ($auth->group() == 'maintainer') {
-  $maincontent = 'welcome-maintainer.tpl';
+	$maincontent = 'welcome-maintainer.tpl';
 }
 if ($auth->group() == 'domain-maintainer') {
-  $maincontent = 'welcome-domain-maintainer.tpl';
+	$maincontent = 'welcome-domain-maintainer.tpl';
 }
 
 
