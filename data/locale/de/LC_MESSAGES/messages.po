@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-11 13:59+0200\n"
-"PO-Revision-Date: 2017-09-08 09:25+0000\n"
+"PO-Revision-Date: 2017-09-12 11:43+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/skolab-groupware/"
-"webadmin/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/skolab-"
+"groupware/webadmin/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -50,7 +50,7 @@ msgstr "Pflichtfeld"
 
 #: data/templates/createuser.tpl:20 htdocs/user/user.php:476
 msgid "Middle Name"
-msgstr "Mittelname"
+msgstr "weitere Vornamen"
 
 #: data/templates/createuser.tpl:25 htdocs/user/user.php:477
 #: htdocs/administrator/admin.php:118 htdocs/addressbook/addr.php:113
@@ -64,14 +64,14 @@ msgstr "Nachname"
 #: htdocs/domainmaintainer/domainmaintainer.php:126
 #: htdocs/maintainer/maintainer.php:118
 msgid "Password"
-msgstr "Passwort"
+msgstr "Kennwort"
 
 #: data/templates/createuser.tpl:35 htdocs/user/user.php:484
 #: htdocs/administrator/admin.php:125
 #: htdocs/domainmaintainer/domainmaintainer.php:130
 #: htdocs/maintainer/maintainer.php:122
 msgid "Verify Password"
-msgstr "Passwort bestätigen"
+msgstr "Kennwort bestätigen"
 
 #: data/templates/createuser.tpl:40 htdocs/user/user.php:488
 msgid "Primary Email Address"
@@ -92,7 +92,7 @@ msgstr "Titel"
 
 #: data/templates/createuser.tpl:50
 msgid "Email Alias"
-msgstr "E-Mail-Aliasnamen"
+msgstr "E-Mail-Aliase"
 
 #: data/templates/createuser.tpl:55 htdocs/user/user.php:530
 #: htdocs/addressbook/addr.php:123
@@ -112,7 +112,7 @@ msgstr "Zimmernummer"
 #: data/templates/createuser.tpl:70 htdocs/user/user.php:533
 #: htdocs/addressbook/addr.php:126
 msgid "Street Address"
-msgstr "Straßenanschrift"
+msgstr "Straße und Hausnummer"
 
 #: data/templates/createuser.tpl:75 htdocs/user/user.php:534
 msgid "Postbox"
@@ -131,7 +131,7 @@ msgstr "Stadt"
 #: data/templates/createuser.tpl:90 htdocs/user/user.php:537
 #: htdocs/addressbook/addr.php:130
 msgid "Country"
-msgstr "Land"
+msgstr "Staat"
 
 #: data/templates/createuser.tpl:95 htdocs/user/user.php:539
 #: htdocs/addressbook/addr.php:131
@@ -151,13 +151,12 @@ msgstr "Adressbuch"
 #: data/templates/createuser.tpl:107
 msgid "check here to make this users address <br/> visible in the address book"
 msgstr ""
-"Wählen Sie diese Option an, um die Adresse dieses Benutzers <br/> im "
+"Wählen Sie diese Option an, um die<br/>Adresse dieses Benutzers im "
 "Adressbuch anzuzeigen"
 
 #: data/templates/createuser.tpl:110
-#, fuzzy
 msgid "User Quota in MB"
-msgstr "Plattenplatz-Kontingent des Benutzers in MBytes"
+msgstr "Plattenplatz-Kontingent des Benutzers in MB"
 
 #: data/templates/createuser.tpl:112 htdocs/user/user.php:545
 msgid "Leave blank for unlimited"
@@ -169,23 +168,20 @@ msgstr "Absenden"
 
 #: data/templates/welcome-maintainer.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab Groupware Server Maintenance"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr "Willkommen zur Skolab Groupware Server-Verwaltung"
 
 #: data/templates/welcome-maintainer.tpl:13
 #: data/templates/welcome-domain-maintainer.tpl:13
 #: data/templates/welcome-admin.tpl:13
-#, fuzzy
 msgid "Manage Users"
-msgstr "E-Mail-Benutzer verwalten"
+msgstr "Benutzer verwalten"
 
 #: data/templates/welcome-maintainer.tpl:19
 #: data/templates/welcome-domain-maintainer.tpl:16
 #: data/templates/welcome-admin.tpl:19
-#, fuzzy
 msgid "Shared Folders"
-msgstr "Gemeinsam genutzter Ordner"
+msgstr "Gemeinsame Ordner"
 
 #: data/templates/welcome-maintainer.tpl:22 data/templates/distlistall.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:19
@@ -211,7 +207,7 @@ msgstr "Domänenverwalter"
 #: data/templates/welcome-domain-maintainer.tpl:25
 #: data/templates/welcome-admin.tpl:37 data/templates/welcome-user.tpl:16
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: data/templates/skolabgroupware.tpl:10
 msgid ""
@@ -224,6 +220,16 @@ msgid ""
 "a higher version of Kolab or some other groupware may not make sense.\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Die Skolab Groupware ist eine Fortsetzung von Kolab (Version 2) um "
+"weiterhin\n"
+"Groupware-Server zu unterstützen, die auf Kolab (Version 2) aufgesetzt "
+"worden sind.\n"
+"Für einige dieser Systeme mag es nicht sinnvoll sein, das nicht mehr "
+"unterstützte\n"
+"Kolab v2 auf eine höhere Version von Kolab zu migrieren.\n"
+"\n"
 
 #: data/templates/skolabgroupware.tpl:21
 msgid ""
@@ -233,11 +239,13 @@ msgid ""
 "\n"
 "</p>\n"
 msgstr ""
+"\n"
+"\n"
+"An dieser Stelle kommt die <b>Skolab Groupware</b> ins Spiel...\n"
 
 #: data/templates/skolabgroupware.tpl:28
-#, fuzzy
 msgid "How To Contribute to Skolab Groupware"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr "Wie kann zur Entwicklung der Skolab Groupware beigetragen werden"
 
 #: data/templates/skolabgroupware.tpl:31
 msgid ""
@@ -248,11 +256,16 @@ msgid ""
 "reports and code contributions there.\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Die Skolab Groupware wird auf <a href=\"%1\">Github</a>gepflegt.  Der\n"
+"Quellcode kann dort in Git Projekten eingesehen werden. Auch Fehlerberichte\n"
+"und Beiträge zum Quellcode können dort erbracht werden.\n"
+"\n"
 
 #: data/templates/skolabgroupware.tpl:40
-#, fuzzy
 msgid "Professional Skolab Groupware Support"
-msgstr "Kolab Groupware login"
+msgstr "Professioneller Skolab Groupware Support"
 
 #: data/templates/skolabgroupware.tpl:43
 msgid ""
@@ -262,11 +275,17 @@ msgid ""
 "visit our <a href=\"%1\">web page</a> to get in touch.\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"DAS-NETZWERKTEAM bietet grundlegenden Support für die Skolab Groupware. "
+"Bitte\n"
+"besuchen Sie unsere <a href=\"%1\">Webseiten</a>, um mit uns in Kontakt zu "
+"kommen.\n"
+"\n"
 
 #: data/templates/skolabgroupware.tpl:51
-#, fuzzy
 msgid "Former Kolab Development"
-msgstr "Weitere Mitwirkende:"
+msgstr "Frühere Entwicklung an Kolab"
 
 #: data/templates/skolabgroupware.tpl:54
 msgid ""
@@ -277,6 +296,12 @@ msgid ""
 "href=\"%1\">Kolab Systems AG</a>. The text below applies to the latest\n"
 "version of Kolab. The Kolab v2 legacy support is now provided by "
 msgstr ""
+"\n"
+"\n"
+"Die ursprüngliche Kolab Groupware (Version 2) wurde von der <a href=\"%1\">"
+"Kolab Systems AG</a> entwickelt. Die Firma wurde im Jahre 2010 in Zürich\n"
+"gegründet. Der untenstehende Text bezieht sich auf die neueste Version von "
+"Kolab. Die Fortsetzung des Kolab v2 Supports wird angeführt von "
 
 #: data/templates/skolabgroupware.tpl:65
 msgid ""
@@ -293,11 +318,24 @@ msgid ""
 "and collaboration.\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"<a href=\"%1\">Kolab Systems AG</a> ist global führend in der\n"
+"Kolab Technologie. Zusammen mit ihren Partnern in der Kolab\n"
+"Enterprise Gemeinschaft bietet Kolab Systems sowohl Qualitätssicherung, "
+"Integration,\n"
+"Support, Schulungen, Zertifizierungen von Personen und Drittanbieter-"
+"Produkten, als auch\n"
+"fortwährende Entwicklung der Kolab Groupware Lösung. Die starke\n"
+"Partnerschaftsmodell und eine hochkompetente Enterprise-Gemeinschaft\n"
+"bietet Nutzern der Kolab Groupware Lösung die richtige Mischung aus\n"
+"professionellem Consulting, Support und Gewährleistung, um Produktivität \n"
+"und Zusammenarbeit zu ermöglichen.\n"
+"\n"
 
 #: data/templates/skolabgroupware.tpl:80
-#, fuzzy
 msgid "Former Kolab Contributors"
-msgstr "Weitere Mitwirkende:"
+msgstr "Frühere Mitwirkende an der Kolab Entwicklung"
 
 #: data/templates/skolabgroupware.tpl:83
 msgid ""
@@ -307,15 +345,21 @@ msgid ""
 "the companies listed below (in alphabetical order):\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"Die ehemalige Entwicklung der Kolab Groupware (Version 2) wurde "
+"hauptsächlich\n"
+"von den unten (in alphabetischer Reihenfolge) aufgelisteten Firmen "
+"vorangetrieben :\n"
+"\n"
 
 #: data/templates/skolabgroupware.tpl:97
 msgid "...and many many contributors from the Kolab v2 community."
-msgstr ""
+msgstr "...und viele viele weitere Beitragende aus der Kolab v2 Community."
 
 #: data/templates/login.tpl:7
-#, fuzzy
 msgid "Enter UID and password to login"
-msgstr "Geben Sie Ihre UID und Ihr Passwort ein, um sich anzumelden"
+msgstr "Geben Sie Ihren Benutzernamen und Ihr Kennwort ein, um sich anzumelden"
 
 #: data/templates/login.tpl:14
 msgid "Username:"
@@ -323,20 +367,19 @@ msgstr "Benutzername:"
 
 #: data/templates/login.tpl:23
 msgid "Password:"
-msgstr "Passwort:"
+msgstr "Kennwort:"
 
 #: data/templates/login.tpl:23
 msgid "Login"
-msgstr ""
+msgstr "Anmelden"
 
 #: data/templates/vacation.tpl:7
 msgid "Vacation Notification"
-msgstr "Benachrichtigungen bei Abwesenheit"
+msgstr "Abwesenheitsbenachrichtigung"
 
 #: data/templates/vacation.tpl:10
-#, fuzzy
 msgid "Activate vacation notification"
-msgstr "Benachrichtigungen bei Abwesenheit"
+msgstr "Abwesenheitsbenachrichtigung aktivieren"
 
 #: data/templates/vacation.tpl:12
 msgid "Resend notification only after"
@@ -356,7 +399,7 @@ msgstr "(Eine Adresse pro Zeile)"
 
 #: data/templates/vacation.tpl:20
 msgid "Do not send vacation replies to spam messages"
-msgstr "Keine Abwesenheitsbenachrichtigungen auf Spamnachrichten senden"
+msgstr "Keine Abwesenheitsbenachrichtigungen auf Spam-Nachrichten verschicken"
 
 #: data/templates/vacation.tpl:21
 msgid "Only react to mail coming from domain"
@@ -397,9 +440,8 @@ msgid "Back to list of shared folders"
 msgstr "Zurück zur Liste der gemeinsam genutzten Ordner"
 
 #: data/templates/addresslist.tpl:8 data/templates/addrlistall.tpl:8
-#, fuzzy
 msgid "(only external addresses without a kolab user account)"
-msgstr "(nur externe Adresse ohne Kolab-Benutzerkonto)"
+msgstr "(nur externe Adresse ohne Skolab-Benutzerkonto)"
 
 #: data/templates/addresslist.tpl:14 data/templates/maintainerlistall.tpl:13
 #: data/templates/sflistall.tpl:13
@@ -416,9 +458,8 @@ msgstr "Name"
 #: data/templates/domainmaintainerlistall.tpl:13
 #: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
 #: data/templates/adminlistall.tpl:13
-#, fuzzy
 msgid "Action"
-msgstr "Abwesenheit"
+msgstr "Aktion"
 
 #: data/templates/addresslist.tpl:19 data/templates/distlistall.tpl:26
 #: data/templates/maintainerlistall.tpl:22 data/templates/sflistall.tpl:23
@@ -426,7 +467,7 @@ msgstr "Abwesenheit"
 #: data/templates/userlistall.tpl:73 data/templates/addrlistall.tpl:55
 #: data/templates/adminlistall.tpl:22
 msgid "Modify"
-msgstr "Bearbeiten"
+msgstr "Ändern"
 
 #: data/templates/addresslist.tpl:20 data/templates/settings.tpl:136
 #: data/templates/distlistall.tpl:27 data/templates/maintainerlistall.tpl:23
@@ -442,9 +483,8 @@ msgid "Delete"
 msgstr "Löschen"
 
 #: data/templates/technology.tpl:8
-#, fuzzy
 msgid "Skolab Groupware Solution - Technologies"
-msgstr "Kolab Groupware login"
+msgstr "Skolab Groupware Lösung - Technologien"
 
 #: data/templates/technology.tpl:10
 msgid ""
