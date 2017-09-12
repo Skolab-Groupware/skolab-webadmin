@@ -77,16 +77,14 @@ Groupware has been derived from) are (in alphabetical order):
 </div>
 <hr>
 <small>
-  <p>
-    {t escape=no 1="http://www.php.net/"}
-    This product includes PHP, freely available from
-    <a href="%1">%1</a>
-    {/t}
-  </p><p>
-    {t escape=no 1="http://www.openssl.org/"}
-    This product includes software developed by the OpenSSL Project
-    for use in the OpenSSL Toolkit (<a href="%1">%1</a>)
-    {/t}
-  </p>
+<p>
+{t escape=no 1="http://www.php.net/"}This product includes PHP, freely available from
+<a href="%1">%1</a>
+{/t}
+</p><p>
+{t escape=no 1="http://www.openssl.org/"}This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (<a href="%1">%1</a>)
+{/t}
+</p>
 </small>
 </div>
