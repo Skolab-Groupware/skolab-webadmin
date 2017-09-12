@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-12 13:51+0200\n"
-"PO-Revision-Date: 2017-09-12 11:43+0000\n"
+"PO-Revision-Date: 2017-09-12 11:59+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/skolab-groupware/"
-"webadmin/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/skolab-"
+"groupware/webadmin/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -210,7 +210,6 @@ msgid "About"
 msgstr "Über"
 
 #: data/templates/skolabgroupware.tpl:10
-#, fuzzy
 msgid ""
 "The Skolab Groupware was derived from Kolab (version2) to provide legacy\n"
 "support for groupware servers that started with Kolab (version 2). For some "
@@ -218,8 +217,6 @@ msgid ""
 "these installations, migrating the systems from non-supported Kolab v2 to\n"
 "a higher version of Kolab or some other groupware may not make sense.\n"
 msgstr ""
-"\n"
-"\n"
 "Die Skolab Groupware ist eine Fortsetzung von Kolab (Version 2) um "
 "weiterhin\n"
 "Groupware-Server zu unterstützen, die auf Kolab (Version 2) aufgesetzt "
@@ -227,59 +224,44 @@ msgstr ""
 "Für einige dieser Systeme mag es nicht sinnvoll sein, das nicht mehr "
 "unterstützte\n"
 "Kolab v2 auf eine höhere Version von Kolab zu migrieren.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:18
-#, fuzzy
 msgid "This is where the <b>Skolab Groupware</b> comes in for you...\n"
-msgstr ""
-"\n"
-"\n"
-"An dieser Stelle kommt die <b>Skolab Groupware</b> ins Spiel...\n"
+msgstr "An dieser Stelle kommt die <b>Skolab Groupware</b> ins Spiel...\n"
 
 #: data/templates/skolabgroupware.tpl:22
-#, fuzzy
 msgid "How To Contribute to Skolab Groupware?"
-msgstr "Wie kann zur Entwicklung der Skolab Groupware beigetragen werden"
+msgstr "Wie kann zur Entwicklung der Skolab Groupware beigetragen werden?"
 
 #: data/templates/skolabgroupware.tpl:25
-#, fuzzy
 msgid ""
 "The Skolab Groupware is maintained on <a href=\"%1\">Github</a>. Please\n"
 "browse the Git repositories related to our project and provide issue\n"
 "reports and code contributions there.\n"
 msgstr ""
-"\n"
-"\n"
 "Die Skolab Groupware wird auf <a href=\"%1\">Github</a>gepflegt.  Der\n"
 "Quellcode kann dort in Git Projekten eingesehen werden. Auch Fehlerberichte\n"
 "und Beiträge zum Quellcode können dort erbracht werden.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:31
 msgid "Professional Skolab Groupware Support"
 msgstr "Professioneller Skolab Groupware Support"
 
 #: data/templates/skolabgroupware.tpl:34
-#, fuzzy
 msgid ""
 "DAS-NETZWERKTEAM provides basic support for the Skolab Groupware. Please\n"
 "visit our <a href=\"%1\">web page</a> to get in touch.\n"
 msgstr ""
-"\n"
-"\n"
 "DAS-NETZWERKTEAM bietet grundlegenden Support für die Skolab Groupware. "
 "Bitte\n"
 "besuchen Sie unsere <a href=\"%1\">Webseiten</a>, um mit uns in Kontakt zu "
 "kommen.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:39
 msgid "Former Kolab Development"
 msgstr "Frühere Entwicklung an Kolab"
 
 #: data/templates/skolabgroupware.tpl:42
-#, fuzzy
 msgid ""
 "The original Kolab Groupware (version 2) has been developed at Kolab\n"
 "Systems AG. The company was founded in Z&uuml;rich in 2010, <a href=\"%1\">\n"
@@ -287,16 +269,15 @@ msgid ""
 "version of Kolab. The Kolab v2 legacy support is now provided by <a\n"
 "href=\"%2\">DAS-NETZWERKTEAM</a>.\n"
 msgstr ""
-"\n"
-"\n"
-"Die ursprüngliche Kolab Groupware (Version 2) wurde von der <a href="
-"\"%1\">Kolab Systems AG</a> entwickelt. Die Firma wurde im Jahre 2010 in "
-"Zürich\n"
+"Die ursprüngliche Kolab Groupware (Version 2) wurde von der <a href=\"%1\">"
+"Kolab Systems AG</a> entwickelt. Die Firma wurde im Jahre 2010 in Z&uuml;"
+"rich\n"
 "gegründet. Der untenstehende Text bezieht sich auf die neueste Version von "
-"Kolab. Die Fortsetzung des Kolab v2 Supports wird angeführt von "
+"Kolab. Die Fortsetzung des Kolab v2 Supports wird angeführt von <ahref=\"%2\""
+">\n"
+"DAS-NETZWERKTEAM</a>.\n"
 
 #: data/templates/skolabgroupware.tpl:51
-#, fuzzy
 msgid ""
 "<a href=\"%1\">Kolab Systems AG</a> is the global leader\n"
 "in Kolab Technology. Together with its partners in the Kolab Enterprise\n"
@@ -308,8 +289,6 @@ msgid ""
 "professional consulting, support and warranties to enable productivity\n"
 "and collaboration.\n"
 msgstr ""
-"\n"
-"\n"
 "<a href=\"%1\">Kolab Systems AG</a> ist global führend in der\n"
 "Kolab Technologie. Zusammen mit ihren Partnern in der Kolab\n"
 "Enterprise Gemeinschaft bietet Kolab Systems sowohl Qualitätssicherung, "
@@ -321,25 +300,20 @@ msgstr ""
 "bietet Nutzern der Kolab Groupware Lösung die richtige Mischung aus\n"
 "professionellem Consulting, Support und Gewährleistung, um Produktivität \n"
 "und Zusammenarbeit zu ermöglichen.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:63
 msgid "Former Kolab Contributors"
 msgstr "Frühere Mitwirkende an der Kolab Entwicklung"
 
 #: data/templates/skolabgroupware.tpl:66
-#, fuzzy
 msgid ""
 "The former Kolab Groupware (version 2) development was mainly driven by\n"
 "the companies listed below (in alphabetical order):\n"
 msgstr ""
-"\n"
-"\n"
 "Die ehemalige Entwicklung der Kolab Groupware (Version 2) wurde "
 "hauptsächlich\n"
 "von den unten (in alphabetischer Reihenfolge) aufgelisteten Firmen "
-"vorangetrieben :\n"
-"\n"
+"vorangetrieben:\n"
 
 #: data/templates/skolabgroupware.tpl:77
 msgid "...and many many contributors from the Kolab v2 community."
@@ -446,7 +420,6 @@ msgid "Back to list of shared folders"
 msgstr "Zurück zur Liste der gemeinsam genutzten Ordner"
 
 #: data/templates/addresslist.tpl:8 data/templates/addrlistall.tpl:8
-#, fuzzy
 msgid "(only external addresses without a Skolab user account)"
 msgstr "(nur externe Adresse ohne Skolab-Benutzerkonto)"
 
@@ -500,6 +473,10 @@ msgid ""
 "href=\"%2\">DAS-NETZWERKTEAM</a>, which works in collaboration with and as\n"
 "part of many other communities and projects to bring you this software.\n"
 msgstr ""
+"Dieser Server läuft mit der Skolab Groupware Lösung. Skolab Groupware ist <a "
+"href=\"%1\">Freie Software</a>, entwickelt von <a href=\"%2\">DAS-"
+"NETZWERKTEAM</a>. Wir arbeiten zusammen mit vielen anderen Communities und "
+"Projekten, um diese Software hervorzubringen.\n"
 
 #: data/templates/technology.tpl:17
 msgid ""
