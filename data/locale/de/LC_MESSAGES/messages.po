@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-12 13:51+0200\n"
-"PO-Revision-Date: 2017-09-12 11:59+0000\n"
+"PO-Revision-Date: 2017-09-13 19:47+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/skolab-"
 "groupware/webadmin/de/>\n"
@@ -484,6 +484,8 @@ msgid ""
 "Groupware\n"
 "Project is a part of and builds upon include:\n"
 msgstr ""
+"Dieser Server basiert auf der Arbeit dieser Freier Software Communities und "
+"Projekte, von denen die Skolab Groupware ein Teil ist, bzw. darauf aufbaut:\n"
 
 #: data/templates/technology.tpl:21
 msgid "(Mail Scanner)"
@@ -499,7 +501,7 @@ msgstr "(Virenscanner)"
 
 #: data/templates/technology.tpl:24
 msgid "(IMAP Server &amp; Database)"
-msgstr ""
+msgstr "(IMAP Server &amp; Database)"
 
 #: data/templates/technology.tpl:25
 msgid "(LDAP Server)"
@@ -515,40 +517,44 @@ msgstr "(Spamfilter)"
 
 #: data/templates/technology.tpl:28
 msgid "(Web client)"
-msgstr ""
+msgstr "(Webmailer)"
 
 #: data/templates/technology.tpl:29 data/templates/technology.tpl:30
 msgid "(Server side scripting & glue)"
-msgstr ""
+msgstr "(server-seitige Skripte & ,,Klebstoff'')"
 
 #: data/templates/technology.tpl:31
 msgid "(This interface)"
-msgstr ""
+msgstr "(Diese Web-Oberfläche)"
 
 #: data/templates/technology.tpl:34
 msgid "Kudos to Contributors of Skolab Groupware"
-msgstr ""
+msgstr "Kudos an Beitragende der Skolab Groupware"
 
 #: data/templates/technology.tpl:39 data/templates/technology.tpl:75
 msgid ""
 "...and anyone we forgot. Please let us know at <a href=\"%1\">Skolab "
 "Groupware Project</a> on Github, so we can add you to this list."
 msgstr ""
+"...und jeden, den wir vergessen haben. Lass uns dies ggf. bitte via <a href="
+"\"%1\">Skolab Groupware Projekt</a> auf Github wissen, so dass wir dich zur "
+"obigen Liste hinzufügen können."
 
 #: data/templates/technology.tpl:42
 msgid "Kudos to the original Kolab (version 2) Authors"
-msgstr ""
+msgstr "Kudos an die ursprünglichen Autoren von Kolab (Version 2)"
 
 #: data/templates/technology.tpl:44
 msgid ""
 "Principal contributors of the Kolab Groupware Solution (which Skolab\n"
 "Groupware has been derived from) are (in alphabetical order):\n"
 msgstr ""
+"Die Hauptmitwirkenden an der Kolab Groupware Lösung (von der Skolab "
+"Groupware abgezweigt wurde) sind (in alphabetischer Reihenfolge):\n"
 
 #: data/templates/about.tpl:8
-#, fuzzy
 msgid "Skolab Groupware Solution"
-msgstr "Kolab Groupware login"
+msgstr "Skolab Groupware Lösung"
 
 #: data/templates/about.tpl:10
 msgid ""
@@ -556,6 +562,9 @@ msgid ""
 "Software</a> Personal Information Management (PIM) solution developed by\n"
 "<a href=%2>DAS-NETZWERKTEAM</a>.\n"
 msgstr ""
+"Dies ist ein Server basierend auf der  Skolab Groupware Lösung, eine von<a "
+"href=%2>DAS-NETZWERKTEAM</a> als <a href=%1>Freie Software</a> entwickelte "
+"PIM Lösung (Personal Information Management).\n"
 
 #: data/templates/about.tpl:17
 msgid ""
@@ -564,6 +573,11 @@ msgid ""
 "solutions must be sustained, so we started working on the contiuation of\n"
 "Kolab v2 under a slightly different name: Skolab Groupware.\n"
 msgstr ""
+"Das Projekt wurde von einer alten Version (v2) der Kolab Groupware "
+"abgezweigt. Die Arbeiten hierfür begannen 2017 während der Debian Konferenz "
+"in Montréal. Gute und funktionierende Lösungen müssen erhalten bleiben, also "
+"nahmen wir uns die Fortsetzung von Kolab v2 unter einem leicht veränderten "
+"Namen vor: Skolab Groupware.\n"
 
 #: data/templates/about.tpl:25
 msgid ""
@@ -572,50 +586,66 @@ msgid ""
 "for its users. If you are interested in the technology, you can read\n"
 "more about it <a href=%1>here</a>.\n"
 msgstr ""
+"Jede Installation der Skolab Groupware Lösung würde normalerweise einen oder "
+"mehrere Server wie diesem bestehen, in Kombination mit einer Vielzahl von "
+"Clients für die Benutzer. Falls Interesse an der Technologie besteht, kann "
+"man <a href=%1>hier</a> mehr darüber nachlesen.\n"
 
 #: data/templates/about.tpl:32
-#, fuzzy
 msgid "Why Skolab?"
-msgstr "Über Kolab"
+msgstr "Warum Kolab?"
 
 #: data/templates/about.tpl:35
 msgid ""
 "There is a wide variety of reasons why Skolab should be your choice. Here "
 "are only listed several of them...\n"
 msgstr ""
+"Es gibt eine Vielzahl von Gründen warum Ihre Wahl auf Skolab fallen sollte. "
+"Hier sind nur einige davon aufgeführt...\n"
 
 #: data/templates/about.tpl:40
 msgid ""
 "you want a solution that seamlessly integrates into your existing environment"
 msgstr ""
+"Sie möchten eine Lösung, die sich nahtlos in bestehende Umgebungen "
+"integrieren lässt"
 
 #: data/templates/about.tpl:41
 msgid ""
 "you want full control over your data, with all the convenience of the cloud"
 msgstr ""
+"Sie möchten volle Kontrolle über Ihre Daten, mit allen Vorteilen, die die "
+"Cloud zu bieten hat"
 
 #: data/templates/about.tpl:42
 msgid "you have elevated security needs for your data"
-msgstr ""
+msgstr "Sie haben gehobene Sicherheitsansprüche für Ihre Daten"
 
 #: data/templates/about.tpl:43
 msgid ""
 "you have a very large installation, or want to reduce your hardware footprint"
 msgstr ""
+"Sie betreiben eine sehr große Installation, oder mächten Ihren Hardware-"
+"Fußabdruck reduzieren"
 
 #: data/templates/about.tpl:44
 msgid "you have to operate in diverse environments and installations"
 msgstr ""
+"Sie müssen innerhalb von verschiedenen Umgebungen und Installationen "
+"operieren"
 
 #: data/templates/about.tpl:45
 msgid ""
 "strategic issues are important to you, e.g. you need sovereignty of the "
 "software you deploy"
 msgstr ""
+"strategische Themen sind Ihnen wichtig, z.Bsp. brauchen Sie Souveränität "
+"über die Software, die Sie ausrollen"
 
 #: data/templates/about.tpl:46
 msgid "your users should be fully productive whether they are on- or offline"
 msgstr ""
+"Ihre Benutzer sollten voll produktionsfähig sein, egal ob online oder offline"
 
 #: data/templates/about.tpl:47
 msgid "you want the flexibility to create solutions for your specialised needs"
@@ -669,60 +699,50 @@ msgid ""
 msgstr ""
 
 #: data/templates/versions.tpl:8
-#, fuzzy
 msgid "Skolab Groupware Server Version"
-msgstr "Kolab Groupware login"
+msgstr "Version des Skolab Groupware Servers"
 
 #: data/templates/versions.tpl:10
-#, fuzzy
 msgid "Skolab Groupware Server Component Versions"
-msgstr "Kolab Groupware login"
+msgstr "Versionen der Skolab Groupware Komponenten"
 
 #: data/templates/versions.tpl:12
 msgid "PEAR/Horde Versions"
 msgstr "PEAR/Horde-Versionen"
 
 #: data/templates/versions.tpl:15
-#, fuzzy
 msgid "Kolab2 Patched OpenPKG Package Versions"
-msgstr "Kolab2-Gepatchte-OpenPKG-Paket-Versionen"
+msgstr "Skolab-Gepatchte-OpenPKG-Paket-Versionen"
 
 #: data/templates/versions.tpl:17
-#, fuzzy
 msgid "OpenPKG Version"
 msgstr "OpenPKG-Version"
 
 #: data/templates/forward.tpl:7
-#, fuzzy
 msgid "Email Forwarding"
 msgstr "E-Mail-Weiterleitung"
 
 #: data/templates/forward.tpl:10
-#, fuzzy
 msgid "Activate email forwarding"
-msgstr "E-Mail-Weiterleitung"
+msgstr "E-Mail-Weiterleitung aktivieren"
 
 #: data/templates/forward.tpl:11
-#, fuzzy
 msgid "Forward mail to"
-msgstr "E-Mail weiterleiten"
+msgstr "E-Mail weiterleiten an"
 
 #: data/templates/forward.tpl:12
 msgid "Keep copy on server"
 msgstr "Kopie auf dem Server belassen"
 
 #: data/templates/settings.tpl:7
-#, fuzzy
 msgid "Skolab Server Settings"
-msgstr "Kolab-Server-Einstellungen"
+msgstr "Einstellungen für den Skolab-Server"
 
 #: data/templates/settings.tpl:11
-#, fuzzy
 msgid "Administrative email addresses"
 msgstr "Administrative E-Mail-Adressen"
 
 #: data/templates/settings.tpl:13
-#, fuzzy
 msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
@@ -732,29 +752,27 @@ msgid ""
 "remove people from the lists like any other distribution list"
 msgstr ""
 "Sie haben noch kein Konto zum Empfang von Nachrichten an die administrativen "
-"E-Mail-Adressen hostmaster@ihredomaene.tld, postmaster@ihredomaene.tld und "
-"abuse@ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse des "
-"Kolab-Kontos unten ein und betätigen Sie die Schaltfläche, um eine "
-"Verteilerliste für jede dieser Adressen zu erzeugen. Sie können dann später "
-"Adressaten diesen Listen hinzufügen oder davon entfernen wie mit jeder "
-"anderen Verteilerliste"
+"E-Mail-Adressen hostmaster@ihredomaene.tld, postmaster@ihredomaene.tld, "
+"MAILER-DAEMON@ihredomaene.tld, abuse@ihredomaene.tld und virusalert@"
+"ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse des Skolab-"
+"Kontos unten ein und betätigen Sie die Schaltfläche, um eine Verteilerliste "
+"für jede dieser Adressen zu erzeugen. Sie können dann später Adressaten "
+"diesen Listen hinzufügen oder davon entfernen wie mit jeder anderen "
+"Verteilerliste"
 
 #: data/templates/settings.tpl:18
-#, fuzzy
 msgid ""
 "Email address of account that should receive administrative mail for domain"
 msgstr ""
-"E-Mail-Adresse des Kontos, das die administrativen Nachrichten empfangen "
-"soll:"
+"E-Mail-Adresse des Kontos, das die administrativen Nachrichten empfangen soll"
 
 #: data/templates/settings.tpl:20
 msgid "Create Distribution Lists"
 msgstr "Verteilerlisten anlegen"
 
 #: data/templates/settings.tpl:29
-#, fuzzy
 msgid "Enable or Disable individual Services"
-msgstr "Einzelne Dienste einschalten oder abschalten"
+msgstr "Einzelne Dienste verwenden oder nicht verwenden"
 
 #: data/templates/settings.tpl:34
 msgid "Service"
@@ -762,15 +780,13 @@ msgstr "Dienst"
 
 #: data/templates/settings.tpl:34
 msgid "Enabled"
-msgstr "Eingeschaltet"
+msgstr "soll verwendet werden"
 
 #: data/templates/settings.tpl:48
-#, fuzzy
 msgid "Quota settings"
 msgstr "Plattenplatz-Kontingent-Einstellungen"
 
 #: data/templates/settings.tpl:53
-#, fuzzy
 msgid "Warn users when they have used"
 msgstr "Benutzer warnen, wenn der Verbrauch"
 
@@ -780,20 +796,17 @@ msgid "% of their quota"
 msgstr "% des zugestandenen Kontingents beträgt"
 
 #: data/templates/settings.tpl:59
-#, fuzzy
 msgid "Free/Busy settings"
 msgstr "Frei/Belegt-Einstellungen"
 
 #: data/templates/settings.tpl:65
-#, fuzzy
 msgid "Allow unauthenticated downloading of Free/Busy information"
 msgstr ""
 "Unauthentifiziertes Herunterladen von Frei/Belegt-Informationen erlauben"
 
 #: data/templates/settings.tpl:76
-#, fuzzy
 msgid "When creating free/busy lists, include data from"
-msgstr "Beim Erzeugen von Frei/Belegt-Listen, Daten aus "
+msgstr "Beim Erzeugen von Frei/Belegt-Listen, Daten aus"
 
 #: data/templates/settings.tpl:76
 msgid "days in the past"
