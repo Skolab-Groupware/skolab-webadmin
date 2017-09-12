@@ -7,16 +7,14 @@
 <div class="contenttext">
 <h1>{t}Skolab Groupware Solution{/t}</h1>
 <p>
-{t escape=no 1="http://fsfe.org/about/basics/freesoftware" 2="http://das-netzwerkteam.de/"}
-This is the server of the Skolab Groupware Solution, a <a href=%1>Free
+{t escape=no 1="http://fsfe.org/about/basics/freesoftware" 2="http://das-netzwerkteam.de/"}This is the server of the Skolab Groupware Solution, a <a href=%1>Free
 Software</a> Personal Information Management (PIM) solution developed by
 <a href=%2>DAS-NETZWERKTEAM</a>.
 {/t}
 </p>
 
 <p>
-{t escape=no}
-The project was derived from an old version (v2) of the Kolab Groupware
+{t escape=no}The project was derived from an old version (v2) of the Kolab Groupware
 starting in 2017 at the Debian Conference in Montreal. Good and working
 solutions must be sustained, so we started working on the contiuation of
 Kolab v2 under a slightly different name: Skolab Groupware.
@@ -24,8 +22,7 @@ Kolab v2 under a slightly different name: Skolab Groupware.
 </p>
 
 <p>
-{t escape=no 1=$webserver_web_prefix|cat:"/about/technology.php"}
-Any installation of the Skolab Groupware Solution would normally include
+{t escape=no 1=$webserver_web_prefix|cat:"/about/technology.php"}Any installation of the Skolab Groupware Solution would normally include
 one or more of these servers, in combination with a variety of clients
 for its users. If you are interested in the technology, you can read
 more about it <a href=%1>here</a>.
@@ -35,8 +32,7 @@ more about it <a href=%1>here</a>.
 <h2>{t}Why Skolab?{/t}</h2>
 
 <p>
-{t escape=no 1="http://files.kolabsys.com/Public/Handouts/"}
-There is a wide variety of reasons why Skolab should be your choice. Here are only listed several of them...
+{t escape=no 1="http://files.kolabsys.com/Public/Handouts/"}There is a wide variety of reasons why Skolab should be your choice. Here are only listed several of them...
 {/t}
 </p>
 
@@ -62,14 +58,14 @@ There is a wide variety of reasons why Skolab should be your choice. Here are on
 <h2>{t escape=no}Warranties &amp; Commercial Support{/t}</h2>
 
 <p>
-{t escape=no 1="http://fsfe.org/about/basics/freesoftware"}
-The Skolab Groupware Server is 100% Free Software. It is provided by DAS-NETZWERKTEAM and you can use it to the fullest extent and any purpose. There are no license costs or other obligations other than those set forth in the respective Free Software licenses of the various components. <b>There are no warranties or guarantees of any kind, nor is there any guaranteed support. You are running this software entirely at your own risk.</b>
+{t escape=no 1="http://fsfe.org/about/basics/freesoftware"}The Skolab Groupware Server is 100% Free Software. It is provided by DAS-NETZWERKTEAM and you can use it to the fullest
+extent and any purpose. There are no license costs or other obligations other than those set forth in the respective Free Software licenses of the various components. <b>There are no warranties or guarantees of any kind, nor is there any guaranteed support. You are running this software entirely at your own risk.</b>
 {/t}
 </p>
 
 <p>
-{t escape=no 1="https://das-netzwerkteam.de"}
-There is a wide variety of commercial support options and warranties imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact us.
+{t escape=no 1="https://das-netzwerkteam.de"}There is a wide variety of commercial support options and warranties imaginable  available by
+<a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact us.
 {/t}
 </p>
 

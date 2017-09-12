@@ -5,7 +5,7 @@
   End:
 *}
 <div class="contenttext">
-<h3>{t}(only external addresses without a kolab user account){/t}</h3>
+<h3>{t}(only external addresses without a Skolab user account){/t}</h3>
 </div>
 <div class="align_center">
 <a href="{$self_url}?alphalimit="> {t}[ ALL ]{/t} </a>&nbsp;&nbsp;

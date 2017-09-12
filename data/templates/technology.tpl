@@ -7,16 +7,14 @@
 <div class="contenttext">
 <h1>{t}Skolab Groupware Solution - Technologies{/t}</h1>
 <p>
-{t escape="no" 1="http://fsfe.org/about/basics/freesoftware" 2="https://das-netzwerkteam.de"}
-This is the server of the Skolab Groupware Solution. It is <a
-href="%1">Free Software</a> developed by the <a
+{t escape="no" 1="http://fsfe.org/about/basics/freesoftware" 2="https://das-netzwerkteam.de"}This is the server of the Skolab Groupware Solution. It is <a href="%1">
+Free Software</a> developed by the <a
 href="%2">DAS-NETZWERKTEAM</a>, which works in collaboration with and as
 part of many other communities and projects to bring you this software.
 {/t}
 </p>
 <div>
-{t escape="no"}
-For this server, Free Software communities and projects that the Skolab Groupware
+{t escape="no"}For this server, Free Software communities and projects that the Skolab Groupware
 Project is a part of and builds upon include:
 {/t}
 <ul>
@@ -43,8 +41,7 @@ Project is a part of and builds upon include:
 </div>
 <h2>{t}Kudos to the original Kolab (version 2) Authors{/t}</h2>
 <p>
-{t escape="no"}
-Principal contributors of the Kolab Groupware Solution (which Skolab
+{t escape="no"}Principal contributors of the Kolab Groupware Solution (which Skolab
 Groupware has been derived from) are (in alphabetical order):
 {/t}
 </p>
@@ -81,11 +78,15 @@ Groupware has been derived from) are (in alphabetical order):
 <hr>
 <small>
   <p>
+    {t escape=no 1="http://www.php.net/"}
     This product includes PHP, freely available from
-    http://www.php.net/
+    <a href="%1">%1</a>
+    {/t}
   </p><p>
+    {t escape=no 1="http://www.openssl.org/"}
     This product includes software developed by the OpenSSL Project
-    for use in the OpenSSL Toolkit (http://www.openssl.org/)
+    for use in the OpenSSL Toolkit (<a href="%1">%1</a>)
+    {/t}
   </p>
 </small>
 </div>

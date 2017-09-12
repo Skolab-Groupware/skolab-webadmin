@@ -5,7 +5,7 @@
   End:
 *}
 <div class="contenttext">
-{t}(only external addresses without a kolab user account){/t}
+{t}(only external addresses without a Skolab user account){/t}
 </div>
 
 <div class="contenttable">
