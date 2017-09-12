@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin Italian\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-11 13:59+0200\n"
+"POT-Creation-Date: 2017-09-12 13:51+0200\n"
 "PO-Revision-Date: 2007-11-21 14:56+0100\n"
 "Last-Translator: Yvette Agostini <yvette@yvetteagostini.it>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -214,73 +214,56 @@ msgstr ""
 
 #: data/templates/skolabgroupware.tpl:10
 msgid ""
-"\n"
-"\n"
 "The Skolab Groupware was derived from Kolab (version2) to provide legacy\n"
 "support for groupware servers that started with Kolab (version 2). For some "
 "of\n"
 "these installations, migrating the systems from non-supported Kolab v2 to\n"
 "a higher version of Kolab or some other groupware may not make sense.\n"
-"\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:21
-msgid ""
-"\n"
-"\n"
-"This is where the <b>Skolab Groupware</b> comes in for you...\n"
-"\n"
-"</p>\n"
+#: data/templates/skolabgroupware.tpl:18
+msgid "This is where the <b>Skolab Groupware</b> comes in for you...\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:28
+#: data/templates/skolabgroupware.tpl:22
 #, fuzzy
-msgid "How To Contribute to Skolab Groupware"
+msgid "How To Contribute to Skolab Groupware?"
 msgstr "Benvenuto all'interfaccia di amministrazione di Kolab"
 
-#: data/templates/skolabgroupware.tpl:31
+#: data/templates/skolabgroupware.tpl:25
 msgid ""
-"\n"
-"\n"
 "The Skolab Groupware is maintained on <a href=\"%1\">Github</a>. Please\n"
 "browse the Git repositories related to our project and provide issue\n"
 "reports and code contributions there.\n"
-"\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:40
+#: data/templates/skolabgroupware.tpl:31
 #, fuzzy
 msgid "Professional Skolab Groupware Support"
 msgstr "Kolab Groupware login"
 
-#: data/templates/skolabgroupware.tpl:43
+#: data/templates/skolabgroupware.tpl:34
 msgid ""
-"\n"
-"\n"
 "DAS-NETZWERKTEAM provides basic support for the Skolab Groupware. Please\n"
 "visit our <a href=\"%1\">web page</a> to get in touch.\n"
-"\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:51
+#: data/templates/skolabgroupware.tpl:39
 #, fuzzy
 msgid "Former Kolab Development"
 msgstr "Altri partecipanti:"
 
-#: data/templates/skolabgroupware.tpl:54
+#: data/templates/skolabgroupware.tpl:42
 msgid ""
-"\n"
-"\n"
 "The original Kolab Groupware (version 2) has been developed at Kolab\n"
-"Systems AG. The company was founded in Z&uuml;rich in 2010, <a\n"
-"href=\"%1\">Kolab Systems AG</a>. The text below applies to the latest\n"
-"version of Kolab. The Kolab v2 legacy support is now provided by "
+"Systems AG. The company was founded in Z&uuml;rich in 2010, <a href=\"%1\">\n"
+"Kolab Systems AG</a>. The text below applies to the latest\n"
+"version of Kolab. The Kolab v2 legacy support is now provided by <a\n"
+"href=\"%2\">DAS-NETZWERKTEAM</a>.\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:65
+#: data/templates/skolabgroupware.tpl:51
 msgid ""
-"\n"
-"\n"
 "<a href=\"%1\">Kolab Systems AG</a> is the global leader\n"
 "in Kolab Technology. Together with its partners in the Kolab Enterprise\n"
 "Community, Kolab Systems provides quality assurance, integration,\n"
@@ -290,25 +273,39 @@ msgid ""
 "provides users of the Kolab Groupware Solution with the right level of\n"
 "professional consulting, support and warranties to enable productivity\n"
 "and collaboration.\n"
-"\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:80
+#: data/templates/skolabgroupware.tpl:63
 #, fuzzy
 msgid "Former Kolab Contributors"
 msgstr "Altri partecipanti:"
 
-#: data/templates/skolabgroupware.tpl:83
+#: data/templates/skolabgroupware.tpl:66
 msgid ""
-"\n"
-"\n"
 "The former Kolab Groupware (version 2) development was mainly driven by\n"
 "the companies listed below (in alphabetical order):\n"
-"\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:97
+#: data/templates/skolabgroupware.tpl:77
 msgid "...and many many contributors from the Kolab v2 community."
+msgstr ""
+
+#: data/templates/skolabgroupware.tpl:84 data/templates/technology.tpl:81
+#: data/templates/about.tpl:75
+msgid ""
+"\n"
+"    This product includes PHP, freely available from\n"
+"    <a href=\"%1\">%1</a>\n"
+"    "
+msgstr ""
+
+#: data/templates/skolabgroupware.tpl:89 data/templates/technology.tpl:86
+#: data/templates/about.tpl:80
+msgid ""
+"\n"
+"    This product includes software developed by the OpenSSL Project\n"
+"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+"    "
 msgstr ""
 
 #: data/templates/login.tpl:7
@@ -399,7 +396,7 @@ msgstr "Ritorna alla lista degli utenti"
 
 #: data/templates/addresslist.tpl:8 data/templates/addrlistall.tpl:8
 #, fuzzy
-msgid "(only external addresses without a kolab user account)"
+msgid "(only external addresses without a Skolab user account)"
 msgstr "(solo indirizzi esterni senza account utente Kolab)"
 
 #: data/templates/addresslist.tpl:14 data/templates/maintainerlistall.tpl:13
@@ -449,79 +446,76 @@ msgstr "Kolab Groupware login"
 
 #: data/templates/technology.tpl:10
 msgid ""
-"\n"
-"This is the server of the Skolab Groupware Solution. It is <a\n"
-"href=\"%1\">Free Software</a> developed by the <a\n"
+"This is the server of the Skolab Groupware Solution. It is <a href=\"%1\">\n"
+"Free Software</a> developed by the <a\n"
 "href=\"%2\">DAS-NETZWERKTEAM</a>, which works in collaboration with and as\n"
 "part of many other communities and projects to bring you this software.\n"
 msgstr ""
 
-#: data/templates/technology.tpl:18
+#: data/templates/technology.tpl:17
 msgid ""
-"\n"
 "For this server, Free Software communities and projects that the Skolab "
 "Groupware\n"
 "Project is a part of and builds upon include:\n"
 msgstr ""
 
-#: data/templates/technology.tpl:23
+#: data/templates/technology.tpl:21
 msgid "(Mail Scanner)"
 msgstr ""
 
-#: data/templates/technology.tpl:24
+#: data/templates/technology.tpl:22
 msgid "(HTTP Server)"
 msgstr "(Server HTTP)"
 
-#: data/templates/technology.tpl:25
+#: data/templates/technology.tpl:23
 msgid "(Virus Scanner)"
 msgstr ""
 
-#: data/templates/technology.tpl:26
+#: data/templates/technology.tpl:24
 msgid "(IMAP Server &amp; Database)"
 msgstr ""
 
-#: data/templates/technology.tpl:27
+#: data/templates/technology.tpl:25
 msgid "(LDAP Server)"
 msgstr "(Server LDAP)"
 
-#: data/templates/technology.tpl:28
+#: data/templates/technology.tpl:26
 msgid "(MTA)"
 msgstr "(Server SMTP)"
 
-#: data/templates/technology.tpl:29
+#: data/templates/technology.tpl:27
 #, fuzzy
 msgid "(SPAM Filter)"
 msgstr "Filtro"
 
-#: data/templates/technology.tpl:30
+#: data/templates/technology.tpl:28
 msgid "(Web client)"
 msgstr ""
 
-#: data/templates/technology.tpl:31 data/templates/technology.tpl:32
+#: data/templates/technology.tpl:29 data/templates/technology.tpl:30
 msgid "(Server side scripting & glue)"
 msgstr ""
 
-#: data/templates/technology.tpl:33
+#: data/templates/technology.tpl:31
 msgid "(This interface)"
 msgstr ""
 
-#: data/templates/technology.tpl:36
+#: data/templates/technology.tpl:34
 msgid "Kudos to Contributors of Skolab Groupware"
 msgstr ""
 
-#: data/templates/technology.tpl:41 data/templates/technology.tpl:78
+#: data/templates/technology.tpl:39 data/templates/technology.tpl:75
 msgid ""
 "...and anyone we forgot. Please let us know at <a href=\"%1\">Skolab "
 "Groupware Project</a> on Github, so we can add you to this list."
 msgstr ""
 
-#: data/templates/technology.tpl:44
+#: data/templates/technology.tpl:42
 msgid "Kudos to the original Kolab (version 2) Authors"
 msgstr ""
 
-#: data/templates/technology.tpl:46
+#: data/templates/technology.tpl:44
 msgid ""
-"\n"
 "Principal contributors of the Kolab Groupware Solution (which Skolab\n"
 "Groupware has been derived from) are (in alphabetical order):\n"
 msgstr ""
@@ -533,140 +527,120 @@ msgstr "Kolab Groupware login"
 
 #: data/templates/about.tpl:10
 msgid ""
-"\n"
 "This is the server of the Skolab Groupware Solution, a <a href=%1>Free\n"
 "Software</a> Personal Information Management (PIM) solution developed by\n"
 "<a href=%2>DAS-NETZWERKTEAM</a>.\n"
 msgstr ""
 
-#: data/templates/about.tpl:18
+#: data/templates/about.tpl:17
 msgid ""
-"\n"
 "The project was derived from an old version (v2) of the Kolab Groupware\n"
 "starting in 2017 at the Debian Conference in Montreal. Good and working\n"
 "solutions must be sustained, so we started working on the contiuation of\n"
 "Kolab v2 under a slightly different name: Skolab Groupware.\n"
 msgstr ""
 
-#: data/templates/about.tpl:27
+#: data/templates/about.tpl:25
 msgid ""
-"\n"
 "Any installation of the Skolab Groupware Solution would normally include\n"
 "one or more of these servers, in combination with a variety of clients\n"
 "for its users. If you are interested in the technology, you can read\n"
 "more about it <a href=%1>here</a>.\n"
 msgstr ""
 
-#: data/templates/about.tpl:35
+#: data/templates/about.tpl:32
 #, fuzzy
 msgid "Why Skolab?"
 msgstr "Informazioni su Kolab"
 
-#: data/templates/about.tpl:38
+#: data/templates/about.tpl:35
 msgid ""
-"\n"
 "There is a wide variety of reasons why Skolab should be your choice. Here "
 "are only listed several of them...\n"
 msgstr ""
 
-#: data/templates/about.tpl:44
+#: data/templates/about.tpl:40
 msgid ""
 "you want a solution that seamlessly integrates into your existing environment"
 msgstr ""
 
-#: data/templates/about.tpl:45
+#: data/templates/about.tpl:41
 msgid ""
 "you want full control over your data, with all the convenience of the cloud"
 msgstr ""
 
-#: data/templates/about.tpl:46
+#: data/templates/about.tpl:42
 msgid "you have elevated security needs for your data"
 msgstr ""
 
-#: data/templates/about.tpl:47
+#: data/templates/about.tpl:43
 msgid ""
 "you have a very large installation, or want to reduce your hardware footprint"
 msgstr ""
 
-#: data/templates/about.tpl:48
+#: data/templates/about.tpl:44
 msgid "you have to operate in diverse environments and installations"
 msgstr ""
 
-#: data/templates/about.tpl:49
+#: data/templates/about.tpl:45
 msgid ""
 "strategic issues are important to you, e.g. you need sovereignty of the "
 "software you deploy"
 msgstr ""
 
-#: data/templates/about.tpl:50
+#: data/templates/about.tpl:46
 msgid "your users should be fully productive whether they are on- or offline"
 msgstr ""
 
-#: data/templates/about.tpl:51
+#: data/templates/about.tpl:47
 msgid "you want the flexibility to create solutions for your specialised needs"
 msgstr ""
 
-#: data/templates/about.tpl:52
+#: data/templates/about.tpl:48
 msgid ""
 "you want Free Software/Open Source, but also want the professional support "
 "without having to resort to proprietary lock-in"
 msgstr ""
 
-#: data/templates/about.tpl:53
+#: data/templates/about.tpl:49
 msgid ""
 "you want a slim solution, that is +/- feature complete and not resource "
 "hungry on your server"
 msgstr ""
 
-#: data/templates/about.tpl:56
+#: data/templates/about.tpl:52
 msgid "More Information"
 msgstr ""
 
-#: data/templates/about.tpl:58
+#: data/templates/about.tpl:54
 msgid "Skolab Groupware Project on Github (Source Code / Development)"
 msgstr ""
 
-#: data/templates/about.tpl:59
+#: data/templates/about.tpl:55
 msgid "Skolab Groupware Development at DAS-NETZWERKTEAM"
 msgstr ""
 
-#: data/templates/about.tpl:62
+#: data/templates/about.tpl:58
 msgid "Warranties &amp; Commercial Support"
 msgstr ""
 
-#: data/templates/about.tpl:65
+#: data/templates/about.tpl:61
 msgid ""
-"\n"
 "The Skolab Groupware Server is 100% Free Software. It is provided by DAS-"
-"NETZWERKTEAM and you can use it to the fullest extent and any purpose. There "
-"are no license costs or other obligations other than those set forth in the "
-"respective Free Software licenses of the various components. <b>There are no "
-"warranties or guarantees of any kind, nor is there any guaranteed support. "
-"You are running this software entirely at your own risk.</b>\n"
+"NETZWERKTEAM and you can use it to the fullest\n"
+"extent and any purpose. There are no license costs or other obligations "
+"other than those set forth in the respective Free Software licenses of the "
+"various components. <b>There are no warranties or guarantees of any kind, "
+"nor is there any guaranteed support. You are running this software entirely "
+"at your own risk.</b>\n"
 msgstr ""
 
-#: data/templates/about.tpl:71
+#: data/templates/about.tpl:67
 msgid ""
-"\n"
 "There is a wide variety of commercial support options and warranties "
-"imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of "
-"partners. Please contact us.\n"
-msgstr ""
-
-#: data/templates/about.tpl:79
-msgid ""
-"\n"
-"    This product includes PHP, freely available from\n"
-"    <a href=\"%1\">%1</a>\n"
-"    "
-msgstr ""
-
-#: data/templates/about.tpl:84
-msgid ""
-"\n"
-"    This product includes software developed by the OpenSSL Project\n"
-"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-"    "
+"imaginable  available by\n"
+"<a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact "
+"us.\n"
 msgstr ""
 
 #: data/templates/versions.tpl:8
