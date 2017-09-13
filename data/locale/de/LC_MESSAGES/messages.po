@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-12 13:51+0200\n"
-"PO-Revision-Date: 2017-09-13 19:47+0000\n"
+"PO-Revision-Date: 2017-09-13 20:17+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/skolab-"
 "groupware/webadmin/de/>\n"
@@ -813,43 +813,37 @@ msgid "days in the past"
 msgstr "vergangenen Tagen verwenden"
 
 #: data/templates/settings.tpl:82
-#, fuzzy
 msgid "Privileged Networks"
 msgstr "Privilegierte Netzwerke"
 
 #: data/templates/settings.tpl:86
-#, fuzzy
 msgid ""
 "Networks allowed to relay and send mail through unauthenticated SMTP "
 "connections to the Skolab server (comma separated networks in x.x.x.x/y "
 "format):"
 msgstr ""
 "Netzwerke, die Nachrichten über unauthentifizierte SMTP-Verbindungen an den "
-"Kolab-Server weiterleiten und damit verschicken dürfen (durch Kommata "
+"Skolab-Server weiterleiten und damit verschicken dürfen (durch Kommata "
 "getrennte Liste von Netzwerken im Format x.x.x.x/y):"
 
 #: data/templates/settings.tpl:93
-#, fuzzy
 msgid "SMTP \\\"smarthost/relayhost\\\""
 msgstr "SMTP-\"Smarthost/Relayhost\""
 
 #: data/templates/settings.tpl:97
-#, fuzzy
 msgid ""
 "Smarthost (and optional port) to use to send outgoing mail (host.domain."
 "tld). Leave empty for no relayhost."
 msgstr ""
-"Smarthost (und optionaler Port) wird zum Verschicken ausgehender Nachrichten "
-"verwendet (host.domain.tld). Wenn Sie keinen solchen verwenden wollen, "
-"lassen Sie dieses Feld leer."
+"Smarthost (und optional der Port), der zum Verschicken ausgehender "
+"Nachrichten verwendet werden soll (host.domain.tld). Wenn Sie keinen solchen "
+"verwenden wollen, lassen Sie dieses Feld leer."
 
 #: data/templates/settings.tpl:105
-#, fuzzy
 msgid "Accept Internet Mail"
 msgstr "Nachrichten aus dem Internet akzeptieren"
 
 #: data/templates/settings.tpl:113
-#, fuzzy
 msgid ""
 "Accept mail from other domains over unauthenticated SMTP. This must be "
 "enabled if you want to use the Skolab Server to receive mail from other "
@@ -857,7 +851,7 @@ msgid ""
 "gateways that are within the privileged network."
 msgstr ""
 "Nachrichten aus anderen Domänen über nicht-authentifiziertes SMTP "
-"akzeptieren. Dies muß eingeschaltet werden, wenn der Kolab-Server "
+"akzeptieren. Dies muß eingeschaltet werden, wenn der Skolab-Server "
 "Nachrichten aus anderen Internet-Domänen empfangen können soll. Wenn dies "
 "ausgeschaltet ist, werden E-Mails nur von SMTP-Servern in den privilegierten "
 "Netzwerken angenommen."
@@ -876,19 +870,16 @@ msgid "Add"
 msgstr "Hinzufügen"
 
 #: data/templates/settings.tpl:150
-#, fuzzy
 msgid "Mail Filter Settings"
-msgstr "Meine Benutzereinstellungen"
+msgstr "e-Mail-Filter Einstellungen"
 
 #: data/templates/settings.tpl:155
-#, fuzzy
 msgid "Check messages for mismatching From header and envelope from."
 msgstr ""
 "Nachrichten darauf überprüfen, ob From-Kopfzeile und Umschlag (\"envelope\") "
 "nicht übereinstimmen."
 
 #: data/templates/settings.tpl:158
-#, fuzzy
 msgid ""
 "Use the Sender header instead of From for the above checks if Sender is "
 "present."
@@ -897,7 +888,6 @@ msgstr ""
 "obigen Überprüfungen verwenden."
 
 #: data/templates/settings.tpl:160
-#, fuzzy
 msgid "Action to take for messages that fail the check:"
 msgstr "Maßname für Nachrichten, deren Überprüfung fehlschlägt:"
 
@@ -908,14 +898,13 @@ msgid ""
 "header matches one of Skolab server"
 msgstr ""
 "Nachricht zurückweisen, sofern sie nicht von außen kommt, aber eine From-"
-"Kopfzeile enthält, die mit der Domäne des Kolab-Servers übereinstimmt. In "
+"Kopfzeile enthält, die mit der Domäne des Skolab-Servers übereinstimmt. In "
 "diesem Fall die From-Kopfzeile umschreiben, damit der Empfänger die mögliche "
 "Fälschung erkennen kann."
 
 #: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab Groupware Server Administration"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr "Willkommen zur Skolab-Groupware Server-Administration"
 
 #: data/templates/distlistall.tpl:13
 msgid "Listname"
@@ -953,9 +942,8 @@ msgstr "[ ANDERE ]"
 
 #: data/templates/userlisterror.tpl:18 data/templates/userlistall.tpl:20
 #: data/templates/addrlistall.tpl:21
-#, fuzzy
 msgid "Filter:"
-msgstr "Filter"
+msgstr "Filter:"
 
 #: data/templates/userlisterror.tpl:37 data/templates/addrlistall.tpl:40
 msgid "Filter"
@@ -990,9 +978,8 @@ msgid "Back to list of distribution lists"
 msgstr "Zurück zur Liste der Verteilerlisten"
 
 #: data/templates/sflistall.tpl:8
-#, fuzzy
 msgid "Shared folders"
-msgstr "Gemeinsam genutzter Ordner "
+msgstr "Gemeinsam genutzter Ordner"
 
 #: data/templates/sflistall.tpl:13
 msgid "Server"
@@ -1016,7 +1003,6 @@ msgid "NOTE:"
 msgstr "ANMERKUNG:"
 
 #: data/templates/systemaliasnagscreen.tpl:12
-#, fuzzy
 msgid ""
 "No account is configured to receive mail for administrative addresses. If "
 "you have not yet created an account for this, "
@@ -1033,7 +1019,6 @@ msgid "and then go"
 msgstr "und richten Sie danach"
 
 #: data/templates/systemaliasnagscreen.tpl:14
-#, fuzzy
 msgid "here"
 msgstr "hier"
 
@@ -1051,7 +1036,6 @@ msgid "Back to list of users"
 msgstr "Zurück zur Liste der Benutzer"
 
 #: data/templates/deliver.tpl:7
-#, fuzzy
 msgid "Email Delivery"
 msgstr "E-Mail-Zustellung"
 
@@ -1060,7 +1044,6 @@ msgid "Activate delivery to folder"
 msgstr ""
 
 #: data/templates/deliver.tpl:11
-#, fuzzy
 msgid "Deliver regular mail to folder"
 msgstr "Normale Nachrichten an den Ordner zustellen"
 
@@ -1082,21 +1065,18 @@ msgid "User Deleted, awaiting cleanup..."
 msgstr "Benutzer gelöscht, warte auf Aufräumaktion..."
 
 #: data/templates/welcome-admin.tpl:25
-#, fuzzy
 msgid "Administrator"
-msgstr "Administrator "
+msgstr "Administrator"
 
 #: data/templates/welcome-admin.tpl:34 lib/Skolab/Admin/include/menu.php:109
 msgid "Settings"
 msgstr "Einstellungen"
 
 #: data/templates/welcome-user.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab Groupware Server"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr "Willkommen auf dem Skolab-Groupware Server"
 
 #: data/templates/welcome-user.tpl:13
-#, fuzzy
 msgid "My settings"
 msgstr "Meine Benutzereinstellungen"
 
@@ -1364,9 +1344,8 @@ msgid "Restrict allowed recipients of SMTP messages"
 msgstr ""
 
 #: htdocs/user/user.php:527
-#, fuzzy
 msgid "One entry per line."
-msgstr "Eine Adresse pro Zeile"
+msgstr "Ein Eintrag pro Zeile."
 
 #: htdocs/user/user.php:538
 msgid ""
@@ -1403,9 +1382,9 @@ msgid "LDAP Error: could not rename %s to %s: %s"
 msgstr "LDAP-Fehler: Konnte %s nicht in %s umbenennen: %s"
 
 #: htdocs/user/user.php:758
-#, fuzzy, php-format
+#, php-format
 msgid "LDAP Error: could not modify %s: %s"
-msgstr "LDAP-Fehler: Konnte %s nicht in %s ändern: %s"
+msgstr "LDAP-Fehler: Konnte %s nicht ändern: %s"
 
 #: htdocs/user/user.php:764 htdocs/administrator/admin.php:209
 #: htdocs/addressbook/addr.php:230 htdocs/addressbook/addr.php:245
@@ -1658,7 +1637,9 @@ msgstr "Externe Adresse hinzufügen"
 #: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
 msgid "Addressbook entry DN could not be modified, distribution list <a href='"
-msgstr "Die Adresse wurde von der Verteilerliste '%s' entfernt."
+msgstr ""
+"Die DN des Adressebucheintrags konnte nicht geändert werden,  die "
+"Verteilerliste <a href='"
 
 #: htdocs/addressbook/addr.php:257
 #, php-format
@@ -2126,9 +2107,8 @@ msgid "About Skolab"
 msgstr "Über Kolab"
 
 #: lib/Skolab/Admin/include/menu.php:118
-#, fuzzy
 msgid "Skolab Groupware Project"
-msgstr "Kolab Groupware login"
+msgstr "Skolab Groupware Projekt"
 
 #: lib/Skolab/Admin/include/menu.php:120
 msgid "Technology"
@@ -2231,9 +2211,8 @@ msgid "Wrong username or password"
 msgstr "Falscher Benutzername oder falsches Passwort"
 
 #: lib/Skolab/Admin/include/auth.class.php:129
-#, fuzzy
 msgid "Skolab Groupware Login"
-msgstr "Kolab Groupware login"
+msgstr "Skolab Groupware Anmeldung"
 
 #, fuzzy
 #~ msgid "Always reject the message."
