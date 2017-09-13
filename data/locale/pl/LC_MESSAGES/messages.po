@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-12 13:51+0200\n"
+"POT-Creation-Date: 2017-09-13 22:19+0200\n"
 "PO-Revision-Date: 2017-09-08 11:23+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -288,19 +288,14 @@ msgstr ""
 #: data/templates/skolabgroupware.tpl:84 data/templates/technology.tpl:81
 #: data/templates/about.tpl:75
 msgid ""
-"\n"
-"    This product includes PHP, freely available from\n"
-"    <a href=\"%1\">%1</a>\n"
-"    "
+"This product includes PHP, freely available from\n"
+"<a href=\"%1\">%1</a>\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:89 data/templates/technology.tpl:86
-#: data/templates/about.tpl:80
+#: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
 msgid ""
-"\n"
-"    This product includes software developed by the OpenSSL Project\n"
-"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-"    "
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 msgstr ""
 
 #: data/templates/login.tpl:7
@@ -359,7 +354,8 @@ msgstr ""
 #: data/templates/settings.tpl:43 data/templates/settings.tpl:54
 #: data/templates/settings.tpl:67 data/templates/settings.tpl:77
 #: data/templates/settings.tpl:88 data/templates/settings.tpl:100
-#: data/templates/settings.tpl:117 data/templates/deliver.tpl:12
+#: data/templates/settings.tpl:117 data/templates/settings.tpl:176
+#: data/templates/deliver.tpl:12
 msgid "Update"
 msgstr ""
 
@@ -399,8 +395,8 @@ msgid "Name"
 msgstr ""
 
 #: data/templates/addresslist.tpl:14 data/templates/settings.tpl:128
-#: data/templates/distlistall.tpl:13 data/templates/maintainerlistall.tpl:13
-#: data/templates/sflistall.tpl:13
+#: data/templates/settings.tpl:185 data/templates/distlistall.tpl:13
+#: data/templates/maintainerlistall.tpl:13 data/templates/sflistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
 #: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
 #: data/templates/adminlistall.tpl:13
@@ -416,8 +412,8 @@ msgid "Modify"
 msgstr ""
 
 #: data/templates/addresslist.tpl:20 data/templates/settings.tpl:136
-#: data/templates/distlistall.tpl:27 data/templates/maintainerlistall.tpl:23
-#: data/templates/sflistall.tpl:24
+#: data/templates/settings.tpl:193 data/templates/distlistall.tpl:27
+#: data/templates/maintainerlistall.tpl:23 data/templates/sflistall.tpl:24
 #: data/templates/domainmaintainerlistall.tpl:24
 #: data/templates/userlistall.tpl:74 data/templates/addrlistall.tpl:56
 #: data/templates/adminlistall.tpl:23 htdocs/user/user.php:911
@@ -628,6 +624,13 @@ msgid ""
 "us.\n"
 msgstr ""
 
+#: data/templates/about.tpl:79
+msgid ""
+"\n"
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+msgstr ""
+
 #: data/templates/versions.tpl:8
 msgid "Skolab Groupware Server Version"
 msgstr ""
@@ -641,7 +644,7 @@ msgid "PEAR/Horde Versions"
 msgstr ""
 
 #: data/templates/versions.tpl:15
-msgid "Kolab2 Patched OpenPKG Package Versions"
+msgid "Skolab Patched OpenPKG Package Versions"
 msgstr ""
 
 #: data/templates/versions.tpl:17
@@ -677,7 +680,7 @@ msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
 "DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
-"Enter the email address of a kolab account below and press the button to "
+"Enter the email address of a Skolab account below and press the button to "
 "create a distribution list for each of those addresses. Later you can add or "
 "remove people from the lists like any other distribution list"
 msgstr ""
@@ -774,7 +777,7 @@ msgstr ""
 msgid "Domain"
 msgstr ""
 
-#: data/templates/settings.tpl:145
+#: data/templates/settings.tpl:145 data/templates/settings.tpl:202
 msgid "Add"
 msgstr ""
 
@@ -799,7 +802,27 @@ msgstr ""
 #: data/templates/settings.tpl:165
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
-"header matches one of Skolab server"
+"header matches one of Skolab server&rsquo;s domains. In that case rewrite "
+"the From header so the recipient can see the potential forgery."
+msgstr ""
+
+#: data/templates/settings.tpl:171
+msgid "Always reject the message."
+msgstr ""
+
+#: data/templates/settings.tpl:172
+msgid ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
+msgstr ""
+
+#: data/templates/settings.tpl:182
+msgid "Skolab Hostnames (for Master and Slaves)"
+msgstr ""
+
+#: data/templates/settings.tpl:185
+msgid "Host"
 msgstr ""
 
 #: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
@@ -845,7 +868,8 @@ msgstr ""
 msgid "Filter:"
 msgstr ""
 
-#: data/templates/userlisterror.tpl:37 data/templates/addrlistall.tpl:40
+#: data/templates/userlisterror.tpl:37 data/templates/userlistall.tpl:43
+#: data/templates/addrlistall.tpl:40
 msgid "Filter"
 msgstr ""
 
@@ -894,7 +918,7 @@ msgid "Folder deleted, awaiting cleanup..."
 msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:8
-msgid "Welcome to the Kolab administration interface"
+msgid "Welcome to the Skolab administration interface"
 msgstr ""
 
 #: data/templates/systemaliasnagscreen.tpl:11
@@ -941,10 +965,6 @@ msgstr ""
 
 #: data/templates/deliver.tpl:11
 msgid "Deliver regular mail to folder"
-msgstr ""
-
-#: data/templates/userlistall.tpl:43
-msgid "Filter\""
 msgstr ""
 
 #: data/templates/userlistall.tpl:51
@@ -1509,7 +1529,8 @@ msgstr ""
 
 #: htdocs/addressbook/addr.php:205
 #, php-format
-msgid "Addressbook entry DN could not be modified, distribution list <a href='"
+msgid ""
+"Addressbook entry DN could not be modified, distribution list <a href=\""
 msgstr ""
 
 #: htdocs/addressbook/addr.php:257

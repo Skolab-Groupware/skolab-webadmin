@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin Dutch\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-12 13:51+0200\n"
+"POT-Creation-Date: 2017-09-13 22:19+0200\n"
 "PO-Revision-Date: 2007-11-21 14:56+0100\n"
 "Last-Translator: Richard Bos <richard@radoeka.nl>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -292,19 +292,14 @@ msgstr ""
 #: data/templates/skolabgroupware.tpl:84 data/templates/technology.tpl:81
 #: data/templates/about.tpl:75
 msgid ""
-"\n"
-"    This product includes PHP, freely available from\n"
-"    <a href=\"%1\">%1</a>\n"
-"    "
+"This product includes PHP, freely available from\n"
+"<a href=\"%1\">%1</a>\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:89 data/templates/technology.tpl:86
-#: data/templates/about.tpl:80
+#: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
 msgid ""
-"\n"
-"    This product includes software developed by the OpenSSL Project\n"
-"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-"    "
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 msgstr ""
 
 #: data/templates/login.tpl:7
@@ -365,7 +360,8 @@ msgstr "(leeg laten voor alle domeinen)"
 #: data/templates/settings.tpl:43 data/templates/settings.tpl:54
 #: data/templates/settings.tpl:67 data/templates/settings.tpl:77
 #: data/templates/settings.tpl:88 data/templates/settings.tpl:100
-#: data/templates/settings.tpl:117 data/templates/deliver.tpl:12
+#: data/templates/settings.tpl:117 data/templates/settings.tpl:176
+#: data/templates/deliver.tpl:12
 msgid "Update"
 msgstr "Bijwerken"
 
@@ -406,8 +402,8 @@ msgid "Name"
 msgstr "Naam"
 
 #: data/templates/addresslist.tpl:14 data/templates/settings.tpl:128
-#: data/templates/distlistall.tpl:13 data/templates/maintainerlistall.tpl:13
-#: data/templates/sflistall.tpl:13
+#: data/templates/settings.tpl:185 data/templates/distlistall.tpl:13
+#: data/templates/maintainerlistall.tpl:13 data/templates/sflistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
 #: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
 #: data/templates/adminlistall.tpl:13
@@ -424,8 +420,8 @@ msgid "Modify"
 msgstr "Wijzigen"
 
 #: data/templates/addresslist.tpl:20 data/templates/settings.tpl:136
-#: data/templates/distlistall.tpl:27 data/templates/maintainerlistall.tpl:23
-#: data/templates/sflistall.tpl:24
+#: data/templates/settings.tpl:193 data/templates/distlistall.tpl:27
+#: data/templates/maintainerlistall.tpl:23 data/templates/sflistall.tpl:24
 #: data/templates/domainmaintainerlistall.tpl:24
 #: data/templates/userlistall.tpl:74 data/templates/addrlistall.tpl:56
 #: data/templates/adminlistall.tpl:23 htdocs/user/user.php:911
@@ -639,6 +635,13 @@ msgid ""
 "us.\n"
 msgstr ""
 
+#: data/templates/about.tpl:79
+msgid ""
+"\n"
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+msgstr ""
+
 #: data/templates/versions.tpl:8
 #, fuzzy
 msgid "Skolab Groupware Server Version"
@@ -655,7 +658,7 @@ msgstr ""
 
 #: data/templates/versions.tpl:15
 #, fuzzy
-msgid "Kolab2 Patched OpenPKG Package Versions"
+msgid "Skolab Patched OpenPKG Package Versions"
 msgstr "Kolab2 Patched OpenPKG Package Versies"
 
 #: data/templates/versions.tpl:17
@@ -698,7 +701,7 @@ msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
 "DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
-"Enter the email address of a kolab account below and press the button to "
+"Enter the email address of a Skolab account below and press the button to "
 "create a distribution list for each of those addresses. Later you can add or "
 "remove people from the lists like any other distribution list"
 msgstr ""
@@ -826,7 +829,7 @@ msgstr "Domeinen"
 msgid "Domain"
 msgstr "Domein"
 
-#: data/templates/settings.tpl:145
+#: data/templates/settings.tpl:145 data/templates/settings.tpl:202
 msgid "Add"
 msgstr "Toevoegen"
 
@@ -859,12 +862,40 @@ msgstr "Welke actie uitvoeren voor berichten die de test falen"
 #, fuzzy
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
-"header matches one of Skolab server"
+"header matches one of Skolab server&rsquo;s domains. In that case rewrite "
+"the From header so the recipient can see the potential forgery."
 msgstr ""
 "Weiger het bericht, behalve als deze van buiten komt en een From header "
 "heeft overeenkomstig met 1 van de Kolab server domeinen.  In dit geval wordt "
 "de From header herschreven, zodat de ontvanger het mogelijke misbruik kan "
 "zien"
+
+#: data/templates/settings.tpl:171
+#, fuzzy
+msgid "Always reject the message."
+msgstr "Het bericht altijd afwijzen. "
+
+#: data/templates/settings.tpl:172
+#, fuzzy
+msgid ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
+msgstr ""
+"Laat enkel E-mail toe met een betrouwbare From header voor accounts op deze "
+"server. Merk op dat het inschakelen van deze instelling ervoor zorgt dat de "
+"server alle E-mail weigert met non-matching afzender en from header als de "
+"afzender een account heeft op deze server. Dit gebeurt soms met "
+"mailinglijsten."
+
+#: data/templates/settings.tpl:182
+#, fuzzy
+msgid "Skolab Hostnames (for Master and Slaves)"
+msgstr "Kolab hostnamen (voor Master en Slaves)"
+
+#: data/templates/settings.tpl:185
+msgid "Host"
+msgstr "Host"
 
 #: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
 #, fuzzy
@@ -911,7 +942,8 @@ msgstr "[ Andere ]"
 msgid "Filter:"
 msgstr "Filter"
 
-#: data/templates/userlisterror.tpl:37 data/templates/addrlistall.tpl:40
+#: data/templates/userlisterror.tpl:37 data/templates/userlistall.tpl:43
+#: data/templates/addrlistall.tpl:40
 msgid "Filter"
 msgstr "Filter"
 
@@ -962,7 +994,7 @@ msgstr "Map verwijderd, wacht op opruiming... "
 
 #: data/templates/systemaliasnagscreen.tpl:8
 #, fuzzy
-msgid "Welcome to the Kolab administration interface"
+msgid "Welcome to the Skolab administration interface"
 msgstr "Welkom op Kolab beheersinterface"
 
 #: data/templates/systemaliasnagscreen.tpl:11
@@ -1018,11 +1050,6 @@ msgstr ""
 #, fuzzy
 msgid "Deliver regular mail to folder"
 msgstr "Plaats reguliere email in map"
-
-#: data/templates/userlistall.tpl:43
-#, fuzzy
-msgid "Filter\""
-msgstr "Filter"
 
 #: data/templates/userlistall.tpl:51
 msgid "E-mail"
@@ -1603,7 +1630,8 @@ msgstr "Extern adres toevoegen"
 
 #: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
-msgid "Addressbook entry DN could not be modified, distribution list <a href='"
+msgid ""
+"Addressbook entry DN could not be modified, distribution list <a href=\""
 msgstr "Account is verwijderd van distributielijst '%s'."
 
 #: htdocs/addressbook/addr.php:257
@@ -2179,27 +2207,8 @@ msgid "Skolab Groupware Login"
 msgstr "Kolab Groupware login"
 
 #, fuzzy
-#~ msgid "Always reject the message."
-#~ msgstr "Het bericht altijd afwijzen. "
-
-#, fuzzy
-#~ msgid ""
-#~ "Note that enabling this setting will make the server reject any mail with "
-#~ "non-matching sender and From header if the sender is an account on this "
-#~ "server. This is known to cause trouble for example with mailinglists."
-#~ msgstr ""
-#~ "Laat enkel E-mail toe met een betrouwbare From header voor accounts op "
-#~ "deze server. Merk op dat het inschakelen van deze instelling ervoor zorgt "
-#~ "dat de server alle E-mail weigert met non-matching afzender en from "
-#~ "header als de afzender een account heeft op deze server. Dit gebeurt soms "
-#~ "met mailinglijsten."
-
-#, fuzzy
-#~ msgid "Kolab Hostnames (for Master and Slaves)"
-#~ msgstr "Kolab hostnamen (voor Master en Slaves)"
-
-#~ msgid "Host"
-#~ msgstr "Host"
+#~ msgid "Filter\""
+#~ msgstr "Filter"
 
 #, fuzzy
 #~ msgid "{/section}"

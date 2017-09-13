@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-12 13:51+0200\n"
+"POT-Creation-Date: 2017-09-13 22:19+0200\n"
 "PO-Revision-Date: 2017-09-13 20:17+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/skolab-"
-"groupware/webadmin/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/skolab-groupware/"
+"webadmin/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -269,12 +269,12 @@ msgid ""
 "version of Kolab. The Kolab v2 legacy support is now provided by <a\n"
 "href=\"%2\">DAS-NETZWERKTEAM</a>.\n"
 msgstr ""
-"Die ursprüngliche Kolab Groupware (Version 2) wurde von der <a href=\"%1\">"
-"Kolab Systems AG</a> entwickelt. Die Firma wurde im Jahre 2010 in Z&uuml;"
-"rich\n"
+"Die ursprüngliche Kolab Groupware (Version 2) wurde von der <a href="
+"\"%1\">Kolab Systems AG</a> entwickelt. Die Firma wurde im Jahre 2010 in "
+"Z&uuml;rich\n"
 "gegründet. Der untenstehende Text bezieht sich auf die neueste Version von "
-"Kolab. Die Fortsetzung des Kolab v2 Supports wird angeführt von <ahref=\"%2\""
-">\n"
+"Kolab. Die Fortsetzung des Kolab v2 Supports wird angeführt von <ahref="
+"\"%2\">\n"
 "DAS-NETZWERKTEAM</a>.\n"
 
 #: data/templates/skolabgroupware.tpl:51
@@ -322,19 +322,14 @@ msgstr "...und viele viele weitere Beitragende aus der Kolab v2 Community."
 #: data/templates/skolabgroupware.tpl:84 data/templates/technology.tpl:81
 #: data/templates/about.tpl:75
 msgid ""
-"\n"
-"    This product includes PHP, freely available from\n"
-"    <a href=\"%1\">%1</a>\n"
-"    "
+"This product includes PHP, freely available from\n"
+"<a href=\"%1\">%1</a>\n"
 msgstr ""
 
-#: data/templates/skolabgroupware.tpl:89 data/templates/technology.tpl:86
-#: data/templates/about.tpl:80
+#: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
 msgid ""
-"\n"
-"    This product includes software developed by the OpenSSL Project\n"
-"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-"    "
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 msgstr ""
 
 #: data/templates/login.tpl:7
@@ -393,7 +388,8 @@ msgstr "(freilassen für alle Domänen)"
 #: data/templates/settings.tpl:43 data/templates/settings.tpl:54
 #: data/templates/settings.tpl:67 data/templates/settings.tpl:77
 #: data/templates/settings.tpl:88 data/templates/settings.tpl:100
-#: data/templates/settings.tpl:117 data/templates/deliver.tpl:12
+#: data/templates/settings.tpl:117 data/templates/settings.tpl:176
+#: data/templates/deliver.tpl:12
 msgid "Update"
 msgstr "Aktualisieren"
 
@@ -433,8 +429,8 @@ msgid "Name"
 msgstr "Name"
 
 #: data/templates/addresslist.tpl:14 data/templates/settings.tpl:128
-#: data/templates/distlistall.tpl:13 data/templates/maintainerlistall.tpl:13
-#: data/templates/sflistall.tpl:13
+#: data/templates/settings.tpl:185 data/templates/distlistall.tpl:13
+#: data/templates/maintainerlistall.tpl:13 data/templates/sflistall.tpl:13
 #: data/templates/domainmaintainerlistall.tpl:13
 #: data/templates/userlistall.tpl:51 data/templates/addrlistall.tpl:47
 #: data/templates/adminlistall.tpl:13
@@ -450,8 +446,8 @@ msgid "Modify"
 msgstr "Ändern"
 
 #: data/templates/addresslist.tpl:20 data/templates/settings.tpl:136
-#: data/templates/distlistall.tpl:27 data/templates/maintainerlistall.tpl:23
-#: data/templates/sflistall.tpl:24
+#: data/templates/settings.tpl:193 data/templates/distlistall.tpl:27
+#: data/templates/maintainerlistall.tpl:23 data/templates/sflistall.tpl:24
 #: data/templates/domainmaintainerlistall.tpl:24
 #: data/templates/userlistall.tpl:74 data/templates/addrlistall.tpl:56
 #: data/templates/adminlistall.tpl:23 htdocs/user/user.php:911
@@ -698,6 +694,13 @@ msgid ""
 "us.\n"
 msgstr ""
 
+#: data/templates/about.tpl:79
+msgid ""
+"\n"
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+msgstr ""
+
 #: data/templates/versions.tpl:8
 msgid "Skolab Groupware Server Version"
 msgstr "Version des Skolab Groupware Servers"
@@ -711,7 +714,8 @@ msgid "PEAR/Horde Versions"
 msgstr "PEAR/Horde-Versionen"
 
 #: data/templates/versions.tpl:15
-msgid "Kolab2 Patched OpenPKG Package Versions"
+#, fuzzy
+msgid "Skolab Patched OpenPKG Package Versions"
 msgstr "Skolab-Gepatchte-OpenPKG-Paket-Versionen"
 
 #: data/templates/versions.tpl:17
@@ -743,22 +747,23 @@ msgid "Administrative email addresses"
 msgstr "Administrative E-Mail-Adressen"
 
 #: data/templates/settings.tpl:13
+#, fuzzy
 msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
 "DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
-"Enter the email address of a kolab account below and press the button to "
+"Enter the email address of a Skolab account below and press the button to "
 "create a distribution list for each of those addresses. Later you can add or "
 "remove people from the lists like any other distribution list"
 msgstr ""
 "Sie haben noch kein Konto zum Empfang von Nachrichten an die administrativen "
 "E-Mail-Adressen hostmaster@ihredomaene.tld, postmaster@ihredomaene.tld, "
-"MAILER-DAEMON@ihredomaene.tld, abuse@ihredomaene.tld und virusalert@"
-"ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse des Skolab-"
-"Kontos unten ein und betätigen Sie die Schaltfläche, um eine Verteilerliste "
-"für jede dieser Adressen zu erzeugen. Sie können dann später Adressaten "
-"diesen Listen hinzufügen oder davon entfernen wie mit jeder anderen "
-"Verteilerliste"
+"MAILER-DAEMON@ihredomaene.tld, abuse@ihredomaene.tld und "
+"virusalert@ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse "
+"des Skolab-Kontos unten ein und betätigen Sie die Schaltfläche, um eine "
+"Verteilerliste für jede dieser Adressen zu erzeugen. Sie können dann später "
+"Adressaten diesen Listen hinzufügen oder davon entfernen wie mit jeder "
+"anderen Verteilerliste"
 
 #: data/templates/settings.tpl:18
 msgid ""
@@ -865,7 +870,7 @@ msgstr "Domänen"
 msgid "Domain"
 msgstr "Domäne"
 
-#: data/templates/settings.tpl:145
+#: data/templates/settings.tpl:145 data/templates/settings.tpl:202
 msgid "Add"
 msgstr "Hinzufügen"
 
@@ -895,12 +900,39 @@ msgstr "Maßname für Nachrichten, deren Überprüfung fehlschlägt:"
 #, fuzzy
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
-"header matches one of Skolab server"
+"header matches one of Skolab server&rsquo;s domains. In that case rewrite "
+"the From header so the recipient can see the potential forgery."
 msgstr ""
 "Nachricht zurückweisen, sofern sie nicht von außen kommt, aber eine From-"
 "Kopfzeile enthält, die mit der Domäne des Skolab-Servers übereinstimmt. In "
 "diesem Fall die From-Kopfzeile umschreiben, damit der Empfänger die mögliche "
 "Fälschung erkennen kann."
+
+#: data/templates/settings.tpl:171
+#, fuzzy
+msgid "Always reject the message."
+msgstr "Die Nachricht immer ablehnen."
+
+#: data/templates/settings.tpl:172
+#, fuzzy
+msgid ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
+msgstr ""
+"Beachten Sie, dass der Server mit dieser Einstellung alle Nachrichten, bei "
+"denen Absender und From-Zeile nicht übereinstimmen, zurückweisen wird, wenn "
+"der Absender über ein Konto auf diesem Server verfügt. Dies kann "
+"beispielsweise bei Nachrichtenlisten zu Problemen führen."
+
+#: data/templates/settings.tpl:182
+#, fuzzy
+msgid "Skolab Hostnames (for Master and Slaves)"
+msgstr "Kolab-Rechnernamen (für Master- und Slaveserver)"
+
+#: data/templates/settings.tpl:185
+msgid "Host"
+msgstr "Host"
 
 #: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
 msgid "Welcome to the Skolab Groupware Server Administration"
@@ -945,7 +977,8 @@ msgstr "[ ANDERE ]"
 msgid "Filter:"
 msgstr "Filter:"
 
-#: data/templates/userlisterror.tpl:37 data/templates/addrlistall.tpl:40
+#: data/templates/userlisterror.tpl:37 data/templates/userlistall.tpl:43
+#: data/templates/addrlistall.tpl:40
 msgid "Filter"
 msgstr "Filter"
 
@@ -995,7 +1028,7 @@ msgstr "Ordner gelöscht, warte auf Aufräumaktion..."
 
 #: data/templates/systemaliasnagscreen.tpl:8
 #, fuzzy
-msgid "Welcome to the Kolab administration interface"
+msgid "Welcome to the Skolab administration interface"
 msgstr "Willkommen zur Kolab-Systemadministration"
 
 #: data/templates/systemaliasnagscreen.tpl:11
@@ -1046,11 +1079,6 @@ msgstr ""
 #: data/templates/deliver.tpl:11
 msgid "Deliver regular mail to folder"
 msgstr "Normale Nachrichten an den Ordner zustellen"
-
-#: data/templates/userlistall.tpl:43
-#, fuzzy
-msgid "Filter\""
-msgstr "Filter"
 
 #: data/templates/userlistall.tpl:51
 msgid "E-mail"
@@ -1636,7 +1664,8 @@ msgstr "Externe Adresse hinzufügen"
 
 #: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
-msgid "Addressbook entry DN could not be modified, distribution list <a href='"
+msgid ""
+"Addressbook entry DN could not be modified, distribution list <a href=\""
 msgstr ""
 "Die DN des Adressebucheintrags konnte nicht geändert werden,  die "
 "Verteilerliste <a href='"
@@ -2215,26 +2244,8 @@ msgid "Skolab Groupware Login"
 msgstr "Skolab Groupware Anmeldung"
 
 #, fuzzy
-#~ msgid "Always reject the message."
-#~ msgstr "Die Nachricht immer ablehnen."
-
-#, fuzzy
-#~ msgid ""
-#~ "Note that enabling this setting will make the server reject any mail with "
-#~ "non-matching sender and From header if the sender is an account on this "
-#~ "server. This is known to cause trouble for example with mailinglists."
-#~ msgstr ""
-#~ "Beachten Sie, dass der Server mit dieser Einstellung alle Nachrichten, "
-#~ "bei denen Absender und From-Zeile nicht übereinstimmen, zurückweisen "
-#~ "wird, wenn der Absender über ein Konto auf diesem Server verfügt. Dies "
-#~ "kann beispielsweise bei Nachrichtenlisten zu Problemen führen."
-
-#, fuzzy
-#~ msgid "Kolab Hostnames (for Master and Slaves)"
-#~ msgstr "Kolab-Rechnernamen (für Master- und Slaveserver)"
-
-#~ msgid "Host"
-#~ msgstr "Host"
+#~ msgid "Filter\""
+#~ msgstr "Filter"
 
 #, fuzzy
 #~ msgid "{/section}"
