@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin Italian\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-13 22:19+0200\n"
+"POT-Creation-Date: 2017-09-13 23:00+0200\n"
 "PO-Revision-Date: 2007-11-21 14:56+0100\n"
 "Last-Translator: Yvette Agostini <yvette@yvetteagostini.it>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -298,6 +298,7 @@ msgid ""
 msgstr ""
 
 #: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
+#: data/templates/about.tpl:79
 msgid ""
 "This product includes software developed by the OpenSSL Project\n"
 "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
@@ -637,13 +638,6 @@ msgid ""
 "imaginable  available by\n"
 "<a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact "
 "us.\n"
-msgstr ""
-
-#: data/templates/about.tpl:79
-msgid ""
-"\n"
-"This product includes software developed by the OpenSSL Project\n"
-"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 msgstr ""
 
 #: data/templates/versions.tpl:8
@@ -1626,11 +1620,17 @@ msgstr "Aggiungi indirizzi esterni"
 
 #: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
-msgid ""
-"Addressbook entry DN could not be modified, distribution list <a href=\""
+msgid "Address book entry DN could not be modified, distribution list"
 msgstr ""
 "Il DN dell'account non può essere modificato, la lista di distribuzione <a "
 "href='/admin/distributionlist/list.php?action=modify&dn="
+
+#: htdocs/addressbook/addr.php:205
+#, fuzzy, php-format
+msgid ""
+"depends on it. To modify this entry, first remove it from the distribution "
+"list."
+msgstr "L'account è stato rimosso dalla lista di distribuzione"
 
 #: htdocs/addressbook/addr.php:257
 #, fuzzy, php-format

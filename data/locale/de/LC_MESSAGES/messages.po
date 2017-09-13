@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-13 22:19+0200\n"
+"POT-Creation-Date: 2017-09-13 23:00+0200\n"
 "PO-Revision-Date: 2017-09-13 20:53+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/skolab-"
-"groupware/webadmin/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/skolab-groupware/"
+"webadmin/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -328,6 +328,7 @@ msgstr ""
 "Dieses Produkt beinhaltet PHP, frei erhältlich unter <a href=\"%1\">%1</a>\n"
 
 #: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
+#: data/templates/about.tpl:79
 msgid ""
 "This product includes software developed by the OpenSSL Project\n"
 "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
@@ -713,13 +714,6 @@ msgstr ""
 "vorstellbar, verfügbar von <a href=%1>DAS-NETZWERKTEAM</a> und unseren "
 "Partnern. Bitte kontaktieren Sie uns.\n"
 
-#: data/templates/about.tpl:79
-msgid ""
-"\n"
-"This product includes software developed by the OpenSSL Project\n"
-"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-msgstr ""
-
 #: data/templates/versions.tpl:8
 msgid "Skolab Groupware Server Version"
 msgstr "Version des Skolab Groupware Servers"
@@ -775,12 +769,12 @@ msgid ""
 msgstr ""
 "Sie haben noch kein Konto zum Empfang von Nachrichten an die administrativen "
 "E-Mail-Adressen hostmaster@ihredomaene.tld, postmaster@ihredomaene.tld, "
-"MAILER-DAEMON@ihredomaene.tld, abuse@ihredomaene.tld und virusalert@"
-"ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse des Skolab-"
-"Kontos unten ein und betätigen Sie die Schaltfläche, um eine Verteilerliste "
-"für jede dieser Adressen zu erzeugen. Sie können dann später Adressaten "
-"diesen Listen hinzufügen oder davon entfernen wie mit jeder anderen "
-"Verteilerliste"
+"MAILER-DAEMON@ihredomaene.tld, abuse@ihredomaene.tld und "
+"virusalert@ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse "
+"des Skolab-Kontos unten ein und betätigen Sie die Schaltfläche, um eine "
+"Verteilerliste für jede dieser Adressen zu erzeugen. Sie können dann später "
+"Adressaten diesen Listen hinzufügen oder davon entfernen wie mit jeder "
+"anderen Verteilerliste"
 
 #: data/templates/settings.tpl:18
 msgid ""
@@ -1164,7 +1158,8 @@ msgstr "Weiterleiten an '%s' erfolgreich deaktiviert"
 #, php-format
 msgid ""
 "Warning: You currently have a sieve script named %s active for your account."
-msgstr "Warnung: Für Ihr Konto ist bereits ein Sieve-Skript mit Namen %s aktiv."
+msgstr ""
+"Warnung: Für Ihr Konto ist bereits ein Sieve-Skript mit Namen %s aktiv."
 
 #: htdocs/user/forward.php:72 htdocs/user/deliver.php:70
 #: htdocs/user/vacation.php:80
@@ -1680,11 +1675,17 @@ msgstr "Externe Adresse hinzufügen"
 
 #: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
-msgid ""
-"Addressbook entry DN could not be modified, distribution list <a href=\""
+msgid "Address book entry DN could not be modified, distribution list"
 msgstr ""
 "Die DN des Adressebucheintrags konnte nicht geändert werden,  die "
 "Verteilerliste <a href='"
+
+#: htdocs/addressbook/addr.php:205
+#, fuzzy, php-format
+msgid ""
+"depends on it. To modify this entry, first remove it from the distribution "
+"list."
+msgstr "Die Adresse wurde von der Verteilerliste '%s' entfernt."
 
 #: htdocs/addressbook/addr.php:257
 #, php-format

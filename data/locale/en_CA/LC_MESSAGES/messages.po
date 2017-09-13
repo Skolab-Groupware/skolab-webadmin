@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-13 22:19+0200\n"
+"POT-Creation-Date: 2017-09-13 23:00+0200\n"
 "PO-Revision-Date: 2017-09-08 11:23+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -353,6 +353,7 @@ msgstr ""
 "    "
 
 #: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
+#: data/templates/about.tpl:79
 #, fuzzy
 msgid ""
 "This product includes software developed by the OpenSSL Project\n"
@@ -750,18 +751,6 @@ msgstr ""
 "There is a wide variety of commercial support options and warranties "
 "imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of "
 "partners. Please contact us.\n"
-
-#: data/templates/about.tpl:79
-#, fuzzy
-msgid ""
-"\n"
-"This product includes software developed by the OpenSSL Project\n"
-"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-msgstr ""
-"\n"
-"    This product includes software developed by the OpenSSL Project\n"
-"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-"    "
 
 #: data/templates/versions.tpl:8
 msgid "Skolab Groupware Server Version"
@@ -1704,10 +1693,16 @@ msgstr "Add External Address"
 
 #: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
-msgid ""
-"Addressbook entry DN could not be modified, distribution list <a href=\""
+msgid "Address book entry DN could not be modified, distribution list"
 msgstr ""
 "Addressbook entry DN could not be modified, distribution list <a href='"
+
+#: htdocs/addressbook/addr.php:205
+#, fuzzy, php-format
+msgid ""
+"depends on it. To modify this entry, first remove it from the distribution "
+"list."
+msgstr "Addressbook entry removed from distribution list '%s'."
 
 #: htdocs/addressbook/addr.php:257
 #, php-format
@@ -2276,6 +2271,17 @@ msgstr "Wrong username or password"
 #: lib/Skolab/Admin/include/auth.class.php:129
 msgid "Skolab Groupware Login"
 msgstr "Skolab Groupware Login"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "This product includes software developed by the OpenSSL Project\n"
+#~ "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    This product includes software developed by the OpenSSL Project\n"
+#~ "    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+#~ "    "
 
 #~ msgid "Filter\""
 #~ msgstr "Filter\""

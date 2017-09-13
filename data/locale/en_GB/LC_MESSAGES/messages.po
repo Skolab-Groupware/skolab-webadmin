@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-13 22:19+0200\n"
+"POT-Creation-Date: 2017-09-13 23:00+0200\n"
 "PO-Revision-Date: 2017-09-13 20:54+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects"
-"/skolab-groupware/webadmin/en_GB/>\n"
+"Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
+"skolab-groupware/webadmin/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -272,8 +272,8 @@ msgstr ""
 "The original Kolab Groupware (version 2) has been developed at Kolab\n"
 "Systems AG. The company was founded in Z&uuml;rich in 2010, <a\n"
 "href=\"%1\">Kolab Systems AG</a>. The text below applies to the latest\n"
-"version of Kolab. The Kolab v2 legacy support is now provided by <a href=\"%"
-"s\">DAS-NETZWERKTEAM</a>.\n"
+"version of Kolab. The Kolab v2 legacy support is now provided by <a href=\"%s"
+"\">DAS-NETZWERKTEAM</a>.\n"
 
 #: data/templates/skolabgroupware.tpl:51
 msgid ""
@@ -323,6 +323,7 @@ msgstr ""
 "<a href=\"%1\">%1</a>\n"
 
 #: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
+#: data/templates/about.tpl:79
 msgid ""
 "This product includes software developed by the OpenSSL Project\n"
 "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
@@ -467,9 +468,9 @@ msgid ""
 "href=\"%2\">DAS-NETZWERKTEAM</a>, which works in collaboration with and as\n"
 "part of many other communities and projects to bring you this software.\n"
 msgstr ""
-"This is the server of the Skolab Groupware Solution. It is <a href=\"%1\">"
-"Free Software</a> developed by the <a href=\"%2\">DAS-NETZWERKTEAM</a>, "
-"which works in collaboration with and as\n"
+"This is the server of the Skolab Groupware Solution. It is <a href="
+"\"%1\">Free Software</a> developed by the <a href=\"%2\">DAS-NETZWERKTEAM</"
+"a>, which works in collaboration with and as\n"
 "part of many other communities and projects to bring you this software.\n"
 
 #: data/templates/technology.tpl:17
@@ -698,16 +699,6 @@ msgstr ""
 "There is a wide variety of commercial support options and warranties "
 "imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of "
 "partners. Please contact us.\n"
-
-#: data/templates/about.tpl:79
-msgid ""
-"\n"
-"This product includes software developed by the OpenSSL Project\n"
-"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-msgstr ""
-"\n"
-"This product includes software developed by the OpenSSL Project\n"
-"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 
 #: data/templates/versions.tpl:8
 msgid "Skolab Groupware Server Version"
@@ -1646,10 +1637,16 @@ msgstr "Add External Address"
 
 #: htdocs/addressbook/addr.php:205
 #, fuzzy, php-format
-msgid ""
-"Addressbook entry DN could not be modified, distribution list <a href=\""
+msgid "Address book entry DN could not be modified, distribution list"
 msgstr ""
 "Addressbook entry DN could not be modified, distribution list <a href='"
+
+#: htdocs/addressbook/addr.php:205
+#, fuzzy, php-format
+msgid ""
+"depends on it. To modify this entry, first remove it from the distribution "
+"list."
+msgstr "Addressbook entry removed from distribution list '%s'."
 
 #: htdocs/addressbook/addr.php:257
 #, php-format
@@ -2218,6 +2215,15 @@ msgstr "Wrong username or password"
 #: lib/Skolab/Admin/include/auth.class.php:129
 msgid "Skolab Groupware Login"
 msgstr "Skolab Groupware Login"
+
+#~ msgid ""
+#~ "\n"
+#~ "This product includes software developed by the OpenSSL Project\n"
+#~ "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
+#~ msgstr ""
+#~ "\n"
+#~ "This product includes software developed by the OpenSSL Project\n"
+#~ "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 
 #~ msgid "Filter\""
 #~ msgstr "Filter\""
