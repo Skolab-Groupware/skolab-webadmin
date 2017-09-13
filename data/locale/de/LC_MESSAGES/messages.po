@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Kolab-Webadmin German\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-13 22:19+0200\n"
-"PO-Revision-Date: 2017-09-13 20:17+0000\n"
+"PO-Revision-Date: 2017-09-13 20:53+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/skolab-groupware/"
-"webadmin/de/>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/skolab-"
+"groupware/webadmin/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -325,12 +325,15 @@ msgid ""
 "This product includes PHP, freely available from\n"
 "<a href=\"%1\">%1</a>\n"
 msgstr ""
+"Dieses Produkt beinhaltet PHP, frei erhältlich unter <a href=\"%1\">%1</a>\n"
 
 #: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
 msgid ""
 "This product includes software developed by the OpenSSL Project\n"
 "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 msgstr ""
+"Dieses Produkt verwendet das OpenSSL Toolkit (<a href=\"%1\">%1</a>), "
+"welches vom OpenSSL-Projekt entwickelt wurde\n"
 
 #: data/templates/login.tpl:7
 msgid "Enter UID and password to login"
@@ -646,34 +649,40 @@ msgstr ""
 #: data/templates/about.tpl:47
 msgid "you want the flexibility to create solutions for your specialised needs"
 msgstr ""
+"Sie möchten flexibel sein und Lösungen für Ihre speziellen Bedürfnisse "
+"erschaffen"
 
 #: data/templates/about.tpl:48
 msgid ""
 "you want Free Software/Open Source, but also want the professional support "
 "without having to resort to proprietary lock-in"
 msgstr ""
+"Sie möchten Freie Software/Open Source, und möchten auch professionellen "
+"Support, ohne sich in einen Vendor Lock-In hineinbegeben zu müssen"
 
 #: data/templates/about.tpl:49
 msgid ""
 "you want a slim solution, that is +/- feature complete and not resource "
 "hungry on your server"
 msgstr ""
+"Sie möchten eine schmale Lösung, dessen Entwicklung +/- abgeschlossen ist "
+"und die nicht Ressourcen-hungrig für Ihre Server ist"
 
 #: data/templates/about.tpl:52
 msgid "More Information"
-msgstr ""
+msgstr "Weitere Informationen"
 
 #: data/templates/about.tpl:54
 msgid "Skolab Groupware Project on Github (Source Code / Development)"
-msgstr ""
+msgstr "Skolab Groupware Projekt auf Github (Quellcode / Entwicklung)"
 
 #: data/templates/about.tpl:55
 msgid "Skolab Groupware Development at DAS-NETZWERKTEAM"
-msgstr ""
+msgstr "Skolab Groupware Entwicklung bei DAS-NETZWERKTEAM"
 
 #: data/templates/about.tpl:58
 msgid "Warranties &amp; Commercial Support"
-msgstr ""
+msgstr "Gewährleistung &amp; kommerzieller Support"
 
 #: data/templates/about.tpl:61
 msgid ""
@@ -685,6 +694,13 @@ msgid ""
 "nor is there any guaranteed support. You are running this software entirely "
 "at your own risk.</b>\n"
 msgstr ""
+"Der Skolab Groupware Server ist 100% Freie Software. Er wird bereitgestellt "
+"von DAS-NETZWERKTEAM und kann in seinem vollen Funktionsumfang genutzt "
+"werden und für jeden Anwendungszweck. Es gibt keine Lizenzkosten oder andere "
+"Verpflichtungen, außer die von den jeweiligen Lizenzen der einzelnen "
+"Komponenten festgesetzten Bedingungen. <b>Wir geben keinerlei Gewährleistung "
+"oder Garantie, noch garantieren wir die Verfügbarkeit von Support. Sie "
+"setzten dieses Software auf Ihr eigenes Risiko ein.</b>\n"
 
 #: data/templates/about.tpl:67
 msgid ""
@@ -693,6 +709,9 @@ msgid ""
 "<a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact "
 "us.\n"
 msgstr ""
+"Es sind vielfältige Varianten für kommerziellen Support und Gewährleistung "
+"vorstellbar, verfügbar von <a href=%1>DAS-NETZWERKTEAM</a> und unseren "
+"Partnern. Bitte kontaktieren Sie uns.\n"
 
 #: data/templates/about.tpl:79
 msgid ""
@@ -714,7 +733,6 @@ msgid "PEAR/Horde Versions"
 msgstr "PEAR/Horde-Versionen"
 
 #: data/templates/versions.tpl:15
-#, fuzzy
 msgid "Skolab Patched OpenPKG Package Versions"
 msgstr "Skolab-Gepatchte-OpenPKG-Paket-Versionen"
 
@@ -747,7 +765,6 @@ msgid "Administrative email addresses"
 msgstr "Administrative E-Mail-Adressen"
 
 #: data/templates/settings.tpl:13
-#, fuzzy
 msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
@@ -758,12 +775,12 @@ msgid ""
 msgstr ""
 "Sie haben noch kein Konto zum Empfang von Nachrichten an die administrativen "
 "E-Mail-Adressen hostmaster@ihredomaene.tld, postmaster@ihredomaene.tld, "
-"MAILER-DAEMON@ihredomaene.tld, abuse@ihredomaene.tld und "
-"virusalert@ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse "
-"des Skolab-Kontos unten ein und betätigen Sie die Schaltfläche, um eine "
-"Verteilerliste für jede dieser Adressen zu erzeugen. Sie können dann später "
-"Adressaten diesen Listen hinzufügen oder davon entfernen wie mit jeder "
-"anderen Verteilerliste"
+"MAILER-DAEMON@ihredomaene.tld, abuse@ihredomaene.tld und virusalert@"
+"ihredomaene.tld eingerichtet. Bitte geben Sie die E-Mail-Adresse des Skolab-"
+"Kontos unten ein und betätigen Sie die Schaltfläche, um eine Verteilerliste "
+"für jede dieser Adressen zu erzeugen. Sie können dann später Adressaten "
+"diesen Listen hinzufügen oder davon entfernen wie mit jeder anderen "
+"Verteilerliste"
 
 #: data/templates/settings.tpl:18
 msgid ""
@@ -897,7 +914,6 @@ msgid "Action to take for messages that fail the check:"
 msgstr "Maßname für Nachrichten, deren Überprüfung fehlschlägt:"
 
 #: data/templates/settings.tpl:165
-#, fuzzy
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
 "header matches one of Skolab server&rsquo;s domains. In that case rewrite "
@@ -909,12 +925,10 @@ msgstr ""
 "Fälschung erkennen kann."
 
 #: data/templates/settings.tpl:171
-#, fuzzy
 msgid "Always reject the message."
 msgstr "Die Nachricht immer ablehnen."
 
 #: data/templates/settings.tpl:172
-#, fuzzy
 msgid ""
 "Note that enabling this setting will make the server reject any mail with "
 "non-matching sender and From header if the sender is an account on this "
@@ -926,9 +940,8 @@ msgstr ""
 "beispielsweise bei Nachrichtenlisten zu Problemen führen."
 
 #: data/templates/settings.tpl:182
-#, fuzzy
 msgid "Skolab Hostnames (for Master and Slaves)"
-msgstr "Kolab-Rechnernamen (für Master- und Slaveserver)"
+msgstr "Skolab-Rechnernamen (für Master- und Slaveserver)"
 
 #: data/templates/settings.tpl:185
 msgid "Host"
@@ -1027,9 +1040,8 @@ msgid "Folder deleted, awaiting cleanup..."
 msgstr "Ordner gelöscht, warte auf Aufräumaktion..."
 
 #: data/templates/systemaliasnagscreen.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab administration interface"
-msgstr "Willkommen zur Kolab-Systemadministration"
+msgstr "Willkommen zur Skolab-Systemadministration"
 
 #: data/templates/systemaliasnagscreen.tpl:11
 msgid "NOTE:"
@@ -1074,7 +1086,7 @@ msgstr "E-Mail-Zustellung"
 
 #: data/templates/deliver.tpl:10
 msgid "Activate delivery to folder"
-msgstr ""
+msgstr "Auslieferung in Ordner aktivieren"
 
 #: data/templates/deliver.tpl:11
 msgid "Deliver regular mail to folder"
@@ -1135,7 +1147,7 @@ msgstr "Zurück zur Adressliste"
 #: htdocs/user/forward.php:49 htdocs/user/deliver.php:48
 #: htdocs/user/vacation.php:51
 msgid "Error while connecting to Sieve service:"
-msgstr ""
+msgstr "Fehler beim Verbinden mit dem Sieve-Dienst:"
 
 #: htdocs/user/forward.php:63
 #, php-format
@@ -1152,7 +1164,7 @@ msgstr "Weiterleiten an '%s' erfolgreich deaktiviert"
 #, php-format
 msgid ""
 "Warning: You currently have a sieve script named %s active for your account."
-msgstr ""
+msgstr "Warnung: Für Ihr Konto ist bereits ein Sieve-Skript mit Namen %s aktiv."
 
 #: htdocs/user/forward.php:72 htdocs/user/deliver.php:70
 #: htdocs/user/vacation.php:80
@@ -1160,6 +1172,8 @@ msgid ""
 "Warning: This script will be overwritten without further warnings if you "
 "press \"Update\"!"
 msgstr ""
+"Warnung: Dieses Skript wird ohne weitere Warnung überschrieben werden, "
+"sobald Sie \"Aktualisieren\" anklicken!"
 
 #: htdocs/user/deliver.php:61
 #, php-format
@@ -1240,7 +1254,7 @@ msgstr "Bevollmächtigter %s existiert nicht"
 #: htdocs/user/user.php:183
 #, php-format
 msgid "Syntax for Recipient %s is invalid"
-msgstr ""
+msgstr "Syntax für Empfänger %s ist ungültig"
 
 #: htdocs/user/user.php:229
 #, php-format
@@ -1365,11 +1379,11 @@ msgstr "Eine E-Mail-Adresse pro Zeile."
 
 #: htdocs/user/user.php:523
 msgid "Allowed Recipients"
-msgstr ""
+msgstr "Zugelassene Empfänger"
 
 #: htdocs/user/user.php:526
 msgid "Restrict allowed recipients of SMTP messages"
-msgstr ""
+msgstr "Zugelassene Empfänger von SMTP-Nachrichten einschränken"
 
 #: htdocs/user/user.php:527
 msgid "One entry per line."
@@ -1380,6 +1394,8 @@ msgid ""
 "2 letter code from <a href=\"http://www.iso.org/iso/"
 "english_country_names_and_code_elements\" target=\"_blank\">ISO 3166</a>"
 msgstr ""
+"2-Buchstaben Kodierung von <a href=\"http://www.iso.org/iso/"
+"english_country_names_and_code_elements\" target=\"_blank\">ISO 3166</a>"
 
 #: htdocs/user/user.php:544
 msgid "User Quota in MBytes"
@@ -2141,7 +2157,7 @@ msgstr "Skolab Groupware Projekt"
 
 #: lib/Skolab/Admin/include/menu.php:120
 msgid "Technology"
-msgstr ""
+msgstr "Technologie"
 
 #: lib/Skolab/Admin/include/menu.php:124
 msgid "Versions"
