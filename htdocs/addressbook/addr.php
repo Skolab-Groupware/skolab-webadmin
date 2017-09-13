@@ -202,7 +202,7 @@ if( !$errors ) {
 									unset( $distlists['count'] );
 									foreach( $distlists as $distlist ) {
 										$dlcn = $distlist['mail'][0];
-										$errors[] = sprintf(_("Addressbook entry DN could not be modified, distribution list <a href=\"".$params['skolab_webadmin_url']."/distributionlist/list.php?action=modify&dn=%s\">&lsquo;%s&rsquo;</a> depends on it. To modify this entry, first remove it from the distribution list."), urlencode($distlist['dn']), $dlcn );
+										$errors[] = sprintf(_("Address book entry DN could not be modified, distribution list")." <a href='".$params['skolab_webadmin_url']."/distributionlist/list.php?action=modify&dn=%s'>&lsquo;%s&rsquo;</a>"._("depends on it. To modify this entry, first remove it from the distribution list."), urlencode($distlist['dn']), $dlcn );
 									}
 
 									if( !$errors ) {

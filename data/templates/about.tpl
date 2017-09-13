@@ -76,8 +76,7 @@ extent and any purpose. There are no license costs or other obligations other th
 <a href="%1">%1</a>
 {/t}
 </p><p>
-{t escape=no 1="http://www.openssl.org/"}
-This product includes software developed by the OpenSSL Project
+{t escape=no 1="http://www.openssl.org/"}This product includes software developed by the OpenSSL Project
 for use in the OpenSSL Toolkit (<a href="%1">%1</a>)
 {/t}
 </p>
