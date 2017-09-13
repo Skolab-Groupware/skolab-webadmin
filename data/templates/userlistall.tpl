@@ -40,7 +40,7 @@
 </select>
 
 <input type="text" name="filtervalue" value="{$filtervalue|escape:"html"}" />
-<input type="submit" name="filtersubmit" value="{t}Filter"{/t}" />
+<input type="submit" name="filtersubmit" value="{t}Filter{/t}" />
 
 </div>
 </form>

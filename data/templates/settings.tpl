@@ -10,7 +10,7 @@
 <a name="systemaliasconf"></a>
 <h2>{t}Administrative email addresses{/t}</h2>
 <div class="contentsimple">
-<p>{t}You have not yet set up a receiving account for the administrative email addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. Enter the email address of a kolab account below and press the button to create a distribution list for each of those addresses. Later you can add or remove people from the lists like any other distribution list{/t}</p>
+<p>{t}You have not yet set up a receiving account for the administrative email addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. Enter the email address of a Skolab account below and press the button to create a distribution list for each of those addresses. Later you can add or remove people from the lists like any other distribution list{/t}</p>
 {section name=id loop=$systemaliasconf}
 <div class="contentform">
 <form id="systemalias_{$systemaliasconf[id].n}" method="post" action="">
@@ -162,7 +162,7 @@
  <tr>
   <td valign="top"><input type="radio" name="kolabfilterrejectforgedfrom" value="FALSE" {if $kolabfilterrejectforgedfrom == 'false' }checked="checked"{/if} />
   </td>
-  <td>{t}Reject the message, except if it originates from the outside and the From header matches one of Skolab server's domains. In that case rewrite the From header so the recipient can see the potential forgery.{/t}<br/>
+  <td>{t}Reject the message, except if it originates from the outside and the From header matches one of Skolab server&rsquo;s domains. In that case rewrite the From header so the recipient can see the potential forgery.{/t}<br/>
   </td>
  </tr>
  <tr>

@@ -5,7 +5,7 @@
   End:
 *}
 <div class="contenttext">
-<h1>{t}Welcome to the Kolab administration interface{/t}</h1>
+<h1>{t}Welcome to the Skolab administration interface{/t}</h1>
 </div>
 <div id="errorcontent">
 <div id="errorheader">{t}NOTE:{/t}</div>
