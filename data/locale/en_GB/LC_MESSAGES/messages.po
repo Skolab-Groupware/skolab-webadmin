@@ -8,14 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-13 22:19+0200\n"
-"PO-Revision-Date: 2017-09-08 11:23+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-09-13 20:54+0000\n"
+"Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
+"Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects"
+"/skolab-groupware/webadmin/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.17-dev\n"
 
 #: data/templates/createuser.tpl:10
 msgid "Attribute"
@@ -212,7 +214,6 @@ msgid "About"
 msgstr "About"
 
 #: data/templates/skolabgroupware.tpl:10
-#, fuzzy
 msgid ""
 "The Skolab Groupware was derived from Kolab (version2) to provide legacy\n"
 "support for groupware servers that started with Kolab (version 2). For some "
@@ -220,66 +221,47 @@ msgid ""
 "these installations, migrating the systems from non-supported Kolab v2 to\n"
 "a higher version of Kolab or some other groupware may not make sense.\n"
 msgstr ""
-"\n"
-"\n"
 "The Skolab Groupware was derived from Kolab (version2) to provide legacy\n"
 "support for groupware servers that started with Kolab (version 2). For some "
 "of\n"
 "these installations, migrating the systems from non-supported Kolab v2 to\n"
 "a higher version of Kolab or some other groupware may not make sense.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:18
-#, fuzzy
 msgid "This is where the <b>Skolab Groupware</b> comes in for you...\n"
-msgstr ""
-"\n"
-"\n"
-"This is where the <b>Skolab Groupware</b> comes in for you...\n"
-"\n"
-"</p>\n"
+msgstr "This is where the <b>Skolab Groupware</b> comes in for you...\n"
 
 #: data/templates/skolabgroupware.tpl:22
-#, fuzzy
 msgid "How To Contribute to Skolab Groupware?"
-msgstr "How To Contribute to Skolab Groupware"
+msgstr "How To Contribute to Skolab Groupware?"
 
 #: data/templates/skolabgroupware.tpl:25
-#, fuzzy
 msgid ""
 "The Skolab Groupware is maintained on <a href=\"%1\">Github</a>. Please\n"
 "browse the Git repositories related to our project and provide issue\n"
 "reports and code contributions there.\n"
 msgstr ""
-"\n"
-"\n"
 "The Skolab Groupware is maintained on <a href=\"%1\">Github</a>. Please\n"
 "browse the Git repositories related to our project and provide issue\n"
 "reports and code contributions there.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:31
 msgid "Professional Skolab Groupware Support"
 msgstr "Professional Skolab Groupware Support"
 
 #: data/templates/skolabgroupware.tpl:34
-#, fuzzy
 msgid ""
 "DAS-NETZWERKTEAM provides basic support for the Skolab Groupware. Please\n"
 "visit our <a href=\"%1\">web page</a> to get in touch.\n"
 msgstr ""
-"\n"
-"\n"
 "DAS-NETZWERKTEAM provides basic support for the Skolab Groupware. Please\n"
 "visit our <a href=\"%1\">web page</a> to get in touch.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:39
 msgid "Former Kolab Development"
 msgstr "Former Kolab Development"
 
 #: data/templates/skolabgroupware.tpl:42
-#, fuzzy
 msgid ""
 "The original Kolab Groupware (version 2) has been developed at Kolab\n"
 "Systems AG. The company was founded in Z&uuml;rich in 2010, <a href=\"%1\">\n"
@@ -287,15 +269,13 @@ msgid ""
 "version of Kolab. The Kolab v2 legacy support is now provided by <a\n"
 "href=\"%2\">DAS-NETZWERKTEAM</a>.\n"
 msgstr ""
-"\n"
-"\n"
 "The original Kolab Groupware (version 2) has been developed at Kolab\n"
 "Systems AG. The company was founded in Z&uuml;rich in 2010, <a\n"
 "href=\"%1\">Kolab Systems AG</a>. The text below applies to the latest\n"
-"version of Kolab. The Kolab v2 legacy support is now provided by "
+"version of Kolab. The Kolab v2 legacy support is now provided by <a href=\"%"
+"s\">DAS-NETZWERKTEAM</a>.\n"
 
 #: data/templates/skolabgroupware.tpl:51
-#, fuzzy
 msgid ""
 "<a href=\"%1\">Kolab Systems AG</a> is the global leader\n"
 "in Kolab Technology. Together with its partners in the Kolab Enterprise\n"
@@ -307,8 +287,6 @@ msgid ""
 "professional consulting, support and warranties to enable productivity\n"
 "and collaboration.\n"
 msgstr ""
-"\n"
-"\n"
 "<a href=\"%1\">Kolab Systems AG</a> is the global leader\n"
 "in Kolab Technology. Together with its partners in the Kolab Enterprise\n"
 "Community, Kolab Systems provides quality assurance, integration,\n"
@@ -318,23 +296,18 @@ msgstr ""
 "provides users of the Kolab Groupware Solution with the right level of\n"
 "professional consulting, support and warranties to enable productivity\n"
 "and collaboration.\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:63
 msgid "Former Kolab Contributors"
 msgstr "Former Kolab Contributors"
 
 #: data/templates/skolabgroupware.tpl:66
-#, fuzzy
 msgid ""
 "The former Kolab Groupware (version 2) development was mainly driven by\n"
 "the companies listed below (in alphabetical order):\n"
 msgstr ""
-"\n"
-"\n"
 "The former Kolab Groupware (version 2) development was mainly driven by\n"
 "the companies listed below (in alphabetical order):\n"
-"\n"
 
 #: data/templates/skolabgroupware.tpl:77
 msgid "...and many many contributors from the Kolab v2 community."
@@ -342,26 +315,20 @@ msgstr "...and many many contributors from the Kolab v2 community."
 
 #: data/templates/skolabgroupware.tpl:84 data/templates/technology.tpl:81
 #: data/templates/about.tpl:75
-#, fuzzy
 msgid ""
 "This product includes PHP, freely available from\n"
 "<a href=\"%1\">%1</a>\n"
 msgstr ""
-"\n"
-"    This product includes PHP, freely available from\n"
-"    <a href=\"%1\">%1</a>\n"
-"    "
+"This product includes PHP, freely available from\n"
+"<a href=\"%1\">%1</a>\n"
 
 #: data/templates/skolabgroupware.tpl:88 data/templates/technology.tpl:85
-#, fuzzy
 msgid ""
 "This product includes software developed by the OpenSSL Project\n"
 "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 msgstr ""
-"\n"
-"    This product includes software developed by the OpenSSL Project\n"
-"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-"    "
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 
 #: data/templates/login.tpl:7
 msgid "Enter UID and password to login"
@@ -447,9 +414,8 @@ msgid "Back to list of shared folders"
 msgstr "Back to list of shared folders"
 
 #: data/templates/addresslist.tpl:8 data/templates/addrlistall.tpl:8
-#, fuzzy
 msgid "(only external addresses without a Skolab user account)"
-msgstr "(only external addresses without a kolab user account)"
+msgstr "(only external addresses without a Skolab user account)"
 
 #: data/templates/addresslist.tpl:14 data/templates/maintainerlistall.tpl:13
 #: data/templates/sflistall.tpl:13
@@ -495,27 +461,23 @@ msgid "Skolab Groupware Solution - Technologies"
 msgstr "Skolab Groupware Solution - Technologies"
 
 #: data/templates/technology.tpl:10
-#, fuzzy
 msgid ""
 "This is the server of the Skolab Groupware Solution. It is <a href=\"%1\">\n"
 "Free Software</a> developed by the <a\n"
 "href=\"%2\">DAS-NETZWERKTEAM</a>, which works in collaboration with and as\n"
 "part of many other communities and projects to bring you this software.\n"
 msgstr ""
-"\n"
-"This is the server of the Skolab Groupware Solution. It is <a\n"
-"href=\"%1\">Free Software</a> developed by the <a\n"
-"href=\"%2\">DAS-NETZWERKTEAM</a>, which works in collaboration with and as\n"
+"This is the server of the Skolab Groupware Solution. It is <a href=\"%1\">"
+"Free Software</a> developed by the <a href=\"%2\">DAS-NETZWERKTEAM</a>, "
+"which works in collaboration with and as\n"
 "part of many other communities and projects to bring you this software.\n"
 
 #: data/templates/technology.tpl:17
-#, fuzzy
 msgid ""
 "For this server, Free Software communities and projects that the Skolab "
 "Groupware\n"
 "Project is a part of and builds upon include:\n"
 msgstr ""
-"\n"
 "For this server, Free Software communities and projects that the Skolab "
 "Groupware\n"
 "Project is a part of and builds upon include:\n"
@@ -577,12 +539,10 @@ msgid "Kudos to the original Kolab (version 2) Authors"
 msgstr "Kudos to the original Kolab (version 2) Authors"
 
 #: data/templates/technology.tpl:44
-#, fuzzy
 msgid ""
 "Principal contributors of the Kolab Groupware Solution (which Skolab\n"
 "Groupware has been derived from) are (in alphabetical order):\n"
 msgstr ""
-"\n"
 "Principal contributors of the Kolab Groupware Solution (which Skolab\n"
 "Groupware has been derived from) are (in alphabetical order):\n"
 
@@ -591,40 +551,34 @@ msgid "Skolab Groupware Solution"
 msgstr "Skolab Groupware Solution"
 
 #: data/templates/about.tpl:10
-#, fuzzy
 msgid ""
 "This is the server of the Skolab Groupware Solution, a <a href=%1>Free\n"
 "Software</a> Personal Information Management (PIM) solution developed by\n"
 "<a href=%2>DAS-NETZWERKTEAM</a>.\n"
 msgstr ""
-"\n"
 "This is the server of the Skolab Groupware Solution, a <a href=%1>Free\n"
 "Software</a> Personal Information Management (PIM) solution developed by\n"
 "<a href=%2>DAS-NETZWERKTEAM</a>.\n"
 
 #: data/templates/about.tpl:17
-#, fuzzy
 msgid ""
 "The project was derived from an old version (v2) of the Kolab Groupware\n"
 "starting in 2017 at the Debian Conference in Montreal. Good and working\n"
 "solutions must be sustained, so we started working on the contiuation of\n"
 "Kolab v2 under a slightly different name: Skolab Groupware.\n"
 msgstr ""
-"\n"
 "The project was derived from an old version (v2) of the Kolab Groupware\n"
 "starting in 2017 at the Debian Conference in Montreal. Good and working\n"
 "solutions must be sustained, so we started working on the contiuation of\n"
 "Kolab v2 under a slightly different name: Skolab Groupware.\n"
 
 #: data/templates/about.tpl:25
-#, fuzzy
 msgid ""
 "Any installation of the Skolab Groupware Solution would normally include\n"
 "one or more of these servers, in combination with a variety of clients\n"
 "for its users. If you are interested in the technology, you can read\n"
 "more about it <a href=%1>here</a>.\n"
 msgstr ""
-"\n"
 "Any installation of the Skolab Groupware Solution would normally include\n"
 "one or more of these servers, in combination with a variety of clients\n"
 "for its users. If you are interested in the technology, you can read\n"
@@ -635,12 +589,10 @@ msgid "Why Skolab?"
 msgstr "Why Skolab?"
 
 #: data/templates/about.tpl:35
-#, fuzzy
 msgid ""
 "There is a wide variety of reasons why Skolab should be your choice. Here "
 "are only listed several of them...\n"
 msgstr ""
-"\n"
 "There is a wide variety of reasons why Skolab should be your choice. Here "
 "are only listed several of them...\n"
 
@@ -720,7 +672,6 @@ msgid "Warranties &amp; Commercial Support"
 msgstr "Warranties &amp; Commercial Support"
 
 #: data/templates/about.tpl:61
-#, fuzzy
 msgid ""
 "The Skolab Groupware Server is 100% Free Software. It is provided by DAS-"
 "NETZWERKTEAM and you can use it to the fullest\n"
@@ -730,7 +681,6 @@ msgid ""
 "nor is there any guaranteed support. You are running this software entirely "
 "at your own risk.</b>\n"
 msgstr ""
-"\n"
 "The Skolab Groupware Server is 100% Free Software. It is provided by DAS-"
 "NETZWERKTEAM and you can use it to the fullest extent and any purpose. There "
 "are no license costs or other obligations other than those set forth in the "
@@ -739,29 +689,25 @@ msgstr ""
 "You are running this software entirely at your own risk.</b>\n"
 
 #: data/templates/about.tpl:67
-#, fuzzy
 msgid ""
 "There is a wide variety of commercial support options and warranties "
 "imaginable  available by\n"
 "<a href=%1>DAS-NETZWERKTEAM</a> and its network of partners. Please contact "
 "us.\n"
 msgstr ""
-"\n"
 "There is a wide variety of commercial support options and warranties "
 "imaginable  available by <a href=%1>DAS-NETZWERKTEAM</a> and its network of "
 "partners. Please contact us.\n"
 
 #: data/templates/about.tpl:79
-#, fuzzy
 msgid ""
 "\n"
 "This product includes software developed by the OpenSSL Project\n"
 "for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 msgstr ""
 "\n"
-"    This product includes software developed by the OpenSSL Project\n"
-"    for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
-"    "
+"This product includes software developed by the OpenSSL Project\n"
+"for use in the OpenSSL Toolkit (<a href=\"%1\">%1</a>)\n"
 
 #: data/templates/versions.tpl:8
 msgid "Skolab Groupware Server Version"
@@ -776,9 +722,8 @@ msgid "PEAR/Horde Versions"
 msgstr "PEAR/Horde Versions"
 
 #: data/templates/versions.tpl:15
-#, fuzzy
 msgid "Skolab Patched OpenPKG Package Versions"
-msgstr "Kolab2 Patched OpenPKG Package Versions"
+msgstr "Skolab Patched OpenPKG Package Versions"
 
 #: data/templates/versions.tpl:17
 msgid "OpenPKG Version"
@@ -801,16 +746,14 @@ msgid "Keep copy on server"
 msgstr "Keep copy on server"
 
 #: data/templates/settings.tpl:7
-#, fuzzy
 msgid "Skolab Server Settings"
-msgstr "Kolab Server Settings"
+msgstr "Skolab Server Settings"
 
 #: data/templates/settings.tpl:11
 msgid "Administrative email addresses"
 msgstr "Administrative email addresses"
 
 #: data/templates/settings.tpl:13
-#, fuzzy
 msgid ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
@@ -822,7 +765,7 @@ msgstr ""
 "You have not yet set up a receiving account for the administrative email "
 "addresses hostmaster@yourdomain.tld, postmaster@yourdomain.tld, MAILER-"
 "DAEMON@yourdomain.tld, abuse@yourdomain.tld and virusalert@yourdomain.tld. "
-"Enter the email address of a kolab account below and press the button to "
+"Enter the email address of a Skolab account below and press the button to "
 "create a distribution list for each of those addresses. Later you can add or "
 "remove people from the lists like any other distribution list"
 
@@ -882,14 +825,13 @@ msgid "Privileged Networks"
 msgstr "Privileged Networks"
 
 #: data/templates/settings.tpl:86
-#, fuzzy
 msgid ""
 "Networks allowed to relay and send mail through unauthenticated SMTP "
 "connections to the Skolab server (comma separated networks in x.x.x.x/y "
 "format):"
 msgstr ""
 "Networks allowed to relay and send mail through unauthenticated SMTP "
-"connections to the Kolab server (comma separated networks in x.x.x.x/y "
+"connections to the Skolab server (comma separated networks in x.x.x.x/y "
 "format):"
 
 #: data/templates/settings.tpl:93
@@ -909,7 +851,6 @@ msgid "Accept Internet Mail"
 msgstr "Accept Internet Mail"
 
 #: data/templates/settings.tpl:113
-#, fuzzy
 msgid ""
 "Accept mail from other domains over unauthenticated SMTP. This must be "
 "enabled if you want to use the Skolab Server to receive mail from other "
@@ -917,7 +858,7 @@ msgid ""
 "gateways that are within the privileged network."
 msgstr ""
 "Accept mail from other domains over unauthenticated SMTP. This must be "
-"enabled if you want to use the Kolab Server to receive mail from other "
+"enabled if you want to use the Skolab Server to receive mail from other "
 "internet domains directly. Leave disabled to accept mail only from SMTP "
 "gateways that are within the privileged network."
 
@@ -955,19 +896,18 @@ msgid "Action to take for messages that fail the check:"
 msgstr "Action to take for messages that fail the check:"
 
 #: data/templates/settings.tpl:165
-#, fuzzy
 msgid ""
 "Reject the message, except if it originates from the outside and the From "
 "header matches one of Skolab server&rsquo;s domains. In that case rewrite "
 "the From header so the recipient can see the potential forgery."
 msgstr ""
 "Reject the message, except if it originates from the outside and the From "
-"header matches one of Kolab server"
+"header matches one of Skolab server&rsquo;s domains. In that case rewrite "
+"the From header so the recipient can see the potential forgery."
 
 #: data/templates/settings.tpl:171
-#, fuzzy
 msgid "Always reject the message."
-msgstr "Always reject"
+msgstr "Always reject the message."
 
 #: data/templates/settings.tpl:172
 msgid ""
@@ -975,14 +915,17 @@ msgid ""
 "non-matching sender and From header if the sender is an account on this "
 "server. This is known to cause trouble for example with mailinglists."
 msgstr ""
+"Note that enabling this setting will make the server reject any mail with "
+"non-matching sender and From header if the sender is an account on this "
+"server. This is known to cause trouble for example with mailinglists."
 
 #: data/templates/settings.tpl:182
 msgid "Skolab Hostnames (for Master and Slaves)"
-msgstr ""
+msgstr "Skolab Hostnames (for Master and Slaves)"
 
 #: data/templates/settings.tpl:185
 msgid "Host"
-msgstr ""
+msgstr "Host"
 
 #: data/templates/welcome.tpl:8 data/templates/welcome-admin.tpl:8
 msgid "Welcome to the Skolab Groupware Server Administration"
@@ -1077,9 +1020,8 @@ msgid "Folder deleted, awaiting cleanup..."
 msgstr "Folder deleted, awaiting cleanup..."
 
 #: data/templates/systemaliasnagscreen.tpl:8
-#, fuzzy
 msgid "Welcome to the Skolab administration interface"
-msgstr "Welcome to the Kolab administration interface"
+msgstr "Welcome to the Skolab administration interface"
 
 #: data/templates/systemaliasnagscreen.tpl:11
 msgid "NOTE:"
