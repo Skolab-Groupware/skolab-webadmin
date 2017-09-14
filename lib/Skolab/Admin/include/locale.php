@@ -18,8 +18,6 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
-//require_once("mysmarty.php");
-
 function supported_lang($lang) {
 
 	// REMEMBER TO UPDATE THIS WHEN ADDING NEW LANGUAGES
@@ -42,18 +40,6 @@ function supported_lang($lang) {
 	$lang = strtolower(str_replace('-','_',$lang));
 	if( !array_key_exists( $lang, $a ) ) return false;
 	else return $a[$lang];
-}
-
-// This function is called in templates my Smarty
-function translate($params)
-{
-	$msg = $params["msg"];
-	$domain = $params["domain"];
-	if(empty($domain)) {
-		return gettext($msg);
-	} else {
-		return dgettext($domain, $msg);
-	}
 }
 
 # Returns the currently selected language
@@ -96,6 +82,7 @@ function setLanguage($lang)
 if(!empty($_REQUEST["lang"])) {
 	setLanguage($_REQUEST["lang"]);
 }
+
 //reset the Locale BEFORE adding a new one:
 setlocale(LC_ALL,null);
 
@@ -106,7 +93,6 @@ putenv("LANGUAGE=$language");
 setlocale(LC_ALL, $language.".UTF-8");
 
 $domain = "messages";
-//$tmpSmarty = new MySmarty();
 bindtextdomain($domain, $locale_dir);
 bind_textdomain_codeset($domain, "UTF-8");
 textdomain($domain);
