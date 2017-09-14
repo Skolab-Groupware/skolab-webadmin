@@ -28,7 +28,7 @@ $smarty_templates_dir = '@smarty_templates_dir@';
 $smarty_compiledir    = '@smarty_compiledir@';
 $language             = 'en_US';
 
-* Debug only */
+/* Debug only */
 @ini_set('display_errors', 'off');
 $smarty_debugging = false;
 
