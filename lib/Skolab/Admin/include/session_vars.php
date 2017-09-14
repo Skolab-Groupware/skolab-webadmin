@@ -22,7 +22,8 @@
 
 require_once('config.php');
 
-@session_start();
+if (!isset($_SESSION))
+	@session_start();
 
 /*
  * Session variables fetched from LDAP
