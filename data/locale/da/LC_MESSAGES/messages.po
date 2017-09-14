@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-14 08:37+0200\n"
+"POT-Creation-Date: 2017-09-14 11:35+0200\n"
 "PO-Revision-Date: 2017-09-08 11:23+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -147,7 +147,7 @@ msgid "Fax Number"
 msgstr ""
 
 #: data/templates/createuser.tpl:105 data/templates/welcome-maintainer.tpl:16
-#: data/templates/welcome-admin.tpl:16 lib/Skolab/Admin/include/menu.php:48
+#: data/templates/welcome-admin.tpl:16 lib/Skolab/Admin/include/menu.php:50
 msgid "Addressbook"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgstr ""
 msgid "Leave blank for unlimited"
 msgstr ""
 
-#: data/templates/createuser.tpl:115 lib/Skolab/Admin/include/form.class.php:75
+#: data/templates/createuser.tpl:115 lib/Skolab/Admin/include/form.class.php:77
 msgid "Submit"
 msgstr ""
 
@@ -186,21 +186,21 @@ msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:22 data/templates/distlistall.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:19
-#: data/templates/welcome-admin.tpl:22 lib/Skolab/Admin/include/menu.php:65
+#: data/templates/welcome-admin.tpl:22 lib/Skolab/Admin/include/menu.php:67
 msgid "Distribution Lists"
 msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:25
 #: data/templates/maintainerlistall.tpl:8 data/templates/welcome-admin.tpl:28
-#: lib/Skolab/Admin/include/menu.php:85 lib/Skolab/Admin/include/menu.php:93
+#: lib/Skolab/Admin/include/menu.php:87 lib/Skolab/Admin/include/menu.php:95
 msgid "Maintainers"
 msgstr ""
 
 #: data/templates/welcome-maintainer.tpl:28
 #: data/templates/welcome-domain-maintainer.tpl:22
 #: data/templates/domainmaintainerlistall.tpl:8
-#: data/templates/welcome-admin.tpl:31 lib/Skolab/Admin/include/menu.php:79
-#: lib/Skolab/Admin/include/menu.php:96 lib/Skolab/Admin/include/menu.php:104
+#: data/templates/welcome-admin.tpl:31 lib/Skolab/Admin/include/menu.php:81
+#: lib/Skolab/Admin/include/menu.php:98 lib/Skolab/Admin/include/menu.php:106
 msgid "Domain Maintainers"
 msgstr ""
 
@@ -976,7 +976,7 @@ msgstr ""
 msgid "Administrator"
 msgstr ""
 
-#: data/templates/welcome-admin.tpl:34 lib/Skolab/Admin/include/menu.php:109
+#: data/templates/welcome-admin.tpl:34 lib/Skolab/Admin/include/menu.php:111
 msgid "Settings"
 msgstr ""
 
@@ -1000,7 +1000,18 @@ msgstr ""
 msgid "Message:"
 msgstr ""
 
-#: data/templates/adminlistall.tpl:8 lib/Skolab/Admin/include/menu.php:73
+#: data/templates/page.tpl:116
+msgid "This is the <b>Skolab Groupware Server</b>."
+msgstr ""
+
+#: data/templates/page.tpl:117
+msgid ""
+"It comes with absolutely <b>no warranties</b> and is typically run entirely "
+"self supported.\n"
+"You can find further information on our company"
+msgstr ""
+
+#: data/templates/adminlistall.tpl:8 lib/Skolab/Admin/include/menu.php:75
 msgid "Administrators"
 msgstr ""
 
@@ -1342,7 +1353,7 @@ msgid " successfully created"
 msgstr ""
 
 #: htdocs/user/user.php:864 htdocs/user/user.php:870 htdocs/user/user.php:884
-#: lib/Skolab/Admin/include/menu.php:32
+#: lib/Skolab/Admin/include/menu.php:34
 msgid "Create New User"
 msgstr ""
 
@@ -1462,7 +1473,7 @@ msgid "LDAP Error: could not add object %s to maintainer group: %s"
 msgstr ""
 
 #: htdocs/administrator/admin.php:252 htdocs/administrator/admin.php:258
-#: htdocs/administrator/admin.php:270 lib/Skolab/Admin/include/menu.php:77
+#: htdocs/administrator/admin.php:270 lib/Skolab/Admin/include/menu.php:79
 msgid "Create New Administrator"
 msgstr ""
 
@@ -1763,7 +1774,7 @@ msgstr ""
 msgid "Permission for UID/GID"
 msgstr ""
 
-#: htdocs/sharedfolder/sf.php:174 lib/Skolab/Admin/include/menu.php:61
+#: htdocs/sharedfolder/sf.php:174 lib/Skolab/Admin/include/menu.php:63
 msgid "Add Shared Folder"
 msgstr ""
 
@@ -1802,31 +1813,31 @@ msgstr ""
 msgid "Manage Shared Folders (%d Folders)"
 msgstr ""
 
-#: htdocs/sharedfolder/index.php:74 lib/Skolab/Admin/include/form.class.php:254
+#: htdocs/sharedfolder/index.php:74 lib/Skolab/Admin/include/form.class.php:256
 msgid "Unspecified"
 msgstr ""
 
-#: htdocs/sharedfolder/index.php:75 lib/Skolab/Admin/include/form.class.php:254
+#: htdocs/sharedfolder/index.php:75 lib/Skolab/Admin/include/form.class.php:256
 msgid "Mails"
 msgstr ""
 
-#: htdocs/sharedfolder/index.php:76 lib/Skolab/Admin/include/form.class.php:254
+#: htdocs/sharedfolder/index.php:76 lib/Skolab/Admin/include/form.class.php:256
 msgid "Tasks"
 msgstr ""
 
-#: htdocs/sharedfolder/index.php:77 lib/Skolab/Admin/include/form.class.php:255
+#: htdocs/sharedfolder/index.php:77 lib/Skolab/Admin/include/form.class.php:257
 msgid "Journals"
 msgstr ""
 
-#: htdocs/sharedfolder/index.php:78 lib/Skolab/Admin/include/form.class.php:255
+#: htdocs/sharedfolder/index.php:78 lib/Skolab/Admin/include/form.class.php:257
 msgid "Events"
 msgstr ""
 
-#: htdocs/sharedfolder/index.php:79 lib/Skolab/Admin/include/form.class.php:256
+#: htdocs/sharedfolder/index.php:79 lib/Skolab/Admin/include/form.class.php:258
 msgid "Contacts"
 msgstr ""
 
-#: htdocs/sharedfolder/index.php:80 lib/Skolab/Admin/include/form.class.php:256
+#: htdocs/sharedfolder/index.php:80 lib/Skolab/Admin/include/form.class.php:258
 msgid "Notes"
 msgstr ""
 
@@ -1863,7 +1874,7 @@ msgstr ""
 #: htdocs/domainmaintainer/domainmaintainer.php:285
 #: htdocs/domainmaintainer/domainmaintainer.php:289
 #: htdocs/domainmaintainer/domainmaintainer.php:300
-#: lib/Skolab/Admin/include/menu.php:83 lib/Skolab/Admin/include/menu.php:100
+#: lib/Skolab/Admin/include/menu.php:85 lib/Skolab/Admin/include/menu.php:102
 msgid "Create New Domain Maintainer"
 msgstr ""
 
@@ -1890,7 +1901,7 @@ msgid "Modify Maintainer"
 msgstr ""
 
 #: htdocs/maintainer/maintainer.php:246 htdocs/maintainer/maintainer.php:252
-#: htdocs/maintainer/maintainer.php:264 lib/Skolab/Admin/include/menu.php:89
+#: htdocs/maintainer/maintainer.php:264 lib/Skolab/Admin/include/menu.php:91
 msgid "Create New Maintainer"
 msgstr ""
 
@@ -1902,199 +1913,199 @@ msgstr ""
 msgid "Maintainer Deleted"
 msgstr ""
 
-#: lib/Skolab/Admin/include/passwd.php:33
+#: lib/Skolab/Admin/include/passwd.php:46
 msgid "Password is empty"
 msgstr ""
 
-#: lib/Skolab/Admin/include/passwd.php:36
-#: lib/Skolab/Admin/include/passwd.php:41
+#: lib/Skolab/Admin/include/passwd.php:49
+#: lib/Skolab/Admin/include/passwd.php:54
 msgid "Passwords dont match"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:28
+#: lib/Skolab/Admin/include/menu.php:30
 msgid "Users"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:30
+#: lib/Skolab/Admin/include/menu.php:32
 msgid "Manage Email Users"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:35 lib/Skolab/Admin/include/menu.php:37
+#: lib/Skolab/Admin/include/menu.php:37 lib/Skolab/Admin/include/menu.php:39
 msgid "My User Settings"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:39
+#: lib/Skolab/Admin/include/menu.php:41
 msgid "Mail Delivery"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:41
+#: lib/Skolab/Admin/include/menu.php:43
 msgid "Forward Email"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:43
+#: lib/Skolab/Admin/include/menu.php:45
 msgid "Vacation"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:50
+#: lib/Skolab/Admin/include/menu.php:52
 msgid "Manage Address Book"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:52
+#: lib/Skolab/Admin/include/menu.php:54
 msgid "Create New vCard"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:57
+#: lib/Skolab/Admin/include/menu.php:59
 msgid "Shared Folder"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:59
+#: lib/Skolab/Admin/include/menu.php:61
 msgid "Manage Shared Folders"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:67
+#: lib/Skolab/Admin/include/menu.php:69
 msgid "Manage Distribution Lists"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:69
+#: lib/Skolab/Admin/include/menu.php:71
 msgid "Create New List"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:75
+#: lib/Skolab/Admin/include/menu.php:77
 msgid "Manage Administrators"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:81 lib/Skolab/Admin/include/menu.php:98
+#: lib/Skolab/Admin/include/menu.php:83 lib/Skolab/Admin/include/menu.php:100
 msgid "Manage Domain Maintainers"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:87
+#: lib/Skolab/Admin/include/menu.php:89
 msgid "Manage Maintainers"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:95
+#: lib/Skolab/Admin/include/menu.php:97
 msgid "Manage Maintainer"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:106
+#: lib/Skolab/Admin/include/menu.php:108
 msgid "Manage Domain Maintainer"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:111
+#: lib/Skolab/Admin/include/menu.php:113
 msgid "System Settings"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:114 lib/Skolab/Admin/include/menu.php:116
+#: lib/Skolab/Admin/include/menu.php:116 lib/Skolab/Admin/include/menu.php:118
 msgid "About Skolab"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:118
+#: lib/Skolab/Admin/include/menu.php:120
 msgid "Skolab Groupware Project"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:120
+#: lib/Skolab/Admin/include/menu.php:122
 msgid "Technology"
 msgstr ""
 
-#: lib/Skolab/Admin/include/menu.php:124
+#: lib/Skolab/Admin/include/menu.php:126
 msgid "Versions"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:34
+#: lib/Skolab/Admin/include/form.class.php:36
 msgid "Email address"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:34
+#: lib/Skolab/Admin/include/form.class.php:36
 msgid ""
 "collides with an address already used for another user, a vCard or a "
 "distribution list.<br />"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:45
+#: lib/Skolab/Admin/include/form.class.php:47
 msgid "Quota can not be negative"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:46
+#: lib/Skolab/Admin/include/form.class.php:48
 msgid "Quota must be a number"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:47
+#: lib/Skolab/Admin/include/form.class.php:49
 msgid "Quota must be an integer"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:54
+#: lib/Skolab/Admin/include/form.class.php:56
 msgid ""
 "Phone entries may only contain a-z, numbers, spaces and the characters ()-+/."
 "=?:"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:117
+#: lib/Skolab/Admin/include/form.class.php:119
 msgid "<tr><th>Attribute</th><th>Value</th><th>Comment</th></tr>"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:204
+#: lib/Skolab/Admin/include/form.class.php:206
 msgid "Yes"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:204
+#: lib/Skolab/Admin/include/form.class.php:206
 msgid "No"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:322
+#: lib/Skolab/Admin/include/form.class.php:324
 msgid "Always accept"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:323
+#: lib/Skolab/Admin/include/form.class.php:325
 msgid "Always reject"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:324
+#: lib/Skolab/Admin/include/form.class.php:326
 msgid "Reject if conflicts"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:325
+#: lib/Skolab/Admin/include/form.class.php:327
 msgid "Manual if conflicts"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:326
+#: lib/Skolab/Admin/include/form.class.php:328
 msgid "Manual"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:332
-#: lib/Skolab/Admin/include/form.class.php:338
+#: lib/Skolab/Admin/include/form.class.php:334
+#: lib/Skolab/Admin/include/form.class.php:340
 msgid "Anyone"
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:374
+#: lib/Skolab/Admin/include/form.class.php:376
 msgid "* Required field."
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:395
-#: lib/Skolab/Admin/include/form.class.php:398
+#: lib/Skolab/Admin/include/form.class.php:397
+#: lib/Skolab/Admin/include/form.class.php:400
 msgid "Required field "
 msgstr ""
 
-#: lib/Skolab/Admin/include/form.class.php:395
-#: lib/Skolab/Admin/include/form.class.php:398
+#: lib/Skolab/Admin/include/form.class.php:397
+#: lib/Skolab/Admin/include/form.class.php:400
 msgid " is empty"
 msgstr ""
 
-#: lib/Skolab/Admin/include/auth.class.php:42
+#: lib/Skolab/Admin/include/auth.class.php:44
 msgid "Server error, no ldap object!"
 msgstr ""
 
-#: lib/Skolab/Admin/include/auth.class.php:48
+#: lib/Skolab/Admin/include/auth.class.php:50
 msgid "Could not bind to LDAP server: "
 msgstr ""
 
-#: lib/Skolab/Admin/include/auth.class.php:59
+#: lib/Skolab/Admin/include/auth.class.php:61
 msgid "Could not bind to LDAP server"
 msgstr ""
 
-#: lib/Skolab/Admin/include/auth.class.php:86
-#: lib/Skolab/Admin/include/auth.class.php:90
+#: lib/Skolab/Admin/include/auth.class.php:88
+#: lib/Skolab/Admin/include/auth.class.php:92
 msgid "Wrong username or password"
 msgstr ""
 
-#: lib/Skolab/Admin/include/auth.class.php:129
+#: lib/Skolab/Admin/include/auth.class.php:131
 msgid "Skolab Groupware Login"
 msgstr ""
