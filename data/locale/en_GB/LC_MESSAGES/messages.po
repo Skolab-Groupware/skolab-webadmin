@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-14 08:27+0200\n"
+"POT-Creation-Date: 2017-09-14 08:37+0200\n"
 "PO-Revision-Date: 2017-09-13 20:54+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -1209,7 +1209,7 @@ msgstr ""
 msgid "UID "
 msgstr "UID "
 
-#: htdocs/user/user.php:147 lib/Skolab/Admin/include/form.class.php:34
+#: htdocs/user/user.php:147
 msgid ""
 " collides with an address already used for another user, a vCard or a "
 "distribution list.<br />"
@@ -2122,8 +2122,18 @@ msgid "Versions"
 msgstr "Versions"
 
 #: lib/Skolab/Admin/include/form.class.php:34
-msgid "Email address "
+#, fuzzy
+msgid "Email address"
 msgstr "Email address "
+
+#: lib/Skolab/Admin/include/form.class.php:34
+#, fuzzy
+msgid ""
+"collides with an address already used for another user, a vCard or a "
+"distribution list.<br />"
+msgstr ""
+" collides with an address already used for another user, a vCard or a "
+"distribution list.<br />"
 
 #: lib/Skolab/Admin/include/form.class.php:45
 msgid "Quota can not be negative"

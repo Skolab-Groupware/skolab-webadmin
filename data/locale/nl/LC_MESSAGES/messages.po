@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin Dutch\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-14 08:27+0200\n"
+"POT-Creation-Date: 2017-09-14 08:37+0200\n"
 "PO-Revision-Date: 2007-11-21 14:56+0100\n"
 "Last-Translator: Richard Bos <richard@radoeka.nl>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -1190,7 +1190,7 @@ msgstr "Gebruiker, vCard of distributielijst met dit E-mailadres bestaat al"
 msgid "UID "
 msgstr "UID"
 
-#: htdocs/user/user.php:147 lib/Skolab/Admin/include/form.class.php:34
+#: htdocs/user/user.php:147
 msgid ""
 " collides with an address already used for another user, a vCard or a "
 "distribution list.<br />"
@@ -2111,8 +2111,15 @@ msgid "Versions"
 msgstr "Versies"
 
 #: lib/Skolab/Admin/include/form.class.php:34
-msgid "Email address "
+#, fuzzy
+msgid "Email address"
 msgstr "E-mailadres"
+
+#: lib/Skolab/Admin/include/form.class.php:34
+msgid ""
+"collides with an address already used for another user, a vCard or a "
+"distribution list.<br />"
+msgstr ""
 
 #: lib/Skolab/Admin/include/form.class.php:45
 msgid "Quota can not be negative"
