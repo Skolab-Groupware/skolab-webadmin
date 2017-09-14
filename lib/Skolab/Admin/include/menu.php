@@ -56,7 +56,7 @@ if( $auth->group() == "admin" || $auth->group() == "maintainer") {
 
 }
 if( $auth->group() == "admin" || $auth->group() == "maintainer" || $auth->group() == 'domain-maintainer') {
-  $menuitems['sf'] = array( 'name' => _('Shared Folder'),
+  $menuitems['sf'] = array( 'name' => _('Shared Folders'),
 							'url'  => $webserver_web_prefix.'/sharedfolder/',
 							'title' => _('Manage Shared Folders'),
 							'submenu' => array(
