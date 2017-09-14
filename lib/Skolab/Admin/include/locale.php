@@ -18,6 +18,8 @@
  *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
  */
 
+require_once ("session_vars.php");
+
 function supported_lang($lang) {
 
 	// REMEMBER TO UPDATE THIS WHEN ADDING NEW LANGUAGES
