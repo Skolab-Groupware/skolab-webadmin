@@ -42,8 +42,8 @@ visit our <a href="%1">web page</a> to get in touch.
 {t escape="no" 1="http://kolabsys.com" 2="https://das-netzwerkteam.de"}The original Kolab Groupware (version 2) has been developed at Kolab
 Systems AG. The company was founded in Z&uuml;rich in 2010, <a href="%1">
 Kolab Systems AG</a>. The text below applies to the latest
-version of Kolab. The Kolab v2 legacy support is now provided by <a
-href="%2">DAS-NETZWERKTEAM</a>.
+version of Kolab. The Kolab v2 legacy support is now provided by
+<a href="%2">DAS-NETZWERKTEAM</a>.
 {/t}
 </p>
 
