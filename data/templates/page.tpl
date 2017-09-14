@@ -115,7 +115,7 @@ function changeLanguage(combobox) {ldelim}
 	</div><!-- #root -->
 <div id="footer">{t escape=no}This is the <b>Skolab Groupware Server</b>.{/t}
 <br />{t escape=no 1="https://das-netzwerkteam.de/site/?q=node/87"}It comes with absolutely <b>no warranties</b> and is typically run entirely self supported.
-You can find further information on our company's <a href="%1">web site</a>.{/t}
+You can find further information on our company&rsquo;s <a href="%1">web site</a>.{/t}
 <br />{t escape=no 1="https://das-netzwerkteam.de"}Professional support is also available from <a href="%1">DAS-NETZWERKTEAM</a>.{/t}
 </body>
 </html>
