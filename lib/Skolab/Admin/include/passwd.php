@@ -1,14 +1,27 @@
 <?php
-/* -------------------------------------------------------------------
-   Copyright (c) 2004 Klaraelvdalens Datakonsult AB
-   Copyright (C) 2007 by Intevation GmbH
-   Author(s):
-   Sascha Wilde <wilde@intevation.de>
-   Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
 
-   This program is free software under the GNU GPL (>=v2)
-   Read the file COPYING coming with the software for details.
-   ------------------------------------------------------------------- */
+/*
+ *  Copyright (c) 2004 Klaraelvdalens Datakonsult AB
+ *  Copyright (C) 2007 by Intevation GmbH
+ *  Copyright (c) 2017 Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+ *
+ *    Originally written by
+ *    Sascha Wilde <wilde@intevation.de>
+ *    Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
+ *
+ *  This  program is free  software; you can redistribute  it and/or
+ *  modify it  under the terms of the GNU  General Public License as
+ *  published by the  Free Software Foundation; either version 2, or
+ *  (at your option) any later version.
+ *
+ *  This program is  distributed in the hope that it will be useful,
+ *  but WITHOUT  ANY WARRANTY; without even the  implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ *  General Public License for more details.
+ *
+ *  You can view the  GNU General Public License, online, at the GNU
+ *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
+ */
 
 // Generate OpenLDAP style SSHA password strings
 function ssha($string, $salt)

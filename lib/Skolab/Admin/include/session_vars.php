@@ -1,12 +1,28 @@
 <?php
-/*
-# (c) 2005 Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
-# (c) 2003 Tassilo Erlewein <tassilo.erlewein@erfrakon.de>
-# (c) 2003 Martin Konold <martin.konold@erfrakon.de>
-# This program is Free Software under the GNU General Public License (>=v2).
-# Read the file COPYING that comes with this packages for details.
 
-*/
+/*
+ *  Copyright (c) 2003 Tassilo Erlewein <tassilo.erlewein@erfrakon.de>
+ *  Copyright (c) 2003 Martin Konold <martin.konold@erfrakon.de>
+ *  Copyright (c) 2005 Steffen Hansen <steffen@klaralvdalens-datakonsult.se>
+ *  Copyright (c) 2017 Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+ *
+ *  This  program is free  software; you can redistribute  it and/or
+ *  modify it  under the terms of the GNU  General Public License as
+ *  published by the  Free Software Foundation; either version 2, or
+ *  (at your option) any later version.
+ *
+ *  This program is  distributed in the hope that it will be useful,
+ *  but WITHOUT  ANY WARRANTY; without even the  implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ *  General Public License for more details.
+ *
+ *  You can view the  GNU General Public License, online, at the GNU
+ *  Project's homepage; see <http://www.gnu.org/licenses/gpl.html>.
+ */
+
+require_once('config.php');
+
+@session_start();
 
 /*
  * Session variables fetched from LDAP
@@ -15,10 +31,6 @@
  * We dont really need to store those in the session,
  * since we source this file on every invokation anyway.
  */
-
-require_once('config.php');
-
-@session_start();
 
 $_SESSION['fqdnhostname'] = "skolabserver.example.com";
 $_SESSION['ldap_master_uri'] = "ldap://127.0.0.1:389";

@@ -1,8 +1,10 @@
 <?php
 /*
  *  Copyright (c) 2005 Klarälvdalens Datakonsult AB
+ *  Copyright (c) 2017 Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  *
- *    Written by Romain Pokrzywka <romain@klaralvdalens-datakonsult.se>
+ *    Originally written by
+ *    Romain Pokrzywka <romain@klaralvdalens-datakonsult.se>
  *
  *  This  program is free  software; you can redistribute  it and/or
  *  modify it  under the terms of the GNU  General Public License as
