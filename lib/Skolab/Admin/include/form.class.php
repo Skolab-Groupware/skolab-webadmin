@@ -31,7 +31,7 @@ function checkuniquealias( $form, $key, $value ) {
   foreach( $lst as $alias ) {
 	debug( "looking at $alias, exluding $dn" );
 	if( $ldap->countMail( $_SESSION['base_dn'], $alias, $excludedn ) > 0 ) {
-	  $str .= _('Email address ').MySmarty::htmlentities($alias)._(' collides with an address already used for another user, a vCard or a distribution list.<br />');
+	  $str .= _('Email address').' '.MySmarty::htmlentities($alias).' '._('collides with an address already used for another user, a vCard or a distribution list.<br />');
 	}
   }
   return $str;
