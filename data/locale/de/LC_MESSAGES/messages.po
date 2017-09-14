@@ -1019,7 +1019,7 @@ msgstr "Zurück zur Liste der Verteilerlisten"
 
 #: data/templates/sflistall.tpl:8
 msgid "Shared folders"
-msgstr "Gemeinsam genutzter Ordner"
+msgstr "Gemeinsam genutzte Ordner"
 
 #: data/templates/sflistall.tpl:13
 msgid "Server"
