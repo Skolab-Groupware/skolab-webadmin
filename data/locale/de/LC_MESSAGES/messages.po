@@ -2171,7 +2171,7 @@ msgstr "Systemeinstellungen"
 
 #: lib/Skolab/Admin/include/menu.php:116 lib/Skolab/Admin/include/menu.php:118
 msgid "About Skolab"
-msgstr "Über Kolab"
+msgstr "Über Skolab"
 
 #: lib/Skolab/Admin/include/menu.php:120
 msgid "Skolab Groupware Project"
