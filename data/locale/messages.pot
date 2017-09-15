@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-14 11:48+0200\n"
+"POT-Creation-Date: 2017-09-15 15:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,6 +211,7 @@ msgstr ""
 #: data/templates/welcome-maintainer.tpl:19
 #: data/templates/welcome-domain-maintainer.tpl:16
 #: data/templates/welcome-admin.tpl:19
+#: lib/Skolab/Admin/include/menu.php:59
 msgid "Shared Folders"
 msgstr ""
 
@@ -2084,10 +2085,6 @@ msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:54
 msgid "Create New vCard"
-msgstr ""
-
-#: lib/Skolab/Admin/include/menu.php:59
-msgid "Shared Folder"
 msgstr ""
 
 #: lib/Skolab/Admin/include/menu.php:61

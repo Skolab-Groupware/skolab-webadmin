@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-14 11:48+0200\n"
+"POT-Creation-Date: 2017-09-14 12:00+0200\n"
 "PO-Revision-Date: 2017-09-13 20:54+0000\n"
 "Last-Translator: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>\n"
 "Language-Team: English (United Kingdom) <https://hosted.weblate.org/projects/"
@@ -183,7 +183,7 @@ msgstr "Manage Users"
 
 #: data/templates/welcome-maintainer.tpl:19
 #: data/templates/welcome-domain-maintainer.tpl:16
-#: data/templates/welcome-admin.tpl:19
+#: data/templates/welcome-admin.tpl:19 lib/Skolab/Admin/include/menu.php:59
 msgid "Shared Folders"
 msgstr "Shared Folders"
 
@@ -2084,10 +2084,6 @@ msgstr "Manage Address Book"
 msgid "Create New vCard"
 msgstr "Create New vCard"
 
-#: lib/Skolab/Admin/include/menu.php:59
-msgid "Shared Folder"
-msgstr "Shared Folder"
-
 #: lib/Skolab/Admin/include/menu.php:61
 msgid "Manage Shared Folders"
 msgstr "Manage Shared Folders"
@@ -2245,6 +2241,9 @@ msgstr "Wrong username or password"
 #: lib/Skolab/Admin/include/auth.class.php:131
 msgid "Skolab Groupware Login"
 msgstr "Skolab Groupware Login"
+
+#~ msgid "Shared Folder"
+#~ msgstr "Shared Folder"
 
 #~ msgid ""
 #~ "\n"

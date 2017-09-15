@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kolab-Webadmin French\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-14 11:48+0200\n"
+"POT-Creation-Date: 2017-09-14 12:00+0200\n"
 "PO-Revision-Date: 2009-04-25 11:45+0200\n"
 "Last-Translator: Benoit Mortier <benoit.mortier@opensides.be>\n"
 "Language-Team: Kolab development coordination <kolab-devel@kolab.org>\n"
@@ -183,7 +183,7 @@ msgstr "Gérer les utilisateurs de messagerie"
 
 #: data/templates/welcome-maintainer.tpl:19
 #: data/templates/welcome-domain-maintainer.tpl:16
-#: data/templates/welcome-admin.tpl:19
+#: data/templates/welcome-admin.tpl:19 lib/Skolab/Admin/include/menu.php:59
 #, fuzzy
 msgid "Shared Folders"
 msgstr "Dossier partagé"
@@ -2092,10 +2092,6 @@ msgstr "Gérer le carnet d'adresse"
 msgid "Create New vCard"
 msgstr "Créer une nouvelle vCard"
 
-#: lib/Skolab/Admin/include/menu.php:59
-msgid "Shared Folder"
-msgstr "Dossier partagé"
-
 #: lib/Skolab/Admin/include/menu.php:61
 msgid "Manage Shared Folders"
 msgstr "Gérer les dossiers partagés"
@@ -2255,6 +2251,9 @@ msgstr "Mauvais utilisateur ou mot de passe"
 #, fuzzy
 msgid "Skolab Groupware Login"
 msgstr "Connexion au serveur Kolab"
+
+#~ msgid "Shared Folder"
+#~ msgstr "Dossier partagé"
 
 #, fuzzy
 #~ msgid "Filter\""

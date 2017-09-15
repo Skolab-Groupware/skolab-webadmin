@@ -2134,8 +2134,8 @@ msgid "Create New vCard"
 msgstr "Neue Visitenkarte (vCard) erzeugen"
 
 #: lib/Skolab/Admin/include/menu.php:59
-msgid "Shared Folder"
-msgstr "Gemeinsam genutzter Ordner"
+msgid "Shared Folders"
+msgstr "Gemeinsam genutzte Ordner"
 
 #: lib/Skolab/Admin/include/menu.php:61
 msgid "Manage Shared Folders"
