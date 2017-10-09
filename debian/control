@@ -3,7 +3,7 @@ Section: admin
 Priority: extra
 Maintainer: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 Build-Depends:
- debhelper (>= 10),
+ debhelper (>= 9),
  cdbs,
  dh-autoreconf,
 Standards-Version: 4.0.0
