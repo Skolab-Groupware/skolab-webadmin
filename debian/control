@@ -19,6 +19,7 @@ Depends:
  ${misc:Depends},
  php,
  smarty3,
+ smarty-gettext,
  php-net-sieve,
  php-net-ldap3,
  php-horde-util,
