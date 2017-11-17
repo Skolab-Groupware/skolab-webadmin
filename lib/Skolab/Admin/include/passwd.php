@@ -26,35 +26,35 @@
 // Generate OpenLDAP style SSHA password strings
 function ssha($string, $salt)
 {
-  return "{SSHA}" . base64_encode(pack("H*", sha1($string . $salt)) . $salt);
+	return "{SSHA}" . base64_encode(pack("H*", sha1($string . $salt)) . $salt);
 }
 
 // return 4 random bytes
 function gensalt()
 {
-  $salt = '';
-  while (strlen($salt) < 4)
-    $salt = $salt . chr(mt_rand(0,255));
-  return $salt;
+	$salt = '';
+	while (strlen($salt) < 4)
+		$salt = $salt . chr(mt_rand(0,255));
+	return $salt;
 }
 
 // Check that passwords from form input match
 function checkpw( $form, $key, $value ) {
-  global $action;
-  if( $action == 'firstsave' ) {
-    if( $key == 'password_0' ) {
-      if( $value == '' ) return _('Password is empty');
-    } else if( $key == 'password_1' ) {
-      if( $value != $_POST['password_0'] ) {
-        return _('Passwords dont match');
-      }
-    }
-  } else {
-    if( $value != $_POST['password_0'] ) {
-      return _('Passwords dont match');
-    }
-  }
-  return '';
+	global $action;
+	if( $action == 'firstsave' ) {
+		if( $key == 'password_0' ) {
+			if( $value == '' ) return _('Password is empty');
+		} else if( $key == 'password_1' ) {
+			if( $value != $_POST['password_0'] ) {
+				return _('Passwords dont match');
+			}
+		}
+	} else {
+		if( $value != $_POST['password_0'] ) {
+			return _('Passwords dont match');
+		}
+	}
+	return '';
 }
 
 ?>
