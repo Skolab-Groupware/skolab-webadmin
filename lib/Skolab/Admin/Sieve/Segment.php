@@ -28,99 +28,99 @@
  */
 abstract class SkolabAdmin_Sieve_Segment
 {
-    /**
-     * The segment type
-     *
-     * @var string
-     */
-    protected $type;
+	//
+	// The segment type
+	//
+	// @var string
+	//
+	protected $type;
 
-    /**
-     * The script template
-     *
-     * @var string
-     */
-    protected $template;
+	//
+	// The script template
+	//
+	// @var string
+	//
+	protected $template;
 
-    /**
-     * Is this particular segment active?
-     *
-     * @var bool
-     */
-    private $_active = false;
+	//
+	// Is this particular segment active?
+	//
+	// @var bool
+	//
+	private $_active = false;
 
-    /**
-     * Constructor.
-     *
-     * @param string $script The current script segment
-     */
-    public function __construct($script = '')
-    {
-        if (!empty($script)) {
-            $this->parseArguments($script);
-        }
-    }
+	//
+	// Constructor.
+	//
+	// @param string $script The current script segment
+	//
+	public function __construct($script = '')
+	{
+		if (!empty($script)) {
+			$this->parseArguments($script);
+		}
+	}
 
-    /**
-     * Is this particular segment active?
-     *
-     * @return bool True if the segment is active.
-     */
-    public function isActive()
-    {
-        return $this->_active;
-    }
+	//
+	// Is this particular segment active?
+	//
+	// @return bool True if the segment is active.
+	//
+	public function isActive()
+	{
+		return $this->_active;
+	}
 
-    /**
-     * Set the segment (in)active.
-     *
-     * @param boolean $active Should the segment be active or inactive?
-     *
-     * @return NULL
-     */
-    public function setActive($active = true)
-    {
-        $this->_active = $active;
-    }
+	//
+	// Set the segment (in)active.
+	//
+	// @param boolean $active Should the segment be active or inactive?
+	//
+	// @return NULL
+	//
+	public function setActive($active = true)
+	{
+		$this->_active = $active;
+	}
 
-    /**
-     * Set the segment inactive.
-     *
-     * @return NULL
-     */
-    public function setInactive()
-    {
-        $this->_active = false;
-    }
+	//
+	// Set the segment inactive.
+	//
+	// @return NULL
+	//
+	public function setInactive()
+	{
+		$this->_active = false;
+	}
 
-    public function generate()
-    {
-        $script = $this->_generateScript();
-        if (!$this->_active) {
-            $script = preg_replace('/^(.)/m', '#$1', $script);
-        }
-        return '### SEGMENT START ' . strtoupper($this->type) .' ' .
-            (($this->_active) ? 'ENABLED' : 'DISABLED') . "\r\n" .
-            $script .
-            '### SEGMENT END ' . strtoupper($this->type) . "\r\n";
-    }
+	public function generate()
+	{
+		$script = $this->_generateScript();
+		if (!$this->_active) {
+			$script = preg_replace('/^(.)/m', '#$1', $script);
+		}
+		return '### SEGMENT START ' . strtoupper($this->type) .' ' .
+		        (($this->_active) ? 'ENABLED' : 'DISABLED') . "\r\n" .
+		        $script .
+		        '### SEGMENT END ' . strtoupper($this->type) . "\r\n";
+	}
 
-    private function _generateScript()
-    {
-        return vsprintf($this->template, $this->getArguments());
-    }
+	private function _generateScript()
+	{
+		return vsprintf($this->template, $this->getArguments());
+	}
 
-    protected function dotstuff($str)
-    {
-        return str_replace("\n.", "\n..", $str);
-    }
+	protected function dotstuff($str)
+	{
+		return str_replace("\n.", "\n..", $str);
+	}
 
-    protected function undotstuff($str)
-    {
-        return str_replace("\n..", "\n.", $str);
-    }
+	protected function undotstuff($str)
+	{
+		return str_replace("\n..", "\n.", $str);
+	}
 
-    abstract public function getArguments();
+	abstract public function getArguments();
 
-    abstract public function parseArguments($script);
+	abstract public function parseArguments($script);
 }
