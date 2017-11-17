@@ -32,63 +32,63 @@ require_once('locale.php');
 //}
 
 class MySmarty extends Smarty {
-  function __construct() {
-	global $topdir;
-	global $php_dir;
-	global $language;
-	global $smarty_templates_dir;
-	global $smarty_compiledir;
-	global $webserver_web_prefix;
-	global $params;
-	global $smarty_debugging;
+	function __construct() {
+		global $topdir;
+		global $php_dir;
+		global $language;
+		global $smarty_templates_dir;
+		global $smarty_compiledir;
+		global $webserver_web_prefix;
+		global $params;
+		global $smarty_debugging;
 
-	Smarty::__construct();
-	$this->debugging = $smarty_debugging;
+		Smarty::__construct();
+		$this->debugging = $smarty_debugging;
 
-	$this->template_dir = $smarty_templates_dir;
-	$this->compile_dir = $smarty_compiledir;
+		$this->template_dir = $smarty_templates_dir;
+		$this->compile_dir = $smarty_compiledir;
 
-	//$this->register_outputfilter("count_bytes");
+		//$this->register_outputfilter("count_bytes");
 
-	$this->assign('webserver_web_prefix', $webserver_web_prefix);
-	if ($params['return_to_login_after_logout']) {
-		$this->assign('skolab_url', $params['skolab_webadmin_url']);
-	} else {
-		$this->assign('skolab_url', $params['skolab_webmailer_url']);
+		$this->assign('webserver_web_prefix', $webserver_web_prefix);
+		if ($params['return_to_login_after_logout']) {
+			$this->assign('skolab_url', $params['skolab_webadmin_url']);
+		} else {
+			$this->assign('skolab_url', $params['skolab_webmailer_url']);
+		}
+		$this->assign('topdir', $topdir);
+		$this->assign('self_url', $_SERVER['REQUEST_URI']);
+
+		$cleanurl = preg_replace('/(\?|&)lang=(.*)(&|$)/', '', $_SERVER['REQUEST_URI']);
+		$this->assign( 'lang_url',
+		                           strpos($cleanurl,'?')===false?
+		                           ($cleanurl.'?lang='):
+		                           ($cleanurl.'&lang=') );
+
+		// If you add a translation,
+		// add the new language here
+		$this->assign( 'currentlang', $language );
+		$this->assign( 'languages', array(
+		                                                                  array( 'name' => 'Deutsch',
+		                                                                         'code' => 'de_DE' ),
+		                                                                  array( 'name' => 'English',
+		                                                                         'code' => 'en_US' ),
+		                                                                  array( 'name' => 'Français',
+		                                                                         'code' => 'fr_FR' ),
+		                                                                  array( 'name' => 'Italiano',
+		                                                                         'code' => 'it_IT' ),
+		                                                                  array( 'name' => 'Nederlands',
+		                                                                         'code' => 'nl_NL' ),
+		                                                                  array( 'name' => 'Español',
+		                                                                         'code' => 'es_ES' ),
+		));
 	}
-	$this->assign('topdir', $topdir);
-	$this->assign('self_url', $_SERVER['REQUEST_URI']);
 
-	$cleanurl = preg_replace('/(\?|&)lang=(.*)(&|$)/', '', $_SERVER['REQUEST_URI']);
-	$this->assign( 'lang_url',
-				   strpos($cleanurl,'?')===false?
-				   ($cleanurl.'?lang='):
-				   ($cleanurl.'&lang=') );
-
-	// If you add a translation,
-	// add the new language here
-	$this->assign( 'currentlang', $language );
-	$this->assign( 'languages', array(
-									  array( 'name' => 'Deutsch',
-											 'code' => 'de_DE' ),
-									  array( 'name' => 'English',
-											 'code' => 'en_US' ),
-									  array( 'name' => 'Français',
-											 'code' => 'fr_FR' ),
-									  array( 'name' => 'Italiano',
-											 'code' => 'it_IT' ),
-									  array( 'name' => 'Nederlands',
-											 'code' => 'nl_NL' ),
-									  array( 'name' => 'Español',
-											 'code' => 'es_ES' ),
-									  ));
-  }
-
-  /** UTF-8 friendly htmlentities() */
-  /* static */ function htmlentities( $str ) {
-	return htmlentities( $str, ENT_QUOTES, "UTF-8");
-  }
-};
+	// UTF-8 friendly htmlentities() */
+	function htmlentities( $str ) {
+		return htmlentities( $str, ENT_QUOTES, "UTF-8");
+	}
+}
 
 /*
   Local variables:
