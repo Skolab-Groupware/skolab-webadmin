@@ -29,75 +29,75 @@
 class SkolabAdmin_Sieve_Segment_Delivery
 extends SkolabAdmin_Sieve_Segment
 {
-    /**
-     * The segment type
-     *
-     * @var string
-     */
-    protected $type = 'delivery';
+	//
+	// The segment type
+	//
+	// @var string
+	//
+	protected $type = 'delivery';
 
-    /**
-     * The folder to deliver mails to.
-     *
-     * @var string
-     */
-    private $_delivery_folder = 'Inbox';
+	//
+	// The folder to deliver mails to.
+	//
+	// @var string
+	//
+	private $_delivery_folder = 'Inbox';
 
-    /**
-     * Constructor.
-     *
-     * @param string $script The current script segment
-     */
-    public function __construct($script = '')
-    {
-        $this->template = 'if allof (%s' . "\r\n" .
-            'header :contains ["X-Kolab-Scheduling-Message"] ["FALSE"]) {' . "\r\n" .
-            'fileinto "INBOX/%s";' . "\r\n" .
-            '}' . "\r\n";
-        parent::__construct($script);
-    }
+	//
+	// Constructor.
+	//
+	// @param string $script The current script segment
+	//
+	public function __construct($script = '')
+	{
+		$this->template = 'if allof (%s' . "\r\n" .
+		    'header :contains ["X-Kolab-Scheduling-Message"] ["FALSE"]) {' . "\r\n" .
+		    'fileinto "INBOX/%s";' . "\r\n" .
+		    '}' . "\r\n";
+		parent::__construct($script);
+	}
 
-    /**
-     * Retrieve the delivery folder this script will deliver to.
-     *
-     * @return string The delivery folder.
-     */
-    public function getDeliveryFolder()
-    {
-        return $this->_delivery_folder;
-    }
+	//
+	// Retrieve the delivery folder this script will deliver to.
+	//
+	// @return string The delivery folder.
+	//
+	public function getDeliveryFolder()
+	{
+		return $this->_delivery_folder;
+	}
 
-    /**
-     * Set the delivery folder this script will deliver to.
-     *
-     * @param string $folder The delivery folder.
-     *
-     * @return NULL
-     */
-    public function setDeliveryFolder($folder)
-    {
-        $this->_delivery_folder = $folder;
-    }
+	//
+	// Set the delivery folder this script will deliver to.
+	//
+	// @param string $folder The delivery folder.
+	//
+	// @return NULL
+	//
+	public function setDeliveryFolder($folder)
+	{
+		$this->_delivery_folder = $folder;
+	}
 
-    public function getArguments()
-    {
-        return array(
-            ($this->isActive()) ? 'true, ## delivery enabled' : 'false, ## delivery disabled',
-            // UTF7-conversion handles a specific cyrus bug. This does not work
-            // when using dovecot for example. The sieve RFC requires UTF8.
-            String::convertCharset($this->getDeliveryFolder(), 'utf-8', 'utf7-imap')
-        );
-    }
+	public function getArguments()
+	{
+		return array(
+		    ($this->isActive()) ? 'true, ## delivery enabled' : 'false, ## delivery disabled',
+		    // UTF7-conversion handles a specific cyrus bug. This does not work
+		    // when using dovecot for example. The sieve RFC requires UTF8.
+		    String::convertCharset($this->getDeliveryFolder(), 'utf-8', 'utf7-imap')
+		);
+	}
 
-    public function parseArguments($script)
-    {
-        $this->parseDeliveryFolder($script);
-    }
+	public function parseArguments($script)
+	{
+		$this->parseDeliveryFolder($script);
+	}
 
-    public function parseDeliveryFolder($script)
-    {
-        if (preg_match("/fileinto \"INBOX\/([^\"]*)\";/", $script, $regs)) {
-            $this->setDeliveryFolder(String::convertCharset($regs[1], 'utf7-imap', 'utf-8'));
-        }
-    }
+	public function parseDeliveryFolder($script)
+	{
+		if (preg_match("/fileinto \"INBOX\/([^\"]*)\";/", $script, $regs)) {
+			$this->setDeliveryFolder(String::convertCharset($regs[1], 'utf7-imap', 'utf-8'));
+		}
+	}
 }
