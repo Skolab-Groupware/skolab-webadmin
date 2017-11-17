@@ -177,7 +177,7 @@ switch( $action ) {
 				fill_form_for_modify($form, $ldap_object);
 				$content = $form->outputForm();
 			} else {
-				ldap_object = array();
+				$ldap_object = array();
 				$ldap_object['objectClass'] = $oc;
 				$ldap_object['sn'] = trim($_POST['lastname']);
 				$ldap_object['cn'] = trim($_POST['firstname']).' '.$ldap_object['sn'];
