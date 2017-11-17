@@ -26,7 +26,7 @@ require_once('Skolab/Admin/include/authenticate.php');
 
 $errors = array();
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'sf';
 
 if( $auth->group() != 'maintainer' && $auth->group() != 'admin' && $auth->group() != 'domain-maintainer' ) {
@@ -36,10 +36,10 @@ if( $auth->group() != 'maintainer' && $auth->group() != 'admin' && $auth->group(
 
 require_once('Skolab/Admin/include/menu.php');
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Extract data from LDAP ***/
+// *** Extract data from LDAP ***
 
 function prepare_domain_filter_component($str) {
 	return '(cn=*@'.SkolabLDAP::escape($str).')';
@@ -91,7 +91,7 @@ if( !$errors ) {
 	}
 }
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'uid', $auth->uid() );

@@ -27,7 +27,7 @@ require_once('Skolab/Admin/include/authenticate.php');
 require_once('Skolab/Admin/include/form.class.php');
 
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $errors = array();
 $messages = array();
 $sidx = 'distlist';
@@ -101,11 +101,11 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
 }
 
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 $heading = '';
 
-/**** Form/data handling ***/
+// *** Form/data handling ***
 if (!empty($_REQUEST['action']) && in_array($_REQUEST['action'],$valid_actions))
 	$action = trim($_REQUEST['action']);
 else array_push($errors, _("Error: need valid action to proceed") );
@@ -317,7 +317,7 @@ if( !$errors ) {
 
 	case 'kill':
 		if (!$errors) {
-			/* Just delete the object and let kolabd clean up */
+			// Just delete the object and let kolabd clean up
 			if ($ldap->deleteGroupOfNames($dn)) {
 				$messages[] = _('Distribution List ').$_REQUEST['cn']._(' deleted');
 				$heading = _('Entry Deleted');
@@ -330,7 +330,7 @@ if( !$errors ) {
 	}
 }
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'errors', array_merge((array)$errors,(array)$form->errors) );
 $smarty->assign( 'heading', $heading );

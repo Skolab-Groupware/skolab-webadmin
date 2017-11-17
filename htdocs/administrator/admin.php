@@ -27,7 +27,7 @@ require_once('Skolab/Admin/include/authenticate.php');
 require_once('Skolab/Admin/include/form.class.php');
 require_once('Skolab/Admin/include/passwd.php');
 
-/**** Functions ***/
+// *** Functions ***
 function comment( $s ) {
 	return $s;
 }
@@ -79,13 +79,13 @@ function fill_form_for_modify( &$form, &$ldap_object ) {
 	}
 }
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'administrator';
 
 require_once('Skolab/Admin/include/menu.php');
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Logic ***/
+// *** Logic ***
 $errors = array();
 $messages = array();
 $valid_actions = array('save','firstsave','modify','create','delete','kill');
@@ -146,7 +146,7 @@ if( $dn ) {
 
 $form = new SkolabForm( 'admin', 'createadmin.tpl', $entries );
 
-/***************** Main action swicth **********************/
+// **************** Main action swicth **********************
 switch( $action ) {
 
 	case 'firstsave':

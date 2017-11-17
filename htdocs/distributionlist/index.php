@@ -29,7 +29,7 @@ require_once('Skolab/Admin/include/authenticate.php');
 
 $errors = array();
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'distlist';
 
 $group = $auth->group();
@@ -39,10 +39,10 @@ if( $group != 'maintainer' && $group != 'admin' && $group != 'domain-maintainer'
 
 require_once('Skolab/Admin/include/menu.php');
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Extract data from LDAP ***/
+// *** Extract data from LDAP ***
 
 // Get all entries & dynamically split the letters with growing entries
 if( !$errors ) {
@@ -86,7 +86,7 @@ if( !$errors ) {
 }
 
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'uid', $auth->uid() );

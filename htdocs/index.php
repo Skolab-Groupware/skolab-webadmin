@@ -25,7 +25,7 @@ require_once('Skolab/Admin/include/headers.php');
 require_once('Skolab/Admin/include/locale.php');
 require_once('Skolab/Admin/include/authenticate.php');
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 
 require_once('Skolab/Admin/include/menu.php');
 
@@ -36,7 +36,7 @@ function exists_group( $group ) {
 	return ( $ldap->count($res) > 0 );
 }
 
-/**** Check for system aliases ****/
+// *** Check for system aliases ****
 $maincontent = 'welcome.tpl';
 if( $auth->group() == 'admin' ) {
 	$maincontent = 'welcome-admin.tpl';
@@ -65,7 +65,7 @@ if ($auth->group() == 'domain-maintainer') {
 }
 
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'topdir', $topdir );
 $smarty->assign( 'uid', $auth->uid() );

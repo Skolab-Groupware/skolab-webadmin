@@ -26,7 +26,7 @@ require_once('Skolab/Admin/include/locale.php');
 require_once('Skolab/Admin/include/authenticate.php');
 require_once('Skolab/Admin/include/form.class.php');
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $errors = array();
 $messages = array();
 $sidx = 'sf';
@@ -119,11 +119,11 @@ function process_acl( $uid, $perm )
 	return false;
 }
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 $heading = '';
 
-/**** Form/data handling ***/
+// *** Form/data handling ***
 if (!empty($_REQUEST['action']) &&
     in_array($_REQUEST['action'],$valid_actions)) $action = trim($_REQUEST['action']);
 else array_push($errors, _("Error: need valid action to proceed"));
@@ -348,7 +348,7 @@ if( !$errors ) {
 	}
 }
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'errors', array_merge((array)$errors,(array)$form->errors) );
 $smarty->assign( 'heading', $heading );

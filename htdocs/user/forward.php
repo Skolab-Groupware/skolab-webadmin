@@ -33,15 +33,15 @@ require_once 'Skolab/Admin/Sieve/Segment/Delivery.php';
 require_once 'Skolab/Admin/Sieve/Segment/Forward.php';
 require_once 'Skolab/Admin/Sieve/Segment/Vacation.php';
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'user';
 
 require_once('Skolab/Admin/include/menu.php');
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Sieve handling ***/
+// *** Sieve handling ***
 	$obj = $ldap->read( $auth->dn() );
 	$sieve = new Net_Sieve( $auth->uid(), $auth->password(), $obj['kolabHomeServer'][0] );
 
@@ -80,7 +80,7 @@ $menuitems[$sidx]['selected'] = 'selected';
 	}
 }
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'messages', $messages );

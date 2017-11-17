@@ -28,7 +28,7 @@ require_once('Skolab/Admin/include/authenticate.php');
 
 $errors = array();
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'service';
 
 if( $auth->group() != 'admin') {
@@ -37,10 +37,10 @@ if( $auth->group() != 'admin') {
 
 require_once('Skolab/Admin/include/menu.php');
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Extract data from LDAP, fill forms, write back to LDAP ***/
+// *** Extract data from LDAP, fill forms, write back to LDAP ***
 
 
 function postvalue( $varname )
@@ -306,7 +306,7 @@ $entries = array( array( 'service' => 'pop3', 'name'  => _('POP3 Service'), 'ena
                   array( 'service' => 'http', 'name'  => _('FreeBusy Service via HTTP (in addition to HTTPS)'), 'enabled' => toboolstr( $http ) ),
                   array( 'service' => 'amavis', 'name' => _('Amavis Email Scanning (Virus/Spam)'), 'enabled' => toboolstr( $amavis ) ) );
 
-/**** Check for system aliases ****/
+// *** Check for system aliases ****
 function exists_group( $group ) {
 	global $ldap;
 	$filter = '(&(objectClass=kolabGroupOfNames)(mail='.$ldap->escape($group).'))';
@@ -314,7 +314,7 @@ function exists_group( $group ) {
 	return ( $ldap->count($res) > 0 );
 }
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'uid', $auth->uid() );

@@ -25,15 +25,15 @@ require_once('Skolab/Admin/include/headers.php');
 require_once('Skolab/Admin/include/locale.php');
 require_once('Skolab/Admin/include/authenticate.php');
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'about';
 
 require_once('Skolab/Admin/include/menu.php');
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Page logic ****/
+// *** Page logic ***
 
 // Remember to keep this list up to date when patching packages!
 // The variable 'kolab_pkgs' is used to collect a packages that make up the
@@ -51,8 +51,8 @@ $pearhordeversions = shell_exec('
 ');
 
 
-# This is an openpkg test, difficult to see after make.
-# but visible in the vanilla sources.
+// This is an openpkg test, difficult to see after make.
+// but visible in the vanilla sources.
 if ($WITHOPENPKG == "yes") {
 	$openpkgversion = shell_exec("$RPM -q openpkg");
 	$kolabpatchedversions = shell_exec("$RPM -qa|grep 'kolab[0-9]*$'" );
@@ -63,7 +63,7 @@ if( $kolabversion[0] == '@' ) {
 	$kolabversion = 'unknown';
 }
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'topdir', $topdir );
 $smarty->assign( 'uid', $auth->uid() );

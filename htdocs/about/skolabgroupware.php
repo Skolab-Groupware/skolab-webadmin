@@ -25,15 +25,15 @@ require_once('Skolab/Admin/include/headers.php');
 require_once('Skolab/Admin/include/locale.php');
 require_once('Skolab/Admin/include/authenticate.php');
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'about';
 
 require_once('Skolab/Admin/include/menu.php');
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'topdir', $topdir );
 $smarty->assign( 'webserver_web_prefix', $webserver_web_prefix );

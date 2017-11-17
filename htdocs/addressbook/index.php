@@ -27,7 +27,7 @@ require_once('Skolab/Admin/include/form.class.php');
 
 $errors = array();
 
-/**** Authentication etc. ***/
+// *** Authentication etc. ***
 $sidx = 'addressbook';
 
 if( $auth->group() != 'maintainer' && $auth->group() != 'admin') {
@@ -37,10 +37,10 @@ if( $auth->group() != 'maintainer' && $auth->group() != 'admin') {
 
 require_once('Skolab/Admin/include/menu.php');
 
-/**** Submenu for current page ***/
+// *** Submenu for current page ***
 $menuitems[$sidx]['selected'] = 'selected';
 
-/**** Extract data from LDAP ***/
+// *** Extract data from LDAP ***
 
 // read selector for register display
 if (isset($HTTP_GET_VARS['alphaselect'])) $alphaselect = $HTTP_GET_VARS['alphaselect'];
@@ -129,7 +129,7 @@ if( !$errors ) {
 	}
 }
 
-/**** Insert into template and output ***/
+// *** Insert into template and output ***
 $smarty = new MySmarty();
 $smarty->assign( 'errors', $errors );
 $smarty->assign( 'uid', $auth->uid() );
