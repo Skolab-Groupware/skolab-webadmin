@@ -26,21 +26,21 @@ require_once('debug.php');
 
 /* We dont have any better place to put this right now... */
 function str_rand($length = 8, $seeds = 'abcdefghijklmnopqrstuvwxyz0123456789') {
-     $str = '';
-     $seeds_count = strlen($seeds);
+	$str = '';
+	$seeds_count = strlen($seeds);
 
-     // Seed
-     //list($usec, $sec) = explode(' ', microtime());
-     //$seed = (float) $sec + ((float) $usec * 100000);
-     //mt_srand($seed);
+	// Seed
+	//list($usec, $sec) = explode(' ', microtime());
+	//$seed = (float) $sec + ((float) $usec * 100000);
+	//mt_srand($seed);
 
-     // Generate
-     for ($i = 0; $length > $i; $i++) {
-         $str .= $seeds{mt_rand(0, $seeds_count - 1)};
-     }
+	// Generate
+	for ($i = 0; $length > $i; $i++) {
+		$str .= $seeds{mt_rand(0, $seeds_count - 1)};
+	}
 
-     return $str;
- }
+	return $str;
+}
 
 $ldap = new SkolabLDAP;
 
