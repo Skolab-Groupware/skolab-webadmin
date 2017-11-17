@@ -87,7 +87,7 @@ class SkolabForm {
    * as a string
    */
   function __toString() {
-    return sprintf("Debuginformation for class: %s; name: %s; template: %s;", get_class($this), $this->name, $this->template);
+    return sprintf("Debug information for class: %s; name: %s; template: %s;", get_class($this), $this->name, $this->template);
   }
 
   /*private*/
