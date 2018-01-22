@@ -8,23 +8,25 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-14 12:00+0200\n"
-"PO-Revision-Date: 2017-09-08 11:23+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-01-24 12:34+0000\n"
+"Last-Translator: Марс Ямбар <mjambarmeta@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/skolab-"
+"groupware/webadmin/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.19-dev\n"
 
 #: data/templates/createuser.tpl:10
 msgid "Attribute"
-msgstr ""
+msgstr "Атрибут"
 
 #: data/templates/createuser.tpl:11
 msgid "Value"
-msgstr ""
+msgstr "Значення"
 
 #: data/templates/createuser.tpl:12
 msgid "Comment"
@@ -34,8 +36,9 @@ msgstr ""
 #: htdocs/administrator/admin.php:115 htdocs/addressbook/addr.php:110
 #: htdocs/domainmaintainer/domainmaintainer.php:120
 #: htdocs/maintainer/maintainer.php:112
+#, fuzzy
 msgid "First Name"
-msgstr ""
+msgstr "По-батькові"
 
 #: data/templates/createuser.tpl:17 data/templates/createuser.tpl:27
 #: data/templates/createuser.tpl:32 data/templates/createuser.tpl:37
@@ -60,26 +63,27 @@ msgstr ""
 #: htdocs/administrator/admin.php:118 htdocs/addressbook/addr.php:113
 #: htdocs/domainmaintainer/domainmaintainer.php:123
 #: htdocs/maintainer/maintainer.php:115
+#, fuzzy
 msgid "Last Name"
-msgstr ""
+msgstr "Прізвище"
 
 #: data/templates/createuser.tpl:30 htdocs/user/user.php:480
 #: htdocs/administrator/admin.php:121
 #: htdocs/domainmaintainer/domainmaintainer.php:126
 #: htdocs/maintainer/maintainer.php:118
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: data/templates/createuser.tpl:35 htdocs/user/user.php:484
 #: htdocs/administrator/admin.php:125
 #: htdocs/domainmaintainer/domainmaintainer.php:130
 #: htdocs/maintainer/maintainer.php:122
 msgid "Verify Password"
-msgstr ""
+msgstr "Підтвердити пароль"
 
 #: data/templates/createuser.tpl:40 htdocs/user/user.php:488
 msgid "Primary Email Address"
-msgstr ""
+msgstr "Основна адреса електронної пошти"
 
 #: data/templates/createuser.tpl:42 htdocs/user/user.php:464
 #: htdocs/user/user.php:466 htdocs/administrator/admin.php:108
@@ -100,8 +104,9 @@ msgstr ""
 
 #: data/templates/createuser.tpl:55 htdocs/user/user.php:530
 #: htdocs/addressbook/addr.php:123
+#, fuzzy
 msgid "Organisation"
-msgstr ""
+msgstr "Організація"
 
 #: data/templates/createuser.tpl:60 htdocs/user/user.php:531
 #: htdocs/addressbook/addr.php:124
@@ -111,7 +116,7 @@ msgstr ""
 #: data/templates/createuser.tpl:65 htdocs/user/user.php:532
 #: htdocs/addressbook/addr.php:125
 msgid "Room Number"
-msgstr ""
+msgstr "Номер кімнати"
 
 #: data/templates/createuser.tpl:70 htdocs/user/user.php:533
 #: htdocs/addressbook/addr.php:126
@@ -130,12 +135,12 @@ msgstr ""
 #: data/templates/createuser.tpl:85 htdocs/user/user.php:536
 #: htdocs/addressbook/addr.php:129
 msgid "City"
-msgstr ""
+msgstr "Місто"
 
 #: data/templates/createuser.tpl:90 htdocs/user/user.php:537
 #: htdocs/addressbook/addr.php:130
 msgid "Country"
-msgstr ""
+msgstr "Країна"
 
 #: data/templates/createuser.tpl:95 htdocs/user/user.php:539
 #: htdocs/addressbook/addr.php:131
@@ -145,7 +150,7 @@ msgstr ""
 #: data/templates/createuser.tpl:100 htdocs/user/user.php:541
 #: htdocs/addressbook/addr.php:133
 msgid "Fax Number"
-msgstr ""
+msgstr "Номер факсу"
 
 #: data/templates/createuser.tpl:105 data/templates/welcome-maintainer.tpl:16
 #: data/templates/welcome-admin.tpl:16 lib/Skolab/Admin/include/menu.php:50
@@ -166,7 +171,7 @@ msgstr ""
 
 #: data/templates/createuser.tpl:115 lib/Skolab/Admin/include/form.class.php:77
 msgid "Submit"
-msgstr ""
+msgstr "Підтвердити"
 
 #: data/templates/welcome-maintainer.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:8
@@ -177,19 +182,19 @@ msgstr ""
 #: data/templates/welcome-domain-maintainer.tpl:13
 #: data/templates/welcome-admin.tpl:13
 msgid "Manage Users"
-msgstr ""
+msgstr "Керувати користувачами"
 
 #: data/templates/welcome-maintainer.tpl:19
 #: data/templates/welcome-domain-maintainer.tpl:16
 #: data/templates/welcome-admin.tpl:19 lib/Skolab/Admin/include/menu.php:59
 msgid "Shared Folders"
-msgstr ""
+msgstr "Спільні теки"
 
 #: data/templates/welcome-maintainer.tpl:22 data/templates/distlistall.tpl:8
 #: data/templates/welcome-domain-maintainer.tpl:19
 #: data/templates/welcome-admin.tpl:22 lib/Skolab/Admin/include/menu.php:67
 msgid "Distribution Lists"
-msgstr ""
+msgstr "Списки розсилань"
 
 #: data/templates/welcome-maintainer.tpl:25
 #: data/templates/maintainerlistall.tpl:8 data/templates/welcome-admin.tpl:28
