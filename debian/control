@@ -25,9 +25,6 @@ Depends:
  php-horde-util,
  php-mail,
 Description: Skolab administration web interface
- This package contains the web GUI for the administration of the Skolab
- groupware server.
- .
  Skolab is the continuation of the Kolab 2 groupware. It is a secure,
  scalable, and reliable groupware server. It consists of a number of
  well-known and proven components for the standard tasks such as e-mail,
@@ -35,3 +32,6 @@ Description: Skolab administration web interface
  between the components, a web administration interface, management of
  free/busy lists, etc. Various clients can access Kolab, among them
  Kontact (KDE), Thunderbird (Mozilla) and Horde (web).
+ .
+ This package contains the web GUI for the administration of the Skolab
+ Groupware Server.
