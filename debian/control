@@ -31,7 +31,7 @@ Description: Skolab administration web interface
  Skolab is the continuation of the Kolab 2 groupware. It is a secure,
  scalable, and reliable groupware server. It consists of a number of
  well-known and proven components for the standard tasks such as e-mail,
- directory service, and web service. Kolab adds intelligent interaction
+ directory service, and web service. Skolab adds intelligent interaction
  between the components, a web administration interface, management of
  free/busy lists, etc. Various clients can access Kolab, among them
  Kontact (KDE), Thunderbird (Mozilla) and Horde (web).
