@@ -1,3 +1,3 @@
 version=3
 opts=filenamemangle=s/.*\/([\d\.-]+)\.tar\.gz/skolab-webadmin-$1.tar.gz/
-https://github.com/sunweaver/skolab-webadmin/tags .*/archive/([\d\.]+).tar.gz
+https://github.com/Skolab-Groupware/skolab-webadmin/tags .*/archive/([\d\.]+).tar.gz
