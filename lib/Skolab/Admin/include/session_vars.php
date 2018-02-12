@@ -32,6 +32,7 @@ require_once('config.php');
  * since we source this file on every invokation anyway.
  */
 
+// The fqdnhostname has to match your default KolabHomeServer's name...
 $_SESSION['fqdnhostname'] = "skolabserver.example.com";
 $_SESSION['ldap_master_uri'] = "ldap://127.0.0.1:389";
 $_SESSION['base_dn'] = "dc=example,dc=com";
